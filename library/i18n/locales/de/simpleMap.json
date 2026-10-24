@@ -1,0 +1,9 @@
+{
+  "loading": "Karte wird geladen…",
+  "initFailed": "Die Karte konnte nicht starten. Das ist ein Problem mit dem Kartenschlüssel oder der Verbindung.",
+  "help": {
+    "what": "Diese Karte zeigt die unerreichten Volksgruppen der Welt: Gemeinschaften ohne echten Zugang zum Evangelium.",
+    "how": "Mit den Reitern (falls sichtbar) wechseln Sie die Ansicht. Klicken Sie auf einen Punkt, um mehr über eine Volksgruppe zu erfahren.",
+    "source": "Daten von"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_what": "Provenance for the Mark 5:1-20 passage on packet page 8 (prayer point 4), per locale.",
+  "_rule": "Scripture is NEVER machine-translated and never reproduced from memory. Each text is a published PUBLIC-DOMAIN translation fetched from a citable source that ships licence metadata, stored with the translation's NAME (added 2026-09-27).",
+  "_verified": "Verse numbering checked against the English (World English Bible): all five extract exactly verses 1-20, verse 1 matches 'they came to the other side of the sea, into the country of the Gadarenes' and verse 20 ends at 'Decapolis ... everyone marveled'.",
+  "_api": "https://bible.helloao.org/api/<id>/MRK/5.json",
+  "locales": {
+    "ar": {
+      "translationId": "arb_vdv",
+      "name": "Arabic Van Dyck Bible",
+      "licenseUrl": "https://ebible.org/Scriptures/details.php?id=arb-vd",
+      "website": "https://ebible.org/Scriptures/details.php?id=arb-vd",
+      "sha256": "a7dbde0da2118c438758bca1706ea71c5c2e4cec72eb996463e4c761c9f6bffb",
+      "verses": "1-20"
+    },
+    "ru": {
+      "translationId": "rus_syn",
+      "name": "Russian Synodal Bible",
+      "licenseUrl": "https://ebible.org/Scriptures/details.php?id=russyn",
+      "website": "https://ebible.org/Scriptures/details.php?id=russyn",
+      "sha256": "0ae481d3257ba895a57748179fc194012ffbfd500c141f9c3ef042a4db4771c6",
+      "verses": "1-20"
+    },
+    "es": {
+      "translationId": "spa_r09",
+      "name": "Reina Valera 1909",
+      "licenseUrl": "https://ebible.org/Scriptures/details.php?id=spaRV1909",
+      "website": "https://ebible.org/Scriptures/details.php?id=spaRV1909",
+      "sha256": "94e154b2e6e56eda1702d9e9f664357a5f2aa82634b551111b0b698d124e97d5",
+      "verses": "1-20"
+    },
+    "de": {
+      "translationId": "deu_l12",
+      "name": "German Luther Bible 1912",
+      "licenseUrl": "https://ebible.org/Scriptures/details.php?id=deu1912",
+      "website": "https://ebible.org/Scriptures/details.php?id=deu1912",
+      "sha256": "ab4c66104466c4978b1b2f9dcea944a5921959f5d38e467239e6757399eda6c6",
+      "verses": "1-20"
+    },
+    "fr": {
+      "translationId": "fra_ost",
+      "name": "French Ostervald Bible",
+      "licenseUrl": "https://ebible.org/Scriptures/details.php?id=fra_fob",
+      "website": "https://ebible.org/Scriptures/details.php?id=fra_fob",
+      "sha256": "98654be2daa22f07286bd4d835748c144af5801ffbd7190ecc56acc414161a97",
+      "verses": "1-20"
+    }
+  },
+  "_english": "en uses the World English Bible (public domain), unchanged.",
+  "_absent": "hi and zh stay ENGLISH and remain in check-packet-strings-parity's DECLARED_ABSENT: PD candidates exist (Hindi 1851 Serampore-lineage; Chinese Union Version 1919) but their licence status varies by jurisdiction and I could not confirm it. pt/it/ro also still English — pt Almeida 1819, it Diodati 1649, ro Cornilescu 1924 are candidates, Cornilescu the least certain."
+}

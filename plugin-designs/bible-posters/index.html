@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · bible-posters staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #f3f3f1; color: #3b463d; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 20px; }
+    h1 { font-size: 20px; font-weight: 700; }
+    .sub { color: #6d766e; font-size: 13px; margin: 6px 0 20px; }
+    .frame { height: 80vh; border: 1px solid #d1d4cd; border-radius: 12px; overflow: hidden; background: #fff; }
+    bible-posters { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>bible-posters · staging</h1>
+    <p class="sub">An entire book of the Bible on one poster, in the languages of the unreached.
+      Text is fetched at render time from public-domain sources; no Bibles are stored.</p>
+    <div class="frame">
+      <bible-posters profile-config='{"profile":"bible-posters"}'></bible-posters>
+    </div>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

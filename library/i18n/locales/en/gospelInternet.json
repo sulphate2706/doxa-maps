@@ -1,0 +1,311 @@
+{
+  "band": {
+    "no": "Under 25% online",
+    "nodata": "No data",
+    "partial": "25-59% online",
+    "yes": "60% or more online"
+  },
+  "bounded": {
+    "aria": "Bounded set: the cross at the centre, reached groups inside the circle, unreached outside",
+    "caption": "Inside the circle: reached. Outside: unreached.",
+    "failed": "The reached/unreached table could not be loaded, so this chart is not drawn.",
+    "unknown": "Not drawn, because their reached status did not match this table:"
+  },
+  "centered": {
+    "aria": "Centered set: unreached groups placed by closeness to a reached neighbour, arrows pointing inward",
+    "caption": "Each group sits at its distance from a reached neighbour; arrows point at the one that places it.",
+    "failed": "The neighbour table could not be loaded, so this chart is not drawn.",
+    "reached": "Already reached, so at the centre:",
+    "unmatched": "Not in the neighbour table at all, so not drawn:",
+    "unplaced": "No relation found, so not placed:",
+    "shown": "People groups on the rings:"
+  },
+  "centre": {
+    "aria": "Show",
+    "bounded": "Bounded set",
+    "centered": "Centered set",
+    "map": "Map",
+    "tree": "Language tree"
+  },
+  "charts": {
+    "accessByBand": "Own-language access, by country internet use",
+    "aria": "Charts",
+    "bandCaveat": "Internet use is the country's figure (World Bank), never the group's.",
+    "gapSub": "The 8 biggest of those shown, by population. Click one to open it.",
+    "gapTake": "These {k} alone are {people} people.",
+    "gapTitle": "The largest people groups with nothing in their own language",
+    "groups": "Groups",
+    "groupsN": "{n} groups",
+    "measure": "Count",
+    "messagingTop": "Top messaging app, by country in scope",
+    "notMeasured": "Not measured",
+    "ntSub": "Languages of the groups shown with no New Testament found, by how many people speak them. Red: nothing at all; yellow: something, but no New Testament.",
+    "ntTake": "{n} languages here have no New Testament found, spoken by {people} people.",
+    "ntTitle": "Which languages most need the New Testament?",
+    "people": "People",
+    "peopleN": "{n} people",
+    "q1sub": "One bar per level of access, for the people groups shown.",
+    "q1take": "{n} of {total} people groups shown have nothing found in their own language.",
+    "q1title": "What do they have in their own language?",
+    "q2sub": "People groups with nothing in their own language, by how much of their country is online.",
+    "q2take": "{online} of the {n} with nothing live in countries where 60% or more use the internet.",
+    "q2title": "Could the internet carry it to those with nothing?",
+    "socialTop": "Top social platform, by country in scope",
+    "unitCountries": "countries",
+    "unitGroups": "people groups",
+    "unitPeople": "people",
+    "zeroByBand": "Nothing in their own language, by country internet use",
+    "zeroCaveat": "Every one of these has a way in: a bridge language, a candidate or a Deaf bridge."
+  },
+  "col": {
+    "access": "In own language",
+    "band": "Internet band",
+    "bridgeTraining": "Training (bridge)",
+    "country": "Country",
+    "deafPublisher": "Sign-language publisher",
+    "internet": "Country online",
+    "internetYear": "Year",
+    "language": "Language",
+    "messaging": "Top messaging app (country, iOS)",
+    "mobile": "Mobile per 100",
+    "openBench": "MT benchmark (FLORES+)",
+    "openBooks": "Scripture books (eBible)",
+    "openData": "Open data (of 5)",
+    "openGrammar": "Grammar (Glottolog)",
+    "openSpeech": "Speech hours (Common Voice)",
+    "openWiki": "Wikipedia",
+    "platform": "Top platform (country)",
+    "praying": "People praying",
+    "province": "State / province (approx.)",
+    "resources": "Resources found",
+    "stateMen": "State online: men",
+    "stateWomen": "State online: women",
+    "training": "Training (own language)",
+    "translatedBy": "Translated by",
+    "wayIn": "Way in"
+  },
+  "combos": {
+    "audioOnline": "Hear but cannot read, country online",
+    "deaf": "A Deaf bridge exists",
+    "digitalNow": "Nothing in their language, country 60%+ online",
+    "indiaChinaGap": "India and China: nothing in their language",
+    "none": "Everything — pick a filter or a combination",
+    "offlineGap": "Nothing in their language, country mostly offline",
+    "selection": "Your selection",
+    "telegram": "Nothing in their language, Telegram country",
+    "try": "Try a combination",
+    "whatsapp": "Nothing in their language, WhatsApp country"
+  },
+  "detail": {
+    "hear": "Watch or hear, cannot read",
+    "none": "Nothing found",
+    "read": "Read",
+    "read_watch": "Read and watch",
+    "stories": "Stories only"
+  },
+  "drawer": {
+    "approx": "approximate",
+    "bridgeHas": "In the bridge language",
+    "conn": "Connectivity",
+    "copied": "Link copied",
+    "copyLink": "Copy link to this group",
+    "deafLink": "Signed Scripture",
+    "foundNote": "Found in the sources checked.",
+    "messaging": "Messaging apps (iOS downloads)",
+    "mobileNote": "Subscriptions per 100 people ({year}); one person may hold several.",
+    "nfhsNote": "NFHS-5, 2019-21, ages 15-49: the state's figure, not the group's.",
+    "noFeed": "This country is not in Apple's feed: its messaging apps are unknown here, not absent.",
+    "noneNote": "Nothing found in their own language in the sources checked. That is not a claim that nothing exists.",
+    "notInSource": "not in this source",
+    "openCheck": "Strong open data but no New Testament found: check first, one may exist that the sources checked missed.",
+    "openCount": "Open data",
+    "openNote": "Sources: Glottolog (CC BY 4.0), eBible, Wikipedia (CC BY-SA 4.0), Common Voice (CC0), FLORES+ (CC BY-SA 4.0). A count of named facts, not a score.",
+    "openOf": "{n} of 5 signals",
+    "openTitle": "Open data to start a translation from",
+    "own": "In their own language",
+    "people": "{n} people",
+    "platformNote": "Share of web referrals among tracked social platforms in the country (StatCounter). Messaging apps such as WhatsApp are not measured.",
+    "platforms": "Platforms in the country",
+    "praying": "{n} people praying on DOXA",
+    "social": "Social platforms (web referrals)",
+    "stateOnline": "{state}: ever used the internet",
+    "way": "Way in",
+    "wayIn": "Way in",
+    "wayNote": "A neighbouring language, not a recommendation: whether a group speaks it is a question for someone on the ground.",
+    "wbSource": "World Bank, {year}: the country's figure",
+    "womenMen": "women {w} · men {m}",
+    "gospelAudio": "Gospel recordings",
+    "training": "Disciple-making training"
+  },
+  "facet": {
+    "access": "Access in their own language",
+    "all": "Show all {n}",
+    "aria": "Filters",
+    "band": "Country internet use",
+    "bandNote": "The country's figure (World Bank), never the group's.",
+    "country": "Country",
+    "fewer": "Show fewer",
+    "find": "Find…",
+    "findIn": "Find in {what}",
+    "language": "Language",
+    "messaging": "Top messaging app (country)",
+    "messagingNote": "Most downloaded in the country's Apple App Store: iOS only, a download rank, not use.",
+    "province": "India and China: state or province",
+    "provinceNote": "Approximate: taken from the group's dot on the map, not from a town.",
+    "region": "Region",
+    "religion": "Religion",
+    "wayIn": "Way in when nothing is in their language"
+  },
+  "grid": {
+    "aria": "People groups in scope",
+    "columns": "Columns",
+    "count": "{n} of {total} people groups",
+    "empty": "No people groups match these filters.",
+    "exported": "{n} rows exported (copied and downloaded).",
+    "openCapped": "Opens the first {n} selected.",
+    "openInGospel": "Open in Gospel Resources",
+    "selectRow": "Select {name}"
+  },
+  "headline": {
+    "a": "{zero} of {total} people groups have nothing found in their own language;",
+    "b": "{online} of them live in countries where 60% or more use the internet."
+  },
+  "kind": {
+    "audio": "Audio",
+    "film": "Film",
+    "scripture": "Scripture",
+    "stories": "Stories",
+    "video": "Video"
+  },
+  "legend": {
+    "band": "Country internet use (World Bank)",
+    "hide": "Hide the legend",
+    "modeMen": "Internet: men",
+    "modeWomen": "Internet: women",
+    "modeZero": "Nothing in own language",
+    "nfhs": "India only: share of women or men aged 15-49 who have ever used the internet, by state. NFHS-5, 2019-21. China has no verified provincial source.",
+    "pins": "In their own language",
+    "provinces": "India and China by province",
+    "show": "Legend"
+  },
+  "level": {
+    "bridge": "Nothing in own language · bridge only",
+    "own": "Something in own language",
+    "zero": "Nothing in own language · no way in yet"
+  },
+  "listChip": "People-group list, chosen by this page",
+  "loadError": "The board's data did not load.",
+  "loadingTable": "Loading the table…",
+  "map": {
+    "aria": "Map of people groups, shaded by how much of each country uses the internet"
+  },
+  "notice": {
+    "pin": "The dot marks this people group, not a town.",
+    "pins": "A dot marks a people group, not a town. {n} groups share a point with another group.",
+    "shares": "It shares its point with {n} other group(s).",
+    "sources": "Sources:",
+    "standing": "Dots are approximate: a dot marks a people group, not a town. Internet figures are the country's, or the Indian state's, never the group's. \"Found\" means found in the sources checked."
+  },
+  "panel": {
+    "charts": "Charts",
+    "filters": "Filters",
+    "grid": "Groups",
+    "map": "Map"
+  },
+  "res": {
+    "aria": "Gospel resources for the languages in scope",
+    "count": "{n} resources in {langs} of {all} languages in scope",
+    "empty": "Nothing found for the languages in scope.",
+    "groups": "Groups here",
+    "note": "A language with no row here has nothing found in the sources checked.",
+    "resource": "Resource",
+    "scope": "Scope",
+    "source": "Source",
+    "type": "Type"
+  },
+  "rings": {
+    "band": {
+      "dialect": "Same dialect",
+      "language": "Same language",
+      "family": "Same language family",
+      "geography": "Nearby only"
+    },
+    "centre": "The cross: a reached group (2% or more evangelical).",
+    "closest": "Closest reached group:",
+    "culture": {
+      "same": "Same people",
+      "near": "Near culture",
+      "different": "Different culture"
+    },
+    "example": "Example:",
+    "explain": {
+      "dialect": "A reached group speaks exactly the same language variety (the same ISO 639-3 code).",
+      "language": "A reached group speaks another variety of the same language, e.g. Egyptian and Najdi Arabic.",
+      "family": "The nearest shared language is only a related one, in the same language family.",
+      "geography": "No shared language at all: a reached group lives in the same country or within 600 km.",
+      "same": "It is the same people, living somewhere else.",
+      "near": "It is a different people in the same IMB people cluster.",
+      "different": "It is a people from a different cluster."
+    },
+    "footCentre": "Reached, at the centre",
+    "footUnmatched": "Not in the neighbour table, not drawn",
+    "footUnplaced": "No related reached group found, not placed",
+    "fullscreen": "Full screen",
+    "intro": "Each unreached group sits on a ring by how close it is to its nearest reached group. The closer the ring, the more naturally the gospel can travel.",
+    "none": "No group in this view sits on this ring.",
+    "ring": "Ring",
+    "showAll": "Show all rings",
+    "source": "Reached = 2% or more evangelical, the IMB definition used by peoplegroups.org. Language and culture closeness are proxies from its language codes and people clusters.",
+    "title": "What the rings mean"
+  },
+  "strength": {
+    "moderate": "moderate",
+    "strong": "strong"
+  },
+  "table": {
+    "aria": "Table",
+    "groups": "People groups",
+    "resources": "Gospel resources"
+  },
+  "title": "Gospel access through the internet",
+  "tree": {
+    "aria": "Language tree: every language family of these people groups, coloured by what is found in each language",
+    "branch": "Branch",
+    "dialect": "Dialect",
+    "family": "Family",
+    "groupsN": "{n} people groups",
+    "inherited": "Colour of its language: no source catalogues resources by dialect.",
+    "language": "Language",
+    "languagesHere": "languages here",
+    "legendTitle": "In their own language",
+    "levels": "Family › branch › language › dialect. A family or branch shows the worst colour inside it. A dialect shows its language's colour, lighter: resources are catalogued per language, not per dialect. Click a circle to narrow the board to it.",
+    "poster": "Poster",
+    "poster3ft": "3 × 3 ft",
+    "poster4ft": "4 × 4 ft",
+    "posterOmitted": "{n} names left off where they would overlap another; every circle is drawn.",
+    "posterPrint": "Print",
+    "posterSizeAria": "Poster size",
+    "posterTitle": "Gospel access, language family by language family",
+    "sources": "Tree: Glottolog (CC BY 4.0). Resources: eBible, Faith Comes By Hearing, Scripture Earth, PNG.Bible, JESUS Film, Global Recordings and others, keyed by ISO 639-3.",
+    "st": {
+      "g": "New Testament or full Bible found",
+      "r": "Nothing found",
+      "y": "Something found, but no New Testament"
+    },
+    "via": "Also on this path:"
+  },
+  "view": {
+    "aria": "View",
+    "board": "Board",
+    "platforms": "Platforms",
+    "province": "India & China by province",
+    "zero": "Nothing in own language"
+  },
+  "wayIn": {
+    "bridge": "Bridge language",
+    "candidate": "Candidate language",
+    "candidateText": "{lang} (candidate, {pct}% of country)",
+    "deaf": "Deaf bridge",
+    "deafText": "{lang} (sign language)"
+  }
+}

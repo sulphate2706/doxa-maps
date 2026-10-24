@@ -1,0 +1,3800 @@
+{
+ "_note": "Door43 (unfoldingWord) catalog snapshot, stage=prod only. Keyed by ISO 639-3. An entry means a PUBLISHED resource, not roster membership. Open Bible Stories is 50 illustrated narratives, NOT a Bible translation.",
+ "generated": "2026-09-24",
+ "sources": [
+  {
+   "subject": "Open Bible Stories",
+   "url": "https://git.door43.org/api/v1/catalog/search?subject=Open%20Bible%20Stories&stage=prod&limit=2000",
+   "entries": 246
+  },
+  {
+   "subject": "Bible",
+   "url": "https://git.door43.org/api/v1/catalog/search?subject=Bible&stage=prod&limit=2000",
+   "entries": 85
+  },
+  {
+   "subject": "Aligned Bible",
+   "url": "https://git.door43.org/api/v1/catalog/search?subject=Aligned%20Bible&stage=prod&limit=2000",
+   "entries": 67
+  }
+ ],
+ "codes": {
+  "ahr": {
+   "title": "Ahirani",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/ahr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "amh": {
+   "title": "አማርኛ",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/am_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/am_ulb",
+     "name": "Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "anp": {
+   "title": "Angika",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/anp_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "apd": {
+   "title": "لهجة سودانية",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/GRA/apd_obs",
+     "name": "Open Bible Stories",
+     "owner": "GRA",
+     "scope": ""
+    }
+   ]
+  },
+  "ara": {
+   "title": "Arabic",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-Aquifer/ar_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-Aquifer",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/ar-xzn_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/ar_gt/ar_avd_2024",
+     "name": "الكتاب المقدس باللغة العربية، فان دايك",
+     "owner": "ar_gt",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/BSOJ/ar_avd",
+     "name": "الكتاب المقدس باللغة العربية، فان دايك",
+     "owner": "BSOJ",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/BSOJ/ar_arst",
+     "name": "Arabic Simplified Text",
+     "owner": "BSOJ",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ar_gt/ar_gst",
+     "name": "Arabic Simplified Text",
+     "owner": "ar_gt",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ar_gt/ar_glt",
+     "name": "Arabic Literal Text",
+     "owner": "ar_gt",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/BSOJ/ar_nav",
+     "name": "New Arabic Version",
+     "owner": "BSOJ",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "asm": {
+   "title": "Assamese",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/as_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/as_ulb",
+     "name": "Assamese Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/as_irv",
+     "name": "Indian Revised Version - Assamese",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "awa": {
+   "title": "Awadhi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/awa_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "azb": {
+   "title": "آذری",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/azb_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "bal": {
+   "title": "بلوچی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/bal_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "bdv": {
+   "title": "Bodo Parja",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bdv_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bee": {
+   "title": "Byangsi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bee_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bfb": {
+   "title": "Bareli Pauri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfb_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bfw": {
+   "title": "Lower Bondo",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfw_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bfy": {
+   "title": "Bagheli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfy_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/bfy_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "bfz": {
+   "title": "Pahari Mahasui",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfz_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfz-x-baghati_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfz-x-baghliani_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfz-x-karsogi_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bfz-x-rampuribusheri_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bgc": {
+   "title": "Haryanvi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bgc_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/bgc_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "bgq": {
+   "title": "Bagri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bgq_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bgw": {
+   "title": "Bhatri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bgw_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bhd": {
+   "title": "Bhadrawahi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/bhd_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bhd_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bho": {
+   "title": "Bhojpuri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/bho_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bho_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bht": {
+   "title": "Bhattiyali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bht_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "biy": {
+   "title": "Mankidia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/biy-x-mankidia_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "ben": {
+   "title": "বাংলা",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/bn_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/bn_ulb",
+     "name": "Bengali Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/bn_irv",
+     "name": "Indian Revised Version - Bengali",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/bn_glt",
+     "name": "Literal Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/bn_gst",
+     "name": "Simplified Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "bns": {
+   "title": "Bundelkhandi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/bns_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "bqi": {
+   "title": "بختیاری",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/bqi_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "cdg": {
+   "title": "Chamari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/cdg_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "cdh": {
+   "title": "Chambeali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/cdh_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/cdh_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "cdi": {
+   "title": "Chaudhari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/cdi_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "cdj": {
+   "title": "Churahi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/cdj_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "cdn": {
+   "title": "Chaudhansi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/cdn_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "ceb": {
+   "title": "Cebuano",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ceb_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ceb_ulb",
+     "name": "Cebuano Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ceb_udb",
+     "name": "Unlocked Dynamic Bible - Cebuano",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "ckb": {
+   "title": "سورانی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/ckb_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "def": {
+   "title": "گویش دزفولی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/def_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "dgo": {
+   "title": "Dogri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/dgo_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dgo_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "dhi": {
+   "title": "Dhimal",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dhi_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "dhn": {
+   "title": "Dhanki",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dhn_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "dho": {
+   "title": "Dhodia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dho_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "drd": {
+   "title": "Darmia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/drd_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "dso": {
+   "title": "Desiya",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dso_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dso-x-korapdesia_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "dty": {
+   "title": "Dotyali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dty_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "dub": {
+   "title": "Dubli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/dub_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "emu": {
+   "title": "Muria Easten",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/emu_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "eng": {
+   "title": "English",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/unfoldingWord/en_obs",
+     "name": "unfoldingWord® Open Bible Stories",
+     "owner": "unfoldingWord",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/WycliffeAssociates/en_ulb",
+     "name": "Unlocked Literal Bible",
+     "owner": "WycliffeAssociates",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/WycliffeAssociates/en_udb",
+     "name": "Unlocked Dynamic Bible",
+     "owner": "WycliffeAssociates",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/unfoldingWord/en_t4t",
+     "name": "Translation for Translators",
+     "owner": "unfoldingWord",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/unfoldingWord/en_ueb",
+     "name": "Unlocked English Bible",
+     "owner": "unfoldingWord",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/unfoldingWord/en_ust",
+     "name": "unfoldingWord® Simplified Text",
+     "owner": "unfoldingWord",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/unfoldingWord/en_ult",
+     "name": "unfoldingWord® Literal Text",
+     "owner": "unfoldingWord",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ru_gt/en_ult",
+     "name": "unfoldingWord® Literal Text",
+     "owner": "ru_gt",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ru_gt/en_ust",
+     "name": "unfoldingWord® Simplified Text",
+     "owner": "ru_gt",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Worldview/en_bsb",
+     "name": "Berean Standard Bible - Aligned",
+     "owner": "Worldview",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/test_user/en_test_tit_book",
+     "name": "Titus",
+     "owner": "test_user",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "spa": {
+   "title": "español",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/es_obs",
+     "name": "HISTORIAS BÍBLICAS LIBRES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-Aquifer/es_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-Aquifer",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/es-419_gl/es-419_obs",
+     "name": "Historias Bíblicas Abiertas",
+     "owner": "es-419_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/BSA/es-419_obs",
+     "name": "HISTORIAS BÍBLICAS LIBRES",
+     "owner": "BSA",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/growing-church/es-419_obs",
+     "name": "Historias Bíblicas Abiertas para Niños",
+     "owner": "growing-church",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/es-419_ulb",
+     "name": "Español Latino Americano ULB",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/es-419_gl/es-419_glt",
+     "name": "Texto Puente Literal",
+     "owner": "es-419_gl",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/es-419_gl/es-419_gst",
+     "name": "Texto Puente Simple",
+     "owner": "es-419_gl",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/es-419_obt/es-419_glt",
+     "name": "Texto Puente Literal",
+     "owner": "es-419_obt",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "fas": {
+   "title": "فارسی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/fa_obs",
+     "name": "داستان‌های آزاد از کتاب مقدس",
+     "owner": "fa_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/fas-x-eastfars_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/fa_gl/fa_opv",
+     "name": "The Old Persian Version",
+     "owner": "fa_gl",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Biblica/fa_opcb",
+     "name": "Biblica® Open Persian Contemporary Bible",
+     "owner": "Biblica",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/fa_gl/fa_gbt",
+     "name": "Persian Biblica Text",
+     "owner": "fa_gl",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/fa_gl/fa_glt",
+     "name": "Persian Literal Text",
+     "owner": "fa_gl",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/fa_gl/fa_gst",
+     "name": "Persian Simplified Text",
+     "owner": "fa_gl",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "fmu": {
+   "title": "Muria Far Western",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/fmu_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "fra": {
+   "title": "français, langue française",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/unfoldingWord/fr_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "unfoldingWord",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/fr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-Aquifer/fr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-Aquifer",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/unfoldingWord/fr_ulb",
+     "name": "French ULB",
+     "owner": "unfoldingWord",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/fr_f10",
+     "name": "French Louis Segond 1910 Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/fr_gl/fr-textTranslation-FR_LSG",
+     "name": "FR_LSG",
+     "owner": "fr_gl",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/MVHS/fr_lsg",
+     "name": "Louis Segond 1910",
+     "owner": "MVHS",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/MVHS/fr_glt",
+     "name": "French GLT",
+     "owner": "MVHS",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "gaj": {
+   "title": "Gadsup Yomunka",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/gaj-x-ymnk_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "gbk": {
+   "title": "Gaddi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gbk_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/gbk_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "gbl": {
+   "title": "Gamit",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gbl_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gbm": {
+   "title": "Garhwali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gbm_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gda": {
+   "title": "Lohari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gda_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gdb": {
+   "title": "Ollar Gadaba",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gdb_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gdx": {
+   "title": "Godwari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/gdx_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "gjk": {
+   "title": "Kachi Koli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gjk_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gju": {
+   "title": "Gojiri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/gju_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "glk": {
+   "title": "زبان گیلکی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/glk_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "gof": {
+   "title": "Gofa",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/gof_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "gok": {
+   "title": "Gowli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gok_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gom": {
+   "title": "Malwani",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gom-x-malvani_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gon": {
+   "title": "Aheri Gondi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/gon-x-aheri_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gon-x-aheri_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "gra": {
+   "title": "Garasia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/gra_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "guj": {
+   "title": "ગુજરાતી",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/gu_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/gu_udb",
+     "name": "Gujarati Unlocked Dynamic Bible",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/gu_ulb",
+     "name": "Gujarati Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/gu_gst",
+     "name": "Simplified Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/gu_glt",
+     "name": "Literal Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/gu_irv",
+     "name": "Indian Revised Version - Gujarati",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/gu_irv",
+     "name": "Indian Revised Version",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "guq": {
+   "title": "Aché",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/guq_obs",
+     "name": "Apã Wachu djawu kiupyregi ache wywy puarã",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "hau": {
+   "title": "(Hausa) هَوُسَ",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ha_obs",
+     "name": "Open Bible Stories: Buɗewar Maganar Allah",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ha_ulb",
+     "name": "Hausa Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "haz": {
+   "title": "آزرگی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/haz_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "hin": {
+   "title": "हिन्दी (Hindi)",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/hi_obs",
+     "name": "Hindi Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hi_udb",
+     "name": "Unlocked Dynamic Bible - Hindi",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hi_ulb",
+     "name": "Unlocked Literal Bible - Hindi",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/hi_glt",
+     "name": "हिन्दी भाषा शाब्दिक पाठ",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/hi_gst",
+     "name": "हिन्दी भाषा अर्थपूर्ण पाठ",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hi_iev",
+     "name": "Hindi IEV",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hi_irv",
+     "name": "Indian Revised Version - Hindi",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "hii": {
+   "title": "Hinduri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/hii_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "hlb": {
+   "title": "Halba-Halbi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/hlb_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "hmr": {
+   "title": "Hmar",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/hmr_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "hne": {
+   "title": "Laria",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/hne-x-laria_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "hoc": {
+   "title": "Ho",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/hoc_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "hoj": {
+   "title": "Harauti",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/hoj_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/hoj_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "hrv": {
+   "title": "hrvatski jezik",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/hr_obs",
+     "name": "Biblijske priče za sve",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hr_src",
+     "name": "Šarić Hrvatski",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "hun": {
+   "title": "magyar",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/hu_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hu_kar",
+     "name": "Karoli Translation",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "ind": {
+   "title": "Bahasa Indonesia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/bahtraku/id_obs",
+     "name": "Cerita Alkitab Bergambar",
+     "owner": "bahtraku",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/id_ulb",
+     "name": "Indonesian Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/id_ayt",
+     "name": "Alkitab Yang Terbuka (The Opened Bible) Old Testament and New Testament",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/id_tb1",
+     "name": "Alkitab Terjemahan Baru",
+     "owner": "bahtraku",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/bahtraku/id_gst",
+     "name": "BAHTRAKU Teks yang Disederhanakan",
+     "owner": "bahtraku",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/bahtraku/id_glt",
+     "name": "BAHTRAKU Teks Literal",
+     "owner": "bahtraku",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "ilo": {
+   "title": "Iloko",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/reymark/ilo_obs_text_story_L3",
+     "name": "Open Bible Stories",
+     "owner": "reymark",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ilo_ulb",
+     "name": "Unlocked Literal Bible - Ilocano",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "ins": {
+   "title": "Indian Sign Language",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/BCS/ins_obs",
+     "name": "Open Bible Stories",
+     "owner": "BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "jnl": {
+   "title": "Van Rawat",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/jnl-x-vanrawat_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "jun": {
+   "title": "Juang",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/jun_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "juy": {
+   "title": "Juray",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/juy_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/juy_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kaa": {
+   "title": "Kara-Kalpak",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/kaa_ol/kaa_obs",
+     "name": "Ашық Мухаддес Китап ўақыялары",
+     "owner": "kaa_ol",
+     "scope": ""
+    }
+   ]
+  },
+  "kas": {
+   "title": "Kashtwari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kas-x-kashtwari_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kat": {
+   "title": "Ingilo",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/kat_ol/kat_obs_L3",
+     "name": "Gasxnil Bibliur İstoriebi",
+     "owner": "kat_ol",
+     "scope": ""
+    }
+   ]
+  },
+  "kex": {
+   "title": "Kukna",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/kex_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kex_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kff": {
+   "title": "Dorli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kff-x-dorli_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kfr": {
+   "title": "Kachchi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kfr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kfs": {
+   "title": "Bilaspuri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kfs_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/kfs_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "kfx": {
+   "title": "Kulvi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kfx_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kfx-x-innerseraji_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kfx-x-outerseraji_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kfy": {
+   "title": "Soriyali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kfy-x-soriyali_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "khn": {
+   "title": "Khandesi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/khn_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "khr": {
+   "title": "Kharia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/khr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/khr_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "kaz": {
+   "title": "Қазақ Тілі",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/kk_gt_final/kk_obs",
+     "name": "Ашық Киелі кітап әңгімелері",
+     "owner": "kk_gt_final",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Sherzat/kk_obs",
+     "name": "Ашық Киелі кітап әңгімелері",
+     "owner": "Sherzat",
+     "scope": ""
+    }
+   ]
+  },
+  "kmz": {
+   "title": "Khorasani Turkic",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TIBIBLE/kmz_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TIBIBLE",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/kmz_obs_text_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "kan": {
+   "title": "ಕನ್ನಡ (Kannada)",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-vachanonline/kn_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-vachanonline",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/kn_ulb",
+     "name": "Kannada Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/kn_irv",
+     "name": "Indian Revised Version - Kannada",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/kn_glt",
+     "name": "ಅಕ್ಷರಶಃ ಅನುವಾದ",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/kn_gst",
+     "name": "ಶಬ್ದಾರ್ಥದ ಅನುವಾದ",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/kn_iev",
+     "name": "Indian Easy Version - Kannada",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/kn_ust",
+     "name": "Indian Easy Version - Kannada",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "kxp": {
+   "title": "Koli Wadiyari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kxp_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "kxv": {
+   "title": "Kuvi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/kxv_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/kxv_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "lae": {
+   "title": "Pattani",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/lae_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "lbf": {
+   "title": "Lahauli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/lbf_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "lbm": {
+   "title": "Lodha",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/lbm_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/lbm_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/lbm-x-sabar_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "lki": {
+   "title": "لەکی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/lki_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "lao": {
+   "title": "Lao",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/lo_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "lpx": {
+   "title": "Lopit",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/lpx_obs",
+     "name": "Hiyebita inno Bibia ",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/lpx_ulb",
+     "name": "Unlocked Literal Bible - Lopit",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "lrc": {
+   "title": "لُری",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/lrc_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "lus": {
+   "title": "Mizo",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/lus_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "mag": {
+   "title": "Magahi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mag_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mai": {
+   "title": "Maithili",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mai_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/mai_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "mgp": {
+   "title": "Eastern Magar",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mgp_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mjl": {
+   "title": "Mandeali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mjl_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mjx": {
+   "title": "Mahali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mjx_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mke": {
+   "title": "Mawchi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mke_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mal": {
+   "title": "മലയാളം",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ml_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/ml_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ml_ulb",
+     "name": "Unlocked Literal Bible - Malayalam",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ml_iev",
+     "name": "Indian Easy Version - Malayalam",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ml_irv",
+     "name": "Indian Revised Version - Malayalam",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "mar": {
+   "title": "मराठी",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/mr_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/mr_ulb",
+     "name": "Unlocked Literal Bible - Marathi",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/mr_udb",
+     "name": "Unlocked Dynamic Bible - Marathi",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/mr_gst",
+     "name": "Marathi Simplified Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/mr_glt",
+     "name": "मराठी Literal Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/mr_irv",
+     "name": "Indian Revised Version - Marathi",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "mtr": {
+   "title": "Mewari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mtr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mup": {
+   "title": "Malvi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mup_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mut": {
+   "title": "Muria Western",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/mut_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "mzn": {
+   "title": "زبان مازندرانی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/mzn_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/mzn_ulb",
+     "name": "Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "nag": {
+   "title": "Nagamese",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/nag_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/nag_isv",
+     "name": "Indian Standard Version - Nagamese",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/nag_irv",
+     "name": "Nagamese IRV",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "nep": {
+   "title": "नेपाली ",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ne_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ne_udb",
+     "name": "Unlocked Dynamic Bible - Nepali",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ne_ulb",
+     "name": "Unlocked Literal Bible - Nepali",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/ne_glt",
+     "name": "Literal Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/ne_gst",
+     "name": "Simplified Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "new": {
+   "title": "Newari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/new_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "nhh": {
+   "title": "Nahari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/nhh_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "nlx": {
+   "title": "Nahali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/nlx_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "noi": {
+   "title": "Noiri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/noi_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "ntz": {
+   "title": "زبان نطنزی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/ntz_obs_text_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TIBIBLE/ntz_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TIBIBLE",
+     "scope": ""
+    }
+   ]
+  },
+  "ori": {
+   "title": "ଓଡ଼ିଆ",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/or_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/or_ulb",
+     "name": "Oriya Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/or_udb",
+     "name": "Oriya Unlocked Dynamic Bible",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/or_irv",
+     "name": "Indian Revised Version - Oriya",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/or_gst",
+     "name": "Simplified Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/or_glt",
+     "name": "Literal Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "ors": {
+   "title": "Suku Laut",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/bahtraku/ors-x-oranglau_obs",
+     "name": "Cerita Alkitab Bergambar",
+     "owner": "bahtraku",
+     "scope": ""
+    }
+   ]
+  },
+  "pan": {
+   "title": "ਪੰਜਾਬੀ, پنجابی‎",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/pa_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/pa_ulb",
+     "name": "Punjabi Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/pa_irv",
+     "name": "Indian Revised Version - Punjabi",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "pci": {
+   "title": "Parji",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/pci_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "pcl": {
+   "title": "Pardhi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/pcl_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "peg": {
+   "title": "Pengo Parja",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/peg_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "por": {
+   "title": "Português",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/pt-br_obs",
+     "name": "HISTÓRIAS BÍBLICA LIVRES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/pt-br_ulb",
+     "name": "Brazilian Portuguese Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/pt-br_blv",
+     "name": "Portuguese Bíblia Livre BLV",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "pwr": {
+   "title": "Powari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/pwr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/pwr_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/pwr-x-koshti_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "qxq": {
+   "title": "زبان ترکی قشقایی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/qxq_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "rji": {
+   "title": "Raji",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/rji_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "rkt": {
+   "title": "Anchalik Bangla",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/rkt_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "rml": {
+   "title": "Baltic Romani",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/rm_ol/rml_obs",
+     "name": "Open Bible Stories",
+     "owner": "rm_ol",
+     "scope": ""
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/DevleskoDrom/rml_rhb",
+     "name": "RusskaRoma Holy Bible",
+     "owner": "DevleskoDrom",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/rm_ol/rml_rbs",
+     "name": "RusskaRoma Holy Bible",
+     "owner": "rm_ol",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "rmr": {
+   "title": "Bayash Slavic Ludari",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/rmr-x-bsl_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "rmy": {
+   "title": "South Slavic Ardilean Bayash",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/rmy-x-bsa_obs",
+     "name": "Puvešč dăm Biblijă păntru toc",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/rmy-x-vc_obs",
+     "name": "Bibliske paramiče pale savorende",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/rmy-x-vg_obs",
+     "name": "Biblijske priče za sve",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/rmy-x-vwa_obs",
+     "name": "E Biblijakere Paramiza Sarijenđe",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/DevleskoDrom/rmy_srb",
+     "name": "Servi Romani Bible",
+     "owner": "DevleskoDrom",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "rnp": {
+   "title": "Rongpo",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/rnp_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "rtw": {
+   "title": "Rathawi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/rtw_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "rus": {
+   "title": "Russian",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/ru_gl/ru_obs",
+     "name": "Открытые Библейские Истории",
+     "owner": "ru_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ru_ulb",
+     "name": "Russian Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ru_ust",
+     "name": "Russian Simplified Open Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ru_rob",
+     "name": "Russian Open Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ru_gl/ru_rost",
+     "name": "Russian Open Semantic Text",
+     "owner": "ru_gl",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ru_gl/ru_rsob",
+     "name": "Russian Simplified Open Bible",
+     "owner": "ru_gl",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ru_gl/ru_rlob",
+     "name": "Russian Literal Open Bible",
+     "owner": "ru_gl",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ru_rlb",
+     "name": "Russion Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/BSA/ru_rsb",
+     "name": "Russian Synodal Bible",
+     "owner": "BSA",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/ru_gt/ru_glt",
+     "name": "Russian Literal Open Bible",
+     "owner": "ru_gt",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "rwr": {
+   "title": "Marwadi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/rwr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "sat": {
+   "title": "Santali",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/sat_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "sbu": {
+   "title": "Bhoti",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/sbu_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "sck": {
+   "title": "Sadri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/sck_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "scu": {
+   "title": "Shumcho",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/scu_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "snd": {
+   "title": "Sindhi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/sd_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "sgh": {
+   "title": "Shughni",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/sgh_ol/sgh_obs",
+     "name": "Китоби Муқадас фа̄мо нақлийен",
+     "owner": "sgh_ol",
+     "scope": ""
+    }
+   ]
+  },
+  "sgj": {
+   "title": "Surgujia",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/sgj_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "shu": {
+   "title": "Chadian Arabic",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/PCET/shu_obs",
+     "name": "Open Bible Stories",
+     "owner": "PCET",
+     "scope": ""
+    }
+   ]
+  },
+  "smy": {
+   "title": "زبان سمنانی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/smy_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "spv": {
+   "title": "Sambalpuri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/spv_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "srp": {
+   "title": "srpski (Serbian)",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/sr-Latn_obs",
+     "name": "Biblijske priče za sve",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/sr-Latn_stf",
+     "name": "Stefanović Novi Zavet",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/sr-Latn_dkl",
+     "name": "Danicic Karadzic Latin",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "srb": {
+   "title": "Savara Soura",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/srb_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/srb_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "srx": {
+   "title": "Sirmouri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/srx_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "srz": {
+   "title": "Shahmirzadi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TIBIBLE/srz_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TIBIBLE",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/srz_obs_text_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "swa": {
+   "title": "Swahili",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/sw_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/sw_ulb",
+     "name": "Swahili Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "tam": {
+   "title": "தமிழ்",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ta_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ta_ulb",
+     "name": "Unlocked Literal Bible - Tamil",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ta_irv",
+     "name": "Indian Revised Version - Tamil",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "tdb": {
+   "title": "Panchpargania",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/tdb_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/tdb_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "tdj": {
+   "title": "Tajio",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/tdj_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "tdt": {
+   "title": "Tetun Dili",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/bahtraku/tdt_obs",
+     "name": "Cerita Alkitab Bergambar",
+     "owner": "bahtraku",
+     "scope": ""
+    }
+   ]
+  },
+  "tel": {
+   "title": "తెలుగు",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/te_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/te_ust",
+     "name": "Indian Easy Version (IEV) Telugu",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/te_iev",
+     "name": "Indian Easy Version (IEV) Telugu",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/te_ulb",
+     "name": "Unlocked Literal Bible - Telugu",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/te_gst",
+     "name": "Simplified Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/translationCore-Create-BCS/te_glt",
+     "name": "Literal Text",
+     "owner": "translationCore-Create-BCS",
+     "scope": "Portions of both Testaments"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/te_irv",
+     "name": "Indian Revised Version - Telugu",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "tgk": {
+   "title": "тоҷикӣ, toçikī, تاجیکی (Tajik)",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/tg_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/tg_ult",
+     "name": "Tajik Literal Open Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "thf": {
+   "title": "Thami",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/thf_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "thl": {
+   "title": "Dangaura Tharu",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/thl_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/thl-x-deukhuri_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/thl-x-rautahat_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "thr": {
+   "title": "Rana Tharu",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/thr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "tuk": {
+   "title": "Turkmen",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TIBIBLE/tk_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TIBIBLE",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/tk_obs_text_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "tks": {
+   "title": "گویش تاتی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/tks_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "tgl": {
+   "title": "Wikang Tagalog",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/tl_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/tl_ulb",
+     "name": "Tagalog Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "tly": {
+   "title": "تالشی",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/fa_gl/tlv_obs",
+     "name": "Open Bible Stories",
+     "owner": "fa_gl",
+     "scope": ""
+    }
+   ]
+  },
+  "tpi": {
+   "title": "Tok Pisin",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/tpi_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "tpq": {
+   "title": "Tukpa",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/tpq_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "tur": {
+   "title": "Türkçe",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/tr_obs",
+     "name": "OPEN BIBLE STORIES",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "ukr": {
+   "title": "українська мова",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/uk_gt/uk_obs",
+     "name": "Відкриті Біблійні історії",
+     "owner": "uk_gt",
+     "scope": ""
+    }
+   ]
+  },
+  "unx": {
+   "title": "Munda",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/unx_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/unx-Deva_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "urd": {
+   "title": "اردو",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ur_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ur-deva_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ur-deva_ulb",
+     "name": "Unlocked Literal Bible - Urdu",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ur-deva_irv",
+     "name": "Indian Revised Version (IRV) Urdu-Deva",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "uzb": {
+   "title": "Oʻzbek, Ўзбек, أۇزبېك",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/uz_gt_final/uz_obs",
+     "name": "Муқаддас Китобнинг Ойдин Ҳикоялари",
+     "owner": "uz_gt_final",
+     "scope": ""
+    }
+   ]
+  },
+  "vah": {
+   "title": "Varhadi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/vah_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "vas": {
+   "title": "Vasave",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/vas_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "vav": {
+   "title": "Dauri Varli",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/vav-x-dauri_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/vav-x-dawri_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/vav-x-dawri_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    }
+   ]
+  },
+  "vie": {
+   "title": "Tiếng Việt",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/vi_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/vi_ulb",
+     "name": "Vietnamese Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/vi_udb",
+     "name": "Vietnamese Unlocked Dynamic Bible",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/Door43-Catalog/vi_glt",
+     "name": "Vietnamese GLT (Gateway Language Literal Text) - Greek Aligned",
+     "owner": "Door43-Catalog",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Aligned Bible",
+     "url": "https://git.door43.org/vi_gl/vi_glt",
+     "name": "Literal Text",
+     "owner": "vi_gl",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "wbr": {
+   "title": "Wagdi",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/wbr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "xis": {
+   "title": "Kisan",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/translationCore-Create-BCS/xis_obs",
+     "name": "Open Bible Stories",
+     "owner": "translationCore-Create-BCS",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/xis_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "xnr": {
+   "title": "Kangri",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-TLF/xnr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-TLF",
+     "scope": ""
+    }
+   ]
+  },
+  "xsr": {
+   "title": "Sherpa",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-OBS4All/xsr_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-OBS4All",
+     "scope": ""
+    }
+   ]
+  },
+  "xsu": {
+   "title": "Sanöma",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/es-419_gl/xsu_obs",
+     "name": "Sutu upa Tiosö kuanoi itö tosokama pewö",
+     "owner": "es-419_gl",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/idiomasPuentes/xsu_tji",
+     "name": "Tiosö japalowi itö tosokama",
+     "owner": "idiomasPuentes",
+     "scope": "Portions of both Testaments"
+    }
+   ]
+  },
+  "ylb": {
+   "title": "Yaleba",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/Door43-Catalog/ylb_obs",
+     "name": "Open Bible Stories",
+     "owner": "Door43-Catalog",
+     "scope": ""
+    }
+   ]
+  },
+  "zho": {
+   "title": "Chinese, Simplified",
+   "items": [
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-Aquifer/zh_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-Aquifer",
+     "scope": ""
+    },
+    {
+     "subject": "Open Bible Stories",
+     "url": "https://git.door43.org/OBS-Aquifer/zh-hant_obs",
+     "name": "Open Bible Stories",
+     "owner": "OBS-Aquifer",
+     "scope": ""
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/zh_cuv",
+     "name": "新标点和合本",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "adn": {
+   "title": "Adang",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Adang-Edisi-Percobaan",
+     "name": "Perjanjian Baru Adang Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "aqm": {
+   "title": "Atohwaim",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Atohwaim-Edisi-Percobaan",
+     "name": "Perjanjian Baru Atohwaim Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "bjn": {
+   "title": "Banjar",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Banjar-Edisi-Percobaan",
+     "name": "Perjanjian Baru Banjar Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "bkr": {
+   "title": "Dusun Kalahien",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Dusun-Kalahien-Edisi-Percobaan",
+     "name": "Perjanjian Baru Dusun Kalahien Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "btm": {
+   "title": "Batak Mandailing",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/Perjanjian-Baru-Batak-Mandailing",
+     "name": "Perjanjian Baru Batak Mandailing",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Batak-Mandailing-Edisi-Percobaan",
+     "name": "Perjanjian Baru Batak Mandailing Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "dun": {
+   "title": "Dusun Deyah",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Dusun-Deyah-Edisi-Percobaan",
+     "name": "Perjanjian Baru Dusun Deya Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "ewe": {
+   "title": "Eʋegbe",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/ee_ulb",
+     "name": "Unlocked Literal Bible - Evegbe",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "hna": {
+   "title": "Mina (Cameroon)",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/hna_ulb",
+     "name": "Unlocked Literal Bible - Mina (Cameroon)",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "iba": {
+   "title": "Dayak Salako",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Dayak-Salako-Edisi-Percobaan",
+     "name": "Perjanjian Baru Dayak Salako Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "kbp": {
+   "title": "Kabiyè",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/kbp_ulb",
+     "name": "Unlocked Literal Bible - Kabiyè",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "kod": {
+   "title": "Kodi",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Gaura-Edisi-Percobaan",
+     "name": "Perjanjian Baru Kodi Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "kpo": {
+   "title": "Ikposo",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/kpo_ulb",
+     "name": "Unlocked Literal Bible - Ikposo",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "las": {
+   "title": "Lama (Togo)",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/las_ulb",
+     "name": "Unlocked Literal Bible - Lama (Togo)",
+     "owner": "Door43-Catalog",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "lra": {
+   "title": "Rara Bakati'",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Bakati-Rara-Edisi-Percobaan",
+     "name": "Perjanjian Baru Bakati Rara Edisi Percobaan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "mya": {
+   "title": "Burmese",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/my_juds",
+     "name": "Burmese Judson Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "plt": {
+   "title": "Plateau Malagasy",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/Door43-Catalog/plt_ulb",
+     "name": "Plateau Malagasy Unlocked Literal Bible",
+     "owner": "Door43-Catalog",
+     "scope": "Full Bible"
+    }
+   ]
+  },
+  "pmy": {
+   "title": "Papuan Malay",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/saripurnomo/pmy_phm_text_ulb_L2",
+     "name": "Unlocked Literal Bible - Philemon",
+     "owner": "saripurnomo",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/saripurnomo/pmy_1ti_text_ulb_L2",
+     "name": "Unlocked Literal Bible - 1 Timothy",
+     "owner": "saripurnomo",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/saripurnomo/pmy_col_text_ulb_L2",
+     "name": "Unlocked Literal Bible - Colossians",
+     "owner": "saripurnomo",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/saripurnomo/pmy_1co_text_ulb_L2",
+     "name": "Unlocked Literal Bible - 1 Corinthians",
+     "owner": "saripurnomo",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/saripurnomo/pmy_1pe_text_ulb_L2",
+     "name": "Unlocked Literal Bible - 1 Peter",
+     "owner": "saripurnomo",
+     "scope": "Portions"
+    },
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/saripurnomo/pmy_1jn_text_ulb_L2",
+     "name": "Unlocked Literal Bible - 1 John",
+     "owner": "saripurnomo",
+     "scope": "Portions"
+    }
+   ]
+  },
+  "ums": {
+   "title": "Pendau",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/Perjanjian-Baru-Pendau",
+     "name": "Perjanjian Baru Pendau",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "xdy": {
+   "title": "Dayak Tamuan",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Dayak-Tamuan-Edisi-Percobaan",
+     "name": "Perjanjian Baru Dayak Tamuan",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  },
+  "xem": {
+   "title": "Hibun",
+   "items": [
+    {
+     "subject": "Bible",
+     "url": "https://git.door43.org/bahtraku/PB-Dayak-Hibun-Edisi-Percobaan",
+     "name": "Perjanjian Baru Dayak Hibun",
+     "owner": "bahtraku",
+     "scope": "New Testament"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "production",
+  "type": "nested-elements-mfe",
+  "label": "UPG100 Posters",
+  "composes": ["my-upg-100-list/upg-100-list", "my-upg-100-list/poster-wall"],
+  "note": "Composite MFE built on the pane-wrapper layout (imitates the shell's 'upg-100-list' panes: map at [0,0], Prayer Lists at [1,0]). Makes this bundle MFE-class (tier 1) in the plugin gallery. See eco-dx (internal): PS001-composition-model."
+}

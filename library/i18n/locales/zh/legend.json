@@ -1,0 +1,97 @@
+{
+  "title": {
+    "adoption": "认领进度",
+    "affinityBlocs": "亲缘板块",
+    "doxaRegions": "Doxa 区域",
+    "engagement": "参与进度",
+    "gospelResources": "福音资源",
+    "languageFamilies": "语系",
+    "prayer": "祷告进度",
+    "upg100List": "我的 UPG100 名单",
+    "batchSelect": "批量选择"
+  },
+  "header": {
+    "collapsed": "图例",
+    "peopleGroupFallback": "民族群体",
+    "default": "图例"
+  },
+  "prayer": {
+    "needsPrayer": "需要祷告",
+    "hasPrayer": "已有祷告",
+    "fullPrayerCoverage": "全面祷告覆盖"
+  },
+  "progress": {
+    "title": "进度",
+    "covered": "{total} 个民族群体中已有 {covered} 个被祷告覆盖 · {pct}%",
+    "short": "{covered} / {total} · {pct}%",
+    "segment": "{label} · {count} · {pct}%"
+  },
+  "engagement": {
+    "needsEngagement": "需要参与",
+    "hasEngagement": "已有参与"
+  },
+  "adoption": {
+    "needsAdoption": "需要认领",
+    "hasAdoption": "已有认领"
+  },
+  "columns": {
+    "upgs": "UUPGs",
+    "population": "人口",
+    "name": "名称"
+  },
+  "footer": {
+    "total": "总计"
+  },
+  "sortByUpgs": "按 UUPG 排序",
+  "sortByPop": "按人口排序",
+  "colLabel": {
+    "religion": "UUPG 宗教",
+    "prayer": "祷告状态",
+    "engagement": "参与状态",
+    "adoption": "认领状态",
+    "status": "状态"
+  },
+  "titleBar": {
+    "legend": "图例",
+    "peopleGroups": "民族",
+    "wagfRegions": "WAGF 区域",
+    "languages": "语言"
+  },
+  "tabInfo": {
+    "upg100Region": "区域 — 按世界区域排列 UPG100 名单（非洲、印度、中东、聋人……）。数字是其下每份名单的 UUPG 与人口总和。",
+    "upg100Zone": "UPG100 名单 — 每一份都是某地区未得之民的祷告名单，也是地图所绘制和上色的内容。每份名单印成独立的祷告册。",
+    "upg100Group": "族群 — 名单内各个未得之民群体，祷告需要最大的排在前面。地图上每个点就是其中之一。",
+    "family": "语系 —— 源自同一祖语的一组语言（如印欧语系、亚非语系）。",
+    "language": "语言 —— 一个民族所使用的交流系统（如阿拉伯语、孟加拉语、印地语）。",
+    "dialect": "方言/变体 —— 一种语言的地区性或社会性形式（如苏丹阿拉伯语；巴基斯坦手语）。",
+    "bloc": "亲缘板块 —— 最宽泛的分组，按文化、语言与地理上的亲缘关系划分（如马来诸族、南亚诸族、聋人、阿拉伯世界）。",
+    "cluster": "民族群 —— 板块之下更细的分组（如马来诸族中的婆罗洲-加里曼丹）。各行标有「(民族群)」，以与民族相区别。",
+    "group": "民族 —— 独立于国界的族群语言身份。各行标有「(民族)」。同一民族可分布于多国（例如聋人分布于一百多个国家）。",
+    "pgic": "国内民族 —— 每个民族在其所居各国各占一行（如「阿拜松盖，马来西亚」）。各行标有「(国内民族)」。",
+    "region": "WAGF 区域 —— 国家所属的大区（如亚洲、非洲）。地图上各有其颜色。",
+    "block": "WAGF 板块 —— 区域之下的次级分组（如东南亚、西非）。",
+    "country": "国家 —— 各个国家，按其板块内未得之民人口排列。"
+  },
+  "a11y": {
+    "expandRow": "展开{label}",
+    "collapseRow": "折叠{label}",
+    "clearSelection": "清除选择",
+    "goUp": "返回上级：{label}"
+  },
+  "export": {
+    "poster": "海报",
+    "packet": "UPG100",
+    "packetExplain": "约 50 到 100 个未得之民的祷告名单——一个人就能领一份。",
+    "packetAria": "祷告手册详细程度",
+    "packetFull": "完整版",
+    "packetLightweight": "精简版"
+  },
+  "noDataAtThisLevel": "此层级没有数据",
+  "exportButton": "导出",
+  "exportSelection": "导出所选内容",
+  "loadingRows": "正在加载{label}…",
+  "loadingData": "正在加载数据…",
+  "showingTop": "显示 {m} 个中的前 {n} 个",
+  "useGeocoderHint": "使用上方的搜索框查找其余内容",
+  "noList": "未加载任何列表。"
+}

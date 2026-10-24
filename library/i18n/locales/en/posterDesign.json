@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "Show full details",
+  "showFullDetailsAria": "Show full details for {label}",
+  "tab": {
+    "styles": "Styles",
+    "sizes": "Sizes"
+  },
+  "styles": {
+    "heading": "Poster styles",
+    "intro": "Every poster template in one place, drawn from the library with sample data. Each card is named by its configuration, so you can ask an agent for exactly that one."
+  },
+  "sizes": {
+    "heading": "Poster sizes",
+    "intro": "Every size a poster can print at, drawn to scale. The large sizes print on several sheets that overlap on the wall; the red strip is where the next sheet is glued on.",
+    "lineup": "All sizes side by side, to scale",
+    "paper": "Standard printer paper",
+    "paperLetter": "US Letter, 8.5 × 11 in",
+    "paperA4": "A4, 210 × 297 mm",
+    "dimsFt": "{w} × {h} ft",
+    "dimsIn": "{w} × {h} in",
+    "dimsInOne": "{v} in",
+    "rowSheets": "Sheets",
+    "rowSheet": "Each sheet",
+    "rowOverlap": "Glued overlap",
+    "rowPhotos": "Photos beside names",
+    "rowPrint": "How it prints",
+    "yes": "Yes",
+    "no": "No",
+    "printHome": "Any home printer",
+    "printShop": "A print shop (a PDF, one page per sheet)",
+    "layoutNote": "The sheets show the layout of the 3 × 3 ft country poster at each size: the header, the map, the names, the table and the scripture footer. The poster drawn at each size appears in Styles as it becomes available.",
+    "sideLanes": "{dims}, side lanes",
+    "packetPage1": "{paper} (packet page 1)",
+    "panels": "{dims}, {n} panels",
+    "anySize": "Any size from the shared size table"
+  },
+  "family": {
+    "mapSheet": "Map sheets",
+    "packet": "Prayer packet",
+    "cards": "Prayer cards",
+    "wall": "Wall panels",
+    "mapPrint": "Map print",
+    "plugins": "From other plugins",
+    "experimental": "Experimental (in progress)",
+    "upgZone": "UPG100 zone posters"
+  },
+  "tpl": {
+    "mapSheetCountry": "Country map sheet",
+    "mapSheetPacketPage": "Packet map page",
+    "packetFull": "Prayer packet, full",
+    "packetLightweight": "Prayer packet, lightweight",
+    "cards": "Prayer cards",
+    "blessPanels": "Bless wall panels",
+    "mapPrint": "Map print",
+    "upgZonePoster": "UPG100 zone poster",
+    "upgZonePacket": "UPG100 prayer packet, page 1"
+  },
+  "missing": {
+    "bless": "The sheets, the glue strips and where the card rows go come from the shared panel geometry; the cards are shown as a layout, because the Bless wall draws its cards in its own plugin.",
+    "mapPrint": "This template prints the live map the reader is looking at, so it has no sample picture.",
+    "noCountryAtSize": "No country prints at this size today: India, the one country that did, now prints at 5 × 8 ft only. It is drawn here with a sample country to show the template."
+  },
+  "details": {
+    "configName": "Configuration name",
+    "copyName": "Copy",
+    "size": "Size",
+    "fileSize": "File size",
+    "fileSizeUnknown": "Measured when the poster is drawn",
+    "settings": "Settings",
+    "sample": "Sample data",
+    "renderer": "Renderer",
+    "legacy": "Legacy size: it still prints, but the print picker no longer offers it.",
+    "forAgents": "To use this template, tell an agent: use configuration {name}.",
+    "openPage": "Open its page"
+  },
+  "templateCount": "{n} templates | {n} template | {n} templates",
+  "fromPlugin": "Made by its own plugin. Show full details shows it live."
+}

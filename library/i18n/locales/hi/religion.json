@@ -1,0 +1,14 @@
+{
+  "family": {
+    "Christianity": "ईसाई धर्म",
+    "Islam": "इस्लाम",
+    "Hinduism": "हिंदू धर्म",
+    "Buddhism": "बौद्ध धर्म",
+    "Ethnoreligion": "जातीय धर्म",
+    "Judaism": "यहूदी धर्म",
+    "Sikhism": "सिख धर्म",
+    "Unaffiliated": "असंबद्ध",
+    "Other": "अन्य",
+    "Unknown": "अज्ञात"
+  }
+}

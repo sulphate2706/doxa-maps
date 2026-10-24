@@ -1,0 +1,7 @@
+{
+  "stage": "production",
+  "_comment": "Capability-4 composite: the monolithic doxa-research-map (cap-3) stacked above the people-groups-grid (cap-2), scrolled as one element. THE MOBILE SIBLING of dashboard-plus-grid — the 2026-09-22 ruling was two separate cap-4 plugins rather than one element that swaps its top half by aspect ratio ('that would be really complex'); the SPA picks which one to show. Composes by TAG + BUNDLE URL (the stack-demo element/src contract) rather than baking the children in, because importing the research map's .vue directly would bypass doxa-research-map/index.js and silently drop its bundle-private colour strategies, its profileModules registry, its Pinia/i18n pair and the RTL plugin. The grid's own search + filters are ON here (unlike the desktop sibling, where the dashboard header owns them).",
+  "type": "nested-elements-mfe",
+  "composes": ["doxa-research-map", "people-groups-grid"],
+  "label": "Research Map + Grid (mobile composite, stacked to scroll)"
+}

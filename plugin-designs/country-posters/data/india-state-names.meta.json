@@ -1,0 +1,44 @@
+{
+  "what": "India's 36 states and union territories, named in the 11 UI locales, for the Country Posters wall's card labels.",
+  "source": "Wikidata (https://www.wikidata.org): labels of the items whose ISO 3166-2 code (P300) matches data/people-groups/india-states.json; dissolved items (P576) excluded.",
+  "licence": "CC0 1.0: Wikidata structured data is released under CC0 (https://creativecommons.org/publicdomain/zero/1.0/).",
+  "english": "the state table's own name (the English wall is unchanged); Wikidata's English is only a cross-check",
+  "retrieved": "2026-09-30",
+  "regenerate": "node plugin-designs/country-posters/scripts/emit-india-state-names.mjs",
+  "query": "SELECT ?code ?lang ?label WHERE {\n  VALUES ?code { \"IN-AN\" \"IN-AP\" \"IN-AR\" \"IN-AS\" \"IN-BR\" \"IN-CG\" \"IN-CH\" \"IN-DH\" \"IN-DL\" \"IN-GA\" \"IN-GJ\" \"IN-HP\" \"IN-HR\" \"IN-JH\" \"IN-JK\" \"IN-KA\" \"IN-KL\" \"IN-LA\" \"IN-LD\" \"IN-MH\" \"IN-ML\" \"IN-MN\" \"IN-MP\" \"IN-MZ\" \"IN-NL\" \"IN-OD\" \"IN-PB\" \"IN-PY\" \"IN-RJ\" \"IN-SK\" \"IN-TN\" \"IN-TR\" \"IN-TS\" \"IN-UK\" \"IN-UP\" \"IN-WB\" }\n  ?item wdt:P300 ?code .\n  FILTER NOT EXISTS { ?item wdt:P576 ?dissolved }\n  ?item rdfs:label ?label . BIND(LANG(?label) AS ?lang)\n  FILTER(?lang IN (\"en\", \"es\", \"fr\", \"pt\", \"de\", \"it\", \"ro\", \"ru\", \"ar\", \"hi\", \"zh-hans\", \"zh-cn\", \"zh\"))\n}",
+  "codeAliases": {
+    "IN-CT": "IN-CG",
+    "IN-OR": "IN-OD",
+    "IN-TG": "IN-TS",
+    "IN-UT": "IN-UK"
+  },
+  "reviewedOverrides": [
+    "IN-DH zh: \"达德拉-纳加尔哈维利和达曼-第乌\" (Wikidata has only a Traditional-script zh label; converted character by character to the Simplified catalogue script)",
+    "IN-OR ar: \"أديشة\" (the label is the pre-2011 name Orissa (أريسة); ar.wikipedia's title for the item is أديشة (Odisha))"
+  ],
+  "gaps": [],
+  "ambiguous": [],
+  "fallbacks": [
+    "IN-CH es: \"Chandigarh\" from the same-named item (1 of 1)",
+    "IN-CH fr: \"Chandigarh\" from the same-named item (1 of 1)",
+    "IN-CH pt: \"Chandigarh\" from the same-named item (1 of 1)",
+    "IN-CH de: \"Chandigarh\" from the same-named item (1 of 1)",
+    "IN-CH it: \"Chandigarh\" from the same-named item (1 of 1)",
+    "IN-CH ar: \"شَنديغار\" from the same-named item (1 of 1)",
+    "IN-CH hi: \"चण्डीगढ़\" from the same-named item (1 of 1)",
+    "IN-CH zh: \"昌迪加尔\" from the same-named item (1 of 1)",
+    "IN-DL es: \"Delhi\" from the same-named item (preferred)",
+    "IN-DL fr: \"Delhi\" from the same-named item (preferred)",
+    "IN-DL pt: \"Delhi\" from the same-named item (preferred)",
+    "IN-DL de: \"Delhi\" from the same-named item (preferred)",
+    "IN-DL it: \"Delhi\" from the same-named item (preferred)",
+    "IN-DL ro: \"Delhi\" from the same-named item (preferred)",
+    "IN-DL ru: \"Дели\" from the same-named item (preferred)",
+    "IN-DL ar: \"دلهي\" from the same-named item (preferred)",
+    "IN-DL hi: \"दिल्ली\" from the same-named item (preferred)",
+    "IN-DL zh: \"德里\" from the same-named item (preferred)"
+  ],
+  "englishMismatches": [
+    "IN-DL: table \"Delhi\" vs Wikidata \"National Capital Territory of Delhi\"; same-named labels preferred"
+  ]
+}

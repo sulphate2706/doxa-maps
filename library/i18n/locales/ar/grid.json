@@ -1,0 +1,22 @@
+{
+  "search": "ابحث عن الشعوب…",
+  "hide_filters": "إخفاء عوامل التصفية",
+  "show_filters": "إظهار عوامل التصفية",
+  "total": "الإجمالي",
+  "showing": "المعروض",
+  "load_more": "عرض المزيد",
+  "full_profile": "الملف الكامل",
+  "wagf_region": "المنطقة",
+  "wagf_block": "كتلة التقارب",
+  "rop1": "الشعب",
+  "religion": "الدين",
+  "exact_filter": "تطابق تام",
+  "clear_all": "مسح الكل",
+  "loading": "جارٍ التحميل…",
+  "no_results": "لا توجد شعوب مطابقة لهذا التصفية.",
+  "type_to_search": "اكتب للبحث...",
+  "load_failed": "تعذّر تحميل بيانات الشعوب. هذه مشكلة اتصال، وليست مشكلة في التصفية.",
+  "search_people_or_countries": "ابحث عن الشعوب أو الدول…",
+  "cards_per_row": "البطاقات في كل صف",
+  "cards_per_row_auto": "تلقائي"
+}

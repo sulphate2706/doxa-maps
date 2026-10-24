@@ -1,0 +1,13 @@
+{
+  "stage": "production",
+  "type": "nested-elements-mfe",
+  "label": "Regions — List + Dashboards",
+  "composes": [
+    "regions-dashboard/regions-list",
+    "regions-dashboard/region-dashboards"
+  ],
+  "note": "The 2-tab Regions element. Composite MFE on the pane-wrapper layout, imitating my-upg-100-list/upg-100-mfe: a SELECT VIEW switcher (library/components/ViewSelect.vue) over Regions List at [0,0] and Region Dashboards at [1,0]. Clicking a region or country on tab 1 forwards the selection on 'doxa-regions-dashboard:select' and swaps to tab 2. pinHint:false: the cloned pages carry no coach-mark, and the composite must declare it because a pane's config comes from here, not from the child's own meta.",
+  "config": {
+    "pinHint": false
+  }
+}

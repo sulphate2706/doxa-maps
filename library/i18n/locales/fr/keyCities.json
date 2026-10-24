@@ -1,0 +1,64 @@
+{
+  "map": {
+    "title": "Regroupements de repères de peuples",
+    "bands": {
+      "named": "centre nommé",
+      "multi": "plusieurs peuples",
+      "single": "un seul peuple"
+    },
+    "note": "Un point est un regroupement de repères de peuples dans un rayon d’environ 25 km, pas une limite municipale. Les points nommés proviennent d’un répertoire géographique cité.",
+    "unnamed": "lieu sans nom — {lat}, {lng}",
+    "close": "Fermer",
+    "country": "Pays",
+    "admin": "Zone administrative",
+    "peopleGroups": "Peuples",
+    "upgPopulation": "Population UPG",
+    "internet": "Internet du pays",
+    "unknown": "inconnu",
+    "pgHere": "Peuples ici",
+    "languages": "Langues",
+    "sheetNote": "Un regroupement de repères de peuples dans un rayon d’environ 25 km, pas une limite municipale. Les points nommés proviennent d’un répertoire géographique cité (Nominatim/OSM) ; les points sans nom affichent des coordonnées plutôt qu’un nom inventé.",
+    "national": "Les chiffres Internet sont NATIONAUX.",
+    "engineMissing": "Le moteur de carte n’a pas pu être chargé."
+  },
+  "list": {
+    "title": "Villes clés",
+    "intro": "Regroupements de repères de peuples : regroupements nommés (d’après un répertoire cité) : {named}, sur des regroupements localisés : {clusters}.",
+    "filters": {
+      "named": "Centres de population nommés",
+      "multi": "Regroupements de plusieurs peuples",
+      "all": "Tous les lieux"
+    },
+    "locations": "lieux : {n}",
+    "peopleGroups": "peuples : {n}",
+    "caveat": {
+      "rowLead": "Ce qu’est une ligne.",
+      "row": "Un regroupement de repères de peuples dans un rayon d’environ 25 km, pas une limite municipale. Chaque repère représente un peuple, pas une ville, donc les regroupements ne sont jamais nommés par déduction : les {n} centres à plusieurs peuples ont été identifiés avec {source} (ODbL, cité à chaque ligne) et les autres restent sans nom plutôt que devinés.",
+      "internet": "Ils sont donnés comme contexte : la connectivité par ville n’est pas publique à cette échelle, et un chiffre national ne doit pas être lu comme une mesure de la ville.",
+      "scope": "Cette page ne contient que les emplacements des peuples et la connectivité — aucune donnée sur les églises, les croyants ou les lieux de réunion, à dessein."
+    },
+    "moreLanguages": "{n} autres"
+  },
+  "tables": {
+    "title": "Données des villes clés",
+    "intro": "Chaque centre localisé, les langues qu’on y parle et les canaux qui l’atteignent. Triez, filtrez et exportez chaque tableau ; chacun indique ses sources et ses limites.",
+    "tabs": {
+      "cities": "Villes clés",
+      "langcity": "Langues ici",
+      "languages": "Par pays",
+      "operators": "FAI et opérateurs",
+      "messaging": "Messageries"
+    },
+    "loading": "Chargement de {name}…"
+  },
+  "posters": {
+    "heading": "Affiches des villes clés",
+    "tag": "Mobilisation à la prière",
+    "itemNoun": "ville",
+    "itemNounPlural": "villes",
+    "soon": "Bientôt : une liste de prière pour chaque ville, nommant chaque peuple non atteint qui y vit.",
+    "intro": "Une feuille imprimable pour chaque centre de population où vivent des peuples non atteints, nommé d’après un répertoire géographique cité, jamais par déduction.",
+    "otherRegion": "Autres"
+  },
+  "loadFailed": "Les données n’ont pas pu être chargées : {detail}"
+}

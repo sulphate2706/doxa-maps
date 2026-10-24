@@ -1,0 +1,35 @@
+{
+  "_": "Element census preset for check:element-census-vs-live — see internal/check-element-census-vs-live.mjs. Every sanctioned entry must carry the ruling, the date and the card; an entry without them is refused.",
+  "owner": "regions",
+  "pages": [
+    { "name": "list /regions", "leaf": "regions-dashboard/regions-list/index.html", "live": "https://doxa.life/regions" },
+    { "name": "region /regions/africa", "leaf": "regions-dashboard/region-dashboards/index.html#africa", "live": "https://doxa.life/regions/africa" }
+  ],
+  "neg": { "leaf": "regions-dashboard/regions-list/index.html", "text": "View country posters" },
+  "sanctioned": [
+    {
+      "match": "^(Select view|Regions List|Dashboard)$", "flags": "i",
+      "what": "the SELECT VIEW tab strip — sanctioned addition #1",
+      "ruling": "the tabs added, and what the dashboard tab shows before a region or country is selected",
+      "date": "2026-09-24", "card": "SPEC-REGIONS-IS-A-CLONE-PLUS-EXACTLY-TWO-ADDITIONS"
+    },
+    {
+      "match": "^(All Regions|Pick a region or a country on the Regions List tab to narrow this dashboard\\.)$", "flags": "i",
+      "what": "the no-selection chooser — sanctioned addition #2",
+      "ruling": "the tabs added, and what the dashboard tab shows before a region or country is selected",
+      "date": "2026-09-24", "card": "SPEC-REGIONS-IS-A-CLONE-PLUS-EXACTLY-TWO-ADDITIONS"
+    },
+    {
+      "match": "^(View country posters|Hide country posters)$", "flags": "i",
+      "what": "the country-poster toggle — sanctioned addition #3 (regions-list.vue:55)",
+      "ruling": "a toggle or caret at the bottom of each region section that says View country posters",
+      "date": "2026-09-24", "card": "BUILD-REGIONS-POSTER-DROPDOWN-REUSE-THE-SHARED-POSTERWALL"
+    },
+    {
+      "match": "^(Regions|Countries)$", "flags": "",
+      "what": "the chooser's keyboard/screen-reader dropdowns, required by the card for addition #2",
+      "ruling": "the tabs added, and what the dashboard tab shows before a region or country is selected",
+      "date": "2026-09-24", "card": "BUILD-REGIONS-NO-SELECTION-PICK-FROM-THE-MAP"
+    }
+  ]
+}

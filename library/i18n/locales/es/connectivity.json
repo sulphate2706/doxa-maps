@@ -1,0 +1,73 @@
+{
+  "title": "Acceso a internet donde viven pueblos sin implicación",
+  "bands": {
+    "yes": "conectado 60%+",
+    "partial": "parcial 25–59%",
+    "no": "bajo, menos del 25%",
+    "unknown": "sin medir"
+  },
+  "peopleGroup": "pueblo",
+  "caveat": "Cifras NACIONALES (Banco Mundial). La conectividad por ciudad no está disponible públicamente: no deduzca una ciudad a partir de su país.",
+  "sheet": {
+    "close": "Cerrar",
+    "ai": "Estos datos se obtuvieron mediante investigación con IA y pueden contener información falsa.",
+    "dismiss": "Descartar",
+    "internetUsers": "Usuarios de internet",
+    "measured": "Medido",
+    "mobilePer100": "Móviles por cada 100",
+    "peopleGroups": "Pueblos",
+    "topPlatform": "Plataforma principal",
+    "unknown": "desconocido",
+    "carriers": "Operadores y proveedores de internet ({n})",
+    "socialPlatforms": "Redes sociales",
+    "note": "Cifras nacionales, no mediciones por ciudad. Los nombres de operadores son titulares de registros ASN (incluyen bancos y universidades además de proveedores), así que la marca de operador es una heurística por nombre, no una clasificación verificada."
+  },
+  "list": {
+    "title": "Ciudades con internet",
+    "intro": "Conectividad donde viven los pueblos no alcanzados. Cada cifra es una estadística nacional medida, con su año de observación —",
+    "introStrong": "«desconocido» significa no medido, nunca supuesto.",
+    "countries": "países: {n}",
+    "measured": "medidos: {n}",
+    "unknown": "desconocidos: {n}",
+    "low": "baja conectividad: {n}",
+    "sectionMeta": "países: {countries} · pueblos: {groups}",
+    "unmeasured": "sin medir: {n}",
+    "rowMeta": "pueblos: {groups} · lugares: {locations}",
+    "centres": "centros de población: {n}",
+    "mobPer100": "móv./100",
+    "band": {
+      "yes": "conectado",
+      "partial": "parcial",
+      "no": "baja",
+      "unknown": "desconocido"
+    },
+    "source": "Cifras de internet y móvil: Datos Abiertos del Banco Mundial (CC BY 4.0), observación más reciente 2018–2024. Rangos: conectado ≥60 % · parcial 25–59 % · baja <25 % de la población usa internet. Resolución por país: no hay mediciones públicas por ciudad a esta escala. Los nombres de proveedores y operadores y el historial de censura requieren informes citados por país y no se muestran."
+  },
+  "tables": {
+    "title": "Datos de ciudades",
+    "intro": "Dónde viven los pueblos no alcanzados, y qué les llega. Ordena, filtra y exporta cualquier tabla; cada una indica sus fuentes y límites.",
+    "tabs": {
+      "cities": "Ciudades clave",
+      "internet": "Conectividad",
+      "operators": "Proveedores y operadores",
+      "social": "Redes sociales",
+      "messaging": "Mensajería"
+    },
+    "loading": "Cargando {name}…"
+  },
+  "adm1": {
+    "title": "India por estado: han usado internet alguna vez",
+    "women": "Mujeres",
+    "men": "Hombres",
+    "total": "Total",
+    "urban": "Urbano",
+    "rural": "Rural",
+    "source": "NFHS-5 (2019–21), personas de 15 a 49 años: proporción que ha usado internet alguna vez. Una encuesta a personas, no un recuento de suscripciones.",
+    "missing": "Aún no hay límite estatal para {names}: sus cifras están en los datos, no en el mapa."
+  },
+  "loading": "Dibujando el mapa…",
+  "ui": {
+    "showKey": "Expandir la leyenda",
+    "hideKey": "Contraer la leyenda"
+  }
+}

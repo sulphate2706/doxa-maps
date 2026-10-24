@@ -1,0 +1,4660 @@
+{
+ "meta": {
+  "title": "Who translated it — attribution for the Scripture this map links to",
+  "source": "https://ebible.org/Scriptures/translations.csv",
+  "generated": "2026-09-25",
+  "catalogue_rows": 1551,
+  "rows_with_an_organisation": 1440,
+  "codes_joined": 929,
+  "codes_with_no_catalogue_row": 0,
+  "codes_whose_copyright_is_a_licence_not_a_translator": 35,
+  "note": "Names only. The catalogue also carries homeDomain and publicationURL; those are deliberately not shipped, because a link would put a publisher into this map that the doctrine screen has never seen. Adds no resource and moves no tier."
+ },
+ "byCode": {
+  "tel": {
+   "org": "World Bible Translation Center",
+   "year": "1992",
+   "title": "హోలీ బైబిల్"
+  },
+  "mey": {
+   "org": "Pioneer Bible Translators",
+   "year": "2024",
+   "title": "اكتاب مولانا المقدس"
+  },
+  "ben": {
+   "org": "World Bible Translation Center",
+   "year": "2001",
+   "title": "পবিত্র বাইবেল"
+  },
+  "hin": {
+   "org": "World Bible Translation Center",
+   "year": "1992",
+   "title": "पवित्र बाइबल"
+  },
+  "azb": {
+   "org": "Müqəddəs Kitab Sirkəti",
+   "year": "2008",
+   "title": "Azərbaycan dilində Müqəddəs Kitab"
+  },
+  "mal": {
+   "org": "Bridge Communication Systems",
+   "year": "2017",
+   "title": "ഇന്ത്യൻ റിവൈസ്ഡ് വേർഷൻ (IRV) - മലയാളം"
+  },
+  "mar": {
+   "org": "Bridge Connectivity Solutions",
+   "year": "2017",
+   "title": "इंडियन रीवाइज्ड वर्जन (IRV) - मराठी"
+  },
+  "kan": {
+   "org": "World Bible Translation Center",
+   "year": "1992",
+   "title": "ಪವಿತ್ರ ಬೈಬಲ್, ಈಸಿ ಓದುವಿಕೆ ಆವೃತ್ತಿ"
+  },
+  "dyu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Jula"
+  },
+  "tam": {
+   "org": "World Bible Translation Center",
+   "year": "1994",
+   "title": "புனித பைபிள் படிக்க எளிதாக"
+  },
+  "guj": {
+   "org": "World Bible Translation Center",
+   "year": "1997",
+   "title": "પવિત્ર બાઇબલ"
+  },
+  "hne": {
+   "org": "Biblica, Inc",
+   "year": "2012",
+   "title": "Biblica® सुतंतर समकालीन छत्तीसगढ़ी अनुवाद"
+  },
+  "ory": {
+   "org": "Bridge Connectivity Solutions",
+   "year": "2017",
+   "title": "ଇଣ୍ଡିୟାନ ରିୱାଇସ୍ଡ୍ ୱରସନ୍ ଓଡିଆ"
+  },
+  "asm": {
+   "org": "Bridge Connectivity Solutions",
+   "year": "2017",
+   "title": "ইণ্ডিয়ান ৰিভাইচ ভাৰচন (IRV) আচামিচ - 2019"
+  },
+  "npi": {
+   "org": "World Bible Translation Center",
+   "year": "1999",
+   "title": "The Holy Bible, Easy Reading Version, in Nepali"
+  },
+  "urd": {
+   "org": "Bridge Connectivity Solutions Pvt. Ltd",
+   "year": "2019",
+   "title": "इंडियन रिवाइज्ड वर्जन (IRV) उर्दू - 2019"
+  },
+  "yao": {
+   "org": "The Word for the World International",
+   "year": "2018",
+   "title": "Lilangano lya Sambano"
+  },
+  "mwe": {
+   "org": "Pioneer Bible Translators and The Word for the World International",
+   "year": "2020",
+   "title": "Malagano ga Ambi"
+  },
+  "ziw": {
+   "org": "The Word for the World and Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Lagano hya"
+  },
+  "mgh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1927",
+   "title": "Makhuwa-Meetto do Novo Testamento"
+  },
+  "kdh": {
+   "org": "Association Bible Tem",
+   "year": "2019",
+   "title": "Ɩsɔ́ɔ-dɛ́ɛ Tɔ́m Tákaraɖá"
+  },
+  "cmn": {
+   "org": "World Bible Translation Center",
+   "year": "2004",
+   "title": "圣 经 普通话本"
+  },
+  "kby": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Kanuri Manga NT Translation"
+  },
+  "eng": {
+   "org": "The Lockman Foundation",
+   "year": "2015",
+   "title": "The Amplified Bible (2015)"
+  },
+  "wol": {
+   "org": "La Mission Baptiste du Sénégal",
+   "year": "2010",
+   "title": "Téereb Injiil"
+  },
+  "qxn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Señor Jesucristopa alli willacuynin"
+  },
+  "mni": {
+   "org": "The Word for the World International",
+   "year": "2022",
+   "title": "ANOUBA WAREPNABA"
+  },
+  "ndg": {
+   "org": "Door43 World Mission Community",
+   "year": "2020",
+   "title": "Ndengereko Bible"
+  },
+  "xsm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1997",
+   "title": "Kasem"
+  },
+  "pll": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "The New Testament in Shwe Palaung"
+  },
+  "mge": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Mango"
+  },
+  "pes": {
+   "org": "Biblica, Inc",
+   "year": "2022",
+   "title": "Biblica® Open Persian Contemporary Bible 2022"
+  },
+  "mdy": {
+   "org": "Bible Society of Ethiopia",
+   "year": "2007",
+   "title": "Maale New Testament"
+  },
+  "bod": {
+   "org": "gSungrab",
+   "year": "2009",
+   "title": "Central Tibetan Bible"
+  },
+  "fuf": {
+   "org": "Pioneer Bible Translators",
+   "year": "2010",
+   "title": "Version Pular Fuuta-Jallon"
+  },
+  "msc": {
+   "org": "Pioneer Bible Translators",
+   "year": "2022",
+   "title": "Alla la Kitabu Seniman"
+  },
+  "spa": {
+   "org": "AudioBiblia.org /Irma Flores",
+   "year": "2018",
+   "title": "La Biblia en Español Sencillo"
+  },
+  "ewe": {
+   "org": "Biblica, Inc",
+   "year": "1988",
+   "title": "Biblica® Se aɖeke mebla Biblia zazã o Agbenya La™"
+  },
+  "yom": {
+   "org": "Biblica, Inc",
+   "year": "2002",
+   "title": "Biblica® Open Nkanda wu Moyo, Nguizani Yimona ayi Minkunga 2002"
+  },
+  "pan": {
+   "org": "Bridge Connectivity Solutions",
+   "year": "2017",
+   "title": "ਇੰਡਿਅਨ ਰਿਵਾਇਜ਼ਡ ਵਰਜ਼ਨ (IRV) - ਪੰਜਾਬੀ"
+  },
+  "alw": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "ሃዕሮ ወኣድ መጻፈ"
+  },
+  "nya": {
+   "org": "Biblica, Inc",
+   "year": "2016",
+   "title": "Biblica® Tsekulani Mawu a Mulungu mu Chichewa Chalero"
+  },
+  "div": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "ކިތާބުލް މުޤައްދަސް"
+  },
+  "mai": {
+   "org": "Wycliffe Bible Translators, Inc. and The Bible Society of India",
+   "year": "2010",
+   "title": "Maithili"
+  },
+  "sml": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Central Sinama 2008 NT"
+  },
+  "tur": {
+   "org": "Biblica, Inc",
+   "year": "2023",
+   "title": "Open Basic Turkish New Testament"
+  },
+  "pga": {
+   "org": "Pioneer Bible Translators",
+   "year": "",
+   "title": "Kitab al Mukadas ma Arabi Juba"
+  },
+  "sle": {
+   "org": "The Word for the World International",
+   "year": "2023",
+   "title": "ಕ್ಹುದಾನಿ ಕ್ಹರಿನಿ ವಾಕ್ಯಾ"
+  },
+  "blt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Tai Dam"
+  },
+  "bsp": {
+   "org": "Pioneer Bible Translators",
+   "year": "2015",
+   "title": "Kitabu ka Kanu"
+  },
+  "nod": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "พระคริสตธรรมคัมภีร ภาคพันธสัญญาใหม"
+  },
+  "por": {
+   "org": "Free Bible Ministry, Inc",
+   "year": "2022",
+   "title": "Biblia Livre Para Todos"
+  },
+  "moz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Mattup ki Taasuwa ere Aware"
+  },
+  "hlb": {
+   "org": "The Word for the World International and Mehra Bhasha Samiti, Betul, (M.P.)",
+   "year": "2023",
+   "title": "परमेस्वर को सच्चो वचन ख जाननू"
+  },
+  "bhu": {
+   "org": "The Word for the World International",
+   "year": "",
+   "title": "भगवान कर सच्चा बचन"
+  },
+  "suz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "परमप्रभु यावे आ लोव़"
+  },
+  "sbs": {
+   "org": "Door 43 International Mission Community",
+   "year": "2020",
+   "title": "Kuhane Bible"
+  },
+  "vgr": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "పవిత్ర్ బైబిల్‍"
+  },
+  "hau": {
+   "org": "Biblica, Inc",
+   "year": "2009",
+   "title": "Biblica® Buɗaɗɗen Littafi Mai Tsarki, Sabon Rai Don Kowa™"
+  },
+  "bcc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Balóchi Balochi"
+  },
+  "soy": {
+   "org": "UEEB/SIM au Benin",
+   "year": "2010",
+   "title": "Nkomine Fal Ritɛlɛ́"
+  },
+  "bgc": {
+   "org": "The Love Fellowship",
+   "year": "2021",
+   "title": "हरियाणवी बाइबिल"
+  },
+  "brb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "ព្រះគម្ពីរ ព្រៅ"
+  },
+  "thv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Awal n Messineɣ s Tamahaq"
+  },
+  "rmy": {
+   "org": "anonymous",
+   "year": "2018",
+   "title": "Luka"
+  },
+  "pac": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Pacoh, Cado"
+  },
+  "bqj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Firim fafu fal Aláemit"
+  },
+  "gbl": {
+   "org": "Beyond Translation",
+   "year": "2022",
+   "title": "ગામીત નોવો કરાર"
+  },
+  "gax": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "Kitaaba Woyyuu"
+  },
+  "kbo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Keliko"
+  },
+  "cpu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "KAMEETHARI ÑAANTSI: Iñaaventaitzirira Avinkatharite Jesucristo"
+  },
+  "mbd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1988",
+   "title": "Dibabawon Manobo texts"
+  },
+  "lbj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Ladakhi"
+  },
+  "amh": {
+   "org": "United Bible Societies",
+   "year": "1962",
+   "title": "መጽሐፍ ቅዱስ"
+  },
+  "cbi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Diosa' kiika; Génesis, Éxodo y El Nuevo Testamento"
+  },
+  "tuo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Õ'âkĩ̶ hɨ yeere uúkũri turi Tukano"
+  },
+  "prq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Ashéninka Perené"
+  },
+  "sus": {
+   "org": "Mission Evangélique Reformée Néerlandaise et les Traducteurs Pionniers de la Bible",
+   "year": "2015",
+   "title": "Soso Kitaabuie: Tawureta, Yabura, Inyila"
+  },
+  "daa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Jamaw ta Marbinto: Kabarre ta Gala ɗo bi ka Iisa Masi iŋ daŋla"
+  },
+  "tgk": {
+   "org": "Фонди «Калом»",
+   "year": "2010",
+   "title": "Хушхабар"
+  },
+  "des": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Desano"
+  },
+  "ydd": {
+   "org": "Artists for Israel International",
+   "year": "2022",
+   "title": "דער ארטאדאקסישע יידישער ברית חדשה"
+  },
+  "knf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Ulibra wi Naşibaţi"
+  },
+  "gaz": {
+   "org": "Biblica, Inc",
+   "year": "2022",
+   "title": "Kitaaba Qulqulluu, Biblica® Hiikkaa Ammayyaa Banamaa Haaraa, Loqoda Dhiʼaa"
+  },
+  "bor": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Pao Kurireu Bataru Kurireu; O Novo Testamento"
+  },
+  "pir": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Cohãcjʉ̃ Yere Yahuducuri Tju"
+  },
+  "amr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Jesucristo oy oa’pak: Kenda Jesucristoa; monigka’uyatenok; Diostaj mo’manopo’yarea’ika’ne"
+  },
+  "qvz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Diospa shimi"
+  },
+  "xsr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "कोन्छ्‌योककी सुङ"
+  },
+  "cdz": {
+   "org": "Bridge Connectivity Solutions Pvt. Ltd",
+   "year": "2024",
+   "title": "কড়া অনুবাদ"
+  },
+  "cui": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Nacom Pejume Diwesi po diwesi pena jume diwesi xua Jesucristo yabara tinatsi"
+  },
+  "zlm": {
+   "org": "Pengamat Kitab Mulia",
+   "year": "2013",
+   "title": "Kitab Suci Zabur dan Injil"
+  },
+  "kpj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Deuxu Rybe Tyyriti"
+  },
+  "arq": {
+   "org": "United Bible Societies",
+   "year": "2018",
+   "title": "العهد الجديد باللهجة الجزائرية"
+  },
+  "ind": {
+   "org": "oleh Yayasan Alkitab BahasaKita (Albata) dan Pioneer Bible Translators International",
+   "year": "2021",
+   "title": "Alkitab Terjemahan Sederhana Indonesia, Edisi Ketiga"
+  },
+  "yad": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Ju̱denu jto̱ nijya̱nvamyu"
+  },
+  "bru": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Parnai Yiang Sursĩ - Kinh Thánh tiếng Bru"
+  },
+  "mcd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Diospan Tsain"
+  },
+  "fin": {
+   "org": "Biblica, Inc",
+   "year": "1976",
+   "title": "Biblica® Avoin Elävä uutinen: Uusi testamentti vapaasti kerrottuna"
+  },
+  "tue": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Cõãmacʉ̃ mecʉ̃ã wedesei"
+  },
+  "bgg": {
+   "org": "The Word for the World International",
+   "year": "2023",
+   "title": "Iwo Surua Mua Wie Pha Bible"
+  },
+  "sri": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Marĩpʉya Kerere Wereri Turi"
+  },
+  "yaa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Niospa meka fena Jesucristoõnoa"
+  },
+  "cub": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Majepacʉ jʉ̃menijicʉi yávaiye mamaene coyʉitucubo"
+  },
+  "bmr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Moocaani iijɨ"
+  },
+  "cbc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Dios Cʉ̃ Cauetibʉjʉ Cũrĩcã Tuti"
+  },
+  "myy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Dios Oca Tuti"
+  },
+  "pah": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1996",
+   "title": "Tupanaʼga nhiʼig̃a"
+  },
+  "snn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Riusu cocabera: mai ëjaguë Jesucristo ba'iyete toyani jo'case'e'ë"
+  },
+  "shp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Diossen joi jatíxonbi onanti joi"
+  },
+  "bao": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "U̶mʉreco pacʉ wederique"
+  },
+  "arb": {
+   "org": "Biblica, Inc.® ح‫قوق الطبع",
+   "year": "1988",
+   "title": "Ketab El Hayat Majani/كتاب الحياة مجانى"
+  },
+  "ahr": {
+   "org": "The Word for the World International and Ahirani Christi Iswari Mandli, Sakri, Dhule, Maharashtra",
+   "year": "2023",
+   "title": "प्रेम संदेश"
+  },
+  "bdv": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "ସଃର୍ଗାର୍‌ ବାଟ୍‌ ନଃଉଁଆ ନିଅମ୍‌"
+  },
+  "bfz": {
+   "org": "The Love Fellowship",
+   "year": "2021",
+   "title": "बघल्याणी नवां विधान"
+  },
+  "bhd": {
+   "org": "The Love Fellowship",
+   "year": "2020",
+   "title": "भड्लाई बाइबिल"
+  },
+  "bht": {
+   "org": "The Love Fellowship",
+   "year": "2022",
+   "title": "भटियाली नोआ नियम"
+  },
+  "ceb": {
+   "org": "Door43 World Missions Community",
+   "year": "2019",
+   "title": "Balaan nga Bibliya"
+  },
+  "ckb": {
+   "org": "anonymous",
+   "year": "2020",
+   "title": "Biblica® وەشانی بێبەرامبەری کوردیی سۆرانیی ستاندەر"
+  },
+  "dhn": {
+   "org": "The Word for the World International and Dhankavi Mandli, Khargon, Raykhed, Nandurbar, Maharashtra",
+   "year": "2025",
+   "title": "परमेश्वरन सत्य वचन"
+  },
+  "dso": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "ସତିଅର୍‌ ବାଟ୍‌"
+  },
+  "glk": {
+   "org": "gilakmedia.com",
+   "year": "2014",
+   "title": "Gilaki John"
+  },
+  "gof": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "ጌሻ ማፃፋ"
+  },
+  "gok": {
+   "org": "The Word for the World International and Gowly Marathi Translation Samti, Karnataka",
+   "year": "2023",
+   "title": "ದೆವಾಚಿ ಖರಿ ಕಬರ್"
+  },
+  "hun": {
+   "org": "Biblica, Inc",
+   "year": "2021",
+   "title": "Biblica® Nyitott Újszövetség: élet, igazság és világosság"
+  },
+  "ilo": {
+   "org": "Door43 World Missions Community",
+   "year": "2019",
+   "title": "Ti Biblia"
+  },
+  "juy": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "ଆଜାଡ଼ି ତଙରନ୍‌"
+  },
+  "kff": {
+   "org": "The Word for the World International and Koya Translation Samithi, Malkangiri, Odisha",
+   "year": "2020",
+   "title": "ପୁନାଦ୍ ଆର୍ର୍"
+  },
+  "kxv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1996",
+   "title": "ପୁଃନି ମେ଼ରା"
+  },
+  "lbm": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "जीवन को वचन"
+  },
+  "nag": {
+   "org": "Bridge Connectivity Solutions",
+   "year": "2019",
+   "title": "Indian Standard Version (ISV) Nagamese"
+  },
+  "new": {
+   "org": "Nepal Bible Society and Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Newar"
+  },
+  "peg": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "ସତ୍‌ ବଚନ୍‌"
+  },
+  "pwr": {
+   "org": "The Word for the World International",
+   "year": "2023",
+   "title": "सत मारग पर चलन वारो किताब"
+  },
+  "tdt": {
+   "org": "Biblia ba Ema Hotu",
+   "year": "2021",
+   "title": "Testamentu Foun ba Ema Hotu"
+  },
+  "thr": {
+   "org": "The Word for the World International and Rana Tharu Translation Samithi, Khatima, UttraKhanda, India",
+   "year": "2024",
+   "title": "परमेस्वर को सच्चो वचन"
+  },
+  "tgl": {
+   "org": "Door43 World Missions Community",
+   "year": "2018",
+   "title": "banal na Bibliya"
+  },
+  "unx": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "ପାର୍‌ମେଶ୍ୱାର୍‌ଆଃ ଜୀନିଦ୍‌ ବାଚାନ୍‌"
+  },
+  "bjn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Bahasa Banjar"
+  },
+  "pmy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2023",
+   "title": "Melayu Papua"
+  },
+  "sur": {
+   "org": "Initiative for the Translation and Development of African Languages and The Seed Company",
+   "year": "2024",
+   "title": "Manji Yiljep"
+  },
+  "ted": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1995",
+   "title": "Krumen, Tepo"
+  },
+  "zat": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1981",
+   "title": "Xela wezria cube nen salmo caʼ"
+  },
+  "mqb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Mbuko: Aɓan 'am wiya awan"
+  },
+  "pps": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Popoloca, San Luís Temalacayuca"
+  },
+  "ram": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Canela"
+  },
+  "gel": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "ut-Mai'n Scripture portions"
+  },
+  "rif": {
+   "org": "www.tarifit.info",
+   "year": "2020",
+   "title": "أَذْلِيسْ إِقدّْسنْ"
+  },
+  "rki": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "ဓမ္မသစ်ကျမ်း ရခိုင်ဘာသာစကား"
+  },
+  "meq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Dzam Weɗeye"
+  },
+  "mfh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Wakità Zəzagəla Wakità Aŋa Makəs Vok Slawda Mawga (Cameroun)"
+  },
+  "mfo": {
+   "org": "The Seed Company",
+   "year": "2025",
+   "title": "Mbembe Okohm"
+  },
+  "eka": {
+   "org": "Luke Initiative for Scripture Translation and The Seed Company",
+   "year": "2024",
+   "title": "Ekajuk Scriptures Bible Portions"
+  },
+  "uth": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "ut-Hun"
+  },
+  "gym": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Kukwe kuin ngöbökwe"
+  },
+  "sab": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Chube gerua jagere Jesucristo giti degaba kwian ulita alin: El Nuevo Testamento de nuestro Señor Jesucristo en el idioma buglere"
+  },
+  "xon": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Uwumbɔr aagbaŋ"
+  },
+  "deu": {
+   "org": "Verbreitung des christlichen Glaubens e.V",
+   "year": "2019",
+   "title": "Elberfelder Übersetzung (Version von bibelkommentare.de)"
+  },
+  "blr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2021",
+   "title": "Plang"
+  },
+  "gng": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Uwien ya Jɔtiefɛ̀nku ya gbɔnku"
+  },
+  "cfm": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "Thukam Thar Lente Ṭon"
+  },
+  "hwo": {
+   "org": "The Seed Company in collaboration with Language Developers and Bible Translators Association",
+   "year": "2023",
+   "title": "Hona Bible"
+  },
+  "syl": {
+   "org": "Ahle Kitab Society",
+   "year": "2014",
+   "title": "Sylheti Bible (Bangla script)"
+  },
+  "quf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Mushuq Testamento"
+  },
+  "qub": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Tayta Diosninchi Isquirbichishan"
+  },
+  "qvn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Tayta Diospa Guepacag Testamentun"
+  },
+  "qvh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Mushog Testamento"
+  },
+  "qxo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Mushog Testamento"
+  },
+  "qwh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Teyta Diospa Mushoq Testamentun"
+  },
+  "prf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "En Maganda A Bareta Biblia"
+  },
+  "yka": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1984",
+   "title": "Yakan Bible"
+  },
+  "tsg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Tausug"
+  },
+  "tiy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "I Fiyowe Uret"
+  },
+  "tbl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Udél dwata: gna kesfasad ne lomi kesfasad"
+  },
+  "suc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1996",
+   "title": "Subanon, Western"
+  },
+  "stb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Subanen, Northern"
+  },
+  "smk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Si Biblia"
+  },
+  "bel": {
+   "org": "John the Forerunner Church of Christians of Evangelical Faith of Minsk City",
+   "year": "2016",
+   "title": "Біблія (пераклад А.Бокуна)"
+  },
+  "sgb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Ya habi ni apo namalyari: Bayon tsipan - Ayta Mag-antsi"
+  },
+  "rol": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Romblomanon"
+  },
+  "msb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1993",
+   "title": "An Maayo na Barita Hali sa Dios"
+  },
+  "mbt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Meupiya ne panugtulen: Bibliya ne Matigsalug"
+  },
+  "krj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Kinaray-a"
+  },
+  "kne": {
+   "org": "Wycliffe Bible Translators of Canada, Inc",
+   "year": "2016",
+   "title": "Kankanaey Bible"
+  },
+  "klg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Tagakaulo New Testament"
+  },
+  "xnn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1984",
+   "title": "Kalin Apo Dios"
+  },
+  "isd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Ya bàbànán ne Dios nga nesúrát kiya baru wa túlag Genesis se Exodus"
+  },
+  "poy": {
+   "org": "Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Lipatanu Lya Syayi Kwa Wantu Woseri"
+  },
+  "ifa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Ifugao, Amganad"
+  },
+  "ibl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1978",
+   "title": "Dibshon Mengi-kan Ni Pansigshan"
+  },
+  "kek": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "Li Santil hu"
+  },
+  "cbk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1981",
+   "title": "El Nuevo Testamento"
+  },
+  "bno": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Bag-ong Kasuyatan ag Henesis — Exodo"
+  },
+  "blw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1982",
+   "title": "Hen alen Apudyus"
+  },
+  "bps": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "I tnalù dwata"
+  },
+  "bpr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1995",
+   "title": "I Falami Kasafnè (New Testament)"
+  },
+  "bgs": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Kagi Ka Manama"
+  },
+  "atd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "Kasulatan to Magboboot"
+  },
+  "bkd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1986",
+   "title": "Lalang hu Dios"
+  },
+  "bba": {
+   "org": "SIM",
+   "year": "2013",
+   "title": "Bibeli Gusunɔn Gari"
+  },
+  "gux": {
+   "org": "Door 43 world-wide mission community",
+   "year": "2020",
+   "title": "Bible Gourma"
+  },
+  "fue": {
+   "org": "SIM International",
+   "year": "2011",
+   "title": "Alkawal Kesal"
+  },
+  "dop": {
+   "org": "SIM",
+   "year": "1999",
+   "title": "PIIPILI ƖSƆ TƆM TAKƎLAƔA"
+  },
+  "yor": {
+   "org": "Biblica, Inc",
+   "year": "2009",
+   "title": "Biblica® ní oore ọ̀fẹ́ láti lo Bíbélì Mímọ́ ní Èdè Yorùbá Òde-Òní"
+  },
+  "tha": {
+   "org": "Philip Pope",
+   "year": "2003",
+   "title": "พระคัมภีร์ภาษาไทยฉบับ KJV"
+  },
+  "tbz": {
+   "org": "SIM International",
+   "year": "2001",
+   "title": "Bibiri Kuyie Nnɑ́ɑǹtì Pɑ́tíri"
+  },
+  "ruf": {
+   "org": "PBT_TWFTW",
+   "year": "2014",
+   "title": "Laghano Lya Sambi Kwe Iwanu Wose"
+  },
+  "cko": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Nyεmε Jɔrε Kadasi"
+  },
+  "avu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Tã-drı̣̃ Lẽlẽ Óꞌdí Óvârí Kâ"
+  },
+  "xtc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Katcha"
+  },
+  "bex": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Jur Mödö"
+  },
+  "ndz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Ndogo"
+  },
+  "gyz": {
+   "org": "The Seed Company in collaboration with Language Developers and Bible Translators Association",
+   "year": "2023",
+   "title": "Geji New Testament Portions"
+  },
+  "dgr": {
+   "org": "Canadian Bible Society",
+   "year": "2009",
+   "title": "Nǫ̀htsı̨̨ Nı̨̨htł'è"
+  },
+  "quc": {
+   "org": "Pioneer Bible Translators",
+   "year": "2022",
+   "title": "RI KꞌAKꞌ TESTAMENTO PA TZIJOBꞌAL KꞌICHEꞌ"
+  },
+  "yaf": {
+   "org": "The Seed Company in coordination with Forum Communautaire des Traducteurs de la Bible et Alphabétisation",
+   "year": "2022",
+   "title": "Yaka NT"
+  },
+  "mfm": {
+   "org": "The Seed Company",
+   "year": "2024",
+   "title": "Ndǝshiguˈyar Foɗǝu Ənga Thlǝr Camaˈyar"
+  },
+  "chk": {
+   "org": "Liebenzel Mission",
+   "year": "1984",
+   "title": "Paipel"
+  },
+  "lwo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Luwo"
+  },
+  "lth": {
+   "org": "Wycliffe Bible Translators, Inc. and SIL Uganda",
+   "year": "2024",
+   "title": "Leb-Thur"
+  },
+  "ibo": {
+   "org": "Biblica, Inc",
+   "year": "2020",
+   "title": "Biblica® Baịbụlụ Nsọ nʼIgbo Ndị Ugbu a nke dịrị onye ọbụla ịgụ"
+  },
+  "auc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Wængonguï nänö Apæ̈negaïnö"
+  },
+  "abc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Ayta Ambala NT Portions"
+  },
+  "acu": {
+   "org": "07-01 Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Achuar Peru: Yuse Chichame Aarmauri"
+  },
+  "agr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Awajún [Aguaruna]"
+  },
+  "aia": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Taroha Goro mana Usuusu Maea"
+  },
+  "ame": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Yompor Poʼñoñ ñeñt ̃ attõ Yepartseshar Jesucristo eʼñe etserra aʼpoctaterrnay Yomporesho"
+  },
+  "amk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Sempaisi Ne Kaiwo Mirarebanai"
+  },
+  "apy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Ritonõpo Omiry: A Bíblia Sagrada na língua Aparai do Brasil"
+  },
+  "atg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Ebe-No-Pfuasẹ Ishobọ Onogbọ"
+  },
+  "bds": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Burunge"
+  },
+  "bcw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Zliya Yǝwǝn kwǝma wǝzǝ naa dzǝkǝn Yesǝw Kǝristǝw"
+  },
+  "bhi": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "भगवानेन छाचला बुल"
+  },
+  "boa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Píívyéébé ihjyu: jetsocríjyodítyú cáátúnuháámɨ"
+  },
+  "bkw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Bekwel"
+  },
+  "blx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Aytan Mag-Indi"
+  },
+  "bsc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Oniyan"
+  },
+  "bsw": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "አማቶ ኦኡሱብ"
+  },
+  "bvd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Na Alangaia Falu 'ana Baea 'i Baegu"
+  },
+  "cni": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Irineane tasorentsi oquenquetsatacotaqueri Avincatsarite Jesoquirishito"
+  },
+  "cou": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Wamey"
+  },
+  "bzi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Bisu"
+  },
+  "ese": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Eyacuiñajjija Esohui"
+  },
+  "gaq": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "ସତ୍‌ ଗାଲି"
+  },
+  "far": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Farongoe Lea Ana Fataleka"
+  },
+  "zak": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "",
+   "title": "Eriiragano Eriihya"
+  },
+  "glw": {
+   "org": "Luke Initiative for Scripture Translation",
+   "year": "2024",
+   "title": "Glavda NT Portion"
+  },
+  "goj": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "परमेश्वर को पवित्र वचन"
+  },
+  "gri": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Ghari Bible"
+  },
+  "huu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Jusiñamui uai: Jusiñamui jito rafue illa rabenico"
+  },
+  "hwc": {
+   "org": "Hawaii Pidgin Bible Ministry",
+   "year": "2020",
+   "title": "Da Good An Spesho Book"
+  },
+  "ifu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Mayoyao Ifugao"
+  },
+  "nnq": {
+   "org": "The Word for the World",
+   "year": "2015",
+   "title": "Ngindo New Testament 2015"
+  },
+  "ivv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Ivatan"
+  },
+  "ngp": {
+   "org": "The Word for the World and Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Ndagano mp'ya kwa wanth'u wose"
+  },
+  "ndj": {
+   "org": "The Word for the World and Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Lilaghanu lya shonu"
+  },
+  "idc": {
+   "org": "The Seed Company",
+   "year": "2025",
+   "title": "Ajigha NT Portion"
+  },
+  "key": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Kupia"
+  },
+  "kfc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Konda: కొండ బాసదు నెగ్గి కబ్రు"
+  },
+  "kaq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Noquen hihbaan joi"
+  },
+  "kdc": {
+   "org": "Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Biblia Kikutu"
+  },
+  "klv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Nasoruan siGot len nasoruan ta Uluveu"
+  },
+  "kwd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Fatalana God"
+  },
+  "kwf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Fau Alanga'inga Faolu Ana Ala'anga Kwara'ae"
+  },
+  "kwi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Masas Pit Jesucristowa"
+  },
+  "zga": {
+   "org": "Door 43 International Mission Community",
+   "year": "2020",
+   "title": "Mahanji Bible"
+  },
+  "krx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Kuloonaay"
+  },
+  "lmd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Lumun"
+  },
+  "ldb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Ibibemuwe-Num Iyiki Ifa Ru Dũya"
+  },
+  "lga": {
+   "org": "The Seed Company and Islands Bible Ministries",
+   "year": "2024",
+   "title": "Luqa Full Bible"
+  },
+  "lgl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Alafuuna Fa'alu Ala Saena 'I Wala"
+  },
+  "zin": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Endagano Eénsha omu Chiziinza"
+  },
+  "ikz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Ʉbhʉragɨ Ubhuhya Mʉkɨgambʉ chi Ikikiizʉ"
+  },
+  "tvk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Vanuvei Eo e sepinien Vatlongos na mol-Vatimol xil niutestamen e rute te oltestamen"
+  },
+  "tbk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Tagbanwa, Calamian"
+  },
+  "udu": {
+   "org": "SIM International",
+   "year": "2005",
+   "title": "Gwo Ma Arumgimis"
+  },
+  "xsn": {
+   "org": "Luke Initiative for Scripture Translation",
+   "year": "2022",
+   "title": "Sanga Language Project"
+  },
+  "xtm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Tnu'u vii tnu'u va'a Su'si ma"
+  },
+  "upv": {
+   "org": "Wycliffe Bible Translators",
+   "year": "1996",
+   "title": "Naul On Nga Mimerr Uripiv"
+  },
+  "utr": {
+   "org": "Initiative for the Translation and Development of African Languages",
+   "year": "2024",
+   "title": "Etulo NT"
+  },
+  "vaa": {
+   "org": "The Word for the World International",
+   "year": "2023",
+   "title": "ದೇವ್ನಿ ಖ್ಹಾಚಿ ವಚನ್"
+  },
+  "sbk": {
+   "org": "Door43 Worldwide Mission Community",
+   "year": "2020",
+   "title": "Biblia Takatifu"
+  },
+  "tgp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Tangoa New Testament"
+  },
+  "vid": {
+   "org": "Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Ilagano lya Katali, Ilagano Linyale kwa Wanhu Weng’ha"
+  },
+  "mgw": {
+   "org": "Pioneer Bible Translators",
+   "year": "2019",
+   "title": "Injili ya Yesu"
+  },
+  "mgv": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "Amatengu"
+  },
+  "mgq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Malila"
+  },
+  "dne": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "Ndendeule"
+  },
+  "cwe": {
+   "org": "The Word for the World and Pioneer Bible Translators",
+   "year": "2014",
+   "title": "Biblia Ching'hwele"
+  },
+  "slu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Maslyarw"
+  },
+  "qul": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1985",
+   "title": "Mosoj Testamento"
+  },
+  "snf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Noon"
+  },
+  "toc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Xasasti talacaxlan"
+  },
+  "top": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1979",
+   "title": "Xasasti talaccaxlan"
+  },
+  "yva": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Yawa"
+  },
+  "wob": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Wè Northern"
+  },
+  "zaj": {
+   "org": "Pioneer Bible Translators",
+   "year": "2023",
+   "title": "Bibilia ya Kizalamo"
+  },
+  "xed": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Deftera Lfiɗa Dzratawi"
+  },
+  "zpc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1986",
+   "title": "Xtiʼidzaʼ Diuzi"
+  },
+  "rug": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Buka Hope"
+  },
+  "ndv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Séréel Ndút: Unni Koope"
+  },
+  "oyd": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "ክለ ጫቆ"
+  },
+  "pdo": {
+   "org": "Yayasan Kartidaya Sahabat Indonesia and The Seed Company",
+   "year": "2025",
+   "title": "Akitab Padoe"
+  },
+  "sav": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Saafi-Saafi"
+  },
+  "nhi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "In Yancuic Tlahtolsintilil"
+  },
+  "pib": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Gerotu Tokanchi Gipiratkaluru"
+  },
+  "pio": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "El Nuevo Testamento de nuestro Señor Jesucristo en el idioma piapoco"
+  },
+  "lro": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Laro"
+  },
+  "plu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1982",
+   "title": "Uhokri Gannasan"
+  },
+  "pma": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Paama Bible"
+  },
+  "moa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Mwan"
+  },
+  "nlg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Na Rongorongo Uto nina Jesus Christ"
+  },
+  "lww": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Lologena Wo Kienane Yesu Kristo Kome Kewo"
+  },
+  "mbb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Is Lalag te Megbevayà"
+  },
+  "mbi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1989",
+   "title": "Manobo, Ilianen"
+  },
+  "qup": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Yaya Diospa mushu killkachishkan shimi"
+  },
+  "ntp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1981",
+   "title": "Diuusi ñiooquidʌ utuducami oodamicʌdʌ"
+  },
+  "qva": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Quechua, Ambo-Pasco (Mushog)"
+  },
+  "qxh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Mushug Testamento"
+  },
+  "qxl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Diosbuj Shimi - Mushuj Testamento (Quichua, Salasaca)"
+  },
+  "mfi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Wandala"
+  },
+  "mgj": {
+   "org": "Luke Initiative for Scripture Translationand The Seed Company",
+   "year": "2022",
+   "title": "Abureni NT Portions"
+  },
+  "ncj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1979",
+   "title": "In yancuic mononotzalistli ica Totecohtzin Jesucristo"
+  },
+  "ncl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Ilajtulisli Yancuic toTata Jesucristo"
+  },
+  "omb": {
+   "org": "Pioneer Bible Translators",
+   "year": "2022",
+   "title": "Waratau Siaga Tatuei mo Vilegi"
+  },
+  "bib": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Bissa"
+  },
+  "gwr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "ENdagaano eMpyaka oMu Lugwere"
+  },
+  "dnj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1991",
+   "title": "'WUN SË ‑NAƆ 'SËËDHƐ"
+  },
+  "rub": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2025",
+   "title": "Bitabbu bya Ndagaanu Ghyaka na Bitabbu 6 bya Ndagaanu Gi̱gu̱lu̱u̱su̱ (Lugungu)"
+  },
+  "dwr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "ጌሻ ማጻፋ"
+  },
+  "nuj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Endagaano Epyaha ko n'ebitabo ebindi eby'Endagaano Ekayire mu Lunyole"
+  },
+  "esg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Pavitra Polle"
+  },
+  "tsn": {
+   "org": "Biblica, Inc",
+   "year": "1993",
+   "title": "Biblica® Open Lefoko: La Botshelo Kgolagano e Ntsha"
+  },
+  "tnn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "North Tanna New Testament"
+  },
+  "nwi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Nəkwəkwə imərhakə kape kughen: nɨrpenien vi"
+  },
+  "tzj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Ja Cꞌacꞌa Chominem"
+  },
+  "mdm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Mayogo"
+  },
+  "poh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Reꞌ Lokꞌ Laj Hu̱j Wilic wi̱ꞌ Ribiral i Jesus"
+  },
+  "mqj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Buku Masero: Pa'dandi Bakaru"
+  },
+  "kbc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Gela Liwai Lotaɡ̶anaɡ̶axi Aneotedoɡ̶oji"
+  },
+  "log": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Logo (Logoti)"
+  },
+  "lik": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "AGɄMƐ WAMBƗYA"
+  },
+  "mzq": {
+   "org": "The Seed Company",
+   "year": "2025",
+   "title": "Alkitab Tambee"
+  },
+  "jaa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Teoso Ka Yama Hani"
+  },
+  "hav": {
+   "org": "The Seed Company",
+   "year": "2025",
+   "title": "Nouveau Testament Havu"
+  },
+  "hix": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Khoryenkom Karyehtanà"
+  },
+  "sby": {
+   "org": "The Word for the World International",
+   "year": "2018",
+   "title": "Soli New Testament"
+  },
+  "gub": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Tupàn ze'eg"
+  },
+  "car": {
+   "org": "Suriname Bible Society",
+   "year": "2003",
+   "title": "Asery Tamusi karetary"
+  },
+  "cbs": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Diosun Jesúswen taexun yuba bena yiniki"
+  },
+  "cbt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Yosë nanamën"
+  },
+  "mcf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Esuquidistu Chuiquin Tantiamete"
+  },
+  "ebk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Nan kalen apo Dios (Nan fiarú ay turag)"
+  },
+  "mbl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Topa Yõg Tappet"
+  },
+  "dyi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Bibulu Jinmiire ni"
+  },
+  "adj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Adioukrou"
+  },
+  "ayz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Watum ro Tuhan Bosi ro Tna"
+  },
+  "kyz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Janeruwarete 'Ga Je'eg"
+  },
+  "lag": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2023",
+   "title": "Rangi"
+  },
+  "urb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Tupã Je'ẽha"
+  },
+  "txu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Metĩndjwỳnh Kute Memã Kabẽn Ny Jarẽnh"
+  },
+  "frd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Surat Ralan na'a Vaidida"
+  },
+  "tca": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Tupanaarü Ore i Tórü Cori ya Ngechuchu ya Cristuchiga"
+  },
+  "hvn": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2016",
+   "title": "Maꞌu"
+  },
+  "mta": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Manobo, Cotabato"
+  },
+  "mcb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Iriniane Tasorintsi"
+  },
+  "wlo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Kitabi Momangkilona Wolio"
+  },
+  "xav": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "'Re ĩhâimana u'âsi mono zadawa wasu'u"
+  },
+  "rup": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "Biblija tu limba Rrãmãnã"
+  },
+  "khm": {
+   "org": "Bible Society in Cambodia",
+   "year": "1997",
+   "title": "ព្រះគម្ពីរខ្មែរបច្ចុប្បន្ន ២០០៥"
+  },
+  "pab": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Waitare Wenati Aho"
+  },
+  "nab": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Txa²wã¹sũ̱³na² Wãn³txa²"
+  },
+  "myu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Deus ekawẽntup Kawẽn iisuat ekawẽn"
+  },
+  "rmn": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "I Biblija ki Arli romani čhib Srbija"
+  },
+  "con": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Chiga Tevaen'Jema Atesuja 1, Aisheve Caña'cho"
+  },
+  "hub": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Yuusa chichame yaunchukia tura yamaram chichamjai aarmau"
+  },
+  "kde": {
+   "org": "Pioneer Bible Translators",
+   "year": "2020",
+   "title": "Lilailano Lyahambi Lya Nnungu Kwa Vanu Vammalele"
+  },
+  "qvs": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Tata Diospa Mushuk Rimanan"
+  },
+  "muh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Mündü"
+  },
+  "nyy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Ʉlwitɨkano Ʉlʉpya"
+  },
+  "lyn": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "Luyana Bible Translation"
+  },
+  "qvw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Muśhü limalicuy"
+  },
+  "cbr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Nukën 'Ibu Diosan ain unikama 'inan ain bana"
+  },
+  "cbu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Candoshi-Shapra"
+  },
+  "nwb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1991",
+   "title": "Nyaboa (Nyabwa)"
+  },
+  "msm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Kasuyatan to Diyus"
+  },
+  "gdf": {
+   "org": "The Seed Company",
+   "year": "2024",
+   "title": "Gava NT"
+  },
+  "gnw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Nuevo Testamento Guaraní Pe"
+  },
+  "mim": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Alacatlatzala Mixtec New Testament"
+  },
+  "mie": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1977",
+   "title": "Nuevo Testamento en mixteco de Ocotepec"
+  },
+  "mav": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Tupana Ehay Satere Mawe Pusupuo"
+  },
+  "tpx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Me'phaa Xma'íín (Teocuitlapa)"
+  },
+  "obo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Moppiyon Dinoggan, Moka-atag ki Disas Krays"
+  },
+  "rkb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Deus Harere Aibaky Sesus mymyspirikpoko naha"
+  },
+  "djk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Beibel: okanisi tongo"
+  },
+  "srm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Gadu Buku"
+  },
+  "bkq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Deus Itaumbyry"
+  },
+  "apu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Teoso sãkire amaneri"
+  },
+  "apn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Tĩrtũm kapẽr ã kagà nyw"
+  },
+  "bwu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Buli"
+  },
+  "guh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Dios pejumelivaisibaxuto pejanalivaisibaxuto"
+  },
+  "hil": {
+   "org": "Biblica, Inc",
+   "year": "1996",
+   "title": "Biblica® Libre Ang Pulong Sang Dios"
+  },
+  "hre": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Sech Hadròih"
+  },
+  "luo": {
+   "org": "Biblica, Inc",
+   "year": "2020",
+   "title": "Biblica® Ochiw Thuolo Motingʼo Loko Manyien™"
+  },
+  "taq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Tamasheq"
+  },
+  "mnh": {
+   "org": "Wycliffe Bible Translators, Inc. and ACOTBA-SUBO",
+   "year": "2020",
+   "title": "Mono"
+  },
+  "ndh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Ndali"
+  },
+  "xnj": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "Ngoni Bible Version Translation Project"
+  },
+  "nyf": {
+   "org": "Bible Translation and Literacy, and Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Kilagane Kisha (Kenya)"
+  },
+  "ptu": {
+   "org": "Lembaga Alkitab Indonesia",
+   "year": "2004",
+   "title": "Suha' Maseho: Kadadiam anna Pa'dandiam Bakahu"
+  },
+  "nnw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Nuni, Southern"
+  },
+  "sna": {
+   "org": "Biblica, Inc",
+   "year": "2005",
+   "title": "Biblica® Bhaibheri Dzvene Rakasununguka MuChiShona Chanhasi 2017"
+  },
+  "tod": {
+   "org": "Pioneer Bible Translators and The Bible Society in Guinea-Conakry",
+   "year": "2023",
+   "title": "GALA Daawoo Zɛʋɛi"
+  },
+  "wbi": {
+   "org": "Door43 World Mission Community",
+   "year": "2020",
+   "title": "Vwanji Bible"
+  },
+  "aeb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "العهد الجديد بالدارجة التونسية 2022"
+  },
+  "aii": {
+   "org": "Aramaic Bible Translation, Inc",
+   "year": "2014",
+   "title": "ܕܝܬܩܐ ܚܕܬܐ ܕܡܪܢ ܝܫܘܥ ܡܫܝܚܐ ܘܡܙܡܘܪ̈ܐ ܒܠܫܢܐ ܐܬܘܪܝܐ"
+  },
+  "gui": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Nuevo Testamento Guaraní Pe"
+  },
+  "cme": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Diiloŋ-nelma Tobisĩfɛlɛnni"
+  },
+  "lug": {
+   "org": "Biblica, Inc",
+   "year": "1984",
+   "title": "Biblica® Bayibuli Entukuvu, Endagaano Enkadde nʼEndagaano Empya ekwatiddwa ku katambi™"
+  },
+  "kik": {
+   "org": "Biblica, Inc",
+   "year": "2013",
+   "title": "Biblica® Kiugo Gĩtheru Kĩa Ngai Kĩhingũre"
+  },
+  "ngu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1987",
+   "title": "In yencuic iyectlajtoltzin Dios itech ica toTeco Jesucristo"
+  },
+  "nde": {
+   "org": "Biblica, Inc",
+   "year": "2003",
+   "title": "Biblica® IBhayibhili Elingcwele LesiNdebele Elifinyelelekayo"
+  },
+  "pon": {
+   "org": "Bible Society of the South Pacific",
+   "year": "2006",
+   "title": "Pohnpeian Bible"
+  },
+  "xsb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Tina Sambal"
+  },
+  "myk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "KARIƝƐƐGƐ ƝƆMƐƐ NIVONƆ"
+  },
+  "shr": {
+   "org": "BUKAVU Mashi and other Kivu Languages Bible",
+   "year": "2024",
+   "title": "BIBLIYA NTAGATIFU OMU MASHI"
+  },
+  "tsw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Nzuwulai n Sa'avu na̱ Tsishingini na̱ a̱ɗiva̱ a na a ɗangulai a Nzuwulai mu Ufaru"
+  },
+  "fuh": {
+   "org": "SIM International",
+   "year": "2012",
+   "title": "Fulfulfe Burkina, Dewtere Laamɗo Amaana Keso"
+  },
+  "srn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Nyun Testamenti"
+  },
+  "cmo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Bunong"
+  },
+  "pcm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Nigerian Pidgin"
+  },
+  "tlj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Ndaghaano Mpyaka na bimui haa bitabo byꞌomu Ndaghaano Nkulu mu Lubwisi"
+  },
+  "yam": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Yamba"
+  },
+  "tdx": {
+   "org": "Steve Lellelid",
+   "year": "2023",
+   "title": "Saontsin’ Añahare"
+  },
+  "kyu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2021",
+   "title": "ꤜꤤ꤬ꤡꤢ꤭ꤏꤢꤧ꤭ ꤢ꤬ꤞꤢꤧ꤭ ꤔꤢ ꤜꤤ꤬ꤡꤢ꤭ꤏꤢꤧ꤭ ꤢ꤬ꤜꤟꤛꤢꤩ꤭ ꤒꤢ꤬ꤟꤢꤩ꤬ ꤊꤢ꤬ꤛꤢ꤭ꤜꤟꤤ꤬ꤍꤟꤥ"
+  },
+  "tcz": {
+   "org": "Chongthu Bible Translation Team",
+   "year": "2020",
+   "title": "PATHEN LEKHABU THENG"
+  },
+  "nhu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Ŋwa' Nyo' Moŋkan mo Monfɛm"
+  },
+  "mif": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Mofu-Gudur"
+  },
+  "kog": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Kogi"
+  },
+  "xtn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Mixtec, Northern Tlaxiaco"
+  },
+  "mxv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Mixteco, Metlatónoc"
+  },
+  "fuv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "الَکْوَلَ ک ٜسَلْ (Fulfulde)"
+  },
+  "yns": {
+   "org": "Seed Company in coordination with Forum Communautaire des Traducteurs de la Bible et Alphabétisation",
+   "year": "2024",
+   "title": "Bible Iyansi"
+  },
+  "rhg": {
+   "org": "The Word for the World International and Rohingya East Asia Translation",
+   "year": "2024",
+   "title": "Kitabul Mukaddos or Injil Córif"
+  },
+  "dik": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Lëk yam"
+  },
+  "niy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Ndruna"
+  },
+  "muy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Ma Mʉweni Sulumani ge Melefit"
+  },
+  "kqe": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Kalagan"
+  },
+  "mcp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Kálaad Zɛmbî : Sɔ ̧ á Gúgwáan"
+  },
+  "miy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "El Nuevo Testamento en el Mixteco de Ayutla"
+  },
+  "qvm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Mushog Testamento"
+  },
+  "kkj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Kako"
+  },
+  "xuo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Kuo"
+  },
+  "nch": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Icamanal toteco; Santa Biblia"
+  },
+  "tke": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Takwane do Novo Testamento"
+  },
+  "qve": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Mosoq Testamento"
+  },
+  "nin": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Ungbamvu Ku Abachi Azhi Ahe̲he̲ Ka"
+  },
+  "bsj": {
+   "org": "Door43 Worldwide Mission Community",
+   "year": "2020",
+   "title": "Bangwinji"
+  },
+  "bfd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Bafut"
+  },
+  "bss": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Melɛ̌ Mékɔ̄ɔ̄lē"
+  },
+  "pdc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Pennsylvania Dutch Bible"
+  },
+  "ksp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Tar le Lubba ke tar Kabba"
+  },
+  "atb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Chyoiyúng chyumlaiká: dangshikaq asik; Zaiwa"
+  },
+  "sce": {
+   "org": "River Street Publishing",
+   "year": "2020",
+   "title": "Hudani Kielien"
+  },
+  "uig": {
+   "org": "Mukeddes Kalam - Uyghur Bible Translation Committee",
+   "year": "2010",
+   "title": "مۇقېددېس كالام (يەنگى يېزىق)"
+  },
+  "tnc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Tuᵽarã Majaroka"
+  },
+  "ycn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Tupana Puraca'alo Mari"
+  },
+  "pbb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1984",
+   "title": "Páez"
+  },
+  "noa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Ẽwandam Iek"
+  },
+  "gum": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Nacom Pejume Diwesi po diwesi pena jume diwesi xua Jesucristo yabara tinatsi"
+  },
+  "guc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Wayuu"
+  },
+  "coe": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Koreguaje"
+  },
+  "puu": {
+   "org": "The Seed Company",
+   "year": "2025",
+   "title": "Mbembu Nzambi o Ipunu"
+  },
+  "mkw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2025",
+   "title": "Mambu ya Nzambi"
+  },
+  "loq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Lobala NT"
+  },
+  "lin": {
+   "org": "Biblica, Inc",
+   "year": "2020",
+   "title": "Biblica® Salela na bonsomi Mokanda na Bomoi"
+  },
+  "rmc": {
+   "org": "The Word for the World International and The Word for the World Slovakia",
+   "year": "2019",
+   "title": "Le Devleskero Lav Andre Romaňi Čhib, Slovensko 2022"
+  },
+  "pol": {
+   "org": "Fundacja Wrota Nadziei",
+   "year": "2018",
+   "title": "Święta Biblia"
+  },
+  "dan": {
+   "org": "Det Danske Bibelselskab",
+   "year": "1907",
+   "title": "Hellig Bibel"
+  },
+  "som": {
+   "org": "Society for International Ministries -- Kenya",
+   "year": "1979",
+   "title": "Kitaabka Quduuska Ah"
+  },
+  "hat": {
+   "org": "Ron Smith",
+   "year": "2017",
+   "title": "Bib Sen An"
+  },
+  "jiv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Yus Papí: Shuarja̱i̱ Yus Yamaram Chicham Najanamu"
+  },
+  "ekk": {
+   "org": "Biblica, Inc",
+   "year": "2022",
+   "title": "Biblica® Vaba kasutusega Uus Testament, Pühakiri kaasaegses eesti keeles"
+  },
+  "gmv": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "ጌሻ ማጻፋ"
+  },
+  "jnj": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "ጋዶ ቴያ"
+  },
+  "wal": {
+   "org": "SIM",
+   "year": "2004",
+   "title": "Wolaytta Bible"
+  },
+  "mur": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Murle"
+  },
+  "mfx": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "ኦሮꬅ ጫቆ"
+  },
+  "amf": {
+   "org": "SIM International",
+   "year": "2014",
+   "title": "Haalin Mallano"
+  },
+  "swe": {
+   "org": "Svenska Kärnbibeln",
+   "year": "2017",
+   "title": "Svenska Kärnbibeln - en expanderad översättning"
+  },
+  "jvn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Kitab sutyi prejanjian anyar ing Basa Jawa Suriname sing gampang"
+  },
+  "flr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Kifuliiru"
+  },
+  "acd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "GɛnÞ PobÞrÞ"
+  },
+  "biv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "A Nãaŋmɩn Nɛtɩr Oaalaa Gãn, Bɩrfʊɔr"
+  },
+  "bim": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Yennu Gbouŋ Mɔɔr"
+  },
+  "ffm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Aadi keyri: linjiila iisaa almasiihu"
+  },
+  "sil": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Yesu Kiristito Wu-Zɔŋŋɔɔ (Ghana)"
+  },
+  "sig": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Sisaala-Paasaal"
+  },
+  "ncu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Abware̱se̱ŋ Wo̱re̱-ɔ"
+  },
+  "kma": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Konni"
+  },
+  "tet": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2013",
+   "title": "Tetun Alkitab"
+  },
+  "any": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1997",
+   "title": "Anyin"
+  },
+  "ses": {
+   "org": "Wycliffe Bible Translators, Inc. and BFP Velberter Mission",
+   "year": "2019",
+   "title": "Songhai de Gao"
+  },
+  "plj": {
+   "org": "Seed Company in collaboration with Language Developers and Bible Translators Association",
+   "year": "2023",
+   "title": "Zul"
+  },
+  "cuk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Bab-Dummad-Garda-Islidikid"
+  },
+  "cak": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Ri c'ac'ac' Testamento pa kach'ab'al"
+  },
+  "mam": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "Acʼaj testamento (El Nuevo testamento in Mam de Todos Santos)"
+  },
+  "jac": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1997",
+   "title": "Nuevo Testamento yin̈ abxubal"
+  },
+  "ixl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "U ak' Testamento tu kuyob'al"
+  },
+  "knj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Ja' An Nuevo Testamento"
+  },
+  "usp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Lok'laj Jyolj Kakaj Dios"
+  },
+  "acr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Ri utzilaj tzij re ri kanimajawal Jesucristo"
+  },
+  "yal": {
+   "org": "Pioneer Bible Translators",
+   "year": "2012",
+   "title": "Kisin Kiraan Kitabuna"
+  },
+  "hns": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Parmeswar ke naawa poestak"
+  },
+  "slk": {
+   "org": "Biblica, Inc",
+   "year": "1993",
+   "title": "Biblica® Nádej pre každého, verejne dostupné"
+  },
+  "isl": {
+   "org": "Biblica, Inc",
+   "year": "1979",
+   "title": "Biblica® Opna Lifandi Orð Nýja testamentið og Sálmarnir™"
+  },
+  "wbq": {
+   "org": "Bridge Connectivity Solutions Pvt. Ltd",
+   "year": "2024",
+   "title": "वडार"
+  },
+  "taj": {
+   "org": "Eastern Tamang Language Team",
+   "year": "2011",
+   "title": "परमेश्वरला बचन छार कबुल"
+  },
+  "mrr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2021",
+   "title": "Hill Madia"
+  },
+  "kgk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Nhandejáry Nhe'ẽ"
+  },
+  "gun": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Nhanderuete ayvu iky'a e'ỹ va'e"
+  },
+  "lif": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "ᤏᤡᤱᤘᤠ᤹ᤑᤢ ᤐᤠ᤺ᤴᤈᤠᤰ ᤁᤢᤛᤱ ᤔᤠᤱᤜᤢᤵ"
+  },
+  "quh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Dios Parlapawanchej"
+  },
+  "arn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Ngünechen ñi Küme Dungu"
+  },
+  "gvr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Gurung Central Adapt It Study Bible"
+  },
+  "dig": {
+   "org": "Bible Translation and Literacy",
+   "year": "2019",
+   "title": "Digo"
+  },
+  "sxb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Endagano Empia"
+  },
+  "spy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Biibilya Nyēē Tiliil"
+  },
+  "guz": {
+   "org": "Bible Society of Kenya",
+   "year": "2021",
+   "title": "EBIBILIA ENCHENU"
+  },
+  "ncq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2023",
+   "title": "ປັຣນາຍ ເຢືາງ ເຈົາຣາຊີ ປັຣຄັນ ຕາໄມ ປັຣນາຍ ກາຕາງ (ພາສາກາຕາງ)"
+  },
+  "lit": {
+   "org": "Believers' Bible Society, Inc",
+   "year": "2022",
+   "title": "Tikinčiųjų paveldo vertimas"
+  },
+  "mpa": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "Chimpoto"
+  },
+  "ttq": {
+   "org": "Wycliffe Bible Translators, Inc. et SIM Niger",
+   "year": "2015",
+   "title": "Tamajaq, Tawallammat (Latin)"
+  },
+  "spp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "KILE JWUMPE SEMƐŊI JWUMPE NINTANMPE"
+  },
+  "cnt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1994",
+   "title": "Jag₁ ʼmɨ́₂ a₂ma₂lɨʼ₅₄ quianʼ₅₄ Diu₄"
+  },
+  "ztp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2025",
+   "title": "El Nuevo Testament en el idioma Zapoteco de Loxicha"
+  },
+  "zsr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Didzaʼ cub rucáʼn tsahuiʼ"
+  },
+  "zpu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "Diʼll danʼ nsaʼa yel nban (El Nuevo Testamento en el Zapoteco de Yalálag)"
+  },
+  "zos": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1978",
+   "title": "Jomepø Testamento"
+  },
+  "zaw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Xtidxcoob Dios ni biädnä dad Jesucrist"
+  },
+  "zai": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1988",
+   "title": "Stiidxa Dios didxazá (El Nuevo Testamento de nuestro señor Jesucristo en el Zapoteco del Istmo)"
+  },
+  "zab": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1995",
+   "title": "Xtiidx Dios cun ditsa"
+  },
+  "zaa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1970",
+   "title": "Ca titsaʼ de laʼlabani para iyate ca enneʼ"
+  },
+  "yaq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Yoʼowe Jesukrijtota itom yaʼariakaʼu betchiʼbo juʼu bemelaka liojta betana lutuʼuria yaʼari (El Nuevo Testamento en yaqui)"
+  },
+  "tzo": {
+   "org": "La Liga Bíblica",
+   "year": "1979",
+   "title": "TI ACHꞌ REXTOMENTO YUꞌUN TI JESUCRISTOE"
+  },
+  "trc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1987",
+   "title": "Se-nānā Diosē nanā sāʼ me rá catūū nimán níʼ a"
+  },
+  "tos": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Hua̱ xasa̱sti talacca̱xlan quinTla̱tican Jesucristo"
+  },
+  "toj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1972",
+   "title": "Ja yajcʼachil testamento sbaj ja cajualtic Jesucristo"
+  },
+  "tac": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Onorúgame nila ra'íchali"
+  },
+  "poi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Jém jomipɨc trato jém iwatnewɨɨp tánomi Jesucristo"
+  },
+  "poe": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1982",
+   "title": "Tí Nuevo Testamento cuènte Inchéni Jesucristo Cʼóna Nquìva"
+  },
+  "otq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Àr 'ra'yo nkohi Jö har ñhöñhö maxei nto̱ngwi ár mahwifi har ha̱i m'onda ne har ñhömfo̱"
+  },
+  "otm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1974",
+   "title": "Ra ʼdaʼyonhogui nangue ma Hmuhʉ ra Jesucristo"
+  },
+  "ote": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Ra 'Ra'yo Testamento"
+  },
+  "nhw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Icamanal toteco; Santa Bíblia"
+  },
+  "npl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Itlajtol Totajtsi Dios"
+  },
+  "nhe": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Itlajtol toteco: Santa Biblia"
+  },
+  "mco": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1976",
+   "title": "El Nuevo Testamento en mixe de Coatlán"
+  },
+  "maz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Nu o̱ jña mizhocjimi nu mama ja ga cja e Jesucristo"
+  },
+  "mau": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1960",
+   "title": "Xon⁴-le⁴ ni³na¹ xi³ tʔa³tsʔe⁴ Jesucristo"
+  },
+  "hus": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1971",
+   "title": "An it jilchith cau cʼal i Ajatic Jesucristo"
+  },
+  "huv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Jayats nanderac wüx miteatiiüts Jesucristo"
+  },
+  "hch": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "KAKAƗYARI NIUKIEYA XAPAYARI WIXARIKAKƗ"
+  },
+  "cya": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "El Nuevo Testamento"
+  },
+  "cux": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1974",
+   "title": "Nduudu nʼdai yeⁿʼe Ndyuūs yeⁿʼe cuicateco yeⁿʼe Tepeuxila"
+  },
+  "mks": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Tu̱hun sa̱á ña̱ na̱jándacoo Jesucristo nu̱ yo̱: El Nuevo Testamento en el mixteco de Silacayoapan"
+  },
+  "mit": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1978",
+   "title": "Ley saa ni nacoo Jesucristu"
+  },
+  "xtd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Tnuʼu vaʼa tnuʼu Jesucristo"
+  },
+  "mir": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1988",
+   "title": "El Nuevo Testamento en mixe de Guichicovi"
+  },
+  "mil": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Tnúhu ní cáháⁿ yǎ ndiǒxí xito cùu uú"
+  },
+  "ctu": {
+   "org": "La Liga Bíblica",
+   "year": "2008",
+   "title": "JINI WEN BΛ T'AN"
+  },
+  "crn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Ɨ niuucari tɨ jejcua, tɨ ajta jɨme'en ra'axa a'ɨjna ɨ tavastara'a, ɨ Cɨriistu'u tɨ ji'i Jesús tɨ̀ tu'irájtuaa"
+  },
+  "azz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1975",
+   "title": "In cuali tajtoltzin de Dios"
+  },
+  "azg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Jnʼoon xco na tquen tyoʼtsʼon"
+  },
+  "chq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1983",
+   "title": "Juu³ tyʉ² ʼe gafaaʼ²¹ Dios tyaʼ tsá²"
+  },
+  "amu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Ñʼoom xco na tqueⁿ tyʼo̱o̱tsʼom cantxja ʼnaaʼ Jesucristo"
+  },
+  "yap": {
+   "org": "Bible Society of Micronesia",
+   "year": "2007",
+   "title": "Bible Ni Thothup"
+  },
+  "eko": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Kote New Testament"
+  },
+  "wmw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Habari Ngema"
+  },
+  "seh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1983",
+   "title": "Sena do Novo Testamento"
+  },
+  "nyu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1897",
+   "title": "ciNyungwe Bibliya"
+  },
+  "mri": {
+   "org": "Bible Society New Zealand Charitable Trust",
+   "year": "2012",
+   "title": "Paipera Tapu 2012"
+  },
+  "asg": {
+   "org": "Language Development and Translation Initiative (LDTI)",
+   "year": "2025",
+   "title": "Cishingini Agwara Kambari [asg]"
+  },
+  "mbu": {
+   "org": "The Seed Company",
+   "year": "2022",
+   "title": "Mbula-Bwazza"
+  },
+  "kdl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Kazuwamgbani ka savu n Tsikimba n aɓon a ɗa a ɗanga̱sai a kazuwamgbani ka cau"
+  },
+  "jib": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Jibu"
+  },
+  "iqw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Bayịburu Ikwo"
+  },
+  "abp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Ayta Abellen"
+  },
+  "izz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Izii"
+  },
+  "apb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Tataroha Diana i Sulie Aalaha Ikie a Jisas Kraes"
+  },
+  "bdh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Mɨkánda Lorụ ꞌBɨ Lomo Kɨ́ Dosị́ Éyị́ E"
+  },
+  "ikk": {
+   "org": "Wycliffe",
+   "year": "2010",
+   "title": "Elu Ọhụn: Ẹkụkwọ-Nsọ (Azụụn Ọhụn rịn'a)"
+  },
+  "blz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Kitap molinas men ringkat na alaata'ala: perjanjian baru"
+  },
+  "bwo": {
+   "org": "The Word for the World International",
+   "year": "2018",
+   "title": "Handr Taara"
+  },
+  "cuc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1983",
+   "title": "Jau²³ hm²³ i⁴ra³tya²³ nei² quieh¹ re¹ Jesucristo quian⁴-¹"
+  },
+  "emp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Ãcõrẽ Bed̶ea"
+  },
+  "gqa": {
+   "org": "2r025 Luke Initiative for Scripture Translationand The Seed Company",
+   "year": "",
+   "title": "Ga'anda"
+  },
+  "gyl": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "ክለ ጫቃ"
+  },
+  "iyx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "New Testament in the Yaka language (Congo-Brazzaville)"
+  },
+  "kiz": {
+   "org": "Door 43 International Mission Community",
+   "year": "2020",
+   "title": "Kisi Bible"
+  },
+  "ktj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Krumen, Plapo"
+  },
+  "yer": {
+   "org": "Luke Initiative for Scripture Translation",
+   "year": "2024",
+   "title": "Tarok Bible"
+  },
+  "kyf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "ʼWʋsuslolue loluu ʼsɛbhɛ"
+  },
+  "luc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Aringa"
+  },
+  "mbs": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1982",
+   "title": "Se kaling peokit"
+  },
+  "wja": {
+   "org": "The Seed Company in collaboration with Language Developers and Bible Translators Association",
+   "year": "2024",
+   "title": "Waja"
+  },
+  "aaz": {
+   "org": "Unit Bahasa dan Budaya, Kupang NTT, Indonesia",
+   "year": "1999",
+   "title": "Uisneno In Kabin ma Prenat: Rais Manba'an Fe'u nok Reta' Ahun-hunut"
+  },
+  "abx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1996",
+   "title": "I Baha'o Kasuratan"
+  },
+  "aca": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Liáꞌa Chuánshi Dios Shínaa"
+  },
+  "acf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Tèstèman nèf-la: Épi an posyòn an liv samz-la"
+  },
+  "adt": {
+   "org": "Bible Society Australia",
+   "year": "2021",
+   "title": "Adnyamathanha Christmas Story"
+  },
+  "aer": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2002",
+   "title": "Angkentye Mwerre"
+  },
+  "agn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "ANG BITALA TANG DIOS: Ba-long Inigoan"
+  },
+  "agt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Uhohug Na Namaratu Gafu Te Hesus Kristu"
+  },
+  "agu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Yi Antiw Bible / Yi Ac'aj Testament"
+  },
+  "ake": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Wakʉ Itekare: Emenna' Pe Ekonekan Nɨto'"
+  },
+  "akp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Siwu"
+  },
+  "alq": {
+   "org": "Canadian Bible Society",
+   "year": "1998",
+   "title": "Kije Manido Odikido8in: Ocki Mazinaigan"
+  },
+  "aly": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2009",
+   "title": "Alyawarr Bible"
+  },
+  "amo": {
+   "org": "Door43 World Missions Community",
+   "year": "2020",
+   "title": "Amo New Testament"
+  },
+  "amx": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2015",
+   "title": "Anmatyerr Bible"
+  },
+  "anv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Ŋwɛ menomenyɛɛ́ mekɛ́"
+  },
+  "aoi": {
+   "org": "Bible Society of Australia",
+   "year": "2019",
+   "title": "Anindilyakwa Bible"
+  },
+  "aoj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Basef Buꞌwafi Godi"
+  },
+  "app": {
+   "org": "Pioneer Bible Translators",
+   "year": "2019",
+   "title": "Jona"
+  },
+  "apw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "The New Testament of our Lord and Saviour Jesus Christ"
+  },
+  "aqk": {
+   "org": "Luke Initiative for Scripture Translation",
+   "year": "2025",
+   "title": "Aninka NT Portion"
+  },
+  "are": {
+   "org": "Bible Society of Australia",
+   "year": "1997",
+   "title": "Altjirraka angkatja - Arrarnturna kngartiwukala"
+  },
+  "arl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Quiarinio pueyaso rupaa pa jiyaniijia Jesucristojiniji pueyano rupaajinia"
+  },
+  "asj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Sari"
+  },
+  "att": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1996",
+   "title": "Yù bilin ni Namarò nga meyannung kâ Apu Kesu Kiristu: Yù bagu nga tarátu ni Namarò sù ira nga mangikatalà kâ Apu Kesu Kiristu"
+  },
+  "auu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Ogatamee Me Etokaa Gipii See Menaa"
+  },
+  "bgt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Na Rorongo Ke Toke Eigna a Jisas Krais"
+  },
+  "bjv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "KƗLӘ-MƗNDƗ KƗ SƗGƗ"
+  },
+  "bki": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Verikariano Vou Na Baki"
+  },
+  "bkx": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2004",
+   "title": "Naꞌ Markus"
+  },
+  "bmo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Ŋwaʼaŋlɨ Kɨǹ a Fhi"
+  },
+  "bou": {
+   "org": "The Word for the World International and Bondei Language translation",
+   "year": "2025",
+   "title": "Bondei Bible Version"
+  },
+  "bov": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Tuwuli"
+  },
+  "box": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Dónbeenì páaníi fĩnle vũahṹ"
+  },
+  "bpx": {
+   "org": "The Word for the World International and Yisu Por Bherho Karanya Paliya Mandli, Rajpur, Barwani, MP",
+   "year": "2020",
+   "title": "भगवान ना खरला बोल"
+  },
+  "bqc": {
+   "org": "SIM International",
+   "year": "2010",
+   "title": "Bibeli Luayãtaalá"
+  },
+  "bqp": {
+   "org": "SIM International",
+   "year": "2005",
+   "title": "Luda yã takada kũ Bisã yão"
+  },
+  "bsn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Dios oca gotirituti"
+  },
+  "buj": {
+   "org": "The Word for the World International and The Word for the World Nigeria",
+   "year": "2025",
+   "title": "Basa-Gurmana"
+  },
+  "bus": {
+   "org": "SIM International",
+   "year": "2005",
+   "title": "Luda yã takada kↄ̃n Bokobaru yão"
+  },
+  "bvr": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2008",
+   "title": "Nyanyapa Arrku Gun-nika Gun-molamola Janguny: Minypa Jesus Christ Guna-ganyja Arrburrwa Gun-geka Rum"
+  },
+  "bvw": {
+   "org": "The Seed Company in collaboration with Language Developecs and Bible Translators Association",
+   "year": "2023",
+   "title": "Boga New Testament Portion"
+  },
+  "bwc": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "Bwile Bible Translation"
+  },
+  "bzd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Tte Pa̱'a̱li̱ Me' Skëköl tö Se' a̱"
+  },
+  "bzj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Di Nyoo Testiment eena Bileez Kriol"
+  },
+  "caa": {
+   "org": "Wycliffe Bible Translators, Inc. and Evangel Bible Translators, International",
+   "year": "1996",
+   "title": "Uyojroner e Dios xeꞌ Tzꞌijbꞌabꞌir Tama e Onian Tiempo"
+  },
+  "cac": {
+   "org": "Sociedad Bíblica de Guatemala",
+   "year": "2007",
+   "title": "A Ch'an Biblia D'a Chuj San Mateo"
+  },
+  "caf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Yakʼusda bughunek: k’andit khunek neba lhaidinla"
+  },
+  "cam": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Tii Iitihi: Élele Iitihi na mwo Coho"
+  },
+  "cao": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Dios Chani"
+  },
+  "cap": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Ew Testamento: Chipay Tawkquiztan"
+  },
+  "cav": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Yusuja Quisarati"
+  },
+  "cax": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Manitanati Tuparrü"
+  },
+  "cbv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Dios ã jáap naáwát tólih"
+  },
+  "cco": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Júu ʼmɨ́ɨ e cacuo fidiée"
+  },
+  "cgc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Pulong ta Dyos: Genesis daw bag-o na kasugtanan"
+  },
+  "chd": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1991",
+   "title": "Lataiquiʼ loyaʼapa iƚe al cʼa lixpicʼepa L̵anDios"
+  },
+  "chf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1977",
+   "title": "U Chʼuʼul Tʼan Dios"
+  },
+  "chz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Hmooh hmëë he- ga-jmee Jesucristo; Salmos"
+  },
+  "cje": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Chru"
+  },
+  "cjo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Iwaperite tajorentsi ikenkithatakoetziri awinkatharite Jesokirishito: owakirari inimotakiri tajorentsi"
+  },
+  "cle": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Ja̱³la³ fáh⁴dxa⁴²dxú⁴ hi³mɨɨ³² chiáh² Ñúh³a² Jesucristo; Salmos"
+  },
+  "clu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1990",
+   "title": "Anang ambal ang Dios: Magandang balita Biblia"
+  },
+  "cnl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Júu² 'mɨɨn³² 'e³ ca²³ŋɨń² Dios"
+  },
+  "cof": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Diosichi Pila"
+  },
+  "cok": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Cora, Santa Teresa"
+  },
+  "cot": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Iroaquerari Itioncacaantaqueca Aapani Irioshi: Tsavetacoquerica Amajirote Jesoquirishito"
+  },
+  "cpa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1973",
+   "title": "El Nuevo Testamento de nuestro señor Jesucristo: Versión chinanteca"
+  },
+  "cpb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "Kameethari Ñaantsi: ikenkitha-takoitziri awinkatharite Jesucristo; Owakerari aapatziya-wakagaantsi"
+  },
+  "cpc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "KAMIITHARI ÑAANTSI"
+  },
+  "cpy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Las Escrituras en Ashéninka Ucayali del Sur del Perú"
+  },
+  "crj": {
+   "org": "Wycliffe Bible Translators, Inc. and Canadian Bible Society",
+   "year": "2001",
+   "title": "Cree: Eastern. Chishemanituu Utayimuwin kaa uskaach testimint."
+  },
+  "crl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Īyiyū Ayimūn"
+  },
+  "crx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Yak'usda Ooghuni"
+  },
+  "cso": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1986",
+   "title": "Jú¹ chú³² quioh²¹ Jesús tsá² lɨn³ Cristo"
+  },
+  "csy": {
+   "org": "Siyin KJV Bible Team",
+   "year": "2020",
+   "title": "Tinaung Takluem"
+  },
+  "cta": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1981",
+   "title": "Chaʼ tsoʼo nu nchcuiʼ jiʼi̱ Jesucristo nu xuʼna na"
+  },
+  "cth": {
+   "org": "Batupuei Christian Fellowship",
+   "year": "2020",
+   "title": "Thai Phum Holy Bible"
+  },
+  "ctp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Chaʼ suʼwe nu nchkwiʼ chaʼ ʼin Jesucristo nu nka xʼnaan"
+  },
+  "cug": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2021",
+   "title": "Kiŋwakti ki Nyɔ Miŋkaiŋ Mifiaŋ"
+  },
+  "cul": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "El Nuevo Testamento en el idioma Culina (mádija) del Perú"
+  },
+  "cut": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1972",
+   "title": "El Nuevo Testamento: Cuicateco de Teutila"
+  },
+  "daf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1991",
+   "title": "NAƆ ‑SË 'SËËDHƐ"
+  },
+  "dao": {
+   "org": "The Word for the World International",
+   "year": "2018",
+   "title": "Dai Cangcim Kthai"
+  },
+  "dgc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1979",
+   "title": "Bigu a tipan: I mahusay a baheta para ta panahun tam"
+  },
+  "dhg": {
+   "org": "Wycliffe Bible Translators. Inc",
+   "year": "2019",
+   "title": "Wangurri Scripture"
+  },
+  "dji": {
+   "org": "Wycliffe Bible Translators",
+   "year": "1977",
+   "title": "Djinang Bible"
+  },
+  "djj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2023",
+   "title": "Ndjebbana Bible Portions"
+  },
+  "djr": {
+   "org": "Bible Society of Australia",
+   "year": "2008",
+   "title": "God-Waŋarrwu Walŋamirr Dhäruk"
+  },
+  "dnv": {
+   "org": "The Word for the World International",
+   "year": "",
+   "title": "ဓမ္မသစ်ကျမ်း ဓနုဘာသာစကား"
+  },
+  "dov": {
+   "org": "Door43 World Missions Community",
+   "year": "2020",
+   "title": "Dombe New Testament"
+  },
+  "dud": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "ut-Hun New Testament"
+  },
+  "due": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1977",
+   "title": "I bowon a pagpakikasungdu"
+  },
+  "duo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Agta, Dupaninan"
+  },
+  "dwu": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2021",
+   "title": "Liyagawumirr Luke"
+  },
+  "dwy": {
+   "org": "Bible Society of Australia + Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Dhuwaya Scripture"
+  },
+  "ena": {
+   "org": "Pioneer Bible Translators",
+   "year": "2022",
+   "title": "Asɨ dɨ manasɨŋ"
+  },
+  "esk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Ipqitchuat Makpiġaat - Agaayyutim Uqałhi Iñupiatun"
+  },
+  "gde": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2000",
+   "title": "Gude: Kura Aləkawalə ŋga Əntaŋfə"
+  },
+  "gdg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Ga'dang"
+  },
+  "gge": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2025",
+   "title": "Gurrgoni Scripture"
+  },
+  "ghn": {
+   "org": "The Seed Company",
+   "year": "2024",
+   "title": "Kubokota Adapt New Testament"
+  },
+  "gia": {
+   "org": "Bible Society of Australia",
+   "year": "1978",
+   "title": "Jawunany"
+  },
+  "gnn": {
+   "org": "Bible Society of Australia",
+   "year": "1989",
+   "title": "Gumatj Bible"
+  },
+  "gqr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Ta lǝ Luwǝ Kunmindɨ kɨ Sigɨ"
+  },
+  "gue": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1984",
+   "title": "Gurindji Scripture"
+  },
+  "guf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2022",
+   "title": "Gupapuyngu Scripture"
+  },
+  "gul": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "De Nyew Testament"
+  },
+  "guo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Pajelwʉajan Dios pejjamechan"
+  },
+  "gup": {
+   "org": "Bible Society of Australia",
+   "year": "2018",
+   "title": "God Nuye Kunwok"
+  },
+  "gvc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Cohamacʉ Yare Yahari Tjuel"
+  },
+  "gvn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1984",
+   "title": "Godumu Kuku"
+  },
+  "gwi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Vit'eegwijyąhchy'aa Vagwandak Nizįį"
+  },
+  "gyr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Tũpa Ñehengagüer"
+  },
+  "heg": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2011",
+   "title": "Buk Niu In Hida Balu nol Dehet deng Apan-kloma ki in Dadi ka"
+  },
+  "hop": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "God Lavayiyat Aṅ Puhuvasiwni"
+  },
+  "hoy": {
+   "org": "The Word for the World International",
+   "year": "2020",
+   "title": "परमेश्‍वर उन वचन"
+  },
+  "hru": {
+   "org": "Bridge Connectivity Solutions Pvt. Ltd",
+   "year": "2024",
+   "title": "Aka (Hrusso) Bible"
+  },
+  "hto": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Juziñamui Ñuera Uai"
+  },
+  "ibd": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2025",
+   "title": "Iwaidja Selections"
+  },
+  "ifb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Nan Hapit Apo Dios"
+  },
+  "ifk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Nan Kalin Apu Dios"
+  },
+  "ify": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Kallahan, Keley-i"
+  },
+  "ign": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Eta Táurinaquene máechajiriruvahi ema Viya eta viyehe, ticaijare puito Eta Nuevo Testamento"
+  },
+  "ikw": {
+   "org": "Wycliffe",
+   "year": "2010",
+   "title": "Tẹsitamenti Ikne n'Ọnu Ikwere"
+  },
+  "inb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Kaipimi Taita Dius Rimaku"
+  },
+  "isn": {
+   "org": "Door 43 International Mission Community",
+   "year": "2020",
+   "title": "Isanzu Bible"
+  },
+  "ivb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1996",
+   "title": "Ibatan"
+  },
+  "jao": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1980",
+   "title": "Selections from Luke, Mark, Acts, Genesis, Ruth, and Romans"
+  },
+  "jay": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2025",
+   "title": "Yän-nhaŋu Selections"
+  },
+  "jic": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Dios Tjevele Jupj 'Üsüs La Qjuisiji Jesucristo Mpes"
+  },
+  "jid": {
+   "org": "Door43 World Missions Community",
+   "year": "2020",
+   "title": "Bu New Testament"
+  },
+  "jni": {
+   "org": "Door 43 International Mission Community",
+   "year": "2020",
+   "title": "Janji Bible"
+  },
+  "jum": {
+   "org": "Pioneer Bible Translators",
+   "year": "2023",
+   "title": "Meeŋka Jooŋ"
+  },
+  "kbh": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Bëngbe Bëtsa Cabëngaftaca Entsoyebuambna"
+  },
+  "kca": {
+   "org": "Institute for Bible Translation, Finland",
+   "year": "2021",
+   "title": "Хӑнты Перевод Библии"
+  },
+  "ken": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Ɛkáti Nku Nkɔ"
+  },
+  "kfw": {
+   "org": "The Word for the World International",
+   "year": "2021",
+   "title": "The New Testament in Kharam"
+  },
+  "kgp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Topẽ vĩ rá"
+  },
+  "khj": {
+   "org": "Luke Initiative for Scripture Translation and The Seed Company",
+   "year": "2025",
+   "title": "Kuturmi NT Portion"
+  },
+  "kje": {
+   "org": "Yayasan Sumber Sejahtera",
+   "year": "2008",
+   "title": "Makromod lalap lirna wawan"
+  },
+  "kjl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "साःरो बाचा"
+  },
+  "kjn": {
+   "org": "Wycliffe Bible Translators Australia",
+   "year": "1967",
+   "title": "Kunjen Mark Portions"
+  },
+  "kkl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Allah Yubu"
+  },
+  "kmk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Ugud apudyus = Ti baro tulag"
+  },
+  "kpg": {
+   "org": "The Kapingamarangi Bible translation committee",
+   "year": "1996",
+   "title": "Beebaa Dabu"
+  },
+  "kqp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Kimré"
+  },
+  "krh": {
+   "org": "ITDAL and The Seed Company",
+   "year": "2025",
+   "title": "Akurumi NT Portion"
+  },
+  "ksc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1986",
+   "title": "Kalinga, Southern"
+  },
+  "kux": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2018",
+   "title": "Kukatja Scriptures"
+  },
+  "kvn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Pab tummad karta pab Jesucristobal igal-pin mezhijad"
+  },
+  "kxf": {
+   "org": "Wycliffe Bible Translators, Inc. and ACOTBA-SUBO",
+   "year": "2020",
+   "title": "TAFO AYO"
+  },
+  "kxw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Konai"
+  },
+  "kyb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Kalinga, Butbut"
+  },
+  "kyq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Kitapm kɛn Raa dɔɔko kiji ute jeege"
+  },
+  "lac": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1978",
+   "title": "Lacandon"
+  },
+  "lbk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Nan kalin Apo Dios"
+  },
+  "lcp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Lawa, Western (พระคัมภีร์ละว้า)"
+  },
+  "lex": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Puka Lululi"
+  },
+  "lhi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Lahu Shi"
+  },
+  "lip": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Sekpele"
+  },
+  "llg": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2004",
+   "title": "Rote Lole Alkitab"
+  },
+  "llu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Lau New Testament"
+  },
+  "lng": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2023",
+   "title": "Larrakia Christmas Story"
+  },
+  "maa": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Mazatec, San Jerónimo Tecóatl"
+  },
+  "maj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Éhe̱n Nti̱a̱ná"
+  },
+  "maq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1991",
+   "title": "Compromisu xi majo xi casahmi nina cojo xuta (El Nuevo Testamento en el mazateco de Chiquihuitlán de Juárez ... y en español)"
+  },
+  "mbc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Macushi"
+  },
+  "mbj": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Pop Hagä Do Panyyg Hanäm Do Hahỹỹh"
+  },
+  "mca": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "INTATA ȽE'ȽIJEI"
+  },
+  "mcu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2001",
+   "title": "Mvù Ŋgɔ̀ŋ Feê"
+  },
+  "mfy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Mayo"
+  },
+  "mgc": {
+   "org": "Pioneer Bible Translators",
+   "year": "2010",
+   "title": "Morokodo"
+  },
+  "mib": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1973",
+   "title": "Nuevo Testamento en mixteco"
+  },
+  "mic": {
+   "org": "Canadian Bible Society",
+   "year": "2003",
+   "title": "Gelulg Glusuaqan: Gisiteget Agnutmugsi'gw"
+  },
+  "mig": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1951",
+   "title": "Mixtec, San Miguel el Grande"
+  },
+  "mih": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1979",
+   "title": "Tuhun Ndyoo sihin tyehen ñi"
+  },
+  "mio": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1980",
+   "title": "Tutu chaa cha iyo cuenda ra hahnu Jesucristo (El Nuevo Testamento de nuestro señor Jesucristo)"
+  },
+  "miz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Tūʼún xuva kō vatā ó ntákaʼan ña ñuú Coatzospan"
+  },
+  "mjc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1994",
+   "title": "Tuhun tsaa tsa nacoo̱ jutu mañi yo Jesucristo tsi yo"
+  },
+  "mkj": {
+   "org": "Mokilese Bible Translation Committee",
+   "year": "2019",
+   "title": "Mokilese Bible"
+  },
+  "mkl": {
+   "org": "SIM International",
+   "year": "2006",
+   "title": "Akabuu Titɔ̃i Idei Ilaaɔ"
+  },
+  "mkn": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2007",
+   "title": "Kupang Malay Bible"
+  },
+  "mmn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1982",
+   "title": "Mamanwa"
+  },
+  "mnv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Rennell-Bellona"
+  },
+  "mop": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Le'ec Ada' U T'an A Dios A Tumulbene"
+  },
+  "mph": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2015",
+   "title": "Mawng Mark and other Scripture portions"
+  },
+  "mpj": {
+   "org": "Wycliffe Bible Translators Australian",
+   "year": "1999",
+   "title": "Mamamili Wangka"
+  },
+  "mpm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1988",
+   "title": "Nuevo Testamento en mixteco de Yosondúa"
+  },
+  "msk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1975",
+   "title": "Yang Bago na Togon Kanatu"
+  },
+  "mto": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1989",
+   "title": "Ya̱ʼa̱ tseʼe je̱ nam ko̱jtstán juuʼ veʼe je̱ Nteʼyamˍ xyaktaajnjimdu je̱ nMa̱j Vintsá̱namda Jesucristo ka̱jx"
+  },
+  "mwf": {
+   "org": "Bible Society Australia",
+   "year": "2018",
+   "title": "Murrinhpatha Scripture"
+  },
+  "mwp": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2014",
+   "title": "Minar Poelayzimayl"
+  },
+  "mxb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Tuti yó'o kúú to̱'on Ndios, ta xí'o ña kuendá sa'a̱ Jesús"
+  },
+  "mxp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1987",
+   "title": "Ja øgyajpxy ja ømyadya̱ʼa̱ky midi xukpa̱a̱jtɨmp ja nɨtsoʼokʼajtɨn"
+  },
+  "mxq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Ja jembyʉ kajxy'átypyʉ mʉdʉ Jesukristʉkyʉjxm: El Nuevo Testamento de nuestro Señor Jesucristo en el mixe de Juquila"
+  },
+  "mxt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1983",
+   "title": "Tuhun cha sañahá ra Jesucristo chi yo"
+  },
+  "mza": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Mixtec, Santa María Zacatepec"
+  },
+  "naw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Nawuri"
+  },
+  "nbq": {
+   "org": "Tim Penterjemah Bahasa Nggem (The Nggem Translation Team)",
+   "year": "2003",
+   "title": "Ala wene Nggem enane vaga dirup warek"
+  },
+  "nck": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2025",
+   "title": "Nakara Selections"
+  },
+  "ncr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Nchane (Ncane)"
+  },
+  "nfa": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2012",
+   "title": "Dhao Alkitab"
+  },
+  "nhg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1980",
+   "title": "El Nuevo Testamento en nahuatl de Tetelcingo"
+  },
+  "nhr": {
+   "org": "The Bible Society of Botswana",
+   "year": "2012",
+   "title": "Ka̱bas Qae-xg'ae sa"
+  },
+  "nhx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2016",
+   "title": "Isthmus-Mecayapan Nahuatl"
+  },
+  "nhy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "Itlajtol totajtzin Dios = El Nuevo Testamento"
+  },
+  "nit": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "కొత్త కరార్"
+  },
+  "njd": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "Ndondehamba"
+  },
+  "nkn": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "Nkangala Bible Translation"
+  },
+  "nkr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2022",
+   "title": "De Beebaa Dabu"
+  },
+  "nna": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1980",
+   "title": "Nyangumarta Bible"
+  },
+  "nob": {
+   "org": "Biblica, Inc",
+   "year": "1978",
+   "title": "Biblica® Open En Levende Bok: Det Nye Testamentet"
+  },
+  "not": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Irinibare Tosorintsi Ocomantëgotëri Antigomi Jesoquirisito"
+  },
+  "nsu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2017",
+   "title": "Itlajtol Totajtzin Dios"
+  },
+  "ntj": {
+   "org": "Bible Society of Australia",
+   "year": "2007",
+   "title": "Mama Kuurrku Wangka"
+  },
+  "ntr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2006",
+   "title": "WURUBURƐ NOMBIA KPAAKPAA NƆƆKEBAKESEE WƆLE"
+  },
+  "ntu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Nzryrngrkxtr Kc Ate Rut x Sam"
+  },
+  "num": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2023",
+   "title": "Te Fuakava Fo'ou"
+  },
+  "nuy": {
+   "org": "Bible Society of Australia",
+   "year": "2010",
+   "title": "Ana-Maṉngulg Ana-Wubiba -- Anu-gadhuwa Ana-lhaawu"
+  },
+  "nww": {
+   "org": "The Word for the World International",
+   "year": "2025",
+   "title": "Ndwewe Bible Version"
+  },
+  "nxl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Anahatana ne Anamanaya tau Sou Naunue"
+  },
+  "nys": {
+   "org": "Bible Society of Australia",
+   "year": "2018",
+   "title": "Noongar Bible"
+  },
+  "ood": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Jiosh Wechij O'ohana"
+  },
+  "otn": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1975",
+   "title": "Ja ua ra̱ ʼdaʼyo cohi bi gomi̱ Oja̱ yø ja̱ʼi̱"
+  },
+  "ots": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1975",
+   "title": "El Nuevo Testamento en otomí de San Felipe Santiago, Edo. de México"
+  },
+  "pad": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Deus Athi Kapapirani Hida"
+  },
+  "pao": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Te Naa Besa Unnepu"
+  },
+  "piu": {
+   "org": "Bible Society of Australia",
+   "year": "2006",
+   "title": "Luritja Bible"
+  },
+  "pjt": {
+   "org": "Bible Society of Australia",
+   "year": "2019",
+   "title": "Tjukurpa Palya"
+  },
+  "pls": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1982",
+   "title": "Tti jian joajné Jesucristo"
+  },
+  "plw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2018",
+   "title": "Bagung Pinegsulutan et Empu'"
+  },
+  "pri": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Tii Pwicîri: Âmu Aamwari naa na cî"
+  },
+  "pub": {
+   "org": "The Word for the World International and North East Centre for Training and Research",
+   "year": "2022",
+   "title": "Mark Ning Amije Chongkahoi"
+  },
+  "qvc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Mushuq Tistamintu"
+  },
+  "qvo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Quichua, Napo"
+  },
+  "rai": {
+   "org": "Wycliffe Bible Translators, Inc. and Wycliffe Sweden",
+   "year": "2006",
+   "title": "BUK TAABU MATAKIN + TURPAAINA"
+  },
+  "reg": {
+   "org": "Door43 World Missions Community",
+   "year": "2020",
+   "title": "Kara Bible"
+  },
+  "rei": {
+   "org": "The Word for the World International and Relli Translation Samiti, Vishagapatanam, Andra Pradesh",
+   "year": "2023",
+   "title": "సొత్తొ పురువురొ పవిత్రొ కొత"
+  },
+  "rgu": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2004",
+   "title": "Rote Rikou Alkitab"
+  },
+  "rmb": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2021",
+   "title": "Rembarrnga Scripture"
+  },
+  "rop": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1990",
+   "title": "Holi Baibul"
+  },
+  "row": {
+   "org": "Unit Bahasa dan Budaya",
+   "year": "2016",
+   "title": "Rote Dela Alkitab"
+  },
+  "san": {
+   "org": "SanskritBible.in",
+   "year": "2018",
+   "title": "Sanskrit Bible (NT) in Assamese Script"
+  },
+  "sbl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Hay halitá nin Diyos hay kawkanta boy kawkahalita-an (The New Testament Psalms and Proverbs)"
+  },
+  "sch": {
+   "org": "The Word for the World International",
+   "year": "2017",
+   "title": "Pathien Lekhabu Inthieng Chongtung Thar"
+  },
+  "set": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Sentani: Allahle a neme heteungekoke homofae"
+  },
+  "sey": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Maija'quë Huajë Ca Nëose'e"
+  },
+  "shj": {
+   "org": "Pioneer Bible Translators",
+   "year": "2018",
+   "title": "Sorunu Kaläg na Ikä Caning"
+  },
+  "sja": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Tachi ak'õre pedee"
+  },
+  "slm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1994",
+   "title": "Kitab Injil"
+  },
+  "snw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Selee"
+  },
+  "sor": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Maktubu dɨnə Mãr̰ĩ duwa"
+  },
+  "srq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1977",
+   "title": "Mbia Cheẽ"
+  },
+  "stp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Gu ñio'ki'ñ gu Dios na bhaan tu a'ga guch xoi'kam"
+  },
+  "stw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Pwapwior we e Santus"
+  },
+  "syb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1992",
+   "title": "Subanen, Central"
+  },
+  "tap": {
+   "org": "The Word for the World International",
+   "year": "2023",
+   "title": "Kitaabua New Testament"
+  },
+  "tav": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Dio Wadarique"
+  },
+  "tcn": {
+   "org": "The Word for the World International and Tichurong Translation Project, Dolpa, Karnali",
+   "year": "2025",
+   "title": "तिचुरोङ क्येला सारबा करारयि किताबतेबा"
+  },
+  "tcs": {
+   "org": "Wycliffe Bible Translators",
+   "year": "2016",
+   "title": "Baibol Tores Streit Yumplatok"
+  },
+  "tee": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1976",
+   "title": "Ixchivinti Dios"
+  },
+  "ter": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Emo'u Itukó'oviti"
+  },
+  "tew": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Naˀinbí Sedó Yôesiví Tu̖u̖ / Nanbí Sedó Jôesiví Tun"
+  },
+  "tfr": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Sbö Tjl̈õkwo"
+  },
+  "tgj": {
+   "org": "The Word for the World International NECTAR",
+   "year": "2018",
+   "title": "ANWNV GAMLV"
+  },
+  "thd": {
+   "org": "Rev. Dr. Allen Harry Hall and Jollen Press",
+   "year": "1975",
+   "title": "Kuuk Thayorre Bible Portions"
+  },
+  "tiw": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2022",
+   "title": "New Tiwi Scripture"
+  },
+  "tkr": {
+   "org": "Pioneer Bible Translators",
+   "year": "2022",
+   "title": "Tsakhur"
+  },
+  "tku": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Xasāstiʼ testamento (Xatze tachihuīn ixpālacata Jesucristo)"
+  },
+  "tna": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Diusu sa mimi"
+  },
+  "tnk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Nǝkukuǝ Ikinan"
+  },
+  "tnp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Nauəuə Asim Rəha Uhgɨn Nəmtətiən Vi"
+  },
+  "too": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1978",
+   "title": "Huan Xasāstiʼ testamento: Huan xatzey tachihuīn ixpālacata Jesucristo"
+  },
+  "tpp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Tepehua, Pisaflores"
+  },
+  "tpt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "Ixchivinti Dios: ni sastʼi chivinti yu Dios jatʼatamakaul ixlapanakni laka lhimasipijni"
+  },
+  "tpu": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "គម្ពីរ​ភាសា​ទំពួន"
+  },
+  "trq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Triqui, Itunyoso"
+  },
+  "ttc": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2003",
+   "title": "Te akʼaʼj tuʼjal tuj tuʼjal qtata Dios"
+  },
+  "tuf": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Sir chihtá"
+  },
+  "tvn": {
+   "org": "The Word for the World International",
+   "year": "2024",
+   "title": "ဓမ္မသစ်ကျမ်း ထားဝယ်ဘာသာစကား"
+  },
+  "tvt": {
+   "org": "The Word for the World International",
+   "year": "2018",
+   "title": "Esa Leedap Ena Banlam"
+  },
+  "twi": {
+   "org": "Biblica, Inc",
+   "year": "1996",
+   "title": "Biblica® Wonhia ɛho kwamma nhoma Akuapem Twi Nkwa Asɛm"
+  },
+  "tyx": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2024",
+   "title": "Teke Sud-Ouest"
+  },
+  "udi": {
+   "org": "Translation Services International Ltd. and Wycliffe Bible Translators, Inc",
+   "year": "2020",
+   "title": "Udi Bible"
+  },
+  "uli": {
+   "org": "Bible Society of Micronesia",
+   "year": "1995",
+   "title": "Bogtag we ye Tefoy"
+  },
+  "ulk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1986",
+   "title": "Meriam Mir Bible"
+  },
+  "ura": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2008",
+   "title": "Cana Coaunera Ere"
+  },
+  "ury": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2005",
+   "title": "Orya"
+  },
+  "var": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Riosia Warijio Nayewani Ahpo Tisiwa Kaaweruma Tuuyewari"
+  },
+  "vmy": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "El Nuevo Testamento Mazateco de Ayautla"
+  },
+  "wap": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2012",
+   "title": "Kaimana'o Tominkaru Paradan"
+  },
+  "wbp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Warlpiri Short Bible"
+  },
+  "wib": {
+   "org": "Wycliffe Bible Translators, Inc. in cooperation with ANTBA",
+   "year": "2013",
+   "title": "Toussian, Southern"
+  },
+  "wim": {
+   "org": "Wycliffe Bible Translators",
+   "year": "1984",
+   "title": "Wik Inangan Kan-Kanam God.antama"
+  },
+  "wlg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2021",
+   "title": "Kunbarlang Scripture"
+  },
+  "wmt": {
+   "org": "Wycliffe Bible Translators",
+   "year": "1985",
+   "title": "Wangki Wulyu Jirrkirlikanujuwal"
+  },
+  "wrk": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1983",
+   "title": "Shorter New Testament"
+  },
+  "xrb": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1993",
+   "title": "Yãhã Naambiyãrfãn Saba"
+  },
+  "yij": {
+   "org": "Wycliffe Bible Translators",
+   "year": "1983",
+   "title": "NYIRTINGU MANYKA WANTHARNA NGURRAY"
+  },
+  "yre": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1999",
+   "title": "Bali -le 'fluba 'trɛ Zozi blamin pli Bali man 'e 'pee"
+  },
+  "zac": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1983",
+   "title": "Dizaʼquë shtë Dios con dizë"
+  },
+  "zad": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2011",
+   "title": "Dillꞌ wen dillꞌ   Kob C̱he   Jesucrístonaꞌ"
+  },
+  "zae": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2014",
+   "title": "Zapotec, Yareni"
+  },
+  "zam": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1971",
+   "title": "Testament cub coʼ nac diʼs ndac cheʼn Tad Jesucrist"
+  },
+  "zao": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2007",
+   "title": "Diiz kuu ndyaadno yalnaban"
+  },
+  "zpi": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Xdiiz Dëdyuzh kon disa"
+  },
+  "zar": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Didza' cubi rucá'ana tsahui'"
+  },
+  "zas": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Xtiidx Dios"
+  },
+  "zav": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1971",
+   "title": "Testament Cobə deʼen choeʼ dižəʼ c̱he ancho Jesocristənʼ"
+  },
+  "zbu": {
+   "org": "The Seed Company in collaboration with Language Developers and Bible Translators Association",
+   "year": "2025",
+   "title": "Bu New Testament"
+  },
+  "zca": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2013",
+   "title": "Widi'zh che'n Jesukrist kwa'n kinu yalnaban"
+  },
+  "zpg": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2019",
+   "title": "Zapoteco, Guevea de Humboldt NT"
+  },
+  "zpl": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Stichia' Diose dialu"
+  },
+  "zpm": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1998",
+   "title": "Diidz ne rdeed guielmban"
+  },
+  "zpo": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Wdizh kwaan nyaadno yalnaban"
+  },
+  "zpq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1987",
+   "title": "Dižaʼ güen c̱he ancho Jesucristo"
+  },
+  "zpt": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2015",
+   "title": "Zapoteco, San Vicente Coatlán"
+  },
+  "zpv": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "1990",
+   "title": "Xchiʼdxyi cuubi dxiohs nin bieʼgaluuʼyi daada Jesucristu (El Nuevo Testamento en el zapoteco de Chichicapan y en español)"
+  },
+  "zpz": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2004",
+   "title": "De riidz ni trat cub nu bicy nu Ñgyoozh mbecy: Salmos; Proverbios"
+  },
+  "ztq": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2009",
+   "title": "Tiits nii xnee kyalmbañ; El Nuevo Testamento en el zapoteco de Quioquitani"
+  },
+  "zty": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2002",
+   "title": "Dižaʼ chaweʼ kub len Salmo kaʼ"
+  },
+  "zyp": {
+   "org": "Wycliffe Bible Translators, Inc",
+   "year": "2010",
+   "title": "Biahrai Tha, Zyphe rei"
+  }
+ }
+}

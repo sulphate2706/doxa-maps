@@ -1,0 +1,30 @@
+{
+  "title": "Postere biblice",
+  "book": "Cartea",
+  "language": "Limba",
+  "size": "Dimensiune",
+  "print": "Printează",
+  "close": "Închide",
+  "loading": "Se încarcă cartea…",
+  "fetchFailed": "Textul nu a putut fi încărcat. Încearcă din nou.",
+  "fitsAt": "Încape la {pt} pt pe {cols} coloane.",
+  "tooSmall": "Prea mic pentru a fi citit la această dimensiune.",
+  "trySize": "încearcă {size}",
+  "books": {
+    "ACT": "Faptele Apostolilor",
+    "MAT": "Matei",
+    "JHN": "Ioan",
+    "MRK": "Marcu",
+    "LUK": "Luca",
+    "HEB": "Evrei",
+    "GEN": "Geneza",
+    "1JN": "1 Ioan",
+    "COL": "Coloseni",
+    "1CO": "1 Corinteni",
+    "1PE": "1 Petru",
+    "JOS": "Iosua"
+  },
+  "posterDesign": {
+    "label": "Poster cu o carte a Bibliei"
+  }
+}

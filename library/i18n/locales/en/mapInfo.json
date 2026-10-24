@@ -1,0 +1,58 @@
+{
+  "open": "What can this map do for you?",
+  "title": "What can this map do for you?",
+  "shortDescription": "Short description",
+  "pointer": "What can this map do?",
+  "close": "Close",
+  "takeaway": "What you take away:",
+  "poster": "Poster",
+  "packet": "Prayer packet",
+  "cards": "Prayer cards",
+  "spreadsheet": "Spreadsheet",
+  "example": "Example",
+  "expandPages": "Show all pages ({n})",
+  "collapsePages": "Show the first page only",
+  "expandDeck": "Show all cards ({n})",
+  "collapseDeck": "Stack the cards",
+  "moreRows": "More rows in the full spreadsheet: {n}",
+  "openFull": "Open full size",
+  "pointerOff": "Don't point at this button again",
+  "tab": {
+    "upg-100": {
+      "lead": "Every unreached people group on this list, about 2,100 of them, gathered into 27 lists of fifty to a hundred. Each list prints as a poster, a prayer packet and a card deck, so one disciple, church or leader can carry a whole list in prayer, by name.",
+      "takeaway": "for any zone, a wall poster, a prayer packet to hand out and a deck of prayer cards. The example below is the zone with the most people in groups where no one is planting churches yet."
+    },
+    "cities-internet": {
+      "lead": "See how far the internet reaches in every country where unengaged people groups live. Tap a country for how many people are online there and the platforms they use, or tap a dot for a people group.",
+      "takeaway": "Every country where an unengaged people group lives, banded by the share of people using the internet — so you can tell digital-first ground from places where few are online. Figures are national (India also by state, from a 2019–21 survey) and carry their observation year; unknown means unmeasured, never assumed."
+    },
+    "gospel-resources": {
+      "lead": "See what each unreached people group already has in its own language: Scripture, audio, the JESUS Film, Bible video and discipleship training, each with its link. Tap a country to list its groups, or tap a dot to open one group's resources.",
+      "takeaway": "Scripture, audio, film, Bible video, training — and what is still missing. Click a country to list its groups, or a group for its own sheet with working links to every resource found. “None found” means not present in the pools this build checked, never proof that nothing exists."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Every unreached people group in one view: filter by people, place, language, religion or prayer, and the map, the table and the totals all narrow together. It is where you set your perspective for the work: who to reach now, and who to line up for next.",
+      "takeaway": "The rows you filtered to, as a spreadsheet."
+    },
+    "research-map-plus-grid": {
+      "lead": "A simple, educational map of the unreached people groups: search by people group, place, language or religion, and the map and the list narrow together. The prayer and engagement layers show at a glance how far prayer and outreach have reached."
+    },
+    "prayer-map": {
+      "lead": "One map of prayer for the people groups on DOXA's prayer list, showing at a glance who is being prayed for and who is still waiting. Put it on every website in your network, so everyone who visits sees the same picture and joins the same movement.",
+      "takeaway": "A people group that no one is praying for yet, and a link to its prayer page."
+    },
+    "regions-dashboard": {
+      "lead": "Find the unreached people groups of every region and country. Under each region, “View country posters” prints any country's poster, prayer packet or card deck.",
+      "takeaway": "Open a country to see its groups. Under each region, “View country posters” prints a country's poster, prayer packet or card deck.",
+      "note": "Posters, packets and cards generate in your browser for each country except India."
+    }
+  },
+  "col": {
+    "peopleGroup": "People Group",
+    "country": "Country",
+    "region": "Region",
+    "population": "Population"
+  },
+  "tabExamples": "Examples",
+  "tabStrategy": "Strategy"
+}

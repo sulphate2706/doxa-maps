@@ -1,0 +1,58 @@
+{
+  "open": "Ce poate face această hartă pentru tine?",
+  "title": "Ce poate face această hartă pentru tine?",
+  "shortDescription": "Descriere scurtă",
+  "pointer": "Ce face această hartă?",
+  "close": "Închide",
+  "takeaway": "Ce primești:",
+  "poster": "Poster",
+  "packet": "Pachet de rugăciune",
+  "cards": "Cartonașe de rugăciune",
+  "spreadsheet": "Foaie de calcul",
+  "example": "Exemplu",
+  "expandPages": "Arată toate paginile ({n})",
+  "collapsePages": "Arată doar prima pagină",
+  "expandDeck": "Arată toate cartonașele ({n})",
+  "collapseDeck": "Strânge cartonașele",
+  "moreRows": "Rânduri suplimentare în foaia de calcul completă: {n}",
+  "openFull": "Deschide la dimensiune completă",
+  "pointerOff": "Nu mai indica acest buton",
+  "tab": {
+    "upg-100": {
+      "lead": "Toate grupurile etnice neatinse de pe această listă, aproximativ 2.100, strânse în 27 de liste de la cincizeci la o sută. Fiecare listă se tipărește ca afiș, pachet de rugăciune și set de cartonașe, ca un ucenic, o biserică sau un lider să poarte în rugăciune o listă întreagă, pe nume.",
+      "takeaway": "pentru fiecare zonă, un poster de perete, un pachet de rugăciune de împărțit și un set de cartonașe de rugăciune. Exemplul de mai jos este zona cu cei mai mulți oameni din popoare în care nimeni nu plantează încă biserici."
+    },
+    "cities-internet": {
+      "lead": "Vezi cât de departe ajunge internetul în fiecare țară în care trăiesc grupuri etnice neangajate. Atinge o țară ca să vezi câți oameni sunt online acolo și ce platforme folosesc, sau atinge un punct pentru un grup etnic.",
+      "takeaway": "Fiecare țară în care trăiește un popor neatins, grupată după ponderea oamenilor care folosesc internetul — ca să deosebești terenul digital de locurile unde puțini sunt online. Cifrele sunt naționale (India și pe state, dintr-un sondaj din 2019–21) și poartă anul observației; necunoscut înseamnă nemăsurat, niciodată presupus."
+    },
+    "gospel-resources": {
+      "lead": "Vezi ce are deja fiecare grup etnic neatins în propria limbă: Scriptura, audio, filmul ISUS, video biblic și instruire în ucenicie, fiecare cu linkul lui. Atinge o țară ca să-i vezi grupurile, sau atinge un punct ca să deschizi resursele unui grup.",
+      "takeaway": "Scriptură, audio, film, video biblic, instruire — și ce lipsește încă. Apasă pe o țară pentru a-i afișa popoarele, sau pe un popor pentru fișa sa, cu legături active către fiecare resursă găsită. „Nimic găsit” înseamnă absent din colecțiile verificate de această versiune, niciodată o dovadă că nu există nimic."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Toate grupurile etnice neatinse într-o singură vedere: filtrează după popor, loc, limbă, religie sau rugăciune, iar harta, tabelul și totalurile se restrâng împreună. Aici îți stabilești perspectiva asupra lucrării: pe cine să atingi acum și pe cine să pregătești apoi.",
+      "takeaway": "Rândurile filtrate, ca foaie de calcul."
+    },
+    "research-map-plus-grid": {
+      "lead": "O hartă simplă și educativă a grupurilor etnice neatinse: caută după grup etnic, loc, limbă sau religie, iar harta și lista se restrâng împreună. Straturile de rugăciune și de implicare arată dintr-o privire cât de departe au ajuns rugăciunea și lucrarea."
+    },
+    "prayer-map": {
+      "lead": "O hartă de rugăciune pentru grupurile etnice de pe lista de rugăciune DOXA, care arată dintr-o privire pentru cine se face rugăciune și cine încă așteaptă. Pune-o pe fiecare site din rețeaua ta, ca fiecare vizitator să vadă aceeași imagine și să se alăture aceleiași mișcări.",
+      "takeaway": "Un grup etnic pentru care nimeni nu se roagă încă, și un link către pagina lui de rugăciune."
+    },
+    "regions-dashboard": {
+      "lead": "Găsește grupurile etnice neatinse din fiecare regiune și țară. Sub fiecare regiune, „Vezi posterele țării” tipărește afișul, pachetul de rugăciune sau setul de cartonașe al oricărei țări.",
+      "takeaway": "Deschide o țară pentru a-i vedea grupurile. Sub fiecare regiune, „Vezi posterele țării” tipărește afișul, pachetul de rugăciune sau setul de cartonașe al unei țări.",
+      "note": "Afișele, pachetele și cartonașele se generează în browserul tău pentru fiecare țară în afară de India."
+    }
+  },
+  "col": {
+    "peopleGroup": "Popor",
+    "country": "Țară",
+    "region": "Regiune",
+    "population": "Populație"
+  },
+  "tabExamples": "Exemple",
+  "tabStrategy": "Strategie"
+}

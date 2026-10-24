@@ -1,0 +1,8 @@
+{
+  "type": "monolithic",
+  "label": "PPLR Data Maps",
+  "config": {
+    "pinHint": false
+  },
+  "note": "Monolithic composite (capability 3): ONE root .vue nests ten internal views of the PPLR people-group data (religion, ROP tree, language families, semantic trees, PG name locales, ROP sunburst, all pins, cross-system ID rosetta, translation coverage, index) behind a view-switcher. index.js registers exactly ONE tag (pplr-data-maps); no view is independently embeddable. pinHint:false because the shared coach-mark says 'Tap a coloured dot — someone still needs prayer', the prayer map's message, not this research tool's; on a phone it also sat on top of the view's own bottom bar and attribution (390)."
+}

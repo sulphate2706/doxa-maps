@@ -1,0 +1,73 @@
+{
+  "title": "Acces la internet unde trăiesc popoarele fără implicare",
+  "bands": {
+    "yes": "conectat 60%+",
+    "partial": "parțial 25–59%",
+    "no": "scăzut, sub 25%",
+    "unknown": "nemăsurat"
+  },
+  "peopleGroup": "popor",
+  "caveat": "Cifre NAȚIONALE (Banca Mondială). Conectivitatea pe oraș nu este disponibilă public — nu deduceți un oraș din datele țării.",
+  "sheet": {
+    "close": "Închide",
+    "ai": "Aceste date au fost găsite prin cercetare aprofundată cu IA — pot conține informații false.",
+    "dismiss": "Închide notificarea",
+    "internetUsers": "Utilizatori de internet",
+    "measured": "Măsurat",
+    "mobilePer100": "Mobile la 100",
+    "peopleGroups": "Popoare",
+    "topPlatform": "Platforma principală",
+    "unknown": "necunoscut",
+    "carriers": "Operatori și ISP-uri ({n})",
+    "socialPlatforms": "Platforme sociale",
+    "note": "Cifre naționale, nu măsurători pe oraș. Numele operatorilor sunt titulari de înregistrări ASN (printre ei se află și bănci și universități, nu doar ISP-uri), deci eticheta de operator este o euristică după nume, nu o clasificare verificată."
+  },
+  "list": {
+    "title": "Orașe cu internet",
+    "intro": "Conectivitatea acolo unde trăiesc popoarele neatinse. Fiecare cifră este o statistică națională măsurată, cu anul observației —",
+    "introStrong": "„necunoscut” înseamnă nemăsurat, niciodată presupus.",
+    "countries": "țări: {n}",
+    "measured": "măsurate: {n}",
+    "unknown": "necunoscute: {n}",
+    "low": "conectivitate scăzută: {n}",
+    "sectionMeta": "țări: {countries} · popoare: {groups}",
+    "unmeasured": "nemăsurate: {n}",
+    "rowMeta": "popoare: {groups} · locuri: {locations}",
+    "centres": "centre de populație: {n}",
+    "mobPer100": "mob./100",
+    "band": {
+      "yes": "conectat",
+      "partial": "parțial",
+      "no": "scăzut",
+      "unknown": "necunoscut"
+    },
+    "source": "Cifre internet și mobil: Datele deschise ale Băncii Mondiale (CC BY 4.0), cea mai recentă observație 2018–2024. Categorii: conectat ≥60% · parțial 25–59% · scăzut <25% din populație folosește internetul. Rezoluție la nivel de țară: măsurătorile pe oraș nu sunt disponibile public la această scară. Numele furnizorilor și operatorilor și istoricul cenzurii necesită surse citate pentru fiecare țară și nu sunt afișate."
+  },
+  "tables": {
+    "title": "Datele orașelor",
+    "intro": "Unde trăiesc popoarele neatinse și ce ajunge la ele. Sortați, filtrați și exportați orice tabel; fiecare își poartă sursele și limitele.",
+    "tabs": {
+      "cities": "Orașe-cheie",
+      "internet": "Conectivitate",
+      "operators": "Furnizori și operatori",
+      "social": "Platforme sociale",
+      "messaging": "Aplicații de mesagerie"
+    },
+    "loading": "Se încarcă {name}…"
+  },
+  "adm1": {
+    "title": "India pe state: au folosit vreodată internetul",
+    "women": "Femei",
+    "men": "Bărbați",
+    "total": "Total",
+    "urban": "Urban",
+    "rural": "Rural",
+    "source": "NFHS-5 (2019–21), persoane de 15–49 de ani: ponderea celor care au folosit vreodată internetul. Un sondaj despre oameni, nu o numărătoare de abonamente.",
+    "missing": "Încă nu există limită de stat pentru {names}: cifrele lor sunt în date, nu pe hartă."
+  },
+  "loading": "Se desenează harta…",
+  "ui": {
+    "showKey": "Extinde legenda",
+    "hideKey": "Restrânge legenda"
+  }
+}

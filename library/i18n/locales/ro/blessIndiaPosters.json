@@ -1,0 +1,15 @@
+{
+  "title": "Postere „Binecuvântează India”",
+  "rangeBadge60x96": "Insigne numerotate · 60×96 (5×8 ft)",
+  "count": "{count} grupuri de popoare",
+  "desktopOnly": "Doar pe desktop deocamdată — nu s-a dovedit încă că acest poster mare se tipărește în siguranță pe un telefon.",
+  "experimental": "experimental",
+  "intro": "Fiecare grup de popoare din India pe o singură coală imprimabilă, generată live și afișată ca foile sale imprimabile cu benzile de lipici — așa cum vizualizarea Dimensiuni din Poster Design arată formatele mari.",
+  "print": "Imprimă acest poster",
+  "attempt": "Insigne numerotate · 60×96 (5×8 ft) · 3 foi",
+  "stat": "{groups} grupuri · {badges} insigne numerotate · 0 suprapuneri",
+  "generating": "Se generează posterul din datele live…",
+  "error": "Nu s-a putut genera posterul: {msg}",
+  "photos": "Doar {real} din {total} grupuri din India au o fotografie în date; un document tipărit le poartă, o imagine plană nu. Acest design numerotat tipărește numele fără fotografii, astfel încât fiecare grup să fie egal și lizibil.",
+  "posterHeader": "Binecuvântează India în numele lui Isus"
+}

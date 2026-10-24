@@ -1,0 +1,10 @@
+{
+  "_why": "Hashes of the PORTED BLOCK of each component's emitted CSS (captured by EXECUTING its setup): every rule or declaration library/styles/portedGlobals.js emits, with its selectors. Unrelated CSS in these files does not move them; a changed, dropped or re-targeted ported rule does.",
+  "_source": "working tree",
+  "hashes": {
+    "library/components/regions/GoalCard.vue": "95ef1b19fdc658ff",
+    "library/components/regions/RegionSectionCard.vue": "fb65f7a1f7f25409",
+    "plugin-designs/regions-dashboard/region-dashboards.vue": "7d3971c379ad31c1",
+    "plugin-designs/regions-dashboard/regions-list.vue": "db6628e0a4506c1b"
+  }
+}

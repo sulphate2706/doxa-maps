@@ -1,0 +1,13 @@
+{
+  "_comment": "Declares the composability tier. 'nested-mfe-spa' = capability 5: an app shell whose single element <posterverse-app> renders a vertical-tab rail of whole poster plugins, each mounted as its own real element from the manifest (no iframes). The tier is DERIVED from `composes` at tree generation (composing a cap-4 makes this cap-5) and this `type` is checked against it. `composes` lists every row in src/tabs.js. A new row's ref joins this list in the SAME push as its bundle, since an unresolved ref fails check:capability-derived and a missing one fails check:posterverse-shelf.",
+  "type": "nested-mfe-spa",
+  "composes": [
+    "my-upg-100-list/upg-100-mfe",
+    "country-posters/country-posters-mfe",
+    "poster-design/poster-design-mfe",
+    "wall-of-people-groups/wall-of-people-groups",
+    "bible-posters/bible-posters",
+    "bless-india-posters/bless-india-posters"
+  ],
+  "label": "Posterverse (vertical-tab app shell: every poster plugin)"
+}

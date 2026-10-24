@@ -1,0 +1,13 @@
+{
+  "title": "Alle Volksgruppen",
+  "locations": "{n} Standorte (Gruppe × Land)",
+  "doxa": "DOXA-Volksgruppen",
+  "frontier": "Frontier — noch nichts begonnen",
+  "unreached": "Unerreicht — Arbeit beginnt",
+  "reached": "Erreicht — Gemeinde ist da",
+  "hint": "Zeile anklicken, um alle zu sehen · erneut klicken für alle",
+  "loading": "Alle Volksgruppen werden geladen…",
+  "loadError": "Die Karte konnte nicht geladen werden.",
+  "pray": "Für sie beten →",
+  "population": "Einw. {n}"
+}

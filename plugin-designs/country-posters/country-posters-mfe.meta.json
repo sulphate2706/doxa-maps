@@ -1,0 +1,12 @@
+{
+  "type": "nested-elements-mfe",
+  "label": "Country Posters — Wall + Map",
+  "composes": [
+    "country-posters/country-poster-wall",
+    "country-posters/countries-map"
+  ],
+  "note": "The 2-tab Country Posters element, structured like my-upg-100-list/upg-100-mfe: a SELECT VIEW switcher (the SHARED library/components/ViewSelect.vue — this is its THIRD consumer, which is why it was extracted rather than copied a third time) over Country Posters at [0,0] and Map at [1,0]. LIST FIRST, MAP SECOND, on the principle that maps are a secondary view. The wall already dispatches 'doxa-country-posters:show-on-map' (country-poster-wall.vue:78); until now only the app shell listened, so the action did nothing in a dropped embed — this shell owns it and swaps to the map tab. pinHint:false: the cloned panes carry no coach-mark, and the composite must declare it because a pane's config comes from here, not from the child's own meta. One ShareButton in the header, sharing the COMPOSITE leaf, per the recorded share policy.",
+  "config": {
+    "pinHint": false
+  }
+}

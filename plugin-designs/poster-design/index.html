@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · poster-design staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #f3f3f1; color: #3b463d; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 32px 20px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #6d766e; font-size: 13px; margin: 6px 0 24px; }
+    .slot { border: 1px solid #d1d4cd; border-radius: 12px; overflow: hidden; background: #fff; margin-bottom: 24px; }
+    .slot .label { font: 12px/1 ui-monospace, monospace; color: #6d766e; padding: 8px 12px;
+      background: #f3f3f1; border-bottom: 1px solid #d1d4cd; }
+    .frame { height: 760px; position: relative; }
+    poster-design { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>poster-design · staging</h1>
+    <p class="sub">One bundle, three flat profiles: the two-tab element and each of its tabs alone.
+      All compile into <code>poster-design.js</code>.</p>
+    <div class="slot">
+      <div class="label">profile-config.profile = "poster-design-mfe"</div>
+      <div class="frame"><poster-design profile-config='{"profile":"poster-design-mfe"}'></poster-design></div>
+    </div>
+    <div class="slot">
+      <div class="label">profile-config.profile = "poster-styles"</div>
+      <div class="frame"><poster-design profile-config='{"profile":"poster-styles"}'></poster-design></div>
+    </div>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

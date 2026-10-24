@@ -1,0 +1,13 @@
+{
+  "title": "Todos os grupos étnicos",
+  "locations": "{n} locais (grupo × país)",
+  "doxa": "Grupos étnicos da DOXA",
+  "frontier": "Fronteira — nada iniciado",
+  "unreached": "Não alcançados — o trabalho começa",
+  "reached": "Alcançados — a igreja está lá",
+  "hint": "Clique em uma linha para ver todos · clique de novo para ver tudo",
+  "loading": "Carregando todos os grupos étnicos…",
+  "loadError": "Não foi possível carregar o mapa.",
+  "pray": "Ore por eles →",
+  "population": "pop. {n}"
+}

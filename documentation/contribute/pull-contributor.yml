@@ -1,0 +1,27 @@
+# .github/workflows/pull-contributor.yml
+# Copies the contributor's `release` branch into this repo's `contributor` branch,
+# about once an hour. Commit it to your default branch. Delete it to stop.
+name: Pull contributor
+on:
+  schedule: [{ cron: '17 * * * *' }]
+  workflow_dispatch: {}
+permissions: { contents: write }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - env: { URL: '${{ secrets.UPSTREAM_URL }}' }
+        run: |
+          git fetch --no-tags "$URL" release
+          # refuse any change they make to .github/
+          BASE=$(git merge-base HEAD FETCH_HEAD) \
+            || BASE=$(git mktree </dev/null)
+          CHANGED=$(git diff --name-only \
+            "$BASE" FETCH_HEAD -- .github)
+          if [ -n "$CHANGED" ]; then
+            echo "refusing .github/ changes"; exit 1
+          fi
+          git push origin \
+            FETCH_HEAD:refs/heads/contributor

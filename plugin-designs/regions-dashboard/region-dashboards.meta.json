@@ -1,0 +1,8 @@
+{
+  "type": "single",
+  "label": "Regions — region + country dashboard",
+  "config": {
+    "pinHint": false
+  },
+  "note": "pinHint:false because this page is an EXACT CLONE of DX-life's /regions/<slug> (RegionDetail.vue for a region, CountryDetail.vue for a country) and their page carries no coach-mark over the map. The shared PinHint's 'Tap a coloured dot' overlay is our own chrome; leaving it on would be a visible difference from the page being cloned. Opt-out is the documented channel (library/components/hints/PinHint.vue). Siblings doing the same for their own reason: cities-internet/connectivity-map.meta.json, gospel-resources/resources-map.meta.json."
+}

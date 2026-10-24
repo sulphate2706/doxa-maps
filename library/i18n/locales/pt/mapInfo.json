@@ -1,0 +1,58 @@
+{
+  "open": "O que este mapa pode fazer por você?",
+  "title": "O que este mapa pode fazer por você?",
+  "shortDescription": "Descrição breve",
+  "pointer": "O que este mapa faz?",
+  "close": "Fechar",
+  "takeaway": "O que você leva:",
+  "poster": "Pôster",
+  "packet": "Pacote de oração",
+  "cards": "Cartões de oração",
+  "spreadsheet": "Planilha",
+  "example": "Exemplo",
+  "expandPages": "Mostrar todas as páginas ({n})",
+  "collapsePages": "Mostrar só a primeira página",
+  "expandDeck": "Mostrar todos os cartões ({n})",
+  "collapseDeck": "Empilhar os cartões",
+  "moreRows": "Mais linhas na planilha completa: {n}",
+  "openFull": "Abrir em tamanho real",
+  "pointerOff": "Não apontar mais para este botão",
+  "tab": {
+    "upg-100": {
+      "lead": "Todos os povos não alcançados desta lista, cerca de 2.100, reunidos em 27 listas de cinquenta a cem. Cada lista é impressa como cartaz, pacote de oração e baralho de cartões, para que um discípulo, uma igreja ou um líder carregue uma lista inteira em oração, pelo nome.",
+      "takeaway": "para cada zona, um pôster de parede, um pacote de oração para distribuir e um baralho de cartões de oração. O exemplo abaixo é a zona com mais pessoas em povos onde ninguém ainda está plantando igrejas."
+    },
+    "cities-internet": {
+      "lead": "Veja até onde a internet chega em cada país onde vivem povos não engajados. Toque em um país para ver quantas pessoas estão online ali e as plataformas que usam, ou toque em um ponto para ver um povo.",
+      "takeaway": "Cada país onde vive um povo não alcançado, agrupado pela proporção de pessoas que usam a internet — para distinguir o terreno digital dos lugares onde poucos estão online. Os números são nacionais (a Índia também por estado, de um inquérito de 2019–21) e trazem o ano de observação; desconhecido significa não medido, nunca presumido."
+    },
+    "gospel-resources": {
+      "lead": "Veja o que cada povo não alcançado já tem na própria língua: Escrituras, áudio, o filme JESUS, vídeo bíblico e treinamento de discipulado, cada um com seu link. Toque em um país para listar os grupos dele, ou toque em um ponto para abrir os recursos de um grupo.",
+      "takeaway": "Escritura, áudio, filme, vídeo bíblico, formação — e o que ainda falta. Clique num país para listar os seus povos, ou num povo para a sua ficha com ligações activas a cada recurso encontrado. «Nada encontrado» significa ausente dos acervos que esta versão consultou, nunca prova de que nada exista."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Todos os povos não alcançados em uma só vista: filtre por povo, lugar, língua, religião ou oração, e o mapa, a tabela e os totais se restringem juntos. É aqui que você define sua perspectiva do trabalho: quem alcançar agora e quem preparar em seguida.",
+      "takeaway": "As linhas que você filtrou, em uma planilha."
+    },
+    "research-map-plus-grid": {
+      "lead": "Um mapa simples e educativo dos povos não alcançados: pesquise por povo, lugar, língua ou religião, e o mapa e a lista se restringem juntos. As camadas de oração e de engajamento mostram num relance até onde a oração e o trabalho chegaram."
+    },
+    "prayer-map": {
+      "lead": "Um mapa de oração para os povos da lista de oração da DOXA, que mostra num relance por quem se está orando e quem ainda espera. Coloque-o em cada site da sua rede, para que cada visitante veja o mesmo quadro e se una ao mesmo movimento.",
+      "takeaway": "Um povo pelo qual ninguém ora ainda, e um link para a sua página de oração."
+    },
+    "regions-dashboard": {
+      "lead": "Encontre os povos não alcançados de cada região e país. Em cada região, “Ver os cartazes do país” imprime o cartaz, o pacote de oração ou o baralho de cartões de qualquer país.",
+      "takeaway": "Abra um país para ver os seus grupos. Em cada região, “Ver os cartazes do país” imprime o cartaz, o pacote de oração ou o baralho de cartões de um país.",
+      "note": "Cartazes, pacotes e cartões são gerados no seu navegador para cada país exceto a Índia."
+    }
+  },
+  "col": {
+    "peopleGroup": "Povo",
+    "country": "País",
+    "region": "Região",
+    "population": "População"
+  },
+  "tabExamples": "Exemplos",
+  "tabStrategy": "Estratégia"
+}

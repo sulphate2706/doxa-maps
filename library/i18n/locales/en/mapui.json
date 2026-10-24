@@ -1,0 +1,21 @@
+{
+  "map": "Map",
+  "marker": "Map marker",
+  "closePopup": "Close popup",
+  "zoomIn": "Zoom in",
+  "zoomOut": "Zoom out",
+  "resetBearing": "Drag to rotate map, click to reset north",
+  "toggleAttribution": "Toggle attribution",
+  "mapFeedback": "Map feedback",
+  "enterFullscreen": "Enter fullscreen",
+  "exitFullscreen": "Exit fullscreen",
+  "findMyLocation": "Find my location",
+  "locationNotAvailable": "Location not available",
+  "enableGlobe": "Enable globe",
+  "disableGlobe": "Disable globe",
+  "ctrlScroll": "Use Ctrl + scroll to zoom the map",
+  "cmdScroll": "Use ⌘ + scroll to zoom the map",
+  "twoFingers": "Use two fingers to move the map",
+  "mapboxHomepage": "Mapbox homepage",
+  "maplibreLogo": "MapLibre logo"
+}

@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "Vezi întregul câmp, restrânge-l la popoarele pe care le poți atinge cu adevărat și ia lista cu tine ca foaie de calcul.",
+      "p1": "Atinge o regiune și derulează grila ca să vezi fotografiile grupurilor etnice, aproape ca și cum ai vizita țara și ai întâlni chipurile unei culturi.",
+      "p2": "Filtrează după popor, loc, limbă, religie sau rugăciune; harta, tabelul și totalurile se mișcă împreună, așa că vezi aceeași selecție în trei feluri.",
+      "p3": "Exportă rândurile filtrate ca foaie de calcul CSV: o listă de lucru de sortat, de distribuit și de planificat offline.",
+      "p4": "Folosește-o ca să stabilești ținte pe termen scurt: grupurile pentru care să te rogi și pe care să le atingi azi, și pe cele de pregătit pentru mâine.",
+      "p5": "Este gândită să fie adaptată pentru inițiative „de la media la mișcări”: pornește de la date, apoi acționează pentru grupurile pe care le scot la iveală."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Începe acolo unde nevoia este cea mai mare. Folosește straturile de rugăciune și de implicare ca să găsești zonele prioritare, apoi mobilizează rugăciunea pentru grupurile etnice din ele.",
+      "p1": "Vezi cine încă așteaptă. În fila „Rugăciune”, fiecare punct arată dacă cineva se roagă pentru acel grup etnic, dacă încă are nevoie de rugăciune sau dacă este acoperit pe deplin în rugăciune.",
+      "p2": "Găsește golurile. Treci la „Implicare” ca să vezi unde a început lucrarea și unde nimeni nu este încă implicat. Acele goluri sunt zonele prioritare pentru mobilizare.",
+      "p3": "Cercetează o parte a lumii pe rând. Restrânge după regiune, limbă sau religie, sau caută în listă după nume. Lista urmează harta, așa că poți citi numele din spatele punctelor.",
+      "p4": "Cunoaște un grup etnic. Atinge un punct ca să vezi țara, populația, limba și religia lui, apoi folosește „Roagă-te pentru ei” ca să începi să te rogi pentru acel popor pe nume.",
+      "p5": "Păstrează lucrurile simple. Această hartă urmărește progresul la un nivel simplu, dintr-o privire. Pentru datele complete mergi la „Imaginea de ansamblu”; pentru resurse de rugăciune de tipărit mergi la „Regiuni” sau la „Lista UPG100”."
+    },
+    "regions-dashboard": {
+      "bottom": "Aproximativ 170 de țări au propriul afiș, pachet și set de cartonașe. Mobilizează câte un grup să se roage pentru fiecare țară, și fiecare țară este acoperită în rugăciune.",
+      "p1": "Fă o listă cu ucenicii, bisericile și liderii pe care îi cunoști deja, și cu țara la care este chemat fiecare. Dă-i fiecăruia resursele de rugăciune ale acelei țări.",
+      "p2": "Începe aproape de casă, cu ucenicii și bisericile locale. Apoi mergi la liderii și lucrătorii nativi de pe teren din acele țări, și trimite-le afișul, pachetul și cartonașele țării ca să le tipărească acolo unde sunt.",
+      "p3": "Pachetul de rugăciune este cel mai strategic dintre cele trei: tot ce trebuie pentru a te ruga pentru o țară, într-un singur pachet de tipărit.",
+      "p4": "Cartonașele sunt cele mai utile când ai un grup căruia să i le împarți: câte un grup etnic pe cartonaș.",
+      "p5": "Pachetele pe țări se potrivesc unei baze de mobilizare mai mari, sau unei țări pe care vrei să o vezi atinsă. Dacă mobilizarea merge greu, listele UPG100 sunt un început mai simplu."
+    },
+    "prayer-map": {
+      "bottom": "O mișcare de rugăciune crește când fiecare partener arată aceeași hartă, așa că pune această hartă pe fiecare site din rețeaua ta.",
+      "p1": "Fă o listă cu site-urile rețelei tale: biserici, lucrări, rețele de rugăciune, parteneri misionari, fiecare site pe care oamenii tăi îl vizitează deja.",
+      "p2": "Distribuie-o sau adaug-o în câteva atingeri. Butonul Distribuie îți dă un link de trimis, sau „Adaugă pe site-ul tău”: alege o dimensiune, copiază codul și lipește-l în WordPress, Squarespace, Wix sau orice site care acceptă HTML.",
+      "p3": "Alege vederea potrivită site-ului. „Rugăciune”, „Implicare” și „Adopție” își distribuie fiecare propria pagină, așa că o rețea de rugăciune poate arăta acoperirea în rugăciune, iar o biserică care trimite, implicarea.",
+      "p4": "Rămâne la zi de la sine. Fiecare copie a hărții citește aceleași date de pe pray.doxa.life de fiecare dată când se deschide, așa că progresul apare pe site-ul fiecărui partener fără ca cineva să o actualizeze.",
+      "p5": "Îndreaptă oamenii spre un nume. Atingerea unui punct deschide acel grup etnic și un link către pagina lui de rugăciune, ca un vizitator să înceapă imediat să se roage pentru un popor anume."
+    },
+    "upg-100": {
+      "bottom": "Isus i-a pus pe cei cinci mii să șadă în grupuri de câte cincizeci și o sută înainte să-i hrănească (Luca 9:14). Aceste liste fac la fel pentru aproximativ 2.100 de grupuri etnice neatinse: împărțită în liste de această mărime, întreaga lucrare devine o povară pe care o poate duce un singur om.",
+      "p1": "27 de liste înseamnă 27 de afișe, 27 de pachete de rugăciune și 27 de seturi de cartonașe. Pune câte unul în mâinile fiecăruia dintre 27 de ucenici, biserici sau lideri nativi, și pentru fiecare grup se face rugăciune pe nume.",
+      "p2": "Dă fiecare listă cuiva care va continua să se roage pentru ea. Liderii nativi se pot ruga chiar în limbile popoarelor.",
+      "p3": "Aceasta urmează o practică dovedită în mișcări: ucenicii se roagă regulat pentru cincizeci până la o sută de oameni pe care îi cunosc (familie, prieteni, vecini, colegi de muncă și de școală). O listă UPG100 este aceeași povară, pentru oameni pe care nu i-au întâlnit niciodată.",
+      "p4": "Începe cu o listă și un om. Pachetul cuprinde tot ce trebuie pentru acea listă într-o singură tipărire, iar cartonașele ajută când un grup își împarte lista."
+    },
+    "cities-internet": {
+      "bottom": "Acolo unde oamenii sunt deja online, Evanghelia îi poate atinge pe ecranele și platformele pe care le folosesc zilnic. Găsește acele locuri și folosește media ca să deschizi ușa către ucenici și biserici reale (de la media la mișcări).",
+      "p1": "Începe cu țările în care cei mai mulți oameni sunt online (60% sau mai mult). Acolo, media online poate ajunge la oameni care nu au nicio biserică și niciun credincios în apropiere.",
+      "p2": "Atinge o țară și citește-i fișa: câți oameni folosesc internetul, câte abonamente mobile există și ce platforme folosesc oamenii acolo. Ajunge la ei pe platformele lor, nu pe ale tale, și verifică mai întâi lista cu cineva din țară.",
+      "p3": "Combină această hartă cu „Resurse ale Evangheliei”. Găsește un grup etnic care are deja Scriptura, un film sau audio în limba lui, apoi distribuie acele linkuri online într-o țară unde oamenii sunt conectați.",
+      "p4": "Acolo unde puțini sunt online, sau cifra nu este măsurată, nu începe cu un ecran: trimite oameni și du resurse audio și tipărite. Cifrele sunt naționale (India și pe state), așa că un oraș poate fi foarte diferit de țara lui.",
+      "p5": "Media este ușa, nu ținta. Înainte să publici, plănuiește cum cineva care răspunde online întâlnește un om real și se alătură unui grup care studiază Biblia împreună."
+    },
+    "gospel-resources": {
+      "bottom": "Multe grupuri neatinse au deja Scriptura, un film sau audio în limba lor, care nu a ajuns niciodată la ei. Resursele există; golul este să ajungă în mâinile oamenilor, personal sau online.",
+      "p1": "Treci la „Resurse găsite” și caută grupurile care au Scriptura și filmul. Pentru ele uneltele sunt gata; ce lipsește este livrarea.",
+      "p2": "Trimite lucrători cu resursele. Deschide fișa unui grup și dă linkurile lui (și pe cele ale celorlalte limbi pe care le vorbește) lucrătorilor, bisericilor și liderilor care pot ajunge la acel grup.",
+      "p3": "Combină această hartă cu „Orașe cu internet”. Acolo unde țara unui grup este bine conectată, aceleași linkuri pot ajunge la oameni online, pe platformele folosite acolo (de la media la mișcări).",
+      "p4": "Acolo unde există instruirea Zume în limba grupului, pune-o lângă Scriptură și film, ca cei care cred să fie instruiți să facă ucenici.",
+      "p5": "Folosește „Golul” ca să te rogi și să plănuiești pentru grupurile la care încă nu s-a găsit nimic. Multe au o cale de acces printr-o limbă de legătură, iar „nimic găsit” este un motiv să cauți mai departe, nu un răspuns final."
+    }
+  }
+}

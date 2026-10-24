@@ -1,0 +1,17 @@
+{
+  "_comment": "Declares the composability tier. 'nested-mfe-spa' (display alias 'app-shell') = Capability-5: this plugin is a real cap-5 element, <plugin-studio>, the DEVELOPER STUDIO. Its vertical-tab sidebar is the composability ladder grouped by capability 5 -> 1; each row nests one plugin element (token-free elements mounted directly by their real tag; map elements nested as their own SPA in a lazy iframe) with its embed snippet. Unlike a static index.html gallery page, this is a compiled Vue custom element, so it supports all 5 deployment methods and can itself be nested/placed. This explicit meta is the ONLY way the Cat-5 tier is declared (discover.mjs never infers it). Filename must be <profile>.meta.json where profile = the root .vue name (plugin-studio). generate-gallery.readSourceTiers() reads this and bakes capability 5 for the plugin, so it appears in the studio manifest as the app-shell (nested-mfe-spa). 'composes' lists the element tags it can nest (best-effort; the runtime tab list is read live from the built manifest, grouped by capability).",
+  "type": "nested-mfe-spa",
+  "composes": [
+    "dashboard-plus-grid",
+    "people-groups-grid",
+    "doxa-research-map",
+    "doxa-simple-map",
+    "cities-internet-map",
+    "gospel-resources-map",
+    "my-upg-100-list-map",
+    "doxa-vision-card",
+    "all-people-groups",
+    "research-dashboard"
+  ],
+  "label": "Plugin Studio (cap-5 developer studio: every element by capability 5 -> 1)"
+}

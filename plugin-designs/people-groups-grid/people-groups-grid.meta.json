@@ -1,0 +1,5 @@
+{
+  "_comment": "Declares the composability tier. 'preset-element' (machine key 'parameterized') = Capability-2: this bundle is a PROP-TABLE element that ships preconfigured instances (see people-groups-grid.instances.json) and is driven by props. It is a COPY-ONLY migration of the DX-life people-groups grid (UupgsList.vue) into an owned element, carrying the Cat-2 contract: show-search/show-filters turn its own controls off so a parent can drive it, and it emits groups-filtered. Filename must be <profile>.meta.json where profile = the root .vue name (people-groups-grid).",
+  "type": "preset-element",
+  "label": "People Groups Grid (Cat-2 prop-table: search + 4 dropdowns + faceted counts; show-search/show-filters + groups-filtered)"
+}

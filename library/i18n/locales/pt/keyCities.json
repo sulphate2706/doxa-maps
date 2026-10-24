@@ -1,0 +1,64 @@
+{
+  "map": {
+    "title": "Agrupamentos de marcadores de povos",
+    "bands": {
+      "named": "centro com nome",
+      "multi": "vários povos",
+      "single": "um povo"
+    },
+    "note": "Um ponto é um agrupamento de marcadores de povos num raio de ~25 km, não um limite municipal. Os pontos com nome vêm de um gazetteer citado.",
+    "unnamed": "local sem nome — {lat}, {lng}",
+    "close": "Fechar",
+    "country": "País",
+    "admin": "Área administrativa",
+    "peopleGroups": "Povos",
+    "upgPopulation": "População UPG",
+    "internet": "Internet do país",
+    "unknown": "desconhecido",
+    "pgHere": "Povos aqui",
+    "languages": "Idiomas",
+    "sheetNote": "Um agrupamento de marcadores de povos num raio de ~25 km, não um limite municipal. Os pontos com nome vêm de um gazetteer citado (Nominatim/OSM); os sem nome mostram coordenadas em vez de um nome inventado.",
+    "national": "Os números de internet são NACIONAIS.",
+    "engineMissing": "Não foi possível carregar o motor do mapa."
+  },
+  "list": {
+    "title": "Cidades-chave",
+    "intro": "Agrupamentos de marcadores de povos: agrupamentos com nome (de um gazetteer citado): {named}, em agrupamentos localizados: {clusters}.",
+    "filters": {
+      "named": "Centros populacionais com nome",
+      "multi": "Agrupamentos de vários povos",
+      "all": "Todos os locais"
+    },
+    "locations": "locais: {n}",
+    "peopleGroups": "povos: {n}",
+    "caveat": {
+      "rowLead": "O que é uma linha.",
+      "row": "Um agrupamento de marcadores de povos num raio de ~25 km, não um limite municipal. Cada marcador representa um povo, não uma cidade, por isso os agrupamentos nunca são nomeados por dedução: os {n} centros com vários povos foram identificados com {source} (ODbL, citado em cada linha) e os restantes ficam sem nome em vez de adivinhados.",
+      "internet": "São mostrados como contexto: a conectividade por cidade não está disponível publicamente nesta escala, e um número nacional não deve ser lido como uma medição da cidade.",
+      "scope": "Esta página contém apenas localizações de povos e conectividade — por opção, nenhum dado sobre igrejas, crentes ou locais de reunião."
+    },
+    "moreLanguages": "mais {n}"
+  },
+  "tables": {
+    "title": "Dados das cidades-chave",
+    "intro": "Cada centro localizado, os idiomas falados ali e os canais que o alcançam. Ordene, filtre e exporte qualquer tabela; cada uma indica as suas fontes e limites.",
+    "tabs": {
+      "cities": "Cidades-chave",
+      "langcity": "Idiomas aqui",
+      "languages": "Por país",
+      "operators": "Fornecedores e operadoras",
+      "messaging": "Mensagens"
+    },
+    "loading": "A carregar {name}…"
+  },
+  "posters": {
+    "heading": "Cartazes das cidades-chave",
+    "tag": "Mobilização de oração",
+    "itemNoun": "cidade",
+    "itemNounPlural": "cidades",
+    "soon": "Em breve: uma lista de oração para cada cidade, com cada povo não alcançado que vive nela.",
+    "intro": "Uma folha para imprimir para cada centro populacional onde vivem povos não alcançados, com o nome tirado de um índice geográfico citado, nunca deduzido.",
+    "otherRegion": "Outras"
+  },
+  "loadFailed": "Não foi possível carregar os dados: {detail}"
+}

@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "Religion",
+    "ropTree": "ROP-Baum",
+    "languageFamilies": "Sprachfamilien",
+    "semanticTrees": "Semantische Bäume",
+    "nameLocales": "Namensvarianten",
+    "ropSunburst": "ROP-Sunburst",
+    "allPins": "Alle Volksgruppen-Pins",
+    "rosetta": "ID-Rosetta",
+    "coverage": "Übersetzungsabdeckung",
+    "index": "Index"
+  },
+  "status": {
+    "loading": "Wird geladen…",
+    "loadingPgData": "Volksgruppendaten werden geladen…",
+    "loadingPins": "Pins werden geladen…",
+    "loadingPolygons": "Ländergrenzen werden geladen…",
+    "addingPolygons": "Ländergrenzen werden hinzugefügt…",
+    "addingPins": "Pins werden hinzugefügt…",
+    "loadingCoverage": "Abdeckung je Land wird geladen…",
+    "addingPinsOnTop": "Pins werden darübergelegt…",
+    "loadingRop": "ROP-Hierarchie wird geladen…",
+    "loadingLanguage": "Sprachdaten werden geladen…",
+    "loadingPinsRosetta": "Pins und Rosetta-Stichprobe werden geladen…",
+    "error": "Fehler: {message}",
+    "readyTranslations": "Pins: {pins} · einen Pin anklicken für alle 17 Namensvarianten",
+    "readyCoverage": "Bereit · Länder: {countries}, gefärbt nach durchschnittlichen Übersetzungen / 17 (alle Zeilen: {rows})",
+    "readyD3": "Einträge: {entries} · scrollen zum Zoomen · ziehen zum Verschieben",
+    "readyRop": "Bereit · Pins: {pins} · mit PEID: {peid}",
+    "readyRosetta": "Bereit · Pins: {pins} · Rosetta-Stichproben: {samples} (gold ★)",
+    "readyPins": "Bereit · Pins: {pins} · einen Pin anklicken",
+    "readyLanguage": "Bereit · Pins: {pins} · Familienabdeckung {coverage} % · Top 25 = {top} %",
+    "readyReligion": "Pins: {pins} · am häufigsten: {religion} ({count})",
+    "d3Failed": "Die Diagrammbibliothek konnte nicht geladen werden."
+  },
+  "ui": {
+    "chooseView": "Ansicht wählen",
+    "search": "Nach Volk, Ort, Sprache, Religion suchen…",
+    "baseMap": "Grundkarte",
+    "dataSources": "Datenquellen",
+    "legend": "Legende",
+    "openLegend": "Legende öffnen",
+    "clearSelectionEsc": "Auswahl aufheben (Esc)",
+    "closeEsc": "Schließen (Esc)",
+    "close": "Schließen",
+    "retry": "Erneut versuchen",
+    "loadingMap": "Karte wird geladen",
+    "flyToPin": "Zum Pin fliegen",
+    "primaryReligion": "Hauptreligion",
+    "ropHierarchy": "ROP-Hierarchie"
+  },
+  "pill": {
+    "religion": "Verteilung der Religionen · Pin anklicken für Details",
+    "ropTree": "ROP-Hierarchie · Affinitätsblock → Cluster → Volk → PGIC",
+    "languageFamilies": "Ethnolinguistische Familien (PPLR) · Pin anklicken für Details",
+    "sunburst": "ROP-Hierarchie · Affinitätsblock → Volkscluster · scrollen zum Zoomen",
+    "pins": "Alle Volksgruppen-Pins je Land · anklicken für systemübergreifende IDs",
+    "coverage": "Übersetzungsabdeckung · Färbung = durchschnittlich gefüllte Sprachen je Land · Pin oder Land anklicken",
+    "rosetta": "ID-Rosetta · Farbe = vorhandene IDs · ★ = Beispielzeile",
+    "translations": "Name der Volksgruppe · {n} Sprachen · einen Punkt anklicken"
+  },
+  "legendTitle": {
+    "avgLocales": "Durchschnitt Sprachen / {n}",
+    "idCoverage": "ID-Abdeckung"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, alle drei",
+      "imbOnly": "Nur IMB",
+      "jpOnly": "Nur JP",
+      "neither": "keins von beiden"
+    },
+    "samplePg": "★ Beispiel-Volk",
+    "missingIds": "In PPLR noch nicht zugeordnet: {ids}. Eine leere Zeile ist eine Datenlücke, kein Fehler."
+  },
+  "popup": {
+    "noName": "(ohne Namen)",
+    "country": "Land",
+    "religion": "Religion",
+    "language": "Sprache",
+    "family": "Familie",
+    "affinityBloc": "Affinitätsblock",
+    "cluster": "Cluster",
+    "peopleCluster": "Volkscluster",
+    "peopleGroup": "Volk",
+    "pgCount": "Völker",
+    "avgLocalesFilled": "Durchschnittlich gefüllte Sprachen",
+    "iso3Country": "ISO-3-Land"
+  },
+  "card": {
+    "nameInLocales": "Name in {n} Sprachen"
+  },
+  "title": "PPLR-Datenkarten",
+  "index": {
+    "title": "PPLR-Datenprüfung",
+    "help": "Klicken Sie auf eine Kachel oder wählen Sie oben eine Ansicht."
+  }
+}

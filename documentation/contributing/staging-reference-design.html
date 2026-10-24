@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · Embeddable JAMstack Maps · staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Mapbox GL (external peer; the bundles use window.mapboxgl) -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+
+  <style>
+    :root {
+      --bg:#0a0e15; --surf:#121a27; --surf2:#0e1623; --line:#223047;
+      --ink:#eef2f7; --mut:#9aa7b8; --dim:#6b7787;
+      --cy:#46d4ff; --vi:#b9a6f5; --gold:#ffc24b; --grn:#5ee0a0;
+      --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+      --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; width: 100%; overflow-x: hidden; }
+    body {
+      background:
+        radial-gradient(1100px 480px at 82% -12%, rgba(70,212,255,.10), transparent 60%),
+        radial-gradient(820px 460px at -8% 112%, rgba(185,166,245,.10), transparent 60%),
+        var(--bg);
+      color: var(--ink); min-height: 100%; font-family: var(--sans);
+      display: flex; flex-direction: column; -webkit-font-smoothing: antialiased;
+    }
+    code { font-family: var(--mono); }
+    .hidden { display: none !important; }
+
+    /* ── Forge top: centered "JS Bundles" file → connector lines → bundle tabs ── */
+    #forgeTop { position: relative; padding: 10px 28px 10px; }
+    #connectors { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+    #connectors path.conn { fill: none; stroke: url(#cg); stroke-width: 1.6; stroke-dasharray: 4 7; opacity: .65; animation: flow 1.5s linear infinite; }
+    #connectors path.conn.on { opacity: 1; stroke-width: 2.6; }
+    @keyframes flow { from { stroke-dashoffset: 22; } to { stroke-dashoffset: 0; } }
+
+    .hero { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto 1fr; align-items: start; gap: 14px; }
+    .hero .title { font: 800 16px/1.2 var(--sans); letter-spacing: -.01em; }
+    .hero .title .ac { color: var(--cy); }
+    .hero .title .sub { margin-top: 5px; font: 12px/1.45 var(--sans); color: var(--mut); font-weight: 400; max-width: 32ch; }
+    .hero .controls { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+    .hero .pos { font: 600 10px/1 var(--mono); color:#0a0e15; background: linear-gradient(90deg,var(--cy),var(--vi)); border-radius: 999px; padding: 6px 11px; white-space: nowrap; }
+    .hero .btnrow { display: flex; gap: 8px; }
+    .archBtn, .ext { font: 600 11px/1 var(--mono); color: var(--mut); cursor: pointer; text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 7px 12px; background: transparent; }
+    .archBtn:hover, .ext:hover { color: var(--ink); border-color:#3a4a63; }
+    .archBtn.active { color: var(--cy); border-color: var(--cy); background: rgba(70,212,255,.08); }
+
+    /* the centered file hub = "JS Bundles" (the one → many source) */
+    .filehub { justify-self: center; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .filehub .stack { position: relative; width: 40px; height: 46px; display: grid; place-items: center; }
+    .filehub svg.file { position: absolute; inset: 0; width: 100%; height: 100%; animation: pulse 3.4s ease-in-out infinite; }
+    .filehub svg.file .body { fill: rgba(70,212,255,.08); stroke: rgba(70,212,255,.7); stroke-width: 2; }
+    .filehub svg.file .fold { fill: rgba(70,212,255,.20); stroke: rgba(70,212,255,.7); stroke-width: 2; }
+    .filehub svg.file text { fill: var(--vi); font: 700 9px/1 var(--mono); letter-spacing:.06em; }
+    .filehub img { position: relative; z-index: 1; width: 22px; height: 22px; animation: pulse 2.8s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { filter: drop-shadow(0 0 6px rgba(70,212,255,.3)); } 50% { filter: drop-shadow(0 0 16px rgba(70,212,255,.7)); } }
+    .filehub .fhl { font: 800 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--cy); }
+
+    /* NOTE: This is the reference REFERENCE design to imitate when merging
+       the two staging environments (dev src/staging.js + built generate-tree
+       rootHtml) into ONE good-looking staging env at the doxa-maps root that also
+       ships in the Cloudflare-droppable tree. Full original preserved; see the
+       goal memory [[research-map-clean-branch-goal]] and the rest of the markup
+       in the chat transcript / this file. Loads ./staging-main.js. -->
+  </style>
+</head>
+<body>
+  <!-- Full body markup supplied by maintainer 2026-07-11; preserved in the session
+       transcript. Key structural pieces to reproduce when building the merged
+       staging env:
+       - #forgeTop: centered "JS Bundles" file hub + SVG connector lines → bundle tabs (#bundleTabs)
+       - #archView: architecture explainer (forge pipeline, vocabulary chain,
+         3 profile patterns [Individual / Parameterized / Nested], 10,000-maps
+         stress test, embed-anywhere snippet)
+       - #stage/#showcase: live gem-framed map tiles, desktop/mobile viewport toggle,
+         lazy-mount + WebGL guard, collapsing header on scroll (mobile)
+       - loads ./staging-main.js
+       Tabs auto-detect bundles from /plugin-designs/*/. -->
+  <script type="module" src="./staging-main.js"></script>
+</body>
+</html>

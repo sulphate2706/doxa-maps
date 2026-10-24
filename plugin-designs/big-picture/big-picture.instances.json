@@ -1,0 +1,21 @@
+{
+  "_comment": "Preconfigured instances of the composite <bp-big-picture>. provider:'maplibre' flags each generated standalone page as TOKEN-FREE (see internal/generate-tree.mjs) so the element mounts INSTANTLY with no Mapbox token ladder — correct for this self-contained, mapless Cat-4 dashboard. generate-tree stamps the bundle's HEADLINE tag (bp-big-picture) on every instance page, so all preset instances render the COMPOSITE. The INNER elements (bp-research-header + the REAL cap-2 people-groups-grid) are individually embeddable via their own registered tags + SRI script (see manifest.elements and the staging index.html section 2, which wires them standalone through the DOM).",
+  "instances": [
+    {
+      "id": "big-picture",
+      "title": "Big Picture — research header ↔ people-groups grid (composite)",
+      "props": { "profile": "big-picture", "provider": "maplibre", "instanceId": "bp-big-picture" }
+    },
+    {
+      "id": "frontier",
+      "title": "Big Picture — frontier accent",
+      "props": {
+        "profile": "big-picture",
+        "provider": "maplibre",
+        "instanceId": "bp-big-picture-frontier",
+        "accent": "#22d3ee",
+        "title": "Big Picture — Frontier Focus"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "//": "Preset renders of the upg-neighbor profile. The ids are those of the five retired lenses (2026-09-27) so existing embed URLs keep working; each now opens the new view that answers its question: Mobilize (an unreached group's near reached neighbors on the E-scale) or Movements (bridge languages).",
+  "profile": "upg-neighbor",
+  "instances": [
+    {
+      "id": "send-map",
+      "title": "Mobilize near neighbors",
+      "props": {
+        "view": "mobilize"
+      }
+    },
+    {
+      "id": "upg-neighbors",
+      "title": "UPG Neighbors: mobilize",
+      "props": {
+        "view": "mobilize"
+      }
+    },
+    {
+      "id": "lang-cluster",
+      "title": "Bridge-language movements",
+      "props": {
+        "view": "campaigns"
+      }
+    },
+    {
+      "id": "bloom-cockpit",
+      "title": "Mobilize near neighbors",
+      "props": {
+        "view": "mobilize"
+      }
+    },
+    {
+      "id": "flower-mesh",
+      "title": "Mobilize near neighbors",
+      "props": {
+        "view": "mobilize"
+      }
+    }
+  ]
+}

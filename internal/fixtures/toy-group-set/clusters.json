@@ -1,0 +1,9 @@
+{
+  "_synthetic": "Toy group set for check:group-set-standard. Every slug, name and number is invented — no real people-group data. The FLAT lists[] shape is the fork contract; unlisted:true keeps an entry out of generation.",
+  "source_total": 8,
+  "lists": [
+    { "id": "toy-north", "label": "Toy North", "selector": { "type": "pg_slugs", "values": ["toy-alpha", "toy-bravo", "toy-charlie"] } },
+    { "id": "toy-south", "label": "Toy South", "selector": { "type": "pg_slugs", "values": ["toy-delta", "toy-echo"] } },
+    { "id": "toy-hidden", "label": "Toy Hidden", "unlisted": true, "selector": { "type": "pg_slugs", "values": ["toy-foxtrot"] } }
+  ]
+}

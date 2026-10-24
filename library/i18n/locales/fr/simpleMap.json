@@ -1,0 +1,9 @@
+{
+  "loading": "Chargement de la carte…",
+  "initFailed": "La carte n’a pas pu démarrer. C’est un problème de clé de carte ou de connexion.",
+  "help": {
+    "what": "Cette carte montre les peuples non atteints du monde : des communautés sans véritable accès à l’Évangile.",
+    "how": "Utilisez les onglets (s’ils s’affichent) pour changer de vue. Cliquez sur un point pour en savoir plus sur un peuple.",
+    "source": "Données :"
+  }
+}

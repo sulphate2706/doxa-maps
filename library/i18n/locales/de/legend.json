@@ -1,0 +1,97 @@
+{
+  "title": {
+    "adoption": "Adoptionsfortschritt",
+    "affinityBlocs": "Affinitätsblöcke",
+    "doxaRegions": "Doxa-Regionen",
+    "engagement": "Engagement-Fortschritt",
+    "gospelResources": "Evangeliumsressourcen",
+    "languageFamilies": "Sprachfamilien",
+    "prayer": "Gebetsfortschritt",
+    "upg100List": "Meine UPG100-Liste",
+    "batchSelect": "Mehrfachauswahl"
+  },
+  "header": {
+    "collapsed": "Legende",
+    "peopleGroupFallback": "Volksgruppe",
+    "default": "Legende"
+  },
+  "prayer": {
+    "needsPrayer": "Braucht Gebet",
+    "hasPrayer": "Hat Gebet",
+    "fullPrayerCoverage": "Vollständige Gebetsabdeckung"
+  },
+  "progress": {
+    "title": "Fortschritt",
+    "covered": "{covered} von {total} Volksgruppen im Gebet abgedeckt · {pct}%",
+    "short": "{covered} von {total} · {pct}%",
+    "segment": "{label} · {count} · {pct}%"
+  },
+  "engagement": {
+    "needsEngagement": "Braucht Engagement",
+    "hasEngagement": "Hat Engagement"
+  },
+  "adoption": {
+    "needsAdoption": "Braucht Adoption",
+    "hasAdoption": "Hat Adoption"
+  },
+  "columns": {
+    "upgs": "UUPGs",
+    "population": "Bevölkerung",
+    "name": "Name"
+  },
+  "footer": {
+    "total": "Gesamt"
+  },
+  "sortByUpgs": "Nach UUPGs sortieren",
+  "sortByPop": "Nach Bevölkerung sortieren",
+  "colLabel": {
+    "religion": "UUPG-Religionen",
+    "prayer": "Gebetsstatus",
+    "engagement": "Engagement-Status",
+    "adoption": "Adoptionsstatus",
+    "status": "Status"
+  },
+  "titleBar": {
+    "legend": "Legende",
+    "peopleGroups": "Völker",
+    "wagfRegions": "WAGF-Regionen",
+    "languages": "Sprachen"
+  },
+  "tabInfo": {
+    "upg100Region": "Region — sortiert die UPG100-Listen nach Weltgegend (Afrika, Indien, Naher Osten, Gehörlose, …). Die Zahlen sind die UUPGs und die Bevölkerung aller darunterliegenden Listen zusammen.",
+    "upg100Zone": "UPG100-Listen — jede ist eine Gebetsliste der unerreichten Volksgruppen eines Gebiets und das, was die Karte zeichnet und einfärbt. Jede Liste wird als eigenes Heft gedruckt.",
+    "upg100Group": "Volksgruppe — die einzelnen unerreichten Gruppen innerhalb einer Liste, größter Gebetsbedarf zuerst. Jeder Kartenpunkt ist eine davon.",
+    "family": "Sprachfamilie — eine Gruppe von Sprachen gemeinsamen Ursprungs (z. B. indogermanisch, afroasiatisch).",
+    "language": "Sprache — ein Verständigungssystem, das eine Volksgruppe verwendet (z. B. Arabisch, Bengalisch, Hindi).",
+    "dialect": "Dialekt/Varietät — eine regionale oder soziale Form einer Sprache (z. B. sudanesisches Arabisch; pakistanische Gebärdensprache).",
+    "bloc": "Affinitätsblock — die weiteste Gruppierung, nach kultureller, sprachlicher und geografischer Verwandtschaft (z. B. malaiische Völker, südasiatische Völker, Gehörlose, arabische Welt).",
+    "cluster": "Cluster — eine feinere Gruppierung innerhalb eines Blocks (z. B. Borneo-Kalimantan bei den malaiischen Völkern). Zeilen sind mit „(Cluster)“ gekennzeichnet, um sie von Volksgruppen zu unterscheiden.",
+    "group": "Volksgruppe — eine ethnolinguistische Identität für sich, unabhängig vom Land. Zeilen sind mit „(VG)“ gekennzeichnet. Eine Gruppe kann in vielen Ländern leben (Gehörlose etwa in über hundert).",
+    "pgic": "Volksgruppe im Land — eine Zeile je Volksgruppe und Land, in dem sie lebt (z. B. „Abai Sungai, Malaysia“). Zeilen sind mit „(VGL)“ gekennzeichnet.",
+    "region": "WAGF-Region — die Großregion, zu der ein Land gehört (z. B. Asien, Afrika). Jede hat auf der Karte ihre eigene Farbe.",
+    "block": "WAGF-Block — die Untergruppe innerhalb einer Region (z. B. Südostasien, Westafrika).",
+    "country": "Land — einzelne Länder, geordnet nach unerreichter Bevölkerung innerhalb ihres Blocks."
+  },
+  "a11y": {
+    "expandRow": "{label} ausklappen",
+    "collapseRow": "{label} einklappen",
+    "clearSelection": "Auswahl aufheben",
+    "goUp": "Eine Ebene höher zu {label}"
+  },
+  "export": {
+    "poster": "Plakat",
+    "packet": "UPG100",
+    "packetExplain": "Eine Gebetsliste von etwa 50 bis 100 unerreichten Volksgruppen — eine Person kann eine tragen.",
+    "packetAria": "Detailgrad des Gebetspakets",
+    "packetFull": "Vollständig",
+    "packetLightweight": "Kompakt"
+  },
+  "noDataAtThisLevel": "Keine Daten auf dieser Ebene",
+  "exportButton": "Exportieren",
+  "exportSelection": "Auswahl exportieren",
+  "loadingRows": "{label} werden geladen…",
+  "loadingData": "Daten werden geladen…",
+  "showingTop": "Top {n} von {m} werden angezeigt",
+  "useGeocoderHint": "verwenden Sie die Suche oben, um die übrigen zu finden",
+  "noList": "Keine Liste geladen."
+}

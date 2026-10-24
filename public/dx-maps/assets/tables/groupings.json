@@ -1,0 +1,234 @@
+{
+  "asia-china-tibet-autonomous-region": {
+    "label": "Tibet Autonomous Region + Sichuan Province + Xinjiang Uyghur Autonomous Region + Gansu Province + Inner Mongolia Autonomous Region + Qinghai Province + Heilongjiang Province + Mongolia + Japan + North Korea",
+    "kind": "china",
+    "members": [
+      "Tibet Autonomous Region",
+      "Sichuan Province",
+      "Xinjiang Uyghur Autonomous Region",
+      "Gansu Province",
+      "Inner Mongolia Autonomous Region",
+      "Qinghai Province",
+      "Heilongjiang Province"
+    ],
+    "extraCountryCodes": [
+      "MNG",
+      "PRK",
+      "JPN"
+    ],
+    "count": 53,
+    "color": "#00f0c8",
+    "region": "West-North",
+    "parentRegion": "Asia",
+    "subFamily": "north-asia-frontier",
+    "islandOrphanCountries": [
+      "JPN"
+    ],
+    "nearestMainlandCluster": "asia-china-tibet-autonomous-region",
+    "crossBorderExemption": "attach-to-nearest (N-D4): ADM1 core isContiguous; MNG/PRK border-attached, JPN island-orphan (N-D5). adjacency.json has no ADM0 nodes so cross-border edge is not machine-gated — DECLARED exempt.",
+    "note": "NAS-B. Now OWNS the Mongolia + Japan polygons outright (the former uncovered-mongolia + uncovered-japan legend stubs were dissolved in 09b-asia-contiguity-v2; this zone holds BOTH the count AND the ADM0 render coverage). adm1 core 43 + MNG 3 + PRK 1 + JPN 6 = 53."
+  },
+  "asia-china-yunnan-province": {
+    "label": "Yunnan Province + Guizhou Province + Guangxi Zhuang Autonomous Region + Hunan Province + Hainan Province",
+    "kind": "china",
+    "members": [
+      "Yunnan Province",
+      "Guizhou Province",
+      "Guangxi Zhuang Autonomous Region",
+      "Hunan Province",
+      "Hainan Province"
+    ],
+    "count": 109,
+    "color": "#22ddff",
+    "region": "South-Central",
+    "parentRegion": "Asia",
+    "subFamily": "china",
+    "nearestMainlandCluster": "asia-china-yunnan-province",
+    "islandOrphanCountries": [],
+    "note": "CN-A unchanged (09b-4). Hainan = ADM1 island-orphan (N-D5), declared nearestMainlandCluster=self."
+  },
+  "asia-india-andhra-pradesh": {
+    "label": "Andhra Pradesh + Telangāna",
+    "kind": "india",
+    "members": [
+      "Andhra Pradesh",
+      "Telangāna"
+    ],
+    "count": 107,
+    "color": "#22ddff",
+    "zonalCouncil": "Southern"
+  },
+  "asia-india-gujarat": {
+    "label": "Gujarāt",
+    "kind": "india",
+    "members": [
+      "Gujarāt"
+    ],
+    "count": 90,
+    "color": "#536dfe",
+    "zonalCouncil": "Western"
+  },
+  "asia-india-karnataka": {
+    "label": "Karnātaka + Goa",
+    "kind": "india",
+    "members": [
+      "Karnātaka",
+      "Goa"
+    ],
+    "count": 86,
+    "color": "#536dfe",
+    "zonalCouncil": "Southern"
+  },
+  "asia-india-kerala": {
+    "label": "Kerala + Puducherry + Lakshadweep",
+    "kind": "india",
+    "members": [
+      "Kerala",
+      "Puducherry",
+      "Lakshadweep"
+    ],
+    "count": 78,
+    "color": "#2196ff",
+    "zonalCouncil": "Southern"
+  },
+  "asia-india-madhya-pradesh": {
+    "label": "Madhya Pradesh + Mahārāshtra + Dādra and Nagar Haveli and Damān and Diu",
+    "kind": "india",
+    "members": [
+      "Madhya Pradesh",
+      "Mahārāshtra",
+      "Dādra and Nagar Haveli and Damān and Diu"
+    ],
+    "count": 88,
+    "color": "#2196ff",
+    "zonalCouncil": "Central-Western",
+    "parentRegion": "Asia",
+    "subFamily": "india",
+    "note": "IN-C. Dādra-DD (1 PG, enclave between Gujarāt+Mahārāshtra) re-homed here off the dissolved maharashtra zone to conserve coverage; contiguous via Mahārāshtra."
+  },
+  "asia-india-odisha": {
+    "label": "Odisha + Chhattīsgarh",
+    "kind": "india",
+    "members": [
+      "Odisha",
+      "Chhattīsgarh"
+    ],
+    "count": 88,
+    "color": "#2196ff",
+    "zonalCouncil": "East-Central",
+    "parentRegion": "Asia",
+    "subFamily": "india",
+    "note": "IN-B. Odisha 64 + Chhattīsgarh 24 = 88."
+  },
+  "asia-india-rajasthan": {
+    "label": "Rājasthān + Haryāna + Himāchal Pradesh + Jammu and Kashmīr + Punjab + Chandīgarh + Ladākh",
+    "kind": "india",
+    "members": [
+      "Rājasthān",
+      "Haryāna",
+      "Himāchal Pradesh",
+      "Jammu and Kashmīr",
+      "Punjab",
+      "Chandīgarh",
+      "Ladākh"
+    ],
+    "count": 116,
+    "color": "#22ddff",
+    "zonalCouncil": "Northern"
+  },
+  "asia-india-tamil-nadu": {
+    "label": "Tamil Nādu + Andaman and Nicobar Islands",
+    "kind": "india",
+    "members": [
+      "Tamil Nādu",
+      "Andaman and Nicobar Islands"
+    ],
+    "count": 73,
+    "color": "#7c4dff",
+    "zonalCouncil": "Southern"
+  },
+  "asia-india-uttarakhand": {
+    "label": "Uttarākhand + Uttar Pradesh + Bihār + Jhārkhand + Delhi + Nepal",
+    "kind": "india",
+    "members": [
+      "Uttarākhand",
+      "Uttar Pradesh",
+      "Bihār",
+      "Jhārkhand",
+      "Delhi"
+    ],
+    "extraCountryCodes": [
+      "NPL"
+    ],
+    "count": 92,
+    "color": "#536dfe",
+    "zonalCouncil": "North-Central",
+    "parentRegion": "Asia",
+    "subFamily": "india",
+    "crossBorderExemption": "attach-to-nearest (N-D4): India ADM1 core isContiguous; NPL border-attached to UP/Bihār. adjacency.json has no NPL node — DECLARED exempt (09b-8 Nepal-frontier pattern).",
+    "note": "IN-A. Sikkim moved to IN-D (graph-isolated from this core; only India neighbor is West Bengal — see LESSON-05 L9). Delhi (1 PG, enclave) re-homed here off the dissolved chhattisgarh zone, backfilling the India-core to 58 → 92 with NPL. IN-A now OWNS the Nepal polygon outright (the former uncovered-nepal legend stub was dissolved in 09b-asia-contiguity-v2; this zone holds BOTH the count AND the ADM0 render coverage)."
+  },
+  "asia-india-west-bengal": {
+    "label": "West Bengal + Sikkim + Meghālaya + Assam + Arunāchal Pradesh + Manipur + Tripura + Bangladesh + Bhutan",
+    "kind": "india",
+    "members": [
+      "West Bengal",
+      "Sikkim",
+      "Meghālaya",
+      "Assam",
+      "Arunāchal Pradesh",
+      "Manipur",
+      "Tripura"
+    ],
+    "extraCountryCodes": [
+      "BGD",
+      "BTN"
+    ],
+    "count": 87,
+    "color": "#22ddff",
+    "zonalCouncil": "North-Eastern",
+    "parentRegion": "Asia",
+    "subFamily": "india",
+    "crossBorderExemption": "attach-to-nearest (N-D4): India NE ADM1 core isContiguous (West Bengal → Sikkim/Assam → rest); BGD+BTN border-attached, no ADM0 graph node — DECLARED exempt.",
+    "note": "IN-D. Sikkim placed here (its only India neighbor is West Bengal; would be a 2nd component in IN-A — see LESSON-05 L9). India-core 71 + BGD 3 + BTN 13 = 87. IN-D now OWNS the Bhutan + Bangladesh polygons outright (the former uncovered-himalaya legend stub was dissolved in 09b-asia-contiguity-v2; this zone holds BOTH the count AND the ADM0 render coverage)."
+  },
+  "uncovered-nas-a": {
+    "label": "Pakistan + Afghanistan + Uzbekistan + Tajikistan + Kyrgyzstan + Kazakhstan + Azerbaijan",
+    "kind": "uncovered",
+    "members": [
+      "AFG",
+      "AZE",
+      "KGZ",
+      "PAK",
+      "TJK",
+      "UZB"
+    ],
+    "count": 55,
+    "contiguous": true,
+    "contiguityExempt": false,
+    "color": "#ff1744",
+    "parentRegion": "Asia",
+    "subFamily": "north-asia-frontier",
+    "nasGroup": "NAS-A",
+    "flag": "NAS-A real frontier zone (09b-asia-contiguity-v2 N-D6): MERGE of the former uncovered-sa-west (AFG+PAK) + uncovered-central-asia (AZE/KGZ/TJK/UZB) into ONE zone owning BOTH the legend count AND the ADM0 render coverage. AFG-PAK-UZB-TJK-KGZ form one contiguous land-border core; AZE is the flagged Caspian-separated near-member (S5-D2). KAZ stays deaf-only (its only PG is deaf-kazakhstanis). Target coverage 55 (design directive; uncovered coverage counts are carried through, not recomputable from admin-membership — NOTE-COUNT). ID kept in the uncovered-* family (NOT asia-frontier-nas-a) because zone-geometry.isAsiaZone() routes any asia-*-prefixed id down the ADM1 listId path — an asia-* id would resolve 0 ADM0 polys and render NOTHING. uncovered-* keeps it on the country_codes/ADM0 render path; re-prefixing is the render-layer's NEXT slice, not this one."
+  },
+  "uncovered-scatter": {
+    "label": "Scattered / Diaspora",
+    "kind": "uncovered",
+    "members": [
+      "AND",
+      "CCK",
+      "GUF",
+      "USA"
+    ],
+    "count": 8,
+    "contiguous": false,
+    "contiguityExempt": true,
+    "color": "#eeff41",
+    "extra_slugs": [
+      "jing",
+      "pana-china"
+    ],
+    "flag": "allowed non-contiguous bucket (S5-D3) — diaspora/island/micro-territory strays + 2 unstamped CHN border PGs"
+  }
+}

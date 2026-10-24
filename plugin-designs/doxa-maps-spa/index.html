@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · doxa-maps-spa staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Capability-5 app-shell (nested-mfe-spa): ONE element, <doxa-maps-spa>, is a vertical-tab
+       layout whose tab-1 is the Big Picture (mounted by its real <bp-big-picture> tag + built .js)
+       and whose other tabs are every research map, each nested as its own SPA (leaf-page iframe).
+       No Mapbox peer is loaded HERE — each map tab's leaf page loads its own peer + token ladder. -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: #0b0f14; color: #e5e7eb;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { display: flex; flex-direction: column; height: 100vh; }
+    .intro { flex: 0 0 auto; padding: 14px 18px; border-bottom: 1px solid #1f2937; }
+    .intro h1 { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+    .intro p { color: #9ca3af; font-size: 12.5px; margin-top: 5px; max-width: 900px; }
+    .intro code { color: #c4b5fd; }
+    .frame { flex: 1 1 auto; position: relative; min-height: 0; }
+    doxa-maps-spa { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="intro">
+      <h1>doxa-maps-spa · staging</h1>
+      <p>Capability&nbsp;5 — the <strong>app-shell</strong>. One element,
+        <code>&lt;doxa-maps-spa&gt;</code>, is a vertical-tab layout of the whole DX-maps app:
+        <strong>tab&nbsp;1 = Big Picture</strong> (its real <code>&lt;bp-big-picture&gt;</code>
+        header + people-groups grid, mounted from the built <code>big-picture.js</code>), and the
+        other tabs are every production research map, each nested as its own full SPA. Switch tabs
+        with no page reload; each map tab loads lazily on first open.</p>
+    </div>
+    <div class="frame">
+      <!-- urlOwner 'app': this page is ours (the dev server serves it), so a tab pick writes ?tab= and a reload or a
+           sent link opens that tab (useViewAddress). A partner's page leaves it out and is never written. -->
+      <doxa-maps-spa id="dms" heading="Deep Research" profile-config='{"urlOwner":"app"}'></doxa-maps-spa>
+    </div>
+  </div>
+
+  <!-- Vite multi-page entry — emits the IIFE that registers <doxa-maps-spa>. -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

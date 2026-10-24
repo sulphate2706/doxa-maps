@@ -1,0 +1,7 @@
+{
+  "_comment": "Preconfigured instances of the demo profile. 'maplibre' is the token-free engine demo: provider:'maplibre' makes the generated page load MapLibre instead of Mapbox and skip the token ladder entirely (no account, no key — embeds anywhere).",
+  "instances": [
+    { "id": "maplibre", "title": "Demo map — MapLibre (token-free)",
+      "props": { "profile": "demo-map", "provider": "maplibre", "instanceId": "demo-maplibre" } }
+  ]
+}

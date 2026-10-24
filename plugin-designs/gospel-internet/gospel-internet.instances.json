@@ -1,0 +1,65 @@
+{
+  "_comment": "Preset partner embeds of <gospel-internet-board> (see README.md: every view is a URL state, so a preset is just that URL). Keyless: provider 'auto' falls to MapLibre with no token. Each preset is a URL a partner can QR.",
+  "instances": [
+    {
+      "id": "board",
+      "title": "Gospel x Internet — the board",
+      "props": {
+        "profile": "board",
+        "urlState": "query",
+        "pinHint": false
+      }
+    },
+    {
+      "id": "zero",
+      "title": "Nothing in their own language — the front door",
+      "props": {
+        "profile": "board",
+        "view": "zero",
+        "urlState": "query",
+        "pinHint": false
+      }
+    },
+    {
+      "id": "india-china",
+      "title": "India and China by state and province",
+      "props": {
+        "profile": "board",
+        "view": "province",
+        "panel": "map",
+        "urlState": "query",
+        "pinHint": false
+      }
+    },
+    {
+      "id": "language-tree",
+      "title": "Language tree — which languages have the gospel, family by family",
+      "props": {
+        "profile": "board",
+        "panel": "tree",
+        "urlState": "query",
+        "pinHint": false
+      }
+    },
+    {
+      "id": "platforms",
+      "title": "Platforms — which apps would carry a resource there",
+      "props": {
+        "profile": "board",
+        "view": "platforms",
+        "urlState": "query",
+        "pinHint": false
+      }
+    },
+    {
+      "id": "project-700",
+      "title": "Project 700 — the list as a partner embed",
+      "props": {
+        "profile": "board",
+        "list": "700",
+        "urlState": "query",
+        "pinHint": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "map": "地图",
+  "marker": "地图标记",
+  "closePopup": "关闭弹窗",
+  "zoomIn": "放大",
+  "zoomOut": "缩小",
+  "resetBearing": "拖动以旋转地图，点击以恢复正北",
+  "toggleAttribution": "显示/隐藏数据来源",
+  "mapFeedback": "地图反馈",
+  "enterFullscreen": "全屏",
+  "exitFullscreen": "退出全屏",
+  "findMyLocation": "查找我的位置",
+  "locationNotAvailable": "无法获取位置",
+  "enableGlobe": "启用地球仪",
+  "disableGlobe": "停用地球仪",
+  "ctrlScroll": "使用 Ctrl + 滚轮缩放地图",
+  "cmdScroll": "使用 ⌘ + 滚轮缩放地图",
+  "twoFingers": "使用两根手指移动地图",
+  "mapboxHomepage": "Mapbox 主页",
+  "maplibreLogo": "MapLibre 标志"
+}

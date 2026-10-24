@@ -1,0 +1,176 @@
+{
+ "meta": {
+  "title": "SUN — a universal signed language with Scripture, for Deaf groups with nothing",
+  "source": "sun.bible, fetched and verified by content",
+  "generated": "2026-09-25",
+  "publisher": "Wycliffe Associates",
+  "doctrine": "Evangelical Bible-translation organisation publishing the 66-book canon. Checked deliberately: the Deaf are the most heavily targeted group in this dataset by publishers this build excludes.",
+  "what_it_is": "Symbols of Universal Notation — a signed language built to be learnable across sign languages, with Scripture translated into it. A BRIDGE, exactly like a spoken bridge language: a real way in that has to be learned, and no substitute for Scripture in a group's own sign language.",
+  "why_no_per_language_urls": "sun.bible answers 200 for /sun/<anything> and /resource/<anything>. Only URLs verified by their content are shipped; a constructed per-language URL would look valid and could be empty.",
+  "catch_all_control": {
+   "url": "https://sun.bible/sun/ZZZZNOTREAL",
+   "status": 200,
+   "text_chars": 904
+  },
+  "verified_pages": 6,
+  "project_countries": 28
+ },
+ "resources": [
+  {
+   "key": "new_testament",
+   "url": "https://sun.bible/sun/NewTestament",
+   "label": "SUN New Testament",
+   "title": "Sun Files",
+   "bytes": 22043
+  },
+  {
+   "key": "old_testament",
+   "url": "https://sun.bible/sun/OldTestament",
+   "label": "SUN Old Testament",
+   "title": "Sun Files",
+   "bytes": 23493
+  },
+  {
+   "key": "bible_stories",
+   "url": "https://sun.bible/sun/BibleStories",
+   "label": "SUN Bible stories",
+   "title": "Sun Files",
+   "bytes": 18333
+  },
+  {
+   "key": "status",
+   "url": "https://sun.bible/status",
+   "label": "SUN translation status",
+   "title": "Translation Status",
+   "bytes": 21803
+  },
+  {
+   "key": "where",
+   "url": "https://sun.bible/where",
+   "label": "Where SUN is being taught",
+   "title": "Projects",
+   "bytes": 68284
+  },
+  {
+   "key": "home",
+   "url": "https://sun.bible/",
+   "label": "SUN — about the language",
+   "title": "SUN Translation Resources",
+   "bytes": 43032
+  }
+ ],
+ "projects": [
+  {
+   "country": "BENIN",
+   "organisation": "Mission Évangélique des Sourds"
+  },
+  {
+   "country": "BRAZIL",
+   "organisation": "Igreja Evangélica Assemblia de Deus em Belém"
+  },
+  {
+   "country": "BURKINA FASO",
+   "organisation": "Federation of Evangelical Churches and Missions (FEME) with the Assemblies of God Church"
+  },
+  {
+   "country": "BURUNDI",
+   "organisation": "Immanuel Church of the Deaf"
+  },
+  {
+   "country": "CAMEROON",
+   "organisation": "Deaf Empowerment Association Cameroon"
+  },
+  {
+   "country": "CONGO",
+   "organisation": "Deaf Action Congo"
+  },
+  {
+   "country": "COTE D’IVOIRE",
+   "organisation": "Eglise Du Christ Internationale CI"
+  },
+  {
+   "country": "ETHIOPIA",
+   "organisation": "WE-LEAD"
+  },
+  {
+   "country": "FIJI",
+   "organisation": "Western Ministry for the Deaf"
+  },
+  {
+   "country": "GHANA",
+   "organisation": "Volta Bible College"
+  },
+  {
+   "country": "INDIA",
+   "organisation": "Progressive Life Center"
+  },
+  {
+   "country": "KENYA",
+   "organisation": "Immanuel Church of the Deaf Kenya"
+  },
+  {
+   "country": "LESOTHO",
+   "organisation": "National Association of the Deaf Lesotho"
+  },
+  {
+   "country": "MALAWI",
+   "organisation": "M5 Deaf and Hearing Church of Christ"
+  },
+  {
+   "country": "NAMIBIA",
+   "organisation": "Namibian National Association of the Deaf"
+  },
+  {
+   "country": "NIGERIA",
+   "organisation": "Voice for the Deaf Foundation"
+  },
+  {
+   "country": "PARAGUAY",
+   "organisation": "Ministerio Iglesias de Sordos de Paraguay"
+  },
+  {
+   "country": "PERU",
+   "organisation": "Iglesia Evangélica Bautista Efata"
+  },
+  {
+   "country": "PHILIPPINES",
+   "organisation": "Philippine Immanuel Churches of the Deaf (PICD)"
+  },
+  {
+   "country": "RWANDA",
+   "organisation": "Deaf Action Rwanda"
+  },
+  {
+   "country": "SENEGAL",
+   "organisation": "Assembly of God Church - Pikine"
+  },
+  {
+   "country": "SIERRA LEONE",
+   "organisation": "Deaf Christian Assembly and International Church of Christ"
+  },
+  {
+   "country": "SOUTH SUDAN",
+   "organisation": "South Sudan National Deaf Children and Youth"
+  },
+  {
+   "country": "SWAZILAND/ESWATINI",
+   "organisation": "Comfort for Africa"
+  },
+  {
+   "country": "SÃO TOMÉ E PRÍNCIPE",
+   "organisation": "Cada Casa de São Tomé e Príncipe"
+  },
+  {
+   "country": "TANZANIA",
+   "organisation": "Immanuel Kanisa la Viziwi"
+  },
+  {
+   "country": "TOGO",
+   "organisation": "Eglise Rocher des Ages du Togo"
+  },
+  {
+   "country": "UGANDA",
+   "organisation": "Amaziba Ministries LTD"
+  }
+ ]
+}

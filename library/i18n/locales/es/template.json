@@ -1,0 +1,11 @@
+{
+  "title": "Mi primer mapa",
+  "engineMissing": "El motor del mapa no se cargó.",
+  "mapFailed": "El mapa no pudo iniciarse: {detail}",
+  "profileB": {
+    "title": "Perfil B",
+    "servedFrom": "Servido desde {file} en el paquete {bundle}.",
+    "note": "Nota: {note}",
+    "noNote": "(no se pasó ninguna nota en profile-config)"
+  }
+}

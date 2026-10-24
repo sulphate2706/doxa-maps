@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "_comment": "Single source of truth for data-source connections across all doxa-maps bundles.",
+    "_comment_token": "Mapbox access token is fetched at runtime from window.MAP_TOKEN_URL (same modular pattern as window.MAP_APP_API_URL). Not hardcoded to any host — set mapboxTokenUrl below or override window.MAP_TOKEN_URL on the host page.",
+    "mapboxTokenUrl": "window.MAP_TOKEN_URL"
+  },
+  "activeSource": "pray-tools",
+  "sources": {
+    "pray-tools": {
+      "id": "pray-tools",
+      "name": "Prayer.Tools API",
+      "type": "rest-api",
+      "description": "pray.doxa.life live API \u2014 people-group prayer, engagement, and adoption data. Base URL read from window.MAP_APP_API_URL or VITE_API_BASE_URL at runtime.",
+      "endpoints": {
+        "bulk": "/api/people-groups/list",
+        "detail": "/api/people-groups/detail/{slug}",
+        "statistics": "/api/people-groups/statistics"
+      },
+      "queryParams": {
+        "lang": "en"
+      },
+      "defaultFields": [
+        "slug",
+        "name",
+        "latitude",
+        "longitude",
+        "wagf_region",
+        "wagf_block",
+        "wagf_member",
+        "rop1",
+        "imb_reg_of_people_2",
+        "imb_reg_of_people_25",
+        "imb_reg_of_people_3",
+        "country_code",
+        "religion",
+        "population",
+        "has_photo",
+        "image_url",
+        "people_praying",
+        "people_committed",
+        "adopted_by_churches",
+        "engagement_status",
+        "imb_gsec",
+        "primary_language",
+        "imb_language_family",
+        "imb_language_class",
+        "imb_language_speakers"
+      ],
+      "pollFields": [
+        "slug",
+        "people_praying"
+      ],
+      "pollInterval": 300000,
+      "fallbackSourceId": null,
+      "fieldMappings": {
+        "uniqueId": "slug",
+        "slug": "slug",
+        "name": "name",
+        "latitude": "latitude",
+        "longitude": "longitude",
+        "wagfRegion": "wagf_region",
+        "doxaRegion": "wagf_region",
+        "wagfBlock": "wagf_block",
+        "wagfMember": "wagf_member",
+        "affinityBlock": "rop1",
+        "countryIso": "country_code",
+        "religion": "religion",
+        "religionCode": "religion",
+        "population": "population",
+        "hasPhoto": "has_photo",
+        "imageUrl": "image_url",
+        "photoUrl": "image_url",
+        "peoplePraying": "people_praying",
+        "peopleCommitted": "people_committed",
+        "engagementStatus": "engagement_status",
+        "adoptionStatus": "adopted_by_churches",
+        "language": "primary_language",
+        "cluster": "imb_reg_of_people_2",
+        "peopleGroup": "imb_reg_of_people_25",
+        "peopleGroupCountry": "imb_reg_of_people_3",
+        "languageFamily": "imb_language_family",
+        "languageClass": "imb_language_class",
+        "languageSpeakers": "imb_language_speakers"
+      },
+      "imageConfig": {
+        "useField": "imageUrl",
+        "fallbackField": null,
+        "fallbackUrlTemplate": null,
+        "placeholderUrl": "https://www.peoplegroups.org/images/pgphotosearch/NoImageAvailable_search.jpg",
+        "useSvgPlaceholder": true
+      }
+    },
+    "doxa-csv": {
+      "id": "doxa-csv",
+      "name": "DOXA People Groups CSV",
+      "type": "csv",
+      "path": "assets/data/Joshua-project-ids-Doxa-1439.csv",
+      "description": "People groups dataset from DOXA / Joshua Project",
+      "fieldMappings": {
+        "uniqueId": "ROP3",
+        "peopleGroupId": "ROP3",
+        "countryCode": "ROG",
+        "peopleId3": "PeopleID3",
+        "name": "Name",
+        "displayName": "NmDisp",
+        "alternateName": "NmAlt",
+        "description": "PeopleDesc",
+        "locationDescription": "LocationDe",
+        "country": "Ctry",
+        "countryIso": "ISOalpha3",
+        "region": "Regn",
+        "subRegion": "RegnSub",
+        "wagfRegion": "WAGF Region",
+        "doxaRegion": "WAGF Region",
+        "wagfBlock": "WAGF BLOCK",
+        "affinityBloc": "Affbloc",
+        "affinityBlock": "ROP1",
+        "affinityCode": "AffCd",
+        "affinityName": "Aff",
+        "peopleCluster": "PplClstr",
+        "ethneName": "Ethne",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "population": "Pop",
+        "populationClass": "PopCls",
+        "status": "Status",
+        "engagementStatus": "EngStat",
+        "evangelicalLevel": "EvngLvl",
+        "gsec": "GSEC",
+        "gsecBrief": "GSECbrf",
+        "gsecLong": "GSEClng",
+        "spiScore": "SPI",
+        "spiDescription": "SPIdesc",
+        "language": "Lang",
+        "languageCode": "ROL",
+        "languageFamily": "LangFamily",
+        "religion": "Rlgn",
+        "religionCode": "ROR",
+        "religionDescription": "RORdesc",
+        "religionBase": "RlgnBs",
+        "religionDiv": "RlgnDiv",
+        "bible": "Bible",
+        "jesusFilm": "Jesus",
+        "radio": "Radio",
+        "gospel": "Gospel",
+        "audio": "Audio",
+        "stories": "Stories",
+        "resourcesTotal": "ResTot",
+        "bibleLevel": "LvlBible",
+        "yearPublished": "YrPub",
+        "photoCredit": "PicCrdt",
+        "photoUrl": "PicURL",
+        "hasPhoto": "Photo",
+        "isIndigenous": "Indigenous"
+      },
+      "imageConfig": {
+        "useField": "photoUrl",
+        "fallbackField": "peopleId3",
+        "fallbackUrlTemplate": "https://joshuaproject.net/assets/media/profiles/photos/p{peopleId3}.jpg",
+        "placeholderUrl": "https://www.peoplegroups.org/images/pgphotosearch/NoImageAvailable_search.jpg"
+      }
+    }
+  },
+  "systemFields": {
+    "uniqueId": {
+      "description": "Unique identifier per row (slug for API, ROP3+ROG for CSV)",
+      "required": true
+    },
+    "peopleGroupId": {
+      "description": "People group ID \u2014 same group can appear in multiple countries",
+      "required": true
+    },
+    "name": {
+      "description": "People group display name",
+      "required": true
+    },
+    "latitude": {
+      "description": "Latitude coordinate for map pin",
+      "required": true
+    },
+    "longitude": {
+      "description": "Longitude coordinate for map pin",
+      "required": true
+    },
+    "engagementStatus": {
+      "description": "Boolean \u2014 true if engaged_status = 'engaged'",
+      "required": false
+    },
+    "adoptionStatus": {
+      "description": "Boolean \u2014 true if adopted_by_churches > 0",
+      "required": false
+    },
+    "peoplePraying": {
+      "description": "Number of people currently praying for this group \u2014 from pray-tools API",
+      "required": false
+    },
+    "peopleCommitted": {
+      "description": "Raw count of committed workers for this group \u2014 source of engagementStatus",
+      "required": false
+    },
+    "languageFamily": {
+      "description": "Language family name",
+      "required": false
+    },
+    "religion": {
+      "description": "Primary religion",
+      "required": false
+    },
+    "population": {
+      "description": "Population count",
+      "required": false
+    },
+    "doxaRegion": {
+      "description": "WAGF/DOXA region name",
+      "required": false
+    },
+    "photoUrl": {
+      "description": "URL to people group photo",
+      "required": false
+    },
+    "description": {
+      "description": "People group description text",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "stage": "experimental",
+  "label": "Gospel Resources — where the gap is, by language",
+  "note": "Label + an EXPLICIT stage. Type is deliberately left to inference (no *.instances.json, so `single`, unchanged): generate-tree resolves the tier from meta.json `type`, not from the file existing, so adding a label cannot re-tier the profile. The Studio reads this label from the manifest; without it the rail humanizes the profile id to \"Charts\", which says nothing about what the page answers. Stage is declared rather than inherited: profile-meta.mjs defaults a meta-less profile to experimental, so writing this file without a stage key would leave the value resting on that default — and a later change to it would silently promote a production bundle profile."
+}

@@ -1,0 +1,311 @@
+{
+  "band": {
+    "no": "上网率低于 25%",
+    "nodata": "无数据",
+    "partial": "上网率 25–59%",
+    "yes": "上网率 60% 或以上"
+  },
+  "bounded": {
+    "aria": "有界集：十字架位于中心，已得之民在圆内，未得之民在圆外",
+    "caption": "圆内：已得之民。圆外：未得之民。",
+    "failed": "无法载入已得／未得之民的数据表，因此本图未绘制。",
+    "unknown": "未绘制，因为他们的已得状态与本表不相符："
+  },
+  "centered": {
+    "aria": "中心集：未得之民按与已得邻族的亲近程度排布，箭头指向中心",
+    "caption": "每个族群按其与某个已得邻族的距离排布；箭头指向为其定位的那一族。",
+    "failed": "无法载入邻族数据表，因此本图未绘制。",
+    "reached": "已经得着，因此位于中心：",
+    "unmatched": "根本不在邻族数据表中，因此未绘制：",
+    "unplaced": "未找到关联，因此未予定位：",
+    "shown": "环上的族群："
+  },
+  "centre": {
+    "aria": "显示",
+    "bounded": "有界集",
+    "centered": "中心集",
+    "map": "地图",
+    "tree": "语言树"
+  },
+  "charts": {
+    "accessByBand": "母语资源情况，按国家互联网使用率",
+    "aria": "图表",
+    "bandCaveat": "互联网使用率是国家的数字（世界银行），不是该族群的数字。",
+    "gapSub": "所显示族群中人口最多的 8 个。点击即可打开。",
+    "gapTake": "仅这 {k} 个就有 {people} 人。",
+    "gapTitle": "母语中一无所有的最大族群",
+    "groups": "族群",
+    "groupsN": "{n} 个族群",
+    "measure": "统计",
+    "messagingTop": "各国（当前范围）最主要的通讯应用",
+    "notMeasured": "未统计",
+    "ntSub": "所显示族群中未找到新约的语言，按使用人数排列。红色：一无所有；黄色：有一些，但没有新约。",
+    "ntTake": "这里有 {n} 种语言未找到新约，使用人数为 {people}。",
+    "ntTitle": "哪些语言最需要新约？",
+    "people": "人数",
+    "peopleN": "{n} 人",
+    "q1sub": "每个访问级别一条，针对所显示的族群。",
+    "q1take": "所显示的 {total} 个族群中，有 {n} 个在母语中一无所有。",
+    "q1title": "他们的母语中有什么？",
+    "q2sub": "母语中一无所有的族群，按其国家的上网比例。",
+    "q2take": "在 {n} 个一无所有的族群中，有 {online} 个生活在 60% 或以上人口使用互联网的国家。",
+    "q2title": "互联网能把它带给一无所有的人吗？",
+    "socialTop": "各国（当前范围）最主要的社交平台",
+    "unitCountries": "个国家",
+    "unitGroups": "个族群",
+    "unitPeople": "人",
+    "zeroByBand": "母语中一无所有，按国家互联网使用率",
+    "zeroCaveat": "每一个都有进入途径：桥梁语言、候选语言或手语桥梁。"
+  },
+  "col": {
+    "access": "母语资源",
+    "band": "互联网等级",
+    "bridgeTraining": "培训（桥梁语言）",
+    "country": "国家",
+    "deafPublisher": "手语出版方",
+    "internet": "国家上网率",
+    "internetYear": "年份",
+    "language": "语言",
+    "messaging": "最主要的通讯应用（国家，iOS）",
+    "mobile": "每百人移动用户",
+    "openBench": "机器翻译基准（FLORES+）",
+    "openBooks": "圣经书卷（eBible）",
+    "openData": "开放数据（共 5 项）",
+    "openGrammar": "语法（Glottolog）",
+    "openSpeech": "语音时长（Common Voice）",
+    "openWiki": "维基百科",
+    "platform": "主要平台（国家）",
+    "praying": "代祷人数",
+    "province": "邦 / 省（大约）",
+    "resources": "已找到的资源",
+    "stateMen": "邦上网率：男性",
+    "stateWomen": "邦上网率：女性",
+    "training": "培训（母语）",
+    "translatedBy": "译者",
+    "wayIn": "进入途径"
+  },
+  "combos": {
+    "audioOnline": "能听不能读，国家在线",
+    "deaf": "有手语桥梁",
+    "digitalNow": "母语一无所有，国家上网率 60% 以上",
+    "indiaChinaGap": "印度和中国：母语一无所有",
+    "none": "全部——选择一个筛选或组合",
+    "offlineGap": "母语一无所有，国家大多离线",
+    "selection": "您的选择",
+    "telegram": "母语一无所有，Telegram 国家",
+    "try": "试试组合",
+    "whatsapp": "母语一无所有，WhatsApp 国家"
+  },
+  "detail": {
+    "hear": "能看或能听，不能读",
+    "none": "未找到",
+    "read": "能读",
+    "read_watch": "能读能看",
+    "stories": "仅有故事"
+  },
+  "drawer": {
+    "approx": "大约",
+    "bridgeHas": "以桥梁语言",
+    "conn": "网络连接",
+    "copied": "链接已复制",
+    "copyLink": "复制此族群的链接",
+    "deafLink": "手语圣经",
+    "foundNote": "在已查阅的来源中找到。",
+    "messaging": "通讯应用（iOS 下载）",
+    "mobileNote": "每百人签约数（{year}）；一人可能有多个。",
+    "nfhsNote": "NFHS-5，2019–21，15–49 岁：这是该邦的数字，不是族群的数字。",
+    "noFeed": "该国不在苹果的数据源中：这里不知道它的通讯应用，并不表示没有。",
+    "noneNote": "在已查阅的来源中未找到他们母语的任何资源。这并不表示不存在任何资源。",
+    "notInSource": "不在此来源中",
+    "openCheck": "开放数据充足但未找到新约：请先核实，可能已有新约而所查来源遗漏了。",
+    "openCount": "开放数据",
+    "openNote": "来源：Glottolog（CC BY 4.0）、eBible、维基百科（CC BY-SA 4.0）、Common Voice（CC0）、FLORES+（CC BY-SA 4.0）。这是具名事实的计数，不是评分。",
+    "openOf": "5 项中的 {n} 项",
+    "openTitle": "可作为翻译起点的开放数据",
+    "own": "以他们的母语",
+    "people": "{n} 人",
+    "platformNote": "该国已追踪社交平台带来的网页流量占比（StatCounter）。WhatsApp 等即时通讯应用未被统计。",
+    "platforms": "该国的平台",
+    "praying": "{n} 人在 DOXA 上代祷",
+    "social": "社交平台（网页引荐）",
+    "stateOnline": "{state}：曾经使用过互联网",
+    "way": "进入途径",
+    "wayIn": "进入途径",
+    "wayNote": "这是邻近语言，不是建议：一个族群是否会说，需要由当地的人来回答。",
+    "wbSource": "世界银行，{year}：国家的数字",
+    "womenMen": "女性 {w} · 男性 {m}",
+    "gospelAudio": "福音录音",
+    "training": "门徒训练"
+  },
+  "facet": {
+    "access": "以他们母语的资源",
+    "all": "显示全部 {n} 项",
+    "aria": "筛选",
+    "band": "国家互联网使用率",
+    "bandNote": "国家的数字（世界银行），不是族群的数字。",
+    "country": "国家",
+    "fewer": "收起",
+    "find": "查找…",
+    "findIn": "在“{what}”中查找",
+    "language": "语言",
+    "messaging": "最主要的通讯应用（国家）",
+    "messagingNote": "该国苹果 App Store 中下载最多的应用：仅限 iOS，是下载排名，不是使用情况。",
+    "province": "印度和中国：邦或省",
+    "provinceNote": "大约：按族群在地图上的圆点确定，不是按城镇。",
+    "region": "地区",
+    "religion": "宗教",
+    "wayIn": "母语一无所有时的进入途径"
+  },
+  "grid": {
+    "aria": "当前范围内的族群",
+    "columns": "列",
+    "count": "{total} 个族群中的 {n} 个",
+    "empty": "没有符合这些筛选条件的族群。",
+    "exported": "已导出 {n} 行（已复制并下载）。",
+    "openCapped": "打开前 {n} 个所选项。",
+    "openInGospel": "在福音资源中打开",
+    "selectRow": "选择 {name}"
+  },
+  "headline": {
+    "a": "{total} 个族群中有 {zero} 个在母语中一无所有；",
+    "b": "其中 {online} 个生活在 60% 或以上人口使用互联网的国家。"
+  },
+  "kind": {
+    "audio": "音频",
+    "film": "影片",
+    "scripture": "圣经",
+    "stories": "故事",
+    "video": "视频"
+  },
+  "legend": {
+    "band": "国家互联网使用率（世界银行）",
+    "hide": "隐藏图例",
+    "modeMen": "互联网：男性",
+    "modeWomen": "互联网：女性",
+    "modeZero": "母语中一无所有",
+    "nfhs": "仅限印度：各邦 15–49 岁女性或男性中曾使用互联网的比例。NFHS-5，2019–21。中国没有经核实的省级来源。",
+    "pins": "以他们的母语",
+    "provinces": "印度和中国（按省）",
+    "show": "图例"
+  },
+  "level": {
+    "bridge": "母语中一无所有 · 仅有桥梁",
+    "own": "母语中有资源",
+    "zero": "母语中一无所有 · 尚无进入途径"
+  },
+  "listChip": "本页面选定的族群名单",
+  "loadError": "看板的数据未能加载。",
+  "loadingTable": "正在载入数据表…",
+  "map": {
+    "aria": "族群地图，按各国互联网使用程度着色"
+  },
+  "notice": {
+    "pin": "圆点代表该民族，而不是某个城镇。",
+    "pins": "圆点代表一个民族，而不是某个城镇。有 {n} 个族群与其他族群共用一个点。",
+    "shares": "它与另外 {n} 个族群共用这个点。",
+    "sources": "来源：",
+    "standing": "圆点是大约位置：一个圆点代表一个民族，而不是城镇。互联网数字是国家或印度某邦的，不是族群的。“找到”是指在已查阅的来源中找到。"
+  },
+  "panel": {
+    "charts": "图表",
+    "filters": "筛选",
+    "grid": "族群",
+    "map": "地图"
+  },
+  "res": {
+    "aria": "当前范围内各语言的福音资源",
+    "count": "当前范围 {all} 种语言中，有 {langs} 种共 {n} 项资源",
+    "empty": "当前范围内的语言未找到任何资源。",
+    "groups": "此处族群",
+    "note": "此处没有行的语言，在已查阅的来源中一无所有。",
+    "resource": "资源",
+    "scope": "范围",
+    "source": "来源",
+    "type": "类型"
+  },
+  "rings": {
+    "band": {
+      "dialect": "同一方言",
+      "language": "同一语言",
+      "family": "同一语系",
+      "geography": "仅地理相邻"
+    },
+    "centre": "十字架：一个已得之民（福音派占 2% 或以上）。",
+    "closest": "最近的已得之民：",
+    "culture": {
+      "same": "同一族群",
+      "near": "文化相近",
+      "different": "文化不同"
+    },
+    "example": "示例：",
+    "explain": {
+      "dialect": "某个已得之民说的正是同一语言变体（同一 ISO 639-3 代码）。",
+      "language": "某个已得之民说的是同一语言的另一变体，例如埃及阿拉伯语与内志阿拉伯语。",
+      "family": "最近的共同语言只是亲属语言，属于同一语系。",
+      "geography": "完全没有共同语言：某个已得之民住在同一国家，或在 600 公里之内。",
+      "same": "是同一族群，住在别处。",
+      "near": "是同一 IMB 族群集群中的另一族群。",
+      "different": "是另一集群的族群。"
+    },
+    "footCentre": "已得之民，位于中心",
+    "footUnmatched": "不在邻族数据表中，未绘制",
+    "footUnplaced": "未找到相关的已得之民，未予定位",
+    "fullscreen": "全屏",
+    "intro": "每个未得之民按其与最近的已得之民的亲近程度落在某一环上。环越靠近，福音越能自然传开。",
+    "none": "此视图中没有族群位于这一环上。",
+    "ring": "环",
+    "showAll": "显示所有环",
+    "source": "已得 = 福音派占 2% 或以上，即 peoplegroups.org 采用的 IMB 定义。语言与文化的亲近程度是依其语言代码和族群集群推得的近似值。",
+    "title": "各环的含义"
+  },
+  "strength": {
+    "moderate": "中等",
+    "strong": "强"
+  },
+  "table": {
+    "aria": "表格",
+    "groups": "族群",
+    "resources": "福音资源"
+  },
+  "title": "通过互联网接触福音",
+  "tree": {
+    "aria": "语言树：这些族群的每个语系，按各语言中已找到的资源着色",
+    "branch": "分支",
+    "dialect": "方言",
+    "family": "语系",
+    "groupsN": "{n} 个族群",
+    "inherited": "其语言的颜色：没有任何来源按方言编目资源。",
+    "language": "语言",
+    "languagesHere": "种语言",
+    "legendTitle": "以他们的母语",
+    "levels": "语系 › 分支 › 语言 › 方言。语系或分支显示其内部最差的颜色。方言显示其语言的颜色（较浅）：资源按语言编目，而不是按方言。点击圆圈即可将看板缩小到该范围。",
+    "poster": "海报",
+    "poster3ft": "3 × 3 英尺",
+    "poster4ft": "4 × 4 英尺",
+    "posterOmitted": "有 {n} 个名称因会与其他名称重叠而省略；每个圆圈都已绘出。",
+    "posterPrint": "打印",
+    "posterSizeAria": "海报尺寸",
+    "posterTitle": "福音资源，按语系逐一呈现",
+    "sources": "语言树：Glottolog（CC BY 4.0）。资源：eBible、Faith Comes By Hearing、Scripture Earth、PNG.Bible、耶稣传影片、Global Recordings 等，按 ISO 639-3 编目。",
+    "st": {
+      "g": "已找到新约或整本圣经",
+      "r": "未找到",
+      "y": "找到一些资源，但没有新约"
+    },
+    "via": "此路径上还有："
+  },
+  "view": {
+    "aria": "视图",
+    "board": "看板",
+    "platforms": "平台",
+    "province": "印度和中国（按省）",
+    "zero": "母语中一无所有"
+  },
+  "wayIn": {
+    "bridge": "桥梁语言",
+    "candidate": "候选语言",
+    "candidateText": "{lang}（候选，占全国 {pct}%）",
+    "deaf": "手语桥梁",
+    "deafText": "{lang}（手语）"
+  }
+}

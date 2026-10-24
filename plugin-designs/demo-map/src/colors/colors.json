@@ -1,0 +1,17 @@
+{
+  "_comment": "Your map's colors as plain VALUES — no code. Edit the hex strings; nothing else. This file is a pure edit surface a non-programmer can safely change. Import it in your profile .vue with a relative path: import colors from './src/colors/colors.json'. For color logic that varies per data value (e.g. color a pin by a field), use a code-based strategy .js file right here in src/colors/ instead — see this folder's README.",
+
+  "pins": {
+    "default": "#2563eb",
+    "selected": "#f59e0b",
+    "muted": "#94a3b8"
+  },
+
+  "polygons": {
+    "fill": "#93c5fd",
+    "fillOpacity": 0.35,
+    "outline": "#1d4ed8"
+  },
+
+  "fallback": "#cbd5e1"
+}

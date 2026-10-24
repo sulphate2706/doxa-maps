@@ -1,0 +1,1 @@
+{ "_comment": "One default instance.", "instances": [ { "id": "default", "label": "Dashboard + Grid", "profileConfig": {} } ] }

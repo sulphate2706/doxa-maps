@@ -1,0 +1,1386 @@
+[
+ {
+  "slug": "adi",
+  "name": "Adi",
+  "country_code": "CHN",
+  "population": "1400",
+  "religion": "E",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://flickr.com/photos/ramesh_lalwani/8169468855/",
+    "text": "Ramesh Lalwani - Flickr"
+   }
+  ],
+  "latitude": "29.24961200",
+  "longitude": "95.17182400",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion",
+  "primary_language": "adi",
+  "primary_language_label": "Adi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "ainu-china",
+  "name": "Ainu",
+  "country_code": "CHN",
+  "population": "11000",
+  "religion": "MSN",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "38.93020500",
+  "longitude": "76.16959600",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Sunni",
+  "primary_language": "aib",
+  "primary_language_label": "Ainu (China)",
+  "imb_gsec": "0",
+  "imb_gsec_label": "No Evangelicals, Churches or Resources"
+ },
+ {
+  "slug": "alxa-mongols",
+  "name": "Alxa Mongols",
+  "country_code": "CHN",
+  "population": "35500",
+  "religion": "MSN",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "39.20798700",
+  "longitude": "101.67522000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Sunni",
+  "primary_language": "xal",
+  "primary_language_label": "Kalmyk-Oirat",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "bogar-lhoba",
+  "name": "Bogar Lhoba",
+  "country_code": "CHN",
+  "population": "5300",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By bojum"
+   }
+  ],
+  "latitude": "28.74470000",
+  "longitude": "93.64580000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "adi",
+  "primary_language_label": "Adi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "bogol",
+  "name": "Bogol",
+  "country_code": "CHN",
+  "population": "1400",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "48.46892600",
+  "longitude": "124.48821300",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "dta",
+  "primary_language_label": "Daur",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "boyu-tibetans",
+  "name": "Boyu Tibetans",
+  "country_code": "CHN",
+  "population": "5400",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "33.36236100",
+  "longitude": "104.58044400",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "bod",
+  "primary_language_label": "Tibetan",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "bunan",
+  "name": "Bunan",
+  "country_code": "CHN",
+  "population": "2500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "31.79607000",
+  "longitude": "78.90344000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "bfu",
+  "primary_language_label": "Gahri",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "buryat",
+  "name": "Buryat",
+  "country_code": "CHN",
+  "population": "170000",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://commons.wikimedia.org/wiki/File:Me_and_a_Buryat.jpg",
+    "text": "Telaneo - Wikimedia"
+   }
+  ],
+  "latitude": "48.75926000",
+  "longitude": "117.78630000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "bxu",
+  "primary_language_label": "Buriat, China",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "butuo-nosu",
+  "name": "Butuo Nosu",
+  "country_code": "CHN",
+  "population": "337000",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Anonymous"
+   }
+  ],
+  "latitude": "27.60452900",
+  "longitude": "102.87518600",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "iii",
+  "primary_language_label": "Nuosu",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "cona-monba",
+  "name": "Cona Monba",
+  "country_code": "CHN",
+  "population": "58500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of Joshua Project by Anonymous"
+   }
+  ],
+  "latitude": "27.89404900",
+  "longitude": "92.20691400",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "twm",
+  "primary_language_label": "Monpa, Tawang",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "darang-deng",
+  "name": "Darang Deng",
+  "country_code": "CHN",
+  "population": "12500",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "28.37980000",
+  "longitude": "97.02930000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "mhu",
+  "primary_language_label": "Digaro-Mishmi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "enger-yugur",
+  "name": "Enger Yugur",
+  "country_code": "CHN",
+  "population": "5500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://flickr.com/photos/mke1963/154213183/",
+    "text": "Mark mke1963 - Flickr"
+   }
+  ],
+  "latitude": "37.98815000",
+  "longitude": "101.76214000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "cmn",
+  "primary_language_label": "Chinese, Mandarin",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "ersu",
+  "name": "Ersu",
+  "country_code": "CHN",
+  "population": "48000",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "29.23558500",
+  "longitude": "102.35591600",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "ers",
+  "primary_language_label": "Ersu",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "geman-deng",
+  "name": "Geman Deng",
+  "country_code": "CHN",
+  "population": "16500",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "28.47324000",
+  "longitude": "97.04437000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "mxj",
+  "primary_language_label": "Miju-Mishmi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "heishui",
+  "name": "Heishui",
+  "country_code": "CHN",
+  "population": "48500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": null,
+  "latitude": "32.19164300",
+  "longitude": "103.03860100",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "bod",
+  "primary_language_label": "Tibetan",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "henan-mongols",
+  "name": "Henan Mongols",
+  "country_code": "CHN",
+  "population": "43000",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": null,
+  "latitude": "34.73230000",
+  "longitude": "101.60860000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "adx",
+  "primary_language_label": "Tibetan, Amdo",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "keji",
+  "name": "Keji",
+  "country_code": "CHN",
+  "population": "2600",
+  "religion": "MSN",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.paulnoll.com/China/Minorities/China-Nationalities.html",
+    "text": "Paul Noll"
+   }
+  ],
+  "latitude": "29.65355100",
+  "longitude": "91.12095900",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Sunni",
+  "primary_language": "bod",
+  "primary_language_label": "Tibetan",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "kyrgyz",
+  "name": "Kyrgyz",
+  "country_code": "CHN",
+  "population": "195000",
+  "religion": "MOF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://commons.wikimedia.org/wiki/File:Kyrgyz_women_offering_butter_and_salt.jpg",
+    "text": "Theklan - Wikimedia"
+   }
+  ],
+  "latitude": "38.01774000",
+  "longitude": "76.09630000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Folk",
+  "primary_language": "kir",
+  "primary_language_label": "Kyrgyz",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "luzu",
+  "name": "Luzu",
+  "country_code": "CHN",
+  "population": "1600",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "28.33754000",
+  "longitude": "101.35823900",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "ers",
+  "primary_language_label": "Ersu",
+  "imb_gsec": "0",
+  "imb_gsec_label": "No Evangelicals, Churches or Resources"
+ },
+ {
+  "slug": "manyak",
+  "name": "Manyak",
+  "country_code": "CHN",
+  "population": "3000",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "29.67090000",
+  "longitude": "101.59510000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "wmg",
+  "primary_language_label": "Minyag, Western",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "medog-monba",
+  "name": "Medog Monba",
+  "country_code": "CHN",
+  "population": "11000",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "29.46300000",
+  "longitude": "95.74060000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "tsj",
+  "primary_language_label": "Tshangla",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "miguba",
+  "name": "Miguba",
+  "country_code": "CHN",
+  "population": "100",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "29.29621200",
+  "longitude": "95.31208900",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "adi",
+  "primary_language_label": "Adi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "ming",
+  "name": "Ming",
+  "country_code": "CHN",
+  "population": "15500",
+  "religion": "NAT",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "31.53976000",
+  "longitude": "103.68679500",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Unaffiliated - Atheism",
+  "primary_language": "cmn",
+  "primary_language_label": "Chinese, Mandarin",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "minyak",
+  "name": "Minyak",
+  "country_code": "CHN",
+  "population": "35000",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.pesquisas.org.br/",
+    "text": "COMIBAM / Sepal"
+   }
+  ],
+  "latitude": "29.65400600",
+  "longitude": "101.52975300",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "wmg",
+  "primary_language_label": "Minyag, Western",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "naju",
+  "name": "Naju",
+  "country_code": "CHN",
+  "population": "2500",
+  "religion": "EAN",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "27.67805600",
+  "longitude": "101.46272000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Animism",
+  "primary_language": "nru",
+  "primary_language_label": "Narua",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "namuyi",
+  "name": "Namuyi",
+  "country_code": "CHN",
+  "population": "11500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "28.59085000",
+  "longitude": "101.89760000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "nmy",
+  "primary_language_label": "Namuyi",
+  "imb_gsec": "0",
+  "imb_gsec_label": "No Evangelicals, Churches or Resources"
+ },
+ {
+  "slug": "nghari-tibetans",
+  "name": "Nghari Tibetans",
+  "country_code": "CHN",
+  "population": "82500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Peoples of the Buddhist World, Asia Harvest"
+   }
+  ],
+  "latitude": "30.97696000",
+  "longitude": "81.21100500",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "bod",
+  "primary_language_label": "Tibetan",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "olot",
+  "name": "Olot",
+  "country_code": "CHN",
+  "population": "2400",
+  "religion": "ESM",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "47.87897700",
+  "longitude": "124.33623400",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Shamanism",
+  "primary_language": "xal",
+  "primary_language_label": "Kalmyk-Oirat",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "ongkor",
+  "name": "Ongkor",
+  "country_code": "CHN",
+  "population": "25",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://english.cri.cn/811/2005/08/24/48@13403.htm",
+    "text": "CRIENGLISH"
+   }
+  ],
+  "latitude": "43.98811800",
+  "longitude": "81.23009100",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "cmn",
+  "primary_language_label": "Chinese, Mandarin",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "puroik",
+  "name": "Puroik",
+  "country_code": "CHN",
+  "population": "450",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Anonymous"
+   }
+  ],
+  "latitude": "28.42033000",
+  "longitude": "93.10505600",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "suv",
+  "primary_language_label": "Puroik",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "saman",
+  "name": "Saman",
+  "country_code": "CHN",
+  "population": "2600",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "47.46389900",
+  "longitude": "124.11668900",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "cmn",
+  "primary_language_label": "Chinese, Mandarin",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "saragh-yugur",
+  "name": "Saragh Yugur",
+  "country_code": "CHN",
+  "population": "10500",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "38.97160000",
+  "longitude": "99.50310000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "cmn",
+  "primary_language_label": "Chinese, Mandarin",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "sarikoli-tajiks",
+  "name": "Sarikoli Tajiks",
+  "country_code": "CHN",
+  "population": "20500",
+  "religion": "MIS",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Anonymous"
+   }
+  ],
+  "latitude": "37.90501000",
+  "longitude": "75.14486000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Shia Imami Ismaili",
+  "primary_language": "srh",
+  "primary_language_label": "Sarikoli",
+  "imb_gsec": "0",
+  "imb_gsec_label": "No Evangelicals, Churches or Resources"
+ },
+ {
+  "slug": "shixing",
+  "name": "Shixing",
+  "country_code": "CHN",
+  "population": "4100",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Christopher Timmons"
+   }
+  ],
+  "latitude": "28.28800000",
+  "longitude": "100.65700000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "sxg",
+  "primary_language_label": "Shuhi",
+  "imb_gsec": "0",
+  "imb_gsec_label": "No Evangelicals, Churches or Resources"
+ },
+ {
+  "slug": "suodi-nosu",
+  "name": "Suodi Nosu",
+  "country_code": "CHN",
+  "population": "305000",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "26.86570200",
+  "longitude": "102.37629200",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "iii",
+  "primary_language_label": "Nuosu",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "tongren-bonan",
+  "name": "Tongren Bonan",
+  "country_code": "CHN",
+  "population": "8900",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://flickr.com/photos/ding_zhou/15612978268/",
+    "text": "Joe Tym - Flickr"
+   }
+  ],
+  "latitude": "35.14500000",
+  "longitude": "102.18300000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "peh",
+  "primary_language_label": "Bonan",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "uzbeks",
+  "name": "Uzbeks",
+  "country_code": "CHN",
+  "population": "12500",
+  "religion": "MSN",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://commons.wikimedia.org/wiki/File:Uzbek_people_(4934182297).jpg",
+    "text": "Fulvio Spada - Wikimedia"
+   }
+  ],
+  "latitude": "44.14145000",
+  "longitude": "90.29497000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Sunni",
+  "primary_language": "uzn",
+  "primary_language_label": "Uzbek, Northern",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "wakhi-china",
+  "name": "Wakhi",
+  "country_code": "CHN",
+  "population": "9600",
+  "religion": "MSH",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://flickr.com/photos/100415065@N06/50312622062",
+    "text": "Robertino Radovix - Flickr"
+   }
+  ],
+  "latitude": "37.38000000",
+  "longitude": "75.40200000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Islam - Shia",
+  "primary_language": "wbl",
+  "primary_language_label": "Wakhi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "western-xibe",
+  "name": "Western Xibe",
+  "country_code": "CHN",
+  "population": "35500",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Epel - Shutterstock"
+   }
+  ],
+  "latitude": "43.80236300",
+  "longitude": "80.79151000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "sjo",
+  "primary_language_label": "Xibe",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "wutun",
+  "name": "Wutun",
+  "country_code": "CHN",
+  "population": "3800",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "35.57300000",
+  "longitude": "102.05400000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "wuh",
+  "primary_language_label": "Wutunhua",
+  "imb_gsec": "0",
+  "imb_gsec_label": "No Evangelicals, Churches or Resources"
+ },
+ {
+  "slug": "yidu-lhoba",
+  "name": "Yidu Lhoba",
+  "country_code": "CHN",
+  "population": "12000",
+  "religion": "ESM",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Mow Sunil"
+   }
+  ],
+  "latitude": "28.97230000",
+  "longitude": "96.63810000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Shamanism",
+  "primary_language": "clk",
+  "primary_language_label": "Idu-Mishmi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "yinuo-nosu",
+  "name": "Yinuo Nosu",
+  "country_code": "CHN",
+  "population": "810000",
+  "religion": "ECF",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By Anonymous"
+   }
+  ],
+  "latitude": "28.04378200",
+  "longitude": "102.44427000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion - Chinese Folk Religion",
+  "primary_language": "iii",
+  "primary_language_label": "Nuosu",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ },
+ {
+  "slug": "za",
+  "name": "Za",
+  "country_code": "CHN",
+  "population": "3400",
+  "religion": "BLA",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://www.asiaharvest.org",
+    "text": "Operation China, Asia Harvest"
+   }
+  ],
+  "latitude": "28.47990000",
+  "longitude": "97.07920000",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Buddhism - Tibetan",
+  "primary_language": "adx",
+  "primary_language_label": "Tibetan, Amdo",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ }
+]

@@ -1,0 +1,11 @@
+{
+  "title": "خريطتي الأولى",
+  "engineMissing": "لم يُحمَّل محرك الخريطة.",
+  "mapFailed": "تعذّر تشغيل الخريطة: {detail}",
+  "profileB": {
+    "title": "ملف التعريف B",
+    "servedFrom": "يُقدَّم من {file} في الحزمة {bundle}.",
+    "note": "ملاحظة: {note}",
+    "noNote": "(لم تُمرَّر أي ملاحظة في profile-config)"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "Religion",
+    "ropTree": "Arbre ROP",
+    "languageFamilies": "Familles de langues",
+    "semanticTrees": "Arbres sémantiques",
+    "nameLocales": "Noms par langue",
+    "ropSunburst": "Sunburst ROP",
+    "allPins": "Toutes les épingles",
+    "rosetta": "Rosetta des identifiants",
+    "coverage": "Couverture de traduction",
+    "index": "Index"
+  },
+  "status": {
+    "loading": "Chargement…",
+    "loadingPgData": "Chargement des données des peuples…",
+    "loadingPins": "Chargement des épingles…",
+    "loadingPolygons": "Chargement des frontières…",
+    "addingPolygons": "Ajout des frontières…",
+    "addingPins": "Ajout des épingles…",
+    "loadingCoverage": "Chargement de la couverture par pays…",
+    "addingPinsOnTop": "Ajout des épingles par-dessus…",
+    "loadingRop": "Chargement de la hiérarchie ROP…",
+    "loadingLanguage": "Chargement des données linguistiques…",
+    "loadingPinsRosetta": "Chargement des épingles et de l’échantillon Rosetta…",
+    "error": "Erreur : {message}",
+    "readyTranslations": "Épingles : {pins} · cliquez sur une épingle pour voir ses 17 noms",
+    "readyCoverage": "Prêt · pays : {countries}, colorés selon la moyenne des traductions / 17 (toutes les lignes : {rows})",
+    "readyD3": "Entrées : {entries} · faites défiler pour zoomer · glissez pour déplacer",
+    "readyRop": "Prêt · épingles : {pins} · avec PEID : {peid}",
+    "readyRosetta": "Prêt · épingles : {pins} · échantillons Rosetta : {samples} (★ or)",
+    "readyPins": "Prêt · épingles : {pins} · cliquez sur une épingle",
+    "readyLanguage": "Prêt · épingles : {pins} · couverture des familles {coverage} % · top 25 = {top} %",
+    "readyReligion": "Épingles : {pins} · la plus fréquente : {religion} ({count})",
+    "d3Failed": "La bibliothèque de graphiques n’a pas pu être chargée."
+  },
+  "ui": {
+    "chooseView": "Choisir une vue",
+    "search": "Rechercher par peuple, lieu, langue, religion…",
+    "baseMap": "Fond de carte",
+    "dataSources": "Sources des données",
+    "legend": "Légende",
+    "openLegend": "Ouvrir la légende",
+    "clearSelectionEsc": "Effacer la sélection (Échap)",
+    "closeEsc": "Fermer (Échap)",
+    "close": "Fermer",
+    "retry": "Réessayer",
+    "loadingMap": "Chargement de la carte",
+    "flyToPin": "Aller à l’épingle",
+    "primaryReligion": "Religion principale",
+    "ropHierarchy": "Hiérarchie ROP"
+  },
+  "pill": {
+    "religion": "Répartition des religions · cliquez sur une épingle pour le détail",
+    "ropTree": "Hiérarchie ROP · bloc d’affinité → grappe → peuple → PGIC",
+    "languageFamilies": "Familles ethnolinguistiques (PPLR) · cliquez sur une épingle pour le détail",
+    "sunburst": "Hiérarchie ROP · bloc d’affinité → grappe de peuples · faites défiler pour zoomer",
+    "pins": "Toutes les épingles peuple-pays · cliquez pour les identifiants des systèmes",
+    "coverage": "Couverture de traduction · teinte = moyenne des langues renseignées par pays · cliquez sur une épingle ou un pays",
+    "rosetta": "Rosetta des identifiants · couleur = identifiants présents · ★ = ligne d’exemple",
+    "translations": "Nom du peuple · {n} langues · cliquez sur un point"
+  },
+  "legendTitle": {
+    "avgLocales": "Moyenne des langues / {n}",
+    "idCoverage": "Couverture des identifiants"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, les trois",
+      "imbOnly": "IMB seulement",
+      "jpOnly": "JP seulement",
+      "neither": "aucun des deux"
+    },
+    "samplePg": "★ peuple d’exemple",
+    "missingIds": "Pas encore mis en correspondance dans PPLR : {ids}. Une ligne vide est une lacune des données, pas une erreur."
+  },
+  "popup": {
+    "noName": "(sans nom)",
+    "country": "Pays",
+    "religion": "Religion",
+    "language": "Langue",
+    "family": "Famille",
+    "affinityBloc": "Bloc d’affinité",
+    "cluster": "Grappe",
+    "peopleCluster": "Grappe de peuples",
+    "peopleGroup": "Peuple",
+    "pgCount": "Peuples",
+    "avgLocalesFilled": "Moyenne des langues renseignées",
+    "iso3Country": "Pays ISO-3"
+  },
+  "card": {
+    "nameInLocales": "Nom dans {n} langues"
+  },
+  "title": "Cartes de données PPLR",
+  "index": {
+    "title": "Validation des données PPLR",
+    "help": "Cliquez sur une tuile ou choisissez une vue ci-dessus."
+  }
+}

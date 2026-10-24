@@ -1,0 +1,6 @@
+{
+  "_comment": "Declares the composability tier. 'nested-elements-mfe' (display alias 'composite-element') = Capability-4: this plugin's element NESTS other custom elements from the same bundle (<bp-research-header> Cat-1 + the REAL cap-2 <people-groups-grid>) and wires them via props/events (header SHARED SearchBar + 4 FilterDropdowns → grid filter). This explicit meta is the ONLY way a composite tier is declared (discover.mjs never infers it from source). Filename must be <profile>.meta.json where profile = the root .vue name (big-picture).",
+  "type": "nested-elements-mfe",
+  "composes": ["bp-research-header", "people-groups-grid"],
+  "label": "Big Picture (research header ↔ real people-groups grid via props/events)"
+}

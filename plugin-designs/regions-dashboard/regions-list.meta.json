@@ -1,0 +1,8 @@
+{
+  "type": "single",
+  "label": "Regions — the list page",
+  "config": {
+    "pinHint": false
+  },
+  "note": "pinHint:false: this profile draws NO map at all (it is the clone of DX-life's /regions index), but it now sits in a bundle that owns a map, so generate-tree classifies it isMap and would bake the coach-mark onto a page with no dots. Same shape as cities-internet/connectivity-map.meta.json."
+}

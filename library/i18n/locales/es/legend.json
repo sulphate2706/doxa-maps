@@ -1,0 +1,97 @@
+{
+  "title": {
+    "adoption": "Progreso de adopción",
+    "affinityBlocs": "Bloques de afinidad",
+    "doxaRegions": "Regiones Doxa",
+    "engagement": "Progreso de implicación",
+    "gospelResources": "Recursos del Evangelio",
+    "languageFamilies": "Familias lingüísticas",
+    "prayer": "Progreso de oración",
+    "upg100List": "Mi lista UPG100",
+    "batchSelect": "Selección múltiple"
+  },
+  "header": {
+    "collapsed": "Leyenda",
+    "peopleGroupFallback": "Grupo de personas",
+    "default": "Leyenda"
+  },
+  "prayer": {
+    "needsPrayer": "Necesita oración",
+    "hasPrayer": "Tiene oración",
+    "fullPrayerCoverage": "Cobertura de oración completa"
+  },
+  "progress": {
+    "title": "Progreso",
+    "covered": "{covered} de {total} grupos de personas cubiertos en oración · {pct}%",
+    "short": "{covered} de {total} · {pct}%",
+    "segment": "{label} · {count} · {pct}%"
+  },
+  "engagement": {
+    "needsEngagement": "Necesita implicación",
+    "hasEngagement": "Tiene implicación"
+  },
+  "adoption": {
+    "needsAdoption": "Necesita adopción",
+    "hasAdoption": "Tiene adopción"
+  },
+  "columns": {
+    "upgs": "UUPGs",
+    "population": "Población",
+    "name": "Nombre"
+  },
+  "footer": {
+    "total": "Total"
+  },
+  "sortByUpgs": "Ordenar por UUPG",
+  "sortByPop": "Ordenar por población",
+  "colLabel": {
+    "religion": "Religiones UUPG",
+    "prayer": "Estado de oración",
+    "engagement": "Estado de compromiso",
+    "adoption": "Estado de adopción",
+    "status": "Estado"
+  },
+  "titleBar": {
+    "legend": "Leyenda",
+    "peopleGroups": "Pueblos",
+    "wagfRegions": "Regiones WAGF",
+    "languages": "Idiomas"
+  },
+  "tabInfo": {
+    "upg100Region": "Región — ordena las listas UPG100 por área mundial (África, India, Oriente Medio, Sordos, …). Los totales son los UUPG y la población sumados de todas las listas que contiene.",
+    "upg100Zone": "Listas UPG100 — cada una es una lista de oración de los grupos étnicos no alcanzados de un área, y es lo que el mapa pinta y colorea. Cada lista se imprime como su propio paquete.",
+    "upg100Group": "Grupo étnico — los grupos no alcanzados dentro de una lista, primero los de mayor necesidad de oración. Cada punto del mapa es uno de ellos.",
+    "family": "Familia lingüística — un conjunto de lenguas procedentes de un antepasado común (p. ej. indoeuropea, afroasiática).",
+    "language": "Idioma — un sistema de comunicación que usa un pueblo (p. ej. árabe, bengalí, hindi).",
+    "dialect": "Dialecto/Variedad — una forma regional o social de una lengua (p. ej. árabe sudanés; lengua de señas pakistaní).",
+    "bloc": "Bloque de afinidad — la agrupación más amplia, por parentesco cultural, lingüístico y geográfico (p. ej. pueblos malayos, pueblos del sur de Asia, sordos, mundo árabe).",
+    "cluster": "Clúster — una agrupación más fina dentro de un bloque (p. ej. Borneo-Kalimantan entre los pueblos malayos). Las filas llevan «(clúster)» para distinguirlas de los pueblos.",
+    "group": "Pueblo — una identidad etnolingüística en sí misma, independiente del país. Las filas llevan «(pueblo)». Un mismo pueblo puede vivir en muchos países (los sordos, por ejemplo, en más de cien).",
+    "pgic": "Pueblo en país — una fila por cada pueblo en cada país donde vive (p. ej. «Abai Sungai, Malasia»). Las filas llevan «(pueblo en país)».",
+    "region": "Región WAGF — la macrorregión a la que pertenece un país (p. ej. Asia, África). Cada una tiene su color en el mapa.",
+    "block": "Bloque WAGF — la subdivisión dentro de una región (p. ej. Sudeste Asiático, África Occidental).",
+    "country": "País — los países uno a uno, ordenados por población no alcanzada dentro de su bloque."
+  },
+  "a11y": {
+    "expandRow": "Expandir {label}",
+    "collapseRow": "Contraer {label}",
+    "clearSelection": "Borrar la selección",
+    "goUp": "Subir a {label}"
+  },
+  "export": {
+    "poster": "Cartel",
+    "packet": "UPG100",
+    "packetExplain": "Una lista de oración de unos 50 a 100 pueblos no alcanzados: una persona puede llevar una.",
+    "packetAria": "Detalle del paquete de oración",
+    "packetFull": "Detalle completo",
+    "packetLightweight": "Ligero"
+  },
+  "noDataAtThisLevel": "No hay datos en este nivel",
+  "exportButton": "Exportar",
+  "exportSelection": "Exportar la selección",
+  "loadingRows": "Cargando {label}…",
+  "loadingData": "Cargando datos…",
+  "showingTop": "Mostrando los {n} principales de {m}",
+  "useGeocoderHint": "usa el buscador de arriba para encontrar el resto",
+  "noList": "Ninguna lista cargada."
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · doxa-research-map staging</title>
+  <link rel="icon" href="data:,">
+
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css" rel="stylesheet" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    /* ── Hero: Vite lightning inside a file silhouette + glowing beams ── */
+    .vite-hero {
+      position: relative; display: flex; flex-direction: column; align-items: center;
+      gap: 14px; padding: 32px 16px 20px; overflow: hidden;
+    }
+    .vite-filestack {
+      position: relative;
+      width: 108px; height: 128px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .vite-file {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      animation: file-pulse 3.2s ease-in-out infinite;
+    }
+    .vite-file path.body { fill: rgba(65, 209, 255, 0.06); stroke: rgba(65, 209, 255, 0.55); stroke-width: 2; }
+    .vite-file path.fold { fill: rgba(65, 209, 255, 0.14); stroke: rgba(65, 209, 255, 0.55); stroke-width: 2; }
+    .vite-file text  { fill: rgba(185, 166, 245, 0.6); font: 700 9px/1 ui-monospace, monospace; letter-spacing: .12em; }
+    @keyframes file-pulse {
+      0%, 100% { filter: drop-shadow(0 0 6px rgba(65, 209, 255, 0.25)); }
+      50%      { filter: drop-shadow(0 0 16px rgba(65, 209, 255, 0.55)); }
+    }
+    .vite-hero img {
+      position: relative; z-index: 1;
+      width: 56px; height: 56px;
+      animation: vite-pulse 2.8s ease-in-out infinite;
+    }
+    @keyframes vite-pulse {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(100,200,255,.45)); transform: translateY(0); }
+      50%      { filter: drop-shadow(0 0 20px rgba(100,200,255,.95)) drop-shadow(0 0 5px rgba(185,166,245,.7)); transform: translateY(-2px); }
+    }
+    .vite-hero .caption {
+      font: 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: #94a3b8; letter-spacing: .14em; text-transform: uppercase; text-align: center;
+    }
+    .vite-hero .caption strong { color: #e5e7eb; }
+    .vite-beams { position: relative; width: 100%; max-width: 520px; height: 60px; pointer-events: none; }
+    .vite-beams svg { width: 100%; height: 100%; overflow: visible; }
+    .vite-beams line {
+      stroke: url(#beamGradient); stroke-width: 1.5; stroke-linecap: round;
+      stroke-dasharray: 4 6; opacity: .75;
+      animation: beam-flow 1.6s linear infinite;
+    }
+    .vite-beams line:nth-child(even) { animation-duration: 2s; }
+    .vite-beams line:nth-child(3n)   { animation-duration: 1.3s; }
+    @keyframes beam-flow { from { stroke-dashoffset: 20; } to { stroke-dashoffset: 0; } }
+
+    /* ── Topbar ── */
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+      padding: 10px 16px; background: #111827; border-bottom: 1px solid #1f2937;
+    }
+    .topbar .spacer { flex: 1; }
+    .profile-tab {
+      padding: 8px 16px;
+      background: transparent; border: 1px solid #334155; color: #94a3b8;
+      font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .06em; text-transform: uppercase;
+      cursor: pointer;
+      transition: border-color .15s, color .15s, background .15s;
+    }
+    .profile-tab:hover { border-color: #64748b; color: #e5e7eb; }
+    .profile-tab.active {
+      border-color: #60a5fa; color: #60a5fa; background: rgba(96,165,250,.08);
+    }
+    .overview-btn {
+      padding: 8px 14px;
+      background: transparent; border: 1px solid #334155; color: #94a3b8;
+      font: 600 11px/1 ui-monospace, monospace;
+      letter-spacing: .06em; text-transform: uppercase; cursor: pointer;
+      transition: border-color .15s, color .15s, background .15s;
+    }
+    .overview-btn:hover { border-color: #64748b; color: #e5e7eb; }
+    .overview-btn.active { border-color: #60a5fa; color: #60a5fa; background: rgba(96,165,250,.08); }
+
+    /* ── Showcase ── */
+    #showcase {
+      display: flex; flex-direction: column; gap: 24px;
+      padding: 20px; max-width: 1500px; margin: 0 auto;
+    }
+
+    /* ── Gem frame ── */
+    .gem-frame {
+      --fw: 14px; --gem: #39ff80; --gem-rgb: 57, 255, 128;
+      position: relative; padding: var(--fw);
+      background: #1a2420;
+      border: 2px solid var(--gem);
+      box-shadow: 0 0 20px rgba(var(--gem-rgb), .12), inset 0 0 20px rgba(var(--gem-rgb), .04);
+      transition: box-shadow .3s, transform .4s cubic-bezier(.22, 1, .36, 1);
+      isolation: isolate;
+    }
+    .gem-frame:hover { box-shadow: 0 0 35px rgba(var(--gem-rgb), .2), inset 0 0 30px rgba(var(--gem-rgb), .06); }
+    .gem-frame-content { border: 2px solid var(--gem); overflow: hidden; background: #142118; }
+    .gem-bevel-svg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; overflow: visible; }
+    .gem-bevel-svg line { stroke: var(--gem); stroke-width: 1.5; opacity: .7; }
+    .gem-frame:hover .gem-bevel-svg line { opacity: 1; }
+    .gem-header {
+      display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+      background: rgba(var(--gem-rgb), .04); border-bottom: 2px solid var(--gem);
+    }
+    .gem-header .label {
+      font: 800 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-transform: uppercase; letter-spacing: .08em; color: #fff;
+    }
+    .gem-tag {
+      display: inline-block; padding: 2px 8px;
+      font: 10px/1 ui-monospace, monospace;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--gem); background: rgba(var(--gem-rgb), .08);
+      border: 1px solid var(--gem); border-radius: 999px;
+    }
+    .gem-index { margin-left: auto; font: 10px/1 ui-monospace, monospace; color: #64748b; letter-spacing: .1em; }
+    .gem-slot { position: relative; width: 100%; aspect-ratio: 16 / 9; }
+    /* Mobile: shrink chrome (showcase padding + frame width) so the gem frame
+       still appears but the map area gets more of the viewport. The slot also
+       sizes to viewport height so the map is actually usable on a phone. */
+    @media (max-width: 768px) {
+      #showcase { padding: 8px; gap: 12px; }
+      .gem-frame { --fw: 8px; }
+      .gem-frame-content { border-width: 1px; }
+      .gem-header { padding: 6px 10px; }
+      .gem-header .label { font-size: 11px; }
+      .gem-tag { font-size: 9px; padding: 1px 6px; }
+      .gem-index { font-size: 9px; }
+      .gem-slot {
+        aspect-ratio: auto;
+        height: calc(100vh - 120px);    /* viewport minus showcase padding + gem header */
+        min-height: 480px;
+      }
+    }
+    /* Very small screens (≤420px wide): even tighter chrome. */
+    @media (max-width: 420px) {
+      #showcase { padding: 4px; gap: 8px; }
+      .gem-frame { --fw: 6px; }
+      .gem-slot { height: calc(100vh - 100px); min-height: 420px; }
+    }
+    doxa-research-map, doxa-map { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+    doxa-research-map:fullscreen, doxa-research-map:-webkit-full-screen,
+    doxa-map:fullscreen, doxa-map:-webkit-full-screen { position: fixed; inset: 0; width: 100vw; height: 100vh; }
+
+    /* ── Overview mode ── */
+    body.zoom-out-all #showcase {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;
+    }
+    body.zoom-out-all .gem-slot { aspect-ratio: 1 / 1; }
+    body.zoom-out-all .gem-frame { --fw: 10px; }
+    body.zoom-out-all .gem-header { padding: 5px 8px; }
+    body.zoom-out-all .gem-header .label { font-size: 10px; letter-spacing: .06em; }
+    body.zoom-out-all .gem-tag { font-size: 9px; padding: 1px 6px; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     ⚡ EDIT HERE — one flat array. Add / remove / reorder slots freely.
+     ─────────────────────────────────────────────────────────────────
+     Each entry becomes one gem-framed <doxa-research-map>. The profile-tabs
+     bar at the top auto-groups by the `profile` field — add a new profile
+     just by using a new value.
+
+       profile  application profile name (must match
+                plugin-designs/doxa-research-map/<name>.vue)
+       label    header title shown on the gem-frame
+       gem      amethyst | sapphire | aquamarine | emerald |
+                topaz | citrine | tourmaline. Omit to auto-cycle.
+       config   profile-config JSON passed to <doxa-research-map>. Optional.
+                `profile` + `tk` auto-injected, you don't need them here.
+     ═══════════════════════════════════════════════════════════════════ -->
+<script>
+  // Pulled from .env at dev-server start. Vite replaces %VITE_MAPBOX_TOKEN%
+  // with the value at request time; the .env file is gitignored.
+  window.DOXA_TOKEN = '%VITE_MAPBOX_TOKEN%';
+
+  // Map engine override for slots WITHOUT an explicit config.provider:
+  // ?provider=maplibre flips the default engine for those slots. A slot that
+  // sets config.provider always wins (per-map). Default stays 'mapbox'.
+  window.MAP_PROVIDER = new URLSearchParams(location.search).get('provider') || undefined;
+
+  window.DOXA_SLOTS = [
+    // ── research-map: full 4-tab build (Prayer / Engagement / Adoption / Language Families) ──
+    // Slot 1 renders with the default engine (Mapbox, unless ?provider= flips it).
+    { profile: 'research-map', label: 'Research — Mapbox engine', gem: 'amethyst',
+      config: { dataSource: 'pray-tools', instanceId: 'dev-research-1', provider: 'mapbox' } },
+
+    // Slot 2 is pinned to MapLibre so both engines render side-by-side on one page.
+    { profile: 'research-map', label: 'Research — MapLibre engine', gem: 'emerald',
+      config: { dataSource: 'pray-tools', instanceId: 'dev-research-2', provider: 'maplibre' } },
+
+    // Slot 3 follows the page default (?provider= or Mapbox).
+    { profile: 'research-map', label: 'Research — default engine', gem: 'sapphire',
+      config: { dataSource: 'pray-tools', instanceId: 'dev-research-3' } }
+  ];
+</script>
+
+<!-- ═══ HERO ═══ -->
+<div class="vite-hero">
+  <div class="vite-filestack">
+    <svg class="vite-file" viewBox="0 0 108 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path class="body" d="M8 4 L72 4 L104 36 L104 124 L8 124 Z" />
+      <path class="fold" d="M72 4 L72 36 L104 36 Z" />
+      <text x="54" y="112" text-anchor="middle">.iife.js</text>
+    </svg>
+    <img src="https://vitejs.dev/logo.svg" alt="Vite" />
+  </div>
+  <div class="caption">one <strong>Vite bundle</strong> → many <strong>&lt;doxa-research-map&gt;</strong> instances</div>
+  <div class="vite-beams">
+    <svg viewBox="0 0 520 60" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="beamGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#41d1ff" />
+          <stop offset="55%"  stop-color="#b9a6f5" />
+          <stop offset="100%" stop-color="#ffc91a" />
+        </linearGradient>
+      </defs>
+      <line x1="260" y1="0" x2="20"  y2="60" />
+      <line x1="260" y1="0" x2="80"  y2="60" />
+      <line x1="260" y1="0" x2="140" y2="60" />
+      <line x1="260" y1="0" x2="200" y2="60" />
+      <line x1="260" y1="0" x2="260" y2="60" />
+      <line x1="260" y1="0" x2="320" y2="60" />
+      <line x1="260" y1="0" x2="380" y2="60" />
+      <line x1="260" y1="0" x2="440" y2="60" />
+      <line x1="260" y1="0" x2="500" y2="60" />
+    </svg>
+  </div>
+</div>
+
+<!-- ═══ TOPBAR ═══ -->
+<header class="topbar" id="topbar">
+  <div class="spacer"></div>
+  <button class="overview-btn" id="zoomOutBtn" onclick="toggleZoomOut()"
+          title="Zoom out so every slot is visible at once">Overview</button>
+</header>
+
+<!-- ═══ SHOWCASE ═══ -->
+<div id="showcase"></div>
+
+<script>
+  const GEM_PALETTE = {
+    amethyst:   { name: 'amethyst',   hex: '#9333ea' },
+    sapphire:   { name: 'sapphire',   hex: '#2563eb' },
+    aquamarine: { name: 'aquamarine', hex: '#0891b2' },
+    emerald:    { name: 'emerald',    hex: '#059669' },
+    topaz:      { name: 'topaz',      hex: '#d97706' },
+    citrine:    { name: 'citrine',    hex: '#ca8a04' },
+    tourmaline: { name: 'tourmaline', hex: '#db2777' },
+    onyx:       { name: 'onyx',       hex: '#1f2937' }
+  };
+  const GEM_CYCLE = ['amethyst', 'sapphire', 'aquamarine', 'emerald', 'topaz', 'citrine', 'tourmaline'];
+  function gemForIndex(i) { return GEM_PALETTE[GEM_CYCLE[((i % GEM_CYCLE.length) + GEM_CYCLE.length) % GEM_CYCLE.length]]; }
+  function gemByName(n)   { return GEM_PALETTE[n] || GEM_PALETTE.onyx; }
+  function hexToRgb(hex) {
+    const h = hex.replace('#', '');
+    const f = h.length === 3 ? h.split('').map(c => c + c).join('') : h;
+    return parseInt(f.slice(0, 2), 16) + ', ' + parseInt(f.slice(2, 4), 16) + ', ' + parseInt(f.slice(4, 6), 16);
+  }
+
+  const TK       = window.DOXA_TOKEN || '';
+  // The parent staging index passes a language via ?locale=<code> on this page's
+  // URL (set by its top-level language selector). We forward it to every map as
+  // the `locale` prop (profile-config.locale) — the switch lives in staging, not
+  // on the map. Empty/absent → each map keeps its i18n-detected default.
+  const LOCALE   = new URLSearchParams(location.search).get('locale') || '';
+  const SLOTS    = window.DOXA_SLOTS || [];
+  const topbar   = document.getElementById('topbar');
+  const showcase = document.getElementById('showcase');
+  const STORAGE_KEY = 'doxa-maps:doxa-research-map:profile';
+
+  const PROFILES = [];
+  SLOTS.forEach(s => { if (!PROFILES.includes(s.profile)) PROFILES.push(s.profile); });
+
+  const saved = localStorage.getItem(STORAGE_KEY);
+  let activeProfile = PROFILES.includes(saved) ? saved : PROFILES[0];
+
+  function buildTabs() {
+    Array.from(topbar.querySelectorAll('.profile-tab')).forEach(el => el.remove());
+    const spacer = topbar.querySelector('.spacer');
+    PROFILES.forEach(p => {
+      const btn = document.createElement('button');
+      btn.className = 'profile-tab' + (p === activeProfile ? ' active' : '');
+      btn.textContent = p;
+      btn.onclick = () => selectProfile(p);
+      topbar.insertBefore(btn, spacer);
+    });
+  }
+
+  function renderActive() {
+    showcase.innerHTML = '';
+    const slotsForProfile = SLOTS.filter(s => s.profile === activeProfile);
+    slotsForProfile.forEach((slot, i) => {
+      const gem    = slot.gem ? gemByName(slot.gem) : gemForIndex(i);
+      const gemRgb = hexToRgb(gem.hex);
+      const config = Object.assign({}, slot.config, { profile: slot.profile, tk: TK }, LOCALE ? { locale: LOCALE } : {});
+
+      const el = document.createElement('div');
+      el.className = 'gem-frame';
+      el.id = 'frame-' + (slot.config?.instanceId || `${slot.profile}-${i}`);
+      el.style.setProperty('--gem', gem.hex);
+      el.style.setProperty('--gem-rgb', gemRgb);
+      el.innerHTML = `
+        <svg class="gem-bevel-svg" xmlns="http://www.w3.org/2000/svg">
+          <line/><line/><line/><line/>
+        </svg>
+        <div class="gem-frame-content">
+          <div class="gem-header">
+            <span class="label">${slot.label}</span>
+            <span class="gem-tag">${gem.name}</span>
+            <span class="gem-index">#${i + 1}</span>
+          </div>
+          <div class="gem-slot">
+            <doxa-research-map profile-config='${JSON.stringify(config)}'></doxa-research-map>
+          </div>
+        </div>`;
+      showcase.appendChild(el);
+    });
+    requestAnimationFrame(updateBevels);
+  }
+
+  function updateBevels() {
+    document.querySelectorAll('.gem-frame').forEach(frame => {
+      const svg = frame.querySelector('.gem-bevel-svg');
+      if (!svg) return;
+      const w = frame.offsetWidth, h = frame.offsetHeight;
+      if (!w || !h) return;
+      const fw = parseInt(getComputedStyle(frame).paddingTop) || 14;
+      svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      svg.setAttribute('width', w);
+      svg.setAttribute('height', h);
+      const ls = svg.querySelectorAll('line');
+      if (ls.length < 4) return;
+      ls[0].setAttribute('x1', 0); ls[0].setAttribute('y1', 0); ls[0].setAttribute('x2', fw); ls[0].setAttribute('y2', fw);
+      ls[1].setAttribute('x1', w); ls[1].setAttribute('y1', 0); ls[1].setAttribute('x2', w - fw); ls[1].setAttribute('y2', fw);
+      ls[2].setAttribute('x1', 0); ls[2].setAttribute('y1', h); ls[2].setAttribute('x2', fw); ls[2].setAttribute('y2', h - fw);
+      ls[3].setAttribute('x1', w); ls[3].setAttribute('y1', h); ls[3].setAttribute('x2', w - fw); ls[3].setAttribute('y2', h - fw);
+    });
+  }
+  new ResizeObserver(updateBevels).observe(showcase);
+  window.addEventListener('resize', updateBevels);
+
+  function selectProfile(p) {
+    if (p === activeProfile) return;
+    activeProfile = p;
+    localStorage.setItem(STORAGE_KEY, p);
+    buildTabs();
+    renderActive();
+  }
+  function toggleZoomOut() {
+    const on = document.body.classList.toggle('zoom-out-all');
+    document.getElementById('zoomOutBtn').classList.toggle('active', on);
+    requestAnimationFrame(updateBevels);
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 350);
+  }
+
+  buildTabs();
+  renderActive();
+</script>
+
+<!-- Optional: override the API base URL at runtime (defaults to relative if unset) -->
+<script>window.MAP_APP_API_URL = 'https://pray.doxa.life';</script>
+
+<!-- Vite multi-page entry. In dev, served transformed; in build, Vite emits
+     ../../app/doxa-research-map.iife.js and rewrites this script tag. -->
+<script type="module" src="./index.js"></script>
+
+</body>
+</html>

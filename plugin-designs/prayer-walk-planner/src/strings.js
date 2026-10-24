@@ -1,0 +1,231 @@
+/**
+ * strings.js — the Prayer Walk Planner's own words, in the 11 shipped locales.
+ *
+ * PRIVATE TO THIS PLUGIN (same rule as the Research Gallery's src/strings.js): the planner's
+ * toolbar, list, status lines and printed sheet belong to it alone, so they live here rather than
+ * in library/i18n, whose engine inlines every namespace into every bundle.
+ *
+ * `en` is the source and the fallback: a key missing in a locale renders in English, never as a
+ * key name. Placeholders: {n} {total} {title} {c} {date}.
+ */
+export const STRINGS = {
+  en: {
+    draw: 'Draw polygon', drawing: 'Drawing… (click map)', finish: 'Finish polygon ({n} pts)',
+    deleteSelected: 'Delete selected', deleteSelectedAria: 'Delete selected polygons',
+    more: 'More', zones: 'Zones ({n})', closeZones: 'Close the zone list', selectAll: 'Select all', clearSelection: 'Clear selection', countSelected: '{n} / {total} selected',
+    printSelected: 'Print selected', printAria: 'Print selected prayer-walking zones',
+    emptyList: 'No zones yet — draw a polygon on the map to start a prayer-walking plan.',
+    delete: 'Delete', deleteAria: 'Delete {title}', zone: 'Zone {n}',
+    clickToPlace: 'Click to place points. Double-click (or Finish) to close the polygon.',
+    need3: 'Need at least 3 points to make a polygon.', added: 'Polygon added.',
+    selectOne: 'Select at least one polygon to print.', printUnavailable: 'Print frame unavailable in this host.',
+    preparing: 'Preparing the print map…',
+    shareScope: 'This link shares the planner. Your drawn zones stay on this device.',
+    mapFailed: 'Map failed to load (no WebGL?) — drawing needs the map, but your saved zones and Print still work.',
+    kicker: 'Prayer walking map · centre {c}',
+    charge: 'Walk the streets of this zone and pray for the people who live, work and worship along them.',
+    corners: 'Zone corners', mapAlt: 'Walking map of {title}',
+    footer: 'Prayer Walk Planner · generated {date} · Map © OpenFreeMap · Data © OpenStreetMap contributors',
+    docTitleOne: 'Prayer Walking Plan — 1 zone', docTitleMany: 'Prayer Walking Plan — {n} zones'
+  },
+  es: {
+    draw: 'Dibujar polígono', drawing: 'Dibujando… (haz clic en el mapa)', finish: 'Terminar polígono ({n} puntos)',
+    deleteSelected: 'Eliminar selección', deleteSelectedAria: 'Eliminar los polígonos seleccionados',
+    more: 'Más', zones: 'Zonas ({n})', closeZones: 'Cerrar la lista de zonas', selectAll: 'Seleccionar todo', clearSelection: 'Quitar selección', countSelected: '{n} / {total} seleccionadas',
+    printSelected: 'Imprimir selección', printAria: 'Imprimir las zonas de caminata de oración seleccionadas',
+    emptyList: 'Aún no hay zonas: dibuja un polígono en el mapa para empezar un plan de caminata de oración.',
+    delete: 'Eliminar', deleteAria: 'Eliminar {title}', zone: 'Zona {n}',
+    clickToPlace: 'Haz clic para colocar puntos. Doble clic (o Terminar) para cerrar el polígono.',
+    need3: 'Se necesitan al menos 3 puntos para formar un polígono.', added: 'Polígono añadido.',
+    selectOne: 'Selecciona al menos un polígono para imprimir.', printUnavailable: 'La impresión no está disponible en esta página.',
+    preparing: 'Preparando el mapa para imprimir…',
+    shareScope: 'Este enlace comparte el planificador. Tus zonas dibujadas se quedan en este dispositivo.',
+    mapFailed: 'No se pudo cargar el mapa (¿sin WebGL?). Para dibujar hace falta el mapa, pero tus zonas guardadas y la impresión siguen funcionando.',
+    kicker: 'Mapa de caminata de oración · centro {c}',
+    charge: 'Recorre las calles de esta zona y ora por las personas que viven, trabajan y adoran en ellas.',
+    corners: 'Esquinas de la zona', mapAlt: 'Mapa para caminar de {title}',
+    footer: 'Planificador de caminatas de oración · generado el {date} · Mapa © OpenFreeMap · Datos © colaboradores de OpenStreetMap',
+    docTitleOne: 'Plan de caminata de oración — 1 zona', docTitleMany: 'Plan de caminata de oración — {n} zonas'
+  },
+  fr: {
+    draw: 'Dessiner un polygone', drawing: 'Dessin en cours… (cliquez sur la carte)', finish: 'Terminer le polygone ({n} points)',
+    deleteSelected: 'Supprimer la sélection', deleteSelectedAria: 'Supprimer les polygones sélectionnés',
+    more: 'Plus', zones: 'Zones ({n})', closeZones: 'Fermer la liste des zones', selectAll: 'Tout sélectionner', clearSelection: 'Effacer la sélection', countSelected: '{n} / {total} sélectionnées',
+    printSelected: 'Imprimer la sélection', printAria: 'Imprimer les zones de marche de prière sélectionnées',
+    emptyList: 'Aucune zone pour l’instant — dessinez un polygone sur la carte pour commencer un plan de marche de prière.',
+    delete: 'Supprimer', deleteAria: 'Supprimer {title}', zone: 'Zone {n}',
+    clickToPlace: 'Cliquez pour placer des points. Double-cliquez (ou Terminer) pour fermer le polygone.',
+    need3: 'Il faut au moins 3 points pour former un polygone.', added: 'Polygone ajouté.',
+    selectOne: 'Sélectionnez au moins un polygone à imprimer.', printUnavailable: 'L’impression n’est pas disponible sur cette page.',
+    preparing: 'Préparation de la carte à imprimer…',
+    shareScope: 'Ce lien partage le planificateur. Vos zones dessinées restent sur cet appareil.',
+    mapFailed: 'La carte n’a pas pu se charger (pas de WebGL ?). Le dessin nécessite la carte, mais vos zones enregistrées et l’impression fonctionnent toujours.',
+    kicker: 'Carte de marche de prière · centre {c}',
+    charge: 'Parcourez les rues de cette zone et priez pour les personnes qui y vivent, y travaillent et y adorent.',
+    corners: 'Coins de la zone', mapAlt: 'Carte de marche de {title}',
+    footer: 'Planificateur de marches de prière · généré le {date} · Carte © OpenFreeMap · Données © contributeurs OpenStreetMap',
+    docTitleOne: 'Plan de marche de prière — 1 zone', docTitleMany: 'Plan de marche de prière — {n} zones'
+  },
+  de: {
+    draw: 'Polygon zeichnen', drawing: 'Zeichnen… (auf die Karte klicken)', finish: 'Polygon abschließen ({n} Punkte)',
+    deleteSelected: 'Auswahl löschen', deleteSelectedAria: 'Ausgewählte Polygone löschen',
+    more: 'Mehr', zones: 'Zonen ({n})', closeZones: 'Zonenliste schließen', selectAll: 'Alle auswählen', clearSelection: 'Auswahl aufheben', countSelected: '{n} / {total} ausgewählt',
+    printSelected: 'Auswahl drucken', printAria: 'Ausgewählte Gebetsspaziergang-Zonen drucken',
+    emptyList: 'Noch keine Zonen — zeichnen Sie ein Polygon auf der Karte, um einen Gebetsspaziergang zu planen.',
+    delete: 'Löschen', deleteAria: '{title} löschen', zone: 'Zone {n}',
+    clickToPlace: 'Klicken, um Punkte zu setzen. Doppelklick (oder Abschließen) schließt das Polygon.',
+    need3: 'Für ein Polygon sind mindestens 3 Punkte nötig.', added: 'Polygon hinzugefügt.',
+    selectOne: 'Wählen Sie mindestens ein Polygon zum Drucken aus.', printUnavailable: 'Drucken ist auf dieser Seite nicht verfügbar.',
+    preparing: 'Druckkarte wird vorbereitet…',
+    shareScope: 'Dieser Link teilt den Planer. Ihre gezeichneten Zonen bleiben auf diesem Gerät.',
+    mapFailed: 'Die Karte konnte nicht geladen werden (kein WebGL?). Zum Zeichnen wird die Karte benötigt, aber gespeicherte Zonen und Drucken funktionieren weiterhin.',
+    kicker: 'Karte für den Gebetsspaziergang · Mitte {c}',
+    charge: 'Gehen Sie durch die Straßen dieser Zone und beten Sie für die Menschen, die hier leben, arbeiten und Gott anbeten.',
+    corners: 'Eckpunkte der Zone', mapAlt: 'Spaziergangskarte von {title}',
+    footer: 'Gebetsspaziergang-Planer · erstellt am {date} · Karte © OpenFreeMap · Daten © OpenStreetMap-Mitwirkende',
+    docTitleOne: 'Gebetsspaziergang-Plan — 1 Zone', docTitleMany: 'Gebetsspaziergang-Plan — {n} Zonen'
+  },
+  pt: {
+    draw: 'Desenhar polígono', drawing: 'Desenhando… (clique no mapa)', finish: 'Concluir polígono ({n} pontos)',
+    deleteSelected: 'Excluir seleção', deleteSelectedAria: 'Excluir os polígonos selecionados',
+    more: 'Mais', zones: 'Zonas ({n})', closeZones: 'Fechar a lista de zonas', selectAll: 'Selecionar tudo', clearSelection: 'Limpar seleção', countSelected: '{n} / {total} selecionadas',
+    printSelected: 'Imprimir seleção', printAria: 'Imprimir as zonas de caminhada de oração selecionadas',
+    emptyList: 'Ainda não há zonas — desenhe um polígono no mapa para começar um plano de caminhada de oração.',
+    delete: 'Excluir', deleteAria: 'Excluir {title}', zone: 'Zona {n}',
+    clickToPlace: 'Clique para marcar pontos. Clique duas vezes (ou Concluir) para fechar o polígono.',
+    need3: 'São necessários pelo menos 3 pontos para formar um polígono.', added: 'Polígono adicionado.',
+    selectOne: 'Selecione pelo menos um polígono para imprimir.', printUnavailable: 'A impressão não está disponível nesta página.',
+    preparing: 'Preparando o mapa para impressão…',
+    shareScope: 'Este link compartilha o planejador. Suas zonas desenhadas ficam neste dispositivo.',
+    mapFailed: 'O mapa não carregou (sem WebGL?). Desenhar exige o mapa, mas suas zonas salvas e a impressão continuam funcionando.',
+    kicker: 'Mapa de caminhada de oração · centro {c}',
+    charge: 'Caminhe pelas ruas desta zona e ore pelas pessoas que vivem, trabalham e adoram nelas.',
+    corners: 'Cantos da zona', mapAlt: 'Mapa de caminhada de {title}',
+    footer: 'Planejador de caminhadas de oração · gerado em {date} · Mapa © OpenFreeMap · Dados © colaboradores do OpenStreetMap',
+    docTitleOne: 'Plano de caminhada de oração — 1 zona', docTitleMany: 'Plano de caminhada de oração — {n} zonas'
+  },
+  it: {
+    draw: 'Disegna poligono', drawing: 'Disegno in corso… (clicca sulla mappa)', finish: 'Completa poligono ({n} punti)',
+    deleteSelected: 'Elimina selezionati', deleteSelectedAria: 'Elimina i poligoni selezionati',
+    more: 'Altro', zones: 'Zone ({n})', closeZones: 'Chiudi l’elenco delle zone', selectAll: 'Seleziona tutto', clearSelection: 'Deseleziona', countSelected: '{n} / {total} selezionate',
+    printSelected: 'Stampa selezionate', printAria: 'Stampa le zone di passeggiata di preghiera selezionate',
+    emptyList: 'Ancora nessuna zona — disegna un poligono sulla mappa per iniziare un piano di passeggiata di preghiera.',
+    delete: 'Elimina', deleteAria: 'Elimina {title}', zone: 'Zona {n}',
+    clickToPlace: 'Clicca per posizionare i punti. Doppio clic (o Completa) per chiudere il poligono.',
+    need3: 'Servono almeno 3 punti per formare un poligono.', added: 'Poligono aggiunto.',
+    selectOne: 'Seleziona almeno un poligono da stampare.', printUnavailable: 'La stampa non è disponibile in questa pagina.',
+    preparing: 'Preparazione della mappa di stampa…',
+    shareScope: 'Questo link condivide il pianificatore. Le zone che hai disegnato restano su questo dispositivo.',
+    mapFailed: 'Impossibile caricare la mappa (niente WebGL?). Per disegnare serve la mappa, ma le zone salvate e la stampa funzionano ancora.',
+    kicker: 'Mappa della passeggiata di preghiera · centro {c}',
+    charge: 'Percorri le strade di questa zona e prega per le persone che vi abitano, vi lavorano e vi adorano.',
+    corners: 'Vertici della zona', mapAlt: 'Mappa della passeggiata di {title}',
+    footer: 'Pianificatore di passeggiate di preghiera · generato il {date} · Mappa © OpenFreeMap · Dati © contributori OpenStreetMap',
+    docTitleOne: 'Piano di passeggiata di preghiera — 1 zona', docTitleMany: 'Piano di passeggiata di preghiera — {n} zone'
+  },
+  ro: {
+    draw: 'Desenează poligon', drawing: 'Se desenează… (dă clic pe hartă)', finish: 'Finalizează poligonul ({n} puncte)',
+    deleteSelected: 'Șterge selecția', deleteSelectedAria: 'Șterge poligoanele selectate',
+    more: 'Mai mult', zones: 'Zone ({n})', closeZones: 'Închideți lista zonelor', selectAll: 'Selectează tot', clearSelection: 'Anulează selecția', countSelected: '{n} / {total} selectate',
+    printSelected: 'Tipărește selecția', printAria: 'Tipărește zonele de plimbare de rugăciune selectate',
+    emptyList: 'Încă nu există zone — desenează un poligon pe hartă pentru a începe un plan de plimbare de rugăciune.',
+    delete: 'Șterge', deleteAria: 'Șterge {title}', zone: 'Zona {n}',
+    clickToPlace: 'Dă clic pentru a plasa puncte. Dublu clic (sau Finalizează) pentru a închide poligonul.',
+    need3: 'Sunt necesare cel puțin 3 puncte pentru un poligon.', added: 'Poligon adăugat.',
+    selectOne: 'Selectează cel puțin un poligon de tipărit.', printUnavailable: 'Tipărirea nu este disponibilă pe această pagină.',
+    preparing: 'Se pregătește harta de tipărit…',
+    shareScope: 'Acest link partajează planificatorul. Zonele desenate rămân pe acest dispozitiv.',
+    mapFailed: 'Harta nu s-a încărcat (fără WebGL?). Desenarea are nevoie de hartă, dar zonele salvate și tipărirea funcționează în continuare.',
+    kicker: 'Hartă pentru plimbarea de rugăciune · centru {c}',
+    charge: 'Plimbă-te pe străzile acestei zone și roagă-te pentru oamenii care locuiesc, lucrează și se închină aici.',
+    corners: 'Colțurile zonei', mapAlt: 'Harta de plimbare pentru {title}',
+    footer: 'Planificator de plimbări de rugăciune · generat pe {date} · Hartă © OpenFreeMap · Date © contribuitorii OpenStreetMap',
+    docTitleOne: 'Plan de plimbare de rugăciune — 1 zonă', docTitleMany: 'Plan de plimbare de rugăciune — {n} zone'
+  },
+  ru: {
+    draw: 'Нарисовать область', drawing: 'Рисование… (щёлкайте по карте)', finish: 'Завершить область (точек: {n})',
+    deleteSelected: 'Удалить выбранные', deleteSelectedAria: 'Удалить выбранные области',
+    more: 'Ещё', zones: 'Зоны ({n})', closeZones: 'Закрыть список зон', selectAll: 'Выбрать все', clearSelection: 'Снять выбор', countSelected: 'Выбрано: {n} из {total}',
+    printSelected: 'Печать выбранных', printAria: 'Печать выбранных зон молитвенной прогулки',
+    emptyList: 'Зон пока нет — нарисуйте область на карте, чтобы начать план молитвенной прогулки.',
+    delete: 'Удалить', deleteAria: 'Удалить: {title}', zone: 'Зона {n}',
+    clickToPlace: 'Щёлкайте, чтобы ставить точки. Двойной щелчок (или «Завершить») замыкает область.',
+    need3: 'Для области нужно не менее 3 точек.', added: 'Область добавлена.',
+    selectOne: 'Выберите хотя бы одну область для печати.', printUnavailable: 'Печать недоступна на этой странице.',
+    preparing: 'Подготовка карты для печати…',
+    shareScope: 'Эта ссылка открывает планировщик. Нарисованные зоны остаются на этом устройстве.',
+    mapFailed: 'Не удалось загрузить карту (нет WebGL?). Для рисования нужна карта, но сохранённые зоны и печать по-прежнему работают.',
+    kicker: 'Карта молитвенной прогулки · центр {c}',
+    charge: 'Пройдите по улицам этой зоны и помолитесь о людях, которые здесь живут, работают и поклоняются.',
+    corners: 'Углы зоны', mapAlt: 'Карта прогулки: {title}',
+    footer: 'Планировщик молитвенных прогулок · создано {date} · Карта © OpenFreeMap · Данные © участники OpenStreetMap',
+    docTitleOne: 'План молитвенной прогулки — 1 зона', docTitleMany: 'План молитвенной прогулки — зон: {n}'
+  },
+  ar: {
+    draw: 'ارسم مضلّعًا', drawing: 'جارٍ الرسم… (انقر على الخريطة)', finish: 'إنهاء المضلّع ({n} نقاط)',
+    deleteSelected: 'حذف المحدد', deleteSelectedAria: 'حذف المضلّعات المحددة',
+    more: 'المزيد', zones: 'المناطق ({n})', closeZones: 'إغلاق قائمة المناطق', selectAll: 'تحديد الكل', clearSelection: 'إلغاء التحديد', countSelected: '{n} / {total} محدد',
+    printSelected: 'طباعة المحدد', printAria: 'طباعة مناطق جولات الصلاة المحددة',
+    emptyList: 'لا توجد مناطق بعد — ارسم مضلّعًا على الخريطة لتبدأ خطة جولة صلاة.',
+    delete: 'حذف', deleteAria: 'حذف {title}', zone: 'المنطقة {n}',
+    clickToPlace: 'انقر لوضع النقاط. انقر نقرًا مزدوجًا (أو «إنهاء») لإغلاق المضلّع.',
+    need3: 'يلزم 3 نقاط على الأقل لتكوين مضلّع.', added: 'أُضيف المضلّع.',
+    selectOne: 'حدّد مضلّعًا واحدًا على الأقل للطباعة.', printUnavailable: 'الطباعة غير متاحة في هذه الصفحة.',
+    preparing: 'جارٍ تجهيز خريطة الطباعة…',
+    shareScope: 'يشارك هذا الرابط المخطِّط. تبقى المناطق التي رسمتها على هذا الجهاز.',
+    mapFailed: 'تعذّر تحميل الخريطة (لا يوجد WebGL؟). الرسم يحتاج إلى الخريطة، لكن مناطقك المحفوظة والطباعة ما زالت تعمل.',
+    kicker: 'خريطة جولة الصلاة · المركز {c}',
+    charge: 'امشِ في شوارع هذه المنطقة وصلِّ من أجل الناس الذين يسكنون ويعملون ويعبدون فيها.',
+    corners: 'زوايا المنطقة', mapAlt: 'خريطة جولة {title}',
+    footer: 'مخطِّط جولات الصلاة · أُنشئت في {date} · الخريطة © OpenFreeMap · البيانات © مساهمو OpenStreetMap',
+    docTitleOne: 'خطة جولة الصلاة — منطقة واحدة', docTitleMany: 'خطة جولة الصلاة — عدد المناطق: {n}'
+  },
+  hi: {
+    draw: 'बहुभुज बनाएँ', drawing: 'बनाया जा रहा है… (मानचित्र पर क्लिक करें)', finish: 'बहुभुज पूरा करें ({n} बिंदु)',
+    deleteSelected: 'चयनित हटाएँ', deleteSelectedAria: 'चयनित बहुभुज हटाएँ',
+    more: 'और', zones: 'क्षेत्र ({n})', closeZones: 'क्षेत्रों की सूची बंद करें', selectAll: 'सभी चुनें', clearSelection: 'चयन हटाएँ', countSelected: '{n} / {total} चयनित',
+    printSelected: 'चयनित प्रिंट करें', printAria: 'चयनित प्रार्थना पदयात्रा क्षेत्र प्रिंट करें',
+    emptyList: 'अभी कोई क्षेत्र नहीं — प्रार्थना पदयात्रा की योजना शुरू करने के लिए मानचित्र पर बहुभुज बनाएँ।',
+    delete: 'हटाएँ', deleteAria: '{title} हटाएँ', zone: 'क्षेत्र {n}',
+    clickToPlace: 'बिंदु लगाने के लिए क्लिक करें। बहुभुज बंद करने के लिए डबल-क्लिक करें (या पूरा करें)।',
+    need3: 'बहुभुज बनाने के लिए कम से कम 3 बिंदु चाहिए।', added: 'बहुभुज जोड़ा गया।',
+    selectOne: 'प्रिंट करने के लिए कम से कम एक बहुभुज चुनें।', printUnavailable: 'इस पेज पर प्रिंट उपलब्ध नहीं है।',
+    preparing: 'प्रिंट मानचित्र तैयार हो रहा है…',
+    shareScope: 'यह लिंक योजनाकार साझा करता है। आपके बनाए क्षेत्र इसी डिवाइस पर रहते हैं।',
+    mapFailed: 'मानचित्र लोड नहीं हुआ (WebGL नहीं?)। बनाने के लिए मानचित्र चाहिए, पर आपके सहेजे क्षेत्र और प्रिंट अब भी काम करते हैं।',
+    kicker: 'प्रार्थना पदयात्रा मानचित्र · केंद्र {c}',
+    charge: 'इस क्षेत्र की गलियों में चलें और यहाँ रहने, काम करने और आराधना करने वाले लोगों के लिए प्रार्थना करें।',
+    corners: 'क्षेत्र के कोने', mapAlt: '{title} का पदयात्रा मानचित्र',
+    footer: 'प्रार्थना पदयात्रा योजनाकार · {date} को बनाया गया · मानचित्र © OpenFreeMap · डेटा © OpenStreetMap योगदानकर्ता',
+    docTitleOne: 'प्रार्थना पदयात्रा योजना — 1 क्षेत्र', docTitleMany: 'प्रार्थना पदयात्रा योजना — {n} क्षेत्र'
+  },
+  zh: {
+    draw: '绘制多边形', drawing: '正在绘制…（点击地图）', finish: '完成多边形（{n} 个点）',
+    deleteSelected: '删除所选', deleteSelectedAria: '删除所选多边形',
+    more: '更多', zones: '区域（{n}）', closeZones: '关闭区域列表', selectAll: '全选', clearSelection: '清除选择', countSelected: '已选 {n} / {total}',
+    printSelected: '打印所选', printAria: '打印所选的祷告行走区域',
+    emptyList: '还没有区域——在地图上绘制一个多边形，开始制定祷告行走计划。',
+    delete: '删除', deleteAria: '删除{title}', zone: '区域 {n}',
+    clickToPlace: '点击放置顶点。双击（或点“完成”）闭合多边形。',
+    need3: '多边形至少需要 3 个点。', added: '已添加多边形。',
+    selectOne: '请至少选择一个要打印的多边形。', printUnavailable: '此页面无法打印。',
+    preparing: '正在准备打印地图…',
+    shareScope: '此链接分享的是规划工具。您绘制的区域保留在本设备上。',
+    mapFailed: '地图加载失败（没有 WebGL？）。绘制需要地图，但已保存的区域和打印仍可使用。',
+    kicker: '祷告行走地图 · 中心 {c}',
+    charge: '走遍这个区域的街道，为在这里生活、工作和敬拜的人祷告。',
+    corners: '区域顶点', mapAlt: '{title}的行走地图',
+    footer: '祷告行走规划 · 生成于 {date} · 地图 © OpenFreeMap · 数据 © OpenStreetMap 贡献者',
+    docTitleOne: '祷告行走计划 — 1 个区域', docTitleMany: '祷告行走计划 — {n} 个区域'
+  }
+}
+
+export const LOCALES = Object.keys(STRINGS)
+
+/** Translate `key` into `locale`, falling back to English, then to the key itself. */
+export function translate(locale, key, params) {
+  const table = STRINGS[locale] || STRINGS.en
+  let s = table[key] ?? STRINGS.en[key] ?? key
+  if (params) for (const k in params) s = s.split('{' + k + '}').join(String(params[k]))
+  return s
+}

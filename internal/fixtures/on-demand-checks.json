@@ -1,0 +1,17 @@
+{
+ "about": "check/verify/smoke scripts that must run BY HAND, each with the reason no chain runs it. Being listed here is a decision someone wrote down; check:no-orphan-gates fails on an entry with no reason or no script.",
+ "checks": {
+  "check:settled": "asserts the tree is QUIET (no builder running, no recent churn), so it fails inside any build by design: it passed twice standalone, was chained on that evidence, and failed the very next build (2026-09-24)",
+  "check:catalog-currency": "reads the PUBLISHED tree and needs DOXA_PUBLISHED_BASE; without it it reports NOT MEASURED (75), never a pass",
+  "check:published": "fetches the live published host (needs DOXA_PUBLISHED_BASE): a property of the deployment, not of this tree",
+  "check:composite": "rebuilds every bundle with vite to compare its bytes, minutes long by design; on every landing the precondition's fresh step rebuilds the composites that landing reaches",
+  "check:hardcoded-english": "report-only while its findings are triaged (97 user-visible English strings on 2026-09-29); chaining it now would hold every gate red. Its :self-test IS chained, so the matcher stays proven",
+  "check:shot-fonts": "checks that the MACHINE taking README screenshots can render emoji (fc-list): a property of that box, not of the product, so it runs before a screenshot session, not in the gates",
+  "check:coverage-consistent": "the full run includes clause L, the age of the oldest link verification (45 days), which depends on the CALENDAR: chained, it would turn gates red on a date (first 2026-11-08) with no code change. Run it with the link re-verification; every other clause runs in gates:pre as check:coverage-consistent:chained",
+  "check:snippets-draw": "AWAITING ITS FIRST BROWSER RUN: the browser suite lists a gate only after it has run. Moves into verify-browser-all's GATES, and out of this list, once that run is recorded.",
+  "check:grid-merge-defaults": "WAITS FOR ITS CODE: it asserts the defaults of three grid props (filtersToggle, backdrop, backdropFloor) that are not on development, because the grid merge (b1e839a33) has not landed. Chain it in gates:pre in the same landing as that merge.",
+  "check:snippets-draw:mapbox": "AWAITING ITS FIRST BROWSER RUN: the browser suite lists a gate only after it has run. Moves into verify-browser-all's GATES, and out of this list, once that run is recorded. Needs MAP_TOKEN.",
+  "check:side-lane-photo-pixels": "a BROWSER gate (browser seat only; elsewhere NOT MEASURED, 75). Its first slot run must come before it joins the browser suite (verify-browser-all lists only gates already run there); until then its source twin, check:side-lanes' photo arms, runs in gates:pre",
+  "check:side-lane-photo-pixels:self-test": "the poison run of check:side-lane-photo-pixels (a raster without stripExternalImages must draw the glyph); same browser-seat reason"
+ }
+}

@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "Vea todo el campo, redúzcalo a los pueblos que realmente puede alcanzar y llévese la lista como hoja de cálculo.",
+      "p1": "Toque una región y desplácese por la cuadrícula para ver las fotos de los grupos étnicos, casi como visitar el país y ver los rostros de una cultura.",
+      "p2": "Filtre por pueblo, lugar, idioma, religión u oración; el mapa, la tabla y los totales se mueven juntos, así que ve el mismo corte de tres maneras.",
+      "p3": "Exporte las filas filtradas como hoja de cálculo CSV: una lista de trabajo para ordenar, compartir y planificar sin conexión.",
+      "p4": "Úselo para fijar metas a corto plazo: los grupos por los que orar y a los que llegar hoy, y los que preparar para mañana.",
+      "p5": "Está hecho para adaptarse a iniciativas «de los medios a los movimientos»: empiece por los datos y actúe sobre los grupos que muestran."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Empiece donde la necesidad es mayor. Use las capas de oración y de compromiso para encontrar las zonas prioritarias, y luego movilice oración por los grupos étnicos que hay en ellas.",
+      "p1": "Vea quién sigue esperando. En la pestaña «Oración», cada punto muestra si ese grupo étnico tiene a alguien que ora, si aún necesita oración o si está plenamente cubierto en oración.",
+      "p2": "Encuentre los vacíos. Cambie a «Compromiso» para ver dónde ha comenzado el trabajo y dónde aún nadie está comprometido. Esos vacíos son las zonas prioritarias para movilizar.",
+      "p3": "Investigue una parte del mundo a la vez. Reduzca por región, idioma o religión, o busque en la lista por nombre. La lista sigue al mapa, así que puede leer los nombres detrás de los puntos.",
+      "p4": "Conozca a un grupo étnico. Toque un punto para ver su país, población, idioma y religión, y luego use «Ora por ellos» para empezar a orar por ese pueblo por su nombre.",
+      "p5": "Manténgalo simple. Este mapa sigue el progreso a un nivel sencillo, de un vistazo. Si necesita los datos completos, vaya a «Panorama general»; para recursos de oración imprimibles, vaya a «Regiones» o a «Lista UPG100»."
+    },
+    "regions-dashboard": {
+      "bottom": "Unos 170 países tienen su propio póster, paquete y baraja de tarjetas. Movilice un grupo para orar por cada país, y todos los países quedan cubiertos en oración.",
+      "p1": "Haga una lista de los discípulos, iglesias y líderes que ya conoce, y del país al que cada uno está llamado. Dé a cada uno los recursos de oración de ese país.",
+      "p2": "Empiece cerca de casa, con discípulos e iglesias locales. Luego vaya a los líderes y obreros autóctonos sobre el terreno en esos países, y envíeles el póster, el paquete y las tarjetas del país para imprimirlos allí donde están.",
+      "p3": "El paquete de oración es el más estratégico de los tres: todo lo necesario para orar por un país, en un solo paquete imprimible.",
+      "p4": "Las tarjetas sirven mejor cuando tiene un grupo al que repartirlas: un grupo étnico por tarjeta.",
+      "p5": "Los paquetes por país convienen a una base de movilización más grande, o a un país que quiere ver alcanzado. Si movilizar cuesta, las listas UPG100 son un comienzo más sencillo."
+    },
+    "prayer-map": {
+      "bottom": "Un movimiento de oración crece cuando cada socio muestra el mismo mapa, así que ponga este mapa en cada sitio web de su red.",
+      "p1": "Haga una lista de los sitios web de su red: iglesias, ministerios, redes de oración, socios misioneros, cada sitio que su gente ya visita.",
+      "p2": "Compártalo o añádalo en unos pocos toques. El botón Compartir le da un enlace para enviar, o «Añádelo a tu sitio web»: elija un tamaño, copie el código y péguelo en WordPress, Squarespace, Wix o cualquier sitio que acepte HTML.",
+      "p3": "Elija la vista que encaje con el sitio. «Oración», «Compromiso» y «Adopción» comparten cada una su propia página, así que una red de oración puede mostrar la cobertura de oración y una iglesia que envía, el compromiso.",
+      "p4": "Se mantiene al día por sí solo. Cada copia del mapa lee los mismos datos de pray.doxa.life cada vez que se abre, así que el progreso aparece en el sitio de cada socio sin que nadie lo actualice.",
+      "p5": "Lleve a las personas a un nombre. Tocar un punto abre ese grupo étnico y un enlace a su página de oración, para que un visitante empiece a orar enseguida por un pueblo concreto."
+    },
+    "upg-100": {
+      "bottom": "Jesús hizo sentar a los cinco mil en grupos de cincuenta y de cien antes de alimentarlos (Lucas 9:14). Estas listas hacen lo mismo con unos 2.100 grupos étnicos no alcanzados: divididos en listas de ese tamaño, toda la tarea se vuelve una carga que una persona puede llevar.",
+      "p1": "27 listas son 27 pósteres, 27 paquetes de oración y 27 barajas de tarjetas. Ponga una en manos de cada uno de 27 discípulos, iglesias o líderes autóctonos, y se ora por cada uno de los grupos por su nombre.",
+      "p2": "Entregue cada lista a alguien que siga orando por ella. Los líderes autóctonos pueden orar en los propios idiomas de los pueblos.",
+      "p3": "Esto sigue una práctica probada en los movimientos: los discípulos oran con regularidad por cincuenta a cien personas que conocen (familia, amigos, vecinos, compañeros de trabajo y de estudios). Una lista UPG100 es la misma carga, por personas que nunca han conocido.",
+      "p4": "Empiece con una lista y una persona. El paquete contiene todo lo de esa lista en una sola impresión, y las tarjetas ayudan cuando un grupo se reparte la lista."
+    },
+    "cities-internet": {
+      "bottom": "Donde la gente ya está en línea, el evangelio puede alcanzarla en las pantallas y plataformas que usa cada día. Encuentre esos lugares y use los medios para abrir la puerta a discípulos e iglesias reales (de los medios a los movimientos).",
+      "p1": "Empiece por los países donde la mayoría de la gente está en línea (60 % o más). Allí, los medios en línea pueden llegar a personas que no tienen una iglesia ni un creyente cerca.",
+      "p2": "Toque un país y lea su tarjeta: cuántas personas usan internet, cuántas suscripciones móviles hay y qué plataformas usa la gente allí. Llegue a ellos en sus plataformas, no en las suyas, y compruebe primero la lista con alguien del país.",
+      "p3": "Combine este mapa con «Recursos del Evangelio». Encuentre un grupo étnico que ya tenga Escritura, película o audio en su idioma, y comparta esos enlaces en línea en un país donde la gente está conectada.",
+      "p4": "Donde pocos están en línea, o la cifra no está medida, no empiece con una pantalla: envíe personas y lleve recursos en audio e impresos. Las cifras son nacionales (India también por estado), así que una ciudad puede ser muy distinta de su país.",
+      "p5": "Los medios son la puerta, no la meta. Antes de publicar, planifique cómo alguien que responde en línea conoce a una persona real y se une a un grupo que estudia la Biblia en conjunto."
+    },
+    "gospel-resources": {
+      "bottom": "Muchos grupos no alcanzados ya tienen Escritura, película o audio en su idioma que nunca les ha llegado. Los recursos existen; el vacío es ponerlos en manos de la gente, en persona o en línea.",
+      "p1": "Cambie a «Recursos encontrados» y busque los grupos que tienen Escritura y película. Para ellos las herramientas están listas; lo que falta es hacérselas llegar.",
+      "p2": "Envíe obreros con los recursos. Abra la ficha de un grupo y pase sus enlaces (y los de los otros idiomas que habla) a los obreros, iglesias y líderes que pueden llegar a ese grupo.",
+      "p3": "Combine este mapa con «Ciudades con Internet». Donde el país de un grupo está bien conectado, los mismos enlaces pueden llegar a la gente en línea en las plataformas que se usan allí (de los medios a los movimientos).",
+      "p4": "Donde exista formación Zume en el idioma del grupo, póngala junto a la Escritura y la película, para que quienes creen sean formados para hacer discípulos.",
+      "p5": "Use «Brecha» para orar y planificar por los grupos en los que aún no se ha encontrado nada. Muchos tienen una entrada a través de un idioma puente, y «nada encontrado» es una razón para seguir buscando, no una respuesta final."
+    }
+  }
+}

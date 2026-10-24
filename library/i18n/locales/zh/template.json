@@ -1,0 +1,11 @@
+{
+  "title": "我的第一张地图",
+  "engineMissing": "地图引擎未能加载。",
+  "mapFailed": "地图无法启动：{detail}",
+  "profileB": {
+    "title": "配置文件 B",
+    "servedFrom": "由 {bundle} 包中的 {file} 提供。",
+    "note": "备注：{note}",
+    "noNote": "（profile-config 中未传入备注）"
+  }
+}

@@ -1,0 +1,37 @@
+# Normalise line endings on commit. Everything here is authored on LF; declaring it
+# keeps a Windows checkout from rewriting whole files and producing diffs that are
+# entirely invisible whitespace.
+* text=auto eol=lf
+
+# Binaries git must never line-ending-convert or try to diff. The repo carries ~77 MB
+# of poster imagery, so a wrong guess here corrupts art rather than reformatting text.
+*.webp    binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.ico     binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.jar     binary
+*.jks     binary
+*.keystore binary
+*.apk     binary
+*.aab     binary
+
+# Executables keep LF regardless of platform, or the shebang breaks.
+*.sh      text eol=lf
+gradlew   text eol=lf
+
+# ── What GitHub should NOT count as this project's source ────────────────────
+# public/ is the served web-root and is committed, which means 4.1 MB of the repo's
+# 4.9 MB of JavaScript is BUILT bundles. Left alone, the language bar reports this
+# as a pile of minified JS instead of the Vue and JS someone actually maintains,
+# and the generated staging pages do the same to HTML.
+public/doxa-maps/**                     linguist-generated=true
+library/scripts/*/snapshots/**          linguist-generated=true
+bun.lock                                linguist-generated=true -diff
+
+# Committed research data and imagery: real content, but not code anyone reads.
+public/assets/**                        linguist-vendored=true
+plugin-designs/*/data/**                  linguist-vendored=true

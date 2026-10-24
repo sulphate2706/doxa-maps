@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "what": "Zoning declarations for the UPG-100 list: the facts about this list's zoning that a gate cannot infer and a reader cannot guess from the data.",
+    "why": "check-zoning-declared.mjs asserts the ACTUAL zoning against these DECLARATIONS. Without them a gate can only test self-consistency, which is satisfied by a zoning that silently dropped groups.",
+    "how_to_use": "A new project list ships its own <id>.json beside this one. Copy the shape, not the values.",
+    "list": "upg-100",
+    "generated_from": "clusters.json + the live records, 2026-09-27"
+  },
+  "bloc_zones": {
+    "_why": "Zones that partition by AFFINITY or LANGUAGE rather than geography. Their members ALSO belong to a geographic zone, so they are exempt from the one-geographic-zone rule. legend-tree.js:151 records the deaf case as design-approved (slice 08): per-zone equality holds; only a naive GLOBAL sum over-counts.",
+    "ids": [
+      "deaf"
+    ]
+  },
+  "expected_orphans": {
+    "_why": "Groups in the list that belong to NO zone. An empty list here means 'every group must be zoned'. A gate cannot tell a deliberate exclusion from a silent drop; only this declaration can.",
+    "_status": "PENDING A PRODUCT DECISION — these 11 are TODAY'S ACTUAL orphans, recorded so the gate is green on arrival and any NEW orphan fails. They are all Japan / China / Mongolia and are plausibly deliberate (asia-china-tibet-autonomous-region is labelled 'Mainland China + Mongolia' and carries only 43 groups), but nobody has said so. In the product-decisions digest; do NOT change the memberships to make this list shorter.",
+    "slugs": [
+      "ainu-japan",
+      "jing",
+      "kalmyk-oirats",
+      "oki-no-erabu",
+      "pana-china",
+      "toku-no-shima",
+      "tsaatan",
+      "tuvinians",
+      "yaeyama",
+      "yonaguni",
+      "yoron"
+    ]
+  },
+  "known_geographic_overlaps": {
+    "_why": "Groups that DO sit in two geographic zones, declared so the gate fails on a NEW overlap rather than on these. Not an endorsement — see _status.",
+    "_status": "PENDING A PRODUCT DECISION — uncovered-scatter is country_codes AND,CCK,GUF,USA ('Scattered / Diaspora'), so it overlaps the regional zones it scatters across. Either a scatter zone is a THIRD partition (like a bloc) or these two memberships are wrong. In the product-decisions digest; do NOT change either membership. ⚠ deaf-cocos-islanders was MISSED by my own hand analysis and found by this gate: I had filtered out every A017 group as 'the design-approved deaf double-count', but its TWO GEOGRAPHIC claims (CCK is in both zones' country lists) are a SEPARATE fact from its bloc membership. Conflating them is exactly what the bloc/geographic split in A2 exists to prevent, and the gate got it right where I did not — which is the best argument for the gate existing.",
+    "slugs": [
+      {
+        "slug": "deaf-cocos-islanders",
+        "zones": [
+          "oceania-indonesia",
+          "uncovered-scatter"
+        ]
+      },
+      {
+        "slug": "cocos-malays",
+        "zones": [
+          "oceania-indonesia",
+          "uncovered-scatter"
+        ]
+      },
+      {
+        "slug": "andorrans",
+        "zones": [
+          "uncovered-scatter",
+          "europe"
+        ]
+      }
+    ]
+  },
+  "page_budget": {
+    "_why": "Groups per printed page, from packet-render's PER_PAGE. A zone larger than max_groups is not an error — it just prints more sheets — but a zone WILDLY larger is usually a selector that matched too much, which is how the wagf and deaf selector bugs looked before they were found.",
+    "per_page": 20,
+    "max_groups": 200
+  }
+}

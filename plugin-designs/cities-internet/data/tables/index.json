@@ -1,0 +1,30 @@
+{
+ "generated": "2026-08-01",
+ "method": "IEMV — extraction by the fetch/derive scripts, MODELING + VALIDATION here",
+ "tables": [
+  {
+   "name": "people-group-resources",
+   "rows": 2106
+  },
+  {
+   "name": "gospel-access-vs-growth",
+   "rows": 2106
+  },
+  {
+   "name": "key-cities",
+   "rows": 1646
+  },
+  {
+   "name": "network-operators",
+   "rows": 6526
+  },
+  {
+   "name": "country-connectivity",
+   "rows": 175
+  },
+  {
+   "name": "social-platforms",
+   "rows": 1306
+  }
+ ]
+}

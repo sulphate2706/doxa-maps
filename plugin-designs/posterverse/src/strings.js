@@ -1,0 +1,191 @@
+/**
+ * strings.js — Posterverse's own words, in the 11 shipped locales.
+ *
+ * PRIVATE TO THIS PLUGIN, like the Research Gallery's table: these strings belong to the shell alone
+ * (its rail, sections and status hints). Each nested poster plugin translates ITSELF.
+ *
+ * VOCABULARY FOLLOWS THE RESEARCH GALLERY. A row that also appears in the gallery
+ * (plugin-designs/doxa-maps-spa/src/strings.js) uses the gallery's words verbatim, so the same plugin
+ * has one name in both shells: tab.upg-100 follows the "UPG100 Posters" rename, and the
+ * Experimental names, status hints and the layout's own controls are copied as the gallery ships them.
+ *
+ * `en` is the source and the fallback: a key missing in a locale renders in English rather than as a
+ * key name. {label} is the only placeholder.
+ */
+export const STRINGS = {
+  en: {
+    'sec.posters': 'Posters', 'sec.experimental': 'Experimental',
+    'tab.upg-100': 'UPG100 Posters', 'sub.upg-100': 'my unreached list + posters',
+    'tab.country-posters': 'Country Posters', 'sub.country-posters': 'a poster for every country',
+    'tab.poster-design': 'Poster Design', 'sub.poster-design': 'every poster style and size',
+    'tab.wall-of-people-groups': 'Wall of People Groups',
+    'tab.bible-posters': 'Bible Posters',
+    'tab.bless-india-posters': 'Bless India Posters',
+    experimentalSub: 'experimental bundle', lab: 'lab',
+    loading: 'Loading {label}…', loadFailed: 'Could not load {label}.',
+    manifestHint: 'This tab is composed from manifest.json — build the tree, or serve the built tree, to load it.',
+    backToTop: 'Back to top',
+    home: 'Back to homepage',
+    toggleList: 'Toggle list', openViews: 'Open the list of views', expandList: 'Expand list', collapseList: 'Collapse list', collapse: 'Collapse',
+  },
+  es: {
+    'sec.posters': 'Carteles', 'sec.experimental': 'Experimental',
+    'tab.upg-100': 'Carteles UPG100', 'sub.upg-100': 'mi lista de no alcanzados + carteles',
+    'tab.country-posters': 'Carteles por país', 'sub.country-posters': 'un cartel para cada país',
+    'tab.poster-design': 'Diseño de carteles', 'sub.poster-design': 'todos los estilos y tamaños de cartel',
+    'tab.wall-of-people-groups': 'Muro de los pueblos',
+    'tab.bible-posters': 'Carteles bíblicos',
+    'tab.bless-india-posters': 'Pósteres «Bendice a la India»',
+    experimentalSub: 'mapa experimental', lab: 'beta',
+    loading: 'Cargando {label}…', loadFailed: 'No se pudo cargar {label}.',
+    manifestHint: 'Esta pestaña se compone a partir de manifest.json: compila el árbol o sirve el árbol compilado para cargarla.',
+    backToTop: 'Volver arriba',
+    home: 'Volver a la página de inicio',
+    toggleList: 'Mostrar u ocultar la lista', openViews: 'Abrir la lista de vistas', expandList: 'Expandir la lista', collapseList: 'Contraer la lista', collapse: 'Contraer',
+  },
+  fr: {
+    'sec.posters': 'Affiches', 'sec.experimental': 'Expérimental',
+    'tab.upg-100': 'Affiches UPG100', 'sub.upg-100': 'ma liste des non atteints + affiches',
+    'tab.country-posters': 'Affiches par pays', 'sub.country-posters': 'une affiche pour chaque pays',
+    'tab.poster-design': 'Conception d’affiches', 'sub.poster-design': 'tous les styles et formats d’affiche',
+    'tab.wall-of-people-groups': 'Mur des peuples',
+    'tab.bible-posters': 'Affiches bibliques',
+    'tab.bless-india-posters': 'Affiches « Bénis l’Inde »',
+    experimentalSub: 'carte expérimentale', lab: 'bêta',
+    loading: 'Chargement de {label}…', loadFailed: 'Impossible de charger {label}.',
+    manifestHint: "Cet onglet est composé à partir de manifest.json : construisez l'arborescence ou servez l'arborescence construite pour le charger.",
+    backToTop: 'Retour en haut',
+    home: 'Retour à l’accueil',
+    toggleList: 'Afficher ou masquer la liste', openViews: 'Ouvrir la liste des vues', expandList: 'Déplier la liste', collapseList: 'Replier la liste', collapse: 'Replier',
+  },
+  de: {
+    'sec.posters': 'Poster', 'sec.experimental': 'Experimentell',
+    'tab.upg-100': 'UPG100-Poster', 'sub.upg-100': 'meine Liste der Unerreichten + Poster',
+    'tab.country-posters': 'Länderposter', 'sub.country-posters': 'ein Poster für jedes Land',
+    'tab.poster-design': 'Postergestaltung', 'sub.poster-design': 'alle Posterstile und -größen',
+    'tab.wall-of-people-groups': 'Wand der Volksgruppen',
+    'tab.bible-posters': 'Bibelposter',
+    'tab.bless-india-posters': '„Segne Indien“-Poster',
+    experimentalSub: 'experimentelle Karte', lab: 'Beta',
+    loading: '{label} wird geladen…', loadFailed: '{label} konnte nicht geladen werden.',
+    manifestHint: 'Dieser Tab wird aus manifest.json zusammengesetzt – bauen Sie den Baum oder stellen Sie den gebauten Baum bereit, um ihn zu laden.',
+    backToTop: 'Nach oben',
+    home: 'Zurück zur Startseite',
+    toggleList: 'Liste ein-/ausblenden', openViews: 'Ansichtsliste öffnen', expandList: 'Liste ausklappen', collapseList: 'Liste einklappen', collapse: 'Einklappen',
+  },
+  pt: {
+    'sec.posters': 'Cartazes', 'sec.experimental': 'Experimental',
+    'tab.upg-100': 'Cartazes UPG100', 'sub.upg-100': 'minha lista de não alcançados + cartazes',
+    'tab.country-posters': 'Cartazes por país', 'sub.country-posters': 'um cartaz para cada país',
+    'tab.poster-design': 'Design de cartazes', 'sub.poster-design': 'todos os estilos e tamanhos de cartaz',
+    'tab.wall-of-people-groups': 'Mural dos povos',
+    'tab.bible-posters': 'Cartazes bíblicos',
+    'tab.bless-india-posters': 'Pôsteres «Abençoe a Índia»',
+    experimentalSub: 'mapa experimental', lab: 'beta',
+    loading: 'Carregando {label}…', loadFailed: 'Não foi possível carregar {label}.',
+    manifestHint: 'Esta aba é composta a partir do manifest.json — compile a árvore ou sirva a árvore compilada para carregá-la.',
+    backToTop: 'Voltar ao topo',
+    home: 'Voltar à página inicial',
+    toggleList: 'Mostrar ou ocultar a lista', openViews: 'Abrir a lista de visualizações', expandList: 'Expandir a lista', collapseList: 'Recolher a lista', collapse: 'Recolher',
+  },
+  it: {
+    'sec.posters': 'Poster', 'sec.experimental': 'Sperimentale',
+    'tab.upg-100': 'Poster UPG100', 'sub.upg-100': 'la mia lista dei non raggiunti + poster',
+    'tab.country-posters': 'Poster per paese', 'sub.country-posters': 'un poster per ogni paese',
+    'tab.poster-design': 'Design dei poster', 'sub.poster-design': 'tutti gli stili e i formati dei poster',
+    'tab.wall-of-people-groups': 'Muro dei popoli',
+    'tab.bible-posters': 'Poster biblici',
+    'tab.bless-india-posters': 'Poster «Benedici l’India»',
+    experimentalSub: 'mappa sperimentale', lab: 'beta',
+    loading: 'Caricamento di {label}…', loadFailed: 'Impossibile caricare {label}.',
+    manifestHint: "Questa scheda è composta da manifest.json: compila l'albero o pubblica l'albero compilato per caricarla.",
+    backToTop: 'Torna su',
+    home: 'Torna alla home page',
+    toggleList: 'Mostra o nascondi l’elenco', openViews: 'Apri l’elenco delle viste', expandList: 'Espandi l’elenco', collapseList: 'Comprimi l’elenco', collapse: 'Comprimi',
+  },
+  ro: {
+    'sec.posters': 'Afișe', 'sec.experimental': 'Experimental',
+    'tab.upg-100': 'Afișe UPG100', 'sub.upg-100': 'lista mea de neatinși + afișe',
+    'tab.country-posters': 'Afișe pe țări', 'sub.country-posters': 'un afiș pentru fiecare țară',
+    'tab.poster-design': 'Design de afișe', 'sub.poster-design': 'toate stilurile și dimensiunile de afiș',
+    'tab.wall-of-people-groups': 'Zidul popoarelor',
+    'tab.bible-posters': 'Afișe biblice',
+    'tab.bless-india-posters': 'Postere „Binecuvântează India”',
+    experimentalSub: 'hartă experimentală', lab: 'beta',
+    loading: 'Se încarcă {label}…', loadFailed: '{label} nu a putut fi încărcat.',
+    manifestHint: 'Această filă este compusă din manifest.json — construiți arborele sau serviți arborele construit pentru a o încărca.',
+    backToTop: 'Sus',
+    home: 'Înapoi la pagina principală',
+    toggleList: 'Afișează sau ascunde lista', openViews: 'Deschide lista de vizualizări', expandList: 'Extinde lista', collapseList: 'Restrânge lista', collapse: 'Restrânge',
+  },
+  ru: {
+    'sec.posters': 'Плакаты', 'sec.experimental': 'Экспериментальное',
+    'tab.upg-100': 'Плакаты UPG100', 'sub.upg-100': 'мой список недостигнутых + плакаты',
+    'tab.country-posters': 'Плакаты по странам', 'sub.country-posters': 'плакат для каждой страны',
+    'tab.poster-design': 'Дизайн плакатов', 'sub.poster-design': 'все стили и размеры плакатов',
+    'tab.wall-of-people-groups': 'Стена народов',
+    'tab.bible-posters': 'Библейские плакаты',
+    'tab.bless-india-posters': 'Плакаты «Благослови Индию»',
+    experimentalSub: 'экспериментальная карта', lab: 'бета',
+    loading: 'Загрузка: {label}…', loadFailed: 'Не удалось загрузить: {label}.',
+    manifestHint: 'Эта вкладка собирается из manifest.json — соберите дерево или разместите собранное дерево, чтобы загрузить её.',
+    backToTop: 'Наверх',
+    home: 'На главную страницу',
+    toggleList: 'Показать или скрыть список', openViews: 'Открыть список представлений', expandList: 'Развернуть список', collapseList: 'Свернуть список', collapse: 'Свернуть',
+  },
+  ar: {
+    'sec.posters': 'ملصقات', 'sec.experimental': 'تجريبي',
+    'tab.upg-100': 'ملصقات UPG100', 'sub.upg-100': 'قائمتي لغير المُبشَّرين + ملصقات',
+    'tab.country-posters': 'ملصقات الدول', 'sub.country-posters': 'ملصق لكل دولة',
+    'tab.poster-design': 'تصميم الملصقات', 'sub.poster-design': 'كل أنماط الملصقات وأحجامها',
+    'tab.wall-of-people-groups': 'جدار الشعوب',
+    'tab.bible-posters': 'ملصقات الكتاب المقدس',
+    'tab.bless-india-posters': 'ملصقات باركوا الهند',
+    experimentalSub: 'خريطة تجريبية', lab: 'تجريبي',
+    loading: 'جارٍ تحميل {label}…', loadFailed: 'تعذّر تحميل {label}.',
+    manifestHint: 'تُبنى علامة التبويب هذه من manifest.json — ابنِ الشجرة أو قدّم الشجرة المبنية لتحميلها.',
+    backToTop: 'إلى الأعلى',
+    home: 'العودة إلى الصفحة الرئيسية',
+    toggleList: 'إظهار القائمة أو إخفاؤها', openViews: 'فتح قائمة العروض', expandList: 'توسيع القائمة', collapseList: 'طي القائمة', collapse: 'طي',
+  },
+  hi: {
+    'sec.posters': 'पोस्टर', 'sec.experimental': 'प्रायोगिक',
+    'tab.upg-100': 'UPG100 पोस्टर', 'sub.upg-100': 'मेरी अप्राप्त सूची + पोस्टर',
+    'tab.country-posters': 'देश पोस्टर', 'sub.country-posters': 'हर देश के लिए एक पोस्टर',
+    'tab.poster-design': 'पोस्टर डिज़ाइन', 'sub.poster-design': 'हर पोस्टर शैली और आकार',
+    'tab.wall-of-people-groups': 'जनसमूहों की दीवार',
+    'tab.bible-posters': 'बाइबल पोस्टर',
+    'tab.bless-india-posters': 'भारत को आशीष दें — पोस्टर',
+    experimentalSub: 'प्रायोगिक मानचित्र', lab: 'बीटा',
+    loading: '{label} लोड हो रहा है…', loadFailed: '{label} लोड नहीं हो सका।',
+    manifestHint: 'यह टैब manifest.json से बनता है — इसे लोड करने के लिए ट्री बनाएँ या बना हुआ ट्री सर्व करें।',
+    backToTop: 'ऊपर जाएँ',
+    home: 'होमपेज पर वापस जाएँ',
+    toggleList: 'सूची दिखाएँ या छिपाएँ', openViews: 'दृश्यों की सूची खोलें', expandList: 'सूची फैलाएँ', collapseList: 'सूची संक्षिप्त करें', collapse: 'संक्षिप्त करें',
+  },
+  zh: {
+    'sec.posters': '海报', 'sec.experimental': '实验性',
+    'tab.upg-100': 'UPG100 海报', 'sub.upg-100': '我的未得之民名单 + 海报',
+    'tab.country-posters': '国家海报', 'sub.country-posters': '每个国家一张海报',
+    'tab.poster-design': '海报设计', 'sub.poster-design': '所有海报样式与尺寸',
+    'tab.wall-of-people-groups': '民族之墙',
+    'tab.bible-posters': '圣经海报',
+    'tab.bless-india-posters': '祝福印度海报',
+    experimentalSub: '实验性地图', lab: '测试版',
+    loading: '正在加载{label}…', loadFailed: '无法加载{label}。',
+    manifestHint: '此标签页由 manifest.json 组成——请构建目录树或提供已构建的目录树以加载它。',
+    backToTop: '回到顶部',
+    home: '返回首页',
+    toggleList: '显示或隐藏列表', openViews: '打开视图列表', expandList: '展开列表', collapseList: '折叠列表', collapse: '折叠',
+  },
+}
+
+export const LOCALES = Object.keys(STRINGS)
+
+/** Translate `key` into `locale`, falling back to English, then to the key itself. */
+export function translate(locale, key, params) {
+  const table = STRINGS[locale] || STRINGS.en
+  let s = table[key] ?? STRINGS.en[key] ?? key
+  if (params) for (const k in params) s = s.split('{' + k + '}').join(String(params[k]))
+  return s
+}

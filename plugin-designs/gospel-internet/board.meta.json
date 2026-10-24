@@ -1,0 +1,12 @@
+{
+  "type": "single",
+  "label": "Gospel × Internet",
+  "config": {
+    "pinHint": false,
+    "urlState": "query"
+  },
+  "note": "pinHint:false because the board has its own legend and drawer; the shared coach-mark would float over the facet rail. urlState:'query' makes the board's own page keep ?view=&access=&band=&country=&province=&language=&group= in the address bar (shareable views, README.md, \"The views\"). A partner embedding the element without it keeps their URL untouched: the board READS the query always and WRITES it only when asked.",
+  "stage": "experimental",
+  "mobile": "larger-screens",
+  "heavy": true
+}

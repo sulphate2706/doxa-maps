@@ -1,0 +1,758 @@
+{
+ "_note": "Cru gospel presentations (GodTools) on knowgod.com, keyed by ISO 639-3. godtools.org is a PARKED DOMAIN. knowgod.com is a client-rendered shell that answers 200 with identical bytes for any URL, so existence is proved from Cru's own API by intersecting a resource's latest-translations with a language's translations — never from the page.",
+ "source": "https://mobile-content-api.cru.org/languages + https://mobile-content-api.cru.org/resources",
+ "site": "https://knowgod.com",
+ "generated": "2026-09-24",
+ "tools_allowed": [
+  "kgp (Knowing God Personally)",
+  "fourlaws (Four Spiritual Laws)",
+  "honorrestored (Honor Restored)",
+  "fantasticfacts (Four Fantastic Facts)",
+  "satisfied (Satisfied?)",
+  "connectingwithgod (Connecting With God)"
+ ],
+ "counts": {
+  "languages": 123,
+  "resources": 45,
+  "codes": 105,
+  "noIso": 0,
+  "noTool": 9
+ },
+ "codes": {
+  "afr": {
+   "u": "https://knowgod.com/af/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Afrikaans",
+   "locale": "af",
+   "tool": "kgp"
+  },
+  "sqi": {
+   "u": "https://knowgod.com/sq/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Albanian",
+   "locale": "sq",
+   "tool": "kgp"
+  },
+  "amh": {
+   "u": "https://knowgod.com/am/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Amharic",
+   "locale": "am",
+   "tool": "kgp"
+  },
+  "ara": {
+   "u": "https://knowgod.com/ar/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Arabic",
+   "locale": "ar",
+   "tool": "kgp"
+  },
+  "hye": {
+   "u": "https://knowgod.com/hy/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Armenian",
+   "locale": "hy",
+   "tool": "kgp"
+  },
+  "aze": {
+   "u": "https://knowgod.com/az/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Azerbaijani",
+   "locale": "az",
+   "tool": "fourlaws"
+  },
+  "bam": {
+   "u": "https://knowgod.com/bm/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Bambara",
+   "locale": "bm",
+   "tool": "fourlaws"
+  },
+  "bem": {
+   "u": "https://knowgod.com/bem/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Bemba",
+   "locale": "bem",
+   "tool": "fourlaws"
+  },
+  "ben": {
+   "u": "https://knowgod.com/bn/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Bengali",
+   "locale": "bn",
+   "tool": "kgp"
+  },
+  "bis": {
+   "u": "https://knowgod.com/bi/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Bislama",
+   "locale": "bi",
+   "tool": "kgp"
+  },
+  "bos": {
+   "u": "https://knowgod.com/bs-BA/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Bosnian (Bosnia and Herzegovina)",
+   "locale": "bs-BA",
+   "tool": "kgp"
+  },
+  "bul": {
+   "u": "https://knowgod.com/bg/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Bulgarian",
+   "locale": "bg",
+   "tool": "kgp"
+  },
+  "mya": {
+   "u": "https://knowgod.com/my/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Burmese",
+   "locale": "my",
+   "tool": "kgp"
+  },
+  "ceb": {
+   "u": "https://knowgod.com/ceb/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Cebuano",
+   "locale": "ceb",
+   "tool": "fourlaws"
+  },
+  "nya": {
+   "u": "https://knowgod.com/ny/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Chichewa",
+   "locale": "ny",
+   "tool": "fourlaws"
+  },
+  "zho": {
+   "u": "https://knowgod.com/zh-Hans/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Chinese Simplified",
+   "locale": "zh-Hans",
+   "tool": "kgp"
+  },
+  "hrv": {
+   "u": "https://knowgod.com/hr/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Croatian",
+   "locale": "hr",
+   "tool": "kgp"
+  },
+  "ces": {
+   "u": "https://knowgod.com/cs/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Czech",
+   "locale": "cs",
+   "tool": "kgp"
+  },
+  "dan": {
+   "u": "https://knowgod.com/da/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Danish",
+   "locale": "da",
+   "tool": "kgp"
+  },
+  "nld": {
+   "u": "https://knowgod.com/nl/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Dutch",
+   "locale": "nl",
+   "tool": "fourlaws"
+  },
+  "dzo": {
+   "u": "https://knowgod.com/dz/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Dzongkha",
+   "locale": "dz",
+   "tool": "fourlaws"
+  },
+  "eng": {
+   "u": "https://knowgod.com/en/kgp",
+   "n": "Knowing God Personally",
+   "ln": "English",
+   "locale": "en",
+   "tool": "kgp"
+  },
+  "est": {
+   "u": "https://knowgod.com/et/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Estonian (Estonia)",
+   "locale": "et",
+   "tool": "kgp"
+  },
+  "fij": {
+   "u": "https://knowgod.com/fj/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Fijian",
+   "locale": "fj",
+   "tool": "fourlaws"
+  },
+  "fil": {
+   "u": "https://knowgod.com/fil/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Filipino",
+   "locale": "fil",
+   "tool": "kgp"
+  },
+  "fin": {
+   "u": "https://knowgod.com/fi/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Finnish",
+   "locale": "fi",
+   "tool": "kgp"
+  },
+  "fra": {
+   "u": "https://knowgod.com/fr/kgp",
+   "n": "Knowing God Personally",
+   "ln": "French",
+   "locale": "fr",
+   "tool": "kgp"
+  },
+  "kat": {
+   "u": "https://knowgod.com/ka/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Georgian",
+   "locale": "ka",
+   "tool": "fourlaws"
+  },
+  "deu": {
+   "u": "https://knowgod.com/de/kgp",
+   "n": "Knowing God Personally",
+   "ln": "German",
+   "locale": "de",
+   "tool": "kgp"
+  },
+  "ell": {
+   "u": "https://knowgod.com/el/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Greek",
+   "locale": "el",
+   "tool": "kgp"
+  },
+  "guj": {
+   "u": "https://knowgod.com/gu/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Gujarati",
+   "locale": "gu",
+   "tool": "fourlaws"
+  },
+  "hat": {
+   "u": "https://knowgod.com/ht-HT/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Haitian Creole",
+   "locale": "ht-HT",
+   "tool": "fourlaws"
+  },
+  "hau": {
+   "u": "https://knowgod.com/ha/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Hausa",
+   "locale": "ha",
+   "tool": "kgp"
+  },
+  "heb": {
+   "u": "https://knowgod.com/he/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Hebrew",
+   "locale": "he",
+   "tool": "kgp"
+  },
+  "hin": {
+   "u": "https://knowgod.com/hi/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Hindi",
+   "locale": "hi",
+   "tool": "kgp"
+  },
+  "hmn": {
+   "u": "https://knowgod.com/hmn/honorrestored",
+   "n": "Honor Restored",
+   "ln": "Hmong",
+   "locale": "hmn",
+   "tool": "honorrestored"
+  },
+  "hun": {
+   "u": "https://knowgod.com/hu/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Hungarian",
+   "locale": "hu",
+   "tool": "kgp"
+  },
+  "isl": {
+   "u": "https://knowgod.com/is-IS/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Icelandic (Iceland)",
+   "locale": "is-IS",
+   "tool": "kgp"
+  },
+  "ibo": {
+   "u": "https://knowgod.com/ig/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Igbo",
+   "locale": "ig",
+   "tool": "fourlaws"
+  },
+  "ind": {
+   "u": "https://knowgod.com/id/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Indonesian",
+   "locale": "id",
+   "tool": "kgp"
+  },
+  "ita": {
+   "u": "https://knowgod.com/it/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Italian",
+   "locale": "it",
+   "tool": "kgp"
+  },
+  "jpn": {
+   "u": "https://knowgod.com/ja/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Japanese",
+   "locale": "ja",
+   "tool": "kgp"
+  },
+  "jav": {
+   "u": "https://knowgod.com/jv/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Javanese",
+   "locale": "jv",
+   "tool": "fourlaws"
+  },
+  "kan": {
+   "u": "https://knowgod.com/kn/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Kannada",
+   "locale": "kn",
+   "tool": "kgp"
+  },
+  "kaz": {
+   "u": "https://knowgod.com/kk/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Kazakh",
+   "locale": "kk",
+   "tool": "fourlaws"
+  },
+  "kha": {
+   "u": "https://knowgod.com/kha/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Khasi",
+   "locale": "kha",
+   "tool": "fourlaws"
+  },
+  "khm": {
+   "u": "https://knowgod.com/km-KH/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Khmer",
+   "locale": "km-KH",
+   "tool": "fourlaws"
+  },
+  "kik": {
+   "u": "https://knowgod.com/ki/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Kikuyu",
+   "locale": "ki",
+   "tool": "fourlaws"
+  },
+  "kin": {
+   "u": "https://knowgod.com/rw/honorrestored",
+   "n": "Honor Restored",
+   "ln": "Kinyarwanda",
+   "locale": "rw",
+   "tool": "honorrestored"
+  },
+  "run": {
+   "u": "https://knowgod.com/rn/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Kirundi",
+   "locale": "rn",
+   "tool": "kgp"
+  },
+  "ktu": {
+   "u": "https://knowgod.com/ktu/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Kituba",
+   "locale": "ktu",
+   "tool": "fourlaws"
+  },
+  "kor": {
+   "u": "https://knowgod.com/ko/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Korean",
+   "locale": "ko",
+   "tool": "kgp"
+  },
+  "ckb": {
+   "u": "https://knowgod.com/ckb/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Kurdish Sorani",
+   "locale": "ckb",
+   "tool": "fourlaws"
+  },
+  "kir": {
+   "u": "https://knowgod.com/ky/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Kyrgyz",
+   "locale": "ky",
+   "tool": "fourlaws"
+  },
+  "lao": {
+   "u": "https://knowgod.com/lo/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Lao",
+   "locale": "lo",
+   "tool": "kgp"
+  },
+  "lav": {
+   "u": "https://knowgod.com/lv/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Latvian",
+   "locale": "lv",
+   "tool": "kgp"
+  },
+  "lin": {
+   "u": "https://knowgod.com/ln/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Lingala",
+   "locale": "ln",
+   "tool": "kgp"
+  },
+  "lit": {
+   "u": "https://knowgod.com/lt-LT/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Lithuanian",
+   "locale": "lt-LT",
+   "tool": "fourlaws"
+  },
+  "lug": {
+   "u": "https://knowgod.com/lg/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Luganda",
+   "locale": "lg",
+   "tool": "fourlaws"
+  },
+  "mkd": {
+   "u": "https://knowgod.com/mk/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Macedonian",
+   "locale": "mk",
+   "tool": "kgp"
+  },
+  "mlg": {
+   "u": "https://knowgod.com/mg/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Malagasy",
+   "locale": "mg",
+   "tool": "kgp"
+  },
+  "msa": {
+   "u": "https://knowgod.com/ms/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Malay",
+   "locale": "ms",
+   "tool": "kgp"
+  },
+  "mal": {
+   "u": "https://knowgod.com/ml/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Malayalam",
+   "locale": "ml",
+   "tool": "fourlaws"
+  },
+  "mri": {
+   "u": "https://knowgod.com/mi/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Māori",
+   "locale": "mi",
+   "tool": "kgp"
+  },
+  "mar": {
+   "u": "https://knowgod.com/mr/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Marathi",
+   "locale": "mr",
+   "tool": "kgp"
+  },
+  "mon": {
+   "u": "https://knowgod.com/mn/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Mongolian",
+   "locale": "mn",
+   "tool": "kgp"
+  },
+  "nep": {
+   "u": "https://knowgod.com/ne/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Nepali",
+   "locale": "ne",
+   "tool": "kgp"
+  },
+  "nor": {
+   "u": "https://knowgod.com/no/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Norwegian",
+   "locale": "no",
+   "tool": "kgp"
+  },
+  "ori": {
+   "u": "https://knowgod.com/or/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Oriya",
+   "locale": "or",
+   "tool": "kgp"
+  },
+  "orm": {
+   "u": "https://knowgod.com/om/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Oromo",
+   "locale": "om",
+   "tool": "kgp"
+  },
+  "pap": {
+   "u": "https://knowgod.com/pap/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Papiamentu",
+   "locale": "pap",
+   "tool": "kgp"
+  },
+  "pus": {
+   "u": "https://knowgod.com/ps/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Pashto",
+   "locale": "ps",
+   "tool": "fourlaws"
+  },
+  "fas": {
+   "u": "https://knowgod.com/fa/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Persian",
+   "locale": "fa",
+   "tool": "kgp"
+  },
+  "pol": {
+   "u": "https://knowgod.com/pl/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Polish",
+   "locale": "pl",
+   "tool": "kgp"
+  },
+  "por": {
+   "u": "https://knowgod.com/pt/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Portuguese",
+   "locale": "pt",
+   "tool": "kgp"
+  },
+  "pan": {
+   "u": "https://knowgod.com/pa/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Punjabi",
+   "locale": "pa",
+   "tool": "kgp"
+  },
+  "ron": {
+   "u": "https://knowgod.com/ro/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Romanian",
+   "locale": "ro",
+   "tool": "kgp"
+  },
+  "rus": {
+   "u": "https://knowgod.com/ru/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Russian",
+   "locale": "ru",
+   "tool": "kgp"
+  },
+  "smo": {
+   "u": "https://knowgod.com/sm/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Samoan",
+   "locale": "sm",
+   "tool": "kgp"
+  },
+  "srp": {
+   "u": "https://knowgod.com/sr-ME/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Serbian (Montenegro)",
+   "locale": "sr-ME",
+   "tool": "kgp"
+  },
+  "sna": {
+   "u": "https://knowgod.com/sn/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Shona",
+   "locale": "sn",
+   "tool": "kgp"
+  },
+  "sid": {
+   "u": "https://knowgod.com/sid/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Sidama",
+   "locale": "sid",
+   "tool": "fourlaws"
+  },
+  "sin": {
+   "u": "https://knowgod.com/si/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Sinhala",
+   "locale": "si",
+   "tool": "kgp"
+  },
+  "slk": {
+   "u": "https://knowgod.com/sk/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Slovak",
+   "locale": "sk",
+   "tool": "kgp"
+  },
+  "slv": {
+   "u": "https://knowgod.com/sl/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Slovenian",
+   "locale": "sl",
+   "tool": "kgp"
+  },
+  "som": {
+   "u": "https://knowgod.com/so/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Somali",
+   "locale": "so",
+   "tool": "kgp"
+  },
+  "spa": {
+   "u": "https://knowgod.com/es/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Spanish",
+   "locale": "es",
+   "tool": "kgp"
+  },
+  "swa": {
+   "u": "https://knowgod.com/sw/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Swahili",
+   "locale": "sw",
+   "tool": "kgp"
+  },
+  "swe": {
+   "u": "https://knowgod.com/sv/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Swedish",
+   "locale": "sv",
+   "tool": "kgp"
+  },
+  "tgk": {
+   "u": "https://knowgod.com/tg/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Tajik",
+   "locale": "tg",
+   "tool": "fourlaws"
+  },
+  "tam": {
+   "u": "https://knowgod.com/ta/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Tamil",
+   "locale": "ta",
+   "tool": "kgp"
+  },
+  "tel": {
+   "u": "https://knowgod.com/te-IN/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Telugu (India)",
+   "locale": "te-IN",
+   "tool": "kgp"
+  },
+  "tet": {
+   "u": "https://knowgod.com/tet/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Tetun",
+   "locale": "tet",
+   "tool": "fourlaws"
+  },
+  "tha": {
+   "u": "https://knowgod.com/th/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Thai",
+   "locale": "th",
+   "tool": "kgp"
+  },
+  "bod": {
+   "u": "https://knowgod.com/bo/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Tibetan",
+   "locale": "bo",
+   "tool": "fourlaws"
+  },
+  "tpi": {
+   "u": "https://knowgod.com/tpi/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Tok Pisin",
+   "locale": "tpi",
+   "tool": "kgp"
+  },
+  "ton": {
+   "u": "https://knowgod.com/to/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Tongan",
+   "locale": "to",
+   "tool": "kgp"
+  },
+  "tur": {
+   "u": "https://knowgod.com/tr/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Turkish",
+   "locale": "tr",
+   "tool": "fourlaws"
+  },
+  "ukr": {
+   "u": "https://knowgod.com/uk/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Ukrainian",
+   "locale": "uk",
+   "tool": "kgp"
+  },
+  "urd": {
+   "u": "https://knowgod.com/ur/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Urdu",
+   "locale": "ur",
+   "tool": "kgp"
+  },
+  "uzb": {
+   "u": "https://knowgod.com/uz/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Uzbek",
+   "locale": "uz",
+   "tool": "fourlaws"
+  },
+  "vie": {
+   "u": "https://knowgod.com/vi/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Vietnamese",
+   "locale": "vi",
+   "tool": "kgp"
+  },
+  "cym": {
+   "u": "https://knowgod.com/cy/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Welsh",
+   "locale": "cy",
+   "tool": "kgp"
+  },
+  "yor": {
+   "u": "https://knowgod.com/yo/kgp",
+   "n": "Knowing God Personally",
+   "ln": "Yoruba",
+   "locale": "yo",
+   "tool": "kgp"
+  },
+  "zul": {
+   "u": "https://knowgod.com/zu/fourlaws",
+   "n": "Four Spiritual Laws",
+   "ln": "Zulu",
+   "locale": "zu",
+   "tool": "fourlaws"
+  }
+ }
+}

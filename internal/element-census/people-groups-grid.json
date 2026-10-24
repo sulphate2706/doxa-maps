@@ -1,0 +1,27 @@
+{
+  "_": "Element census preset for check:element-census-vs-live — see internal/check-element-census-vs-live.mjs. Every sanctioned entry must carry the ruling, the date and the card; an entry without them is refused. The one sanctioned entry carries its ruling, its date and its card; the first run's ours-only list went out as findings for adjudication, which is the rule, and an allowlist written by the owner to make its own gate green is not evidence.",
+  "_leaf": "THE LEAF IS THE COMPOSITE, NOT THE GRID ALONE, AND THAT IS THE WHOLE POINT OF THE PAIRING. people-groups-grid is a copy of DX-life's UupgsList.vue, which is the BODY of doxa.life/research — but that page is a MAP plus that body. MEASURED 2026-09-25: censusing the grid leaf alone against /research reports 45 omissions, and they are the research map's entire chrome (Clustering, Off/Native/MST/Network, the tab strip, the legend) — nothing to do with the grid, and a list that long trains a reader to ignore it. research-map-plus-grid is map + grid, which is what /research IS, so it is the only pairing where an omission means something. 98 strings against their 95.",
+  "owner": "simpleresearch",
+  "requireH1": false,
+  "pages": [
+    {
+      "name": "research /research",
+      "leaf": "research-map-plus-grid/research-map-plus-grid/index.html",
+      "live": "https://doxa.life/research"
+    }
+  ],
+  "neg": {
+    "leaf": "research-map-plus-grid/research-map-plus-grid/index.html",
+    "text": "someone still needs prayer"
+  },
+  "sanctioned": [
+    {
+      "match": "^Hide Filters$",
+      "flags": "i",
+      "what": "our filter panel is OPEN on load, so the toggle reads 'Hide Filters' where their snapshot reads 'Show Filters' — the same control in the other state, not an extra one",
+      "ruling": "the dropdowns could not be selected or seen working; the toggle and filters must invite use",
+      "date": "2026-09-21",
+      "card": "BUG-FILTER-DROPDOWNS-NOT-DISCOVERABLE"
+    }
+  ]
+}

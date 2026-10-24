@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>partner</title>
+<style>html,body{margin:0}#w{height:900px}</style></head>
+<body><h1 id="partner-heading">Partner page</h1><div id="w"></div>
+<!-- A REAL PARTNER EMBED SETS THIS. The generated leaf pages bake window.MAP_APP_API_URL, and
+     without it every data fetch resolves same-origin against the partner and fails, so the wall
+     renders zero cards and the locale has nothing to translate. The first run of this gate
+     omitted it and reported "never mounted" — a harness gap, not the RTL defect. -->
+<script>window.MAP_APP_API_URL = "https://pray.doxa.life";</script>
+<script src="http://127.0.0.1:47395/dx-maps/my-upg-100-list/my-upg-100-list.js" crossorigin="anonymous"></script>
+<script>
+  var el = document.createElement("my-upg-100-list-map");
+  el.setAttribute('profile-config', JSON.stringify({ profile: "upg-100-mfe", locale: 'ar',
+    assetsBase: "http://127.0.0.1:47395/dx-maps/assets" }));
+  el.style.cssText = 'display:block;width:100%;height:900px';
+  document.getElementById('w').appendChild(el);
+</script></body></html>

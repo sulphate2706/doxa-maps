@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gospel x Internet — board (dev)</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: #f3f3f1; color: #3b463d; font-family: Roboto, -apple-system, 'Segoe UI', sans-serif; }
+    gospel-internet-board { display: block; width: 100%; height: 100vh; }
+  </style>
+</head>
+<body>
+<!-- Dev harness. The engine script is loaded by the board itself (ensureEngineScript), so nothing is
+     pulled from a CDN here: ?provider=maplibre|mapbox, ?tk=<token>, ?lang=ar, ?list=700, ?view=zero. -->
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var cfg = { profile: 'board', assetsBase: '/assets', urlState: 'query' };
+    if (q.get('tk')) cfg.tk = q.get('tk');
+    if (q.get('provider')) cfg.provider = q.get('provider');
+    if (q.get('locale')) cfg.locale = q.get('locale');
+    var el = document.createElement('gospel-internet-board');
+    el.setAttribute('profile-config', JSON.stringify(cfg));
+    document.body.appendChild(el);
+  })();
+</script>
+<script>window.MAP_APP_BASE_URL = '/';</script>
+<script type="module" src="./index.js"></script>
+</body>
+</html>

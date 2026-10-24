@@ -1,0 +1,5 @@
+{
+  "label": "Prayer Progress — prayer map",
+  "stage": "production",
+  "_comment": "Prayer Progress is a production map: the Plugin Studio and the gallery list it outside Experimental (stage is read into manifest.json by generate-tree)."
+}

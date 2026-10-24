@@ -1,0 +1,6 @@
+{
+  "stage": "experimental",
+  "type": "single",
+  "label": "My second screen",
+  "note": "The template's second, trivial screen. Delete it (and this file) if your plugin needs one screen; keep it to see how one bundle holds several. The template itself is kept off the Studio by its folder name, so a copy is listed."
+}

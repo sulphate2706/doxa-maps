@@ -1,0 +1,5 @@
+{
+  "type": "single",
+  "label": "Poster Design — Sizes",
+  "note": "Every poster size from the shared size table (library/constants/posterSizes.js), each as a print preview; also embeddable alone."
+}

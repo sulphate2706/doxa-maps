@@ -1,0 +1,64 @@
+{
+  "map": {
+    "title": "Grupuri de marcaje ale popoarelor",
+    "bands": {
+      "named": "centru numit",
+      "multi": "mai multe popoare",
+      "single": "un singur popor"
+    },
+    "note": "Un punct este un grup de marcaje ale popoarelor pe o rază de ~25 km, nu o limită municipală. Punctele numite provin dintr-un gazetteer citat.",
+    "unnamed": "loc fără nume — {lat}, {lng}",
+    "close": "Închide",
+    "country": "Țară",
+    "admin": "Zonă administrativă",
+    "peopleGroups": "Popoare",
+    "upgPopulation": "Populație UPG",
+    "internet": "Internet în țară",
+    "unknown": "necunoscut",
+    "pgHere": "Popoare aici",
+    "languages": "Limbi",
+    "sheetNote": "Un grup de marcaje ale popoarelor pe o rază de ~25 km, nu o limită municipală. Punctele numite provin dintr-un gazetteer citat (Nominatim/OSM); cele fără nume arată coordonate în loc de un nume inventat.",
+    "national": "Cifrele de internet sunt NAȚIONALE.",
+    "engineMissing": "Motorul hărții nu a putut fi încărcat."
+  },
+  "list": {
+    "title": "Orașe-cheie",
+    "intro": "Grupuri de marcaje ale popoarelor: grupuri numite (dintr-un gazetteer citat): {named}, în grupuri localizate: {clusters}.",
+    "filters": {
+      "named": "Centre de populație numite",
+      "multi": "Grupuri cu mai multe popoare",
+      "all": "Toate locurile"
+    },
+    "locations": "locuri: {n}",
+    "peopleGroups": "popoare: {n}",
+    "caveat": {
+      "rowLead": "Ce este un rând.",
+      "row": "Un grup de marcaje ale popoarelor pe o rază de ~25 km, nu o limită municipală. Fiecare marcaj reprezintă un popor, nu un oraș, așa că grupurile nu sunt numite niciodată prin deducție: cele {n} centre cu mai multe popoare au fost identificate prin {source} (ODbL, citat pe fiecare rând), iar restul rămân fără nume în loc să fie ghicite.",
+      "internet": "Sunt afișate drept context: conectivitatea pe oraș nu este disponibilă public la această scară, iar o cifră națională nu trebuie citită ca măsurătoare a orașului.",
+      "scope": "Această pagină conține doar locațiile popoarelor și conectivitatea — intenționat, fără date despre biserici, credincioși sau locuri de întâlnire."
+    },
+    "moreLanguages": "încă {n}"
+  },
+  "tables": {
+    "title": "Datele orașelor-cheie",
+    "intro": "Fiecare centru localizat, limbile vorbite acolo și canalele care ajung la el. Sortați, filtrați și exportați orice tabel; fiecare își poartă sursele și limitele.",
+    "tabs": {
+      "cities": "Orașe-cheie",
+      "langcity": "Limbi aici",
+      "languages": "După țară",
+      "operators": "Furnizori și operatori",
+      "messaging": "Aplicații de mesagerie"
+    },
+    "loading": "Se încarcă {name}…"
+  },
+  "posters": {
+    "heading": "Afișe ale orașelor-cheie",
+    "tag": "Mobilizare la rugăciune",
+    "itemNoun": "oraș",
+    "itemNounPlural": "orașe",
+    "soon": "În curând: o listă de rugăciune pentru fiecare oraș, cu fiecare popor neatins care trăiește acolo.",
+    "intro": "O foaie de tipărit pentru fiecare centru populat unde trăiesc popoare neatinse, numit după un dicționar geografic citat, niciodată prin deducție.",
+    "otherRegion": "Altele"
+  },
+  "loadFailed": "Datele nu au putut fi încărcate: {detail}"
+}

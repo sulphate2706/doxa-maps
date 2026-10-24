@@ -1,0 +1,3673 @@
+{
+  "_meta": {
+    "purpose": "EVERY human-readable string in the UPG-100 prayer packet, in one file, so a new language is a new block here and NOT a code change. packet.mjs reads LANG (default 'en') and falls back to 'en' key-by-key, so a partial translation renders the translated keys and leaves the rest in English rather than blanking.",
+    "how_to_translate": "Copy the \"en\" block, change the key to the ISO code, translate the values. Keep {placeholders} exactly as they are — they are substituted at render time. Do not translate scripture REFERENCES (book names are resolved by the reader's own Bible); DO translate the prayer text.",
+    "note_on_scripture": "point4_passage is the ONLY full scripture text in the packet (Mark 5:18-20, printed in full by product decision). A translation MUST supply its own rendering in a public-domain or properly-licensed version FOR THAT LANGUAGE. ⚠ Do NOT translate it yourself and do NOT leave a machine rendering in place: this is printed scripture in a prayer packet. A language block that omits point4_passage falls back to the English WEB text per-key, which is honest — an untrusted translation of Mark 5 is not.",
+    "note_on_references": "Scripture REFERENCES (Matthew 27:27, Mark 5:18-20) are deliberately left in English in every language block, so a reader can look them up in their own Bible regardless of the packet's language. ⚠ MEASURED TRADEOFF, not an oversight: on a rendered French page the English book names are visibly foreign next to fully-translated prayer text. If a language wants localised book names, add a `books` map to that block and teach the renderer to use it — do NOT translate the refs inline, because the same strings identify the passage for any future lookup.",
+    "note_on_scripts": "ALL 11 app locales now ship. Script coverage MEASURED by rendering at 48px and READING THE PIXELS: Latin, Cyrillic (ru), Arabic (ar) and CJK (zh) shape correctly with the system Georgia/Palatino/serif stack. DEVANAGARI (hi) does NOT — it renders as tofu boxes — so Noto Serif Devanagari is vendored (OFL) and base64-INLINED into hi packets by the renderer's SCRIPT_FONT map. Inlined, not linked, because a packet is a standalone file that must print offline; ~165KB on a 3.5MB packet, and only for that language. mr and ne map to the same face.\n⚠ TWO MEASUREMENTS LIED ABOUT THIS, so do not automate it cheaply: (1) comparing shaped width against a missing font reported ar and zh BROKEN and hi FINE — exactly backwards, because Devanagari tofu boxes match real glyph advance; (2) an ink-column-profile heuristic scored CORRECTLY-RENDERED Devanagari the same as tofu (3 vs 2 distinct heights), because its baseline bar gives a uniform profile. check:packet-render therefore asserts only that a DECLARED @font-face LOADED — the mechanical half — and leaves glyph correctness to a human reading a screenshot. A detector that blocks working packets is worse than none.",
+    "note_on_rtl": "ar is right-to-left. The renderer emits dir on <html> from an RTL set (packet-render.js), and scripture REFERENCES are wrapped in dir=ltr + unicode-bidi:isolate. Without that isolation the bidi algorithm reorders a reference that STARTS WITH A DIGIT: '1 Peter 5:6-11' rendered as 'Peter 5:6-11 1'. Note the reference LIST then reads right-to-left on an RTL page (first item rightmost) — that is correct for an RTL reader, not a defect.",
+    "note_on_blessing": "blessing_text is Numbers 6:24-26, printed in full on the lightweight list's first page. Each block carries a PUBLIC-DOMAIN text for its language, verbatim from bible.helloao.org (eBible), with its credit in blessing_credit; only the source's own outer speech marks are replaced by the language's quotation marks. ro and hi have no strict public-domain text on this pipeline, so they omit both keys and print the English per key. bless_refs (en, and ru with Synodal numbering) is the ONE line of further blessing references; book names come from `books`. ar: U+0671 alef wasla → U+0627 alef, display only; words and vowels unchanged (the wasla marks an alef that is silent in connected speech; plain alef is the ordinary print form and renders wherever Arabic renders, where U+0671 printed as a box on devices whose fonts lack it). Applies to every ar value, the Mark 5 passage included; check:packet-strings-parity asserts none remains.",
+    "note_on_themes": "themes (7) and scenes (3) head the prayer-points page: themes to weave into the wheel's five-minute blocks; each scene carries two references, one OT and one NT (en scene_refs, canonical addresses, the book named per language through books), the same six as the Wall of People Groups' bless-the-nations poster. Point 12 is the John 17 blessing ladder. Drafted by the gospel lane x11."
+  },
+  "en": {
+    "map_page_kicker": "UNENGAGED PEOPLE GROUPS",
+    "map_page_sub": "A prayer list of {count} unreached people groups",
+    "map_unavailable": "The map for this prayer list is not included in this printing.",
+    "map_page_series": "One of {k} UPG100 prayer lists",
+    "zone_affinity_A017": "Deaf people groups",
+    "list_header": "{from}–{to} of {count} · pray for them by name",
+    "people_suffix": "people",
+    "no_photo": "no photo available",
+    "deck_title": "Prayer Cards",
+    "card_country": "Country",
+    "card_population": "People",
+    "card_language": "Language",
+    "card_religion": "Religion",
+    "card_cta": "Pray for them",
+    "points_title": "12 Prayer Points",
+    "points_intro": "One hour with God, five minutes each. Pray these twelve for the people groups in this packet.",
+    "points_attrib": "Prayer rhythms inspired by Metacamp · metacamp.org",
+    "wheel_title": "Prayer Wheel",
+    "wheel_intro": "Spend an hour with God? It is easier than you think. Break it into 5-minute blocks and focus on one of these during each segment.",
+    "wheel_minutes": "minutes",
+    "wheel_start": "Start here",
+    "wheel_attrib": "Prayer Wheel · Metacamp Module 1 · metacamp.org",
+    "privacy_note": "Marker positions are approximate · people-group locations are generalised at the source for privacy",
+    "rhythms": {
+      "praise": "PRAISE",
+      "wait": "WAIT",
+      "confess": "CONFESS",
+      "read": "READ THE WORD",
+      "ask": "ASK",
+      "intercede": "INTERCESSION",
+      "pray_word": "PRAY THE WORD",
+      "thank": "THANK",
+      "sing": "SING",
+      "meditate": "MEDITATE",
+      "listen": "LISTEN",
+      "praise_end": "PRAISE"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Two-Cross Gospel",
+        "text": "That they accept Christ as King, forgiven by His cross — and take up their own cross, willing to suffer through persecution. May the Lamb receive the reward of His suffering, starting with me.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Holy Spirit & deliverance",
+        "text": "Spend time waiting on the Holy Spirit to tell you and empower you to pray as a bold prayer warrior for them: that they are filled with the Holy Spirit and made bold witnesses, not isolated; baptized in water and Spirit; every evil grip broken; and that believers in neighboring people groups are mobilized as laborers.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "We confess the unbelief that it is too big an ask for God to reach all of these unreached people groups in our lifetime. We receive the truth that He is reviving our love and faith for the global unreached.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "the Father's love",
+        "text": "That they would be SAVED and KNOW their heavenly Father loves them — and that through them He would bring salvation to their family, friends, neighbours, coworkers, classmates, everyone they know personally.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "baptisms",
+        "text": "New baptisms among the indigenous people groups, and every baptized disciple trained to baptize others — multiplying baptisms.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "laborers & shepherds",
+        "text": "Laborers sent to deeply love a people they have never met; good shepherds raised up from within.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Persons & Houses of Peace",
+        "text": "That laborers and indigenous leaders find the receptive person and the house of peace, deeply love them, disciple them well, baptize them, and train them to reach their friends and family with their newfound love for Jesus.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "rest",
+        "text": "Thank God for the rest He has given you; that they enter that rest in Christ, and that their spiritual family is a safe place.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "That the people group is flooded with worshippers — worship everywhere, in freedom and in chains.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "communion",
+        "text": "That they take communion together and grasp the freedom they have in Christ through His death, burial and resurrection.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "accountability",
+        "text": "Take some time and ask God this question, in listening prayer: what is it going to take for them to have people in their lives who will help them read the Word, pray, commit to community, and respond to suffering well? Spend five minutes listening to God for inspiration — He can give you solutions that help solve this.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "blessing · great · greater · greatest",
+        "text": "Pray Jesus’ prayer in John 17 over them. The blessing: eternal life, knowing God and Jesus, whom He sent. The great blessing: their own believers leading others to faith. The greater blessing: new spiritual families of their own, one in Christ. One of the greatest: leaders from among them who train others to start new spiritual families, again and again. Ask all this and more, beyond all we ask or think. Ask, as Jesus did, that they be one and kept from the evil one. None of it is possible unless Jesus is who He says He is.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "point4_passage": "As he was entering into the boat, he who had been possessed by demons begged him that he might be with him. He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you and how he had mercy on you.” He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
+    "point4_passage_credit": "Mark 5:18–20 · World English Bible (public domain)",
+    "point4_passage_bold": "He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you and how he had mercy on you.”",
+    "point4_heart_title": "THE HEAVENLY FATHER'S HEART",
+    "point4_heart_lede": "They need to know that their Heavenly Father loves them, He wants to save them, and through them He wants their unreached people group neighbors to be saved.",
+    "point4_heart_leadin": "More scriptures about the heavenly Father's heart",
+    "point4_heart": [
+      {
+        "who": "Noah",
+        "ref": "Genesis 6:11–7:1"
+      },
+      {
+        "who": "Lot",
+        "ref": "Genesis 19:12–23"
+      },
+      {
+        "who": "Rahab",
+        "ref": "Joshua 2:17–20"
+      },
+      {
+        "who": "The Gerasene",
+        "ref": "Mark 5:12–20"
+      },
+      {
+        "who": "Cornelius",
+        "ref": "Acts 10:23–25"
+      },
+      {
+        "who": "Lydia",
+        "ref": "Acts 16:14–15"
+      },
+      {
+        "who": "The jailer",
+        "ref": "Acts 16:31"
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "How this list was found",
+    "funnel_intro": "Every people group on earth, narrowed to the ones with no church and no worker.",
+    "funnel_all": "people groups in the world",
+    "funnel_unreached": "are unreached — under 2% evangelical",
+    "funnel_frontier": "are frontier — 0.1% or less, and almost no one is going",
+    "funnel_doxa": "are on this prayer network’s list",
+    "funnel_doxa_note": "{frontier} of them are frontier",
+    "funnel_this": "are in THIS packet",
+    "funnel_packets": "UPG100 prayer packets divide the {total} among them",
+    "funnel_share": "This packet is 1 of {k} lists · {pct}% of the {total}",
+    "funnel_foot": "Counts from {imb_pub}, captured {imb_date}. {unassigned} of the {total} are not yet in any list.",
+    "funnel_people": "people",
+    "funnel_foot_source": "Counts from {imb_pub}, captured {imb_date}.",
+    "funnel_share_pct": "This packet is {pct}% of the {total}",
+    "funnel_list_doxa": "Project 2000: this prayer network’s people groups",
+    "funnel_list_unreached": "Project 7000: unreached people groups",
+    "funnel_list_frontier": "Project 4700: frontier people groups",
+    "funnel_list_frontier-500k": "Project 700: frontier people groups of 500,000 or more",
+    "funnel_list_unengaged": "Unengaged unreached people groups",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} more",
+    "life_kicker": "Perspective",
+    "life_title": "A human life, in weeks",
+    "life_lede": "One hundred years. Fifty-two weeks each. Five thousand two hundred boxes — and that is the whole of it. Every week you will ever pray is one of these.",
+    "life_foot": "100 years x 52 weeks = 5,200 weeks.",
+    "life_weeks": "weeks",
+    "christian_kicker": "The same 5,200 boxes",
+    "christian_title": "Who among them knows Christ",
+    "christian_lede": "Each box is an equal share of the people in this list. The shaded boxes are the share who follow Jesus (evangelical); the rest are still waiting.",
+    "christian_reached": "Followers of Jesus",
+    "christian_lost": "Not yet following Jesus",
+    "christian_people": "people",
+    "christian_coverage": "computed over {matched} of the {total} groups in this list",
+    "christian_foot": "Population-weighted from peoplegroups.org EvangelicalLevel, taking each published band at its midpoint and 0 for \"No Known Evangelicals\"",
+    "pray_blessed": "Did I bless them?",
+    "pray_know": "What do you want me to know?",
+    "pray_do": "What do you want me to do?",
+    "funnel_eq_title": "How each number is reached",
+    "funnel_tip": "This packet is 1 of {n} UPG100 lists",
+    "desc_where_both": "The {people} live in {country} and speak {language}.",
+    "desc_where_country": "The {people} live in {country}.",
+    "desc_where_language": "The {people} speak {language}.",
+    "desc_gsec_0": "There are no known evangelical Christians among them, no church, and no gospel resource in their language.",
+    "desc_gsec_1": "Fewer than 2% are evangelical, and no one has been planting churches among them in the last two years.",
+    "desc_gsec_2": "Fewer than 2% are evangelical, though church planting has begun in some communities.",
+    "desc_gsec_3": "Fewer than 2% are evangelical, and scattered church planting has begun among them.",
+    "desc_gsec_4": "Between 2% and 5% are evangelical.",
+    "desc_gsec_5": "Between 5% and 10% are evangelical.",
+    "desc_gsec_6": "More than 10% are evangelical.",
+    "sets_kicker": "Who is near, and who is not",
+    "sets_title": "Two ways to see the same people",
+    "sets_lede": "The circle asks whether a people has been reached. The rings ask how far they sit from someone who could reach them.",
+    "sets_bounded_title": "Reached, and not",
+    "sets_centered_title": "Distance from a neighbour",
+    "sets_bounded_tally": "{inside} inside · {outside} outside · {unknown} unknown",
+    "sets_no_data": "{n} without data",
+    "sets_centered_tally": "{placed} placed · {centre} at the centre · {unplaced} unplaced",
+    "ring_band_dialect": "Same dialect",
+    "ring_band_language": "Same language",
+    "ring_band_family": "Same language family",
+    "ring_band_geography": "Nearby only",
+    "ring_culture_same": "same people",
+    "ring_culture_near": "near culture",
+    "ring_culture_different": "different culture",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "The life of Jesus, about 33 years",
+    "life_full": "A full life of 100 years",
+    "sets_head_bounded": "Bounded set",
+    "sets_head_centered": "Centered set",
+    "sets_rings_head": "The rings, from the centre outward",
+    "light_intro": "Pray for each people group by name. Every row has three columns: add a tally mark in a column each time you do what it asks.",
+    "light_col_group": "People group",
+    "books": {
+      "Matthew": "Matthew",
+      "Acts": "Acts",
+      "John": "John",
+      "1 John": "1 John",
+      "Mark": "Mark",
+      "Luke": "Luke",
+      "Hebrews": "Hebrews",
+      "Colossians": "Colossians",
+      "1 Corinthians": "1 Corinthians",
+      "1 Peter": "1 Peter",
+      "Genesis": "Genesis",
+      "Joshua": "Joshua",
+      "Numbers": "Numbers",
+      "Psalm": "Psalm",
+      "Haggai": "Haggai",
+      "Isaiah": "Isaiah",
+      "Habakkuk": "Habakkuk",
+      "Ephesians": "Ephesians"
+    },
+    "christian_per_cell": "Each box ≈ {n} people",
+    "howto_title": "How to pray with this list",
+    "howto_bless": "Bless them by name. You can pray the blessing God gave Aaron to speak over his people:",
+    "howto_bless_more": "More blessings to pray:",
+    "howto_know": "Ask Jesus what he wants you to know about this people group.",
+    "howto_do": "Ask Jesus what he wants you to do for this people group.",
+    "howto_wheel": "At the end of this packet, a prayer wheel guides you through an hour of prayer for these people groups.",
+    "pace_title": "Your prayer pace",
+    "pace_lead": "Pace matters. Choose how often you will pray for every people group on this list by name.",
+    "pace_daily": "Daily",
+    "pace_weekly": "Weekly",
+    "pace_fortnight": "Every two weeks",
+    "pace_monthly": "Monthly",
+    "pace_quarter": "Every three months",
+    "pace_strongest": "Strongest",
+    "pace_healthiest": "Healthiest",
+    "pace_healthy": "Healthy",
+    "pace_normal": "Normal",
+    "pace_slower": "Slower",
+    "pace_all": "all {n}, every day",
+    "pace_day": "about {n} a day",
+    "pace_week": "about {n} a week",
+    "pace_month": "about {n} a month",
+    "pace_note": "Praying for every group daily is for gifted intercessors who give about three hours a day to prayer. For most of us, weekly is a healthy, steady pace.",
+    "blessing_text": "“The LORD bless you, and keep you. The LORD make his face to shine on you, and be gracious to you. The LORD lift up his face towards you, and give you peace.”",
+    "blessing_credit": "Numbers 6:24–26 · World English Bible, British Edition (public domain) · ebible.org",
+    "howto_bless_col": "Bless them by name, with the blessing above or another from Scripture.",
+    "example_title": "Example",
+    "example_note": "One mark each time you pray; the fifth mark crosses the four before it.",
+    "themes_title": "Prayer themes",
+    "themes_intro": "Weave these themes into your five-minute blocks on the prayer wheel. They add range and fresh ideas.",
+    "themes": [
+      "Bless the nations",
+      "Perfect unity",
+      "Protection from evil",
+      "Hearing God’s voice",
+      "True identity in Christ",
+      "Deep relational health",
+      "The priesthood of believers"
+    ],
+    "scenes_title": "Prayer scenes",
+    "scenes": [
+      "Treasure",
+      "Mountain",
+      "Sea"
+    ],
+    "scene_refs": [
+      [
+        "Haggai 2:7",
+        "Matthew 13:44"
+      ],
+      [
+        "Isaiah 2:2",
+        "Matthew 21:21"
+      ],
+      [
+        "Habakkuk 2:14",
+        "Matthew 8:26"
+      ]
+    ],
+    "sets_rings_lede": "Each dot is a people group in this list. Its ring shows how much language and culture it shares with the nearest believers who could reach it: the nearer the cross, the more they share. Ring 1 speaks the same dialect and is the same people; ring 9 shares only a language family, not the culture; past the last ring, believers live nearby but share no language. Read from 9 at the bottom up to 1 at the cross."
+  },
+  "es": {
+    "map_page_kicker": "GRUPOS ÉTNICOS NO EVANGELIZADOS",
+    "map_page_sub": "Una lista de oración de {count} grupos étnicos no alcanzados",
+    "map_unavailable": "El mapa de esta lista de oración no se incluye en esta impresión.",
+    "map_page_series": "Una de las {k} listas de oración UPG100",
+    "zone_affinity_A017": "Grupos de personas sordas",
+    "list_header": "{from}–{to} de {count} · ora por ellos por nombre",
+    "people_suffix": "personas",
+    "no_photo": "sin fotografía disponible",
+    "deck_title": "Tarjetas de Oración",
+    "card_country": "País",
+    "card_population": "Personas",
+    "card_language": "Idioma",
+    "card_religion": "Religión",
+    "card_cta": "Ora por ellos",
+    "points_title": "12 Puntos de Oración",
+    "points_intro": "Una hora con Dios, cinco minutos cada uno. Ora estos doce por los grupos étnicos de este paquete.",
+    "points_attrib": "Ritmos de oración inspirados en Metacamp · metacamp.org",
+    "wheel_title": "Rueda de Oración",
+    "wheel_intro": "¿Pasar una hora con Dios? Es más fácil de lo que piensas. Divídela en bloques de 5 minutos y concéntrate en uno de estos durante cada segmento.",
+    "wheel_minutes": "minutos",
+    "wheel_start": "Empieza aquí",
+    "wheel_attrib": "Rueda de Oración · Metacamp Módulo 1 · metacamp.org",
+    "privacy_note": "Las posiciones de los marcadores son aproximadas · las ubicaciones de los grupos étnicos se generalizan en la fuente por privacidad",
+    "rhythms": {
+      "praise": "ALABANZA",
+      "wait": "ESPERAR",
+      "confess": "CONFESAR",
+      "read": "LEER LA PALABRA",
+      "ask": "PEDIR",
+      "intercede": "INTERCESIÓN",
+      "pray_word": "ORAR LA PALABRA",
+      "thank": "AGRADECER",
+      "sing": "CANTAR",
+      "meditate": "MEDITAR",
+      "listen": "ESCUCHAR",
+      "praise_end": "ALABANZA"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Evangelio de las dos cruces",
+        "text": "Que acepten a Cristo como Rey, perdonados por Su cruz, y tomen su propia cruz, dispuestos a sufrir en medio de la persecución. Que el Cordero reciba la recompensa de Su sufrimiento, empezando por mí.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Espíritu Santo y liberación",
+        "text": "Dedica tiempo a esperar en el Espíritu Santo, para que te hable y te capacite para orar por ellos como un valiente guerrero de oración: que sean llenos del Espíritu Santo y hechos testigos valientes, no aislados; bautizados en agua y en el Espíritu; que toda atadura del mal sea rota; y que los creyentes de los grupos étnicos vecinos sean movilizados como obreros.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Confesamos la incredulidad de pensar que es demasiado pedirle a Dios que alcance a todos estos grupos étnicos no alcanzados en nuestra generación. Recibimos la verdad de que Él está avivando nuestro amor y nuestra fe por los no alcanzados del mundo.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "el amor del Padre",
+        "text": "Que sean SALVOS y CONOZCAN que su Padre celestial los ama — y que a través de ellos Él lleve salvación a su familia, amigos, vecinos, compañeros de trabajo, compañeros de clase, a todos los que conocen personalmente.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "bautismos",
+        "text": "Nuevos bautismos entre los grupos étnicos indígenas, y que cada discípulo bautizado sea entrenado para bautizar a otros: bautismos que se multiplican.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "obreros y pastores",
+        "text": "Obreros enviados a amar profundamente a un pueblo que nunca han conocido; buenos pastores levantados desde dentro.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Personas y Casas de Paz",
+        "text": "Que los obreros y los líderes indígenas encuentren a la persona receptiva y la casa de paz, las amen profundamente, las discipulen bien, las bauticen y las entrenen para alcanzar a sus amigos y familiares con su nuevo amor por Jesús.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "descanso",
+        "text": "Da gracias a Dios por el descanso que te ha dado; que ellos entren en ese descanso en Cristo, y que su familia espiritual sea un lugar seguro.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Que el grupo étnico sea inundado de adoradores — adoración en todas partes, en libertad y en cadenas.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "comunión",
+        "text": "Que tomen la comunión juntos y comprendan la libertad que tienen en Cristo por medio de Su muerte, sepultura y resurrección.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "rendición de cuentas",
+        "text": "Toma un tiempo y hazle a Dios esta pregunta, en oración de escucha: ¿qué hará falta para que tengan en su vida personas que les ayuden a leer la Palabra, orar, comprometerse con la comunidad y responder bien al sufrimiento? Pasa cinco minutos escuchando a Dios para recibir inspiración: Él puede darte soluciones que ayuden a resolverlo.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "bendición · grande · mayor · de las mayores",
+        "text": "Ora sobre ellos la oración de Jesús en Juan 17. La bendición: la vida eterna, conocer a Dios y a Jesús, a quien él envió. La gran bendición: que sus propios creyentes lleven a otros a la fe. La bendición mayor: nuevas familias espirituales propias, unidas en Cristo. Una de las mayores: líderes de entre ellos que formen a otros para iniciar nuevas familias espirituales, una y otra vez. Pide todo esto y más, mucho más de lo que pedimos o pensamos. Pide, como Jesús, que sean uno y que sean guardados del maligno. Nada de esto es posible si Jesús no es quien dice ser.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Cómo se formó esta lista",
+    "funnel_intro": "Todos los grupos étnicos de la tierra, reducidos a los que no tienen iglesia ni obrero.",
+    "funnel_all": "grupos étnicos en el mundo",
+    "funnel_unreached": "no están alcanzados: menos del 2% evangélico",
+    "funnel_frontier": "son de frontera: 0,1% o menos, y casi nadie va",
+    "funnel_doxa": "están en la lista de esta red de oración",
+    "funnel_doxa_note": "{frontier} de ellos son de frontera",
+    "funnel_this": "están en ESTE cuadernillo",
+    "funnel_packets": "cuadernillos de oración UPG100 se reparten los {total}",
+    "funnel_share": "Este cuadernillo es 1 de {k} listas · {pct}% de los {total}",
+    "funnel_foot": "Cifras de {imb_pub}, tomadas el {imb_date}. {unassigned} de los {total} aún no están en ninguna lista.",
+    "funnel_people": "personas",
+    "funnel_foot_source": "Cifras de {imb_pub}, tomadas el {imb_date}.",
+    "funnel_share_pct": "Este cuadernillo es el {pct}% de los {total}",
+    "funnel_list_doxa": "Proyecto 2000: los grupos étnicos de esta red de oración",
+    "funnel_list_unreached": "Proyecto 7000: grupos étnicos no alcanzados",
+    "funnel_list_frontier": "Proyecto 4700: grupos étnicos de frontera",
+    "funnel_list_frontier-500k": "Proyecto 700: grupos étnicos de frontera de 500.000 o más",
+    "funnel_list_unengaged": "Grupos étnicos no alcanzados y sin obreros",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} más",
+    "funnel_eq_title": "Cómo se obtiene cada número",
+    "funnel_tip": "Este cuadernillo es 1 de {n} listas UPG100",
+    "life_kicker": "Perspectiva",
+    "life_title": "Una vida humana, en semanas",
+    "life_lede": "Cien años. Cincuenta y dos semanas cada uno. Cinco mil doscientas casillas — y eso es todo. Cada semana en que ores será una de estas.",
+    "life_foot": "100 años x 52 semanas = 5.200 semanas.",
+    "life_weeks": "semanas",
+    "christian_kicker": "Las mismas 5.200 casillas",
+    "christian_title": "Quiénes entre ellos conocen a Cristo",
+    "christian_lede": "Cada casilla es una parte igual de las personas de esta lista. Las casillas sombreadas son la parte que sigue a Jesús (evangélicos); las demás aún esperan.",
+    "christian_reached": "Seguidores de Jesús",
+    "christian_lost": "Aún no siguen a Jesús",
+    "christian_people": "personas",
+    "christian_coverage": "calculado sobre {matched} de los {total} grupos de esta lista",
+    "christian_foot": "Ponderado por población a partir del EvangelicalLevel de peoplegroups.org, tomando cada banda publicada en su punto medio y 0 para «No Known Evangelicals»",
+    "pray_blessed": "¿Los bendije?",
+    "pray_know": "¿Qué quieres que sepa?",
+    "pray_do": "¿Qué quieres que haga?",
+    "point4_passage": "Y entrando él en el barco, le rogaba el que había sido fatigado del demonio, para estar con él. Mas Jesús no le permitió, sino le dijo: Vete á tu casa, á los tuyos, y cuéntales cuán grandes cosas el Señor ha hecho contigo, y cómo ha tenido misericordia de ti. Y se fué, y comenzó á publicar en Decápolis cuán grandes cosas Jesús había hecho con él: y todos se maravillaban.",
+    "point4_passage_credit": "Marcos 5:18–20 · Reina Valera 1909 (dominio público) · ebible.org",
+    "point4_passage_bold": "Mas Jesús no le permitió, sino le dijo: Vete á tu casa, á los tuyos, y cuéntales cuán grandes cosas el Señor ha hecho contigo, y cómo ha tenido misericordia de ti.",
+    "point4_heart_title": "EL CORAZÓN DEL PADRE CELESTIAL",
+    "point4_heart_lede": "Necesitan saber que su Padre celestial los ama, que quiere salvarlos, y que por medio de ellos quiere que sus vecinos de grupos étnicos no alcanzados sean salvos.",
+    "point4_heart_leadin": "Más pasajes sobre el corazón del Padre celestial",
+    "point4_heart": [
+      {
+        "who": "Noé"
+      },
+      {
+        "who": "Lot"
+      },
+      {
+        "who": "Rahab"
+      },
+      {
+        "who": "El gadareno"
+      },
+      {
+        "who": "Cornelio"
+      },
+      {
+        "who": "Lidia"
+      },
+      {
+        "who": "El carcelero"
+      }
+    ],
+    "desc_where_both": "Los {people} viven en {country} y hablan {language}.",
+    "desc_where_country": "Los {people} viven en {country}.",
+    "desc_where_language": "Los {people} hablan {language}.",
+    "desc_gsec_0": "No se conocen cristianos evangélicos entre ellos, ni iglesia, ni ningún recurso del evangelio en su idioma.",
+    "desc_gsec_1": "Menos del 2% evangélico, y nadie ha plantado iglesias entre ellos en los últimos dos años.",
+    "desc_gsec_2": "Menos del 2% evangélico, aunque en algunas comunidades ya ha comenzado la plantación de iglesias.",
+    "desc_gsec_3": "Menos del 2% evangélico, y entre ellos ha comenzado una plantación de iglesias dispersa.",
+    "desc_gsec_4": "Entre el 2% y el 5% son evangélicos.",
+    "desc_gsec_5": "Entre el 5% y el 10% son evangélicos.",
+    "desc_gsec_6": "Más del 10% son evangélicos.",
+    "sets_kicker": "Quién está cerca y quién no",
+    "sets_title": "Dos maneras de ver al mismo pueblo",
+    "sets_lede": "El círculo pregunta si un pueblo ha sido alcanzado. Los anillos preguntan a qué distancia está de alguien que podría alcanzarlo.",
+    "sets_bounded_title": "Alcanzados y no alcanzados",
+    "sets_centered_title": "Distancia a un vecino",
+    "sets_bounded_tally": "{inside} dentro · {outside} fuera · {unknown} desconocido",
+    "sets_no_data": "{n} sin datos",
+    "sets_centered_tally": "{placed} ubicados · {centre} en el centro · {unplaced} sin ubicar",
+    "ring_band_dialect": "Mismo dialecto",
+    "ring_band_language": "Misma lengua",
+    "ring_band_family": "Misma familia lingüística",
+    "ring_band_geography": "Solo cercanía",
+    "ring_culture_same": "mismo pueblo",
+    "ring_culture_near": "cultura cercana",
+    "ring_culture_different": "cultura distinta",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "La vida de Jesús, unos 33 años",
+    "life_full": "Una vida completa de 100 años",
+    "sets_head_bounded": "Conjunto delimitado",
+    "sets_head_centered": "Conjunto centrado",
+    "sets_rings_head": "Los anillos, del centro hacia fuera",
+    "light_intro": "Ora por cada pueblo por su nombre. Cada fila tiene tres columnas: haz una marca en una columna cada vez que hagas lo que pide.",
+    "light_col_group": "Pueblo",
+    "books": {
+      "Matthew": "Mateo",
+      "Acts": "Hechos",
+      "John": "Juan",
+      "1 John": "1 Juan",
+      "Mark": "Marcos",
+      "Luke": "Lucas",
+      "Hebrews": "Hebreos",
+      "Colossians": "Colosenses",
+      "1 Corinthians": "1 Corintios",
+      "1 Peter": "1 Pedro",
+      "Genesis": "Génesis",
+      "Joshua": "Josué",
+      "Numbers": "Números",
+      "Psalm": "Salmo",
+      "Haggai": "Hageo",
+      "Isaiah": "Isaías",
+      "Habakkuk": "Habacuc",
+      "Ephesians": "Efesios"
+    },
+    "christian_per_cell": "Cada casilla ≈ {n} personas",
+    "howto_title": "Cómo orar con esta lista",
+    "howto_bless": "Bendícelos por su nombre. Puedes orar la bendición que Dios dio a Aarón para pronunciar sobre su pueblo:",
+    "howto_bless_more": "Más bendiciones para orar:",
+    "howto_know": "Pregúntale a Jesús qué quiere que sepas sobre este pueblo.",
+    "howto_do": "Pregúntale a Jesús qué quiere que hagas por este pueblo.",
+    "howto_wheel": "Al final de este paquete, una rueda de oración te guía en una hora de oración por estos pueblos.",
+    "pace_title": "Tu ritmo de oración",
+    "pace_lead": "El ritmo importa. Elige cada cuánto orarás por cada pueblo de esta lista por su nombre.",
+    "pace_daily": "Cada día",
+    "pace_weekly": "Cada semana",
+    "pace_fortnight": "Cada dos semanas",
+    "pace_monthly": "Cada mes",
+    "pace_quarter": "Cada tres meses",
+    "pace_strongest": "El más fuerte",
+    "pace_healthiest": "El más sano",
+    "pace_healthy": "Sano",
+    "pace_normal": "Normal",
+    "pace_slower": "Más lento",
+    "pace_all": "los {n}, cada día",
+    "pace_day": "unos {n} al día",
+    "pace_week": "unos {n} por semana",
+    "pace_month": "unos {n} al mes",
+    "pace_note": "Orar cada día por todos los pueblos es para intercesores con ese don, que dedican unas tres horas diarias a la oración. Para la mayoría de nosotros, cada semana es un ritmo sano y constante.",
+    "blessing_text": "«Jehová te bendiga, y te guarde: Haga resplandecer Jehová su rostro sobre ti, y haya de ti misericordia: Jehová alce á ti su rostro, y ponga en ti paz.»",
+    "blessing_credit": "Números 6:24–26 · Reina Valera 1909 (dominio público) · ebible.org",
+    "howto_bless_col": "Bendícelos por su nombre, con la bendición de arriba u otra de las Escrituras.",
+    "example_title": "Ejemplo",
+    "example_note": "Una marca cada vez que ores; la quinta cruza las cuatro anteriores.",
+    "themes_title": "Temas de oración",
+    "themes_intro": "Entreteje estos temas en tus bloques de cinco minutos de la rueda de oración. Dan variedad e ideas nuevas.",
+    "themes": [
+      "Bendecir a las naciones",
+      "Unidad perfecta",
+      "Protección del mal",
+      "Oír la voz de Dios",
+      "Verdadera identidad en Cristo",
+      "Relaciones profundas y sanas",
+      "El sacerdocio de los creyentes"
+    ],
+    "scenes_title": "Imágenes para orar",
+    "scenes": [
+      "Tesoro",
+      "Monte",
+      "Mar"
+    ],
+    "sets_rings_lede": "Cada punto es un pueblo de esta lista. Su anillo muestra cuánta lengua y cultura comparte con los creyentes más cercanos que podrían alcanzarlo: cuanto más cerca de la cruz, más comparten. El anillo 1 habla el mismo dialecto y es el mismo pueblo; el anillo 9 solo comparte una familia de lenguas, no la cultura; fuera del último anillo, los creyentes viven cerca pero no comparten idioma. Lee desde el 9, abajo, hasta el 1, en la cruz."
+  },
+  "fr": {
+    "map_page_kicker": "GROUPES ETHNIQUES NON ATTEINTS",
+    "map_page_sub": "Une liste de prière de {count} groupes ethniques non atteints",
+    "map_unavailable": "La carte de cette liste de prière n’est pas incluse dans cette impression.",
+    "map_page_series": "Une des {k} listes de prière UPG100",
+    "zone_affinity_A017": "Groupes de personnes sourdes",
+    "list_header": "{from}–{to} sur {count} · priez pour eux par leur nom",
+    "people_suffix": "personnes",
+    "no_photo": "aucune photo disponible",
+    "deck_title": "Cartes de Prière",
+    "card_country": "Pays",
+    "card_population": "Personnes",
+    "card_language": "Langue",
+    "card_religion": "Religion",
+    "card_cta": "Priez pour eux",
+    "points_title": "12 Sujets de Prière",
+    "points_intro": "Une heure avec Dieu, cinq minutes chacun. Priez ces douze sujets pour les groupes ethniques de ce dossier.",
+    "points_attrib": "Rythmes de prière inspirés de Metacamp · metacamp.org",
+    "wheel_title": "Roue de Prière",
+    "wheel_intro": "Passer une heure avec Dieu ? C'est plus simple qu'il n'y paraît. Divisez-la en blocs de 5 minutes et concentrez-vous sur l'un de ces sujets à chaque segment.",
+    "wheel_minutes": "minutes",
+    "wheel_start": "Commencez ici",
+    "wheel_attrib": "Roue de Prière · Metacamp Module 1 · metacamp.org",
+    "privacy_note": "Les positions des repères sont approximatives · les localisations des groupes ethniques sont généralisées à la source pour des raisons de confidentialité",
+    "rhythms": {
+      "praise": "LOUANGE",
+      "wait": "ATTENDRE",
+      "confess": "CONFESSER",
+      "read": "LIRE LA PAROLE",
+      "ask": "DEMANDER",
+      "intercede": "INTERCESSION",
+      "pray_word": "PRIER LA PAROLE",
+      "thank": "REMERCIER",
+      "sing": "CHANTER",
+      "meditate": "MÉDITER",
+      "listen": "ÉCOUTER",
+      "praise_end": "LOUANGE"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Évangile des deux croix",
+        "text": "Qu'ils acceptent Christ comme Roi, pardonnés par Sa croix — et qu'ils prennent leur propre croix, prêts à souffrir à travers la persécution. Que l'Agneau reçoive la récompense de Ses souffrances, à commencer par moi.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Saint-Esprit et délivrance",
+        "text": "Prenez du temps pour attendre le Saint-Esprit, afin qu'Il vous parle et vous donne la force de prier pour eux comme de vaillants guerriers de prière : qu'ils soient remplis du Saint-Esprit et deviennent des témoins hardis, non isolés ; baptisés d'eau et d'Esprit ; que toute emprise du mal soit brisée ; et que les croyants des peuples voisins soient mobilisés comme ouvriers.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Nous confessons l'incrédulité qui pense que c'est trop demander à Dieu d'atteindre tous ces peuples non atteints de notre vivant. Nous recevons la vérité : Il ravive notre amour et notre foi pour les non-atteints du monde entier.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "l'amour du Père",
+        "text": "Qu'ils soient SAUVÉS et qu'ils SACHENT que leur Père céleste les aime — et qu'à travers eux Il apporte le salut à leur famille, leurs amis, leurs voisins, leurs collègues, leurs camarades, à tous ceux qu'ils connaissent personnellement.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "baptêmes",
+        "text": "De nouveaux baptêmes parmi les peuples autochtones, et chaque disciple baptisé formé à baptiser d'autres personnes — des baptêmes qui se multiplient.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "ouvriers et bergers",
+        "text": "Des ouvriers envoyés pour aimer profondément un peuple qu'ils n'ont jamais rencontré ; de bons bergers suscités de l'intérieur.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Personnes et Maisons de Paix",
+        "text": "Que les ouvriers et les responsables autochtones trouvent la personne réceptive et la maison de paix, les aiment profondément, en fassent de vrais disciples, les baptisent et les forment à atteindre leurs amis et leur famille avec leur amour tout neuf pour Jésus.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "repos",
+        "text": "Remerciez Dieu pour le repos qu'Il vous a donné ; qu'ils entrent dans ce repos en Christ, et que leur famille spirituelle soit un lieu sûr.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Que le groupe ethnique soit inondé d'adorateurs — l'adoration partout, dans la liberté comme dans les chaînes.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "communion",
+        "text": "Qu'ils prennent la communion ensemble et saisissent la liberté qu'ils ont en Christ par Sa mort, Son ensevelissement et Sa résurrection.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "redevabilité",
+        "text": "Prenez un moment et posez à Dieu cette question, dans une prière d'écoute : que faudra-t-il pour qu'ils aient dans leur vie des personnes qui les aident à lire la Parole, à prier, à s'engager dans une communauté et à bien répondre à la souffrance ? Passez cinq minutes à écouter Dieu pour recevoir de l'inspiration — Il peut vous donner des solutions pour y répondre.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "bénédiction · grande · plus grande · parmi les plus grandes",
+        "text": "Priez sur eux la prière de Jésus en Jean 17. La bénédiction : la vie éternelle, connaître Dieu et Jésus, celui qu’il a envoyé. La grande bénédiction : que leurs propres croyants amènent d’autres à la foi. Une bénédiction plus grande : de nouvelles familles spirituelles bien à eux, unies en Christ. L’une des plus grandes : des responsables issus de leur peuple qui forment d’autres personnes à fonder de nouvelles familles spirituelles, encore et encore. Demandez tout cela et plus encore, au-delà de tout ce que nous demandons ou pensons. Demandez, comme Jésus, qu’ils soient un et gardés du malin. Rien de cela n’est possible si Jésus n’est pas celui qu’il dit être.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Comment cette liste a été établie",
+    "funnel_intro": "Tous les peuples de la terre, réduits à ceux qui n’ont ni église ni ouvrier.",
+    "funnel_all": "peuples dans le monde",
+    "funnel_unreached": "sont non atteints — moins de 2% d’évangéliques",
+    "funnel_frontier": "sont des peuples frontières — 0,1% ou moins, et presque personne n’y va",
+    "funnel_doxa": "sont sur la liste de ce réseau de prière",
+    "funnel_doxa_note": "dont {frontier} peuples frontières",
+    "funnel_this": "sont dans CE livret",
+    "funnel_packets": "livrets de prière UPG100 se partagent les {total}",
+    "funnel_share": "Ce livret est 1 des {k} listes · {pct}% des {total}",
+    "funnel_foot": "Chiffres de {imb_pub}, relevés le {imb_date}. {unassigned} des {total} ne figurent encore sur aucune liste.",
+    "funnel_people": "personnes",
+    "funnel_foot_source": "Chiffres de {imb_pub}, relevés le {imb_date}.",
+    "funnel_share_pct": "Ce livret représente {pct}% des {total}",
+    "funnel_list_doxa": "Projet 2000 : les peuples de ce réseau de prière",
+    "funnel_list_unreached": "Projet 7000 : peuples non atteints",
+    "funnel_list_frontier": "Projet 4700 : peuples frontières",
+    "funnel_list_frontier-500k": "Projet 700 : peuples frontières de 500 000 personnes ou plus",
+    "funnel_list_unengaged": "Peuples non atteints et sans ouvrier",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} autres",
+    "funnel_eq_title": "Comment chaque nombre est obtenu",
+    "funnel_tip": "Ce livret est 1 sur {n} listes UPG100",
+    "life_kicker": "Mise en perspective",
+    "life_title": "Une vie humaine, en semaines",
+    "life_lede": "Cent ans. Cinquante-deux semaines chacune. Cinq mille deux cents cases — et c’est tout. Chaque semaine où vous prierez sera l’une d’elles.",
+    "life_foot": "100 ans x 52 semaines = 5 200 semaines.",
+    "life_weeks": "semaines",
+    "christian_kicker": "Les mêmes 5 200 cases",
+    "christian_title": "Qui parmi eux connaît le Christ",
+    "christian_lede": "Chaque case représente une part égale des personnes de cette liste. Les cases colorées sont la part qui suit Jésus (évangéliques) ; les autres attendent encore.",
+    "christian_reached": "Disciples de Jésus",
+    "christian_lost": "Ne suivent pas encore Jésus",
+    "christian_people": "personnes",
+    "christian_coverage": "calculé sur {matched} des {total} groupes de cette liste",
+    "christian_foot": "Pondéré par la population à partir du EvangelicalLevel de peoplegroups.org, chaque tranche publiée étant prise à son point médian et 0 pour « No Known Evangelicals »",
+    "pray_blessed": "Les ai-je bénis ?",
+    "pray_know": "Que veux-tu que je sache ?",
+    "pray_do": "Que veux-tu que je fasse ?",
+    "point4_passage": "Et quand il fut entré dans la barque, celui qui avait été possédé le pria de lui permettre d'être avec lui. Mais Jésus ne le lui permit pas, et il dit: Va-t'en dans ta maison vers tes parents, et raconte-leur les grandes choses que le Seigneur t'a faites, et comment il a eu pitié de toi. Et il s'en alla, et se mit à publier dans la Décapole les grandes choses que Jésus lui avait faites; et ils étaient tous dans l'admiration.",
+    "point4_passage_credit": "Marc 5:18-20 · French Ostervald Bible (domaine public) · ebible.org",
+    "point4_passage_bold": "Mais Jésus ne le lui permit pas, et il dit: Va-t'en dans ta maison vers tes parents, et raconte-leur les grandes choses que le Seigneur t'a faites, et comment il a eu pitié de toi.",
+    "point4_heart_title": "LE CŒUR DU PÈRE CÉLESTE",
+    "point4_heart_lede": "Ils ont besoin de savoir que leur Père céleste les aime, qu'Il veut les sauver, et qu'à travers eux Il veut que leurs voisins des peuples non atteints soient sauvés.",
+    "point4_heart_leadin": "D'autres passages sur le cœur du Père céleste",
+    "point4_heart": [
+      {
+        "who": "Noé"
+      },
+      {
+        "who": "Lot"
+      },
+      {
+        "who": "Rahab"
+      },
+      {
+        "who": "Le Gérasénien"
+      },
+      {
+        "who": "Corneille"
+      },
+      {
+        "who": "Lydie"
+      },
+      {
+        "who": "Le geôlier"
+      }
+    ],
+    "desc_where_both": "Les {people} vivent en {country} et parlent {language}.",
+    "desc_where_country": "Les {people} vivent en {country}.",
+    "desc_where_language": "Les {people} parlent {language}.",
+    "desc_gsec_0": "On ne connaît parmi eux aucun chrétien évangélique, aucune Église et aucune ressource de l’Évangile dans leur langue.",
+    "desc_gsec_1": "Moins de 2% d’évangéliques, et personne n’a implanté d’Églises parmi eux au cours des deux dernières années.",
+    "desc_gsec_2": "Moins de 2% d’évangéliques, mais l’implantation d’Églises a commencé dans certaines communautés.",
+    "desc_gsec_3": "Moins de 2% d’évangéliques, et une implantation d’Églises dispersée a commencé parmi eux.",
+    "desc_gsec_4": "Entre 2% et 5% sont évangéliques.",
+    "desc_gsec_5": "Entre 5% et 10% sont évangéliques.",
+    "desc_gsec_6": "Plus de 10% sont évangéliques.",
+    "sets_kicker": "Qui est proche, et qui ne l’est pas",
+    "sets_title": "Deux façons de voir le même peuple",
+    "sets_lede": "Le cercle demande si un peuple a été atteint. Les anneaux demandent à quelle distance il se trouve de quelqu’un qui pourrait l’atteindre.",
+    "sets_bounded_title": "Atteints, ou non",
+    "sets_centered_title": "Distance d’un voisin",
+    "sets_bounded_tally": "{inside} à l’intérieur · {outside} à l’extérieur · {unknown} inconnu",
+    "sets_no_data": "{n} sans données",
+    "sets_centered_tally": "{placed} placés · {centre} au centre · {unplaced} non placés",
+    "ring_band_dialect": "Même dialecte",
+    "ring_band_language": "Même langue",
+    "ring_band_family": "Même famille de langues",
+    "ring_band_geography": "Proximité seulement",
+    "ring_culture_same": "même peuple",
+    "ring_culture_near": "culture proche",
+    "ring_culture_different": "culture différente",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "La vie de Jésus, environ 33 ans",
+    "life_full": "Une vie entière de 100 ans",
+    "sets_head_bounded": "Ensemble délimité",
+    "sets_head_centered": "Ensemble centré",
+    "sets_rings_head": "Les anneaux, du centre vers l’extérieur",
+    "light_intro": "Priez pour chaque peuple en l’appelant par son nom. Chaque ligne a trois colonnes : tracez un trait dans une colonne chaque fois que vous faites ce qu’elle demande.",
+    "light_col_group": "Peuple",
+    "books": {
+      "Matthew": "Matthieu",
+      "Acts": "Actes",
+      "John": "Jean",
+      "1 John": "1 Jean",
+      "Mark": "Marc",
+      "Luke": "Luc",
+      "Hebrews": "Hébreux",
+      "Colossians": "Colossiens",
+      "1 Corinthians": "1 Corinthiens",
+      "1 Peter": "1 Pierre",
+      "Genesis": "Genèse",
+      "Joshua": "Josué",
+      "Numbers": "Nombres",
+      "Psalm": "Psaume",
+      "Haggai": "Aggée",
+      "Isaiah": "Ésaïe",
+      "Habakkuk": "Habacuc",
+      "Ephesians": "Éphésiens"
+    },
+    "christian_per_cell": "Chaque case ≈ {n} personnes",
+    "howto_title": "Comment prier avec cette liste",
+    "howto_bless": "Bénissez-les par leur nom. Vous pouvez prier la bénédiction que Dieu a donnée à Aaron pour son peuple :",
+    "howto_bless_more": "D’autres bénédictions à prier :",
+    "howto_know": "Demandez à Jésus ce qu’il veut que vous sachiez sur ce peuple.",
+    "howto_do": "Demandez à Jésus ce qu’il veut que vous fassiez pour ce peuple.",
+    "howto_wheel": "À la fin de ce dossier, une roue de prière vous guide pendant une heure de prière pour ces peuples.",
+    "pace_title": "Votre rythme de prière",
+    "pace_lead": "Le rythme compte. Choisissez à quelle fréquence vous prierez pour chaque peuple de cette liste, par son nom.",
+    "pace_daily": "Chaque jour",
+    "pace_weekly": "Chaque semaine",
+    "pace_fortnight": "Toutes les deux semaines",
+    "pace_monthly": "Chaque mois",
+    "pace_quarter": "Tous les trois mois",
+    "pace_strongest": "Le plus fort",
+    "pace_healthiest": "Le plus sain",
+    "pace_healthy": "Sain",
+    "pace_normal": "Normal",
+    "pace_slower": "Plus lent",
+    "pace_all": "les {n}, chaque jour",
+    "pace_day": "environ {n} par jour",
+    "pace_week": "environ {n} par semaine",
+    "pace_month": "environ {n} par mois",
+    "pace_note": "Prier chaque jour pour tous ces peuples convient aux intercesseurs qui en ont reçu le don et consacrent environ trois heures par jour à la prière. Pour la plupart d’entre nous, chaque semaine est un rythme sain et régulier.",
+    "blessing_text": "« L'Éternel te bénisse et te garde! L'Éternel fasse luire sa face sur toi et te fasse grâce! L'Éternel tourne sa face vers toi et te donne la paix! »",
+    "blessing_credit": "Nombres 6:24–26 · French Ostervald Bible (domaine public) · ebible.org",
+    "howto_bless_col": "Bénissez-les par leur nom, avec la bénédiction ci-dessus ou une autre tirée des Écritures.",
+    "example_title": "Exemple",
+    "example_note": "Un trait chaque fois que vous priez ; le cinquième barre les quatre précédents.",
+    "themes_title": "Thèmes de prière",
+    "themes_intro": "Intégrez ces thèmes à vos blocs de cinq minutes de la roue de prière. Ils apportent de la variété et des idées nouvelles.",
+    "themes": [
+      "Bénir les nations",
+      "Unité parfaite",
+      "Protection contre le mal",
+      "Entendre la voix de Dieu",
+      "Vraie identité en Christ",
+      "Relations profondes et saines",
+      "Le sacerdoce des croyants"
+    ],
+    "scenes_title": "Images pour prier",
+    "scenes": [
+      "Trésor",
+      "Montagne",
+      "Mer"
+    ],
+    "sets_rings_lede": "Chaque point est un peuple de cette liste. Son anneau montre ce qu’il partage, en langue et en culture, avec les croyants les plus proches qui pourraient l’atteindre : plus on est près de la croix, plus ils ont en commun. L’anneau 1 parle le même dialecte et forme le même peuple ; l’anneau 9 ne partage qu’une famille de langues, pas la culture ; au-delà du dernier anneau, des croyants vivent tout près mais sans langue commune. Lisez de 9, en bas, jusqu’à 1, à la croix."
+  },
+  "pt": {
+    "map_page_kicker": "GRUPOS ÉTNICOS NÃO ALCANÇADOS",
+    "map_page_sub": "Uma lista de oração de {count} grupos étnicos não alcançados",
+    "map_unavailable": "O mapa desta lista de oração não está incluído nesta impressão.",
+    "map_page_series": "Uma das {k} listas de oração UPG100",
+    "zone_affinity_A017": "Grupos de pessoas surdas",
+    "list_header": "{from}–{to} de {count} · ore por eles pelo nome",
+    "people_suffix": "pessoas",
+    "no_photo": "sem fotografia disponível",
+    "deck_title": "Cartões de Oração",
+    "card_country": "País",
+    "card_population": "Pessoas",
+    "card_language": "Idioma",
+    "card_religion": "Religião",
+    "card_cta": "Ore por eles",
+    "points_title": "12 Pontos de Oração",
+    "points_intro": "Uma hora com Deus, cinco minutos cada. Ore estes doze pelos grupos étnicos deste pacote.",
+    "points_attrib": "Ritmos de oração inspirados na Metacamp · metacamp.org",
+    "wheel_title": "Roda de Oração",
+    "wheel_intro": "Passar uma hora com Deus? É mais fácil do que você pensa. Divida-a em blocos de 5 minutos e concentre-se em um destes em cada segmento.",
+    "wheel_minutes": "minutos",
+    "wheel_start": "Comece aqui",
+    "wheel_attrib": "Roda de Oração · Metacamp Módulo 1 · metacamp.org",
+    "privacy_note": "As posições dos marcadores são aproximadas · as localizações dos grupos étnicos são generalizadas na fonte por privacidade",
+    "rhythms": {
+      "praise": "LOUVOR",
+      "wait": "ESPERAR",
+      "confess": "CONFESSAR",
+      "read": "LER A PALAVRA",
+      "ask": "PEDIR",
+      "intercede": "INTERCESSÃO",
+      "pray_word": "ORAR A PALAVRA",
+      "thank": "AGRADECER",
+      "sing": "CANTAR",
+      "meditate": "MEDITAR",
+      "listen": "OUVIR",
+      "praise_end": "LOUVOR"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Evangelho das duas cruzes",
+        "text": "Que aceitem Cristo como Rei, perdoados pela Sua cruz — e tomem a sua própria cruz, dispostos a sofrer em meio à perseguição. Que o Cordeiro receba a recompensa do Seu sofrimento, começando por mim.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Espírito Santo e libertação",
+        "text": "Dedique tempo esperando no Espírito Santo, para que Ele fale com você e o capacite a orar por eles como um ousado guerreiro de oração: que sejam cheios do Espírito Santo e feitos testemunhas ousadas, não isolados; batizados nas águas e no Espírito; que toda opressão do mal seja quebrada; e que os crentes dos povos vizinhos sejam mobilizados como trabalhadores.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Confessamos a incredulidade de achar que é pedir demais a Deus que alcance todos estes povos não alcançados em nosso tempo de vida. Recebemos a verdade de que Ele está reavivando nosso amor e nossa fé pelos não alcançados do mundo.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "o amor do Pai",
+        "text": "Que sejam SALVOS e SAIBAM que o seu Pai celestial os ama — e que através deles Ele leve salvação à sua família, amigos, vizinhos, colegas de trabalho, colegas de classe, a todos os que conhecem pessoalmente.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "batismos",
+        "text": "Novos batismos entre os povos indígenas, e cada discípulo batizado treinado para batizar outros — batismos que se multiplicam.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "obreiros e pastores",
+        "text": "Obreiros enviados para amar profundamente um povo que nunca conheceram; bons pastores levantados de dentro.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Pessoas e Casas de Paz",
+        "text": "Que os trabalhadores e os líderes indígenas encontrem a pessoa receptiva e a casa de paz, as amem profundamente, as discipulem bem, as batizem e as treinem para alcançar seus amigos e familiares com seu novo amor por Jesus.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "descanso",
+        "text": "Agradeça a Deus pelo descanso que Ele lhe deu; que eles entrem nesse descanso em Cristo, e que sua família espiritual seja um lugar seguro.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Que o grupo étnico seja inundado de adoradores — adoração em toda parte, em liberdade e em correntes.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "comunhão",
+        "text": "Que tomem a comunhão juntos e compreendam a liberdade que têm em Cristo por meio da Sua morte, sepultamento e ressurreição.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "prestação de contas",
+        "text": "Tire um tempo e faça a Deus esta pergunta, em oração de escuta: o que será preciso para que tenham em suas vidas pessoas que os ajudem a ler a Palavra, orar, comprometer-se com a comunidade e responder bem ao sofrimento? Passe cinco minutos ouvindo a Deus em busca de inspiração — Ele pode lhe dar soluções que ajudem a resolver isso.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "bênção · grande · maior · das maiores",
+        "text": "Ore sobre eles a oração de Jesus em João 17. A bênção: a vida eterna, conhecer a Deus e a Jesus, a quem ele enviou. A grande bênção: que os seus próprios crentes levem outros à fé. A bênção maior: novas famílias espirituais deles mesmos, unidas em Cristo. Uma das maiores: líderes do meio deles que preparem outros para começar novas famílias espirituais, vez após vez. Peça tudo isso e mais, muito além do que pedimos ou pensamos. Peça, como Jesus pediu, que sejam um e guardados do maligno. Nada disso é possível se Jesus não for quem ele diz ser.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "point4_heart_title": "O CORAÇÃO DO PAI CELESTIAL",
+    "point4_heart_lede": "Eles precisam saber que seu Pai celestial os ama, que Ele quer salvá-los, e que por meio deles Ele quer que seus vizinhos de povos não alcançados sejam salvos.",
+    "point4_heart_leadin": "Mais passagens sobre o coração do Pai celestial",
+    "point4_heart": [
+      {
+        "who": "Noé"
+      },
+      {
+        "who": "Ló"
+      },
+      {
+        "who": "Raabe"
+      },
+      {
+        "who": "O gadareno"
+      },
+      {
+        "who": "Cornélio"
+      },
+      {
+        "who": "Lídia"
+      },
+      {
+        "who": "O carcereiro"
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Como esta lista foi formada",
+    "funnel_intro": "Todos os grupos étnicos da terra, reduzidos aos que não têm igreja nem obreiro.",
+    "funnel_all": "grupos étnicos no mundo",
+    "funnel_unreached": "não são alcançados — menos de 2% evangélicos",
+    "funnel_frontier": "são de fronteira — 0,1% ou menos, e quase ninguém vai",
+    "funnel_doxa": "estão na lista desta rede de oração",
+    "funnel_doxa_note": "{frontier} deles são de fronteira",
+    "funnel_this": "estão NESTE caderno",
+    "funnel_packets": "cadernos de oração UPG100 dividem entre si os {total}",
+    "funnel_share": "Este caderno é 1 de {k} listas · {pct}% dos {total}",
+    "funnel_foot": "Números de {imb_pub}, coletados em {imb_date}. {unassigned} dos {total} ainda não estão em nenhuma lista.",
+    "funnel_people": "pessoas",
+    "funnel_foot_source": "Números de {imb_pub}, coletados em {imb_date}.",
+    "funnel_share_pct": "Este caderno é {pct}% dos {total}",
+    "funnel_list_doxa": "Projeto 2000: os grupos étnicos desta rede de oração",
+    "funnel_list_unreached": "Projeto 7000: grupos étnicos não alcançados",
+    "funnel_list_frontier": "Projeto 4700: grupos étnicos de fronteira",
+    "funnel_list_frontier-500k": "Projeto 700: grupos étnicos de fronteira de 500.000 ou mais",
+    "funnel_list_unengaged": "Grupos étnicos não alcançados e sem obreiros",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} mais",
+    "funnel_eq_title": "Como cada número é obtido",
+    "funnel_tip": "Este caderno é 1 de {n} listas UPG100",
+    "life_kicker": "Perspectiva",
+    "life_title": "Uma vida humana, em semanas",
+    "life_lede": "Cem anos. Cinquenta e duas semanas cada. Cinco mil e duzentas casas — e é tudo. Cada semana em que você orar será uma destas.",
+    "life_foot": "100 anos x 52 semanas = 5.200 semanas.",
+    "life_weeks": "semanas",
+    "christian_kicker": "As mesmas 5.200 casas",
+    "christian_title": "Quem entre eles conhece a Cristo",
+    "christian_lede": "Cada casa é uma parte igual das pessoas desta lista. As casas sombreadas são a parte que segue Jesus (evangélicos); as demais ainda esperam.",
+    "christian_reached": "Seguidores de Jesus",
+    "christian_lost": "Ainda não seguem Jesus",
+    "christian_people": "pessoas",
+    "christian_coverage": "calculado sobre {matched} dos {total} grupos desta lista",
+    "christian_foot": "Ponderado por população a partir do EvangelicalLevel de peoplegroups.org, tomando cada faixa publicada no seu ponto médio e 0 para «No Known Evangelicals»",
+    "pray_blessed": "Eu os abençoei?",
+    "pray_know": "O que queres que eu saiba?",
+    "pray_do": "O que queres que eu faça?",
+    "desc_where_both": "Os {people} vivem em {country} e falam {language}.",
+    "desc_where_country": "Os {people} vivem em {country}.",
+    "desc_where_language": "Os {people} falam {language}.",
+    "desc_gsec_0": "Não há cristãos evangélicos conhecidos entre eles, nem igreja, nem recurso do evangelho em sua língua.",
+    "desc_gsec_1": "Menos de 2% evangélicos, e ninguém tem plantado igrejas entre eles nos últimos dois anos.",
+    "desc_gsec_2": "Menos de 2% evangélicos, embora a plantação de igrejas tenha começado em algumas comunidades.",
+    "desc_gsec_3": "Menos de 2% evangélicos, e uma plantação de igrejas dispersa começou entre eles.",
+    "desc_gsec_4": "Entre 2% e 5% são evangélicos.",
+    "desc_gsec_5": "Entre 5% e 10% são evangélicos.",
+    "desc_gsec_6": "Mais de 10% são evangélicos.",
+    "sets_kicker": "Quem está perto e quem não está",
+    "sets_title": "Duas formas de ver o mesmo povo",
+    "sets_lede": "O círculo pergunta se um povo foi alcançado. Os anéis perguntam a que distância ele está de alguém que poderia alcançá-lo.",
+    "sets_bounded_title": "Alcançados e não alcançados",
+    "sets_centered_title": "Distância de um vizinho",
+    "sets_bounded_tally": "{inside} dentro · {outside} fora · {unknown} desconhecido",
+    "sets_no_data": "{n} sem dados",
+    "sets_centered_tally": "{placed} posicionados · {centre} no centro · {unplaced} sem posição",
+    "ring_band_dialect": "Mesmo dialeto",
+    "ring_band_language": "Mesma língua",
+    "ring_band_family": "Mesma família linguística",
+    "ring_band_geography": "Apenas proximidade",
+    "ring_culture_same": "mesmo povo",
+    "ring_culture_near": "cultura próxima",
+    "ring_culture_different": "cultura diferente",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "A vida de Jesus, cerca de 33 anos",
+    "life_full": "Uma vida inteira de 100 anos",
+    "sets_head_bounded": "Conjunto delimitado",
+    "sets_head_centered": "Conjunto centrado",
+    "sets_rings_head": "Os anéis, do centro para fora",
+    "light_intro": "Ore por cada povo pelo nome. Cada linha tem três colunas: faça um risco numa coluna cada vez que fizer o que ela pede.",
+    "light_col_group": "Povo",
+    "books": {
+      "Matthew": "Mateus",
+      "Acts": "Atos",
+      "John": "João",
+      "1 John": "1 João",
+      "Mark": "Marcos",
+      "Luke": "Lucas",
+      "Hebrews": "Hebreus",
+      "Colossians": "Colossenses",
+      "1 Corinthians": "1 Coríntios",
+      "1 Peter": "1 Pedro",
+      "Genesis": "Gênesis",
+      "Joshua": "Josué",
+      "Numbers": "Números",
+      "Psalm": "Salmo",
+      "Haggai": "Ageu",
+      "Isaiah": "Isaías",
+      "Habakkuk": "Habacuque",
+      "Ephesians": "Efésios"
+    },
+    "christian_per_cell": "Cada caixa ≈ {n} pessoas",
+    "howto_title": "Como orar com esta lista",
+    "howto_bless": "Abençoe-os pelo nome. Você pode orar a bênção que Deus deu a Arão para pronunciar sobre o seu povo:",
+    "howto_bless_more": "Mais bênçãos para orar:",
+    "howto_know": "Pergunte a Jesus o que ele quer que você saiba sobre este povo.",
+    "howto_do": "Pergunte a Jesus o que ele quer que você faça por este povo.",
+    "howto_wheel": "No fim deste pacote, uma roda de oração guia você em uma hora de oração por estes povos.",
+    "pace_title": "Seu ritmo de oração",
+    "pace_lead": "O ritmo importa. Escolha com que frequência você vai orar por cada povo desta lista pelo nome.",
+    "pace_daily": "Todo dia",
+    "pace_weekly": "Toda semana",
+    "pace_fortnight": "A cada duas semanas",
+    "pace_monthly": "Todo mês",
+    "pace_quarter": "A cada três meses",
+    "pace_strongest": "O mais forte",
+    "pace_healthiest": "O mais saudável",
+    "pace_healthy": "Saudável",
+    "pace_normal": "Normal",
+    "pace_slower": "Mais lento",
+    "pace_all": "todos os {n}, todo dia",
+    "pace_day": "cerca de {n} por dia",
+    "pace_week": "cerca de {n} por semana",
+    "pace_month": "cerca de {n} por mês",
+    "pace_note": "Orar todo dia por todos os povos é para intercessores com esse dom, que dedicam cerca de três horas por dia à oração. Para a maioria de nós, toda semana é um ritmo saudável e constante.",
+    "blessing_text": "“Yahweh te abençoe, e te guarde. Yahweh faz o seu rosto para brilhar em você, e seja gracioso com você. Yahweh levanta o rosto na sua direção, e lhe dar paz.”",
+    "blessing_credit": "Números 6:24–26 · World Portuguese Bible (domínio público) · ebible.org",
+    "howto_bless_col": "Abençoe-os pelo nome, com a bênção acima ou outra das Escrituras.",
+    "example_title": "Exemplo",
+    "example_note": "Um risco cada vez que você orar; o quinto cruza os quatro anteriores.",
+    "themes_title": "Temas de oração",
+    "themes_intro": "Inclua estes temas nos seus blocos de cinco minutos da roda de oração. Eles trazem variedade e ideias novas.",
+    "themes": [
+      "Abençoar as nações",
+      "Unidade perfeita",
+      "Proteção contra o mal",
+      "Ouvir a voz de Deus",
+      "Verdadeira identidade em Cristo",
+      "Relacionamentos profundos e saudáveis",
+      "O sacerdócio dos crentes"
+    ],
+    "scenes_title": "Imagens para orar",
+    "scenes": [
+      "Tesouro",
+      "Monte",
+      "Mar"
+    ],
+    "sets_rings_lede": "Cada ponto é um povo desta lista. Seu anel mostra quanto de língua e cultura ele compartilha com os crentes mais próximos que poderiam alcançá-lo: quanto mais perto da cruz, mais eles têm em comum. O anel 1 fala o mesmo dialeto e é o mesmo povo; o anel 9 compartilha só uma família de línguas, não a cultura; além do último anel, há crentes por perto, mas sem língua em comum. Leia do 9, embaixo, até o 1, na cruz."
+  },
+  "de": {
+    "map_page_kicker": "UNERREICHTE VOLKSGRUPPEN",
+    "map_page_sub": "Eine Gebetsliste von {count} unerreichten Volksgruppen",
+    "map_unavailable": "Die Karte zu dieser Gebetsliste ist in diesem Ausdruck nicht enthalten.",
+    "map_page_series": "Eine von {k} Gebetslisten von UPG100",
+    "zone_affinity_A017": "Gruppen gehörloser Menschen",
+    "list_header": "{from}–{to} von {count} · betet namentlich für sie",
+    "people_suffix": "Menschen",
+    "no_photo": "kein Foto verfügbar",
+    "deck_title": "Gebetskarten",
+    "card_country": "Land",
+    "card_population": "Menschen",
+    "card_language": "Sprache",
+    "card_religion": "Religion",
+    "card_cta": "Betet für sie",
+    "points_title": "12 Gebetsanliegen",
+    "points_intro": "Eine Stunde mit Gott, je fünf Minuten. Betet diese zwölf Anliegen für die Volksgruppen in diesem Heft.",
+    "points_attrib": "Gebetsrhythmen inspiriert von Metacamp · metacamp.org",
+    "wheel_title": "Gebetsrad",
+    "wheel_intro": "Eine Stunde mit Gott verbringen? Es ist leichter, als du denkst. Teile sie in 5-Minuten-Blöcke und konzentriere dich in jedem Abschnitt auf eines dieser Anliegen.",
+    "wheel_minutes": "Minuten",
+    "wheel_start": "Hier beginnen",
+    "wheel_attrib": "Gebetsrad · Metacamp Modul 1 · metacamp.org",
+    "privacy_note": "Die Markerpositionen sind ungefähr · die Standorte der Volksgruppen werden an der Quelle aus Datenschutzgründen verallgemeinert",
+    "rhythms": {
+      "praise": "LOBPREIS",
+      "wait": "WARTEN",
+      "confess": "BEKENNEN",
+      "read": "DAS WORT LESEN",
+      "ask": "BITTEN",
+      "intercede": "FÜRBITTE",
+      "pray_word": "DAS WORT BETEN",
+      "thank": "DANKEN",
+      "sing": "SINGEN",
+      "meditate": "MEDITIEREN",
+      "listen": "HÖREN",
+      "praise_end": "LOBPREIS"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Evangelium der zwei Kreuze",
+        "text": "Dass sie Christus als König annehmen, vergeben durch Sein Kreuz – und ihr eigenes Kreuz auf sich nehmen, bereit, durch Verfolgung hindurch zu leiden. Möge das Lamm den Lohn für Sein Leiden empfangen, angefangen bei mir.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Heiliger Geist und Befreiung",
+        "text": "Nehmt euch Zeit, auf den Heiligen Geist zu warten, damit Er zu euch spricht und euch befähigt, als mutige Gebetskämpfer für sie zu beten: dass sie mit dem Heiligen Geist erfüllt und zu mutigen Zeugen werden, nicht isoliert; getauft mit Wasser und Geist; dass jeder Griff des Bösen gebrochen wird; und dass Gläubige in benachbarten Volksgruppen als Arbeiter mobilisiert werden.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Wir bekennen den Unglauben, es sei zu viel von Gott verlangt, all diese unerreichten Volksgruppen zu unseren Lebzeiten zu erreichen. Wir empfangen die Wahrheit, dass Er unsere Liebe und unseren Glauben für die Unerreichten der Welt neu belebt.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "die Liebe des Vaters",
+        "text": "Dass sie GERETTET werden und WISSEN, dass ihr himmlischer Vater sie liebt — und dass Er durch sie Rettung zu ihrer Familie, ihren Freunden, Nachbarn, Kollegen, Mitschülern bringt, zu allen, die sie persönlich kennen.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "Taufen",
+        "text": "Neue Taufen unter den einheimischen Volksgruppen, und jeder getaufte Jünger wird befähigt, andere zu taufen – Taufen, die sich vervielfältigen.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "Arbeiter und Hirten",
+        "text": "Arbeiter, gesandt, ein Volk zutiefst zu lieben, das sie nie getroffen haben; gute Hirten, von innen heraus erweckt.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Menschen und Häuser des Friedens",
+        "text": "Dass Arbeiter und einheimische Leiter die offene Person und das Haus des Friedens finden, sie von Herzen lieben, sie gut zu Jüngern machen, sie taufen und sie befähigen, ihre Freunde und Familie mit ihrer neu gefundenen Liebe zu Jesus zu erreichen.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "Ruhe",
+        "text": "Dankt Gott für die Ruhe, die Er euch geschenkt hat; dass sie in diese Ruhe in Christus eingehen und ihre geistliche Familie ein sicherer Ort ist.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Dass die Volksgruppe von Anbetern überflutet wird — Anbetung überall, in Freiheit und in Ketten.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "Abendmahl",
+        "text": "Dass sie gemeinsam Abendmahl feiern und die Freiheit erfassen, die sie in Christus durch Seinen Tod, Sein Begräbnis und Seine Auferstehung haben.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "Rechenschaft",
+        "text": "Nehmt euch Zeit und stellt Gott im hörenden Gebet diese Frage: Was wird es brauchen, damit sie Menschen in ihrem Leben haben, die ihnen helfen, das Wort zu lesen, zu beten, sich verbindlich auf Gemeinschaft einzulassen und gut auf Leid zu reagieren? Hört fünf Minuten auf Gott, um Inspiration zu empfangen – Er kann euch Lösungen geben, die helfen, dies zu lösen.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "Segen · groß · größer · einer der größten",
+        "text": "Beten Sie Jesu Gebet aus Johannes 17 über ihnen. Der Segen: ewiges Leben, Gott zu kennen und Jesus, den er gesandt hat. Der große Segen: dass ihre eigenen Gläubigen andere zum Glauben führen. Der größere Segen: neue geistliche Familien, ihre eigenen, eins in Christus. Einer der größten: Leiter aus ihrer Mitte, die andere anleiten, neue geistliche Familien zu gründen, immer wieder. Bitten Sie um all das und mehr, über alles hinaus, was wir bitten oder verstehen. Bitten Sie wie Jesus, dass sie eins seien und vor dem Bösen bewahrt werden. Nichts davon ist möglich, wenn Jesus nicht der ist, der er zu sein sagt.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Wie diese Liste entstand",
+    "funnel_intro": "Alle Volksgruppen der Erde, eingegrenzt auf die ohne Gemeinde und ohne Mitarbeiter.",
+    "funnel_all": "Volksgruppen weltweit",
+    "funnel_unreached": "sind unerreicht — unter 2% evangelikal",
+    "funnel_frontier": "sind Frontier — 0,1% oder weniger, und fast niemand geht hin",
+    "funnel_doxa": "stehen auf der Liste dieses Gebetsnetzwerks",
+    "funnel_doxa_note": "{frontier} davon sind Frontier",
+    "funnel_this": "sind in DIESEM Heft",
+    "funnel_packets": "Gebetshefte von UPG100 teilen die {total} unter sich auf",
+    "funnel_share": "Dieses Heft ist 1 von {k} Listen · {pct}% der {total}",
+    "funnel_foot": "Zahlen von {imb_pub}, erhoben am {imb_date}. {unassigned} der {total} sind noch auf keiner Liste.",
+    "funnel_people": "Menschen",
+    "funnel_foot_source": "Zahlen von {imb_pub}, erhoben am {imb_date}.",
+    "funnel_share_pct": "Dieses Heft ist {pct}% der {total}",
+    "funnel_list_doxa": "Projekt 2000: die Volksgruppen dieses Gebetsnetzwerks",
+    "funnel_list_unreached": "Projekt 7000: unerreichte Volksgruppen",
+    "funnel_list_frontier": "Projekt 4700: Frontier-Volksgruppen",
+    "funnel_list_frontier-500k": "Projekt 700: Frontier-Volksgruppen mit 500.000 oder mehr",
+    "funnel_list_unengaged": "Unerreichte Volksgruppen ohne Mitarbeiter",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} weitere",
+    "funnel_eq_title": "Wie jede Zahl zustande kommt",
+    "funnel_tip": "Dieses Heft ist 1 von {n} UPG100-Listen",
+    "life_kicker": "Maßstab",
+    "life_title": "Ein Menschenleben, in Wochen",
+    "life_lede": "Hundert Jahre. Je zweiundfünfzig Wochen. Fünftausendzweihundert Kästchen — und das ist alles. Jede Woche, in der Sie beten, ist eines davon.",
+    "life_foot": "100 Jahre x 52 Wochen = 5.200 Wochen.",
+    "life_weeks": "Wochen",
+    "christian_kicker": "Dieselben 5.200 Kästchen",
+    "christian_title": "Wer unter ihnen Christus kennt",
+    "christian_lede": "Jedes Kästchen steht für einen gleich großen Anteil der Menschen auf dieser Liste. Die gefüllten Kästchen sind der Anteil, der Jesus nachfolgt (evangelikal); die übrigen warten noch.",
+    "christian_reached": "Nachfolger Jesu",
+    "christian_lost": "Folgen Jesus noch nicht",
+    "christian_people": "Menschen",
+    "christian_coverage": "berechnet über {matched} der {total} Gruppen dieser Liste",
+    "christian_foot": "Bevölkerungsgewichtet aus dem EvangelicalLevel von peoplegroups.org, jede veröffentlichte Spanne in ihrer Mitte und 0 für „No Known Evangelicals“",
+    "pray_blessed": "Habe ich sie gesegnet?",
+    "pray_know": "Was willst du, dass ich wissen soll?",
+    "pray_do": "Was willst du, dass ich tun soll?",
+    "point4_passage": "Und da er in das Schiff trat, bat ihn der Besessene, daß er möchte bei ihm sein. Aber Jesus ließ es nicht zu, sondern sprach zu ihm: Gehe hin in dein Haus und zu den Deinen und verkündige ihnen, wie große Wohltat dir der HERR getan und sich deiner erbarmt hat. Und er ging hin und fing an, auszurufen in den zehn Städten, wie große Wohltat ihm Jesus getan hatte; und jedermann verwunderte sich.",
+    "point4_passage_credit": "Markus 5,18–20 · German Luther Bible 1912 (gemeinfrei) · ebible.org",
+    "point4_passage_bold": "Aber Jesus ließ es nicht zu, sondern sprach zu ihm: Gehe hin in dein Haus und zu den Deinen und verkündige ihnen, wie große Wohltat dir der HERR getan und sich deiner erbarmt hat.",
+    "point4_heart_title": "DAS HERZ DES HIMMLISCHEN VATERS",
+    "point4_heart_lede": "Sie müssen wissen, dass ihr himmlischer Vater sie liebt, dass Er sie retten will und dass Er durch sie ihre Nachbarn aus unerreichten Volksgruppen retten will.",
+    "point4_heart_leadin": "Weitere Bibelstellen über das Herz des himmlischen Vaters",
+    "point4_heart": [
+      {
+        "who": "Noah"
+      },
+      {
+        "who": "Lot"
+      },
+      {
+        "who": "Rahab"
+      },
+      {
+        "who": "Der Gerasener"
+      },
+      {
+        "who": "Kornelius"
+      },
+      {
+        "who": "Lydia"
+      },
+      {
+        "who": "Der Gefängnisaufseher"
+      }
+    ],
+    "desc_where_both": "Die {people} leben in {country} und sprechen {language}.",
+    "desc_where_country": "Die {people} leben in {country}.",
+    "desc_where_language": "Die {people} sprechen {language}.",
+    "desc_gsec_0": "Unter ihnen sind keine evangelikalen Christen bekannt, keine Gemeinde und keine Evangeliumsressource in ihrer Sprache.",
+    "desc_gsec_1": "Unter 2% evangelikal, und in den letzten zwei Jahren hat niemand unter ihnen Gemeinden gegründet.",
+    "desc_gsec_2": "Unter 2% evangelikal, doch in einigen Gemeinschaften hat die Gemeindegründung begonnen.",
+    "desc_gsec_3": "Unter 2% evangelikal, und vereinzelt hat unter ihnen die Gemeindegründung begonnen.",
+    "desc_gsec_4": "Zwischen 2% und 5% sind evangelikal.",
+    "desc_gsec_5": "Zwischen 5% und 10% sind evangelikal.",
+    "desc_gsec_6": "Mehr als 10% sind evangelikal.",
+    "sets_kicker": "Wer ist nah, und wer nicht",
+    "sets_title": "Zwei Blicke auf dasselbe Volk",
+    "sets_lede": "Der Kreis fragt, ob ein Volk erreicht wurde. Die Ringe fragen, wie weit es von jemandem entfernt ist, der es erreichen könnte.",
+    "sets_bounded_title": "Erreicht und nicht erreicht",
+    "sets_centered_title": "Abstand zu einem Nachbarn",
+    "sets_bounded_tally": "{inside} innen · {outside} außen · {unknown} unbekannt",
+    "sets_no_data": "{n} ohne Daten",
+    "sets_centered_tally": "{placed} platziert · {centre} in der Mitte · {unplaced} ohne Platz",
+    "ring_band_dialect": "Gleicher Dialekt",
+    "ring_band_language": "Gleiche Sprache",
+    "ring_band_family": "Gleiche Sprachfamilie",
+    "ring_band_geography": "Nur benachbart",
+    "ring_culture_same": "gleiches Volk",
+    "ring_culture_near": "nahe Kultur",
+    "ring_culture_different": "andere Kultur",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "Das Leben Jesu, etwa 33 Jahre",
+    "life_full": "Ein volles Leben von 100 Jahren",
+    "sets_head_bounded": "Begrenzte Menge",
+    "sets_head_centered": "Zentrierte Menge",
+    "sets_rings_head": "Die Ringe, von der Mitte nach außen",
+    "light_intro": "Beten Sie für jede Volksgruppe mit Namen. Jede Zeile hat drei Spalten: Machen Sie einen Strich in eine Spalte, jedes Mal wenn Sie tun, wonach sie fragt.",
+    "light_col_group": "Volksgruppe",
+    "books": {
+      "Matthew": "Matthäus",
+      "Acts": "Apostelgeschichte",
+      "John": "Johannes",
+      "1 John": "1. Johannes",
+      "Mark": "Markus",
+      "Luke": "Lukas",
+      "Hebrews": "Hebräer",
+      "Colossians": "Kolosser",
+      "1 Corinthians": "1. Korinther",
+      "1 Peter": "1. Petrus",
+      "Genesis": "1. Mose",
+      "Joshua": "Josua",
+      "Numbers": "4. Mose",
+      "Psalm": "Psalm",
+      "Haggai": "Haggai",
+      "Isaiah": "Jesaja",
+      "Habakkuk": "Habakuk",
+      "Ephesians": "Epheser"
+    },
+    "christian_per_cell": "Jedes Kästchen ≈ {n} Menschen",
+    "howto_title": "So beten Sie mit dieser Liste",
+    "howto_bless": "Segnen Sie sie mit Namen. Sie können den Segen beten, den Gott Aaron für sein Volk gab:",
+    "howto_bless_more": "Weitere Segensworte zum Beten:",
+    "howto_know": "Fragen Sie Jesus, was Sie nach seinem Willen über diese Volksgruppe wissen sollen.",
+    "howto_do": "Fragen Sie Jesus, was Sie nach seinem Willen für diese Volksgruppe tun sollen.",
+    "howto_wheel": "Am Ende dieses Hefts führt Sie ein Gebetsrad durch eine Stunde Gebet für diese Volksgruppen.",
+    "pace_title": "Ihr Gebetsrhythmus",
+    "pace_lead": "Der Rhythmus zählt. Wählen Sie, wie oft Sie für jede Volksgruppe dieser Liste mit Namen beten.",
+    "pace_daily": "Täglich",
+    "pace_weekly": "Wöchentlich",
+    "pace_fortnight": "Alle zwei Wochen",
+    "pace_monthly": "Monatlich",
+    "pace_quarter": "Alle drei Monate",
+    "pace_strongest": "Am stärksten",
+    "pace_healthiest": "Am gesündesten",
+    "pace_healthy": "Gesund",
+    "pace_normal": "Normal",
+    "pace_slower": "Langsamer",
+    "pace_all": "alle {n}, jeden Tag",
+    "pace_day": "etwa {n} am Tag",
+    "pace_week": "etwa {n} pro Woche",
+    "pace_month": "etwa {n} im Monat",
+    "pace_note": "Täglich für jede Volksgruppe zu beten ist für begabte Fürbitter, die dem Gebet etwa drei Stunden am Tag widmen. Für die meisten von uns ist wöchentlich ein gesunder, beständiger Rhythmus.",
+    "blessing_text": "„Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden.“",
+    "blessing_credit": "4. Mose 6,24–26 · German Luther Bible 1912 (gemeinfrei) · ebible.org",
+    "howto_bless_col": "Segnen Sie sie mit Namen, mit dem Segen oben oder einem anderen aus der Schrift.",
+    "example_title": "Beispiel",
+    "example_note": "Ein Strich für jedes Gebet; der fünfte Strich kreuzt die vier davor.",
+    "themes_title": "Gebetsthemen",
+    "themes_intro": "Flechten Sie diese Themen in Ihre Fünf-Minuten-Blöcke am Gebetsrad ein. Sie bringen Vielfalt und neue Ideen.",
+    "themes": [
+      "Die Völker segnen",
+      "Vollkommene Einheit",
+      "Bewahrung vor dem Bösen",
+      "Gottes Stimme hören",
+      "Wahre Identität in Christus",
+      "Tiefe, gesunde Beziehungen",
+      "Das Priestertum aller Gläubigen"
+    ],
+    "scenes_title": "Gebetsbilder",
+    "scenes": [
+      "Schatz",
+      "Berg",
+      "Meer"
+    ],
+    "sets_rings_lede": "Jeder Punkt ist eine Volksgruppe dieser Liste. Ihr Ring zeigt, wie viel Sprache und Kultur sie mit den nächsten Gläubigen teilt, die sie erreichen könnten: Je näher am Kreuz, desto mehr haben sie gemeinsam. Ring 1 spricht denselben Dialekt und ist dasselbe Volk; Ring 9 teilt nur eine Sprachfamilie, nicht die Kultur; jenseits des letzten Rings leben Gläubige in der Nähe, aber ohne gemeinsame Sprache. Lesen Sie von 9 unten hinauf bis 1 am Kreuz."
+  },
+  "it": {
+    "map_page_kicker": "GRUPPI ETNICI NON RAGGIUNTI",
+    "map_page_sub": "Una lista di preghiera di {count} gruppi etnici non raggiunti",
+    "map_unavailable": "La mappa di questa lista di preghiera non è inclusa in questa stampa.",
+    "map_page_series": "Una delle {k} liste di preghiera UPG100",
+    "zone_affinity_A017": "Gruppi di persone sorde",
+    "list_header": "{from}–{to} di {count} · pregate per loro per nome",
+    "people_suffix": "persone",
+    "no_photo": "nessuna foto disponibile",
+    "deck_title": "Carte di Preghiera",
+    "card_country": "Paese",
+    "card_population": "Persone",
+    "card_language": "Lingua",
+    "card_religion": "Religione",
+    "card_cta": "Prega per loro",
+    "points_title": "12 Punti di Preghiera",
+    "points_intro": "Un'ora con Dio, cinque minuti ciascuno. Pregate questi dodici punti per i gruppi etnici di questo fascicolo.",
+    "points_attrib": "Ritmi di preghiera ispirati a Metacamp · metacamp.org",
+    "wheel_title": "Ruota di Preghiera",
+    "wheel_intro": "Passare un'ora con Dio? È più facile di quanto pensi. Dividila in blocchi di 5 minuti e concentrati su uno di questi in ogni segmento.",
+    "wheel_minutes": "minuti",
+    "wheel_start": "Inizia qui",
+    "wheel_attrib": "Ruota di Preghiera · Metacamp Modulo 1 · metacamp.org",
+    "privacy_note": "Le posizioni dei segnaposto sono approssimative · le localizzazioni dei gruppi etnici sono generalizzate alla fonte per riservatezza",
+    "rhythms": {
+      "praise": "LODE",
+      "wait": "ATTENDERE",
+      "confess": "CONFESSARE",
+      "read": "LEGGERE LA PAROLA",
+      "ask": "CHIEDERE",
+      "intercede": "INTERCESSIONE",
+      "pray_word": "PREGARE LA PAROLA",
+      "thank": "RINGRAZIARE",
+      "sing": "CANTARE",
+      "meditate": "MEDITARE",
+      "listen": "ASCOLTARE",
+      "praise_end": "LODE"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Vangelo delle due croci",
+        "text": "Che accolgano Cristo come Re, perdonati dalla Sua croce — e prendano la propria croce, disposti a soffrire attraverso la persecuzione. Che l'Agnello riceva la ricompensa della Sua sofferenza, a cominciare da me.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Spirito Santo e liberazione",
+        "text": "Dedicate del tempo ad aspettare lo Spirito Santo, perché vi parli e vi dia forza per pregare per loro come coraggiosi guerrieri di preghiera: che siano ripieni dello Spirito Santo e resi testimoni coraggiosi, non isolati; battezzati in acqua e Spirito; che ogni presa del male sia spezzata; e che i credenti dei popoli vicini siano mobilitati come operai.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Confessiamo l'incredulità di pensare che sia chiedere troppo a Dio raggiungere tutti questi popoli non raggiunti nel corso della nostra vita. Riceviamo la verità che Egli sta ravvivando il nostro amore e la nostra fede per i non raggiunti del mondo.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "l'amore del Padre",
+        "text": "Che siano SALVATI e SAPPIANO che il loro Padre celeste li ama — e che attraverso di loro Egli porti salvezza alla loro famiglia, agli amici, ai vicini, ai colleghi, ai compagni di classe, a tutti coloro che conoscono personalmente.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "battesimi",
+        "text": "Nuovi battesimi tra i popoli indigeni, e ogni discepolo battezzato formato a battezzare altri — battesimi che si moltiplicano.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "operai e pastori",
+        "text": "Operai mandati ad amare profondamente un popolo che non hanno mai incontrato; buoni pastori suscitati dall'interno.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Persone e Case di Pace",
+        "text": "Che gli operai e i leader indigeni trovino la persona ricettiva e la casa di pace, le amino profondamente, ne facciano bene dei discepoli, le battezzino e le formino a raggiungere amici e familiari con il loro nuovo amore per Gesù.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "riposo",
+        "text": "Ringraziate Dio per il riposo che vi ha dato; che entrino in quel riposo in Cristo, e che la loro famiglia spirituale sia un luogo sicuro.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Che il gruppo etnico sia inondato di adoratori — adorazione ovunque, nella libertà e nelle catene.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "comunione",
+        "text": "Che prendano la comunione insieme e comprendano la libertà che hanno in Cristo per mezzo della Sua morte, sepoltura e risurrezione.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "responsabilità reciproca",
+        "text": "Prendetevi del tempo e ponete a Dio questa domanda, in preghiera di ascolto: che cosa servirà perché abbiano nella loro vita persone che li aiutino a leggere la Parola, pregare, impegnarsi nella comunità e rispondere bene alla sofferenza? Trascorrete cinque minuti ascoltando Dio per ricevere ispirazione — Egli può darvi soluzioni che aiutino a risolverlo.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "benedizione · grande · più grande · tra le più grandi",
+        "text": "Prega su di loro la preghiera di Gesù in Giovanni 17. La benedizione: la vita eterna, conoscere Dio e Gesù, colui che egli ha mandato. La grande benedizione: che i loro stessi credenti portino altri alla fede. La benedizione più grande: nuove famiglie spirituali tutte loro, unite in Cristo. Una delle più grandi: responsabili del loro popolo che formano altri ad avviare nuove famiglie spirituali, ancora e ancora. Chiedi tutto questo e di più, oltre tutto ciò che chiediamo o pensiamo. Chiedi, come Gesù, che siano uno e custoditi dal maligno. Niente di tutto questo è possibile se Gesù non è chi dice di essere.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "point4_heart_title": "IL CUORE DEL PADRE CELESTE",
+    "point4_heart_lede": "Hanno bisogno di sapere che il loro Padre celeste li ama, che vuole salvarli, e che attraverso di loro vuole che i loro vicini dei popoli non raggiunti siano salvati.",
+    "point4_heart_leadin": "Altri passi sul cuore del Padre celeste",
+    "point4_heart": [
+      {
+        "who": "Noè"
+      },
+      {
+        "who": "Lot"
+      },
+      {
+        "who": "Raab"
+      },
+      {
+        "who": "L'indemoniato di Gerasa"
+      },
+      {
+        "who": "Cornelio"
+      },
+      {
+        "who": "Lidia"
+      },
+      {
+        "who": "Il carceriere"
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Come è nata questa lista",
+    "funnel_intro": "Tutti i gruppi etnici della terra, ridotti a quelli senza chiesa e senza operai.",
+    "funnel_all": "gruppi etnici nel mondo",
+    "funnel_unreached": "non sono raggiunti — meno del 2% evangelici",
+    "funnel_frontier": "sono di frontiera — 0,1% o meno, e quasi nessuno ci va",
+    "funnel_doxa": "sono nella lista di questa rete di preghiera",
+    "funnel_doxa_note": "{frontier} di questi sono di frontiera",
+    "funnel_this": "sono in QUESTO libretto",
+    "funnel_packets": "libretti di preghiera UPG100 si dividono i {total}",
+    "funnel_share": "Questo libretto è 1 di {k} liste · {pct}% dei {total}",
+    "funnel_foot": "Dati da {imb_pub}, rilevati il {imb_date}. {unassigned} dei {total} non sono ancora in nessuna lista.",
+    "funnel_people": "persone",
+    "funnel_foot_source": "Dati da {imb_pub}, rilevati il {imb_date}.",
+    "funnel_share_pct": "Questo libretto è il {pct}% dei {total}",
+    "funnel_list_doxa": "Progetto 2000: i gruppi etnici di questa rete di preghiera",
+    "funnel_list_unreached": "Progetto 7000: gruppi etnici non raggiunti",
+    "funnel_list_frontier": "Progetto 4700: gruppi etnici di frontiera",
+    "funnel_list_frontier-500k": "Progetto 700: gruppi etnici di frontiera di 500.000 o più",
+    "funnel_list_unengaged": "Gruppi etnici non raggiunti e senza operai",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + altri {n}",
+    "funnel_eq_title": "Come si ottiene ogni numero",
+    "funnel_tip": "Questo fascicolo è 1 di {n} liste UPG100",
+    "life_kicker": "Prospettiva",
+    "life_title": "Una vita umana, in settimane",
+    "life_lede": "Cento anni. Cinquantadue settimane ciascuno. Cinquemiladuecento caselle — ed è tutto. Ogni settimana in cui pregherai sarà una di queste.",
+    "life_foot": "100 anni x 52 settimane = 5.200 settimane.",
+    "life_weeks": "settimane",
+    "christian_kicker": "Le stesse 5.200 caselle",
+    "christian_title": "Chi tra loro conosce Cristo",
+    "christian_lede": "Ogni casella è una parte uguale delle persone di questa lista. Le caselle colorate sono la quota che segue Gesù (evangelici); le altre sono ancora in attesa.",
+    "christian_reached": "Seguaci di Gesù",
+    "christian_lost": "Non seguono ancora Gesù",
+    "christian_people": "persone",
+    "christian_coverage": "calcolato su {matched} dei {total} gruppi di questa lista",
+    "christian_foot": "Ponderato per popolazione dall’EvangelicalLevel di peoplegroups.org, prendendo ogni fascia pubblicata al suo punto medio e 0 per «No Known Evangelicals»",
+    "pray_blessed": "Li ho benedetti?",
+    "pray_know": "Che cosa vuoi che io sappia?",
+    "pray_do": "Che cosa vuoi che io faccia?",
+    "desc_where_both": "I {people} vivono in {country} e parlano {language}.",
+    "desc_where_country": "I {people} vivono in {country}.",
+    "desc_where_language": "I {people} parlano {language}.",
+    "desc_gsec_0": "Non si conoscono cristiani evangelici tra loro, né una chiesa, né alcuna risorsa del Vangelo nella loro lingua.",
+    "desc_gsec_1": "Meno del 2% evangelici, e negli ultimi due anni nessuno ha fondato chiese tra loro.",
+    "desc_gsec_2": "Meno del 2% evangelici, anche se in alcune comunità è iniziata la fondazione di chiese.",
+    "desc_gsec_3": "Meno del 2% evangelici, e tra loro è iniziata una fondazione di chiese sparsa.",
+    "desc_gsec_4": "Tra il 2% e il 5% sono evangelici.",
+    "desc_gsec_5": "Tra il 5% e il 10% sono evangelici.",
+    "desc_gsec_6": "Più del 10% sono evangelici.",
+    "sets_kicker": "Chi è vicino e chi no",
+    "sets_title": "Due modi di vedere lo stesso popolo",
+    "sets_lede": "Il cerchio chiede se un popolo è stato raggiunto. Gli anelli chiedono quanto dista da qualcuno che potrebbe raggiungerlo.",
+    "sets_bounded_title": "Raggiunti e non raggiunti",
+    "sets_centered_title": "Distanza da un vicino",
+    "sets_bounded_tally": "{inside} dentro · {outside} fuori · {unknown} sconosciuto",
+    "sets_no_data": "{n} senza dati",
+    "sets_centered_tally": "{placed} collocati · {centre} al centro · {unplaced} non collocati",
+    "ring_band_dialect": "Stesso dialetto",
+    "ring_band_language": "Stessa lingua",
+    "ring_band_family": "Stessa famiglia linguistica",
+    "ring_band_geography": "Solo vicinanza",
+    "ring_culture_same": "stesso popolo",
+    "ring_culture_near": "cultura vicina",
+    "ring_culture_different": "cultura diversa",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "La vita di Gesù, circa 33 anni",
+    "life_full": "Una vita intera di 100 anni",
+    "sets_head_bounded": "Insieme delimitato",
+    "sets_head_centered": "Insieme centrato",
+    "sets_rings_head": "Gli anelli, dal centro verso l’esterno",
+    "light_intro": "Prega per ogni popolo chiamandolo per nome. Ogni riga ha tre colonne: segna un trattino in una colonna ogni volta che fai ciò che chiede.",
+    "light_col_group": "Popolo",
+    "books": {
+      "Matthew": "Matteo",
+      "Acts": "Atti",
+      "John": "Giovanni",
+      "1 John": "1 Giovanni",
+      "Mark": "Marco",
+      "Luke": "Luca",
+      "Hebrews": "Ebrei",
+      "Colossians": "Colossesi",
+      "1 Corinthians": "1 Corinzi",
+      "1 Peter": "1 Pietro",
+      "Genesis": "Genesi",
+      "Joshua": "Giosuè",
+      "Numbers": "Numeri",
+      "Psalm": "Salmo",
+      "Haggai": "Aggeo",
+      "Isaiah": "Isaia",
+      "Habakkuk": "Abacuc",
+      "Ephesians": "Efesini"
+    },
+    "christian_per_cell": "Ogni casella ≈ {n} persone",
+    "howto_title": "Come pregare con questa lista",
+    "howto_bless": "Benedicili chiamandoli per nome. Puoi pregare la benedizione che Dio diede ad Aronne per il suo popolo:",
+    "howto_bless_more": "Altre benedizioni da pregare:",
+    "howto_know": "Chiedi a Gesù che cosa vuole che tu sappia di questo popolo.",
+    "howto_do": "Chiedi a Gesù che cosa vuole che tu faccia per questo popolo.",
+    "howto_wheel": "Alla fine di questo fascicolo, una ruota di preghiera ti guida in un’ora di preghiera per questi popoli.",
+    "pace_title": "Il tuo ritmo di preghiera",
+    "pace_lead": "Il ritmo conta. Scegli ogni quanto pregherai per ogni popolo di questa lista chiamandolo per nome.",
+    "pace_daily": "Ogni giorno",
+    "pace_weekly": "Ogni settimana",
+    "pace_fortnight": "Ogni due settimane",
+    "pace_monthly": "Ogni mese",
+    "pace_quarter": "Ogni tre mesi",
+    "pace_strongest": "Il più forte",
+    "pace_healthiest": "Il più sano",
+    "pace_healthy": "Sano",
+    "pace_normal": "Normale",
+    "pace_slower": "Più lento",
+    "pace_all": "tutti i {n}, ogni giorno",
+    "pace_day": "circa {n} al giorno",
+    "pace_week": "circa {n} a settimana",
+    "pace_month": "circa {n} al mese",
+    "pace_note": "Pregare ogni giorno per tutti i popoli è per gli intercessori che ne hanno il dono e dedicano circa tre ore al giorno alla preghiera. Per la maggior parte di noi, ogni settimana è un ritmo sano e costante.",
+    "blessing_text": "«Il Signore ti benedica e ti guardi. Il Signore faccia risplendere le sua faccia verso te, e ti sia propizio. Alzi il Signore la sua faccia verso te, e ti stabilisca la pace.»",
+    "blessing_credit": "Numeri 6:24–26 · Italian Diodati Bible (pubblico dominio) · ebible.org",
+    "howto_bless_col": "Benedicili chiamandoli per nome, con la benedizione qui sopra o un’altra dalle Scritture.",
+    "example_title": "Esempio",
+    "example_note": "Un trattino ogni volta che preghi; il quinto attraversa i quattro precedenti.",
+    "themes_title": "Temi di preghiera",
+    "themes_intro": "Intreccia questi temi nei tuoi blocchi di cinque minuti della ruota di preghiera. Danno varietà e idee nuove.",
+    "themes": [
+      "Benedire le nazioni",
+      "Unità perfetta",
+      "Protezione dal male",
+      "Ascoltare la voce di Dio",
+      "Vera identità in Cristo",
+      "Relazioni profonde e sane",
+      "Il sacerdozio dei credenti"
+    ],
+    "scenes_title": "Immagini per pregare",
+    "scenes": [
+      "Tesoro",
+      "Monte",
+      "Mare"
+    ],
+    "sets_rings_lede": "Ogni punto è un popolo di questa lista. Il suo anello mostra quanta lingua e cultura condivide con i credenti più vicini che potrebbero raggiungerlo: più è vicino alla croce, più hanno in comune. L’anello 1 parla lo stesso dialetto ed è lo stesso popolo; l’anello 9 condivide solo una famiglia linguistica, non la cultura; oltre l’ultimo anello, i credenti vivono vicino ma senza una lingua comune. Leggi dal 9, in basso, fino all’1, alla croce."
+  },
+  "ro": {
+    "map_page_kicker": "GRUPURI ETNICE NEATINSE",
+    "map_page_sub": "O listă de rugăciune pentru {count} grupuri etnice neatinse",
+    "map_unavailable": "Harta acestei liste de rugăciune nu este inclusă în această tipărire.",
+    "map_page_series": "Una dintre cele {k} liste de rugăciune UPG100",
+    "zone_affinity_A017": "Grupuri de persoane surde",
+    "list_header": "{from}–{to} din {count} · rugați-vă pentru ei pe nume",
+    "people_suffix": "persoane",
+    "no_photo": "nicio fotografie disponibilă",
+    "deck_title": "Cartonașe de Rugăciune",
+    "card_country": "Țară",
+    "card_population": "Persoane",
+    "card_language": "Limbă",
+    "card_religion": "Religie",
+    "card_cta": "Roagă-te pentru ei",
+    "points_title": "12 Puncte de Rugăciune",
+    "points_intro": "O oră cu Dumnezeu, câte cinci minute fiecare. Rugați-vă aceste douăsprezece puncte pentru grupurile etnice din acest pachet.",
+    "points_attrib": "Ritmuri de rugăciune inspirate de Metacamp · metacamp.org",
+    "wheel_title": "Roata Rugăciunii",
+    "wheel_intro": "O oră cu Dumnezeu? Este mai ușor decât crezi. Împarte-o în blocuri de 5 minute și concentrează-te pe unul dintre acestea în fiecare segment.",
+    "wheel_minutes": "minute",
+    "wheel_start": "Începe aici",
+    "wheel_attrib": "Roata Rugăciunii · Metacamp Modulul 1 · metacamp.org",
+    "privacy_note": "Pozițiile marcajelor sunt aproximative · localizările grupurilor etnice sunt generalizate la sursă din motive de confidențialitate",
+    "rhythms": {
+      "praise": "LAUDĂ",
+      "wait": "AȘTEPTARE",
+      "confess": "MĂRTURISIRE",
+      "read": "CITIREA CUVÂNTULUI",
+      "ask": "CERERE",
+      "intercede": "MIJLOCIRE",
+      "pray_word": "RUGAREA CUVÂNTULUI",
+      "thank": "MULȚUMIRE",
+      "sing": "CÂNTARE",
+      "meditate": "MEDITAȚIE",
+      "listen": "ASCULTARE",
+      "praise_end": "LAUDĂ"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Evanghelia celor două cruci",
+        "text": "Să-L primească pe Hristos ca Împărat, iertați prin crucea Lui — și să-și ia propria cruce, gata să sufere prin persecuție. Fie ca Mielul să primească răsplata suferinței Lui, începând cu mine.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Duhul Sfânt și eliberarea",
+        "text": "Petreceți timp așteptând pe Duhul Sfânt, ca El să vă vorbească și să vă întărească să vă rugați pentru ei ca niște luptători curajoși în rugăciune: să fie umpluți cu Duhul Sfânt și făcuți martori îndrăzneți, nu izolați; botezați în apă și în Duh; orice strânsoare a celui rău să fie ruptă; și credincioșii din popoarele vecine să fie mobilizați ca lucrători.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Mărturisim necredința că ar fi prea mult să-I cerem lui Dumnezeu să ajungă la toate aceste popoare neatinse în timpul vieții noastre. Primim adevărul că El ne înviorează dragostea și credința pentru cei neatinși din toată lumea.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "dragostea Tatălui",
+        "text": "Să fie MÂNTUIȚI și să ȘTIE că Tatăl lor ceresc îi iubește — și ca prin ei El să aducă mântuire familiei lor, prietenilor, vecinilor, colegilor de muncă, colegilor de clasă, tuturor celor pe care îi cunosc personal.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "botezuri",
+        "text": "Botezuri noi între popoarele băștinașe, și fiecare ucenic botezat pregătit să-i boteze pe alții — botezuri care se înmulțesc.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "lucrători și păstori",
+        "text": "Lucrători trimiși să iubească profund un popor pe care nu l-au întâlnit niciodată; păstori buni ridicați din interior.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Oameni și Case ale Păcii",
+        "text": "Ca lucrătorii și liderii băștinași să găsească persoana deschisă și casa de pace, să-i iubească profund, să-i ucenicizeze bine, să-i boteze și să-i pregătească să-și ajungă prietenii și familia cu noua lor dragoste pentru Isus.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "odihnă",
+        "text": "Mulțumiți-I lui Dumnezeu pentru odihna pe care v-a dat-o; să intre și ei în această odihnă în Hristos, iar familia lor spirituală să fie un loc sigur.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Grupul etnic să fie inundat de închinători — închinare pretutindeni, în libertate și în lanțuri.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "împărtășanie",
+        "text": "Să ia împreună Cina Domnului și să înțeleagă libertatea pe care o au în Hristos prin moartea, îngroparea și învierea Lui.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "responsabilitate",
+        "text": "Luați-vă timp și puneți-I lui Dumnezeu această întrebare, în rugăciune de ascultare: de ce va fi nevoie ca ei să aibă în viața lor oameni care să-i ajute să citească Cuvântul, să se roage, să se angajeze în comunitate și să răspundă bine suferinței? Petreceți cinci minute ascultându-L pe Dumnezeu pentru inspirație — El vă poate da soluții care să ajute la rezolvarea acestui lucru.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "binecuvântare · mare · mai mare · printre cele mai mari",
+        "text": "Roagă-te peste ei cu rugăciunea lui Isus din Ioan 17. Binecuvântarea: viața veșnică, să-L cunoască pe Dumnezeu și pe Isus, pe care L-a trimis. Marea binecuvântare: ca propriii lor credincioși să-i aducă pe alții la credință. O binecuvântare și mai mare: familii spirituale noi, ale lor, una în Hristos. Una dintre cele mai mari: lideri dintre ei care îi pregătesc pe alții să înceapă noi familii spirituale, iar și iar. Cere toate acestea și mai mult, dincolo de tot ce cerem sau gândim. Cere, ca Isus, să fie una și păziți de cel rău. Nimic din toate acestea nu este posibil dacă Isus nu este Cel care spune că este.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "point4_heart_title": "INIMA TATĂLUI CERESC",
+    "point4_heart_lede": "Au nevoie să știe că Tatăl lor ceresc îi iubește, că vrea să-i mântuiască și că, prin ei, vrea ca vecinii lor din popoarele neatinse să fie mântuiți.",
+    "point4_heart_leadin": "Mai multe pasaje despre inima Tatălui ceresc",
+    "point4_heart": [
+      {
+        "who": "Noe"
+      },
+      {
+        "who": "Lot"
+      },
+      {
+        "who": "Rahav"
+      },
+      {
+        "who": "Demonizatul din Gadara"
+      },
+      {
+        "who": "Corneliu"
+      },
+      {
+        "who": "Lidia"
+      },
+      {
+        "who": "Temnicerul"
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Cum a fost alcătuită această listă",
+    "funnel_intro": "Toate grupurile etnice ale pământului, restrânse la cele fără biserică și fără lucrător.",
+    "funnel_all": "grupuri etnice în lume",
+    "funnel_unreached": "sunt neatinse — sub 2% evanghelici",
+    "funnel_frontier": "sunt de frontieră — 0,1% sau mai puțin, și aproape nimeni nu merge",
+    "funnel_doxa": "sunt pe lista acestei rețele de rugăciune",
+    "funnel_doxa_note": "{frontier} dintre ele sunt de frontieră",
+    "funnel_this": "sunt în ACEASTĂ broșură",
+    "funnel_packets": "broșuri de rugăciune UPG100 își împart cele {total}",
+    "funnel_share": "Această broșură este 1 din {k} liste · {pct}% din {total}",
+    "funnel_foot": "Cifre de la {imb_pub}, colectate la {imb_date}. {unassigned} din {total} nu sunt încă pe nicio listă.",
+    "funnel_people": "persoane",
+    "funnel_foot_source": "Cifre de la {imb_pub}, colectate la {imb_date}.",
+    "funnel_share_pct": "Această broșură reprezintă {pct}% din {total}",
+    "funnel_list_doxa": "Proiectul 2000: grupurile etnice ale acestei rețele de rugăciune",
+    "funnel_list_unreached": "Proiectul 7000: grupuri etnice neatinse",
+    "funnel_list_frontier": "Proiectul 4700: grupuri etnice de frontieră",
+    "funnel_list_frontier-500k": "Proiectul 700: grupuri etnice de frontieră de 500.000 sau mai multe",
+    "funnel_list_unengaged": "Grupuri etnice neatinse și fără lucrători",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + încă {n}",
+    "funnel_eq_title": "Cum se obține fiecare număr",
+    "funnel_tip": "Acest caiet este 1 din {n} liste UPG100",
+    "life_kicker": "Perspectivă",
+    "life_title": "O viață de om, în săptămâni",
+    "life_lede": "O sută de ani. Câte cincizeci și două de săptămâni. Cinci mii două sute de căsuțe — și asta e tot. Fiecare săptămână în care te vei ruga este una dintre ele.",
+    "life_foot": "100 de ani x 52 de săptămâni = 5.200 de săptămâni.",
+    "life_weeks": "săptămâni",
+    "christian_kicker": "Aceleași 5.200 de căsuțe",
+    "christian_title": "Cine dintre ei Îl cunoaște pe Hristos",
+    "christian_lede": "Fiecare căsuță este o parte egală dintre oamenii de pe această listă. Căsuțele colorate sunt partea care Îl urmează pe Isus (evanghelici); celelalte încă așteaptă.",
+    "christian_reached": "Urmași ai lui Isus",
+    "christian_lost": "Încă nu Îl urmează pe Isus",
+    "christian_people": "persoane",
+    "christian_coverage": "calculat pe {matched} din cele {total} grupuri din această listă",
+    "christian_foot": "Ponderat după populație pornind de la EvangelicalLevel de pe peoplegroups.org, fiecare interval publicat luat la mijloc și 0 pentru „No Known Evangelicals”",
+    "pray_blessed": "I-am binecuvântat?",
+    "pray_know": "Ce vrei să știu?",
+    "pray_do": "Ce vrei să fac?",
+    "desc_where_both": "{people} trăiesc în {country} și vorbesc {language}.",
+    "desc_where_country": "{people} trăiesc în {country}.",
+    "desc_where_language": "{people} vorbesc {language}.",
+    "desc_gsec_0": "Nu se cunosc creștini evanghelici printre ei, nici biserică, nici vreo resursă a Evangheliei în limba lor.",
+    "desc_gsec_1": "Sub 2% evanghelici, și nimeni nu a mai plantat biserici printre ei în ultimii doi ani.",
+    "desc_gsec_2": "Sub 2% evanghelici, deși în unele comunități a început plantarea de biserici.",
+    "desc_gsec_3": "Sub 2% evanghelici, iar printre ei a început o plantare de biserici răzleață.",
+    "desc_gsec_4": "Între 2% și 5% sunt evanghelici.",
+    "desc_gsec_5": "Între 5% și 10% sunt evanghelici.",
+    "desc_gsec_6": "Peste 10% sunt evanghelici.",
+    "sets_kicker": "Cine este aproape și cine nu",
+    "sets_title": "Două feluri de a vedea același popor",
+    "sets_lede": "Cercul întreabă dacă un popor a fost atins. Inelele întreabă cât de departe este de cineva care l-ar putea atinge.",
+    "sets_bounded_title": "Atinse și neatinse",
+    "sets_centered_title": "Distanța față de un vecin",
+    "sets_bounded_tally": "{inside} înăuntru · {outside} în afară · {unknown} necunoscut",
+    "sets_no_data": "{n} fără date",
+    "sets_centered_tally": "{placed} plasate · {centre} în centru · {unplaced} neplasate",
+    "ring_band_dialect": "Același dialect",
+    "ring_band_language": "Aceeași limbă",
+    "ring_band_family": "Aceeași familie de limbi",
+    "ring_band_geography": "Doar apropiere",
+    "ring_culture_same": "același popor",
+    "ring_culture_near": "cultură apropiată",
+    "ring_culture_different": "cultură diferită",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "Viața lui Isus, aproximativ 33 de ani",
+    "life_full": "O viață întreagă de 100 de ani",
+    "sets_head_bounded": "Mulțime delimitată",
+    "sets_head_centered": "Mulțime centrată",
+    "sets_rings_head": "Inelele, de la centru spre exterior",
+    "light_intro": "Roagă-te pentru fiecare popor pe nume. Fiecare rând are trei coloane: fă o liniuță într-o coloană de fiecare dată când faci ce cere ea.",
+    "light_col_group": "Popor",
+    "books": {
+      "Matthew": "Matei",
+      "Acts": "Faptele Apostolilor",
+      "John": "Ioan",
+      "1 John": "1 Ioan",
+      "Mark": "Marcu",
+      "Luke": "Luca",
+      "Hebrews": "Evrei",
+      "Colossians": "Coloseni",
+      "1 Corinthians": "1 Corinteni",
+      "1 Peter": "1 Petru",
+      "Genesis": "Geneza",
+      "Joshua": "Iosua",
+      "Numbers": "Numeri",
+      "Psalm": "Psalmul",
+      "Haggai": "Hagai",
+      "Isaiah": "Isaia",
+      "Habakkuk": "Habacuc",
+      "Ephesians": "Efeseni"
+    },
+    "christian_per_cell": "Fiecare căsuță ≈ {n} de oameni",
+    "howto_title": "Cum să te rogi cu această listă",
+    "howto_bless": "Binecuvântează-i pe nume. Poți rosti în rugăciune binecuvântarea pe care Dumnezeu i-a dat-o lui Aaron pentru poporul Său:",
+    "howto_bless_more": "Alte binecuvântări de rostit:",
+    "howto_know": "Întreabă-L pe Isus ce vrea să știi despre acest popor.",
+    "howto_do": "Întreabă-L pe Isus ce vrea să faci pentru acest popor.",
+    "howto_wheel": "La sfârșitul acestui pachet, o roată a rugăciunii te călăuzește printr-o oră de rugăciune pentru aceste popoare.",
+    "pace_title": "Ritmul tău de rugăciune",
+    "pace_lead": "Ritmul contează. Alege cât de des te vei ruga pe nume pentru fiecare popor de pe această listă.",
+    "pace_daily": "Zilnic",
+    "pace_weekly": "Săptămânal",
+    "pace_fortnight": "La două săptămâni",
+    "pace_monthly": "Lunar",
+    "pace_quarter": "La trei luni",
+    "pace_strongest": "Cel mai puternic",
+    "pace_healthiest": "Cel mai sănătos",
+    "pace_healthy": "Sănătos",
+    "pace_normal": "Normal",
+    "pace_slower": "Mai lent",
+    "pace_all": "toate cele {n}, în fiecare zi",
+    "pace_day": "cam {n} pe zi",
+    "pace_week": "cam {n} pe săptămână",
+    "pace_month": "cam {n} pe lună",
+    "pace_note": "Rugăciunea zilnică pentru toate popoarele este pentru mijlocitorii care au acest dar și dedică rugăciunii cam trei ore pe zi. Pentru cei mai mulți dintre noi, săptămânal este un ritm sănătos și constant.",
+    "howto_bless_col": "Binecuvântează-i pe nume, cu binecuvântarea de mai sus sau cu alta din Scriptură.",
+    "example_title": "Exemplu",
+    "example_note": "O liniuță de fiecare dată când te rogi; a cincea le taie pe cele patru dinainte.",
+    "themes_title": "Teme de rugăciune",
+    "themes_intro": "Împletește aceste teme în blocurile tale de cinci minute din roata rugăciunii. Ele aduc varietate și idei noi.",
+    "themes": [
+      "Binecuvântarea neamurilor",
+      "Unitate desăvârșită",
+      "Ocrotire de rău",
+      "Auzirea glasului lui Dumnezeu",
+      "Adevărata identitate în Hristos",
+      "Relații profunde și sănătoase",
+      "Preoția tuturor credincioșilor"
+    ],
+    "scenes_title": "Imagini pentru rugăciune",
+    "scenes": [
+      "Comoara",
+      "Muntele",
+      "Marea"
+    ],
+    "sets_rings_lede": "Fiecare punct este un popor din această listă. Inelul lui arată câtă limbă și cultură are în comun cu cei mai apropiați credincioși care l-ar putea atinge: cu cât e mai aproape de cruce, cu atât au mai multe în comun. Inelul 1 vorbește același dialect și este același popor; inelul 9 are în comun doar o familie de limbi, nu și cultura; dincolo de ultimul inel, credincioșii trăiesc aproape, dar fără o limbă comună. Citește de la 9, jos, până la 1, la cruce."
+  },
+  "ru": {
+    "map_page_kicker": "НЕОХВАЧЕННЫЕ НАРОДЫ",
+    "map_page_sub": "Молитвенный список из {count} неохваченных народов",
+    "map_unavailable": "Карта этого молитвенного списка не включена в эту распечатку.",
+    "map_page_series": "Один из {k} молитвенных списков UPG100",
+    "zone_affinity_A017": "Группы глухих людей",
+    "list_header": "{from}–{to} из {count} · молитесь за них поимённо",
+    "people_suffix": "человек",
+    "no_photo": "фотография недоступна",
+    "deck_title": "Молитвенные карточки",
+    "card_country": "Страна",
+    "card_population": "Человек",
+    "card_language": "Язык",
+    "card_religion": "Религия",
+    "card_cta": "Молитесь за них",
+    "points_title": "12 молитвенных пунктов",
+    "points_intro": "Один час с Богом, по пять минут на каждый. Молитесь об этих двенадцати пунктах за народы из этого сборника.",
+    "points_attrib": "Молитвенные ритмы вдохновлены Metacamp · metacamp.org",
+    "wheel_title": "Молитвенное колесо",
+    "wheel_intro": "Провести час с Богом? Это проще, чем кажется. Разделите его на пятиминутные отрезки и в каждом сосредоточьтесь на одном из пунктов.",
+    "wheel_minutes": "минут",
+    "wheel_start": "Начните здесь",
+    "wheel_attrib": "Молитвенное колесо · Metacamp Модуль 1 · metacamp.org",
+    "privacy_note": "Положение меток приблизительное · расположение народов обобщено в источнике в целях конфиденциальности",
+    "rhythms": {
+      "praise": "ХВАЛА",
+      "wait": "ОЖИДАНИЕ",
+      "confess": "ИСПОВЕДАНИЕ",
+      "read": "ЧТЕНИЕ СЛОВА",
+      "ask": "ПРОШЕНИЕ",
+      "intercede": "ХОДАТАЙСТВО",
+      "pray_word": "МОЛИТВА СЛОВОМ",
+      "thank": "БЛАГОДАРЕНИЕ",
+      "sing": "ПЕНИЕ",
+      "meditate": "РАЗМЫШЛЕНИЕ",
+      "listen": "СЛУШАНИЕ",
+      "praise_end": "ХВАЛА"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "Евангелие двух крестов",
+        "text": "Чтобы они приняли Христа как Царя, прощённые Его крестом, и взяли свой крест, готовые страдать через гонения. Пусть Агнец получит награду за Свои страдания, начиная с меня.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "Святой Дух и освобождение",
+        "text": "Проведите время в ожидании Святого Духа, чтобы Он говорил с вами и укрепил вас молиться за них как смелые молитвенные воины: чтобы они исполнились Святого Духа и стали смелыми свидетелями, не одинокими; были крещены водой и Духом; чтобы всякая хватка зла была сокрушена; и чтобы верующие из соседних народов были мобилизованы как делатели.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "Мы исповедуем неверие, будто слишком многого просить у Бога — достичь все эти недостигнутые народы при нашей жизни. Мы принимаем истину: Он оживляет нашу любовь и веру ради недостигнутых по всему миру.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "любовь Отца",
+        "text": "Чтобы они были СПАСЕНЫ и ЗНАЛИ, что их Небесный Отец любит их — и чтобы через них Он принёс спасение их семье, друзьям, соседям, сослуживцам, одноклассникам, всем, кого они знают лично.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "крещения",
+        "text": "Новые крещения среди коренных народов, и каждый крещёный ученик обучен крестить других — крещения, которые умножаются.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "работники и пастыри",
+        "text": "Работники, посланные глубоко полюбить народ, которого они никогда не встречали; добрые пастыри, поднятые изнутри.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "Люди и Дома мира",
+        "text": "Чтобы делатели и местные лидеры находили восприимчивого человека и дом мира, глубоко любили их, хорошо делали их учениками, крестили их и обучали достигать своих друзей и родных с новообретённой любовью к Иисусу.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "покой",
+        "text": "Поблагодарите Бога за покой, который Он дал вам; чтобы они вошли в этот покой во Христе и чтобы их духовная семья была безопасным местом.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "Чтобы народ наполнился поклонниками — поклонение повсюду, в свободе и в цепях.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "причастие",
+        "text": "Чтобы они вместе причащались и постигли свободу, которую имеют во Христе через Его смерть, погребение и воскресение.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "подотчётность",
+        "text": "Уделите время и задайте Богу этот вопрос в слушающей молитве: что потребуется, чтобы в их жизни были люди, которые помогут им читать Слово, молиться, быть верными общине и достойно переносить страдания? Проведите пять минут, слушая Бога ради вдохновения — Он может дать вам решения, которые помогут это разрешить.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "благословение · великое · большее · одно из величайших",
+        "text": "Молитесь над ними молитвой Иисуса из Иоанна 17. Благословение: вечная жизнь — знать Бога и Иисуса, Которого Он послал. Великое благословение: чтобы их собственные верующие приводили других к вере. Ещё большее благословение: новые духовные семьи, свои собственные, единые во Христе. Одно из величайших: лидеры из их среды, которые учат других начинать новые духовные семьи — снова и снова. Просите обо всём этом и о большем — превыше всего, чего мы просим или о чём помышляем. Просите, как Иисус, чтобы они были едины и сохранены от лукавого. Ничто из этого невозможно, если Иисус не Тот, Кем Он Себя называет.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "Как был составлен этот список",
+    "funnel_intro": "Все народы земли, сведённые к тем, у кого нет ни церкви, ни работника.",
+    "funnel_all": "народов в мире",
+    "funnel_unreached": "неохваченные — менее 2% евангельских верующих",
+    "funnel_frontier": "это народы-фронтир — 0,1% или меньше, и почти никто к ним не идёт",
+    "funnel_doxa": "в списке этой молитвенной сети",
+    "funnel_doxa_note": "из них {frontier} — народы-фронтир",
+    "funnel_this": "в ЭТОМ буклете",
+    "funnel_packets": "молитвенные буклеты UPG100 делят между собой {total}",
+    "funnel_share": "Этот буклет — 1 из {k} списков · {pct}% от {total}",
+    "funnel_foot": "Данные {imb_pub}, собраны {imb_date}. {unassigned} из {total} пока не входят ни в один список.",
+    "funnel_people": "человек",
+    "funnel_foot_source": "Данные {imb_pub}, собраны {imb_date}.",
+    "funnel_share_pct": "Этот буклет — {pct}% от {total}",
+    "funnel_list_doxa": "Проект 2000: народы этой молитвенной сети",
+    "funnel_list_unreached": "Проект 7000: неохваченные народы",
+    "funnel_list_frontier": "Проект 4700: народы-фронтир",
+    "funnel_list_frontier-500k": "Проект 700: народы-фронтир численностью 500 000 и более",
+    "funnel_list_unengaged": "Неохваченные народы без работников",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + ещё {n}",
+    "funnel_eq_title": "Как получено каждое число",
+    "funnel_tip": "Этот буклет — 1 из {n} списков UPG100",
+    "life_kicker": "Масштаб",
+    "life_title": "Человеческая жизнь в неделях",
+    "life_lede": "Сто лет. По пятьдесят две недели. Пять тысяч двести клеток — и это всё. Каждая неделя, когда вы молитесь, — одна из них.",
+    "life_foot": "100 лет x 52 недели = 5200 недель.",
+    "life_weeks": "недель",
+    "christian_kicker": "Те же 5200 клеток",
+    "christian_title": "Кто среди них знает Христа",
+    "christian_lede": "Каждая клетка — равная доля людей из этого списка. Закрашенные клетки — доля тех, кто следует за Иисусом (евангельские христиане); остальные всё ещё ждут.",
+    "christian_reached": "Последователи Иисуса",
+    "christian_lost": "Ещё не следуют за Иисусом",
+    "christian_people": "человек",
+    "christian_coverage": "рассчитано по {matched} из {total} групп этого списка",
+    "christian_foot": "Взвешено по населению на основе EvangelicalLevel с peoplegroups.org: каждый опубликованный диапазон берётся по середине, «No Known Evangelicals» — как 0",
+    "pray_blessed": "Благословил(а) ли я их?",
+    "pray_know": "Что Ты хочешь мне открыть?",
+    "pray_do": "Что Ты велишь мне делать?",
+    "point4_passage": "И когда Он вошел в лодку, бесновавшийся просил Его, чтобы быть с Ним. Но Иисус не дозволил ему, а сказал: иди домой к своим и расскажи им, что сотворил с тобою Господь и как помиловал тебя. И пошел и начал проповедывать в Десятиградии, что сотворил с ним Иисус; и все дивились.",
+    "point4_passage_credit": "Марка 5:18–20 · Russian Synodal Bible (общественное достояние) · ebible.org",
+    "point4_passage_bold": "Но Иисус не дозволил ему, а сказал: иди домой к своим и расскажи им, что сотворил с тобою Господь и как помиловал тебя.",
+    "point4_heart_title": "СЕРДЦЕ НЕБЕСНОГО ОТЦА",
+    "point4_heart_lede": "Им нужно знать, что их Небесный Отец любит их, хочет спасти их и через них хочет, чтобы их соседи из недостигнутых народов были спасены.",
+    "point4_heart_leadin": "Ещё места Писания о сердце Небесного Отца",
+    "point4_heart": [
+      {
+        "who": "Ной"
+      },
+      {
+        "who": "Лот"
+      },
+      {
+        "who": "Раав"
+      },
+      {
+        "who": "Гадаринский бесноватый"
+      },
+      {
+        "who": "Корнилий"
+      },
+      {
+        "who": "Лидия"
+      },
+      {
+        "who": "Темничный страж"
+      }
+    ],
+    "desc_where_both": "Народ {people} живёт в стране {country} и говорит на языке {language}.",
+    "desc_where_country": "Народ {people} живёт в стране {country}.",
+    "desc_where_language": "Народ {people} говорит на языке {language}.",
+    "desc_gsec_0": "Среди них нет известных евангельских христиан, нет церкви и нет евангельских материалов на их языке.",
+    "desc_gsec_1": "Менее 2% евангельских верующих, и за последние два года среди них никто не основывал церкви.",
+    "desc_gsec_2": "Менее 2% евангельских верующих, хотя в некоторых общинах уже началось основание церквей.",
+    "desc_gsec_3": "Менее 2% евангельских верующих, и среди них местами началось основание церквей.",
+    "desc_gsec_4": "От 2% до 5% — евангельские верующие.",
+    "desc_gsec_5": "От 5% до 10% — евангельские верующие.",
+    "desc_gsec_6": "Более 10% — евангельские верующие.",
+    "sets_kicker": "Кто рядом, а кто нет",
+    "sets_title": "Два взгляда на один народ",
+    "sets_lede": "Круг спрашивает, достигнут ли народ. Кольца спрашивают, как далеко он от того, кто мог бы его достичь.",
+    "sets_bounded_title": "Достигнутые и нет",
+    "sets_centered_title": "Расстояние до соседа",
+    "sets_bounded_tally": "{inside} внутри · {outside} снаружи · {unknown} неизвестно",
+    "sets_no_data": "{n} без данных",
+    "sets_centered_tally": "{placed} размещено · {centre} в центре · {unplaced} без места",
+    "ring_band_dialect": "Тот же диалект",
+    "ring_band_language": "Тот же язык",
+    "ring_band_family": "Та же языковая семья",
+    "ring_band_geography": "Только соседство",
+    "ring_culture_same": "тот же народ",
+    "ring_culture_near": "близкая культура",
+    "ring_culture_different": "другая культура",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "Жизнь Иисуса, около 33 лет",
+    "life_full": "Целая жизнь в 100 лет",
+    "sets_head_bounded": "Ограниченное множество",
+    "sets_head_centered": "Центрированное множество",
+    "sets_rings_head": "Кольца — от центра наружу",
+    "light_intro": "Молитесь за каждый народ, называя его по имени. В каждой строке три столбца: ставьте черточку в столбце каждый раз, когда делаете то, о чём он спрашивает.",
+    "light_col_group": "Народ",
+    "books": {
+      "Matthew": "Мф.",
+      "Acts": "Деян.",
+      "John": "Ин.",
+      "1 John": "1 Ин.",
+      "Mark": "Мк.",
+      "Luke": "Лк.",
+      "Hebrews": "Евр.",
+      "Colossians": "Кол.",
+      "1 Corinthians": "1 Кор.",
+      "1 Peter": "1 Пет.",
+      "Genesis": "Быт.",
+      "Joshua": "Нав.",
+      "Numbers": "Чис.",
+      "Psalm": "Пс.",
+      "Haggai": "Агг.",
+      "Isaiah": "Ис.",
+      "Habakkuk": "Авв.",
+      "Ephesians": "Еф."
+    },
+    "christian_per_cell": "Каждая клетка ≈ {n} чел.",
+    "howto_title": "Как молиться по этому списку",
+    "howto_bless": "Благословляйте их, называя по имени. Можно молиться словами благословения, которое Бог дал Аарону для Своего народа:",
+    "howto_bless_more": "Ещё благословения для молитвы:",
+    "howto_know": "Спросите Иисуса, что Он хочет, чтобы вы знали об этом народе.",
+    "howto_do": "Спросите Иисуса, что Он хочет, чтобы вы сделали для этого народа.",
+    "howto_wheel": "В конце этого сборника молитвенное колесо проведёт вас через час молитвы за эти народы.",
+    "pace_title": "Ваш ритм молитвы",
+    "pace_lead": "Ритм важен. Выберите, как часто вы будете молиться за каждый народ из этого списка, называя его по имени.",
+    "pace_daily": "Каждый день",
+    "pace_weekly": "Каждую неделю",
+    "pace_fortnight": "Раз в две недели",
+    "pace_monthly": "Каждый месяц",
+    "pace_quarter": "Раз в три месяца",
+    "pace_strongest": "Самый сильный",
+    "pace_healthiest": "Самый здоровый",
+    "pace_healthy": "Здоровый",
+    "pace_normal": "Обычный",
+    "pace_slower": "Медленнее",
+    "pace_all": "все {n}, каждый день",
+    "pace_day": "около {n} в день",
+    "pace_week": "около {n} в неделю",
+    "pace_month": "около {n} в месяц",
+    "pace_note": "Ежедневная молитва за все народы — для ходатаев с этим даром, которые отдают молитве около трёх часов в день. Для большинства из нас еженедельная молитва — здоровый и устойчивый ритм.",
+    "blessing_text": "«Да благословит тебя Господь и сохранит тебя! да призрит на тебя Господь светлым лицем Своим и помилует тебя! да обратит Господь лице Свое на тебя и даст тебе мир!»",
+    "blessing_credit": "Числа 6:24–26 · Russian Synodal Bible (общественное достояние) · ebible.org",
+    "bless_refs": [
+      "Psalm 133:3",
+      "Psalm 113:23",
+      "Psalm 28:11",
+      "Psalm 120:7",
+      "Genesis 12:3"
+    ],
+    "howto_bless_col": "Благословляйте их по имени — словами выше или другими словами из Писания.",
+    "example_title": "Пример",
+    "example_note": "Одна чёрточка за каждую молитву; пятая перечёркивает четыре предыдущие.",
+    "themes_title": "Темы для молитвы",
+    "themes_intro": "Вплетайте эти темы в пятиминутные отрезки молитвенного колеса. Они добавят разнообразия и новых идей.",
+    "themes": [
+      "Благословение народов",
+      "Совершенное единство",
+      "Защита от зла",
+      "Слышать голос Божий",
+      "Истинная идентичность во Христе",
+      "Глубокие и здоровые отношения",
+      "Священство всех верующих"
+    ],
+    "scenes_title": "Образы для молитвы",
+    "scenes": [
+      "Сокровище",
+      "Гора",
+      "Море"
+    ],
+    "sets_rings_lede": "Каждая точка — народ из этого списка. Её кольцо показывает, насколько этот народ близок по языку и культуре к ближайшим верующим, которые могли бы его достичь: чем ближе к кресту, тем больше у них общего. Кольцо 1 говорит на том же диалекте и составляет тот же народ; кольцо 9 разделяет лишь языковую семью, но не культуру; за последним кольцом верующие живут рядом, но без общего языка. Читайте от 9 внизу вверх до 1 у креста."
+  },
+  "ar": {
+    "map_page_kicker": "شعوب غير مبلَّغة",
+    "map_page_sub": "قائمة صلاة من أجل {count} شعبًا غير مبلَّغ",
+    "map_unavailable": "خريطة قائمة الصلاة هذه غير مضمَّنة في هذه النسخة المطبوعة.",
+    "map_page_series": "واحدة من {k} قائمة صلاة في UPG100",
+    "zone_affinity_A017": "مجموعات الصمّ",
+    "list_header": "{from}–{to} من {count} · صلّوا لأجلهم بالاسم",
+    "people_suffix": "نسمة",
+    "no_photo": "لا توجد صورة متاحة",
+    "deck_title": "بطاقات الصلاة",
+    "card_country": "الدولة",
+    "card_population": "عدد السكان",
+    "card_language": "اللغة",
+    "card_religion": "الديانة",
+    "card_cta": "صلّوا لأجلهم",
+    "points_title": "12 نقطة صلاة",
+    "points_intro": "ساعة واحدة مع الله، خمس دقائق لكل نقطة. صلّوا هذه النقاط الاثنتي عشرة لأجل الشعوب في هذه الحزمة.",
+    "points_attrib": "إيقاعات الصلاة مستوحاة من Metacamp · metacamp.org",
+    "wheel_title": "عجلة الصلاة",
+    "wheel_intro": "أن تقضي ساعة مع الله؟ الأمر أسهل مما تظن. قسّمها إلى فترات من خمس دقائق وركّز على واحدة من هذه النقاط في كل فترة.",
+    "wheel_minutes": "دقائق",
+    "wheel_start": "ابدأ هنا",
+    "wheel_attrib": "عجلة الصلاة · وحدة Metacamp الأولى · metacamp.org",
+    "privacy_note": "مواقع العلامات تقريبية · تُعمَّم مواقع الشعوب في المصدر حفاظًا على الخصوصية",
+    "rhythms": {
+      "praise": "تسبيح",
+      "wait": "انتظار",
+      "confess": "اعتراف",
+      "read": "قراءة الكلمة",
+      "ask": "طلب",
+      "intercede": "شفاعة",
+      "pray_word": "الصلاة بالكلمة",
+      "thank": "شكر",
+      "sing": "ترنيم",
+      "meditate": "تأمل",
+      "listen": "إصغاء",
+      "praise_end": "تسبيح"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "إنجيل الصليبين",
+        "text": "أن يقبلوا المسيح ملكًا، مغفورًا لهم بصليبه، وأن يحملوا صليبهم، مستعدين أن يتألموا في وسط الاضطهاد. ليَنَل الحمل مكافأة آلامه، بدءًا بي.",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "الروح القدس والتحرير",
+        "text": "اقضوا وقتًا في انتظار الروح القدس ليكلّمكم ويمنحكم القوة لتصلّوا لأجلهم كمحاربي صلاة جريئين: أن يمتلئوا من الروح القدس ويصيروا شهودًا جريئين، غير منعزلين؛ معتمدين بالماء والروح؛ وأن تنكسر كل قبضة للشر؛ وأن يُحشد المؤمنون في الشعوب المجاورة كفَعَلة.",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "نعترف بعدم الإيمان الذي يظن أنه طلب كبير جدًا على الله أن يصل إلى كل هذه الشعوب غير المُصل إليها في حياتنا. ونقبل الحق أنه يُحيي محبتنا وإيماننا لأجل غير المُصل إليهم في العالم.",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "محبة الآب",
+        "text": "أن يَخلُصوا ويَعرِفوا أن أباهم السماوي يحبهم — وأن يحمل بهم الخلاص إلى عائلاتهم وأصدقائهم وجيرانهم وزملائهم في العمل والدراسة، وكل من يعرفونهم شخصيًا.",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "المعموديات",
+        "text": "معموديات جديدة بين الشعوب الأصلية، وأن يُدرَّب كل تلميذ معمَّد ليعمِّد آخرين — معموديات تتكاثر.",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "عمال ورعاة",
+        "text": "عمال مرسَلون ليحبوا بعمق شعبًا لم يلتقوه قط؛ ورعاة صالحون يُقامون من الداخل.",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "أشخاص وبيوت السلام",
+        "text": "أن يجد الفَعَلة والقادة المحليون الشخص المتقبّل وبيت السلام، ويحبوهم محبة عميقة، ويتلمذوهم جيدًا، ويعمّدوهم، ويدرّبوهم ليصلوا إلى أصدقائهم وعائلاتهم بمحبتهم الجديدة ليسوع.",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "الراحة",
+        "text": "اشكروا الله على الراحة التي أعطاكم إياها؛ وأن يدخلوا تلك الراحة في المسيح، وأن تكون عائلتهم الروحية مكانًا آمنًا.",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "أن يفيض الشعب بالساجدين — عبادة في كل مكان، في الحرية وفي القيود.",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "شركة",
+        "text": "أن يتناولوا العشاء الرباني معًا، ويدركوا الحرية التي لهم في المسيح بموته ودفنه وقيامته.",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "المساءلة",
+        "text": "خذوا بعض الوقت واسألوا الله هذا السؤال في صلاة الإصغاء: ماذا يلزم لكي يكون في حياتهم أشخاص يساعدونهم على قراءة الكلمة، والصلاة، والالتزام بالجماعة، والتجاوب مع الألم تجاوبًا حسنًا؟ اقضوا خمس دقائق في الإصغاء إلى الله طلبًا للإلهام — فهو يستطيع أن يعطيكم حلولًا تساعد على ذلك.",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "البركة · العظيمة · الأعظم · من أعظمها",
+        "text": "صلِّ لأجلهم بصلاة يسوع في يوحنا ١٧. البركة: الحياة الأبدية، أن يعرفوا الله ويسوع الذي أرسله. البركة العظيمة: أن يقود المؤمنون منهم غيرهم إلى الإيمان. البركة الأعظم: عائلات روحية جديدة خاصة بهم، واحدة في المسيح. ومن أعظم البركات: قادة من بينهم يدرّبون آخرين ليبدؤوا عائلات روحية جديدة، مرة بعد مرة. اطلب كل هذا وأكثر، أكثر جدًا مما نطلب أو نفتكر. واطلب، كما طلب يسوع، أن يكونوا واحدًا وأن يُحفظوا من الشرير. لا شيء من هذا ممكن إن لم يكن يسوع هو مَن يقول إنه هو.",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "كيف تكوّنت هذه القائمة",
+    "funnel_intro": "كل المجموعات الشعبية على الأرض، مُصفّاة إلى التي بلا كنيسة وبلا عامل.",
+    "funnel_all": "مجموعة شعبية في العالم",
+    "funnel_unreached": "غير مبلَّغة — أقل من 2% إنجيليين",
+    "funnel_frontier": "مجموعات حدودية — 0.1% أو أقل، ولا يكاد أحد يذهب إليها",
+    "funnel_doxa": "مدرجة في قائمة شبكة الصلاة هذه",
+    "funnel_doxa_note": "{frontier} منها حدودية",
+    "funnel_this": "في هذا الكُتيّب",
+    "funnel_packets": "كُتيّبات صلاة UPG100 تتقاسم هذه الـ {total}",
+    "funnel_share": "هذا الكُتيّب هو 1 من {k} قائمة · {pct}% من {total}",
+    "funnel_foot": "الأرقام من {imb_pub}، جُمعت في {imb_date}. {unassigned} من {total} ليست بعد في أي قائمة.",
+    "funnel_people": "نسمة",
+    "funnel_foot_source": "الأرقام من {imb_pub}، جُمعت في {imb_date}.",
+    "funnel_share_pct": "هذا الكُتيّب يمثل {pct}% من {total}",
+    "funnel_list_doxa": "مشروع 2000: المجموعات الشعبية في شبكة الصلاة هذه",
+    "funnel_list_unreached": "مشروع 7000: المجموعات الشعبية غير المبلَّغة",
+    "funnel_list_frontier": "مشروع 4700: المجموعات الشعبية الحدودية",
+    "funnel_list_frontier-500k": "مشروع 700: المجموعات الشعبية الحدودية التي يبلغ عددها 500,000 أو أكثر",
+    "funnel_list_unengaged": "مجموعات شعبية غير مبلَّغة وبلا عاملين",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} أخرى",
+    "funnel_eq_title": "كيف نصل إلى كل رقم",
+    "funnel_tip": "هذه الحزمة واحدة من {n} قائمة UPG100",
+    "life_kicker": "منظور",
+    "life_title": "حياة إنسان، بالأسابيع",
+    "life_lede": "مئة عام. اثنان وخمسون أسبوعًا في كل عام. خمسة آلاف ومئتا مربّع — وهذا كل شيء. كل أسبوع تصلّي فيه هو واحد منها.",
+    "life_foot": "١٠٠ سنة × ٥٢ أسبوعًا = ٥٢٠٠ أسبوع.",
+    "life_weeks": "أسبوعًا",
+    "christian_kicker": "المربّعات الـ٥٢٠٠ نفسها",
+    "christian_title": "مَن منهم يعرف المسيح",
+    "christian_lede": "كل مربّع يمثّل نصيبًا متساويًا من الناس في هذه القائمة. المربّعات الملوّنة هي نسبة من يتبعون يسوع (الإنجيليون)؛ والباقون ما زالوا ينتظرون.",
+    "christian_reached": "أتباع يسوع",
+    "christian_lost": "لم يتبعوا يسوع بعد",
+    "christian_people": "نسمة",
+    "christian_coverage": "محسوبة على {matched} من أصل {total} مجموعة في هذه القائمة",
+    "christian_foot": "مرجّح بالسكان من EvangelicalLevel على peoplegroups.org، مع أخذ كل نطاق منشور عند نقطة منتصفه و٠ لـ«No Known Evangelicals»",
+    "pray_blessed": "هل باركتهم؟",
+    "pray_know": "ماذا تريد أن أعرف؟",
+    "pray_do": "ماذا تريد أن أفعل؟",
+    "point4_passage": "وَلَمَّا دَخَلَ السَّفِينَةَ طَلَبَ إِلَيْهِ الَّذِي كَانَ مَجْنُونًا أَنْ يَكُونَ مَعَهُ، فَلَمْ يَدَعْهُ يَسُوعُ، بَلْ قَالَ لَهُ: «اذْهَبْ إِلَى بَيْتِكَ وَإِلَى أَهْلِكَ، وَأَخْبِرْهُمْ كَمْ صَنَعَ الرَّبُّ بِكَ وَرَحِمَكَ». فَمَضَى وَابْتَدَأَ يُنَادِي فِي الْعَشْرِ الْمُدُنِ كَمْ صَنَعَ بِهِ يَسُوعُ. فَتَعَجَّبَ الْجَمِيعُ.",
+    "point4_passage_credit": "مرقس ٥:‏١٨–٢٠ · Arabic Van Dyck Bible (ملك عام) · ebible.org",
+    "point4_passage_bold": "فَلَمْ يَدَعْهُ يَسُوعُ، بَلْ قَالَ لَهُ: «اذْهَبْ إِلَى بَيْتِكَ وَإِلَى أَهْلِكَ، وَأَخْبِرْهُمْ كَمْ صَنَعَ الرَّبُّ بِكَ وَرَحِمَكَ».",
+    "point4_heart_title": "قلب الآب السماوي",
+    "point4_heart_lede": "يحتاجون أن يعرفوا أن أباهم السماوي يحبهم، ويريد أن يخلّصهم، ومن خلالهم يريد أن يخلُص جيرانهم من الشعوب غير المُصل إليها.",
+    "point4_heart_leadin": "المزيد من الآيات عن قلب الآب السماوي",
+    "point4_heart": [
+      {
+        "who": "نوح"
+      },
+      {
+        "who": "لوط"
+      },
+      {
+        "who": "راحاب"
+      },
+      {
+        "who": "مجنون كورة الجدريين"
+      },
+      {
+        "who": "كرنيليوس"
+      },
+      {
+        "who": "ليدية"
+      },
+      {
+        "who": "السجّان"
+      }
+    ],
+    "desc_where_both": "يعيش شعب {people} في {country} ويتحدث {language}.",
+    "desc_where_country": "يعيش شعب {people} في {country}.",
+    "desc_where_language": "يتحدث شعب {people} {language}.",
+    "desc_gsec_0": "لا يُعرف بينهم مسيحيون إنجيليون، ولا كنيسة، ولا أي مورد للإنجيل بلغتهم.",
+    "desc_gsec_1": "أقل من 2% إنجيليين، ولم يقم أحد بزرع كنائس بينهم في العامين الأخيرين.",
+    "desc_gsec_2": "أقل من 2% إنجيليين، مع أن زرع الكنائس بدأ في بعض المجتمعات.",
+    "desc_gsec_3": "أقل من 2% إنجيليين، وقد بدأ زرع متفرق للكنائس بينهم.",
+    "desc_gsec_4": "ما بين 2% و5% إنجيليون.",
+    "desc_gsec_5": "ما بين 5% و10% إنجيليون.",
+    "desc_gsec_6": "أكثر من 10% إنجيليون.",
+    "sets_kicker": "من قريب ومن ليس كذلك",
+    "sets_title": "طريقتان لرؤية الشعب نفسه",
+    "sets_lede": "الدائرة تسأل إن كان الشعب قد وصلته البشارة. والحلقات تسأل كم يبعد عمّن يستطيع الوصول إليه.",
+    "sets_bounded_title": "وصلتهم البشارة ومن لم تصلهم",
+    "sets_centered_title": "المسافة إلى جار",
+    "sets_bounded_tally": "{inside} في الداخل · {outside} في الخارج · {unknown} غير معروف",
+    "sets_no_data": "{n} بلا بيانات",
+    "sets_centered_tally": "{placed} موضوعون · {centre} في المركز · {unplaced} بلا موضع",
+    "ring_band_dialect": "اللهجة نفسها",
+    "ring_band_language": "اللغة نفسها",
+    "ring_band_family": "العائلة اللغوية نفسها",
+    "ring_band_geography": "الجوار فقط",
+    "ring_culture_same": "الشعب نفسه",
+    "ring_culture_near": "ثقافة قريبة",
+    "ring_culture_different": "ثقافة مختلفة",
+    "ring_join": "{band}، {culture}",
+    "life_jesus": "حياة يسوع، نحو ٣٣ سنة",
+    "life_full": "حياة كاملة من ١٠٠ سنة",
+    "sets_head_bounded": "مجموعة محدودة",
+    "sets_head_centered": "مجموعة متمركزة",
+    "sets_rings_head": "الحلقات، من المركز إلى الخارج",
+    "light_intro": "صلِّ لأجل كل شعب باسمه. في كل سطر ثلاثة أعمدة: ضع خطًّا في العمود كلما فعلت ما يطلبه.",
+    "light_col_group": "الشعب",
+    "books": {
+      "Matthew": "متى",
+      "Acts": "أعمال الرسل",
+      "John": "يوحنا",
+      "1 John": "يوحنا الأولى",
+      "Mark": "مرقس",
+      "Luke": "لوقا",
+      "Hebrews": "العبرانيين",
+      "Colossians": "كولوسي",
+      "1 Corinthians": "كورنثوس الأولى",
+      "1 Peter": "بطرس الأولى",
+      "Genesis": "التكوين",
+      "Joshua": "يشوع",
+      "Numbers": "العدد",
+      "Psalm": "مزمور",
+      "Haggai": "حجي",
+      "Isaiah": "إشعياء",
+      "Habakkuk": "حبقوق",
+      "Ephesians": "أفسس"
+    },
+    "christian_per_cell": "كل مربّع ≈ {n} شخص",
+    "howto_title": "كيف تصلّي بهذه القائمة",
+    "howto_bless": "باركهم بأسمائهم. يمكنك أن تصلّي بالبركة التي أعطاها الله لهارون ليبارك بها شعبه:",
+    "howto_bless_more": "بركات أخرى لتصلّي بها:",
+    "howto_know": "اسأل يسوع ماذا يريدك أن تعرف عن هذا الشعب.",
+    "howto_do": "اسأل يسوع ماذا يريدك أن تفعل لأجل هذا الشعب.",
+    "howto_wheel": "في نهاية هذه الحزمة، ترشدك عجلة الصلاة خلال ساعة من الصلاة لأجل هذه الشعوب.",
+    "pace_title": "إيقاع صلاتك",
+    "pace_lead": "الإيقاع مهم. اختر كم مرة ستصلّي لأجل كل شعب في هذه القائمة باسمه.",
+    "pace_daily": "يوميًا",
+    "pace_weekly": "أسبوعيًا",
+    "pace_fortnight": "كل أسبوعين",
+    "pace_monthly": "شهريًا",
+    "pace_quarter": "كل ثلاثة أشهر",
+    "pace_strongest": "الأقوى",
+    "pace_healthiest": "الأصحّ",
+    "pace_healthy": "صحّي",
+    "pace_normal": "عادي",
+    "pace_slower": "أبطأ",
+    "pace_all": "كلهم ({n})، كل يوم",
+    "pace_day": "نحو {n} في اليوم",
+    "pace_week": "نحو {n} في الأسبوع",
+    "pace_month": "نحو {n} في الشهر",
+    "pace_note": "الصلاة اليومية لأجل كل الشعوب للمتشفّعين الذين نالوا هذه الموهبة ويخصّصون للصلاة نحو ثلاث ساعات يوميًا. ولمعظمنا، الصلاة الأسبوعية إيقاع صحّي وثابت.",
+    "blessing_text": "«يُبَارِكُكَ الرَّبُّ وَيَحْرُسُكَ. يُضِيءُ الرَّبُّ بِوَجْهِهِ عَلَيْكَ وَيَرْحَمُكَ. يَرْفَعُ الرَّبُّ وَجْهَهُ عَلَيْكَ وَيَمْنَحُكَ سَلَامًا.»",
+    "blessing_credit": "العدد ٦:‏٢٤–٢٦ · Arabic Van Dyck Bible (ملك عام) · ebible.org",
+    "howto_bless_col": "باركهم بأسمائهم، بالبركة التي في الأعلى أو بغيرها من الكتاب المقدس.",
+    "example_title": "مثال",
+    "example_note": "خطّ واحد كلما صلّيت؛ والخطّ الخامس يقطع الأربعة التي قبله.",
+    "themes_title": "مواضيع للصلاة",
+    "themes_intro": "أدخِل هذه المواضيع في فترات الخمس دقائق من عجلة الصلاة. فهي تضيف تنوّعًا وأفكارًا جديدة.",
+    "themes": [
+      "مباركة الأمم",
+      "الوحدة الكاملة",
+      "الحماية من الشر",
+      "سماع صوت الله",
+      "الهوية الحقيقية في المسيح",
+      "علاقات عميقة وسليمة",
+      "كهنوت جميع المؤمنين"
+    ],
+    "scenes_title": "صور للصلاة",
+    "scenes": [
+      "الكنز",
+      "الجبل",
+      "البحر"
+    ],
+    "sets_rings_lede": "كل نقطة شعب من هذه القائمة. تُظهر حلقته مقدار ما يشترك فيه من لغة وثقافة مع أقرب المؤمنين الذين يمكنهم الوصول إليه: كلما اقترب من الصليب زاد ما يشتركون فيه. الحلقة 1 تتكلم اللهجة نفسها وهي الشعب نفسه؛ الحلقة 9 لا تشترك إلا في عائلة لغوية، دون الثقافة؛ وبعد الحلقة الأخيرة يعيش مؤمنون قريبًا لكن بلا لغة مشتركة. اقرأ من 9 في الأسفل صعودًا إلى 1 عند الصليب."
+  },
+  "hi": {
+    "map_page_kicker": "अनछुए जनसमूह",
+    "map_page_sub": "{count} अनछुए जनसमूहों की प्रार्थना सूची",
+    "map_unavailable": "इस प्रार्थना सूची का नक्शा इस प्रिंट में शामिल नहीं है।",
+    "map_page_series": "UPG100 की {k} प्रार्थना सूचियों में से एक",
+    "zone_affinity_A017": "बधिर लोगों के समूह",
+    "list_header": "{count} में से {from}–{to} · उनके नाम लेकर प्रार्थना करें",
+    "people_suffix": "लोग",
+    "no_photo": "कोई चित्र उपलब्ध नहीं",
+    "deck_title": "प्रार्थना कार्ड",
+    "card_country": "देश",
+    "card_population": "जनसंख्या",
+    "card_language": "भाषा",
+    "card_religion": "धर्म",
+    "card_cta": "उनके लिए प्रार्थना करें",
+    "points_title": "12 प्रार्थना बिंदु",
+    "points_intro": "परमेश्वर के साथ एक घंटा, हर बिंदु के लिए पाँच मिनट। इस पैकेट के जनसमूहों के लिए ये बारह बिंदु प्रार्थना करें।",
+    "points_attrib": "प्रार्थना लय Metacamp से प्रेरित · metacamp.org",
+    "wheel_title": "प्रार्थना चक्र",
+    "wheel_intro": "परमेश्वर के साथ एक घंटा बिताना? यह आपके सोचने से आसान है। इसे 5 मिनट के हिस्सों में बाँटें और हर हिस्से में इनमें से एक पर ध्यान दें।",
+    "wheel_minutes": "मिनट",
+    "wheel_start": "यहाँ से शुरू करें",
+    "wheel_attrib": "प्रार्थना चक्र · Metacamp मॉड्यूल 1 · metacamp.org",
+    "privacy_note": "चिह्नों की स्थिति अनुमानित है · गोपनीयता के लिए जनसमूहों के स्थान स्रोत पर सामान्यीकृत किए गए हैं",
+    "rhythms": {
+      "praise": "स्तुति",
+      "wait": "प्रतीक्षा",
+      "confess": "अंगीकार",
+      "read": "वचन पढ़ना",
+      "ask": "माँगना",
+      "intercede": "मध्यस्थता",
+      "pray_word": "वचन से प्रार्थना",
+      "thank": "धन्यवाद",
+      "sing": "गायन",
+      "meditate": "मनन",
+      "listen": "सुनना",
+      "praise_end": "स्तुति"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "दो क्रूसों का सुसमाचार",
+        "text": "कि वे मसीह को राजा के रूप में स्वीकार करें, उसके क्रूस के द्वारा क्षमा पाए हुए — और अपना क्रूस उठाएँ, सताव के बीच दुख सहने को तैयार। मेम्ना अपने दुखों का प्रतिफल पाए, मुझसे शुरू करके।",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "पवित्र आत्मा और छुटकारा",
+        "text": "पवित्र आत्मा की प्रतीक्षा में समय बिताएँ, ताकि वह आपसे बात करे और आपको एक साहसी प्रार्थना योद्धा के रूप में उनके लिए प्रार्थना करने की सामर्थ दे: कि वे पवित्र आत्मा से भर जाएँ और साहसी गवाह बनें, अकेले नहीं; पानी और आत्मा में बपतिस्मा पाएँ; हर बुरी पकड़ टूट जाए; और पड़ोसी जनसमूहों के विश्वासी मज़दूरों के रूप में जुटाए जाएँ।",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "हम उस अविश्वास को मान लेते हैं कि परमेश्वर से हमारे जीवनकाल में इन सभी अपहुँच जनसमूहों तक पहुँचने की माँग बहुत बड़ी है। हम इस सत्य को ग्रहण करते हैं कि वह संसार के अपहुँच लोगों के लिए हमारे प्रेम और विश्वास को फिर से जगा रहा है।",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "पिता का प्रेम",
+        "text": "कि वे उद्धार पाएँ और जानें कि उनका स्वर्गीय पिता उनसे प्रेम करता है — और उनके द्वारा वह उनके परिवार, मित्रों, पड़ोसियों, सहकर्मियों, सहपाठियों, उन सबके पास उद्धार पहुँचाए जिन्हें वे व्यक्तिगत रूप से जानते हैं।",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "बपतिस्मा",
+        "text": "मूल निवासी जनसमूहों के बीच नए बपतिस्मे, और हर बपतिस्मा पाया हुआ चेला दूसरों को बपतिस्मा देने के लिए प्रशिक्षित हो — बढ़ते हुए बपतिस्मे।",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "मज़दूर और चरवाहे",
+        "text": "मज़दूर भेजे जाएँ जो उस जाति से गहरा प्रेम करें जिससे वे कभी नहीं मिले; और भीतर से अच्छे चरवाहे उठाए जाएँ।",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "शांति के जन और घर",
+        "text": "कि मज़दूर और मूल निवासी अगुवे ग्रहणशील व्यक्ति और शांति के घर को पाएँ, उनसे गहरा प्रेम करें, उन्हें अच्छी तरह चेला बनाएँ, उन्हें बपतिस्मा दें, और उन्हें यीशु के लिए अपने नए प्रेम के साथ अपने मित्रों और परिवार तक पहुँचने के लिए प्रशिक्षित करें।",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "विश्राम",
+        "text": "परमेश्वर को उस विश्राम के लिए धन्यवाद दें जो उसने आपको दिया है; कि वे मसीह में उस विश्राम में प्रवेश करें, और उनका आत्मिक परिवार एक सुरक्षित स्थान हो।",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "कि वह जनसमूह आराधकों से भर जाए — हर जगह आराधना, स्वतंत्रता में और बेड़ियों में भी।",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "प्रभु भोज",
+        "text": "कि वे साथ मिलकर प्रभु-भोज लें और उस स्वतंत्रता को समझें जो उन्हें मसीह में उसकी मृत्यु, गाड़े जाने और पुनरुत्थान के द्वारा मिली है।",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "जवाबदेही",
+        "text": "कुछ समय निकालें और सुनने वाली प्रार्थना में परमेश्वर से यह प्रश्न पूछें: उनके जीवन में ऐसे लोग होने के लिए क्या आवश्यक होगा जो उन्हें वचन पढ़ने, प्रार्थना करने, संगति के प्रति समर्पित रहने और दुख का अच्छी तरह सामना करने में मदद करें? प्रेरणा के लिए पाँच मिनट परमेश्वर को सुनने में बिताएँ — वह आपको ऐसे समाधान दे सकता है जो इसे सुलझाने में मदद करें।",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "आशीष · बड़ी · और बड़ी · सबसे बड़ी में से एक",
+        "text": "यूहन्ना 17 में यीशु ने जो प्रार्थना की, वही उनके लिए करें। आशीष: अनन्त जीवन — परमेश्वर को और यीशु को जानना, जिन्हें उन्होंने भेजा। बड़ी आशीष: उन्हीं के विश्वासी दूसरों को विश्वास में लाएँ। उससे बड़ी आशीष: उनके अपने नए आत्मिक परिवार, मसीह में एक। सबसे बड़ी आशीषों में से एक: उनके बीच से अगुवे, जो दूसरों को नए आत्मिक परिवार शुरू करने के लिए तैयार करें — बार-बार। यह सब और इससे भी अधिक माँगें, जितना हम माँगते या सोचते हैं उससे कहीं बढ़कर। यीशु की तरह माँगें कि वे एक हों और उस दुष्ट से बचे रहें। इनमें से कुछ भी संभव नहीं, यदि यीशु वह नहीं हैं जो वह कहते हैं कि वह हैं।",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "point4_heart_title": "स्वर्गीय पिता का हृदय",
+    "point4_heart_lede": "उन्हें यह जानने की ज़रूरत है कि उनका स्वर्गीय पिता उनसे प्रेम करता है, वह उन्हें बचाना चाहता है, और उनके द्वारा वह चाहता है कि उनके अपहुँच जनसमूहों के पड़ोसी भी बचाए जाएँ।",
+    "point4_heart_leadin": "स्वर्गीय पिता के हृदय के बारे में और वचन",
+    "point4_heart": [
+      {
+        "who": "नूह"
+      },
+      {
+        "who": "लूत"
+      },
+      {
+        "who": "राहाब"
+      },
+      {
+        "who": "गिरासेनी दुष्टात्माग्रस्त"
+      },
+      {
+        "who": "कुरनेलियुस"
+      },
+      {
+        "who": "लुदिया"
+      },
+      {
+        "who": "दारोगा"
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "यह सूची कैसे बनी",
+    "funnel_intro": "पृथ्वी के सभी जनसमूह, उन तक सीमित जिनके पास न कलीसिया है न कार्यकर्ता।",
+    "funnel_all": "जनसमूह संसार में",
+    "funnel_unreached": "अप्राप्त हैं — 2% से कम सुसमाचारी",
+    "funnel_frontier": "सीमांत हैं — 0.1% या उससे कम, और लगभग कोई नहीं जाता",
+    "funnel_doxa": "इस प्रार्थना नेटवर्क की सूची में हैं",
+    "funnel_doxa_note": "इनमें से {frontier} सीमांत हैं",
+    "funnel_this": "इस पुस्तिका में हैं",
+    "funnel_packets": "UPG100 प्रार्थना पुस्तिकाएँ इन {total} को आपस में बाँटती हैं",
+    "funnel_share": "यह पुस्तिका {k} सूचियों में से 1 है · {total} का {pct}%",
+    "funnel_foot": "आंकड़े {imb_pub} से, {imb_date} को लिए गए। {total} में से {unassigned} अभी किसी सूची में नहीं हैं।",
+    "funnel_people": "लोग",
+    "funnel_foot_source": "आंकड़े {imb_pub} से, {imb_date} को लिए गए।",
+    "funnel_share_pct": "यह पुस्तिका {total} का {pct}% है",
+    "funnel_list_doxa": "परियोजना 2000: इस प्रार्थना नेटवर्क के जनसमूह",
+    "funnel_list_unreached": "परियोजना 7000: अप्राप्त जनसमूह",
+    "funnel_list_frontier": "परियोजना 4700: सीमांत जनसमूह",
+    "funnel_list_frontier-500k": "परियोजना 700: 500,000 या अधिक के सीमांत जनसमूह",
+    "funnel_list_unengaged": "अप्राप्त जनसमूह जिनमें कोई कार्यकर्ता नहीं",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + {n} और",
+    "funnel_eq_title": "हर संख्या कैसे प्राप्त होती है",
+    "funnel_tip": "यह पुस्तिका {n} UPG100 सूचियों में से 1 है",
+    "life_kicker": "परिप्रेक्ष्य",
+    "life_title": "एक मानव जीवन, सप्ताहों में",
+    "life_lede": "सौ वर्ष। हर वर्ष बावन सप्ताह। पाँच हज़ार दो सौ खाने — और बस इतना ही। जिस भी सप्ताह आप प्रार्थना करेंगे, वह इन्हीं में से एक है।",
+    "life_foot": "100 वर्ष x 52 सप्ताह = 5,200 सप्ताह।",
+    "life_weeks": "सप्ताह",
+    "christian_kicker": "वही 5,200 खाने",
+    "christian_title": "उनमें से कौन मसीह को जानता है",
+    "christian_lede": "हर खाना इस सूची के लोगों का एक बराबर हिस्सा है। रंगे हुए खाने उन लोगों का हिस्सा हैं जो यीशु का अनुसरण करते हैं (सुसमाचारी); बाकी अब भी प्रतीक्षा में हैं।",
+    "christian_reached": "यीशु के अनुयायी",
+    "christian_lost": "अभी यीशु के अनुयायी नहीं",
+    "christian_people": "लोग",
+    "christian_coverage": "इस सूची के {total} समूहों में से {matched} के आधार पर",
+    "christian_foot": "peoplegroups.org के EvangelicalLevel से जनसंख्या-भारित, हर प्रकाशित श्रेणी को उसके मध्यबिंदु पर और «No Known Evangelicals» को 0 मानते हुए",
+    "pray_blessed": "क्या मैंने उन्हें आशीष दी?",
+    "pray_know": "आप क्या चाहते हैं कि मैं जानूँ?",
+    "pray_do": "आप क्या चाहते हैं कि मैं करूँ?",
+    "desc_where_both": "{people} {country} में रहते हैं और {language} बोलते हैं।",
+    "desc_where_country": "{people} {country} में रहते हैं।",
+    "desc_where_language": "{people} {language} बोलते हैं।",
+    "desc_gsec_0": "उनके बीच कोई ज्ञात सुसमाचारी मसीही नहीं है, न कोई कलीसिया, और न उनकी भाषा में सुसमाचार का कोई संसाधन।",
+    "desc_gsec_1": "2% से कम सुसमाचारी, और पिछले दो वर्षों में किसी ने उनके बीच कलीसियाएँ स्थापित नहीं कीं।",
+    "desc_gsec_2": "2% से कम सुसमाचारी, यद्यपि कुछ समुदायों में कलीसिया स्थापना शुरू हो चुकी है।",
+    "desc_gsec_3": "2% से कम सुसमाचारी, और उनके बीच छिटपुट कलीसिया स्थापना शुरू हो चुकी है।",
+    "desc_gsec_4": "2% से 5% के बीच सुसमाचारी हैं।",
+    "desc_gsec_5": "5% से 10% के बीच सुसमाचारी हैं।",
+    "desc_gsec_6": "10% से अधिक सुसमाचारी हैं।",
+    "sets_kicker": "कौन निकट है और कौन नहीं",
+    "sets_title": "एक ही जन को देखने के दो तरीके",
+    "sets_lede": "वृत्त पूछता है कि क्या किसी जन तक सुसमाचार पहुँचा है। वलय पूछते हैं कि वे उस से कितनी दूर हैं जो उन तक पहुँच सकता है।",
+    "sets_bounded_title": "पहुँचे और नहीं पहुँचे",
+    "sets_centered_title": "पड़ोसी से दूरी",
+    "sets_bounded_tally": "{inside} भीतर · {outside} बाहर · {unknown} अज्ञात",
+    "sets_no_data": "{n} बिना आँकड़ों के",
+    "sets_centered_tally": "{placed} स्थित · {centre} केंद्र में · {unplaced} अस्थित",
+    "ring_band_dialect": "वही बोली",
+    "ring_band_language": "वही भाषा",
+    "ring_band_family": "वही भाषा-परिवार",
+    "ring_band_geography": "केवल निकटता",
+    "ring_culture_same": "वही जनसमूह",
+    "ring_culture_near": "निकट संस्कृति",
+    "ring_culture_different": "भिन्न संस्कृति",
+    "ring_join": "{band}, {culture}",
+    "life_jesus": "यीशु का जीवन, लगभग 33 वर्ष",
+    "life_full": "100 वर्षों का पूरा जीवन",
+    "sets_head_bounded": "सीमित समूह",
+    "sets_head_centered": "केंद्रित समूह",
+    "sets_rings_head": "वलय, केंद्र से बाहर की ओर",
+    "light_intro": "हर जनसमूह के लिए उसके नाम से प्रार्थना करें। हर पंक्ति में तीन खाने हैं: जब भी आप वह करें जो खाना पूछता है, उस खाने में एक लकीर खींचें।",
+    "light_col_group": "जनसमूह",
+    "books": {
+      "Matthew": "मत्ती",
+      "Acts": "प्रेरितों के काम",
+      "John": "यूहन्ना",
+      "1 John": "1 यूहन्ना",
+      "Mark": "मरकुस",
+      "Luke": "लूका",
+      "Hebrews": "इब्रानियों",
+      "Colossians": "कुलुस्सियों",
+      "1 Corinthians": "1 कुरिन्थियों",
+      "1 Peter": "1 पतरस",
+      "Genesis": "उत्पत्ति",
+      "Joshua": "यहोशू",
+      "Numbers": "गिनती",
+      "Psalm": "भजन संहिता",
+      "Haggai": "हाग्गै",
+      "Isaiah": "यशायाह",
+      "Habakkuk": "हबक्कूक",
+      "Ephesians": "इफिसियों"
+    },
+    "christian_per_cell": "हर खाना ≈ {n} लोग",
+    "howto_title": "इस सूची के साथ प्रार्थना कैसे करें",
+    "howto_bless": "उनके नाम लेकर उन्हें आशीष दें। आप वह आशीष प्रार्थना में बोल सकते हैं जो परमेश्वर ने हारून को अपनी प्रजा के लिए दी थी:",
+    "howto_bless_more": "प्रार्थना के लिए और आशीषें:",
+    "howto_know": "यीशु से पूछें कि वह क्या चाहते हैं कि आप इस जनसमूह के बारे में जानें।",
+    "howto_do": "यीशु से पूछें कि वह क्या चाहते हैं कि आप इस जनसमूह के लिए करें।",
+    "howto_wheel": "इस पैकेट के अंत में एक प्रार्थना चक्र इन जनसमूहों के लिए एक घंटे की प्रार्थना में आपका मार्गदर्शन करता है।",
+    "pace_title": "आपकी प्रार्थना की गति",
+    "pace_lead": "गति मायने रखती है। चुनें कि आप इस सूची के हर जनसमूह के लिए उसके नाम से कितनी बार प्रार्थना करेंगे।",
+    "pace_daily": "हर दिन",
+    "pace_weekly": "हर सप्ताह",
+    "pace_fortnight": "हर दो सप्ताह",
+    "pace_monthly": "हर महीने",
+    "pace_quarter": "हर तीन महीने",
+    "pace_strongest": "सबसे सशक्त",
+    "pace_healthiest": "सबसे स्वस्थ",
+    "pace_healthy": "स्वस्थ",
+    "pace_normal": "सामान्य",
+    "pace_slower": "धीमी",
+    "pace_all": "सभी {n}, हर दिन",
+    "pace_day": "लगभग {n} प्रतिदिन",
+    "pace_week": "लगभग {n} प्रति सप्ताह",
+    "pace_month": "लगभग {n} प्रति माह",
+    "pace_note": "हर जनसमूह के लिए प्रतिदिन प्रार्थना उन मध्यस्थों के लिए है जिन्हें यह वरदान मिला है और जो प्रार्थना में दिन के लगभग तीन घंटे लगाते हैं। हममें से अधिकांश के लिए साप्ताहिक प्रार्थना एक स्वस्थ, स्थिर गति है।",
+    "howto_bless_col": "उनके नाम लेकर उन्हें आशीष दें — ऊपर दी गई आशीष से या पवित्रशास्त्र की किसी और आशीष से।",
+    "example_title": "उदाहरण",
+    "example_note": "हर बार प्रार्थना करने पर एक लकीर; पाँचवीं लकीर पिछली चार को काटती है।",
+    "themes_title": "प्रार्थना के विषय",
+    "themes_intro": "इन विषयों को प्रार्थना चक्र के अपने पाँच-पाँच मिनट के हिस्सों में शामिल करें। ये विविधता और नए विचार लाते हैं।",
+    "themes": [
+      "जातियों को आशीष देना",
+      "पूर्ण एकता",
+      "बुराई से सुरक्षा",
+      "परमेश्वर की आवाज़ सुनना",
+      "मसीह में सच्ची पहचान",
+      "गहरे और स्वस्थ संबंध",
+      "सब विश्वासियों का याजकपद"
+    ],
+    "scenes_title": "प्रार्थना के चित्र",
+    "scenes": [
+      "ख़ज़ाना",
+      "पहाड़",
+      "समुद्र"
+    ],
+    "sets_rings_lede": "हर बिंदु इस सूची का एक जनसमूह है। उसका वलय दिखाता है कि वह उन निकटतम विश्वासियों के साथ भाषा और संस्कृति में कितना साझा करता है जो उस तक पहुँच सकते हैं: क्रूस के जितना पास, उतना अधिक साझा। वलय 1 वही बोली बोलता है और वही लोग है; वलय 9 केवल एक भाषा-परिवार साझा करता है, संस्कृति नहीं; अंतिम वलय के बाहर विश्वासी पास रहते हैं, पर कोई साझा भाषा नहीं। नीचे 9 से ऊपर क्रूस पर 1 तक पढ़ें।"
+  },
+  "zh": {
+    "map_page_kicker": "未得之民",
+    "map_page_sub": "为 {count} 个未得之民的祷告名单",
+    "map_unavailable": "此祷告名单的地图未包含在本次打印中。",
+    "map_page_series": "UPG100 的 {k} 份祷告名单之一",
+    "zone_affinity_A017": "聋人群体",
+    "list_header": "{count} 之中的 {from}–{to} · 按名为他们祷告",
+    "people_suffix": "人",
+    "no_photo": "没有照片",
+    "deck_title": "祷告卡",
+    "card_country": "国家",
+    "card_population": "人口",
+    "card_language": "语言",
+    "card_religion": "宗教",
+    "card_cta": "为他们祷告",
+    "points_title": "12 个祷告要点",
+    "points_intro": "与神同在一小时，每个要点五分钟。为这份祷告册中的族群祷告这十二个要点。",
+    "points_attrib": "祷告节奏取材自 Metacamp · metacamp.org",
+    "wheel_title": "祷告轮",
+    "wheel_intro": "与神同在一小时？比你想的容易。把它分成五分钟一段，每一段专注其中一个要点。",
+    "wheel_minutes": "分钟",
+    "wheel_start": "从这里开始",
+    "wheel_attrib": "祷告轮 · Metacamp 第一单元 · metacamp.org",
+    "privacy_note": "标记位置为概略位置 · 族群所在地已于资料来源处作概化处理以保护隐私",
+    "rhythms": {
+      "praise": "赞美",
+      "wait": "等候",
+      "confess": "认罪",
+      "read": "读神的话",
+      "ask": "祈求",
+      "intercede": "代祷",
+      "pray_word": "以神的话祷告",
+      "thank": "感谢",
+      "sing": "歌唱",
+      "meditate": "默想",
+      "listen": "聆听",
+      "praise_end": "赞美"
+    },
+    "points": [
+      {
+        "n": 1,
+        "rhythm": "praise",
+        "sub": "两个十字架的福音",
+        "text": "愿他们接受基督为王，因祂的十字架得蒙赦免——并背起自己的十字架，甘愿在逼迫中受苦。愿羔羊得着祂受苦的赏赐，从我开始。",
+        "refs": [
+          "Matthew 27:27",
+          "Matthew 16:24–25"
+        ]
+      },
+      {
+        "n": 2,
+        "rhythm": "wait",
+        "sub": "圣灵与释放",
+        "text": "花时间等候圣灵，让祂对你说话，并赐你能力，作一名勇敢的祷告勇士为他们祷告：愿他们被圣灵充满，成为勇敢的见证人，不再孤立；受水和圣灵的洗；一切邪恶的辖制都被打破；愿邻近族群的信徒被动员成为工人。",
+        "refs": [
+          "Acts 1:8",
+          "John 14:26"
+        ]
+      },
+      {
+        "n": 3,
+        "rhythm": "confess",
+        "sub": "",
+        "text": "我们承认自己的不信，以为求神在我们有生之年触及所有这些未得之民族是太大的祈求。我们领受这真理：祂正在复兴我们对全球未得之民的爱与信心。",
+        "refs": [
+          "John 3:16",
+          "1 John 1:9"
+        ]
+      },
+      {
+        "n": 4,
+        "rhythm": "read",
+        "sub": "天父的爱",
+        "text": "愿他们得救，并知道天父爱他们——也愿神借着他们，把救恩带给他们的家人、朋友、邻舍、同事、同学，以及他们所认识的每一个人。",
+        "refs": [
+          "Mark 5:18–20",
+          "Acts 16:31"
+        ],
+        "print_passage": true
+      },
+      {
+        "n": 5,
+        "rhythm": "ask",
+        "sub": "洗礼",
+        "text": "在本土族群中有新的洗礼，每一位受洗的门徒都被装备去为他人施洗——洗礼倍增。",
+        "refs": [
+          "Acts 16",
+          "Acts 10"
+        ]
+      },
+      {
+        "n": 6,
+        "rhythm": "intercede",
+        "sub": "工人与牧人",
+        "text": "愿工人被差派去深爱一群素未谋面的人；也愿好牧人从他们中间被兴起。",
+        "refs": [
+          "Luke 10:2",
+          "John 10:11–15"
+        ]
+      },
+      {
+        "n": 7,
+        "rhythm": "pray_word",
+        "sub": "平安之子与平安之家",
+        "text": "愿工人和本土领袖找到愿意接受的人和平安之家，深深爱他们，好好作门徒训练，为他们施洗，并装备他们带着对耶稣新得的爱去接触自己的朋友和家人。",
+        "refs": [
+          "Luke 10:5–7",
+          "Matthew 10:5–14"
+        ]
+      },
+      {
+        "n": 8,
+        "rhythm": "thank",
+        "sub": "安息",
+        "text": "为神赐给你的安息感谢祂；愿他们在基督里进入那安息，愿他们属灵的家成为安全之所。",
+        "refs": [
+          "Mark 4:26–29",
+          "Hebrews 4:9–11"
+        ]
+      },
+      {
+        "n": 9,
+        "rhythm": "sing",
+        "sub": "",
+        "text": "愿这族群充满敬拜者——处处敬拜，在自由中，也在捆锁中。",
+        "refs": [
+          "Acts 16:25–26",
+          "Colossians 3:16"
+        ]
+      },
+      {
+        "n": 10,
+        "rhythm": "meditate",
+        "sub": "圣餐",
+        "text": "愿他们一同领圣餐，并领会他们藉着基督的死、埋葬和复活在祂里面所得的自由。",
+        "refs": [
+          "Matthew 26:26–30",
+          "1 Corinthians 11:23–26"
+        ]
+      },
+      {
+        "n": 11,
+        "rhythm": "listen",
+        "sub": "彼此守望",
+        "text": "花些时间，在聆听的祷告中问神这个问题：怎样才能让他们生命中有人帮助他们读神的话、祷告、委身于群体，并在苦难中好好回应？花五分钟聆听神，寻求启发——祂能赐你帮助解决这事的方法。",
+        "refs": [
+          "1 Peter 5:6–11",
+          "Hebrews 10:24–25"
+        ]
+      },
+      {
+        "n": 12,
+        "rhythm": "praise_end",
+        "sub": "祝福 · 大 · 更大 · 最大之一",
+        "text": "用耶稣在约翰福音17章的祷告为他们祷告。祝福：永生，认识神和他所差来的耶稣。大祝福：他们自己的信徒带领别人信主。更大的祝福：属于他们自己的新属灵家庭，在基督里合而为一。最大的祝福之一：从他们中间兴起领袖，装备别人建立新的属灵家庭，一代又一代。求这一切，还有更多，超过我们所求所想的。也像耶稣一样，求神使他们合而为一，保守他们脱离那恶者。若耶稣不是他自己所说的那一位，这一切都不可能。",
+        "refs": [
+          "John 17:3",
+          "John 17:11–23",
+          "Ephesians 3:20"
+        ]
+      }
+    ],
+    "point4_heart_title": "天父的心",
+    "point4_heart_lede": "他们需要知道，他们的天父爱他们，祂要拯救他们，并且要藉着他们使他们未得之民族的邻舍得救。",
+    "point4_heart_leadin": "更多关于天父心意的经文",
+    "point4_heart": [
+      {
+        "who": "挪亚"
+      },
+      {
+        "who": "罗得"
+      },
+      {
+        "who": "喇合"
+      },
+      {
+        "who": "格拉森被鬼附的人"
+      },
+      {
+        "who": "哥尼流"
+      },
+      {
+        "who": "吕底亚"
+      },
+      {
+        "who": "禁卒"
+      }
+    ],
+    "funnel_kicker": "UPG100",
+    "funnel_title": "这份名单是怎么来的",
+    "funnel_intro": "地上所有的族群，收窄到那些没有教会、没有工人的族群。",
+    "funnel_all": "个族群在世上",
+    "funnel_unreached": "是未得之民——福音派不足 2%",
+    "funnel_frontier": "是前沿族群——0.1% 或更少，几乎无人前往",
+    "funnel_doxa": "在这个祷告网络的名单上",
+    "funnel_doxa_note": "其中 {frontier} 个为前沿族群",
+    "funnel_this": "在这本祷告册里",
+    "funnel_packets": "份 UPG100 祷告册，共同分担这 {total} 个族群",
+    "funnel_share": "这本祷告册是 {k} 份名单之一 · 占 {total} 的 {pct}%",
+    "funnel_foot": "数据来自 {imb_pub}，采集于 {imb_date}。{total} 中有 {unassigned} 还不在任何名单上。",
+    "funnel_people": "人",
+    "funnel_foot_source": "数据来自 {imb_pub}，采集于 {imb_date}。",
+    "funnel_share_pct": "这本祷告册占 {total} 的 {pct}%",
+    "funnel_list_doxa": "2000 计划：这个祷告网络的族群",
+    "funnel_list_unreached": "7000 计划：未得之民族群",
+    "funnel_list_frontier": "4700 计划：前沿族群",
+    "funnel_list_frontier-500k": "700 计划：50 万人以上的前沿族群",
+    "funnel_list_unengaged": "无人服事的未得之民族群",
+    "zone_join": "{a} + {b}",
+    "zone_join_more": "{a} + 另外 {n} 个",
+    "funnel_eq_title": "每个数字是如何得出的",
+    "funnel_tip": "本手册是 {n} 份 UPG100 名单中的 1 份",
+    "life_kicker": "视角",
+    "life_title": "一生，以周计",
+    "life_lede": "一百年。每年五十二周。五千二百个格子——就这些。你祷告的每一周都是其中之一。",
+    "life_foot": "100 年 x 52 周 = 5,200 周。",
+    "life_weeks": "周",
+    "christian_kicker": "同样的 5,200 个格子",
+    "christian_title": "他们中谁认识基督",
+    "christian_lede": "每个格子代表这份名单中人口的相等一份。着色的格子是跟随耶稣的比例（福音派）；其余的仍在等待。",
+    "christian_reached": "耶稣的跟随者",
+    "christian_lost": "尚未跟随耶稣",
+    "christian_people": "人",
+    "christian_coverage": "按本名单 {total} 个族群中的 {matched} 个计算",
+    "christian_foot": "依据 peoplegroups.org 的 EvangelicalLevel 按人口加权，每个已公布区间取其中点，\"No Known Evangelicals\" 计为 0",
+    "pray_blessed": "我祝福他们了吗？",
+    "pray_know": "你要我知道什么？",
+    "pray_do": "你要我做什么？",
+    "desc_where_both": "{people}生活在{country}，说{language}。",
+    "desc_where_country": "{people}生活在{country}。",
+    "desc_where_language": "{people}说{language}。",
+    "desc_gsec_0": "他们当中没有已知的福音派基督徒，没有教会，也没有他们语言的福音资源。",
+    "desc_gsec_1": "福音派不足 2%，过去两年也无人在他们当中植堂。",
+    "desc_gsec_2": "福音派不足 2%，不过在一些社区中已开始植堂。",
+    "desc_gsec_3": "福音派不足 2%，他们当中已零星开始植堂。",
+    "desc_gsec_4": "福音派占 2% 至 5%。",
+    "desc_gsec_5": "福音派占 5% 至 10%。",
+    "desc_gsec_6": "福音派超过 10%。",
+    "sets_kicker": "谁在近处，谁不在",
+    "sets_title": "看同一群人的两种方式",
+    "sets_lede": "圆圈问的是这个族群是否已被福音触及。同心环问的是他们离能够触及他们的人有多远。",
+    "sets_bounded_title": "已触及与未触及",
+    "sets_centered_title": "与邻近族群的距离",
+    "sets_bounded_tally": "{inside} 圈内 · {outside} 圈外 · {unknown} 未知",
+    "sets_no_data": "{n} 无数据",
+    "sets_centered_tally": "{placed} 已定位 · {centre} 在中心 · {unplaced} 未定位",
+    "ring_band_dialect": "同一方言",
+    "ring_band_language": "同一语言",
+    "ring_band_family": "同一语系",
+    "ring_band_geography": "仅地理相邻",
+    "ring_culture_same": "同一族群",
+    "ring_culture_near": "文化相近",
+    "ring_culture_different": "文化不同",
+    "ring_join": "{band}，{culture}",
+    "life_jesus": "耶稣的一生，约 33 年",
+    "life_full": "完整的一生，100 年",
+    "sets_head_bounded": "边界集合",
+    "sets_head_centered": "中心集合",
+    "sets_rings_head": "各环，由中心向外",
+    "light_intro": "按着名字为每个族群祷告。每一行有三栏：每当你做了某一栏所问的事，就在那一栏里画一道。",
+    "light_col_group": "族群",
+    "books": {
+      "Matthew": "马太福音",
+      "Acts": "使徒行传",
+      "John": "约翰福音",
+      "1 John": "约翰一书",
+      "Mark": "马可福音",
+      "Luke": "路加福音",
+      "Hebrews": "希伯来书",
+      "Colossians": "歌罗西书",
+      "1 Corinthians": "哥林多前书",
+      "1 Peter": "彼得前书",
+      "Genesis": "创世记",
+      "Joshua": "约书亚记",
+      "Numbers": "民数记",
+      "Psalm": "诗篇",
+      "Haggai": "哈该书",
+      "Isaiah": "以赛亚书",
+      "Habakkuk": "哈巴谷书",
+      "Ephesians": "以弗所书"
+    },
+    "christian_per_cell": "每格约 {n} 人",
+    "howto_title": "如何使用这份祷告名单",
+    "howto_bless": "按着名字祝福他们。你可以用神交给亚伦、为他百姓祝福的话来祷告：",
+    "howto_bless_more": "更多可以祷告的祝福经文：",
+    "howto_know": "求问耶稣，他要你知道这个族群的什么。",
+    "howto_do": "求问耶稣，他要你为这个族群做什么。",
+    "howto_wheel": "这份祷告册的最后有一个祷告轮，带领你为这些族群祷告一小时。",
+    "pace_title": "你的祷告节奏",
+    "pace_lead": "节奏很重要。选择你多久一次按着名字为这份名单上的每一个族群祷告。",
+    "pace_daily": "每天",
+    "pace_weekly": "每周",
+    "pace_fortnight": "每两周",
+    "pace_monthly": "每月",
+    "pace_quarter": "每三个月",
+    "pace_strongest": "最有力",
+    "pace_healthiest": "最健康",
+    "pace_healthy": "健康",
+    "pace_normal": "一般",
+    "pace_slower": "较慢",
+    "pace_all": "全部 {n} 个，每天",
+    "pace_day": "每天约 {n} 个",
+    "pace_week": "每周约 {n} 个",
+    "pace_month": "每月约 {n} 个",
+    "pace_note": "每天为每一个族群祷告，适合有代祷恩赐、每天约用三小时祷告的人。对我们大多数人来说，每周一次是健康而稳定的节奏。",
+    "blessing_text": "“愿耶和华赐福给你，保护你。愿耶和华使他的脸光照你，赐恩给你。愿耶和华向你仰脸，赐你平安。”",
+    "blessing_credit": "民数记 6:24–26 · Chinese Union Version (公有领域) · ebible.org",
+    "howto_bless_col": "按着名字祝福他们，可以用上面的祝福，或圣经中的其他祝福。",
+    "example_title": "示例",
+    "example_note": "每祷告一次画一道；第五道横穿前面四道。",
+    "themes_title": "祷告主题",
+    "themes_intro": "把这些主题融入祷告轮中每段五分钟的祷告里，带来更多变化和新的灵感。",
+    "themes": [
+      "祝福列国",
+      "完全合一",
+      "保守脱离邪恶",
+      "聆听神的声音",
+      "在基督里真实的身份",
+      "深厚健康的关系",
+      "信徒皆祭司"
+    ],
+    "scenes_title": "祷告的画面",
+    "scenes": [
+      "宝藏",
+      "山",
+      "海"
+    ],
+    "sets_rings_lede": "每个点是这份名单中的一个族群。它所在的环表示它与能够接触到它的最近信徒在语言和文化上有多相近：越靠近十字架，彼此相同之处越多。第 1 环讲同一种方言，是同一个民族；第 9 环只同属一个语系，文化也不同；最后一环之外，信徒住在附近，却没有共同语言。从下方的 9 向上读到十字架旁的 1。"
+  }
+}

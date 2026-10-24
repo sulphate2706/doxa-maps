@@ -1,0 +1,15 @@
+{
+  "label": "Bless India Posters",
+  "stage": "experimental",
+  "visibility": "team",
+  "posterDesign": [
+    {
+      "family": "blessPoster",
+      "name": "bless-india.range-badge-60x96",
+      "size": "60x96",
+      "mobileFriendly": false,
+      "labelKey": "blessIndiaPosters.rangeBadge60x96"
+    }
+  ],
+  "_comment": "Experimental plugin: our whole-India poster attempts, generated live (no stored rasters). The attempts ship in the PUBLIC build for this plugin; the whole-country poster on Country Posters stays withheld. posterDesign registers each design in the Poster Design catalogue; names are ledgered and never renamed once shipped. mobileFriendly stays false until a design is proven to generate + print on a phone without crashing (the desktop-only rule shows meanwhile). More designs (four-sides 5x8, paired-rows 5.5x5.5) land with later attempts."
+}

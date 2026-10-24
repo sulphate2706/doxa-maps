@@ -1,0 +1,21 @@
+{
+  "map": "الخريطة",
+  "marker": "علامة على الخريطة",
+  "closePopup": "إغلاق النافذة المنبثقة",
+  "zoomIn": "تكبير",
+  "zoomOut": "تصغير",
+  "resetBearing": "اسحب لتدوير الخريطة، وانقر لإعادة الشمال",
+  "toggleAttribution": "إظهار/إخفاء المصادر",
+  "mapFeedback": "ملاحظات على الخريطة",
+  "enterFullscreen": "ملء الشاشة",
+  "exitFullscreen": "الخروج من ملء الشاشة",
+  "findMyLocation": "تحديد موقعي",
+  "locationNotAvailable": "الموقع غير متاح",
+  "enableGlobe": "تفعيل الكرة الأرضية",
+  "disableGlobe": "إيقاف الكرة الأرضية",
+  "ctrlScroll": "استخدم Ctrl مع التمرير لتكبير الخريطة",
+  "cmdScroll": "استخدم ⌘ مع التمرير لتكبير الخريطة",
+  "twoFingers": "استخدم إصبعين لتحريك الخريطة",
+  "mapboxHomepage": "الصفحة الرئيسية لـ Mapbox",
+  "maplibreLogo": "شعار MapLibre"
+}

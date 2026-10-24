@@ -1,0 +1,97 @@
+{
+  "title": {
+    "adoption": "Adoption Progress",
+    "affinityBlocs": "Affinity Blocks",
+    "doxaRegions": "Doxa Regions",
+    "engagement": "Engagement Progress",
+    "gospelResources": "Gospel Resources",
+    "languageFamilies": "Language Families",
+    "prayer": "Prayer Progress",
+    "upg100List": "My UPG100 List",
+    "batchSelect": "Batch Select"
+  },
+  "header": {
+    "default": "Legend",
+    "collapsed": "Legend",
+    "peopleGroupFallback": "People Group"
+  },
+  "prayer": {
+    "needsPrayer": "Needs Prayer",
+    "hasPrayer": "Has Prayer",
+    "fullPrayerCoverage": "Full Prayer Coverage"
+  },
+  "progress": {
+    "title": "Progress",
+    "covered": "{covered} of {total} people groups covered in prayer · {pct}%",
+    "short": "{covered} of {total} · {pct}%",
+    "segment": "{label} · {count} · {pct}%"
+  },
+  "engagement": {
+    "needsEngagement": "Unengaged",
+    "hasEngagement": "Engaged"
+  },
+  "adoption": {
+    "needsAdoption": "Needs Adoption",
+    "hasAdoption": "Has Adoption"
+  },
+  "columns": {
+    "upgs": "UUPGs",
+    "population": "Population",
+    "name": "Name"
+  },
+  "footer": {
+    "total": "Total"
+  },
+  "sortByUpgs": "Sort by UUPGs",
+  "sortByPop": "Sort by Population",
+  "colLabel": {
+    "religion": "UUPG Religions",
+    "prayer": "Prayer Status",
+    "engagement": "Engagement Status",
+    "adoption": "Adoption Status",
+    "status": "Status"
+  },
+  "titleBar": {
+    "legend": "Legend",
+    "peopleGroups": "People Groups",
+    "wagfRegions": "WAGF Regions",
+    "languages": "Languages"
+  },
+  "tabInfo": {
+    "upg100Region": "Region — sort the UPG100 lists by world area (Africa, India, Middle East, Deaf, …). Counts are the UUPGs and population summed across every list beneath it.",
+    "upg100Zone": "UPG100 Lists — each one is a prayer list of the unreached people groups in an area, and is what the map paints and colours. Every list prints as its own packet.",
+    "upg100Group": "People Group — the individual unreached groups inside a list, largest prayer need first. Each map dot is one of these.",
+    "family": "Lang Family — a group of languages descended from a common ancestor (e.g. Indo-European, Afro-Asiatic).",
+    "language": "Language — a system of communication used by a people (e.g. Arabic, Bengali, Hindi).",
+    "dialect": "Dialect/Variety — a regional or social form of a language (e.g. Arabic, Sudanese; Pakistan Sign Language).",
+    "bloc": "Affinity Block — the broadest grouping, by cultural, linguistic and geographic kinship (e.g. Malay Peoples, South Asian Peoples, Deaf, Arab World).",
+    "cluster": "Cluster — a finer grouping inside a block (e.g. Borneo-Kalimantan within Malay Peoples). Rows are marked “(Cluster)” to tell them from people groups.",
+    "group": "People Group — an ethnolinguistic identity on its own terms, independent of country. Rows are marked “(PG)”. One group may live in many countries (the Deaf, for example, in over a hundred).",
+    "pgic": "PG in Country — one row for each people group in each country it lives in (e.g. “Abai Sungai, Malaysia”). Rows are marked “(PGIC)”.",
+    "region": "WAGF Region — the macro-region a country belongs to (e.g. Asia, Africa). Each has its own colour on the map.",
+    "block": "WAGF Bloc — the sub-grouping inside a region (e.g. South East Asia, West Africa).",
+    "country": "Country — individual countries, ordered by unreached population within their bloc."
+  },
+  "a11y": {
+    "expandRow": "Expand {label}",
+    "collapseRow": "Collapse {label}",
+    "clearSelection": "Clear selection",
+    "goUp": "Go up to {label}"
+  },
+  "export": {
+    "poster": "Poster",
+    "packet": "UPG100",
+    "packetExplain": "A prayer list of about 50 to 100 unreached people groups — one person can carry one.",
+    "packetAria": "Prayer packet detail",
+    "packetFull": "Full detail",
+    "packetLightweight": "Lightweight"
+  },
+  "noDataAtThisLevel": "No data at this level",
+  "exportButton": "Export",
+  "exportSelection": "Export selection",
+  "loadingRows": "Loading {label}…",
+  "loadingData": "Loading data…",
+  "showingTop": "Showing top {n} of {m}",
+  "useGeocoderHint": "use the geocoder above to find the rest",
+  "noList": "No list loaded."
+}

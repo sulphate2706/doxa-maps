@@ -1,0 +1,6 @@
+{
+  "_comment": "Capability-4 composite that STACKS two elements top-to-bottom via the shared StackLayout (library/layouts/StackLayout.vue). Unlike big-picture (which couples header<->grid via props), this simply GROUPS two independent elements vertically so you can embed them together and SCROLL through them. Demonstrates the scroll-stack layout primitive.",
+  "type": "nested-elements-mfe",
+  "composes": ["research-dashboard-map", "people-groups-grid"],
+  "label": "Stack Demo (two elements stacked to scroll — StackLayout)"
+}

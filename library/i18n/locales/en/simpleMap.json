@@ -1,0 +1,9 @@
+{
+  "loading": "Loading map…",
+  "initFailed": "The map could not start. This is a map-token or connection problem.",
+  "help": {
+    "what": "This map shows the unreached people groups of the world: communities without meaningful access to the Gospel.",
+    "how": "Use the tabs (if shown) to switch between views. Click any dot to learn more about a people group.",
+    "source": "Data from"
+  }
+}

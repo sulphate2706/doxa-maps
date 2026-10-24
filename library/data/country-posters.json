@@ -1,0 +1,2815 @@
+{
+ "stats": {
+  "countries": 175,
+  "people_groups": 2106,
+  "withGeometry": 161,
+  "noGeometry": 14,
+  "sheet_3x3": 173,
+  "sheet_3x4": 1,
+  "unsupported": 1,
+  "single_group": 92,
+  "generated": "2026-08-01"
+ },
+ "countries": [
+  {
+   "id": "country-ind",
+   "iso3": "IND",
+   "label": "India",
+   "count": 855,
+   "region": "Asia",
+   "bbox": [
+    68.772258,
+    8.087722,
+    97.021619,
+    34.627874
+   ],
+   "sheet": null,
+   "hasGeometry": false,
+   "unsupportedReason": "India has 855 people groups — too many to fit one poster legibly. A solution is in progress."
+  },
+  {
+   "id": "country-chn",
+   "iso3": "CHN",
+   "label": "People's Republic of China",
+   "count": 154,
+   "region": "Asia",
+   "bbox": [
+    73.723,
+    18.221,
+    134.797,
+    53.349
+   ],
+   "sheet": "3x4",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sdn",
+   "iso3": "SDN",
+   "label": "Sudan",
+   "count": 105,
+   "region": "Middle East",
+   "bbox": [
+    21.814,
+    8.641,
+    38.582,
+    23.143
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bra",
+   "iso3": "BRA",
+   "label": "Brazil",
+   "count": 103,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -73.988,
+    -33.749,
+    -34.794,
+    5.27
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lao",
+   "iso3": "LAO",
+   "label": "Lao People's Democratic Republic",
+   "count": 95,
+   "region": "Asia",
+   "bbox": [
+    100.084,
+    13.91,
+    107.633,
+    22.493
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tcd",
+   "iso3": "TCD",
+   "label": "Chad",
+   "count": 53,
+   "region": "Africa",
+   "bbox": [
+    13.473,
+    7.441,
+    24,
+    23.498
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-nga",
+   "iso3": "NGA",
+   "label": "Nigeria",
+   "count": 38,
+   "region": "Africa",
+   "bbox": [
+    2.693,
+    4.27,
+    14.678,
+    13.886
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-idn",
+   "iso3": "IDN",
+   "label": "Indonesia",
+   "count": 36,
+   "region": "Asia",
+   "bbox": [
+    95.194,
+    -10.925,
+    141.019,
+    5.651
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-npl",
+   "iso3": "NPL",
+   "label": "Nepal",
+   "count": 34,
+   "region": "Asia",
+   "bbox": [
+    80.06,
+    26.347,
+    88.204,
+    30.473
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-eth",
+   "iso3": "ETH",
+   "label": "Ethiopia",
+   "count": 29,
+   "region": "Africa",
+   "bbox": [
+    33.003,
+    3.403,
+    47.959,
+    14.835
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-col",
+   "iso3": "COL",
+   "label": "Colombia",
+   "count": 27,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -78.995,
+    -4.224,
+    -66.87,
+    12.441
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-pak",
+   "iso3": "PAK",
+   "label": "Pakistan",
+   "count": 24,
+   "region": "Asia",
+   "bbox": [
+    60.873,
+    24.041,
+    77.117,
+    37.071
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ssd",
+   "iso3": "SSD",
+   "label": "South Sudan",
+   "count": 22,
+   "region": "Africa",
+   "bbox": [
+    24.152,
+    3.481,
+    35.951,
+    12.236
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-rus",
+   "iso3": "RUS",
+   "label": "Russian Federation",
+   "count": 21,
+   "region": "Europe",
+   "bbox": [
+    -180,
+    41.187,
+    180,
+    82.055
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-afg",
+   "iso3": "AFG",
+   "label": "Afghanistan",
+   "count": 21,
+   "region": "Asia",
+   "bbox": [
+    60.472,
+    29.377,
+    74.889,
+    38.491
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-irn",
+   "iso3": "IRN",
+   "label": "Islamic Republic of Iran",
+   "count": 20,
+   "region": "Middle East",
+   "bbox": [
+    44.015,
+    25.059,
+    63.32,
+    39.766
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-dza",
+   "iso3": "DZA",
+   "label": "Algeria",
+   "count": 17,
+   "region": "Middle East",
+   "bbox": [
+    -8.669,
+    18.968,
+    11.997,
+    37.09
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-vnm",
+   "iso3": "VNM",
+   "label": "Vietnam",
+   "count": 16,
+   "region": "Asia",
+   "bbox": [
+    102.144,
+    8.556,
+    109.463,
+    23.394
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tza",
+   "iso3": "TZA",
+   "label": "United Republic of Tanzania",
+   "count": 16,
+   "region": "Africa",
+   "bbox": [
+    29.596,
+    -11.744,
+    40.431,
+    -0.987
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lby",
+   "iso3": "LBY",
+   "label": "Libya",
+   "count": 15,
+   "region": "Middle East",
+   "bbox": [
+    9.287,
+    19.496,
+    25.156,
+    33.181
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gin",
+   "iso3": "GIN",
+   "label": "Guinea",
+   "count": 13,
+   "region": "Africa",
+   "bbox": [
+    -14.914,
+    7.191,
+    -7.638,
+    12.676
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mli",
+   "iso3": "MLI",
+   "label": "Mali",
+   "count": 13,
+   "region": "Africa",
+   "bbox": [
+    -12.239,
+    10.146,
+    4.245,
+    25
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-btn",
+   "iso3": "BTN",
+   "label": "Bhutan",
+   "count": 13,
+   "region": "Asia",
+   "bbox": [
+    88.75,
+    26.697,
+    92.124,
+    28.353
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mys",
+   "iso3": "MYS",
+   "label": "Malaysia",
+   "count": 12,
+   "region": "Asia",
+   "bbox": [
+    100.12,
+    0.854,
+    119.267,
+    7.037
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-per",
+   "iso3": "PER",
+   "label": "Peru",
+   "count": 10,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -81.327,
+    -18.355,
+    -68.643,
+    -0.014
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ago",
+   "iso3": "AGO",
+   "label": "Angola",
+   "count": 10,
+   "region": "Africa",
+   "bbox": [
+    11.461,
+    -18.039,
+    24.088,
+    -4.397
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-yem",
+   "iso3": "YEM",
+   "label": "Yemen",
+   "count": 9,
+   "region": "Middle East",
+   "bbox": [
+    42.598,
+    12.305,
+    54.534,
+    19
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-som",
+   "iso3": "SOM",
+   "label": "Somalia",
+   "count": 9,
+   "region": "Africa",
+   "bbox": [
+    40.996,
+    -1.665,
+    51.413,
+    11.984
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ben",
+   "iso3": "BEN",
+   "label": "Benin",
+   "count": 9,
+   "region": "Africa",
+   "bbox": [
+    0.783,
+    6.216,
+    3.849,
+    12.417
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cod",
+   "iso3": "COD",
+   "label": "Democratic Republic of the Congo",
+   "count": 9,
+   "region": "Africa",
+   "bbox": [
+    12.201,
+    -13.449,
+    31.277,
+    5.392
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-eri",
+   "iso3": "ERI",
+   "label": "Eritrea",
+   "count": 8,
+   "region": "Africa",
+   "bbox": [
+    36.433,
+    12.355,
+    43.137,
+    18.02
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tha",
+   "iso3": "THA",
+   "label": "Thailand",
+   "count": 8,
+   "region": "Asia",
+   "bbox": [
+    97.346,
+    5.613,
+    105.637,
+    20.464
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cmr",
+   "iso3": "CMR",
+   "label": "Cameroon",
+   "count": 8,
+   "region": "Africa",
+   "bbox": [
+    8.505,
+    1.661,
+    16.188,
+    13.079
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-irq",
+   "iso3": "IRQ",
+   "label": "Iraq",
+   "count": 8,
+   "region": "Middle East",
+   "bbox": [
+    38.775,
+    29.063,
+    48.559,
+    37.371
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bfa",
+   "iso3": "BFA",
+   "label": "Burkina Faso",
+   "count": 8,
+   "region": "Africa",
+   "bbox": [
+    -5.518,
+    9.401,
+    2.405,
+    15.083
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-omn",
+   "iso3": "OMN",
+   "label": "Oman",
+   "count": 7,
+   "region": "Middle East",
+   "bbox": [
+    52,
+    16.65,
+    59.839,
+    26.387
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mmr",
+   "iso3": "MMR",
+   "label": "Myanmar",
+   "count": 7,
+   "region": "Asia",
+   "bbox": [
+    92.173,
+    9.973,
+    101.17,
+    28.526
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-jpn",
+   "iso3": "JPN",
+   "label": "Japan",
+   "count": 6,
+   "region": "Asia",
+   "bbox": [
+    123.662,
+    24.255,
+    148.893,
+    45.557
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tgo",
+   "iso3": "TGO",
+   "label": "Togo",
+   "count": 6,
+   "region": "Africa",
+   "bbox": [
+    -0.143,
+    6.112,
+    1.803,
+    11.137
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-uga",
+   "iso3": "UGA",
+   "label": "Uganda",
+   "count": 6,
+   "region": "Africa",
+   "bbox": [
+    29.582,
+    -1.481,
+    35,
+    4.234
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-zmb",
+   "iso3": "ZMB",
+   "label": "Zambia",
+   "count": 6,
+   "region": "Africa",
+   "bbox": [
+    22.001,
+    -18.079,
+    33.712,
+    -8.277
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ven",
+   "iso3": "VEN",
+   "label": "Venezuela",
+   "count": 6,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -73.391,
+    0.649,
+    -59.816,
+    12.199
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-nam",
+   "iso3": "NAM",
+   "label": "Namibia",
+   "count": 6,
+   "region": "Africa",
+   "bbox": [
+    11.727,
+    -28.969,
+    25.263,
+    -16.981
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-brn",
+   "iso3": "BRN",
+   "label": "Brunei Darussalam",
+   "count": 5,
+   "region": "Asia",
+   "bbox": [
+    114.08,
+    4.002,
+    115.366,
+    5.042
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ken",
+   "iso3": "KEN",
+   "label": "Kenya",
+   "count": 5,
+   "region": "Africa",
+   "bbox": [
+    33.914,
+    -4.675,
+    41.906,
+    5.431
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-syr",
+   "iso3": "SYR",
+   "label": "Syrian Arab Republic",
+   "count": 5,
+   "region": "Middle East",
+   "bbox": [
+    35.717,
+    32.311,
+    42.369,
+    37.318
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lbn",
+   "iso3": "LBN",
+   "label": "Lebanon",
+   "count": 4,
+   "region": "Middle East",
+   "bbox": [
+    35.107,
+    33.05,
+    36.619,
+    34.693
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-pse",
+   "iso3": "PSE",
+   "label": "State of Palestine",
+   "count": 4,
+   "region": "Middle East",
+   "bbox": [
+    34.881,
+    31.342,
+    35.573,
+    32.543
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-moz",
+   "iso3": "MOZ",
+   "label": "Mozambique",
+   "count": 4,
+   "region": "Africa",
+   "bbox": [
+    30.217,
+    -26.858,
+    40.837,
+    -10.48
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-isr",
+   "iso3": "ISR",
+   "label": "Israel",
+   "count": 4,
+   "region": "Europe",
+   "bbox": [
+    34.267,
+    29.491,
+    35.895,
+    33.336
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mar",
+   "iso3": "MAR",
+   "label": "Morocco",
+   "count": 4,
+   "region": "Middle East",
+   "bbox": [
+    -17.105,
+    20.77,
+    -0.999,
+    35.922
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tur",
+   "iso3": "TUR",
+   "label": "Türkiye",
+   "count": 3,
+   "region": "Europe",
+   "bbox": [
+    26.036,
+    35.808,
+    44.818,
+    42.105
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-qat",
+   "iso3": "QAT",
+   "label": "Qatar",
+   "count": 3,
+   "region": "Middle East",
+   "bbox": [
+    50.757,
+    24.471,
+    51.662,
+    26.159
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-aze",
+   "iso3": "AZE",
+   "label": "Azerbaijan",
+   "count": 3,
+   "region": "Asia",
+   "bbox": [
+    44.765,
+    38.394,
+    50.37,
+    41.913
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gmb",
+   "iso3": "GMB",
+   "label": "Republic of The Gambia",
+   "count": 3,
+   "region": "Africa",
+   "bbox": [
+    -16.814,
+    13.043,
+    -13.797,
+    13.821
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sau",
+   "iso3": "SAU",
+   "label": "Saudi Arabia",
+   "count": 3,
+   "region": "Middle East",
+   "bbox": [
+    34.571,
+    16.4,
+    55.667,
+    32.154
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-jor",
+   "iso3": "JOR",
+   "label": "Jordan",
+   "count": 3,
+   "region": "Middle East",
+   "bbox": [
+    34.96,
+    29.184,
+    39.302,
+    33.374
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-zwe",
+   "iso3": "ZWE",
+   "label": "Zimbabwe",
+   "count": 3,
+   "region": "Africa",
+   "bbox": [
+    25.238,
+    -22.421,
+    33.067,
+    -15.607
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-com",
+   "iso3": "COM",
+   "label": "Comoros",
+   "count": 3,
+   "region": "Africa",
+   "bbox": [
+    43.231,
+    -11.938,
+    43.518,
+    -11.367
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-usa",
+   "iso3": "USA",
+   "label": "United States of America",
+   "count": 3,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -178.228,
+    13.246,
+    179.778,
+    71.353
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bgd",
+   "iso3": "BGD",
+   "label": "Bangladesh",
+   "count": 3,
+   "region": "Asia",
+   "bbox": [
+    88.021,
+    20.728,
+    92.691,
+    26.621
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gnb",
+   "iso3": "GNB",
+   "label": "Guinea-Bissau",
+   "count": 3,
+   "region": "Africa",
+   "bbox": [
+    -16.717,
+    10.892,
+    -13.635,
+    12.686
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-kos",
+   "iso3": "KOS",
+   "label": "Kosovo",
+   "count": 3,
+   "region": "Europe",
+   "bbox": [
+    20.629,
+    42.045,
+    21.164624,
+    42.672265
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mrt",
+   "iso3": "MRT",
+   "label": "Mauritania",
+   "count": 3,
+   "region": "Middle East",
+   "bbox": [
+    -17.102,
+    14.72,
+    -4.833,
+    27.363
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-esh",
+   "iso3": "ESH",
+   "label": "Western Sahara",
+   "count": 3,
+   "region": "Middle East",
+   "bbox": [
+    -13.16135268,
+    26.15604526,
+    -10.60080902,
+    27.1178117
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tjk",
+   "iso3": "TJK",
+   "label": "Tajikistan",
+   "count": 3,
+   "region": "Asia",
+   "bbox": [
+    67.331,
+    36.671,
+    75.154,
+    41.039
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-egy",
+   "iso3": "EGY",
+   "label": "Egypt",
+   "count": 3,
+   "region": "Middle East",
+   "bbox": [
+    24.706,
+    22,
+    36.892,
+    31.671
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mng",
+   "iso3": "MNG",
+   "label": "Mongolia",
+   "count": 3,
+   "region": "Asia",
+   "bbox": [
+    87.738,
+    41.58,
+    119.932,
+    52.15
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sur",
+   "iso3": "SUR",
+   "label": "Suriname",
+   "count": 2,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -58.069,
+    1.831,
+    -53.975,
+    6.01
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ner",
+   "iso3": "NER",
+   "label": "Niger",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    0.167,
+    11.692,
+    15.997,
+    23.517
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-zaf",
+   "iso3": "ZAF",
+   "label": "South Africa",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    16.452,
+    -34.834,
+    32.945,
+    -22.125
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cck",
+   "iso3": "CCK",
+   "label": "Cocos (Keeling) Islands",
+   "count": 2,
+   "region": "Oceania",
+   "bbox": [
+    96.831418,
+    -12.185468,
+    96.895,
+    -12.119
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bhr",
+   "iso3": "BHR",
+   "label": "Bahrain",
+   "count": 2,
+   "region": "Middle East",
+   "bbox": [
+    50.433,
+    25.792,
+    50.632,
+    26.257
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cog",
+   "iso3": "COG",
+   "label": "Republic of the Congo",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    11.126,
+    -5.041,
+    18.641,
+    3.711
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-are",
+   "iso3": "ARE",
+   "label": "United Arab Emirates",
+   "count": 2,
+   "region": "Middle East",
+   "bbox": [
+    51.592,
+    22.631,
+    56.376,
+    26.06
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gab",
+   "iso3": "GAB",
+   "label": "Gabon",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    8.723,
+    -3.953,
+    14.521,
+    2.302
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-guf",
+   "iso3": "GUF",
+   "label": "French Guiana",
+   "count": 2,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -54.601,
+    2.179,
+    -51.656,
+    5.762
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-civ",
+   "iso3": "CIV",
+   "label": "Cote d'Ivoire",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    -8.619,
+    4.344,
+    -2.506,
+    10.726
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-kgz",
+   "iso3": "KGZ",
+   "label": "Kyrgyzstan",
+   "count": 2,
+   "region": "Asia",
+   "bbox": [
+    69.265,
+    39.173,
+    80.23,
+    43.267
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lbr",
+   "iso3": "LBR",
+   "label": "Liberia",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    -11.498,
+    4.361,
+    -7.369,
+    8.545
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-swe",
+   "iso3": "SWE",
+   "label": "Sweden",
+   "count": 2,
+   "region": "Europe",
+   "bbox": [
+    11.113,
+    55.339,
+    24.167,
+    69.06
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tun",
+   "iso3": "TUN",
+   "label": "Tunisia",
+   "count": 2,
+   "region": "Middle East",
+   "bbox": [
+    7.522,
+    30.23,
+    11.6,
+    37.347
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sle",
+   "iso3": "SLE",
+   "label": "Sierra Leone",
+   "count": 2,
+   "region": "Africa",
+   "bbox": [
+    -13.309,
+    6.923,
+    -10.271,
+    9.999
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-and",
+   "iso3": "AND",
+   "label": "Andorra",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    1.412,
+    42.43,
+    1.787,
+    42.655
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sen",
+   "iso3": "SEN",
+   "label": "Senegal",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    -17.531,
+    12.308,
+    -11.358,
+    16.693
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mne",
+   "iso3": "MNE",
+   "label": "Montenegro",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    18.434,
+    41.846,
+    20.354,
+    43.558
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bol",
+   "iso3": "BOL",
+   "label": "Bolivia",
+   "count": 1,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -69.645,
+    -22.907,
+    -57.454,
+    -9.67
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ecu",
+   "iso3": "ECU",
+   "label": "Ecuador",
+   "count": 1,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -91.59,
+    -5.012,
+    -75.189,
+    1.412
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-vir",
+   "iso3": "VIR",
+   "label": "Virgin Islands, U.S.",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -64.904,
+    17.68,
+    -64.565,
+    17.77
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-atg",
+   "iso3": "ATG",
+   "label": "Antigua and Barbuda",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.897,
+    16.998,
+    -61.674,
+    17.168
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-arm",
+   "iso3": "ARM",
+   "label": "Armenia",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    43.465,
+    38.853,
+    46.637,
+    41.298
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-abw",
+   "iso3": "ABW",
+   "label": "Aruba",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -70.063,
+    12.415,
+    -69.867,
+    12.621
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bhs",
+   "iso3": "BHS",
+   "label": "Bahamas",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -78.998,
+    20.912,
+    -73.012,
+    26.92
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-brb",
+   "iso3": "BRB",
+   "label": "Barbados",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -59.651,
+    13.052,
+    -59.422,
+    13.335
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-blr",
+   "iso3": "BLR",
+   "label": "Belarus",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    23.165,
+    51.252,
+    32.74,
+    56.167
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bmu",
+   "iso3": "BMU",
+   "label": "Bermuda",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -64.886,
+    32.248,
+    -64.674,
+    32.339
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bih",
+   "iso3": "BIH",
+   "label": "Bosnia and Herzegovina",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    15.724,
+    42.557,
+    19.623,
+    45.245
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-vgb",
+   "iso3": "VGB",
+   "label": "Virgin Islands, British",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -64.716,
+    18.389,
+    -64.558,
+    18.457
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-bgr",
+   "iso3": "BGR",
+   "label": "Bulgaria",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    22.348,
+    41.241,
+    28.61,
+    44.21
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-khm",
+   "iso3": "KHM",
+   "label": "Cambodia",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    102.334,
+    10.405,
+    107.628,
+    14.687
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cym",
+   "iso3": "CYM",
+   "label": "Cayman Islands",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -81.416,
+    19.265,
+    -81.086,
+    19.388
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-caf",
+   "iso3": "CAF",
+   "label": "Central African Republic",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    14.421,
+    2.221,
+    27.453,
+    11.002
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cxr",
+   "iso3": "CXR",
+   "label": "Christmas Island",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    105.672,
+    -10.426,
+    105.672,
+    -10.426
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cok",
+   "iso3": "COK",
+   "label": "Cook Islands",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -159.819,
+    -21.268,
+    -159.734,
+    -21.2
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cub",
+   "iso3": "CUB",
+   "label": "Cuba",
+   "count": 1,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -84.951,
+    19.842,
+    -74.138,
+    23.187
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cuw",
+   "iso3": "CUW",
+   "label": "Curaçao",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -69.156,
+    12.044,
+    -68.737,
+    12.392
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cyp",
+   "iso3": "CYP",
+   "label": "Cyprus",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    32.276,
+    34.629,
+    34.589,
+    35.695
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-dji",
+   "iso3": "DJI",
+   "label": "Djibouti",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    41.749,
+    10.93,
+    43.414,
+    12.708
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-dma",
+   "iso3": "DMA",
+   "label": "Dominica",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.48,
+    15.21,
+    -61.242,
+    15.639
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gnq",
+   "iso3": "GNQ",
+   "label": "Equatorial Guinea",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    8.415,
+    1,
+    11.36,
+    3.788
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-fro",
+   "iso3": "FRO",
+   "label": "Faroe Islands",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -7.259,
+    61.946,
+    -6.734,
+    62.31
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-fji",
+   "iso3": "FJI",
+   "label": "Fiji",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    177.25,
+    -18.276,
+    180,
+    -16.168
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-pyf",
+   "iso3": "PYF",
+   "label": "French Polynesia",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -149.62,
+    -17.872,
+    -149.137,
+    -17.494
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-geo",
+   "iso3": "GEO",
+   "label": "Georgia",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    40.008,
+    41.055,
+    46.737,
+    43.586
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gib",
+   "iso3": "GIB",
+   "label": "Gibraltar",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -5.35,
+    36.133,
+    -5.35,
+    36.133
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-grc",
+   "iso3": "GRC",
+   "label": "Greece",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    19.628,
+    34.922,
+    28.247,
+    41.733
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-grd",
+   "iso3": "GRD",
+   "label": "Grenada",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.802,
+    12.003,
+    -61.609,
+    12.227
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-glp",
+   "iso3": "GLP",
+   "label": "Guadeloupe",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.809,
+    15.947,
+    -61.55,
+    16.362
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gum",
+   "iso3": "GUM",
+   "label": "Guam",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    144.619,
+    13.255,
+    144.957,
+    13.648
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ggy",
+   "iso3": "GGY",
+   "label": "Guernsey",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -2.675,
+    49.43,
+    -2.505,
+    49.506
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-isl",
+   "iso3": "ISL",
+   "label": "Iceland",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -24.532,
+    63.399,
+    -13.495,
+    66.537
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-kir",
+   "iso3": "KIR",
+   "label": "Kiribati",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -157.554,
+    1.7,
+    -157.169,
+    2.048
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-jam",
+   "iso3": "JAM",
+   "label": "Jamaica",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -78.368,
+    17.701,
+    -76.19,
+    18.525
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-jey",
+   "iso3": "JEY",
+   "label": "Jersey",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -2.11,
+    49.1858,
+    -2.11,
+    49.1858
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-kaz",
+   "iso3": "KAZ",
+   "label": "Kazakhstan",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    46.492,
+    40.569,
+    87.316,
+    55.48
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-prk",
+   "iso3": "PRK",
+   "label": "North Korea",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    124.316,
+    37.673,
+    130.675,
+    43.008
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-kwt",
+   "iso3": "KWT",
+   "label": "Kuwait",
+   "count": 1,
+   "region": "Middle East",
+   "bbox": [
+    46.553,
+    28.524,
+    48.431,
+    30.104
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lie",
+   "iso3": "LIE",
+   "label": "Liechtenstein",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    9.486,
+    47.049,
+    9.634,
+    47.266
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lux",
+   "iso3": "LUX",
+   "label": "Luxembourg",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    5.736,
+    49.451,
+    6.531,
+    50.175
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-myt",
+   "iso3": "MYT",
+   "label": "Mayotte",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    45.052,
+    -12.993,
+    45.237,
+    -12.651
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mdv",
+   "iso3": "MDV",
+   "label": "Maldives",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    73.527,
+    1.868,
+    73.545,
+    1.943
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mlt",
+   "iso3": "MLT",
+   "label": "Malta",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    14.321,
+    35.823,
+    14.569,
+    35.996
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mnp",
+   "iso3": "MNP",
+   "label": "Northern Mariana Islands",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    145.708,
+    15.092,
+    145.814,
+    15.287
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mhl",
+   "iso3": "MHL",
+   "label": "Marshall Islands",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    171.038,
+    7.053,
+    171.355,
+    7.165
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mus",
+   "iso3": "MUS",
+   "label": "Mauritius",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    57.309,
+    -20.525,
+    57.809,
+    -19.985
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-fsm",
+   "iso3": "FSM",
+   "label": "Micronesia, Federated States of",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    158.112,
+    6.784,
+    158.322,
+    6.99
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mco",
+   "iso3": "MCO",
+   "label": "Monaco",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    7.416,
+    43.733,
+    7.416,
+    43.733
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-msr",
+   "iso3": "MSR",
+   "label": "Montserrat",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -62.232,
+    16.675,
+    -62.144,
+    16.824
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ncl",
+   "iso3": "NCL",
+   "label": "New Caledonia",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    164,
+    -22.395,
+    168.134,
+    -20.076
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-niu",
+   "iso3": "NIU",
+   "label": "Niue",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -169.949,
+    -19.155,
+    -169.774,
+    -18.953
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-vut",
+   "iso3": "VUT",
+   "label": "Vanuatu",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    166.542,
+    -18.995,
+    169.341,
+    -14.644
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-nfk",
+   "iso3": "NFK",
+   "label": "Norfolk Island",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    167.9544,
+    -29.0338,
+    167.9544,
+    -29.0338
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-hkg",
+   "iso3": "HKG",
+   "label": "Hong Kong",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    114.16930265,
+    22.27819894,
+    114.16930265,
+    22.27819894
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mac",
+   "iso3": "MAC",
+   "label": "Macao",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    113.55129,
+    22.2116,
+    113.55129,
+    22.2116
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-plw",
+   "iso3": "PLW",
+   "label": "Palau",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    131.676,
+    2.751,
+    131.895,
+    3.061
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-png",
+   "iso3": "PNG",
+   "label": "Papua New Guinea",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    140.842,
+    -11.645,
+    155.965,
+    -1.959
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-blm",
+   "iso3": "BLM",
+   "label": "Saint Barthélemy",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -62.868,
+    17.879,
+    -62.792,
+    17.925
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-shn",
+   "iso3": "SHN",
+   "label": "Saint Helena",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -5.79,
+    -16.003,
+    -5.636,
+    -15.906
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lca",
+   "iso3": "LCA",
+   "label": "Saint Lucia",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.081,
+    13.708,
+    -60.874,
+    14.108
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-smr",
+   "iso3": "SMR",
+   "label": "San Marino",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    12.404,
+    43.896,
+    12.51,
+    43.991
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-asm",
+   "iso3": "ASM",
+   "label": "American Samoa",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -170.844,
+    -14.373,
+    -170.562,
+    -14.245
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-wsm",
+   "iso3": "WSM",
+   "label": "Samoa",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -172.804,
+    -14.049,
+    -171.434,
+    -13.444
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-stp",
+   "iso3": "STP",
+   "label": "Sao Tome and Principe",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    6.467,
+    0.019,
+    6.749,
+    0.412
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sxm",
+   "iso3": "SXM",
+   "label": "Sint Maarten (Dutch part)",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -63.0458,
+    18.0237,
+    -63.0458,
+    18.0237
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-slb",
+   "iso3": "SLB",
+   "label": "Solomon Islands",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    156.454,
+    -11.845,
+    162.375,
+    -6.611
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-lka",
+   "iso3": "LKA",
+   "label": "Sri Lanka",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    79.693,
+    5.919,
+    81.879,
+    9.836
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-sjm",
+   "iso3": "SJM",
+   "label": "Svalbard and Jan Mayen",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    15.65,
+    78.22,
+    15.65,
+    78.22
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-swz",
+   "iso3": "SWZ",
+   "label": "Eswatini",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    30.803,
+    -27.318,
+    32.135,
+    -25.719
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tkl",
+   "iso3": "TKL",
+   "label": "Tokelau",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -172.47,
+    -8.557,
+    -172.47,
+    -8.557
+   ],
+   "sheet": "3x3",
+   "hasGeometry": false,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-ton",
+   "iso3": "TON",
+   "label": "Tonga",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -175.34,
+    -21.272,
+    -175.032,
+    -21.062
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-tca",
+   "iso3": "TCA",
+   "label": "Turks and Caicos Islands",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -72.039,
+    21.803,
+    -71.863,
+    21.953
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-vct",
+   "iso3": "VCT",
+   "label": "Saint Vincent and the Grenadines",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.277,
+    13.122,
+    -61.115,
+    13.383
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-wlf",
+   "iso3": "WLF",
+   "label": "Wallis and Futuna",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -176.251,
+    -13.352,
+    -176.162,
+    -13.219
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-pry",
+   "iso3": "PRY",
+   "label": "Paraguay",
+   "count": 1,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -62.64,
+    -27.591,
+    -54.26,
+    -19.29
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-fin",
+   "iso3": "FIN",
+   "label": "Finland",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    19.628,
+    59.808,
+    31.587,
+    70.081
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-alb",
+   "iso3": "ALB",
+   "label": "Albania",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    19.282,
+    39.648,
+    21.058,
+    42.661
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-pan",
+   "iso3": "PAN",
+   "label": "Panama",
+   "count": 1,
+   "region": "Latin America & Caribbean",
+   "bbox": [
+    -83.05,
+    7.204,
+    -77.148,
+    9.615
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-nzl",
+   "iso3": "NZL",
+   "label": "New Zealand",
+   "count": 1,
+   "region": "Oceania",
+   "bbox": [
+    -176.893,
+    -47.277,
+    178.55,
+    -34.393
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-cze",
+   "iso3": "CZE",
+   "label": "Czech Republic",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    12.091,
+    48.552,
+    18.852,
+    51.056
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-gha",
+   "iso3": "GHA",
+   "label": "Ghana",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    -3.255,
+    4.737,
+    1.192,
+    11.173
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-phl",
+   "iso3": "PHL",
+   "label": "Philippines",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    117.182,
+    5.056,
+    126.605,
+    18.651
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-guy",
+   "iso3": "GUY",
+   "label": "Guyana",
+   "count": 1,
+   "region": "North America & Non-Spanish Caribbean",
+   "bbox": [
+    -61.4,
+    1.189,
+    -56.487,
+    8.495
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-uzb",
+   "iso3": "UZB",
+   "label": "Uzbekistan",
+   "count": 1,
+   "region": "Asia",
+   "bbox": [
+    55.999,
+    37.177,
+    73.14,
+    45.59
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-esp",
+   "iso3": "ESP",
+   "label": "Spain",
+   "count": 1,
+   "region": "Europe",
+   "bbox": [
+    -18.007,
+    27.735,
+    4.328,
+    43.787
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  },
+  {
+   "id": "country-mwi",
+   "iso3": "MWI",
+   "label": "Malawi",
+   "count": 1,
+   "region": "Africa",
+   "bbox": [
+    32.676,
+    -17.125,
+    35.919,
+    -9.368
+   ],
+   "sheet": "3x3",
+   "hasGeometry": true,
+   "unsupportedReason": null
+  }
+ ]
+}

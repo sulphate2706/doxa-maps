@@ -1,0 +1,73 @@
+{
+  "title": "Internetzugang dort, wo Volksgruppen ohne Engagement leben",
+  "bands": {
+    "yes": "verbunden 60%+",
+    "partial": "teilweise 25–59%",
+    "no": "gering, unter 25%",
+    "unknown": "nicht gemessen"
+  },
+  "peopleGroup": "Volksgruppe",
+  "caveat": "LANDESWEITE Zahlen (Weltbank). Konnektivität je Stadt ist nicht öffentlich verfügbar — schließen Sie nicht vom Land auf eine Stadt.",
+  "sheet": {
+    "close": "Schließen",
+    "ai": "Diese Daten wurden durch KI-gestützte Recherche gefunden — sie können falsche Angaben enthalten.",
+    "dismiss": "Ausblenden",
+    "internetUsers": "Internetnutzer",
+    "measured": "Gemessen",
+    "mobilePer100": "Mobilfunk pro 100",
+    "peopleGroups": "Volksgruppen",
+    "topPlatform": "Wichtigste Plattform",
+    "unknown": "unbekannt",
+    "carriers": "Netzbetreiber & ISPs ({n})",
+    "socialPlatforms": "Soziale Plattformen",
+    "note": "Landesweite Zahlen, keine Messungen je Stadt. Betreibernamen sind ASN-Registerinhaber — darunter neben ISPs auch Banken und Universitäten; die Einstufung als Netzbetreiber ist daher eine Namensheuristik, keine geprüfte Klassifizierung."
+  },
+  "list": {
+    "title": "Städte mit Internet",
+    "intro": "Konnektivität dort, wo die unerreichten Volksgruppen leben. Jede Zahl ist eine gemessene nationale Statistik mit ihrem Erhebungsjahr —",
+    "introStrong": "„unbekannt“ heißt ungemessen, nie angenommen.",
+    "countries": "Länder: {n}",
+    "measured": "gemessen: {n}",
+    "unknown": "unbekannt: {n}",
+    "low": "geringe Konnektivität: {n}",
+    "sectionMeta": "Länder: {countries} · Volksgruppen: {groups}",
+    "unmeasured": "ungemessen: {n}",
+    "rowMeta": "Volksgruppen: {groups} · Orte: {locations}",
+    "centres": "Bevölkerungszentren: {n}",
+    "mobPer100": "Mobil/100",
+    "band": {
+      "yes": "verbunden",
+      "partial": "teilweise",
+      "no": "gering",
+      "unknown": "unbekannt"
+    },
+    "source": "Internet- und Mobilfunkzahlen: World Bank Open Data (CC BY 4.0), jüngste Erhebung 2018–2024. Einteilung: verbunden ≥60 % · teilweise 25–59 % · gering <25 % der Bevölkerung nutzen das Internet. Auflösung auf Länderebene: Messungen pro Stadt sind in diesem Umfang nicht öffentlich verfügbar. Namen von Internetanbietern und Netzbetreibern sowie Zensurgeschichte erfordern belegte Berichte je Land und werden nicht angezeigt."
+  },
+  "tables": {
+    "title": "Städtedaten",
+    "intro": "Wo die unerreichten Volksgruppen leben – und was sie erreicht. Jede Tabelle lässt sich sortieren, filtern und exportieren; jede führt ihre eigenen Quellen und Grenzen.",
+    "tabs": {
+      "cities": "Schlüsselstädte",
+      "internet": "Konnektivität",
+      "operators": "Internetanbieter & Netzbetreiber",
+      "social": "Soziale Plattformen",
+      "messaging": "Messenger"
+    },
+    "loading": "{name} wird geladen…"
+  },
+  "adm1": {
+    "title": "Indien nach Bundesstaat: haben das Internet schon genutzt",
+    "women": "Frauen",
+    "men": "Männer",
+    "total": "Gesamt",
+    "urban": "Stadt",
+    "rural": "Land",
+    "source": "NFHS-5 (2019–21), Personen im Alter von 15–49 Jahren: Anteil derer, die das Internet schon einmal genutzt haben. Eine Befragung von Menschen, keine Zählung von Anschlüssen.",
+    "missing": "Noch keine Staatsgrenze für {names}: Ihre Werte stehen in den Daten, nicht auf der Karte."
+  },
+  "loading": "Karte wird gezeichnet…",
+  "ui": {
+    "showKey": "Legende ausklappen",
+    "hideKey": "Legende einklappen"
+  }
+}

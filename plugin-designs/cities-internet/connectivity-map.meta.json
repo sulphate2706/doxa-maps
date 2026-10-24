@@ -1,0 +1,9 @@
+{
+  "stage": "production",
+  "type": "single",
+  "label": "Cities with Internet — connectivity map",
+  "config": {
+    "pinHint": false
+  },
+  "note": "pinHint:false because this map has NO DOTS. It shades country polygons by national internet penetration; the shared PinHint's default label invites the reader to 'Tap a coloured dot', which points at something that does not exist here and makes a working map look broken. Opt-out is the documented channel (library/components/hints/PinHint.vue). Sibling: gospel-resources/resources-map.meta.json — keep these two in step."
+}

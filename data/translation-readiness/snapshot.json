@@ -1,0 +1,4828 @@
+{
+ "fetched": "2026-09-27",
+ "sources": {
+  "glottolog": {
+   "url": "https://raw.githubusercontent.com/glottolog/glottolog-cldf/master/cldf/values.csv",
+   "licence": "CC BY 4.0",
+   "name": "Glottolog (CLDF): most extensive description (MED)",
+   "fetched": "2026-09-27"
+  },
+  "sil": {
+   "url": "https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3.tab",
+   "licence": "SIL ISO 639-3 code tables (free to use)",
+   "name": "SIL ISO 639-3 code table",
+   "fetched": "2026-09-27"
+  },
+  "wikipedia": {
+   "url": "https://meta.wikimedia.org/w/api.php?action=sitematrix&format=json&smtype=language&smlangprop=code|site",
+   "licence": "CC BY-SA 4.0 (Wikipedia text)",
+   "name": "Wikimedia sitematrix: language Wikipedias",
+   "fetched": "2026-09-27"
+  },
+  "commonVoice": {
+   "url": "https://commonvoice.mozilla.org/api/v1/stats/languages",
+   "licence": "CC0 1.0",
+   "name": "Mozilla Common Voice: validated hours per locale",
+   "fetched": "2026-09-27"
+  },
+  "flores": {
+   "url": "https://huggingface.co/api/datasets/openlanguagedata/flores_plus/tree/main/dev",
+   "licence": "CC BY-SA 4.0",
+   "name": "FLORES+ (OLDI) MT benchmark languages",
+   "fetched": "2026-09-27"
+  }
+ },
+ "med_codes": {
+  "0": "long grammar (300+ pages)",
+  "1": "grammar",
+  "2": "grammar sketch",
+  "3": "text, phonology, dictionary or a New Testament",
+  "4": "word list or less"
+ },
+ "med": {
+  "bsk": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "myp": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dba": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "vkj": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "wti": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nrb": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sbf": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mpe": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mgb": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "swx": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kec": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "goe": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ole": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "oon": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "anq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "knm": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kpj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cby": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tgr": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "npb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "yax": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "twm": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "yne": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kyp": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "lso": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "xhv": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "chm": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bmr": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ceg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "msw": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "she": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "teq": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "hug": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "amr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tag": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ras": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "std": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "yad": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kmq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "aft": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dru": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "fvr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mei": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "mgd": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ndp": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dta": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "njl": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dau": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "djc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "liu": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "rji": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "mhu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "clk": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "mxj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "zkr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "dhi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lhp": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "mni": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bgg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hmb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "csf": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "csx": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "psc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mzy": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lsy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "lgs": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "afg": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "tsm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mdl": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "sqk": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "aen": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cbn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "zng": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pac": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "krs": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mrj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mhr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mbn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bor": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "fuj": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "wrn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lma": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "jbn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bej": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dek": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "zag": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jio": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "atr": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "xwg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sjg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tma": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "lul": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "yul": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cbi": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kcp": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tbr": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "kxh": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "daj": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "jnl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "suv": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "tsj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kzq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "tda": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "dsq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kcy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ddn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "swl": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "fsl": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "gss": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "asp": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "gsg": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "isr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "esl": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lbs": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "sdl": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "sqs": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ysm": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hks": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "taz": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "jle": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hnu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tou": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "thm": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "vie": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cog": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bbh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ngt": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "alk": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bfw": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "khf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kjg": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "puo": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dnu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mns": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cui": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "arr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kib": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bdi": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bmd": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bsp": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kcf": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pbp": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "mbv": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ful": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "hoz": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sze": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "thv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "wmd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dzg": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "evn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sjo": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ava": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dar": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "che": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "xom": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lgn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kie": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lic": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "byu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "laq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "waw": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "txi": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kui": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "yup": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "abl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "amv": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mdy": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "moy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "jup": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jpn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "buh": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ium": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "blm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tel": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tuo": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "myy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cub": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "adi": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hsn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sdp": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ers": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nmy": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sxg": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "neh": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dzl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ckh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pks": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "xms": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "gus": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "ysl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bqn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dse": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ise": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jos": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bfi": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nzs": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mot": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pkt": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "scb": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nuo": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "kuf": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "tth": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "oog": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "kdt": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "spu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "brb": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "nev": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "oyb": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tdf": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "mra": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tyh": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "pnx": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "lbn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "rbb": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sme": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "awe": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "lkr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nus": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "soy": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "fuc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "fuf": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "wol": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cbb": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "khw": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "moz": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tzm": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cnu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "siz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kby": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ani": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kpt": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "cji": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "xdq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sbj": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "klf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mvu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kth": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "tct": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "lha": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "yrn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "naq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "aoc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tri": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "udj": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lcd": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "mqi": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "szn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "yoi": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "rys": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "yox": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bwn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pha": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kko": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "wll": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "dil": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ghl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kdu": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "loh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "suq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kbo": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "nwm": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "gbn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "xal": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mvf": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bxu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bxr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "peh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tcy": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kfg": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kfd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kfe": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mju": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "bao": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "snn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "yue": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lkc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "wmg": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nxq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "nru": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lae": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "xns": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bfu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tgf": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "phj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jls": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ase": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "icl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "dsl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nsl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "rsl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pgz": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "szs": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "asf": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tnb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "tbn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kmz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "azb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tur": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tyv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "uzb": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bru": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sss": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hld": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "hal": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ren": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sqq": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "lbo": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jeg": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "skk": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "cdz": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "prt": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "uuu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bgk": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "pll": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "suy": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kay": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "amc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "xor": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "thu": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "nnj": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "toq": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gya": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "seq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kia": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "blo": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bcz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "unk": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "rus": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "gwt": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "prn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dml": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sgl": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "qxn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bva": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dbp": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dwa": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "hau": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bdm": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "grr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mzb": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "byn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "xan": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "aar": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ssy": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tig": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "shv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sqt": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hoh": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "sus": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "knu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bzx": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "skq": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "knc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bph": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tin": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kva": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "akv": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "khv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "zha": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "swi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kmc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lbt": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "blf": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "btz": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "btd": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "btx": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kvp": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "bdg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "asl": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "muq": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "drh": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "sle": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pir": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tue": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cbc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sri": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "des": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cmn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "wuh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dln": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "nkd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kaf": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jiu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cdn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "xkz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "adx": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lbj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "suz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pum": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "brx": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "usi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lsb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "aib": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "uzn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kir": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kaz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kns": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mnq": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "krr": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "tlq": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "mml": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "huo": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "fin": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "asn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "shp": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ywn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mcd": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "yaa": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "adh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sep": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ewe": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cib": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "vkn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lan": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "vkz": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "epi": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "fub": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "knf": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mmh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "wau": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kpc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bwi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hbs": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sts": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nli": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "div": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "psh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "aee": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "psi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "prc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "isk": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sgy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "wne": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "wbl": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kvf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "ckq": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mub": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mes": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "jmb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "bbt": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "tgd": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "jia": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "xmj": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "wbj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "amh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "arb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "gdq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hss": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bze": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sho": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tsl": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "zhd": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "zyg": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "aih": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mkg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "doc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gqu": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ges": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bvt": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bls": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tdj": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "dms": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "txm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "dok": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kjc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kjk": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "coa": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pse": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ind": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "zlm": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kvh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "okn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tkn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hml": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bwx": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hea": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kxj": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "kan": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nbt": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ycl": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "phq": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "slt": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bee": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bod": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tsk": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bro": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lkh": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ybh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "krn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "krv": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ukk": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "gvp": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "awt": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "avv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "oym": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "shz": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bvo": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kou": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "glc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kqg": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dgs": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "zne": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tyy": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "lop": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "nml": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bma": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "deg": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "enn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "opa": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bqj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ckm": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kas": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bsh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ask": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "wbk": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mnj": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ydg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "qer": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "qvz": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sok": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "saa": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bvf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "daa": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bid": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mmy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "btf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mou": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "trj": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "pqa": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "jmi": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "msv": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "tsb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "gwd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "alw": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "liq": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gow": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "apc": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "acm": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "avl": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sqr": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "ayl": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "acq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ayh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "acw": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "heb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "vai": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "men": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "boz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bxw": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "neb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pcc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "giw": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "giq": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gzn": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "rob": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "lhn": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kyi": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ttg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "abf": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bsb": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bsy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "srj": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "bke": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "ogn": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "sdd": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "eni": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "lnt": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "buc": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "sml": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "lcq": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "alo": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hmm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hmh": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kwv": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mge": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bdo": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mne": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kfa": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ysn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hni": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "byo": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mpz": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pho": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kbg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cgk": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pto": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "zna": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bub": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "pnq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "knz": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "kqm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nbw": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "dkg": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "bqx": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "ost": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "une": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "prq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cpu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bkk": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "scl": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nep": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mup": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "noe": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "wbr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gbl": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bgw": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hlb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bhu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "xvi": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "smy": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bsg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "zum": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sgh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "srh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "jeu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kil": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mew": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "nmi": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "gaz": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "arv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dsh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ymm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ajp": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "yhd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mey": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "acx": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "abv": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ars": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "afb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ayn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "knk": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "agx": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "zgn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "zqe": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "bna": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mqn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mbd": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dtp": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "iba": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "goq": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "iii": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "yix": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "phh": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ahk": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "luk": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "pah": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "fni": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "xsm": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ndt": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kdn": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "tum": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "vmk": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mgh": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "gwc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "mvy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sdg": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ush": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "dgo": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "xnr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pgg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cdh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gbk": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kfs": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gbm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kfy": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "npi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hne": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "rmt": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ory": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ort": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "siy": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kur": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "lki": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bgp": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ydd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nld": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dox": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "hae": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tqq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dbr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "jii": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gex": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "shu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "aju": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ary": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "arq": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ssh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bam": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dyu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mnk": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kke": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "uan": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kzj": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tdu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kzt": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ktr": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "snb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "htu": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "hik": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "cqd": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "mjp": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mal": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kte": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "xsr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "adw": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "urz": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kbp": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kdh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bqk": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bdj": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bvi": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tbm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gye": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "ibr": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mhw": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "nye": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "sbs": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ttl": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "fwe": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nya": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kcz": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "yao": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mwe": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bos": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "srp": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hrv": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "gwf": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "xka": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "phl": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pan": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "phr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lss": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kfr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "snd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "guj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "swv": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bfy": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "sgj": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mai": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mag": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "anp": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "rmy": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ben": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hac": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kfm": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kmr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bgn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pes": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "afr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ovd": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kpa": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "gea": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "dbb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "gax": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "apd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pga": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kcn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "aeb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "msc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "lao": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "pht": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kxd": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tam": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "muv": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "yea": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nos": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "yig": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "gyo": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "bqg": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bly": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "wwa": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "gwb": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "vut": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "cnq": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kwn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "diu": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "toi": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bem": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "thk": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "rwl": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "jit": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "pkb": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ndg": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cat": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "btv": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "pmu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "mar": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "vgr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "gju": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "rwr": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "mtr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bgq": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hoj": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "dhd": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "vjk": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "kyw": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bho": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "bns": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bjj": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bra": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "bgc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "hin": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "urd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "hca": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "asm": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "tly": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "avd": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "kgn": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sdb": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "soj": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "bcc": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "deh": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "prs": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "eng": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kks": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "orc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ssn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ajt": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "shn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "tyr": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "blt": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "yoy": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tts": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ltu": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "pil": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "fod": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "her": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dhm": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "wlc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kcu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "sbm": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "mwn": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "knn": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "dcc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "anr": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "tdb": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "shm": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "sdf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "tgk": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "lsd": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "cuu": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tiz": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "nod": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kkh": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tdd": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "tyj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "ywt": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "ymx": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "aks": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tsc": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "kuj": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "swh": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "wni": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "ziw": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "nyr": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "spa": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "sck": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "drw": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "yno": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "khb": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "aio": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "phk": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "tmp": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "nyw": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "nyn": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "xma": {
+   "level": 3,
+   "code": "med-phonology_or_text"
+  },
+  "thi": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "rwm": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "por": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "kty": {
+   "level": 2,
+   "code": "med-grammar_sketch"
+  },
+  "fra": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "xno": {
+   "level": 0,
+   "code": "med-long_grammar"
+  },
+  "nrf": {
+   "level": 4,
+   "code": "med-wordlist_or_less"
+  },
+  "yom": {
+   "level": 1,
+   "code": "med-grammar"
+  },
+  "nmd": {
+   "level": 1,
+   "code": "med-grammar"
+  }
+ },
+ "wikipedia": {
+  "abk": "ab",
+  "ace": "ace",
+  "ady": "ady",
+  "afr": "af",
+  "alt": "alt",
+  "amh": "am",
+  "ami": "ami",
+  "arg": "an",
+  "ang": "ang",
+  "ann": "ann",
+  "anp": "anp",
+  "ara": "ar",
+  "arc": "arc",
+  "ary": "ary",
+  "arz": "arz",
+  "asm": "as",
+  "ast": "ast",
+  "atj": "atj",
+  "ava": "av",
+  "avk": "avk",
+  "awa": "awa",
+  "aym": "ay",
+  "aze": "az",
+  "azb": "azb",
+  "bak": "ba",
+  "ban": "ban",
+  "bar": "bar",
+  "bbc": "bbc",
+  "bcl": "bcl",
+  "bdr": "bdr",
+  "bel": "be-tarask",
+  "bew": "bew",
+  "bul": "bg",
+  "bis": "bi",
+  "bjn": "bjn",
+  "blk": "blk",
+  "bam": "bm",
+  "ben": "bn",
+  "bod": "bo",
+  "bol": "bol",
+  "bpy": "bpy",
+  "bre": "br",
+  "bos": "bs",
+  "btm": "btm",
+  "bug": "bug",
+  "bxr": "bxr",
+  "cat": "ca",
+  "cbk": "cbk-zam",
+  "cdo": "cdo",
+  "che": "ce",
+  "ceb": "ceb",
+  "cha": "ch",
+  "chr": "chr",
+  "chy": "chy",
+  "ckb": "ckb",
+  "cos": "co",
+  "crh": "crh",
+  "ces": "cs",
+  "csb": "csb",
+  "chu": "cu",
+  "chv": "cv",
+  "cym": "cy",
+  "dan": "da",
+  "dag": "dag",
+  "deu": "de",
+  "dga": "dga",
+  "din": "din",
+  "diq": "diq",
+  "dsb": "dsb",
+  "dtp": "dtp",
+  "dty": "dty",
+  "div": "dv",
+  "dzo": "dz",
+  "ewe": "ee",
+  "ell": "el",
+  "eng": "en",
+  "epo": "eo",
+  "spa": "es",
+  "est": "et",
+  "eus": "eu",
+  "ext": "ext",
+  "fas": "fa",
+  "fat": "fat",
+  "ful": "ff",
+  "fin": "fi",
+  "fij": "fj",
+  "fao": "fo",
+  "fon": "fon",
+  "fra": "fr",
+  "frp": "frp",
+  "frr": "frr",
+  "fur": "fur",
+  "fry": "fy",
+  "gle": "ga",
+  "gag": "gag",
+  "gan": "gan",
+  "gcr": "gcr",
+  "gla": "gd",
+  "glg": "gl",
+  "glk": "glk",
+  "grn": "gn",
+  "gom": "gom",
+  "gor": "gor",
+  "got": "got",
+  "gpe": "gpe",
+  "gsw": "gsw",
+  "guj": "gu",
+  "guc": "guc",
+  "gur": "gur",
+  "guw": "guw",
+  "glv": "gv",
+  "hau": "ha",
+  "hak": "hak",
+  "haw": "haw",
+  "heb": "he",
+  "hin": "hi",
+  "hif": "hif",
+  "hrv": "hr",
+  "hsb": "hsb",
+  "hat": "ht",
+  "hun": "hu",
+  "hye": "hy",
+  "hyw": "hyw",
+  "ina": "ia",
+  "iba": "iba",
+  "ind": "id",
+  "ile": "ie",
+  "ibo": "ig",
+  "igl": "igl",
+  "ipk": "ik",
+  "ilo": "ilo",
+  "inh": "inh",
+  "ido": "io",
+  "isl": "is",
+  "isv": "isv",
+  "ita": "it",
+  "iku": "iu",
+  "jpn": "ja",
+  "jam": "jam",
+  "jbo": "jbo",
+  "jav": "jv",
+  "kat": "ka",
+  "kaa": "kaa",
+  "kab": "kab",
+  "kai": "kai",
+  "kaj": "kaj",
+  "kbd": "kbd",
+  "kbp": "kbp",
+  "kcg": "kcg",
+  "kon": "kg",
+  "kge": "kge",
+  "kik": "ki",
+  "kaz": "kk",
+  "khm": "km",
+  "kan": "kn",
+  "knc": "knc",
+  "kor": "ko",
+  "koi": "koi",
+  "krc": "krc",
+  "kas": "ks",
+  "ksh": "ksh",
+  "kur": "ku",
+  "kus": "kus",
+  "kom": "kv",
+  "cor": "kw",
+  "kir": "ky",
+  "lat": "la",
+  "lad": "lad",
+  "ltz": "lb",
+  "lbe": "lbe",
+  "lez": "lez",
+  "lfn": "lfn",
+  "lug": "lg",
+  "lim": "li",
+  "lij": "lij",
+  "lld": "lld",
+  "lmo": "lmo",
+  "lin": "ln",
+  "lao": "lo",
+  "lit": "lt",
+  "ltg": "ltg",
+  "lav": "lv",
+  "lzh": "lzh",
+  "mad": "mad",
+  "mag": "mag",
+  "mai": "mai",
+  "mdf": "mdf",
+  "mlg": "mg",
+  "mhr": "mhr",
+  "mri": "mi",
+  "min": "min",
+  "mkd": "mk",
+  "mal": "ml",
+  "mon": "mn",
+  "mni": "mni",
+  "mnw": "mnw",
+  "mos": "mos",
+  "mar": "mr",
+  "mrj": "mrj",
+  "msa": "ms",
+  "mlt": "mt",
+  "mwl": "mwl",
+  "mya": "my",
+  "myv": "myv",
+  "mzn": "mzn",
+  "nan": "nan",
+  "nap": "nap",
+  "nds": "nds-nl",
+  "nep": "ne",
+  "new": "new",
+  "nia": "nia",
+  "nld": "nl",
+  "nno": "nn",
+  "nor": "no",
+  "nov": "nov",
+  "nqo": "nqo",
+  "nbl": "nr",
+  "nrm": "nrm",
+  "nso": "nso",
+  "nup": "nup",
+  "nav": "nv",
+  "nya": "ny",
+  "oci": "oc",
+  "olo": "olo",
+  "orm": "om",
+  "ori": "or",
+  "oss": "os",
+  "pan": "pa",
+  "pag": "pag",
+  "pam": "pam",
+  "pap": "pap",
+  "pcd": "pcd",
+  "pcm": "pcm",
+  "pdc": "pdc",
+  "pfl": "pfl",
+  "pli": "pi",
+  "pol": "pl",
+  "pms": "pms",
+  "pnb": "pnb",
+  "pnt": "pnt",
+  "ppl": "ppl",
+  "pus": "ps",
+  "por": "pt",
+  "pwn": "pwn",
+  "que": "qu",
+  "rki": "rki",
+  "roh": "rm",
+  "rmy": "rmy",
+  "run": "rn",
+  "ron": "ro",
+  "rsk": "rsk",
+  "rus": "ru",
+  "rue": "rue",
+  "rup": "rup",
+  "kin": "rw",
+  "san": "sa",
+  "sah": "sah",
+  "sat": "sat",
+  "srd": "sc",
+  "scn": "scn",
+  "sco": "sco",
+  "snd": "sd",
+  "sme": "se",
+  "sag": "sg",
+  "sgs": "sgs",
+  "hbs": "sh",
+  "shi": "shi",
+  "shn": "shn",
+  "sin": "si",
+  "slk": "sk",
+  "skr": "skr",
+  "slv": "sl",
+  "smo": "sm",
+  "smn": "smn",
+  "sna": "sn",
+  "som": "so",
+  "sqi": "sq",
+  "srp": "sr",
+  "srn": "srn",
+  "ssw": "ss",
+  "sot": "st",
+  "stq": "stq",
+  "sun": "su",
+  "swe": "sv",
+  "swa": "sw",
+  "syl": "syl",
+  "szl": "szl",
+  "szy": "szy",
+  "tam": "ta",
+  "tay": "tay",
+  "tcy": "tcy",
+  "tdd": "tdd",
+  "tel": "te",
+  "tet": "tet",
+  "tgk": "tg",
+  "tha": "th",
+  "tir": "ti",
+  "tig": "tig",
+  "tuk": "tk",
+  "tgl": "tl",
+  "tly": "tly",
+  "tsn": "tn",
+  "ton": "to",
+  "tok": "tok",
+  "tpi": "tpi",
+  "tur": "tr",
+  "trv": "trv",
+  "tso": "ts",
+  "tat": "tt",
+  "tum": "tum",
+  "twi": "tw",
+  "tah": "ty",
+  "tyv": "tyv",
+  "udm": "udm",
+  "uig": "ug",
+  "ukr": "uk",
+  "urd": "ur",
+  "uzb": "uz",
+  "ven": "ve",
+  "vec": "vec",
+  "vep": "vep",
+  "vie": "vi",
+  "vls": "vls",
+  "vol": "vo",
+  "vro": "vro",
+  "wln": "wa",
+  "war": "war",
+  "wol": "wo",
+  "wuu": "wuu",
+  "xal": "xal",
+  "xho": "xh",
+  "xmf": "xmf",
+  "yid": "yi",
+  "yor": "yo",
+  "yue": "yue",
+  "zha": "za",
+  "zea": "zea",
+  "zgh": "zgh",
+  "zho": "zh",
+  "zul": "zu"
+ },
+ "commonVoice": {
+  "eng": 2795,
+  "deu": 1397,
+  "fra": 1111,
+  "cym": 124,
+  "bre": 36,
+  "chv": 27,
+  "tur": 131,
+  "tat": 34,
+  "kab": 572,
+  "kir": 40,
+  "gle": 15,
+  "slv": 18,
+  "cat": 3008,
+  "ita": 365,
+  "zho": 240,
+  "epo": 1444,
+  "nld": 125,
+  "arg": 17,
+  "ara": 94,
+  "asm": 2.9,
+  "ast": 0.9,
+  "aze": 0.6,
+  "bul": 17,
+  "ben": 49,
+  "cnh": 1.9,
+  "ces": 76,
+  "dan": 13,
+  "ell": 21,
+  "spa": 456,
+  "est": 63,
+  "eus": 456,
+  "fas": 373,
+  "fin": 15,
+  "fry": 67,
+  "heb": 3.5,
+  "hsb": 4.7,
+  "hun": 138,
+  "ina": 15,
+  "ind": 34,
+  "isl": 0.1,
+  "jpn": 380,
+  "kat": 266,
+  "kaz": 2.4,
+  "kor": 2.2,
+  "cor": 13,
+  "mdf": 0.5,
+  "mkd": 24,
+  "mon": 47,
+  "myv": 3.8,
+  "nob": 2.3,
+  "nep": 1.4,
+  "nno": 1.6,
+  "oci": 1.9,
+  "ori": 2.9,
+  "pol": 177,
+  "por": 184,
+  "roh": 7.6,
+  "ron": 25,
+  "rus": 257,
+  "sah": 16,
+  "srd": 3,
+  "slk": 57,
+  "sqi": 9.1,
+  "srp": 7.7,
+  "swe": 48,
+  "tam": 235,
+  "tel": 0.8,
+  "tha": 173,
+  "ukr": 108,
+  "urd": 77,
+  "uzb": 108,
+  "vie": 7.7,
+  "afr": 1,
+  "abk": 217,
+  "ady": 80,
+  "amh": 1.9,
+  "div": 39,
+  "mhr": 282,
+  "mrj": 34,
+  "vot": 0.1,
+  "kin": 2003,
+  "lit": 29,
+  "glg": 333,
+  "lav": 268,
+  "lij": 5.1,
+  "tgk": 0.8,
+  "bak": 259,
+  "hau": 4.3,
+  "ckb": 139,
+  "mal": 2.9,
+  "mlt": 8.8,
+  "swa": 417,
+  "bel": 1823,
+  "pan": 2.5,
+  "kbd": 276,
+  "lug": 438,
+  "hye": 40,
+  "hin": 16,
+  "grn": 5.1,
+  "kmr": 79,
+  "bas": 12,
+  "yue": 204,
+  "mar": 20,
+  "msa": 0.2,
+  "pus": 3727,
+  "uig": 466,
+  "twi": 0.3,
+  "yor": 6.5,
+  "sat": 0.6,
+  "nan": 21,
+  "yid": 2.1,
+  "ibo": 2.6,
+  "tir": 0.1,
+  "tig": 12,
+  "tuk": 2.9,
+  "khm": 0.2,
+  "skr": 4.3,
+  "tok": 16,
+  "dyu": 0.4,
+  "orm": 26,
+  "tsn": 4.3,
+  "lao": 0.3,
+  "zgh": 1.5,
+  "dag": 17,
+  "zza": 2,
+  "byv": 14,
+  "nhi": 0.1,
+  "ltg": 31,
+  "oss": 1.4,
+  "ewo": 19,
+  "lzz": 69,
+  "qvi": 12,
+  "snd": 0.4,
+  "dav": 9.3,
+  "luo": 30,
+  "kln": 43,
+  "dar": 16,
+  "abb": 12,
+  "bax": 11,
+  "bba": 12,
+  "bbj": 13,
+  "bci": 12,
+  "beb": 11,
+  "bfd": 11,
+  "bkm": 13,
+  "bnm": 17,
+  "bri": 11,
+  "bum": 11,
+  "dua": 14,
+  "ebr": 2.4,
+  "eto": 11,
+  "fan": 12,
+  "fue": 11,
+  "gya": 11,
+  "ibb": 12,
+  "ksf": 20,
+  "mbo": 11,
+  "mxu": 14,
+  "nnh": 23,
+  "qxp": 32,
+  "tui": 11,
+  "tvu": 11,
+  "wes": 11,
+  "fub": 14,
+  "pcm": 13,
+  "bbl": 12,
+  "bft": 18,
+  "bgp": 14,
+  "bsk": 11,
+  "cut": 11,
+  "cux": 11,
+  "hno": 11,
+  "khw": 18,
+  "kls": 11,
+  "mau": 11,
+  "ncx": 11,
+  "pua": 11,
+  "scl": 11,
+  "sei": 11,
+  "sva": 16,
+  "trw": 19,
+  "var": 10,
+  "xhe": 11,
+  "xmf": 12,
+  "yaq": 11,
+  "zoc": 11,
+  "esu": 7.6,
+  "glv": 11,
+  "qup": 12,
+  "szy": 14,
+  "dml": 11,
+  "oru": 22,
+  "phl": 22,
+  "ipk": 7.2,
+  "bnn": 11,
+  "dru": 11,
+  "pwn": 15,
+  "tay": 12,
+  "trv": 10,
+  "qxu": 11,
+  "jqr": 10,
+  "qux": 11,
+  "qva": 10,
+  "qvl": 11,
+  "qwa": 10,
+  "qws": 11,
+  "qxa": 11,
+  "qxt": 11,
+  "qxw": 10,
+  "bsh": 11,
+  "dmk": 11,
+  "gju": 11,
+  "gwc": 12,
+  "gwt": 13,
+  "lss": 10,
+  "mvy": 23,
+  "plk": 13,
+  "ush": 6.7,
+  "wbl": 13,
+  "xka": 11,
+  "gsw": 0.8,
+  "rup": 0.1,
+  "btv": 11,
+  "ggg": 13,
+  "gig": 11,
+  "gjk": 11,
+  "kvx": 12,
+  "kxp": 12,
+  "lrk": 12,
+  "mki": 11,
+  "mve": 11,
+  "odk": 12,
+  "phr": 15,
+  "sbn": 11,
+  "ssi": 11,
+  "ydg": 11,
+  "bag": 12,
+  "ajg": 13,
+  "bkh": 11,
+  "cjk": 13,
+  "cpy": 11,
+  "fmp": 12,
+  "gej": 12,
+  "gid": 11,
+  "giz": 11,
+  "hem": 11,
+  "hux": 10,
+  "jgo": 12,
+  "kdh": 11,
+  "lua": 11,
+  "mcf": 11,
+  "mcn": 11,
+  "mcx": 11,
+  "mdd": 11,
+  "mgg": 11,
+  "mhk": 12,
+  "mse": 11,
+  "mua": 11,
+  "mug": 12,
+  "nla": 10,
+  "nmz": 12,
+  "prq": 11,
+  "qur": 11,
+  "qus": 12,
+  "rof": 11,
+  "tar": 10,
+  "tli": 11,
+  "udl": 11,
+  "yav": 12,
+  "nlv": 12,
+  "brh": 11,
+  "eko": 11,
+  "haz": 11,
+  "nmg": 11,
+  "nyu": 11,
+  "qvj": 11,
+  "bce": 11,
+  "abq": 3.5,
+  "kjh": 1.4
+ },
+ "flores": {
+  "ace": [
+   "Arab",
+   "Latn"
+  ],
+  "acm": [
+   "Arab"
+  ],
+  "acq": [
+   "Arab"
+  ],
+  "aeb": [
+   "Arab"
+  ],
+  "afr": [
+   "Latn"
+  ],
+  "als": [
+   "Latn"
+  ],
+  "amh": [
+   "Ethi"
+  ],
+  "apd": [
+   "Arab"
+  ],
+  "arb": [
+   "Arab",
+   "Latn"
+  ],
+  "arg": [
+   "Latn"
+  ],
+  "ars": [
+   "Arab"
+  ],
+  "ary": [
+   "Arab"
+  ],
+  "arz": [
+   "Arab"
+  ],
+  "asm": [
+   "Beng"
+  ],
+  "ast": [
+   "Latn"
+  ],
+  "awa": [
+   "Deva"
+  ],
+  "ayr": [
+   "Latn"
+  ],
+  "azb": [
+   "Arab"
+  ],
+  "azj": [
+   "Latn"
+  ],
+  "bak": [
+   "Cyrl"
+  ],
+  "bam": [
+   "Latn"
+  ],
+  "ban": [
+   "Latn"
+  ],
+  "bel": [
+   "Cyrl"
+  ],
+  "bem": [
+   "Latn"
+  ],
+  "ben": [
+   "Beng"
+  ],
+  "bho": [
+   "Deva"
+  ],
+  "bjn": [
+   "Arab",
+   "Latn"
+  ],
+  "bod": [
+   "Tibt"
+  ],
+  "bos": [
+   "Latn"
+  ],
+  "brx": [
+   "Deva"
+  ],
+  "bug": [
+   "Latn"
+  ],
+  "bul": [
+   "Cyrl"
+  ],
+  "cat": [
+   "Latn"
+  ],
+  "ceb": [
+   "Latn"
+  ],
+  "ces": [
+   "Latn"
+  ],
+  "chv": [
+   "Cyrl"
+  ],
+  "cjk": [
+   "Latn"
+  ],
+  "ckb": [
+   "Arab"
+  ],
+  "cmn": [
+   "Hans",
+   "Hant"
+  ],
+  "crh": [
+   "Latn"
+  ],
+  "cym": [
+   "Latn"
+  ],
+  "dan": [
+   "Latn"
+  ],
+  "dar": [
+   "Cyrl"
+  ],
+  "deu": [
+   "Latn"
+  ],
+  "dgo": [
+   "Deva"
+  ],
+  "dik": [
+   "Latn"
+  ],
+  "dyu": [
+   "Latn"
+  ],
+  "dzo": [
+   "Tibt"
+  ],
+  "ekk": [
+   "Latn"
+  ],
+  "ell": [
+   "Grek"
+  ],
+  "eng": [
+   "Latn"
+  ],
+  "epo": [
+   "Latn"
+  ],
+  "eus": [
+   "Latn"
+  ],
+  "ewe": [
+   "Latn"
+  ],
+  "fao": [
+   "Latn"
+  ],
+  "fij": [
+   "Latn"
+  ],
+  "fil": [
+   "Latn"
+  ],
+  "fin": [
+   "Latn"
+  ],
+  "fon": [
+   "Latn"
+  ],
+  "fra": [
+   "Latn"
+  ],
+  "fur": [
+   "Latn"
+  ],
+  "fuv": [
+   "Latn"
+  ],
+  "gaz": [
+   "Latn"
+  ],
+  "gla": [
+   "Latn"
+  ],
+  "gle": [
+   "Latn"
+  ],
+  "glg": [
+   "Latn"
+  ],
+  "gom": [
+   "Deva"
+  ],
+  "gug": [
+   "Latn"
+  ],
+  "guj": [
+   "Gujr"
+  ],
+  "hat": [
+   "Latn"
+  ],
+  "hau": [
+   "Latn"
+  ],
+  "heb": [
+   "Hebr"
+  ],
+  "hin": [
+   "Deva"
+  ],
+  "hne": [
+   "Deva"
+  ],
+  "hrv": [
+   "Latn"
+  ],
+  "hun": [
+   "Latn"
+  ],
+  "hye": [
+   "Armn"
+  ],
+  "ibo": [
+   "Latn"
+  ],
+  "ilo": [
+   "Latn"
+  ],
+  "ind": [
+   "Latn"
+  ],
+  "isl": [
+   "Latn"
+  ],
+  "ita": [
+   "Latn"
+  ],
+  "jav": [
+   "Latn"
+  ],
+  "jpn": [
+   "Jpan"
+  ],
+  "kab": [
+   "Latn"
+  ],
+  "kac": [
+   "Latn"
+  ],
+  "kam": [
+   "Latn"
+  ],
+  "kan": [
+   "Knda"
+  ],
+  "kas": [
+   "Arab",
+   "Deva"
+  ],
+  "kat": [
+   "Geor"
+  ],
+  "kaz": [
+   "Cyrl"
+  ],
+  "kbp": [
+   "Latn"
+  ],
+  "kea": [
+   "Latn"
+  ],
+  "khk": [
+   "Cyrl"
+  ],
+  "khm": [
+   "Khmr"
+  ],
+  "kik": [
+   "Latn"
+  ],
+  "kin": [
+   "Latn"
+  ],
+  "kir": [
+   "Cyrl"
+  ],
+  "kjh": [
+   "Cyrl"
+  ],
+  "kmb": [
+   "Latn"
+  ],
+  "kmr": [
+   "Latn"
+  ],
+  "knc": [
+   "Arab",
+   "Latn"
+  ],
+  "kor": [
+   "Hang"
+  ],
+  "ktu": [
+   "Latn"
+  ],
+  "lao": [
+   "Laoo"
+  ],
+  "lij": [
+   "Latn"
+  ],
+  "lim": [
+   "Latn"
+  ],
+  "lin": [
+   "Latn"
+  ],
+  "lit": [
+   "Latn"
+  ],
+  "lld": [
+   "Latn"
+  ],
+  "lmo": [
+   "Latn"
+  ],
+  "ltg": [
+   "Latn"
+  ],
+  "ltz": [
+   "Latn"
+  ],
+  "lua": [
+   "Latn"
+  ],
+  "lug": [
+   "Latn"
+  ],
+  "luo": [
+   "Latn"
+  ],
+  "lus": [
+   "Latn"
+  ],
+  "lvs": [
+   "Latn"
+  ],
+  "mag": [
+   "Deva"
+  ],
+  "mai": [
+   "Deva"
+  ],
+  "mal": [
+   "Mlym"
+  ],
+  "mar": [
+   "Deva"
+  ],
+  "mfe": [
+   "Latn"
+  ],
+  "mhr": [
+   "Cyrl"
+  ],
+  "min": [
+   "Arab",
+   "Latn"
+  ],
+  "mkd": [
+   "Cyrl"
+  ],
+  "mlt": [
+   "Latn"
+  ],
+  "mni": [
+   "Beng",
+   "Mtei"
+  ],
+  "mos": [
+   "Latn"
+  ],
+  "mri": [
+   "Latn"
+  ],
+  "mya": [
+   "Mymr"
+  ],
+  "myv": [
+   "Cyrl"
+  ],
+  "nld": [
+   "Latn"
+  ],
+  "nno": [
+   "Latn"
+  ],
+  "nob": [
+   "Latn"
+  ],
+  "npi": [
+   "Deva"
+  ],
+  "nqo": [
+   "Nkoo"
+  ],
+  "nso": [
+   "Latn"
+  ],
+  "nus": [
+   "Latn"
+  ],
+  "nya": [
+   "Latn"
+  ],
+  "oci": [
+   "Latn"
+  ],
+  "ory": [
+   "Orya"
+  ],
+  "pag": [
+   "Latn"
+  ],
+  "pan": [
+   "Guru"
+  ],
+  "pap": [
+   "Latn"
+  ],
+  "pbt": [
+   "Arab"
+  ],
+  "pes": [
+   "Arab"
+  ],
+  "plt": [
+   "Latn"
+  ],
+  "pol": [
+   "Latn"
+  ],
+  "por": [
+   "Latn"
+  ],
+  "prs": [
+   "Arab"
+  ],
+  "quy": [
+   "Latn"
+  ],
+  "ron": [
+   "Latn"
+  ],
+  "run": [
+   "Latn"
+  ],
+  "rus": [
+   "Cyrl"
+  ],
+  "sag": [
+   "Latn"
+  ],
+  "san": [
+   "Deva"
+  ],
+  "sat": [
+   "Olck"
+  ],
+  "scn": [
+   "Latn"
+  ],
+  "shn": [
+   "Mymr"
+  ],
+  "sin": [
+   "Sinh"
+  ],
+  "slk": [
+   "Latn"
+  ],
+  "slv": [
+   "Latn"
+  ],
+  "smo": [
+   "Latn"
+  ],
+  "sna": [
+   "Latn"
+  ],
+  "snd": [
+   "Arab",
+   "Deva"
+  ],
+  "som": [
+   "Latn"
+  ],
+  "sot": [
+   "Latn"
+  ],
+  "spa": [
+   "Latn"
+  ],
+  "srd": [
+   "Latn"
+  ],
+  "srp": [
+   "Cyrl"
+  ],
+  "ssw": [
+   "Latn"
+  ],
+  "sun": [
+   "Latn"
+  ],
+  "swe": [
+   "Latn"
+  ],
+  "swh": [
+   "Latn"
+  ],
+  "szl": [
+   "Latn"
+  ],
+  "tam": [
+   "Taml"
+  ],
+  "taq": [
+   "Latn",
+   "Tfng"
+  ],
+  "tat": [
+   "Cyrl"
+  ],
+  "tel": [
+   "Telu"
+  ],
+  "tgk": [
+   "Cyrl"
+  ],
+  "tha": [
+   "Thai"
+  ],
+  "tir": [
+   "Ethi"
+  ],
+  "tpi": [
+   "Latn"
+  ],
+  "tsn": [
+   "Latn"
+  ],
+  "tso": [
+   "Latn"
+  ],
+  "tuk": [
+   "Latn"
+  ],
+  "tum": [
+   "Latn"
+  ],
+  "tur": [
+   "Latn"
+  ],
+  "tyv": [
+   "Cyrl"
+  ],
+  "udm": [
+   "Cyrl"
+  ],
+  "uig": [
+   "Arab"
+  ],
+  "ukr": [
+   "Cyrl"
+  ],
+  "umb": [
+   "Latn"
+  ],
+  "urd": [
+   "Arab"
+  ],
+  "uzn": [
+   "Latn"
+  ],
+  "uzs": [
+   "Arab"
+  ],
+  "vec": [
+   "Latn"
+  ],
+  "vie": [
+   "Latn"
+  ],
+  "vmw": [
+   "Latn"
+  ],
+  "war": [
+   "Latn"
+  ],
+  "wol": [
+   "Latn"
+  ],
+  "wuu": [
+   "Hans"
+  ],
+  "xho": [
+   "Latn"
+  ],
+  "ydd": [
+   "Hebr"
+  ],
+  "yor": [
+   "Latn"
+  ],
+  "yue": [
+   "Hant"
+  ],
+  "zgh": [
+   "Tfng"
+  ],
+  "zsm": [
+   "Latn"
+  ],
+  "zul": [
+   "Latn"
+  ]
+ },
+ "unmapped": {
+  "wikipedia": [
+   "bh",
+   "eml",
+   "map-bms",
+   "nah",
+   "roa-tara",
+   "simple"
+  ],
+  "commonVoice": []
+ },
+ "counts": {
+  "med": 875,
+  "wikipedia": 340,
+  "commonVoice": 279,
+  "flores": 210,
+  "wikipedia_unmapped": 6,
+  "commonVoice_unmapped": 0
+ }
+}

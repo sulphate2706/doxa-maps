@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "See the whole field, narrow to the people you can actually reach, and take the list with you as a spreadsheet.",
+      "p1": "Tap a region and scroll the grid to see the people groups' photos, close to visiting the country and meeting the faces of one culture.",
+      "p2": "Filter by people, place, language, religion or prayer; the map, the table and the totals move as one, so you see the same slice three ways.",
+      "p3": "Export the filtered rows as a CSV spreadsheet: a working list to sort, share and plan from offline.",
+      "p4": "Use it to set short-term goals: the groups to pray for and reach today, and the ones to prepare for tomorrow.",
+      "p5": "It is built to be adapted for media-to-movements initiatives: start from the data, then act on the groups it surfaces."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Start where the need is greatest. Use the prayer and engagement layers to find the priority zones, then mobilize prayer for the people groups in them.",
+      "p1": "See who is still waiting. On the Prayer tab, each dot shows whether that people group has someone praying, still needs prayer, or is fully covered in prayer.",
+      "p2": "Find the gaps. Switch to Engagement to see where work has begun and where no one is engaged yet. Those gaps are the priority zones to mobilize for.",
+      "p3": "Research one part of the world at a time. Narrow by region, language or religion, or search the list by name. The list follows the map, so you can read the names behind the dots.",
+      "p4": "Meet a people group. Tap a dot to see its country, population, language and religion, then use “Pray for them” to start praying for that people by name.",
+      "p5": "Keep it simple. This map tracks progress at a simple level, at a glance. When you need the full data, go to Big Picture; for printable prayer resources, go to Regions or UPG100."
+    },
+    "regions-dashboard": {
+      "bottom": "About 170 countries have their own poster, packet and card deck. Mobilize one group to pray for each country, and every country is covered in prayer.",
+      "p1": "List the disciples, churches and leaders you already know, and the country each one is called to. Give each of them that country's prayer resources.",
+      "p2": "Start close to home, with local disciples and churches. Then go to the indigenous leaders and workers on the ground in those countries, and send them the country's poster, packet and cards to print where they are.",
+      "p3": "The prayer packet is the most strategic of the three: everything needed to pray for a country, in one printable packet.",
+      "p4": "The cards work best when you have a group to hand them to: one people group per card.",
+      "p5": "Country packets suit a larger mobilization base, or one country you want to see reached. If mobilizing is slow going, the UPG100 lists are the simpler place to begin."
+    },
+    "prayer-map": {
+      "bottom": "A prayer movement grows when every partner shows the same map, so place this map on every website in your network.",
+      "p1": "List your network's websites. Churches, ministries, prayer networks, mission partners: every site your people already visit.",
+      "p2": "Share or add it in a few taps. The Share button gives you a link to send, or “Add to Your Website”: pick a size, copy the code, and paste it into WordPress, Squarespace, Wix or any site that accepts HTML.",
+      "p3": "Pick the view that fits the site. Prayer, Engagement and Adoption each share their own page, so a prayer network can show prayer coverage and a sending church can show engagement.",
+      "p4": "It stays current on its own. Every copy of the map reads the same data from pray.doxa.life each time it opens, so progress shows on every partner's site without anyone updating it.",
+      "p5": "Point people to a name. Tapping a dot opens that people group and a link to its prayer page, so a visitor can start praying for a specific people right away."
+    },
+    "upg-100": {
+      "bottom": "Jesus had the five thousand sit down in groups of fifty and a hundred before He fed them (Luke 9:14). These lists do the same for about 2,100 unreached people groups: split into lists that size, the whole task becomes a load one person can carry.",
+      "p1": "27 lists means 27 posters, 27 prayer packets and 27 card decks. Put one in the hands of each of 27 disciples, churches or indigenous leaders, and every one of the groups is prayed for by name.",
+      "p2": "Give each list to someone who will keep praying it. Indigenous leaders can pray in the people's own languages.",
+      "p3": "This follows a practice proven in movements: disciples pray regularly for fifty to a hundred people they know (family, friends, neighbours, co-workers, classmates). A UPG100 list is the same load, for people they have never met.",
+      "p4": "Start with one list and one person. The packet holds everything for that list in one printout, and the cards help when a group shares the list."
+    },
+    "cities-internet": {
+      "bottom": "Where people are already online, the gospel can reach them on the screens and platforms they use every day. Find those places, and use media to open the door to real disciples and churches (media to movements).",
+      "p1": "Start with the countries where most people are online (60% or more). There, online media can reach people who have no church or believer nearby.",
+      "p2": "Tap a country and read its card: how many people use the internet, how many mobile subscriptions there are, and which platforms people there use. Reach out on their platforms, not yours, and check the list with someone in the country first.",
+      "p3": "Pair this map with Gospel Resources. Find a people group that already has Scripture, film or audio in its own language, then share those links online in a country where people are connected.",
+      "p4": "Where few people are online, or the figure is not measured, don't lead with a screen: send people, and bring audio and printed resources. The figures are national (India also by state), so a city can be very different from its country.",
+      "p5": "Media is the door, not the goal. Before you post, plan how someone who responds online meets a real person and joins a group that studies the Bible together."
+    },
+    "gospel-resources": {
+      "bottom": "Many unreached groups already have Scripture, film or audio in their own language that has never reached them. The resources exist; the gap is getting them into people's hands, in person or online.",
+      "p1": "Switch to “Resources found” and look for the groups that have Scripture and film. For them, the tools are ready and what's missing is delivery.",
+      "p2": "Send workers with the resources. Open a group's sheet and pass its links (and those in the other languages it speaks) to the workers, churches and leaders who can reach that group.",
+      "p3": "Pair this map with Cities with Internet. Where a group's country is well connected, the same links can reach people online on the platforms used there (media to movements).",
+      "p4": "Where Zume training exists in the group's language, put it beside the Scripture and film, so those who believe are trained to make disciples.",
+      "p5": "Use “Gap” to pray and plan for the groups where nothing has been found yet. Many of them have a way in through a bridge language, and “none found” is a reason to look further, not a final answer."
+    }
+  }
+}

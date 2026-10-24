@@ -1,0 +1,33 @@
+# Traefik dynamic-config reference: the doxa-maps frame-policy split
+# (documentation/architecture/embeddability.md). Adjust host/service names to your deploy.
+# Direct-embed pages (>=2 path segments under the tree) must be framable anywhere;
+# staging pages stay preview-only. frame-ancestors is header-only, so the proxy
+# owns this — the bundler can only document and template it.
+#
+# CORS (added 2026-09-24): the WHOLE tree must send Access-Control-Allow-Origin, not only the
+# embed pages. A composed surface (the cap-5 Research Gallery, cap-4 composites) mounted by
+# <script> on a partner page fetch()es manifest.json at the tree ROOT and assets/ after it mounts,
+# and fetch() enforces CORS. Measured live: manifest.json answered 200 with NO ACAO (it sits one
+# segment deep, outside the embed-pages rule), so every gallery tab would fail on doxa.life.
+http:
+  middlewares:
+    doxa-maps-cors:
+      headers:
+        accessControlAllowOriginList: ["*"]
+        accessControlAllowMethods: ["GET", "HEAD", "OPTIONS"]
+    doxa-maps-embed-framable:
+      headers:
+        customResponseHeaders:
+          Content-Security-Policy: "frame-ancestors *"
+          X-Frame-Options: ""
+  routers:
+    doxa-maps-embed-pages:
+      rule: "PathRegexp(`^/doxa-maps/[^/]+/[^/]+/`)"
+      priority: 70            # above the site catch-all
+      middlewares: [doxa-maps-embed-framable, doxa-maps-cors]
+      service: your-static-service
+    doxa-maps-tree:
+      rule: "PathPrefix(`/doxa-maps/`)"
+      priority: 60            # below the embed-pages router, above the site catch-all
+      middlewares: [doxa-maps-cors]
+      service: your-static-service

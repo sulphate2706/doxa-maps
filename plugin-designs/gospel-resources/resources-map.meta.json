@@ -1,0 +1,10 @@
+{
+  "stage": "production",
+  "_stage_comment": "Marked production because the Deep Research gallery MOUNTS this profile: doxa-maps-spa.meta.json composes 'gospel-resources/resources-map' and doxa-maps-spa.vue's TAB_DEFS names it as the Gospel Resources tab. The stage was absent here, so the manifest defaulted it to experimental while a production page shipped it — the record disagreed with what ships. This changes the manifest only; nothing a reader sees.",
+  "type": "single",
+  "label": "Gospel Resources — resources map",
+  "config": {
+    "pinHint": false
+  },
+  "note": "pinHint:false because this map has NO DOTS. It shades country polygons by gospel-resource gap/coverage; the shared PinHint's default label invites the reader to 'Tap a coloured dot', which points at something that does not exist here and makes a working map look broken. Opt-out is the documented channel (library/components/hints/PinHint.vue). Sibling: cities-internet/connectivity-map.meta.json — keep these two in step."
+}

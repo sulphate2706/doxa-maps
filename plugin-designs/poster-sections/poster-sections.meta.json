@@ -1,0 +1,4 @@
+{
+  "label": "Poster Sections — presets",
+  "note": "One profile, many presets (capability 2): each region's poster section (country posters by DX Life's /regions regions), plus all regions, each with its own page and embed snippet in manifest.json. Other poster types join when their type can load on the page. The Configure preset adds a panel of choices and Copy embed for making new presets."
+}

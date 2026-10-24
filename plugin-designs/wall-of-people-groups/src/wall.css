@@ -1,0 +1,1134 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root, :host {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background: #fafafa;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+    --heart-color: #ed4956;
+    --instagram-blue: #0095f6;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+/* Wall Container */
+.wall-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wall-header {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.wall-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.wall-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    background: var(--instagram-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.control-btn.busy { opacity: .7; cursor: progress; }
+.control-btn.busy::after { content: ''; display: inline-block; width: .8em; height: .8em; margin-inline-start: .5em;
+  vertical-align: -.1em; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%;
+  animation: wall-spin .8s linear infinite; }
+@keyframes wall-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .control-btn.busy::after { animation: none; } }
+.poster-size { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; }
+.poster-size select { padding-inline-end: 8px; }
+.mode-toggle { display: inline-flex; gap: 0; }
+.mode-toggle .control-btn { border-radius: 0; }
+.mode-toggle .control-btn:first-child { border-start-start-radius: 6px; border-end-start-radius: 6px; }
+.mode-toggle .control-btn:last-child { border-start-end-radius: 6px; border-end-end-radius: 6px; }
+/* The wall's "?": the same control as its neighbours, a serif glyph like the map controls' "?". */
+.wall-help { font-family: Georgia, serif; font-weight: 700; min-width: 32px; }
+.mode-toggle .control-btn.on { background: #262626; color: #fff; }
+.control-btn:hover {
+    background: #0081d6;
+    transform: translateY(-1px);
+}
+
+.orientation-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.orientation-btn .btn-label {
+    font-size: 14px;
+}
+
+.orientation-btn .current-mode {
+    font-size: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.group-count {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* PHONE (390×844): the header was one row, so the title wrapped to five lines and the poster-size
+   select and the Bless/Social toggle ran off the right edge, unreachable. On a phone the title takes one
+   short line and the controls wrap onto as many rows as they need, every one on screen. */
+@media (max-width: 640px) {
+    .wall-header { flex-direction: column; align-items: stretch; gap: 10px; padding: 10px 12px; }
+    .wall-header h1 { font-size: 18px; line-height: 1.25; }
+    .wall-controls { flex-wrap: wrap; gap: 8px; }
+    .wall-controls .control-btn { padding: 8px 12px; font-size: 13px; min-height: 32px; }
+    .poster-size { font-size: 12px; }
+    .group-count { font-size: 12px; }
+}
+
+/* Wall Canvas */
+/* The print-shop note under the header (Bless): the poster's own paper and quiet ink. */
+.print-hint {
+    flex: none;
+    margin: 0;
+    padding: 6px 20px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #5f5849;
+    background: #f7f4ec;
+    border-bottom: 1px solid #e3dccb;
+}
+
+.wall-canvas {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    overflow: hidden;
+}
+
+/* Offline / blocked notice: the live API could not be reached. Sits over the empty canvas,
+   inside the wall (not position:fixed), so an embedded wall never covers its host page. */
+.wall-container { position: relative; }
+.wall-offline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: min(440px, calc(100% - 32px));
+    padding: 20px 24px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+.wall-offline-title { font-weight: 600; font-size: 16px; margin-bottom: 6px; }
+.wall-offline p { margin: 0 0 12px; }
+
+/* Loading Overlay: inside the wall like the offline notice (position:fixed covered an embedding
+   partner's whole page while the groups loaded). */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--instagram-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* A short status line over the wall ("Copied!"). */
+.wall-toast {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    background: rgba(38, 38, 38, 0.92);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    z-index: 30;
+    pointer-events: none;
+}
+
+/* Comments Dialog */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.dialog-container {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dialog-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+/* Group Image in Dialog */
+/* The prayer dialog SCROLLS when it is taller than the window: .dialog-container clips at 90vh, which hid
+   everything under the photo on a laptop screen (the sign-up link, and the prayer box after "Yes"). The photo
+   also gives way, so the prompt and its actions show without scrolling at 900 px. */
+.dialog-container.prayer-dialog { overflow-y: auto; overscroll-behavior: contain; }
+.prayer-dialog .group-image-container img { max-height: min(400px, 38vh); }
+
+.group-image-container {
+    width: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.group-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.group-name-dialog {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #efefef;
+    color: #262626;
+    background: white;
+}
+
+.dialog-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.dialog-content {
+    padding: 20px;
+    max-height: calc(90vh - 80px);
+    overflow-y: auto;
+}
+
+.group-info {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.prayer-stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 15px;
+}
+
+.heart-icon {
+    font-size: 20px;
+}
+
+.prayer-action {
+    margin-bottom: 25px;
+}
+
+.prayer-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--instagram-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.prayer-btn:hover {
+    background: #0081d6;
+}
+
+.prayer-btn.active {
+    background: #10b981;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.comments-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.no-comments {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.comment-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.comment-item:last-child {
+    margin-bottom: 0;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.comment-icon {
+    font-size: 16px;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.add-comment textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.add-comment textarea:focus {
+    outline: none;
+    border-color: var(--instagram-blue);
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.char-count {
+    font-size: 12px;
+    color: #999;
+}
+
+.submit-btn {
+    padding: 10px 24px;
+    background: var(--instagram-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+    background: #0081d6;
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Prayer Dialog Specific Styles */
+.prayer-dialog .dialog-content {
+    padding: 20px;
+}
+
+.prayer-prompt {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.prayer-prompt h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* The group's sign-up on pray.doxa.life, under the prayer prompt: a quiet full-width link. */
+.signup-link {
+    display: block;
+    margin: 12px 0 4px;
+    padding: 10px 14px;
+    border: 1px solid #c9bfa4;
+    border-radius: 8px;
+    color: #6b4a78;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+.signup-link:hover, .signup-link:focus-visible { background: #f7f4ec; }
+
+.prayer-confirm-btn {
+    padding: 14px 28px;
+    background: var(--heart-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prayer-confirm-btn:hover {
+    background: #c13584;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(237, 73, 86, 0.3);
+}
+
+.prayer-confirmed {
+    padding: 20px;
+}
+
+.confirmed-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background: #f0fdf4;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+.confirmed-message i {
+    font-size: 24px;
+}
+
+.prayer-input-section h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.prayer-input-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    margin-bottom: 12px;
+}
+
+.prayer-input-section textarea:focus {
+    outline: none;
+    border-color: var(--instagram-blue);
+    box-shadow: 0 0 0 3px rgba(0, 149, 246, 0.1);
+}
+
+.send-prayer-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--instagram-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.send-prayer-btn:hover:not(:disabled) {
+    background: #0081d6;
+}
+
+.send-prayer-btn:disabled {
+    background: #b8b8b8;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+
+/* Print Styles for 3ft x 4ft poster */
+@media print {
+    @page {
+        size: 36in 48in; /* 3ft x 4ft */
+        margin: 0;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .wall-header,
+    .dialog-overlay {
+        display: none !important;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* SVG Link Styles for D3 Wall */
+svg a {
+    cursor: pointer;
+}
+
+svg a text {
+    transition: fill 0.2s;
+}
+
+svg a:hover text {
+    fill: #0081d6 !important; /* Darker blue on hover */
+}
+
+/* Navigation Links */
+.nav-links {
+    padding: 8px 16px;
+    text-align: right;
+}
+
+.dev-panel-link {
+    color: #0095f6;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #0095f6;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.dev-panel-link:hover {
+    background: #0095f6;
+    color: #fff;
+}
+
+/* ================================ */
+/* API Developer Panel              */
+/* ================================ */
+.dev-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
+}
+
+.dev-panel-header {
+    margin-bottom: 24px;
+}
+
+.dev-panel-header h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+.dev-panel-header .subtitle {
+    color: #666;
+    margin: 0 0 12px;
+}
+
+.dev-panel-header .back-link {
+    color: #0095f6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dev-panel-header .back-link:hover {
+    text-decoration: underline;
+}
+
+/* Stats Bar */
+.stats-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.stat-badge {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.stat-badge.tested { background: #e3f2fd; color: #1565c0; }
+.stat-badge.ok { background: #e8f5e9; color: #2e7d32; }
+.stat-badge.fail { background: #fce4ec; color: #c62828; }
+
+/* Endpoint Groups */
+.endpoint-group {
+    margin-bottom: 32px;
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    margin: 0 0 6px;
+}
+
+.group-icon {
+    font-size: 24px;
+}
+
+.group-badge {
+    font-size: 12px;
+    font-weight: 500;
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.group-desc {
+    color: #666;
+    font-size: 14px;
+    margin: 0 0 16px;
+}
+
+/* Endpoint Cards */
+.endpoint-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s;
+}
+
+.endpoint-card.status-ok {
+    border-left: 4px solid #4caf50;
+}
+
+.endpoint-card.status-fail {
+    border-left: 4px solid #f44336;
+}
+
+.endpoint-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.method-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.method-badge.get { background: #e8f5e9; color: #2e7d32; }
+.method-badge.post { background: #fff3e0; color: #e65100; }
+
+.endpoint-url {
+    font-size: 13px;
+    background: #f5f5f5;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    word-break: break-all;
+    flex: 1;
+}
+
+.endpoint-url:hover {
+    background: #e3f2fd;
+}
+
+.btn-copy {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.btn-copy:hover {
+    color: #333;
+}
+
+.endpoint-desc {
+    font-size: 14px;
+    color: #444;
+    margin: 4px 0 8px;
+}
+
+.endpoint-fields {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.field-chip {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: monospace;
+    margin: 2px 4px 2px 0;
+}
+
+.endpoint-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.btn-sm {
+    font-size: 13px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+
+.btn-sm:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-test {
+    background: #0095f6;
+    color: #fff;
+}
+
+.btn-test:hover:not(:disabled) {
+    background: #0081d6;
+}
+
+.btn-primary {
+    background: #0095f6;
+    color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #0081d6;
+}
+
+.btn-toggle {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.btn-toggle:hover {
+    background: #e0e0e0;
+}
+
+/* Test Results */
+.test-result {
+    margin-top: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.result-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+.result-ok .result-summary {
+    background: #e8f5e9;
+}
+
+.result-fail .result-summary {
+    background: #fce4ec;
+}
+
+.status-code {
+    font-weight: 600;
+}
+
+.result-time {
+    color: #666;
+}
+
+.record-count {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.content-type {
+    color: #999;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.result-body {
+    padding: 12px;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+}
+
+/* Sample Fields Grid */
+.sample-fields h4,
+.sample-images h4,
+.loaded-images h4,
+.failed-images h4 {
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+
+.field-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.field-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.field-item code {
+    font-weight: 600;
+    min-width: 180px;
+    color: #1565c0;
+}
+
+.field-type {
+    color: #999;
+    font-size: 11px;
+    min-width: 50px;
+}
+
+.field-sample {
+    color: #666;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+}
+
+/* Image Grids */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.image-thumb {
+    width: 120px;
+    text-align: center;
+}
+
+.image-thumb img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.image-thumb.failed .img-placeholder {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fce4ec;
+    border-radius: 6px;
+    color: #c62828;
+    font-size: 24px;
+}
+
+.img-label {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img-url {
+    display: block;
+    font-size: 9px;
+    color: #999;
+    word-break: break-all;
+}
+
+/* Raw JSON */
+.raw-json {
+    margin-top: 12px;
+}
+
+.raw-json summary {
+    cursor: pointer;
+    font-size: 13px;
+    color: #666;
+    padding: 4px 0;
+}
+
+.raw-json pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    overflow-x: auto;
+    max-height: 300px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Image Tester */
+.image-tester {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.image-tester-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.image-test-progress {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}

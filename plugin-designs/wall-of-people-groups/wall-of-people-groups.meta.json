@@ -1,0 +1,14 @@
+{
+  "type": "monolithic",
+  "label": "Wall of People Groups",
+  "mobile": "desktop-only",
+  "note": "Monolithic composite (capability 3): ONE root .vue nests the zoomable d3 wall, its cards, and the prayer and comments dialogs. index.js registers exactly ONE tag (wall-of-people-groups); none of the inner components is independently embeddable.",
+  "config": {
+    "pinHint": false
+  },
+  "posterDesign": [
+    {"family": "wall", "name": "wall.bless-36x48", "size": "36x48", "mobileFriendly": false, "labelKey": "wall.blessBanner"},
+    {"family": "wall", "name": "wall.bless-24x36", "size": "24x36", "mobileFriendly": false, "labelKey": "wall.blessBanner"},
+    {"family": "wall", "name": "wall.bless-60x96", "size": "60x96", "mobileFriendly": false, "labelKey": "wall.blessBanner"}
+  ]
+}

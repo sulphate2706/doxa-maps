@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "Arată toate detaliile",
+  "showFullDetailsAria": "Arată toate detaliile pentru {label}",
+  "tab": {
+    "styles": "Stiluri",
+    "sizes": "Dimensiuni"
+  },
+  "styles": {
+    "heading": "Stiluri de afiș",
+    "intro": "Toate șabloanele de afiș într-un singur loc, desenate din bibliotecă cu date de exemplu. Fiecare card poartă numele configurației sale, ca să poți cere unui agent exact acel șablon."
+  },
+  "sizes": {
+    "heading": "Dimensiuni de afiș",
+    "intro": "Toate dimensiunile la care se poate tipări un afiș, desenate la scară. Dimensiunile mari se tipăresc pe mai multe coli care se suprapun pe perete; banda roșie arată unde se lipește coala următoare.",
+    "lineup": "Toate dimensiunile alăturate, la scară",
+    "paper": "Hârtie standard de imprimantă",
+    "paperLetter": "Letter SUA, 8,5 × 11 in",
+    "paperA4": "A4, 210 × 297 mm",
+    "dimsFt": "{w} × {h} ft",
+    "dimsIn": "{w} × {h} in",
+    "dimsInOne": "{v} in",
+    "rowSheets": "Coli",
+    "rowSheet": "Fiecare coală",
+    "rowOverlap": "Suprapunere lipită",
+    "rowPhotos": "Fotografii lângă nume",
+    "rowPrint": "Cum se tipărește",
+    "yes": "Da",
+    "no": "Nu",
+    "printHome": "Orice imprimantă de acasă",
+    "printShop": "O tipografie (un PDF, o pagină pe coală)",
+    "layoutNote": "Colile arată machetarea afișului de țară de 3 × 3 ft la fiecare dimensiune: antetul, harta, numele, tabelul și subsolul cu versetul din Scriptură. Afișul desenat la fiecare dimensiune va apărea în Stiluri când va fi disponibil.",
+    "sideLanes": "{dims}, coloane laterale",
+    "packetPage1": "{paper} (pagina 1 a pachetului de rugăciune)",
+    "panels": "{dims}, panouri: {n}",
+    "anySize": "Orice dimensiune din tabelul comun de dimensiuni"
+  },
+  "family": {
+    "mapSheet": "Foi de hartă",
+    "packet": "Pachet de rugăciune",
+    "cards": "Cartonașe de rugăciune",
+    "wall": "Panouri de perete",
+    "mapPrint": "Tipărirea hărții",
+    "plugins": "Din alte pluginuri",
+    "experimental": "Experimentale (în lucru)",
+    "upgZone": "Postere de zone UPG100"
+  },
+  "tpl": {
+    "mapSheetCountry": "Foaie de hartă a țării",
+    "mapSheetPacketPage": "Pagina de hartă a pachetului",
+    "packetFull": "Pachet de rugăciune, complet",
+    "packetLightweight": "Pachet de rugăciune, ușor",
+    "cards": "Cartonașe de rugăciune",
+    "blessPanels": "Panourile peretelui Binecuvântează",
+    "mapPrint": "Tipărirea hărții",
+    "upgZonePoster": "Poster de zonă UPG100",
+    "upgZonePacket": "Pachet de rugăciune UPG100, pagina 1"
+  },
+  "missing": {
+    "bless": "Colile, benzile de lipire și locul rândurilor de cartonașe vin din geometria comună a panourilor; cartonașele sunt arătate ca machetă, pentru că peretele Binecuvântează își desenează cartonașele în propriul modul.",
+    "mapPrint": "Acest șablon tipărește harta live pe care o privește cititorul, așa că nu are imagine de exemplu.",
+    "noCountryAtSize": "Astăzi nicio țară nu se tipărește la această dimensiune: India, singura care o făcea, se tipărește acum doar la 5 × 8 ft. Șablonul este desenat aici cu o țară exemplu."
+  },
+  "details": {
+    "configName": "Numele configurației",
+    "copyName": "Copiază",
+    "size": "Dimensiune",
+    "fileSize": "Dimensiunea fișierului",
+    "fileSizeUnknown": "Se măsoară când afișul este desenat",
+    "settings": "Setări",
+    "sample": "Date de exemplu",
+    "renderer": "Generator",
+    "legacy": "Dimensiune veche: încă se tipărește, dar selectorul de tipărire nu o mai oferă.",
+    "forAgents": "Ca să folosești acest șablon, spune-i unui agent: folosește configurația {name}.",
+    "openPage": "Deschide pagina"
+  },
+  "templateCount": "{n} șablon | {n} șabloane | {n} de șabloane",
+  "fromPlugin": "Este realizat de propriul plugin. Afișează toate detaliile îl arată în direct."
+}

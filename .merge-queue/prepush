@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Repo precondition for a landing, run by `main-capture scan` (and the per-worktree pre-push hook) on the
+# exact commit about to reach main. Non-zero = the landing is refused. See internal/landing-preconditions.mjs.
+cd "$(git rev-parse --show-toplevel)" || exit 1
+exec node internal/landing-preconditions.mjs

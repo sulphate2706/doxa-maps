@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · research-dashboard staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Map in the center cell — Mapbox GL loaded globally, like doxa-research-map. -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+      padding: 10px 16px; background: #111827; border-bottom: 1px solid #1f2937;
+    }
+    .topbar .spacer { flex: 1; }
+    .profile-tab {
+      padding: 8px 16px; background: transparent; border: 1px solid #334155; color: #94a3b8;
+      font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .06em; text-transform: uppercase; cursor: pointer;
+      transition: border-color .15s, color .15s, background .15s;
+    }
+    .profile-tab:hover { border-color: #64748b; color: #e5e7eb; }
+    .profile-tab.active { border-color: #60a5fa; color: #60a5fa; background: rgba(96,165,250,.08); }
+    #showcase { display: flex; flex-direction: column; gap: 24px; padding: 20px; max-width: 1500px; margin: 0 auto; }
+    .gem-frame {
+      --fw: 14px; --gem: #39ff80; --gem-rgb: 57, 255, 128;
+      position: relative; padding: var(--fw); background: #1a2420;
+      border: 2px solid var(--gem);
+      box-shadow: 0 0 20px rgba(var(--gem-rgb), .12), inset 0 0 20px rgba(var(--gem-rgb), .04);
+      transition: box-shadow .3s; isolation: isolate;
+    }
+    .gem-frame-content { border: 2px solid var(--gem); overflow: hidden; background: #142118; }
+    .gem-header { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: rgba(var(--gem-rgb), .04); border-bottom: 2px solid var(--gem); }
+    .gem-header .label { font: 800 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .08em; color: #fff; }
+    .gem-tag { display: inline-block; padding: 2px 8px; font: 10px/1 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--gem); background: rgba(var(--gem-rgb), .08); border: 1px solid var(--gem); border-radius: 999px; }
+    .gem-index { margin-left: auto; font: 10px/1 ui-monospace, monospace; color: #64748b; letter-spacing: .1em; }
+    .gem-slot { position: relative; width: 100%; height: 760px; }
+    research-dashboard-map { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+    @media (max-width: 768px) {
+      #showcase { padding: 8px; gap: 12px; }
+      .gem-frame { --fw: 8px; }
+      .gem-frame-content { border-width: 1px; }
+      .gem-slot { height: calc(100vh - 120px); min-height: 620px; }
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  window.DOXA_TOKEN = (new URLSearchParams(location.search).get('tk')||(typeof window!=='undefined'&&window.MAPBOX_TOKEN)||'');
+  window.DOXA_SLOTS = [
+    { profile: 'research-dashboard', label: 'Research Dashboard — map + dense panels', gem: 'amethyst',
+      config: { instanceId: 'dev-dashboard-1' } },
+  ];
+</script>
+
+<header class="topbar" id="topbar">
+  <div class="spacer"></div>
+</header>
+
+<div id="showcase"></div>
+
+<script>
+  const GEM_PALETTE = {
+    amethyst:   { name: 'amethyst',   hex: '#9333ea' },
+    sapphire:   { name: 'sapphire',   hex: '#2563eb' },
+    aquamarine: { name: 'aquamarine', hex: '#0891b2' },
+    emerald:    { name: 'emerald',    hex: '#059669' },
+    topaz:      { name: 'topaz',      hex: '#d97706' },
+    citrine:    { name: 'citrine',    hex: '#ca8a04' },
+    tourmaline: { name: 'tourmaline', hex: '#db2777' },
+    onyx:       { name: 'onyx',       hex: '#1f2937' }
+  };
+  const GEM_CYCLE = ['amethyst', 'sapphire', 'aquamarine', 'emerald', 'topaz', 'citrine', 'tourmaline'];
+  function gemForIndex(i) { return GEM_PALETTE[GEM_CYCLE[((i % GEM_CYCLE.length) + GEM_CYCLE.length) % GEM_CYCLE.length]]; }
+  function gemByName(n)   { return GEM_PALETTE[n] || GEM_PALETTE.onyx; }
+  function hexToRgb(hex) {
+    const h = hex.replace('#', '');
+    const f = h.length === 3 ? h.split('').map(c => c + c).join('') : h;
+    return parseInt(f.slice(0, 2), 16) + ', ' + parseInt(f.slice(2, 4), 16) + ', ' + parseInt(f.slice(4, 6), 16);
+  }
+
+  const TK       = window.DOXA_TOKEN || '';
+  const SLOTS    = window.DOXA_SLOTS || [];
+  const topbar   = document.getElementById('topbar');
+  const showcase = document.getElementById('showcase');
+  const STORAGE_KEY = 'doxa-maps:research-dashboard:profile';
+
+  const PROFILES = [];
+  SLOTS.forEach(s => { if (!PROFILES.includes(s.profile)) PROFILES.push(s.profile); });
+
+  const saved = localStorage.getItem(STORAGE_KEY);
+  let activeProfile = PROFILES.includes(saved) ? saved : PROFILES[0];
+
+  function buildTabs() {
+    Array.from(topbar.querySelectorAll('.profile-tab')).forEach(el => el.remove());
+    const spacer = topbar.querySelector('.spacer');
+    PROFILES.forEach(p => {
+      const btn = document.createElement('button');
+      btn.className = 'profile-tab' + (p === activeProfile ? ' active' : '');
+      btn.textContent = p;
+      btn.onclick = () => selectProfile(p);
+      topbar.insertBefore(btn, spacer);
+    });
+  }
+
+  function renderActive() {
+    showcase.innerHTML = '';
+    const slotsForProfile = SLOTS.filter(s => s.profile === activeProfile);
+    slotsForProfile.forEach((slot, i) => {
+      const gem    = slot.gem ? gemByName(slot.gem) : gemForIndex(i);
+      const gemRgb = hexToRgb(gem.hex);
+      const config = Object.assign({}, slot.config, { profile: slot.profile, tk: TK });
+
+      const el = document.createElement('div');
+      el.className = 'gem-frame';
+      el.id = 'frame-' + (slot.config?.instanceId || `${slot.profile}-${i}`);
+      el.style.setProperty('--gem', gem.hex);
+      el.style.setProperty('--gem-rgb', gemRgb);
+      el.innerHTML = `
+        <div class="gem-frame-content">
+          <div class="gem-header">
+            <span class="label">${slot.label}</span>
+            <span class="gem-tag">${gem.name}</span>
+            <span class="gem-index">#${i + 1}</span>
+          </div>
+          <div class="gem-slot">
+            <research-dashboard-map profile-config='${JSON.stringify(config)}'></research-dashboard-map>
+          </div>
+        </div>`;
+      showcase.appendChild(el);
+    });
+  }
+
+  function selectProfile(p) {
+    if (p === activeProfile) return;
+    activeProfile = p;
+    localStorage.setItem(STORAGE_KEY, p);
+    buildTabs();
+    renderActive();
+  }
+
+  buildTabs();
+  renderActive();
+</script>
+
+<script type="module" src="./index.js"></script>
+
+</body>
+</html>

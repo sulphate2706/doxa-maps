@@ -1,0 +1,34 @@
+{
+  "placeholder": "Peuple, lieu, langue, religion",
+  "placeholderNoPlaces": "Peuple, langue, religion (la recherche de lieux requiert un jeton Mapbox)",
+  "labels": {
+    "people": "Peuple :",
+    "place": "Lieu :",
+    "language": "Langue :",
+    "religion": "Religion :"
+  },
+  "kinds": {
+    "people": "Peuple + pays",
+    "peopleGroup": "Peuple",
+    "bloc": "Bloc d'affinité",
+    "cluster": "Grappe de peuples",
+    "country": "Pays",
+    "region": "Région",
+    "family": "Famille linguistique",
+    "languageKind": "Langue",
+    "dialect": "Dialecte",
+    "religionKind": "Religion"
+  },
+  "sections": {
+    "within": "Dans {selection}",
+    "allData": "Toutes les données DOXA"
+  },
+  "upg100Placeholder": "Rechercher un peuple, une liste UPG100 ou une région…",
+  "tabPlaceholder": {
+    "languageFamilies": "Rechercher une famille linguistique, une langue, un dialecte/une variété",
+    "affinityBlocks": "Rechercher un bloc d’affinité, une grappe, un peuple",
+    "regions": "Rechercher une région, un pays, un peuple",
+    "religion": "Rechercher une religion, un peuple"
+  },
+  "placeholderRegions": "Rechercher une région, un pays, un peuple"
+}

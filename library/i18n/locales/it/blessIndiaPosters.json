@@ -1,0 +1,15 @@
+{
+  "title": "Poster «Benedici l’India»",
+  "rangeBadge60x96": "Badge numerati · 60×96 (5×8 ft)",
+  "count": "{count} gruppi di popolazione",
+  "desktopOnly": "Solo desktop per ora — non è ancora dimostrato che questo grande poster si stampi in sicurezza su un telefono.",
+  "experimental": "sperimentale",
+  "intro": "Ogni gruppo di popolazione dell'India su un unico foglio stampabile, generato dal vivo e mostrato come i suoi fogli stampabili con le strisce di colla — come la vista Dimensioni di Poster Design mostra i grandi formati.",
+  "print": "Stampa questo poster",
+  "attempt": "Badge numerati · 60×96 (5×8 ft) · 3 fogli",
+  "stat": "{groups} gruppi · {badges} badge numerati · 0 sovrapposizioni",
+  "generating": "Generazione del poster dai dati dal vivo…",
+  "error": "Impossibile generare il poster: {msg}",
+  "photos": "Solo {real} di {total} gruppi dell'India hanno una foto nei dati; un documento stampato le porta, un'immagine piatta no. Questo design numerato stampa i nomi senza foto così ogni gruppo è uguale e leggibile.",
+  "posterHeader": "Benedici l'India nel nome di Gesù"
+}

@@ -1,0 +1,16 @@
+{
+  "_comment": "Declares the composability tier. 'nested-mfe-spa' (display alias 'app-shell') = Capability-5: this plugin is the OUTER app shell of the dx-maps app, the Research Gallery. Its single element <doxa-maps-spa> renders a vertical-tab rail whose tabs each mount a REAL, independently embeddable plugin: the shell loads that bundle's script (URL from manifest.json) and creates its registered custom element in the pane. There is no iframe mode. Tab order and grouping live in NAV_MODEL/TAB_DEFS in doxa-maps-spa.vue; `composes` below lists the nine curated tabs as bundle/profile and must be kept in step with TAB_DEFS (check:composite reads it; the studio's \"Inside doxa-maps-spa\" tree shows it). Bundles not placed in a section appear under Experimental automatically. The tier is now DERIVED from the `composes` edges below at tree generation (a profile that composes anything is cap-4; one that composes a cap-4 is cap-5), and this explicit `type` is CHECKED against that derivation rather than being the only source: if the two disagree the build fails, because one of them is stale. discover.mjs still never infers tiers 3-5 on its own.",
+  "type": "nested-mfe-spa",
+  "composes": [
+    "dashboard-plus-grid/dashboard-plus-grid",
+    "research-map-plus-grid/research-map-plus-grid",
+    "regions-dashboard/regions-mfe",
+    "my-upg-100-list/upg-100-mfe",
+    "country-posters/country-posters-mfe",
+    "poster-design/poster-design-mfe",
+    "doxa-simple-map/doxa-simple-map",
+    "cities-internet/connectivity-map",
+    "gospel-resources/resources-map"
+  ],
+  "label": "Deep Research (vertical-tab app shell: the nine production maps)"
+}

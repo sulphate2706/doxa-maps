@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>upg-neighbor (dev)</title>
+  <link rel="icon" href="data:,">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js"></script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:#f3f3f1}
+    upg-neighbor{position:fixed;inset:0;display:block}
+  </style>
+</head>
+<body>
+  <!-- ?tk=<token> and ?view=<lens> (send-map · cockpit · flower-mesh · lang-cluster · flowers) -->
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search)
+      var el = document.createElement('upg-neighbor')
+      el.setAttribute('profile-config', JSON.stringify({
+        profile: 'upg-neighbor', view: q.get('view') || 'send-map', tk: q.get('tk') || window.MAPBOX_TOKEN || ''
+      }))
+      document.body.appendChild(el)
+    })()
+  </script>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

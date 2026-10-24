@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "Religione",
+    "ropTree": "Albero ROP",
+    "languageFamilies": "Famiglie linguistiche",
+    "semanticTrees": "Alberi semantici",
+    "nameLocales": "Nomi per lingua",
+    "ropSunburst": "Sunburst ROP",
+    "allPins": "Tutti i segnaposto",
+    "rosetta": "Rosetta degli identificativi",
+    "coverage": "Copertura delle traduzioni",
+    "index": "Indice"
+  },
+  "status": {
+    "loading": "Caricamento…",
+    "loadingPgData": "Caricamento dati dei popoli…",
+    "loadingPins": "Caricamento segnaposto…",
+    "loadingPolygons": "Caricamento confini…",
+    "addingPolygons": "Aggiunta dei confini…",
+    "addingPins": "Aggiunta dei segnaposto…",
+    "loadingCoverage": "Caricamento copertura per paese…",
+    "addingPinsOnTop": "Aggiunta dei segnaposto sopra…",
+    "loadingRop": "Caricamento gerarchia ROP…",
+    "loadingLanguage": "Caricamento dati linguistici…",
+    "loadingPinsRosetta": "Caricamento segnaposto e campione Rosetta…",
+    "error": "Errore: {message}",
+    "readyTranslations": "Segnaposto: {pins} · clicca un segnaposto per i 17 nomi",
+    "readyCoverage": "Pronto · paesi: {countries}, colorati per media delle traduzioni / 17 (tutte le righe: {rows})",
+    "readyD3": "Voci: {entries} · scorri per zoomare · trascina per spostare",
+    "readyRop": "Pronto · segnaposto: {pins} · con PEID: {peid}",
+    "readyRosetta": "Pronto · segnaposto: {pins} · campioni Rosetta: {samples} (★ oro)",
+    "readyPins": "Pronto · segnaposto: {pins} · clicca un segnaposto",
+    "readyLanguage": "Pronto · segnaposto: {pins} · copertura famiglie {coverage}% · top 25 = {top}%",
+    "readyReligion": "Segnaposto: {pins} · più comune: {religion} ({count})",
+    "d3Failed": "Impossibile caricare la libreria dei grafici."
+  },
+  "ui": {
+    "chooseView": "Scegli una vista",
+    "search": "Cerca per popolo, luogo, lingua, religione…",
+    "baseMap": "Mappa di base",
+    "dataSources": "Fonti dei dati",
+    "legend": "Legenda",
+    "openLegend": "Apri la legenda",
+    "clearSelectionEsc": "Cancella la selezione (Esc)",
+    "closeEsc": "Chiudi (Esc)",
+    "close": "Chiudi",
+    "retry": "Riprova",
+    "loadingMap": "Caricamento della mappa",
+    "flyToPin": "Vai al segnaposto",
+    "primaryReligion": "Religione principale",
+    "ropHierarchy": "Gerarchia ROP"
+  },
+  "pill": {
+    "religion": "Distribuzione delle religioni · clicca un segnaposto per i dettagli",
+    "ropTree": "Gerarchia ROP · blocco di affinità → cluster → popolo → PGIC",
+    "languageFamilies": "Famiglie etnolinguistiche (PPLR) · clicca un segnaposto per i dettagli",
+    "sunburst": "Gerarchia ROP · blocco di affinità → cluster di popoli · scorri per ingrandire",
+    "pins": "Tutti i segnaposto popolo-paese · clicca per gli identificativi dei sistemi",
+    "coverage": "Copertura delle traduzioni · colore = media delle lingue compilate per paese · clicca un segnaposto o un paese",
+    "rosetta": "Rosetta degli identificativi · colore = identificativi presenti · ★ = riga di esempio",
+    "translations": "Nome del popolo · {n} lingue · fai clic su un punto"
+  },
+  "legendTitle": {
+    "avgLocales": "Media delle lingue / {n}",
+    "idCoverage": "Copertura degli identificativi"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, tutti e tre",
+      "imbOnly": "Solo IMB",
+      "jpOnly": "Solo JP",
+      "neither": "nessuno dei due"
+    },
+    "samplePg": "★ popolo di esempio",
+    "missingIds": "Non ancora collegati in PPLR: {ids}. Una riga vuota è una lacuna nei dati, non un errore."
+  },
+  "popup": {
+    "noName": "(senza nome)",
+    "country": "Paese",
+    "religion": "Religione",
+    "language": "Lingua",
+    "family": "Famiglia",
+    "affinityBloc": "Blocco di affinità",
+    "cluster": "Cluster",
+    "peopleCluster": "Cluster di popoli",
+    "peopleGroup": "Popolo",
+    "pgCount": "Popoli",
+    "avgLocalesFilled": "Media delle lingue compilate",
+    "iso3Country": "Paese ISO-3"
+  },
+  "card": {
+    "nameInLocales": "Nome in {n} lingue"
+  },
+  "title": "Mappe dei dati PPLR",
+  "index": {
+    "title": "Convalida dei dati PPLR",
+    "help": "Fai clic su un riquadro o scegli una vista qui sopra."
+  }
+}

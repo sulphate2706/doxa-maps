@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "宗教",
+    "ropTree": "ROP 树",
+    "languageFamilies": "语系",
+    "semanticTrees": "语义树",
+    "nameLocales": "族群名称语种",
+    "ropSunburst": "ROP 旭日图",
+    "allPins": "全部族群标记",
+    "rosetta": "跨系统 ID 对照",
+    "coverage": "翻译覆盖率",
+    "index": "索引"
+  },
+  "status": {
+    "loading": "正在加载…",
+    "loadingPgData": "正在加载族群数据…",
+    "loadingPins": "正在加载标记…",
+    "loadingPolygons": "正在加载国家边界…",
+    "addingPolygons": "正在添加国家边界…",
+    "addingPins": "正在添加标记…",
+    "loadingCoverage": "正在加载各国覆盖率…",
+    "addingPinsOnTop": "正在叠加标记…",
+    "loadingRop": "正在加载 ROP 层级…",
+    "loadingLanguage": "正在加载语言数据…",
+    "loadingPinsRosetta": "正在加载标记和 Rosetta 样本…",
+    "error": "错误：{message}",
+    "readyTranslations": "标记：{pins} · 点击任一标记查看全部 17 种语言名称",
+    "readyCoverage": "就绪 · 国家：{countries}，按平均翻译语种数 / 17 着色（全部行：{rows}）",
+    "readyD3": "条目：{entries} · 滚动缩放 · 拖动平移",
+    "readyRop": "就绪 · 标记：{pins} · 含 PEID：{peid}",
+    "readyRosetta": "就绪 · 标记：{pins} · Rosetta 样本：{samples}（金色 ★）",
+    "readyPins": "就绪 · 族群标记：{pins} · 点击任一标记",
+    "readyLanguage": "就绪 · 标记：{pins} · 语系覆盖率 {coverage}% · 前 25 = {top}%",
+    "readyReligion": "标记：{pins} · 最常见：{religion}（{count}）",
+    "d3Failed": "无法加载图表库。"
+  },
+  "ui": {
+    "chooseView": "选择视图",
+    "search": "按族群、地点、语言、宗教搜索…",
+    "baseMap": "底图",
+    "dataSources": "数据来源",
+    "legend": "图例",
+    "openLegend": "打开图例",
+    "clearSelectionEsc": "清除选择 (Esc)",
+    "closeEsc": "关闭 (Esc)",
+    "close": "关闭",
+    "retry": "重试",
+    "loadingMap": "正在加载地图",
+    "flyToPin": "飞到标记",
+    "primaryReligion": "主要宗教",
+    "ropHierarchy": "ROP 层级"
+  },
+  "pill": {
+    "religion": "宗教分布 · 点击标记查看详情",
+    "ropTree": "ROP 层级 · 亲缘区块 → 民族群 → 族群 → PGIC",
+    "languageFamilies": "民族语言语系 (PPLR) · 点击标记查看详情",
+    "sunburst": "ROP 层级 · 亲缘区块 → 民族群 · 滚动缩放",
+    "pins": "全部国家内族群标记 · 点击查看跨系统 ID",
+    "coverage": "翻译覆盖率 · 着色 = 各国平均已填语种数 · 点击标记或国家",
+    "rosetta": "跨系统 ID 对照 · 颜色 = 已有哪些 ID · ★ = 示例行",
+    "translations": "族群名称 · {n} 种语言 · 点击任意点"
+  },
+  "legendTitle": {
+    "avgLocales": "平均语种数 / {n}",
+    "idCoverage": "ID 覆盖"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD 三者俱全",
+      "imbOnly": "仅 IMB",
+      "jpOnly": "仅 JP",
+      "neither": "两者皆无"
+    },
+    "samplePg": "★ 示例族群",
+    "missingIds": "PPLR 尚未对应：{ids}。空行是数据缺口，不是错误。"
+  },
+  "popup": {
+    "noName": "（无名称）",
+    "country": "国家",
+    "religion": "宗教",
+    "language": "语言",
+    "family": "语系",
+    "affinityBloc": "亲缘区块",
+    "cluster": "民族群",
+    "peopleCluster": "民族群",
+    "peopleGroup": "族群",
+    "pgCount": "族群数",
+    "avgLocalesFilled": "平均已填语种数",
+    "iso3Country": "ISO-3 国家"
+  },
+  "card": {
+    "nameInLocales": "{n} 种语言中的名称"
+  },
+  "title": "PPLR 数据地图",
+  "index": {
+    "title": "PPLR 数据校验",
+    "help": "点击一个卡片，或在上方选择一个视图。"
+  }
+}

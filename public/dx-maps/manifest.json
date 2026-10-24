@@ -1,0 +1,2004 @@
+{
+  "schema": "doxa-maps-manifest@1",
+  "generatedFrom": "plugin-designs/*/*.vue",
+  "embedBase": ".",
+  "bundleCount": 30,
+  "profileCount": 45,
+  "runtime": {
+    "apiBaseUrl": "https://pray.doxa.life"
+  },
+  "bundles": [
+    {
+      "bundle": "all-people-groups",
+      "scriptUrl": "./all-people-groups/all-people-groups.js",
+      "output": "dx-maps/all-people-groups/all-people-groups.js",
+      "integrity": "sha384-4uZxLJxLey7Zl7tiZ5qTwrQnblpRX0lxzKzjTcfUqBNEOP2Qn63Bvtra+Vo+6ecm",
+      "elements": [
+        "all-people-groups"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "all-people-groups",
+          "stage": "experimental",
+          "file": "all-people-groups.vue",
+          "description": "All 12,379 people groups (peoplegroups.org) in four colors — reached,",
+          "element": "all-people-groups",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./all-people-groups/all-people-groups/index.html",
+          "scriptUrl": "./all-people-groups/all-people-groups.js",
+          "embed": {
+            "iframe": "<iframe src=\"./all-people-groups/all-people-groups/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./all-people-groups/all-people-groups.js\" integrity=\"sha384-4uZxLJxLey7Zl7tiZ5qTwrQnblpRX0lxzKzjTcfUqBNEOP2Qn63Bvtra+Vo+6ecm\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<all-people-groups profile-config='{\"profile\":\"all-people-groups\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></all-people-groups>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./all-people-groups/all-people-groups.js\" integrity=\"sha384-4uZxLJxLey7Zl7tiZ5qTwrQnblpRX0lxzKzjTcfUqBNEOP2Qn63Bvtra+Vo+6ecm\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<all-people-groups profile-config='{\"profile\":\"all-people-groups\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></all-people-groups>"
+          },
+          "bundle": "all-people-groups"
+        }
+      ]
+    },
+    {
+      "bundle": "bible-posters",
+      "scriptUrl": "./bible-posters/bible-posters.js",
+      "output": "dx-maps/bible-posters/bible-posters.js",
+      "integrity": "sha384-twS8rEG4vtm8MPjq+ytjSf6g4stmnzr/6KYbVRDhQ3TH7MiTgsNG7X19Y3Ncb0JJ",
+      "elements": [
+        "bible-posters"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "bible-posters",
+          "stage": "experimental",
+          "label": "Bible Posters",
+          "targets": [
+            "web"
+          ],
+          "posterDesign": {
+            "family": "biblePoster",
+            "name": "bible-poster.36x60",
+            "size": "36x60",
+            "mobileFriendly": false,
+            "labelKey": "biblePosters.posterDesign.label"
+          },
+          "posterDesignLabels": {
+            "bible-poster.36x60": {
+              "ar": "ملصق سفر من الكتاب المقدس",
+              "de": "Bibelbuch-Poster",
+              "en": "Bible book poster",
+              "es": "Cartel de un libro de la Biblia",
+              "fr": "Affiche d'un livre de la Bible",
+              "hi": "बाइबल पुस्तक पोस्टर",
+              "it": "Poster di un libro della Bibbia",
+              "pt": "Cartaz de um livro da Bíblia",
+              "ro": "Poster cu o carte a Bibliei",
+              "ru": "Плакат книги Библии",
+              "zh": "圣经书卷海报"
+            }
+          },
+          "file": "bible-posters.vue",
+          "description": "A whole book of the Bible on one poster, in justified columns under a bold title, from a public-domain text.",
+          "element": "bible-posters",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./bible-posters/bible-posters/index.html",
+          "scriptUrl": "./bible-posters/bible-posters.js",
+          "embed": {
+            "iframe": "<iframe src=\"./bible-posters/bible-posters/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./bible-posters/bible-posters.js\" integrity=\"sha384-twS8rEG4vtm8MPjq+ytjSf6g4stmnzr/6KYbVRDhQ3TH7MiTgsNG7X19Y3Ncb0JJ\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<bible-posters profile-config='{\"profile\":\"bible-posters\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></bible-posters>"
+          },
+          "bundle": "bible-posters"
+        }
+      ]
+    },
+    {
+      "bundle": "big-picture",
+      "scriptUrl": "./big-picture/big-picture.js",
+      "output": "dx-maps/big-picture/big-picture.js",
+      "integrity": "sha384-oZHupxdl6Qia5wWNh4lc86TSObpVYxioOdrK6pRGAl7Bw7YPx+6NNe7jUzZGjtb+",
+      "elements": [
+        "bp-big-picture",
+        "bp-research-header",
+        "people-groups-grid"
+      ],
+      "composes": [
+        "bp-research-header",
+        "people-groups-grid"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "big-picture",
+          "stage": "experimental",
+          "label": "Big Picture (research header ↔ real people-groups grid via props/events)",
+          "file": "big-picture.vue",
+          "description": "The Cat-4 composite that PAIRS the two real capability elements of the",
+          "element": "bp-big-picture",
+          "type": "nested-elements-mfe",
+          "isMap": false,
+          "iframeUrl": "./big-picture/big-picture/index.html",
+          "scriptUrl": "./big-picture/big-picture.js",
+          "embed": {
+            "iframe": "<iframe src=\"./big-picture/big-picture/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./big-picture/big-picture.js\" integrity=\"sha384-oZHupxdl6Qia5wWNh4lc86TSObpVYxioOdrK6pRGAl7Bw7YPx+6NNe7jUzZGjtb+\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<bp-big-picture profile-config='{\"profile\":\"big-picture\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></bp-big-picture>"
+          },
+          "instances": [
+            {
+              "id": "big-picture",
+              "title": "Big Picture — research header ↔ people-groups grid (composite)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "big-picture",
+                "provider": "maplibre",
+                "instanceId": "bp-big-picture"
+              },
+              "element": "bp-big-picture",
+              "iframeUrl": "./big-picture/big-picture/big-picture/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./big-picture/big-picture/big-picture/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "frontier",
+              "title": "Big Picture — frontier accent",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "big-picture",
+                "provider": "maplibre",
+                "instanceId": "bp-big-picture-frontier",
+                "accent": "#22d3ee",
+                "title": "Big Picture — Frontier Focus"
+              },
+              "element": "bp-big-picture",
+              "iframeUrl": "./big-picture/big-picture/frontier/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./big-picture/big-picture/frontier/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ],
+          "bundle": "big-picture"
+        }
+      ]
+    },
+    {
+      "bundle": "bless-india-posters",
+      "scriptUrl": "./bless-india-posters/bless-india-posters.js",
+      "output": "dx-maps/bless-india-posters/bless-india-posters.js",
+      "integrity": "sha384-v4V1LrtkX/o/hur7SHYuwVRI8RzHMAnU9OUY/gdltoPVLn8lWhmJpPdgAM8ZU+/l",
+      "elements": [
+        "bless-india-posters"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "bless-india-posters",
+          "stage": "experimental",
+          "label": "Bless India Posters",
+          "posterDesign": [
+            {
+              "family": "blessPoster",
+              "name": "bless-india.range-badge-60x96",
+              "size": "60x96",
+              "mobileFriendly": false,
+              "labelKey": "blessIndiaPosters.rangeBadge60x96"
+            }
+          ],
+          "posterDesignLabels": {
+            "bless-india.range-badge-60x96": {
+              "ar": "شارات النطاق · 60×96 (5×8 قدم)",
+              "de": "Nummern-Marken · 60×96 (5×8 Fuß)",
+              "en": "Range badges · 60×96 (5×8 ft)",
+              "es": "Insignias numeradas · 60×96 (5×8 pies)",
+              "fr": "Badges de numéros · 60×96 (5×8 pi)",
+              "hi": "क्रमांकित बैज · 60×96 (5×8 फुट)",
+              "it": "Badge numerati · 60×96 (5×8 ft)",
+              "pt": "Emblemas numerados · 60×96 (5×8 pés)",
+              "ro": "Insigne numerotate · 60×96 (5×8 ft)",
+              "ru": "Номерные значки · 60×96 (5×8 футов)",
+              "zh": "编号标记 · 60×96（5×8 英尺）"
+            }
+          },
+          "file": "bless-india-posters.vue",
+          "description": "A preview surface for the whole-India poster problem — fitting every one of India's people groups onto a single printable sheet. Each design attempt is generated live from the current data (nothing stored) and shown as its printable sheets with the glue strips, headed \"Bless India in Jesus' name\" with the Numbers 6:24-26 blessing. Experimental; a phone sees the preview but Print is blocked until a design is proven safe on a phone.",
+          "element": "bless-india-posters",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./bless-india-posters/bless-india-posters/index.html",
+          "scriptUrl": "./bless-india-posters/bless-india-posters.js",
+          "embed": {
+            "iframe": "<iframe src=\"./bless-india-posters/bless-india-posters/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./bless-india-posters/bless-india-posters.js\" integrity=\"sha384-v4V1LrtkX/o/hur7SHYuwVRI8RzHMAnU9OUY/gdltoPVLn8lWhmJpPdgAM8ZU+/l\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<bless-india-posters profile-config='{\"profile\":\"bless-india-posters\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></bless-india-posters>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "cities-internet",
+      "scriptUrl": "./cities-internet/cities-internet.js",
+      "output": "dx-maps/cities-internet/cities-internet.js",
+      "integrity": "sha384-6c4SlWMUWowE4IG1S5F3WshA66I3aKnK7ilHyHzOncLWeyXFL/I+NGlAYhyjZ1Ql",
+      "elements": [
+        "cities-internet-map"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "connectivity-list",
+          "stage": "experimental",
+          "label": "Cities with Internet — connectivity list",
+          "file": "connectivity-list.vue",
+          "description": "Countries where DX people groups live, grouped by region, showing measured internet penetration",
+          "element": "cities-internet-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./cities-internet/connectivity-list/index.html",
+          "scriptUrl": "./cities-internet/cities-internet.js",
+          "embed": {
+            "iframe": "<iframe src=\"./cities-internet/connectivity-list/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./cities-internet/cities-internet.js\" integrity=\"sha384-6c4SlWMUWowE4IG1S5F3WshA66I3aKnK7ilHyHzOncLWeyXFL/I+NGlAYhyjZ1Ql\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<cities-internet-map profile-config='{\"profile\":\"connectivity-list\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></cities-internet-map>"
+          }
+        },
+        {
+          "profile": "connectivity-map",
+          "stage": "production",
+          "label": "Cities with Internet — connectivity map",
+          "file": "connectivity-map.vue",
+          "description": "Every country shaded by measured internet penetration, with its named carriers and dominant",
+          "element": "cities-internet-map",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./cities-internet/connectivity-map/index.html",
+          "scriptUrl": "./cities-internet/cities-internet.js",
+          "embed": {
+            "iframe": "<iframe src=\"./cities-internet/connectivity-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./cities-internet/cities-internet.js\" integrity=\"sha384-6c4SlWMUWowE4IG1S5F3WshA66I3aKnK7ilHyHzOncLWeyXFL/I+NGlAYhyjZ1Ql\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<cities-internet-map profile-config='{\"profile\":\"connectivity-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></cities-internet-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./cities-internet/cities-internet.js\" integrity=\"sha384-6c4SlWMUWowE4IG1S5F3WshA66I3aKnK7ilHyHzOncLWeyXFL/I+NGlAYhyjZ1Ql\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<cities-internet-map profile-config='{\"profile\":\"connectivity-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></cities-internet-map>"
+          }
+        },
+        {
+          "profile": "data-tables",
+          "stage": "experimental",
+          "label": "Cities with Internet — data tables",
+          "file": "data-tables.vue",
+          "description": "Four validated research tables, one tab each, with sortable and filterable columns, CSV and JSON",
+          "element": "cities-internet-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./cities-internet/data-tables/index.html",
+          "scriptUrl": "./cities-internet/cities-internet.js",
+          "embed": {
+            "iframe": "<iframe src=\"./cities-internet/data-tables/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./cities-internet/cities-internet.js\" integrity=\"sha384-6c4SlWMUWowE4IG1S5F3WshA66I3aKnK7ilHyHzOncLWeyXFL/I+NGlAYhyjZ1Ql\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<cities-internet-map profile-config='{\"profile\":\"data-tables\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></cities-internet-map>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "country-map",
+      "scriptUrl": "./country-map/country-map.js",
+      "output": "dx-maps/country-map/country-map.js",
+      "integrity": "sha384-cajnphXoIZZqPT2/Y1k4cAIVn1D39k04GzH4mMJUpWKh0xyLXQ6x7OrrvSgMeIfu",
+      "elements": [
+        "doxa-country-map"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "country-map",
+          "stage": "production",
+          "label": "Country Map",
+          "file": "country-map.vue",
+          "description": "One country's people groups on a map, as a single droppable element — the pins,",
+          "element": "doxa-country-map",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./country-map/country-map/index.html",
+          "scriptUrl": "./country-map/country-map.js",
+          "embed": {
+            "iframe": "<iframe src=\"./country-map/country-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-map/country-map.js\" integrity=\"sha384-cajnphXoIZZqPT2/Y1k4cAIVn1D39k04GzH4mMJUpWKh0xyLXQ6x7OrrvSgMeIfu\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<doxa-country-map profile-config='{\"profile\":\"country-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></doxa-country-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-map/country-map.js\" integrity=\"sha384-cajnphXoIZZqPT2/Y1k4cAIVn1D39k04GzH4mMJUpWKh0xyLXQ6x7OrrvSgMeIfu\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<doxa-country-map profile-config='{\"profile\":\"country-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></doxa-country-map>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "country-posters",
+      "scriptUrl": "./country-posters/country-posters.js",
+      "output": "dx-maps/country-posters/country-posters.js",
+      "integrity": "sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4",
+      "elements": [
+        "country-posters-map"
+      ],
+      "composes": [
+        "country-posters/country-poster-wall",
+        "country-posters/countries-map"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "countries-map",
+          "stage": "experimental",
+          "label": "Country Posters — countries map",
+          "file": "countries-map.vue",
+          "description": "The researcher's workbench retargeted from people groups to COUNTRIES — region",
+          "element": "country-posters-map",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./country-posters/countries-map/index.html",
+          "scriptUrl": "./country-posters/country-posters.js",
+          "embed": {
+            "iframe": "<iframe src=\"./country-posters/countries-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-posters/country-posters.js\" integrity=\"sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<country-posters-map profile-config='{\"profile\":\"countries-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></country-posters-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-posters/country-posters.js\" integrity=\"sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<country-posters-map profile-config='{\"profile\":\"countries-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></country-posters-map>"
+          }
+        },
+        {
+          "profile": "country-poster-wall",
+          "stage": "experimental",
+          "label": "Country Posters — poster wall",
+          "posterDesign": {
+            "family": "countryPoster",
+            "name": "country-poster.letter",
+            "size": "letter",
+            "mobileFriendly": true,
+            "labelKey": "tabs.countryPosters"
+          },
+          "posterDesignLabels": {
+            "country-poster.letter": {
+              "ar": "ملصقات الدول",
+              "de": "Länderposter",
+              "en": "Country Posters",
+              "es": "Carteles por país",
+              "fr": "Affiches par pays",
+              "hi": "देश पोस्टर",
+              "it": "Poster per paese",
+              "pt": "Cartazes por país",
+              "ro": "Afișe pe țări",
+              "ru": "Плакаты по странам",
+              "zh": "国家海报"
+            }
+          },
+          "file": "country-poster-wall.vue",
+          "description": "One printable card per country, grouped into COLLAPSIBLE regional sections so the",
+          "element": "country-posters-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./country-posters/country-poster-wall/index.html",
+          "scriptUrl": "./country-posters/country-posters.js",
+          "embed": {
+            "iframe": "<iframe src=\"./country-posters/country-poster-wall/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-posters/country-posters.js\" integrity=\"sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<country-posters-map profile-config='{\"profile\":\"country-poster-wall\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></country-posters-map>"
+          }
+        },
+        {
+          "profile": "country-posters-mfe",
+          "stage": "experimental",
+          "label": "Country Posters — Wall + Map",
+          "file": "country-posters-mfe.vue",
+          "description": "Country Posters as ONE two-tab element — the countries map and the printable",
+          "element": "country-posters-map",
+          "type": "nested-elements-mfe",
+          "isMap": true,
+          "iframeUrl": "./country-posters/country-posters-mfe/index.html",
+          "scriptUrl": "./country-posters/country-posters.js",
+          "embed": {
+            "iframe": "<iframe src=\"./country-posters/country-posters-mfe/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-posters/country-posters.js\" integrity=\"sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<country-posters-map profile-config='{\"profile\":\"country-posters-mfe\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></country-posters-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-posters/country-posters.js\" integrity=\"sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<country-posters-map profile-config='{\"profile\":\"country-posters-mfe\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></country-posters-map>"
+          }
+        },
+        {
+          "profile": "poster-section",
+          "stage": "experimental",
+          "label": "Country Posters — one poster section (<dxm-poster-section>)",
+          "file": "poster-section.vue",
+          "description": "One poster section on its own: the reusable <dxm-poster-section> element (a region's posters, the same cards and print options as the Country Posters wall), shown here for Africa (open) and Oceania (collapsed).",
+          "element": "country-posters-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./country-posters/poster-section/index.html",
+          "scriptUrl": "./country-posters/country-posters.js",
+          "embed": {
+            "iframe": "<iframe src=\"./country-posters/poster-section/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./country-posters/country-posters.js\" integrity=\"sha384-ttJWggywmJ2ON0+jm7EzESMqlTqsADVCAAf1CxpEhYEYHxtbCsHDLMfY/dAFR8x4\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<country-posters-map profile-config='{\"profile\":\"poster-section\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></country-posters-map>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "dashboard-plus-grid",
+      "scriptUrl": "./dashboard-plus-grid/dashboard-plus-grid.js",
+      "output": "dx-maps/dashboard-plus-grid/dashboard-plus-grid.js",
+      "integrity": "sha384-AyqUww8eDFdF36GeDkZhv3wX6orazKJ4ksNFWdTclwRXYYYTyJ3zgHdoU204eiYk",
+      "elements": [
+        "dashboard-plus-grid"
+      ],
+      "composes": [
+        "research-dashboard",
+        "people-groups-grid"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "dashboard-plus-grid",
+          "stage": "production",
+          "label": "Dashboard + Grid (baked into one element, stacked to scroll)",
+          "mobile": "desktop-only",
+          "file": "dashboard-plus-grid.vue",
+          "description": "Both children are IMPORTED DIRECTLY (compiled into this ONE bundle — no runtime bundle",
+          "element": "dashboard-plus-grid",
+          "type": "nested-elements-mfe",
+          "isMap": true,
+          "iframeUrl": "./dashboard-plus-grid/dashboard-plus-grid/index.html",
+          "scriptUrl": "./dashboard-plus-grid/dashboard-plus-grid.js",
+          "embed": {
+            "iframe": "<iframe src=\"./dashboard-plus-grid/dashboard-plus-grid/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./dashboard-plus-grid/dashboard-plus-grid.js\" integrity=\"sha384-AyqUww8eDFdF36GeDkZhv3wX6orazKJ4ksNFWdTclwRXYYYTyJ3zgHdoU204eiYk\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<dashboard-plus-grid profile-config='{\"profile\":\"dashboard-plus-grid\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></dashboard-plus-grid>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./dashboard-plus-grid/dashboard-plus-grid.js\" integrity=\"sha384-AyqUww8eDFdF36GeDkZhv3wX6orazKJ4ksNFWdTclwRXYYYTyJ3zgHdoU204eiYk\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<dashboard-plus-grid profile-config='{\"profile\":\"dashboard-plus-grid\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></dashboard-plus-grid>"
+          },
+          "instances": [
+            {
+              "id": "default",
+              "title": "default",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "dashboard-plus-grid"
+              },
+              "element": "dashboard-plus-grid",
+              "iframeUrl": "./dashboard-plus-grid/dashboard-plus-grid/default/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./dashboard-plus-grid/dashboard-plus-grid/default/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "demo-map",
+      "scriptUrl": "./demo-map/demo-map.js",
+      "output": "dx-maps/demo-map/demo-map.js",
+      "integrity": "sha384-eCdagq/JzSB4RbPXxCB4Cah0DemoKxPhkguZy1jvFoAN5ge0XzUDxid7ln8rHqAX",
+      "elements": [
+        "demo-map"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "demo-map",
+          "stage": "experimental",
+          "file": "demo-map.vue",
+          "description": "Simple two-tab demo map. Tab 1 colors pins by religion (shared",
+          "element": "demo-map",
+          "type": "parameterized",
+          "isMap": true,
+          "iframeUrl": "./demo-map/demo-map/index.html",
+          "scriptUrl": "./demo-map/demo-map.js",
+          "embed": {
+            "iframe": "<iframe src=\"./demo-map/demo-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./demo-map/demo-map.js\" integrity=\"sha384-eCdagq/JzSB4RbPXxCB4Cah0DemoKxPhkguZy1jvFoAN5ge0XzUDxid7ln8rHqAX\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<demo-map profile-config='{\"profile\":\"demo-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></demo-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./demo-map/demo-map.js\" integrity=\"sha384-eCdagq/JzSB4RbPXxCB4Cah0DemoKxPhkguZy1jvFoAN5ge0XzUDxid7ln8rHqAX\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<demo-map profile-config='{\"profile\":\"demo-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></demo-map>"
+          },
+          "instances": [
+            {
+              "id": "maplibre",
+              "title": "Demo map — MapLibre (token-free)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "demo-map",
+                "provider": "maplibre",
+                "instanceId": "demo-maplibre"
+              },
+              "element": "demo-map",
+              "iframeUrl": "./demo-map/demo-map/maplibre/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./demo-map/demo-map/maplibre/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ],
+          "bundle": "demo-map"
+        }
+      ]
+    },
+    {
+      "bundle": "doxa-maps-spa",
+      "scriptUrl": "./doxa-maps-spa/doxa-maps-spa.js",
+      "output": "dx-maps/doxa-maps-spa/doxa-maps-spa.js",
+      "integrity": "sha384-Wop35cwyXSmt+i3+2mobkc03oOirRiyyL4nx22fiPqN5uo0uQpegH4hE9PQnpHx7",
+      "elements": [
+        "doxa-maps-spa"
+      ],
+      "composes": [
+        "dashboard-plus-grid/dashboard-plus-grid",
+        "research-map-plus-grid/research-map-plus-grid",
+        "regions-dashboard/regions-mfe",
+        "my-upg-100-list/upg-100-mfe",
+        "country-posters/country-posters-mfe",
+        "poster-design/poster-design-mfe",
+        "doxa-simple-map/doxa-simple-map",
+        "cities-internet/connectivity-map",
+        "gospel-resources/resources-map"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "doxa-maps-spa",
+          "stage": "experimental",
+          "label": "Deep Research (vertical-tab app shell: the nine production maps)",
+          "file": "doxa-maps-spa.vue",
+          "description": "The DX-maps app itself: one element whose vertical-tab rail nests every other",
+          "element": "doxa-maps-spa",
+          "type": "nested-mfe-spa",
+          "isMap": false,
+          "iframeUrl": "./doxa-maps-spa/doxa-maps-spa/index.html",
+          "scriptUrl": "./doxa-maps-spa/doxa-maps-spa.js",
+          "embed": {
+            "iframe": "<iframe src=\"./doxa-maps-spa/doxa-maps-spa/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./doxa-maps-spa/doxa-maps-spa.js\" integrity=\"sha384-Wop35cwyXSmt+i3+2mobkc03oOirRiyyL4nx22fiPqN5uo0uQpegH4hE9PQnpHx7\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<doxa-maps-spa profile-config='{\"profile\":\"doxa-maps-spa\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></doxa-maps-spa>"
+          },
+          "instances": [
+            {
+              "id": "app",
+              "title": "Deep Research — Big Picture + every research map (app-shell)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "doxa-maps-spa",
+                "provider": "maplibre",
+                "instanceId": "doxa-maps-spa-app",
+                "title": "Deep Research"
+              },
+              "element": "doxa-maps-spa",
+              "iframeUrl": "./doxa-maps-spa/doxa-maps-spa/app/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-maps-spa/doxa-maps-spa/app/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "doxa-research-map",
+      "scriptUrl": "./doxa-research-map/doxa-research-map.js",
+      "output": "dx-maps/doxa-research-map/doxa-research-map.js",
+      "integrity": "sha384-tIL2KveogthV0ZEoBx/XfNCI8PvcS2K1DMBpg8uUwsvFyHOnhKZZAXfrEM+FBPe3",
+      "elements": [
+        "doxa-research-map"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "research-map",
+          "stage": "experimental",
+          "label": "Research Map",
+          "file": "research-map.vue",
+          "description": "The researcher's workbench: every piece a missiologist, demographer or",
+          "element": "doxa-research-map",
+          "type": "monolithic",
+          "isMap": true,
+          "iframeUrl": "./doxa-research-map/research-map/index.html",
+          "scriptUrl": "./doxa-research-map/doxa-research-map.js",
+          "embed": {
+            "iframe": "<iframe src=\"./doxa-research-map/research-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./doxa-research-map/doxa-research-map.js\" integrity=\"sha384-tIL2KveogthV0ZEoBx/XfNCI8PvcS2K1DMBpg8uUwsvFyHOnhKZZAXfrEM+FBPe3\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<doxa-research-map profile-config='{\"profile\":\"research-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></doxa-research-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./doxa-research-map/doxa-research-map.js\" integrity=\"sha384-tIL2KveogthV0ZEoBx/XfNCI8PvcS2K1DMBpg8uUwsvFyHOnhKZZAXfrEM+FBPe3\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<doxa-research-map profile-config='{\"profile\":\"research-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></doxa-research-map>"
+          },
+          "instances": [
+            {
+              "id": "maplibre",
+              "title": "Research map — MapLibre (token-free, no search bar)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "research-map",
+                "provider": "maplibre",
+                "instanceId": "research-map-maplibre"
+              },
+              "element": "doxa-research-map",
+              "iframeUrl": "./doxa-research-map/research-map/maplibre/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-research-map/research-map/maplibre/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "doxa-simple-map",
+      "scriptUrl": "./doxa-simple-map/doxa-simple-map.js",
+      "output": "dx-maps/doxa-simple-map/doxa-simple-map.js",
+      "integrity": "sha384-dVdk9Dyd0DZ92VoOULWQFVRqexr7zKwDyvy9GkGXHe0oGo3tqS+xR1pc04QP/B0L",
+      "elements": [
+        "dxm-simple-map"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "doxa-simple-map",
+          "stage": "production",
+          "label": "Prayer Progress — prayer map",
+          "file": "doxa-simple-map.vue",
+          "description": "The simple world map, shipped as three presets off ONE prop table —",
+          "element": "dxm-simple-map",
+          "type": "parameterized",
+          "isMap": true,
+          "iframeUrl": "./doxa-simple-map/doxa-simple-map/index.html",
+          "scriptUrl": "./doxa-simple-map/doxa-simple-map.js",
+          "embed": {
+            "iframe": "<iframe src=\"./doxa-simple-map/doxa-simple-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./doxa-simple-map/doxa-simple-map.js\" integrity=\"sha384-dVdk9Dyd0DZ92VoOULWQFVRqexr7zKwDyvy9GkGXHe0oGo3tqS+xR1pc04QP/B0L\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<dxm-simple-map profile-config='{\"profile\":\"doxa-simple-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></dxm-simple-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./doxa-simple-map/doxa-simple-map.js\" integrity=\"sha384-dVdk9Dyd0DZ92VoOULWQFVRqexr7zKwDyvy9GkGXHe0oGo3tqS+xR1pc04QP/B0L\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<dxm-simple-map profile-config='{\"profile\":\"doxa-simple-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></dxm-simple-map>"
+          },
+          "instances": [
+            {
+              "id": "prayer",
+              "title": "Prayer Map",
+              "apiBaseUrl": "https://pray.doxa.life",
+              "props": {
+                "profile": "doxa-simple-map",
+                "instanceId": "embed-prayer",
+                "dataSource": "pray-tools",
+                "tabs": [
+                  {
+                    "id": "prayer",
+                    "colorStrategy": "prayer",
+                    "legend": "prayer",
+                    "popup": "prayer"
+                  }
+                ]
+              },
+              "element": "dxm-simple-map",
+              "iframeUrl": "./doxa-simple-map/doxa-simple-map/prayer/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-simple-map/doxa-simple-map/prayer/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "engagement",
+              "title": "Engagement Map",
+              "apiBaseUrl": "https://pray.doxa.life",
+              "props": {
+                "profile": "doxa-simple-map",
+                "instanceId": "embed-engagement",
+                "dataSource": "pray-tools",
+                "tabs": [
+                  {
+                    "id": "engagement",
+                    "colorStrategy": "engagement",
+                    "legend": "engagement",
+                    "popup": "engagement"
+                  }
+                ]
+              },
+              "element": "dxm-simple-map",
+              "iframeUrl": "./doxa-simple-map/doxa-simple-map/engagement/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-simple-map/doxa-simple-map/engagement/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "adoption",
+              "title": "Adoption Map",
+              "apiBaseUrl": "https://pray.doxa.life",
+              "props": {
+                "profile": "doxa-simple-map",
+                "instanceId": "embed-adoption",
+                "dataSource": "pray-tools",
+                "tabs": [
+                  {
+                    "id": "adoption",
+                    "colorStrategy": "adoption",
+                    "legend": "adoption",
+                    "popup": "adoption"
+                  }
+                ]
+              },
+              "element": "dxm-simple-map",
+              "iframeUrl": "./doxa-simple-map/doxa-simple-map/adoption/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-simple-map/doxa-simple-map/adoption/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "doxa-vision-card",
+      "scriptUrl": "./doxa-vision-card/doxa-vision-card.js",
+      "output": "dx-maps/doxa-vision-card/doxa-vision-card.js",
+      "integrity": "sha384-cGsF7BrFtIYwuerTeu1qqgT5QyfFBv+IsByfQ5l39kBcJFx2VM4aB9ZWNrw98J/o",
+      "elements": [
+        "doxa-vision-card"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "doxa-vision-card",
+          "stage": "experimental",
+          "file": "doxa-vision-card.vue",
+          "description": "A true funnel of the remaining task, every number computed from data: all people",
+          "element": "doxa-vision-card",
+          "type": "parameterized",
+          "isMap": false,
+          "iframeUrl": "./doxa-vision-card/doxa-vision-card/index.html",
+          "scriptUrl": "./doxa-vision-card/doxa-vision-card.js",
+          "embed": {
+            "iframe": "<iframe src=\"./doxa-vision-card/doxa-vision-card/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./doxa-vision-card/doxa-vision-card.js\" integrity=\"sha384-cGsF7BrFtIYwuerTeu1qqgT5QyfFBv+IsByfQ5l39kBcJFx2VM4aB9ZWNrw98J/o\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<doxa-vision-card profile-config='{\"profile\":\"doxa-vision-card\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></doxa-vision-card>"
+          },
+          "instances": [
+            {
+              "id": "default",
+              "title": "Vision card — reach at a glance",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "doxa-vision-card",
+                "provider": "maplibre",
+                "instanceId": "vision-card-default"
+              },
+              "element": "doxa-vision-card",
+              "iframeUrl": "./doxa-vision-card/doxa-vision-card/default/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-vision-card/doxa-vision-card/default/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "frontier",
+              "title": "Vision card — frontier accent",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "doxa-vision-card",
+                "provider": "maplibre",
+                "instanceId": "vision-card-frontier",
+                "accent": "#22d3ee",
+                "title": "The last frontier of the gospel.",
+                "tagline": "Frontier people groups: fewer than one person in a thousand is an evangelical believer."
+              },
+              "element": "doxa-vision-card",
+              "iframeUrl": "./doxa-vision-card/doxa-vision-card/frontier/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./doxa-vision-card/doxa-vision-card/frontier/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ],
+          "bundle": "doxa-vision-card"
+        }
+      ]
+    },
+    {
+      "bundle": "golden-path-check",
+      "scriptUrl": "./golden-path-check/golden-path-check.js",
+      "output": "dx-maps/golden-path-check/golden-path-check.js",
+      "integrity": "sha384-zSBiNcThiTotRZaJotTTvRhmj8FVi2EkMVzMCoV/cpLD/vjZOCryCMfO0qD+FLDW",
+      "elements": [
+        "golden-path-check"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "golden-path-check",
+          "stage": "experimental",
+          "file": "golden-path-check.vue",
+          "description": "A live self-test of the develop-a-plugin-and-see-it-live path: it reads the built",
+          "element": "golden-path-check",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./golden-path-check/golden-path-check/index.html",
+          "scriptUrl": "./golden-path-check/golden-path-check.js",
+          "embed": {
+            "iframe": "<iframe src=\"./golden-path-check/golden-path-check/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./golden-path-check/golden-path-check.js\" integrity=\"sha384-zSBiNcThiTotRZaJotTTvRhmj8FVi2EkMVzMCoV/cpLD/vjZOCryCMfO0qD+FLDW\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<golden-path-check profile-config='{\"profile\":\"golden-path-check\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></golden-path-check>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "gospel-internet",
+      "scriptUrl": "./gospel-internet/gospel-internet.js",
+      "output": "dx-maps/gospel-internet/gospel-internet.js",
+      "integrity": "sha384-cYEFAJDnY5U2DTUhnYFCCSG7rUsqh1c8nzExu1GePI0mIKdFZU3vQ/zKHkSBHdvc",
+      "elements": [
+        "gospel-internet-board"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "board",
+          "stage": "experimental",
+          "label": "Gospel × Internet",
+          "heavy": true,
+          "mobile": "larger-screens",
+          "file": "board.vue",
+          "description": "For every remaining people group: what gospel resources exist in a language they use, and how much of their country (or Indian state) is online to receive them.",
+          "element": "gospel-internet-board",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./gospel-internet/board/index.html",
+          "scriptUrl": "./gospel-internet/gospel-internet.js",
+          "embed": {
+            "iframe": "<iframe src=\"./gospel-internet/board/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-internet/gospel-internet.js\" integrity=\"sha384-cYEFAJDnY5U2DTUhnYFCCSG7rUsqh1c8nzExu1GePI0mIKdFZU3vQ/zKHkSBHdvc\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<gospel-internet-board profile-config='{\"profile\":\"board\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-internet-board>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-internet/gospel-internet.js\" integrity=\"sha384-cYEFAJDnY5U2DTUhnYFCCSG7rUsqh1c8nzExu1GePI0mIKdFZU3vQ/zKHkSBHdvc\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<gospel-internet-board profile-config='{\"profile\":\"board\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-internet-board>"
+          },
+          "instances": [
+            {
+              "id": "board",
+              "title": "Gospel x Internet — the board",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "board",
+                "urlState": "query",
+                "pinHint": false
+              },
+              "element": "gospel-internet-board",
+              "iframeUrl": "./gospel-internet/board/board/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./gospel-internet/board/board/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "zero",
+              "title": "Nothing in their own language — the front door",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "board",
+                "view": "zero",
+                "urlState": "query",
+                "pinHint": false
+              },
+              "element": "gospel-internet-board",
+              "iframeUrl": "./gospel-internet/board/zero/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./gospel-internet/board/zero/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "india-china",
+              "title": "India and China by state and province",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "board",
+                "view": "province",
+                "panel": "map",
+                "urlState": "query",
+                "pinHint": false
+              },
+              "element": "gospel-internet-board",
+              "iframeUrl": "./gospel-internet/board/india-china/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./gospel-internet/board/india-china/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "language-tree",
+              "title": "Language tree — which languages have the gospel, family by family",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "board",
+                "panel": "tree",
+                "urlState": "query",
+                "pinHint": false
+              },
+              "element": "gospel-internet-board",
+              "iframeUrl": "./gospel-internet/board/language-tree/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./gospel-internet/board/language-tree/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "platforms",
+              "title": "Platforms — which apps would carry a resource there",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "board",
+                "view": "platforms",
+                "urlState": "query",
+                "pinHint": false
+              },
+              "element": "gospel-internet-board",
+              "iframeUrl": "./gospel-internet/board/platforms/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./gospel-internet/board/platforms/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "project-700",
+              "title": "Project 700 — the list as a partner embed",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "board",
+                "list": "700",
+                "urlState": "query",
+                "pinHint": false
+              },
+              "element": "gospel-internet-board",
+              "iframeUrl": "./gospel-internet/board/project-700/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./gospel-internet/board/project-700/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "gospel-resources",
+      "scriptUrl": "./gospel-resources/gospel-resources.js",
+      "output": "dx-maps/gospel-resources/gospel-resources.js",
+      "integrity": "sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M",
+      "elements": [
+        "gospel-resources-map"
+      ],
+      "composes": [
+        "resources-map",
+        "data-tables"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "charts",
+          "stage": "experimental",
+          "label": "Gospel Resources — where the gap is, by language",
+          "file": "charts.vue",
+          "description": "The gap measured by LANGUAGE (ISO 639-3) rather than by people group, because one translation serves every group that speaks it, so counting by group overstates how much work remains.",
+          "element": "gospel-resources-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./gospel-resources/charts/index.html",
+          "scriptUrl": "./gospel-resources/gospel-resources.js",
+          "embed": {
+            "iframe": "<iframe src=\"./gospel-resources/charts/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<gospel-resources-map profile-config='{\"profile\":\"charts\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>"
+          }
+        },
+        {
+          "profile": "data-tables",
+          "stage": "experimental",
+          "label": "Gospel Resources — every resource and every gap, in tables",
+          "file": "data-tables.vue",
+          "description": "Eleven tables covering both halves of one question: every gospel resource with its real URL and how much Scripture it is, and the 1,613 people groups where nothing was found with the pools searched recorded per row, plus translation priority, bridge languages, city bridges, the deaf gap and access against population growth.",
+          "element": "gospel-resources-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./gospel-resources/data-tables/index.html",
+          "scriptUrl": "./gospel-resources/gospel-resources.js",
+          "embed": {
+            "iframe": "<iframe src=\"./gospel-resources/data-tables/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<gospel-resources-map profile-config='{\"profile\":\"data-tables\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>"
+          }
+        },
+        {
+          "profile": "gospel-dashboard",
+          "stage": "production",
+          "label": "Gospel Dashboard (map + tables baked into one element, stacked to scroll)",
+          "file": "gospel-dashboard.vue",
+          "description": "The gospel map and its tables as one scrolling element: 12,379 people-group pins with the real Scripture, film and Bible-story links for each group's own language, above every resource with its URL and the 1,613 groups where nothing was found, exportable as CSV.",
+          "element": "gospel-resources-map",
+          "type": "nested-elements-mfe",
+          "isMap": true,
+          "iframeUrl": "./gospel-resources/gospel-dashboard/index.html",
+          "scriptUrl": "./gospel-resources/gospel-resources.js",
+          "embed": {
+            "iframe": "<iframe src=\"./gospel-resources/gospel-dashboard/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<gospel-resources-map profile-config='{\"profile\":\"gospel-dashboard\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<gospel-resources-map profile-config='{\"profile\":\"gospel-dashboard\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>"
+          }
+        },
+        {
+          "profile": "resources-list",
+          "stage": "experimental",
+          "label": "Gospel Resources — what each people group has",
+          "file": "resources-list.vue",
+          "description": "Which people groups have Scripture in their own language and which have none, zero-resource languages first, with every link the verification pass proved and Open Bible Stories labelled as stories rather than as Scripture.",
+          "element": "gospel-resources-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./gospel-resources/resources-list/index.html",
+          "scriptUrl": "./gospel-resources/gospel-resources.js",
+          "embed": {
+            "iframe": "<iframe src=\"./gospel-resources/resources-list/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<gospel-resources-map profile-config='{\"profile\":\"resources-list\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>"
+          }
+        },
+        {
+          "profile": "resources-map",
+          "stage": "production",
+          "label": "Gospel Resources — resources map",
+          "file": "resources-map.vue",
+          "description": "12,379 people-group pins over a country choropleth: tap a pin for the Scripture, audio, film, Bible-story and training links that exist in that group's own language with real URLs, tap a country for every group in it, search by group, language or ISO 639-3 code, and filter to the groups where nothing was found.",
+          "element": "gospel-resources-map",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./gospel-resources/resources-map/index.html",
+          "scriptUrl": "./gospel-resources/gospel-resources.js",
+          "embed": {
+            "iframe": "<iframe src=\"./gospel-resources/resources-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<gospel-resources-map profile-config='{\"profile\":\"resources-map\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./gospel-resources/gospel-resources.js\" integrity=\"sha384-bUYx/HIJrMOYevH8JQVp4qeZnLx9cHrT9ZbuuNTGzVy32DXCL1lnIwABy8f2Bi4M\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<gospel-resources-map profile-config='{\"profile\":\"resources-map\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></gospel-resources-map>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "my-upg-100-list",
+      "scriptUrl": "./my-upg-100-list/my-upg-100-list.js",
+      "output": "dx-maps/my-upg-100-list/my-upg-100-list.js",
+      "integrity": "sha384-Z80xh7CNEACaSU3uxmqlUHHNSqofiTjSSLUAzMxXNJ9yGPECPFA8L1OMENeVCpU7",
+      "elements": [
+        "my-upg-100-list-map"
+      ],
+      "composes": [
+        "my-upg-100-list/upg-100-list",
+        "my-upg-100-list/poster-wall"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "poster-wall",
+          "stage": "experimental",
+          "label": "UPG100 Posters — Poster Wall",
+          "posterDesign": [
+            {
+              "family": "upgList",
+              "name": "upg100-territory-poster.letter",
+              "size": "letter",
+              "mobileFriendly": true,
+              "labelKey": "upgMap.posterDesignTerritory"
+            },
+            {
+              "family": "upgList",
+              "name": "upg100-territory-poster.3x3",
+              "size": "3x3",
+              "mobileFriendly": false,
+              "labelKey": "upgMap.posterDesignTerritory"
+            },
+            {
+              "family": "upgList",
+              "name": "upg100-territory-poster.3x4",
+              "size": "3x4",
+              "mobileFriendly": false,
+              "labelKey": "upgMap.posterDesignTerritory"
+            }
+          ],
+          "posterDesignLabels": {
+            "upg100-territory-poster.letter": {
+              "ar": "ملصق منطقة UPG100",
+              "de": "UPG100-Gebietsplakat",
+              "en": "UPG100 zone poster",
+              "es": "Cartel de zona UPG100",
+              "fr": "Affiche de zone UPG100",
+              "hi": "UPG100 क्षेत्र का पोस्टर",
+              "it": "Poster di zona UPG100",
+              "pt": "Cartaz de zona UPG100",
+              "ro": "Poster de zonă UPG100",
+              "ru": "Плакат зоны UPG100",
+              "zh": "UPG100 区域海报（单张）"
+            },
+            "upg100-territory-poster.3x3": {
+              "ar": "ملصق منطقة UPG100",
+              "de": "UPG100-Gebietsplakat",
+              "en": "UPG100 zone poster",
+              "es": "Cartel de zona UPG100",
+              "fr": "Affiche de zone UPG100",
+              "hi": "UPG100 क्षेत्र का पोस्टर",
+              "it": "Poster di zona UPG100",
+              "pt": "Cartaz de zona UPG100",
+              "ro": "Poster de zonă UPG100",
+              "ru": "Плакат зоны UPG100",
+              "zh": "UPG100 区域海报（单张）"
+            },
+            "upg100-territory-poster.3x4": {
+              "ar": "ملصق منطقة UPG100",
+              "de": "UPG100-Gebietsplakat",
+              "en": "UPG100 zone poster",
+              "es": "Cartel de zona UPG100",
+              "fr": "Affiche de zone UPG100",
+              "hi": "UPG100 क्षेत्र का पोस्टर",
+              "it": "Poster di zona UPG100",
+              "pt": "Cartaz de zona UPG100",
+              "ro": "Poster de zonă UPG100",
+              "ru": "Плакат зоны UPG100",
+              "zh": "UPG100 区域海报（单张）"
+            }
+          },
+          "file": "poster-wall.vue",
+          "description": "A wall of printable poster cards, one per 100-list entry, each with a \"Show on map\"",
+          "element": "my-upg-100-list-map",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./my-upg-100-list/poster-wall/index.html",
+          "scriptUrl": "./my-upg-100-list/my-upg-100-list.js",
+          "embed": {
+            "iframe": "<iframe src=\"./my-upg-100-list/poster-wall/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./my-upg-100-list/my-upg-100-list.js\" integrity=\"sha384-Z80xh7CNEACaSU3uxmqlUHHNSqofiTjSSLUAzMxXNJ9yGPECPFA8L1OMENeVCpU7\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<my-upg-100-list-map profile-config='{\"profile\":\"poster-wall\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></my-upg-100-list-map>"
+          }
+        },
+        {
+          "profile": "upg-100-list",
+          "stage": "experimental",
+          "label": "UPG100 Posters — Zoned Map",
+          "file": "upg-100-list.vue",
+          "description": "A personal unreached-people-groups list painted as true boundary polygons —",
+          "element": "my-upg-100-list-map",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./my-upg-100-list/upg-100-list/index.html",
+          "scriptUrl": "./my-upg-100-list/my-upg-100-list.js",
+          "embed": {
+            "iframe": "<iframe src=\"./my-upg-100-list/upg-100-list/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./my-upg-100-list/my-upg-100-list.js\" integrity=\"sha384-Z80xh7CNEACaSU3uxmqlUHHNSqofiTjSSLUAzMxXNJ9yGPECPFA8L1OMENeVCpU7\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<my-upg-100-list-map profile-config='{\"profile\":\"upg-100-list\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></my-upg-100-list-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./my-upg-100-list/my-upg-100-list.js\" integrity=\"sha384-Z80xh7CNEACaSU3uxmqlUHHNSqofiTjSSLUAzMxXNJ9yGPECPFA8L1OMENeVCpU7\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<my-upg-100-list-map profile-config='{\"profile\":\"upg-100-list\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></my-upg-100-list-map>"
+          }
+        },
+        {
+          "profile": "upg-100-mfe",
+          "stage": "production",
+          "label": "UPG100 Posters",
+          "file": "upg-100-mfe.vue",
+          "description": "The standalone, shareable and embeddable composite of the my-upg-100-list family — it nests the map",
+          "element": "my-upg-100-list-map",
+          "type": "nested-elements-mfe",
+          "isMap": true,
+          "iframeUrl": "./my-upg-100-list/upg-100-mfe/index.html",
+          "scriptUrl": "./my-upg-100-list/my-upg-100-list.js",
+          "embed": {
+            "iframe": "<iframe src=\"./my-upg-100-list/upg-100-mfe/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./my-upg-100-list/my-upg-100-list.js\" integrity=\"sha384-Z80xh7CNEACaSU3uxmqlUHHNSqofiTjSSLUAzMxXNJ9yGPECPFA8L1OMENeVCpU7\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<my-upg-100-list-map profile-config='{\"profile\":\"upg-100-mfe\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></my-upg-100-list-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./my-upg-100-list/my-upg-100-list.js\" integrity=\"sha384-Z80xh7CNEACaSU3uxmqlUHHNSqofiTjSSLUAzMxXNJ9yGPECPFA8L1OMENeVCpU7\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<my-upg-100-list-map profile-config='{\"profile\":\"upg-100-mfe\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></my-upg-100-list-map>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "people-groups-grid",
+      "scriptUrl": "./people-groups-grid/people-groups-grid.js",
+      "output": "dx-maps/people-groups-grid/people-groups-grid.js",
+      "integrity": "sha384-UM5zWlbKHCQgVOQ+CvNcc019tjdZn2uFK+FEnJR3S6CfaZyEiwvErT8HWPXMl6vH",
+      "elements": [
+        "people-groups-grid"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "people-groups-grid",
+          "stage": "experimental",
+          "label": "People Groups Grid (Cat-2 prop-table: search + 4 dropdowns + faceted counts; show-search/show-filters + groups-filtered)",
+          "file": "people-groups-grid.vue",
+          "description": "The people-groups grid as an owned custom element: card list, search and four",
+          "element": "people-groups-grid",
+          "type": "parameterized",
+          "isMap": false,
+          "iframeUrl": "./people-groups-grid/people-groups-grid/index.html",
+          "scriptUrl": "./people-groups-grid/people-groups-grid.js",
+          "embed": {
+            "iframe": "<iframe src=\"./people-groups-grid/people-groups-grid/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./people-groups-grid/people-groups-grid.js\" integrity=\"sha384-UM5zWlbKHCQgVOQ+CvNcc019tjdZn2uFK+FEnJR3S6CfaZyEiwvErT8HWPXMl6vH\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<people-groups-grid profile-config='{\"profile\":\"people-groups-grid\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></people-groups-grid>"
+          },
+          "instances": [
+            {
+              "id": "people-groups-grid",
+              "title": "People Groups Grid — standalone (own search + 4 dropdowns)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "people-groups-grid",
+                "provider": "maplibre",
+                "instanceId": "people-groups-grid",
+                "pray-base-url": "https://pray.doxa.life"
+              },
+              "element": "people-groups-grid",
+              "iframeUrl": "./people-groups-grid/people-groups-grid/people-groups-grid/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./people-groups-grid/people-groups-grid/people-groups-grid/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "driven",
+              "title": "People Groups Grid — externally driven (controls off, props/events)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "people-groups-grid",
+                "provider": "maplibre",
+                "instanceId": "people-groups-grid-driven",
+                "pray-base-url": "https://pray.doxa.life",
+                "show-search": "false",
+                "show-filters": "false"
+              },
+              "element": "people-groups-grid",
+              "iframeUrl": "./people-groups-grid/people-groups-grid/driven/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./people-groups-grid/people-groups-grid/driven/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "plugin-studio",
+      "scriptUrl": "./plugin-studio/plugin-studio.js",
+      "output": "dx-maps/plugin-studio/plugin-studio.js",
+      "integrity": "sha384-KH5r1cFKUtfzOiE5iRdTbaoHYP27HquWyUNX0gjnVai5MfNzwUiJI2kBaStmGuIY",
+      "elements": [
+        "plugin-studio"
+      ],
+      "composes": [
+        "dashboard-plus-grid",
+        "people-groups-grid",
+        "doxa-research-map",
+        "doxa-simple-map",
+        "cities-internet-map",
+        "gospel-resources-map",
+        "my-upg-100-list-map",
+        "doxa-vision-card",
+        "all-people-groups",
+        "research-dashboard"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "plugin-studio",
+          "stage": "experimental",
+          "label": "Plugin Studio (cap-5 developer studio: every element by capability 5 -> 1)",
+          "file": "plugin-studio.vue",
+          "description": "The developer's viewing surface: a sidebar that is the composability ladder",
+          "element": "plugin-studio",
+          "type": "nested-mfe-spa",
+          "isMap": false,
+          "iframeUrl": "./plugin-studio/plugin-studio/index.html",
+          "scriptUrl": "./plugin-studio/plugin-studio.js",
+          "embed": {
+            "iframe": "<iframe src=\"./plugin-studio/plugin-studio/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./plugin-studio/plugin-studio.js\" integrity=\"sha384-KH5r1cFKUtfzOiE5iRdTbaoHYP27HquWyUNX0gjnVai5MfNzwUiJI2kBaStmGuIY\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<plugin-studio profile-config='{\"profile\":\"plugin-studio\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></plugin-studio>"
+          },
+          "instances": [
+            {
+              "id": "studio",
+              "title": "Plugin Studio — every element by capability 5 -> 1 (developer studio)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "plugin-studio",
+                "provider": "maplibre",
+                "instanceId": "plugin-studio",
+                "title": "Plugin Studio"
+              },
+              "element": "plugin-studio",
+              "iframeUrl": "./plugin-studio/plugin-studio/studio/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./plugin-studio/plugin-studio/studio/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "poster-design",
+      "scriptUrl": "./poster-design/poster-design.js",
+      "output": "dx-maps/poster-design/poster-design.js",
+      "integrity": "sha384-84IcnB97ca+PkDdzPHCh93xp58BN6ngFMBuU1V41vgpkmw3fN6yI5rfqh9BtoQ1w",
+      "elements": [
+        "poster-design"
+      ],
+      "composes": [
+        "poster-design/poster-styles",
+        "poster-design/poster-sizes"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "poster-design-mfe",
+          "stage": "experimental",
+          "label": "Poster Design — Styles + Sizes",
+          "file": "poster-design-mfe.vue",
+          "description": "Poster Design: every poster template (Styles) and every poster size (Sizes) side by side,",
+          "element": "poster-design",
+          "type": "nested-elements-mfe",
+          "isMap": false,
+          "iframeUrl": "./poster-design/poster-design-mfe/index.html",
+          "scriptUrl": "./poster-design/poster-design.js",
+          "embed": {
+            "iframe": "<iframe src=\"./poster-design/poster-design-mfe/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./poster-design/poster-design.js\" integrity=\"sha384-84IcnB97ca+PkDdzPHCh93xp58BN6ngFMBuU1V41vgpkmw3fN6yI5rfqh9BtoQ1w\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<poster-design profile-config='{\"profile\":\"poster-design-mfe\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></poster-design>"
+          }
+        },
+        {
+          "profile": "poster-sizes",
+          "stage": "experimental",
+          "label": "Poster Design — Sizes",
+          "file": "poster-sizes.vue",
+          "description": "Every poster size the print picker offers, from standard paper to 5 × 8 ft, drawn to scale.",
+          "element": "poster-design",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./poster-design/poster-sizes/index.html",
+          "scriptUrl": "./poster-design/poster-design.js",
+          "embed": {
+            "iframe": "<iframe src=\"./poster-design/poster-sizes/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./poster-design/poster-design.js\" integrity=\"sha384-84IcnB97ca+PkDdzPHCh93xp58BN6ngFMBuU1V41vgpkmw3fN6yI5rfqh9BtoQ1w\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<poster-design profile-config='{\"profile\":\"poster-sizes\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></poster-design>"
+          }
+        },
+        {
+          "profile": "poster-styles",
+          "stage": "experimental",
+          "label": "Poster Design — Styles",
+          "file": "poster-styles.vue",
+          "description": "Every poster template in one grid (map sheets, the prayer packet, prayer cards, the wall",
+          "element": "poster-design",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./poster-design/poster-styles/index.html",
+          "scriptUrl": "./poster-design/poster-design.js",
+          "embed": {
+            "iframe": "<iframe src=\"./poster-design/poster-styles/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./poster-design/poster-design.js\" integrity=\"sha384-84IcnB97ca+PkDdzPHCh93xp58BN6ngFMBuU1V41vgpkmw3fN6yI5rfqh9BtoQ1w\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<poster-design profile-config='{\"profile\":\"poster-styles\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></poster-design>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "poster-sections",
+      "scriptUrl": "./poster-sections/poster-sections.js",
+      "output": "dx-maps/poster-sections/poster-sections.js",
+      "integrity": "sha384-LQGVabx0PjkHXcDLJXcHezzBuP23Wdz3LZQbSUqC8Hd3S43bgXJ/vKLmAdS7QJX2",
+      "elements": [
+        "poster-sections"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "poster-sections",
+          "stage": "experimental",
+          "label": "Poster Sections — presets",
+          "file": "poster-sections.vue",
+          "description": "Poster Sections: one region's posters (or every region's), as ready-made presets with their own page and embed code; the Configure preset adds a panel of choices and Copy embed for making new ones.",
+          "element": "poster-sections",
+          "type": "parameterized",
+          "isMap": false,
+          "iframeUrl": "./poster-sections/poster-sections/index.html",
+          "scriptUrl": "./poster-sections/poster-sections.js",
+          "embed": {
+            "iframe": "<iframe src=\"./poster-sections/poster-sections/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./poster-sections/poster-sections.js\" integrity=\"sha384-LQGVabx0PjkHXcDLJXcHezzBuP23Wdz3LZQbSUqC8Hd3S43bgXJ/vKLmAdS7QJX2\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<poster-sections profile-config='{\"profile\":\"poster-sections\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></poster-sections>"
+          },
+          "instances": [
+            {
+              "id": "countries-all",
+              "title": "Country posters — all regions",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "all"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-all/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-all/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-asia",
+              "title": "Country posters — Asia",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "asia"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-asia/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-asia/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-middle-east",
+              "title": "Country posters — Middle East",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "middle-east"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-middle-east/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-middle-east/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-latin-america-and-caribbean",
+              "title": "Country posters — Latin America & Caribbean",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "latin-america-and-caribbean"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-latin-america-and-caribbean/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-latin-america-and-caribbean/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-africa",
+              "title": "Country posters — Africa",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "africa"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-africa/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-africa/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-europe",
+              "title": "Country posters — Europe",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "europe"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-europe/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-europe/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-north-america-and-non-spanish-caribbean",
+              "title": "Country posters — North America & Non-Spanish Caribbean",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "north-america-and-non-spanish-caribbean"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-north-america-and-non-spanish-caribbean/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-north-america-and-non-spanish-caribbean/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "countries-oceania",
+              "title": "Country posters — Oceania",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "type": "country",
+                "scope": "oceania"
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/countries-oceania/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/countries-oceania/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "configure",
+              "title": "Configure — make a new preset",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "poster-sections",
+                "configure": true
+              },
+              "element": "poster-sections",
+              "iframeUrl": "./poster-sections/poster-sections/configure/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./poster-sections/poster-sections/configure/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "posterverse",
+      "scriptUrl": "./posterverse/posterverse.js",
+      "output": "dx-maps/posterverse/posterverse.js",
+      "integrity": "sha384-SdRnjbGFsb/972hqwXtINbk7EFAAC++BUwdTv+qfQyBupa87B/ofj5uDzys/Rvi+",
+      "elements": [
+        "posterverse-app"
+      ],
+      "composes": [
+        "my-upg-100-list/upg-100-mfe",
+        "country-posters/country-posters-mfe",
+        "poster-design/poster-design-mfe",
+        "wall-of-people-groups/wall-of-people-groups",
+        "bible-posters/bible-posters",
+        "bless-india-posters/bless-india-posters"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "posterverse",
+          "stage": "experimental",
+          "label": "Posterverse (vertical-tab app shell: every poster plugin)",
+          "file": "posterverse.vue",
+          "description": "Every poster plugin in one app: a vertical-tab rail of real, embeddable poster plugins.",
+          "element": "posterverse-app",
+          "type": "nested-mfe-spa",
+          "isMap": false,
+          "iframeUrl": "./posterverse/posterverse/index.html",
+          "scriptUrl": "./posterverse/posterverse.js",
+          "embed": {
+            "iframe": "<iframe src=\"./posterverse/posterverse/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./posterverse/posterverse.js\" integrity=\"sha384-SdRnjbGFsb/972hqwXtINbk7EFAAC++BUwdTv+qfQyBupa87B/ofj5uDzys/Rvi+\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<posterverse-app profile-config='{\"profile\":\"posterverse\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></posterverse-app>"
+          },
+          "instances": [
+            {
+              "id": "app",
+              "title": "Posterverse — every poster plugin (app shell)",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "posterverse",
+                "provider": "maplibre",
+                "instanceId": "posterverse-app",
+                "heading": "Posterverse"
+              },
+              "element": "posterverse-app",
+              "iframeUrl": "./posterverse/posterverse/app/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./posterverse/posterverse/app/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "pplr-data-maps",
+      "scriptUrl": "./pplr-data-maps/pplr-data-maps.js",
+      "output": "dx-maps/pplr-data-maps/pplr-data-maps.js",
+      "integrity": "sha384-98+ElPnSOT6J9y2CMBxQpvTd1WCalAXGc0vcoz8ImU9A5BoMSRG5r3GX4/AKyKck",
+      "elements": [
+        "pplr-data-maps"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "pplr-data-maps",
+          "stage": "experimental",
+          "label": "PPLR Data Maps",
+          "file": "pplr-data-maps.vue",
+          "description": "Ten views that let a researcher check the PPLR people-group data by eye",
+          "element": "pplr-data-maps",
+          "type": "monolithic",
+          "isMap": true,
+          "iframeUrl": "./pplr-data-maps/pplr-data-maps/index.html",
+          "scriptUrl": "./pplr-data-maps/pplr-data-maps.js",
+          "embed": {
+            "iframe": "<iframe src=\"./pplr-data-maps/pplr-data-maps/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./pplr-data-maps/pplr-data-maps.js\" integrity=\"sha384-98+ElPnSOT6J9y2CMBxQpvTd1WCalAXGc0vcoz8ImU9A5BoMSRG5r3GX4/AKyKck\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<pplr-data-maps profile-config='{\"profile\":\"pplr-data-maps\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></pplr-data-maps>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./pplr-data-maps/pplr-data-maps.js\" integrity=\"sha384-98+ElPnSOT6J9y2CMBxQpvTd1WCalAXGc0vcoz8ImU9A5BoMSRG5r3GX4/AKyKck\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<pplr-data-maps profile-config='{\"profile\":\"pplr-data-maps\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></pplr-data-maps>"
+          },
+          "bundle": "pplr-data-maps"
+        }
+      ]
+    },
+    {
+      "bundle": "prayer-walk-planner",
+      "scriptUrl": "./prayer-walk-planner/prayer-walk-planner.js",
+      "output": "dx-maps/prayer-walk-planner/prayer-walk-planner.js",
+      "integrity": "sha384-6nj6SNKsRM5cmVVUmPgIAKe8ZSejxZew8HheG0P4rzyiUYdLrPVosfJJbrUypNiY",
+      "elements": [
+        "prayer-walk-planner"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "prayer-walk-planner",
+          "stage": "experimental",
+          "file": "prayer-walk-planner.vue",
+          "description": "A simple polygon-drawing tool for planning prayer-walking routes.",
+          "element": "prayer-walk-planner",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./prayer-walk-planner/prayer-walk-planner/index.html",
+          "scriptUrl": "./prayer-walk-planner/prayer-walk-planner.js",
+          "embed": {
+            "iframe": "<iframe src=\"./prayer-walk-planner/prayer-walk-planner/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./prayer-walk-planner/prayer-walk-planner.js\" integrity=\"sha384-6nj6SNKsRM5cmVVUmPgIAKe8ZSejxZew8HheG0P4rzyiUYdLrPVosfJJbrUypNiY\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<prayer-walk-planner profile-config='{\"profile\":\"prayer-walk-planner\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></prayer-walk-planner>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./prayer-walk-planner/prayer-walk-planner.js\" integrity=\"sha384-6nj6SNKsRM5cmVVUmPgIAKe8ZSejxZew8HheG0P4rzyiUYdLrPVosfJJbrUypNiY\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<prayer-walk-planner profile-config='{\"profile\":\"prayer-walk-planner\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></prayer-walk-planner>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "regions-dashboard",
+      "scriptUrl": "./regions-dashboard/regions-dashboard.js",
+      "output": "dx-maps/regions-dashboard/regions-dashboard.js",
+      "integrity": "sha384-xQr59+xAxNDHkIY8QnZIlYY8iz1b81zDmKN2satRCiHYhYHKCbe11Yln4Xzzc3rk",
+      "elements": [
+        "regions-dashboard"
+      ],
+      "composes": [
+        "regions-dashboard/regions-list",
+        "regions-dashboard/region-dashboards"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "region-dashboards",
+          "stage": "experimental",
+          "label": "Regions — region + country dashboard",
+          "file": "region-dashboards.vue",
+          "description": "The dashboard half of the 2-tab Regions element: given a region (or a",
+          "element": "regions-dashboard",
+          "type": "single",
+          "isMap": true,
+          "iframeUrl": "./regions-dashboard/region-dashboards/index.html",
+          "scriptUrl": "./regions-dashboard/regions-dashboard.js",
+          "embed": {
+            "iframe": "<iframe src=\"./regions-dashboard/region-dashboards/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./regions-dashboard/regions-dashboard.js\" integrity=\"sha384-xQr59+xAxNDHkIY8QnZIlYY8iz1b81zDmKN2satRCiHYhYHKCbe11Yln4Xzzc3rk\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<regions-dashboard profile-config='{\"profile\":\"region-dashboards\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></regions-dashboard>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./regions-dashboard/regions-dashboard.js\" integrity=\"sha384-xQr59+xAxNDHkIY8QnZIlYY8iz1b81zDmKN2satRCiHYhYHKCbe11Yln4Xzzc3rk\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<regions-dashboard profile-config='{\"profile\":\"region-dashboards\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></regions-dashboard>"
+          }
+        },
+        {
+          "profile": "regions-list",
+          "stage": "experimental",
+          "label": "Regions — the list page",
+          "file": "regions-list.vue",
+          "description": "A refactor of DX-life's /regions index page (app/pages/regions/index.vue) into",
+          "element": "regions-dashboard",
+          "type": "single",
+          "isMap": false,
+          "iframeUrl": "./regions-dashboard/regions-list/index.html",
+          "scriptUrl": "./regions-dashboard/regions-dashboard.js",
+          "embed": {
+            "iframe": "<iframe src=\"./regions-dashboard/regions-list/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./regions-dashboard/regions-dashboard.js\" integrity=\"sha384-xQr59+xAxNDHkIY8QnZIlYY8iz1b81zDmKN2satRCiHYhYHKCbe11Yln4Xzzc3rk\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<regions-dashboard profile-config='{\"profile\":\"regions-list\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></regions-dashboard>"
+          }
+        },
+        {
+          "profile": "regions-mfe",
+          "stage": "production",
+          "label": "Regions — List + Dashboards",
+          "file": "regions-mfe.vue",
+          "description": "The composite: ONE element carrying the SELECT VIEW switcher",
+          "element": "regions-dashboard",
+          "type": "nested-elements-mfe",
+          "isMap": false,
+          "iframeUrl": "./regions-dashboard/regions-mfe/index.html",
+          "scriptUrl": "./regions-dashboard/regions-dashboard.js",
+          "embed": {
+            "iframe": "<iframe src=\"./regions-dashboard/regions-mfe/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./regions-dashboard/regions-dashboard.js\" integrity=\"sha384-xQr59+xAxNDHkIY8QnZIlYY8iz1b81zDmKN2satRCiHYhYHKCbe11Yln4Xzzc3rk\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<regions-dashboard profile-config='{\"profile\":\"regions-mfe\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></regions-dashboard>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./regions-dashboard/regions-dashboard.js\" integrity=\"sha384-xQr59+xAxNDHkIY8QnZIlYY8iz1b81zDmKN2satRCiHYhYHKCbe11Yln4Xzzc3rk\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<regions-dashboard profile-config='{\"profile\":\"regions-mfe\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></regions-dashboard>"
+          }
+        }
+      ]
+    },
+    {
+      "bundle": "research-dashboard",
+      "scriptUrl": "./research-dashboard/research-dashboard.js",
+      "output": "dx-maps/research-dashboard/research-dashboard.js",
+      "integrity": "sha384-szV59QxctTn0xXiZHAyXVBUP1QY54HpVGtClXc58F+X1JOYmzQUStEFQWi6UAl3/",
+      "elements": [
+        "research-dashboard-map"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "research-dashboard",
+          "stage": "experimental",
+          "label": "Research Dashboard",
+          "file": "research-dashboard.vue",
+          "description": "Coordinated-Multiple-Views research dashboard for 10/40-window UPGs (live pray.doxa.life): docked facet rail + map-as-hero + linked table/charts, brushing-and-linking over one in-memory store.",
+          "element": "research-dashboard-map",
+          "type": "monolithic",
+          "isMap": true,
+          "iframeUrl": "./research-dashboard/research-dashboard/index.html",
+          "scriptUrl": "./research-dashboard/research-dashboard.js",
+          "embed": {
+            "iframe": "<iframe src=\"./research-dashboard/research-dashboard/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./research-dashboard/research-dashboard.js\" integrity=\"sha384-szV59QxctTn0xXiZHAyXVBUP1QY54HpVGtClXc58F+X1JOYmzQUStEFQWi6UAl3/\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<research-dashboard-map profile-config='{\"profile\":\"research-dashboard\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></research-dashboard-map>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./research-dashboard/research-dashboard.js\" integrity=\"sha384-szV59QxctTn0xXiZHAyXVBUP1QY54HpVGtClXc58F+X1JOYmzQUStEFQWi6UAl3/\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<research-dashboard-map profile-config='{\"profile\":\"research-dashboard\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></research-dashboard-map>"
+          },
+          "bundle": "research-dashboard"
+        }
+      ]
+    },
+    {
+      "bundle": "research-map-plus-grid",
+      "scriptUrl": "./research-map-plus-grid/research-map-plus-grid.js",
+      "output": "dx-maps/research-map-plus-grid/research-map-plus-grid.js",
+      "integrity": "sha384-7AV8g9hqenMKcZNXEj1lkL3FL7PtyL1Z9Hiknh51twSs+C1fhJcwb7qSAR4oM5kL",
+      "elements": [
+        "research-map-plus-grid"
+      ],
+      "composes": [
+        "doxa-research-map",
+        "people-groups-grid"
+      ],
+      "stage": "production",
+      "profiles": [
+        {
+          "profile": "research-map-plus-grid",
+          "stage": "production",
+          "label": "Research Map + Grid (mobile composite, stacked to scroll)",
+          "file": "research-map-plus-grid.vue",
+          "description": "The monolithic 7-tab research map (cap-3) on top, the People Groups grid beneath,",
+          "element": "research-map-plus-grid",
+          "type": "nested-elements-mfe",
+          "isMap": false,
+          "iframeUrl": "./research-map-plus-grid/research-map-plus-grid/index.html",
+          "scriptUrl": "./research-map-plus-grid/research-map-plus-grid.js",
+          "embed": {
+            "iframe": "<iframe src=\"./research-map-plus-grid/research-map-plus-grid/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./research-map-plus-grid/research-map-plus-grid.js\" integrity=\"sha384-7AV8g9hqenMKcZNXEj1lkL3FL7PtyL1Z9Hiknh51twSs+C1fhJcwb7qSAR4oM5kL\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<research-map-plus-grid profile-config='{\"profile\":\"research-map-plus-grid\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></research-map-plus-grid>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./research-map-plus-grid/research-map-plus-grid.js\" integrity=\"sha384-7AV8g9hqenMKcZNXEj1lkL3FL7PtyL1Z9Hiknh51twSs+C1fhJcwb7qSAR4oM5kL\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<research-map-plus-grid profile-config='{\"profile\":\"research-map-plus-grid\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></research-map-plus-grid>"
+          },
+          "instances": [
+            {
+              "id": "default",
+              "title": "default",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "research-map-plus-grid"
+              },
+              "element": "research-map-plus-grid",
+              "iframeUrl": "./research-map-plus-grid/research-map-plus-grid/default/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./research-map-plus-grid/research-map-plus-grid/default/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "stack-demo",
+      "scriptUrl": "./stack-demo/stack-demo.js",
+      "output": "dx-maps/stack-demo/stack-demo.js",
+      "integrity": "sha384-9Az86/R8dgizfdkex695aMeLQGqZLkdHiq1QFdAXVrTbpy7xQ2DkrI6DCLf4bLKx",
+      "elements": [
+        "stack-demo"
+      ],
+      "composes": [
+        "research-dashboard-map",
+        "people-groups-grid"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "stack-demo",
+          "stage": "experimental",
+          "label": "Stack Demo (two elements stacked to scroll — StackLayout)",
+          "file": "stack-demo.vue",
+          "description": "Groups TWO independent elements TOP-TO-BOTTOM so you can embed the pair on a page and",
+          "element": "stack-demo",
+          "type": "nested-elements-mfe",
+          "isMap": false,
+          "iframeUrl": "./stack-demo/stack-demo/index.html",
+          "scriptUrl": "./stack-demo/stack-demo.js",
+          "embed": {
+            "iframe": "<iframe src=\"./stack-demo/stack-demo/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./stack-demo/stack-demo.js\" integrity=\"sha384-9Az86/R8dgizfdkex695aMeLQGqZLkdHiq1QFdAXVrTbpy7xQ2DkrI6DCLf4bLKx\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<stack-demo profile-config='{\"profile\":\"stack-demo\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></stack-demo>"
+          },
+          "instances": [
+            {
+              "id": "pair",
+              "title": "pair",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "stack-demo"
+              },
+              "element": "stack-demo",
+              "iframeUrl": "./stack-demo/stack-demo/pair/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./stack-demo/stack-demo/pair/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "upg-neighbor",
+      "scriptUrl": "./upg-neighbor/upg-neighbor.js",
+      "output": "dx-maps/upg-neighbor/upg-neighbor.js",
+      "integrity": "sha384-rwYzX6UEvh7MTeVKQrzDvoX/KspH7UQXmtGKCBgDR4OGqxQ2SjwaM2l8yi+CP7e5",
+      "elements": [
+        "upg-neighbor"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "upg-neighbor",
+          "stage": "experimental",
+          "label": "My UPG Neighbors",
+          "file": "upg-neighbor.vue",
+          "description": "Near-neighbor mobilization on Winter's E-scale: who to mobilize, in what language, where",
+          "element": "upg-neighbor",
+          "type": "monolithic",
+          "isMap": true,
+          "iframeUrl": "./upg-neighbor/upg-neighbor/index.html",
+          "scriptUrl": "./upg-neighbor/upg-neighbor.js",
+          "embed": {
+            "iframe": "<iframe src=\"./upg-neighbor/upg-neighbor/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<!-- MapLibre engine (the default), fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js\" integrity=\"sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css\" integrity=\"sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./upg-neighbor/upg-neighbor.js\" integrity=\"sha384-rwYzX6UEvh7MTeVKQrzDvoX/KspH7UQXmtGKCBgDR4OGqxQ2SjwaM2l8yi+CP7e5\" crossorigin=\"anonymous\"></script>\n<!-- MapLibre draws this map and needs no token. For Mapbox, paste this map's embed.scriptMapbox from manifest.json instead: it sets \"provider\":\"mapbox\" and preloads the Mapbox engine; fill \"tk\" with your token. -->\n<upg-neighbor profile-config='{\"profile\":\"upg-neighbor\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></upg-neighbor>",
+            "scriptMapbox": "<!-- Mapbox engine, fetched early -->\n<link rel=\"preload\" as=\"script\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js\" integrity=\"sha384-tO0clamXONKwbiz7O6xJpUeyJbTSPugC+xM9clvfFvKTH3i8SmCawHGdf5quMWmZ\" crossorigin=\"anonymous\">\n<link rel=\"preload\" as=\"style\" href=\"https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css\" integrity=\"sha384-rp1X/jJ9MpWPef9OimfXhOaOc4Gzs87yQvF+ajwY6X2H4PTeHNycNlLWiWvj7ehV\" crossorigin=\"anonymous\">\n<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./upg-neighbor/upg-neighbor.js\" integrity=\"sha384-rwYzX6UEvh7MTeVKQrzDvoX/KspH7UQXmtGKCBgDR4OGqxQ2SjwaM2l8yi+CP7e5\" crossorigin=\"anonymous\"></script>\n<!-- Mapbox draws this map: fill \"tk\" with your Mapbox token. -->\n<upg-neighbor profile-config='{\"profile\":\"upg-neighbor\",\"provider\":\"mapbox\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></upg-neighbor>"
+          },
+          "instances": [
+            {
+              "id": "send-map",
+              "title": "Mobilize near neighbors",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "upg-neighbor",
+                "view": "mobilize"
+              },
+              "element": "upg-neighbor",
+              "iframeUrl": "./upg-neighbor/upg-neighbor/send-map/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./upg-neighbor/upg-neighbor/send-map/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "upg-neighbors",
+              "title": "UPG Neighbors: mobilize",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "upg-neighbor",
+                "view": "mobilize"
+              },
+              "element": "upg-neighbor",
+              "iframeUrl": "./upg-neighbor/upg-neighbor/upg-neighbors/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./upg-neighbor/upg-neighbor/upg-neighbors/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "lang-cluster",
+              "title": "Bridge-language movements",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "upg-neighbor",
+                "view": "campaigns"
+              },
+              "element": "upg-neighbor",
+              "iframeUrl": "./upg-neighbor/upg-neighbor/lang-cluster/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./upg-neighbor/upg-neighbor/lang-cluster/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "bloom-cockpit",
+              "title": "Mobilize near neighbors",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "upg-neighbor",
+                "view": "mobilize"
+              },
+              "element": "upg-neighbor",
+              "iframeUrl": "./upg-neighbor/upg-neighbor/bloom-cockpit/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./upg-neighbor/upg-neighbor/bloom-cockpit/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            },
+            {
+              "id": "flower-mesh",
+              "title": "Mobilize near neighbors",
+              "apiBaseUrl": "",
+              "props": {
+                "profile": "upg-neighbor",
+                "view": "mobilize"
+              },
+              "element": "upg-neighbor",
+              "iframeUrl": "./upg-neighbor/upg-neighbor/flower-mesh/index.html",
+              "embed": {
+                "iframe": "<iframe src=\"./upg-neighbor/upg-neighbor/flower-mesh/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>"
+              }
+            }
+          ],
+          "bundle": "upg-neighbor"
+        }
+      ]
+    },
+    {
+      "bundle": "wall-of-people-groups",
+      "scriptUrl": "./wall-of-people-groups/wall-of-people-groups.js",
+      "output": "dx-maps/wall-of-people-groups/wall-of-people-groups.js",
+      "integrity": "sha384-YR31Wdy/svC86D+/G+AVKNK/HdWQYnWh4Uv1rRhPJyPcjRVRT9s2opXRCCU9BeZK",
+      "elements": [
+        "wall-of-people-groups"
+      ],
+      "stage": "experimental",
+      "profiles": [
+        {
+          "profile": "wall-of-people-groups",
+          "stage": "experimental",
+          "label": "Wall of People Groups",
+          "mobile": "desktop-only",
+          "posterDesign": [
+            {
+              "family": "wall",
+              "name": "wall.bless-36x48",
+              "size": "36x48",
+              "mobileFriendly": false,
+              "labelKey": "wall.blessBanner"
+            },
+            {
+              "family": "wall",
+              "name": "wall.bless-24x36",
+              "size": "24x36",
+              "mobileFriendly": false,
+              "labelKey": "wall.blessBanner"
+            },
+            {
+              "family": "wall",
+              "name": "wall.bless-60x96",
+              "size": "60x96",
+              "mobileFriendly": false,
+              "labelKey": "wall.blessBanner"
+            }
+          ],
+          "posterDesignLabels": {
+            "wall.bless-36x48": {
+              "ar": "باركوا الأمم باسم يسوع",
+              "de": "Segnet die Nationen im Namen Jesu",
+              "en": "Bless the nations in Jesus’ name",
+              "es": "Bendigan a las naciones en el nombre de Jesús",
+              "fr": "Bénissez les nations au nom de Jésus",
+              "hi": "यीशु के नाम में राष्ट्रों को आशीष दो",
+              "it": "Benedite le nazioni nel nome di Gesù",
+              "pt": "Abençoem as nações em nome de Jesus",
+              "ro": "Binecuvântați națiunile în Numele lui Isus",
+              "ru": "Благословляйте народы во имя Иисуса",
+              "zh": "奉耶稣的名祝福万国"
+            },
+            "wall.bless-24x36": {
+              "ar": "باركوا الأمم باسم يسوع",
+              "de": "Segnet die Nationen im Namen Jesu",
+              "en": "Bless the nations in Jesus’ name",
+              "es": "Bendigan a las naciones en el nombre de Jesús",
+              "fr": "Bénissez les nations au nom de Jésus",
+              "hi": "यीशु के नाम में राष्ट्रों को आशीष दो",
+              "it": "Benedite le nazioni nel nome di Gesù",
+              "pt": "Abençoem as nações em nome de Jesus",
+              "ro": "Binecuvântați națiunile în Numele lui Isus",
+              "ru": "Благословляйте народы во имя Иисуса",
+              "zh": "奉耶稣的名祝福万国"
+            },
+            "wall.bless-60x96": {
+              "ar": "باركوا الأمم باسم يسوع",
+              "de": "Segnet die Nationen im Namen Jesu",
+              "en": "Bless the nations in Jesus’ name",
+              "es": "Bendigan a las naciones en el nombre de Jesús",
+              "fr": "Bénissez les nations au nom de Jésus",
+              "hi": "यीशु के नाम में राष्ट्रों को आशीष दो",
+              "it": "Benedite le nazioni nel nome di Gesù",
+              "pt": "Abençoem as nações em nome de Jesus",
+              "ro": "Binecuvântați națiunile în Numele lui Isus",
+              "ru": "Благословляйте народы во имя Иисуса",
+              "zh": "奉耶稣的名祝福万国"
+            }
+          },
+          "file": "wall-of-people-groups.vue",
+          "description": "Every Doxa people group as a card on one zoomable prayer wall",
+          "element": "wall-of-people-groups",
+          "type": "monolithic",
+          "isMap": false,
+          "iframeUrl": "./wall-of-people-groups/wall-of-people-groups/index.html",
+          "scriptUrl": "./wall-of-people-groups/wall-of-people-groups.js",
+          "embed": {
+            "iframe": "<iframe src=\"./wall-of-people-groups/wall-of-people-groups/index.html?utm_source=YOUR_SOURCE\" width=\"100%\" height=\"600\" style=\"border:none;border-radius:12px;\" allowfullscreen></iframe>",
+            "script": "<script>window.MAP_APP_API_URL=\"https://pray.doxa.life\";</script>\n<script src=\"./wall-of-people-groups/wall-of-people-groups.js\" integrity=\"sha384-YR31Wdy/svC86D+/G+AVKNK/HdWQYnWh4Uv1rRhPJyPcjRVRT9s2opXRCCU9BeZK\" crossorigin=\"anonymous\"></script>\n<!-- provider: \"maplibre\" is the default; change it to \"mapbox\" and fill tk to use Mapbox. -->\n<wall-of-people-groups profile-config='{\"profile\":\"wall-of-people-groups\",\"provider\":\"maplibre\",\"tk\":\"YOUR_MAPBOX_TOKEN\",\"utmSource\":\"YOUR_SOURCE\",\"assetsBase\":\"YOUR_TREE_URL/assets\"}'></wall-of-people-groups>"
+          },
+          "bundle": "wall-of-people-groups"
+        }
+      ]
+    }
+  ]
+}

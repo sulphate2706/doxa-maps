@@ -1,0 +1,7242 @@
+{
+ "source": "https://scriptureearth.org/data/ (open Apache index, robots.txt disallows nothing)",
+ "fetched": "2026-09-24",
+ "_note": "A listed directory is NOT a resource: most are empty stubs, and a video/ directory holds JESUSFilm-*.txt metadata rather than film. Only codes with PDF, audio, sab, study or viewer content are kept. Publisher is SIL International and its translation partners — straight Scripture, same doctrinal footing as eBible.",
+ "listed": 3477,
+ "scanned": 3273,
+ "emptyStubs": 764,
+ "metadataOnly": 1588,
+ "codes": 921,
+ "byIso": {
+  "aai": {
+   "u": "https://scriptureearth.org/data/aai/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aak": {
+   "u": "https://scriptureearth.org/data/aak/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aau": {
+   "u": "https://scriptureearth.org/data/aau/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aaz": {
+   "u": "https://scriptureearth.org/data/aaz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "abn": {
+   "u": "https://scriptureearth.org/data/abn/",
+   "k": [
+    "sab"
+   ]
+  },
+  "abs": {
+   "u": "https://scriptureearth.org/data/abs/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "abt": {
+   "u": "https://scriptureearth.org/data/abt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "abx": {
+   "u": "https://scriptureearth.org/data/abx/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aby": {
+   "u": "https://scriptureearth.org/data/aby/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aca": {
+   "u": "https://scriptureearth.org/data/aca/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "acf": {
+   "u": "https://scriptureearth.org/data/acf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "acr": {
+   "u": "https://scriptureearth.org/data/acr/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "acu": {
+   "u": "https://scriptureearth.org/data/acu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ade": {
+   "u": "https://scriptureearth.org/data/ade/",
+   "k": [
+    "sab"
+   ]
+  },
+  "adj": {
+   "u": "https://scriptureearth.org/data/adj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "adz": {
+   "u": "https://scriptureearth.org/data/adz/",
+   "k": [
+    "PDF",
+    "viewer"
+   ]
+  },
+  "aeu": {
+   "u": "https://scriptureearth.org/data/aeu/",
+   "k": [
+    "study"
+   ]
+  },
+  "aey": {
+   "u": "https://scriptureearth.org/data/aey/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "agd": {
+   "u": "https://scriptureearth.org/data/agd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "agg": {
+   "u": "https://scriptureearth.org/data/agg/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "agm": {
+   "u": "https://scriptureearth.org/data/agm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "agn": {
+   "u": "https://scriptureearth.org/data/agn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "agr": {
+   "u": "https://scriptureearth.org/data/agr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "agt": {
+   "u": "https://scriptureearth.org/data/agt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "agu": {
+   "u": "https://scriptureearth.org/data/agu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aia": {
+   "u": "https://scriptureearth.org/data/aia/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "aii": {
+   "u": "https://scriptureearth.org/data/aii/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ajg": {
+   "u": "https://scriptureearth.org/data/ajg/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ajp": {
+   "u": "https://scriptureearth.org/data/ajp/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ake": {
+   "u": "https://scriptureearth.org/data/ake/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "alp": {
+   "u": "https://scriptureearth.org/data/alp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "als": {
+   "u": "https://scriptureearth.org/data/als/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "alt": {
+   "u": "https://scriptureearth.org/data/alt/",
+   "k": [
+    "study"
+   ]
+  },
+  "amc": {
+   "u": "https://scriptureearth.org/data/amc/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "ame": {
+   "u": "https://scriptureearth.org/data/ame/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "amf": {
+   "u": "https://scriptureearth.org/data/amf/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "amh": {
+   "u": "https://scriptureearth.org/data/amh/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ami": {
+   "u": "https://scriptureearth.org/data/ami/",
+   "k": [
+    "audio",
+    "study"
+   ]
+  },
+  "amk": {
+   "u": "https://scriptureearth.org/data/amk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "amm": {
+   "u": "https://scriptureearth.org/data/amm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "amn": {
+   "u": "https://scriptureearth.org/data/amn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "amp": {
+   "u": "https://scriptureearth.org/data/amp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "amr": {
+   "u": "https://scriptureearth.org/data/amr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "amu": {
+   "u": "https://scriptureearth.org/data/amu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "amw": {
+   "u": "https://scriptureearth.org/data/amw/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "akh": {
+   "u": "https://scriptureearth.org/data/akh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ann": {
+   "u": "https://scriptureearth.org/data/ann/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "anv": {
+   "u": "https://scriptureearth.org/data/anv/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "aoj": {
+   "u": "https://scriptureearth.org/data/aoj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aom": {
+   "u": "https://scriptureearth.org/data/aom/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aon": {
+   "u": "https://scriptureearth.org/data/aon/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "apb": {
+   "u": "https://scriptureearth.org/data/apb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ape": {
+   "u": "https://scriptureearth.org/data/ape/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "apn": {
+   "u": "https://scriptureearth.org/data/apn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "aps": {
+   "u": "https://scriptureearth.org/data/aps/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "apr": {
+   "u": "https://scriptureearth.org/data/apr/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "apu": {
+   "u": "https://scriptureearth.org/data/apu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "apw": {
+   "u": "https://scriptureearth.org/data/apw/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "apy": {
+   "u": "https://scriptureearth.org/data/apy/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "apz": {
+   "u": "https://scriptureearth.org/data/apz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "arb": {
+   "u": "https://scriptureearth.org/data/arb/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "arh": {
+   "u": "https://scriptureearth.org/data/arh/",
+   "k": [
+    "audio"
+   ]
+  },
+  "arl": {
+   "u": "https://scriptureearth.org/data/arl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "arn": {
+   "u": "https://scriptureearth.org/data/arn/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "aro": {
+   "u": "https://scriptureearth.org/data/aro/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "arp": {
+   "u": "https://scriptureearth.org/data/arp/",
+   "k": [
+    "audio"
+   ]
+  },
+  "asg": {
+   "u": "https://scriptureearth.org/data/asg/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "aso": {
+   "u": "https://scriptureearth.org/data/aso/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ata": {
+   "u": "https://scriptureearth.org/data/ata/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "atb": {
+   "u": "https://scriptureearth.org/data/atb/",
+   "k": [
+    "study"
+   ]
+  },
+  "atd": {
+   "u": "https://scriptureearth.org/data/atd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "atg": {
+   "u": "https://scriptureearth.org/data/atg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "auc": {
+   "u": "https://scriptureearth.org/data/auc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "aui": {
+   "u": "https://scriptureearth.org/data/aui/",
+   "k": [
+    "PDF",
+    "viewer"
+   ]
+  },
+  "att": {
+   "u": "https://scriptureearth.org/data/att/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "avt": {
+   "u": "https://scriptureearth.org/data/avt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "auy": {
+   "u": "https://scriptureearth.org/data/auy/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "awb": {
+   "u": "https://scriptureearth.org/data/awb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "awx": {
+   "u": "https://scriptureearth.org/data/awx/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ayp": {
+   "u": "https://scriptureearth.org/data/ayp/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "ayr": {
+   "u": "https://scriptureearth.org/data/ayr/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "azb": {
+   "u": "https://scriptureearth.org/data/azb/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "azg": {
+   "u": "https://scriptureearth.org/data/azg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "azj": {
+   "u": "https://scriptureearth.org/data/azj/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "azz": {
+   "u": "https://scriptureearth.org/data/azz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "bao": {
+   "u": "https://scriptureearth.org/data/bao/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bba": {
+   "u": "https://scriptureearth.org/data/bba/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bbb": {
+   "u": "https://scriptureearth.org/data/bbb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bbr": {
+   "u": "https://scriptureearth.org/data/bbr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bch": {
+   "u": "https://scriptureearth.org/data/bch/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "bci": {
+   "u": "https://scriptureearth.org/data/bci/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bco": {
+   "u": "https://scriptureearth.org/data/bco/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "bcr": {
+   "u": "https://scriptureearth.org/data/bcr/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bda": {
+   "u": "https://scriptureearth.org/data/bda/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bdd": {
+   "u": "https://scriptureearth.org/data/bdd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bdg": {
+   "u": "https://scriptureearth.org/data/bdg/",
+   "k": [
+    "sab"
+   ]
+  },
+  "bds": {
+   "u": "https://scriptureearth.org/data/bds/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "bef": {
+   "u": "https://scriptureearth.org/data/bef/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ben": {
+   "u": "https://scriptureearth.org/data/ben/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bez": {
+   "u": "https://scriptureearth.org/data/bez/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bgs": {
+   "u": "https://scriptureearth.org/data/bgs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bhl": {
+   "u": "https://scriptureearth.org/data/bhl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "big": {
+   "u": "https://scriptureearth.org/data/big/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bjr": {
+   "u": "https://scriptureearth.org/data/bjr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bkc": {
+   "u": "https://scriptureearth.org/data/bkc/",
+   "k": [
+    "PDF",
+    "audio",
+    "study"
+   ]
+  },
+  "bkd": {
+   "u": "https://scriptureearth.org/data/bkd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bkq": {
+   "u": "https://scriptureearth.org/data/bkq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "bkw": {
+   "u": "https://scriptureearth.org/data/bkw/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "ble": {
+   "u": "https://scriptureearth.org/data/ble/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "blk": {
+   "u": "https://scriptureearth.org/data/blk/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "blr": {
+   "u": "https://scriptureearth.org/data/blr/",
+   "k": [
+    "study"
+   ]
+  },
+  "blw": {
+   "u": "https://scriptureearth.org/data/blw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bmh": {
+   "u": "https://scriptureearth.org/data/bmh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bmr": {
+   "u": "https://scriptureearth.org/data/bmr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bmu": {
+   "u": "https://scriptureearth.org/data/bmu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bnp": {
+   "u": "https://scriptureearth.org/data/bnp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "boa": {
+   "u": "https://scriptureearth.org/data/boa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "bod": {
+   "u": "https://scriptureearth.org/data/bod/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "boj": {
+   "u": "https://scriptureearth.org/data/boj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bom": {
+   "u": "https://scriptureearth.org/data/bom/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "bon": {
+   "u": "https://scriptureearth.org/data/bon/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bor": {
+   "u": "https://scriptureearth.org/data/bor/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "bpe": {
+   "u": "https://scriptureearth.org/data/bpe/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "bpr": {
+   "u": "https://scriptureearth.org/data/bpr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bps": {
+   "u": "https://scriptureearth.org/data/bps/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bqc": {
+   "u": "https://scriptureearth.org/data/bqc/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bqj": {
+   "u": "https://scriptureearth.org/data/bqj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "brx": {
+   "u": "https://scriptureearth.org/data/brx/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bsn": {
+   "u": "https://scriptureearth.org/data/bsn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bud": {
+   "u": "https://scriptureearth.org/data/bud/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "buk": {
+   "u": "https://scriptureearth.org/data/buk/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "bus": {
+   "u": "https://scriptureearth.org/data/bus/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "but": {
+   "u": "https://scriptureearth.org/data/but/",
+   "k": [
+    "audio"
+   ]
+  },
+  "buu": {
+   "u": "https://scriptureearth.org/data/buu/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bwi": {
+   "u": "https://scriptureearth.org/data/bwi/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "bwd": {
+   "u": "https://scriptureearth.org/data/bwd/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "byr": {
+   "u": "https://scriptureearth.org/data/byr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "byx": {
+   "u": "https://scriptureearth.org/data/byx/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bzd": {
+   "u": "https://scriptureearth.org/data/bzd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "bzh": {
+   "u": "https://scriptureearth.org/data/bzh/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "bzi": {
+   "u": "https://scriptureearth.org/data/bzi/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "bzj": {
+   "u": "https://scriptureearth.org/data/bzj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "caa": {
+   "u": "https://scriptureearth.org/data/caa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cab": {
+   "u": "https://scriptureearth.org/data/cab/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cac": {
+   "u": "https://scriptureearth.org/data/cac/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "caf": {
+   "u": "https://scriptureearth.org/data/caf/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cak": {
+   "u": "https://scriptureearth.org/data/cak/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cao": {
+   "u": "https://scriptureearth.org/data/cao/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cap": {
+   "u": "https://scriptureearth.org/data/cap/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "car": {
+   "u": "https://scriptureearth.org/data/car/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cav": {
+   "u": "https://scriptureearth.org/data/cav/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cax": {
+   "u": "https://scriptureearth.org/data/cax/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbc": {
+   "u": "https://scriptureearth.org/data/cbc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbi": {
+   "u": "https://scriptureearth.org/data/cbi/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbk": {
+   "u": "https://scriptureearth.org/data/cbk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbr": {
+   "u": "https://scriptureearth.org/data/cbr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbs": {
+   "u": "https://scriptureearth.org/data/cbs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbt": {
+   "u": "https://scriptureearth.org/data/cbt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbu": {
+   "u": "https://scriptureearth.org/data/cbu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cbv": {
+   "u": "https://scriptureearth.org/data/cbv/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "cco": {
+   "u": "https://scriptureearth.org/data/cco/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ccp": {
+   "u": "https://scriptureearth.org/data/ccp/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cdg": {
+   "u": "https://scriptureearth.org/data/cdg/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ceg": {
+   "u": "https://scriptureearth.org/data/ceg/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "ces": {
+   "u": "https://scriptureearth.org/data/ces/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cgc": {
+   "u": "https://scriptureearth.org/data/cgc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "chd": {
+   "u": "https://scriptureearth.org/data/chd/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "chf": {
+   "u": "https://scriptureearth.org/data/chf/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "chj": {
+   "u": "https://scriptureearth.org/data/chj/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "chq": {
+   "u": "https://scriptureearth.org/data/chq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "chz": {
+   "u": "https://scriptureearth.org/data/chz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cjo": {
+   "u": "https://scriptureearth.org/data/cjo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cjv": {
+   "u": "https://scriptureearth.org/data/cjv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ckb": {
+   "u": "https://scriptureearth.org/data/ckb/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cla": {
+   "u": "https://scriptureearth.org/data/cla/",
+   "k": [
+    "sab"
+   ]
+  },
+  "cld": {
+   "u": "https://scriptureearth.org/data/cld/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cle": {
+   "u": "https://scriptureearth.org/data/cle/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "clu": {
+   "u": "https://scriptureearth.org/data/clu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cly": {
+   "u": "https://scriptureearth.org/data/cly/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "cmi": {
+   "u": "https://scriptureearth.org/data/cmi/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "cmn": {
+   "u": "https://scriptureearth.org/data/cmn/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cni": {
+   "u": "https://scriptureearth.org/data/cni/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "cnl": {
+   "u": "https://scriptureearth.org/data/cnl/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cnt": {
+   "u": "https://scriptureearth.org/data/cnt/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "coe": {
+   "u": "https://scriptureearth.org/data/coe/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "coh": {
+   "u": "https://scriptureearth.org/data/coh/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cof": {
+   "u": "https://scriptureearth.org/data/cof/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "con": {
+   "u": "https://scriptureearth.org/data/con/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cot": {
+   "u": "https://scriptureearth.org/data/cot/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cox": {
+   "u": "https://scriptureearth.org/data/cox/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cpb": {
+   "u": "https://scriptureearth.org/data/cpb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cpa": {
+   "u": "https://scriptureearth.org/data/cpa/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cpc": {
+   "u": "https://scriptureearth.org/data/cpc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cpu": {
+   "u": "https://scriptureearth.org/data/cpu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cpy": {
+   "u": "https://scriptureearth.org/data/cpy/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "crj": {
+   "u": "https://scriptureearth.org/data/crj/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "crl": {
+   "u": "https://scriptureearth.org/data/crl/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "crn": {
+   "u": "https://scriptureearth.org/data/crn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "crx": {
+   "u": "https://scriptureearth.org/data/crx/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "cro": {
+   "u": "https://scriptureearth.org/data/cro/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "cok": {
+   "u": "https://scriptureearth.org/data/cok/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "cso": {
+   "u": "https://scriptureearth.org/data/cso/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cta": {
+   "u": "https://scriptureearth.org/data/cta/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ctl": {
+   "u": "https://scriptureearth.org/data/ctl/",
+   "k": [
+    "audio",
+    "study"
+   ]
+  },
+  "cto": {
+   "u": "https://scriptureearth.org/data/cto/",
+   "k": [
+    "PDF",
+    "sab",
+    "viewer"
+   ]
+  },
+  "ctu": {
+   "u": "https://scriptureearth.org/data/ctu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ctp": {
+   "u": "https://scriptureearth.org/data/ctp/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cub": {
+   "u": "https://scriptureearth.org/data/cub/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cuc": {
+   "u": "https://scriptureearth.org/data/cuc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cui": {
+   "u": "https://scriptureearth.org/data/cui/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cul": {
+   "u": "https://scriptureearth.org/data/cul/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cuk": {
+   "u": "https://scriptureearth.org/data/cuk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "cut": {
+   "u": "https://scriptureearth.org/data/cut/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cux": {
+   "u": "https://scriptureearth.org/data/cux/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "cwa": {
+   "u": "https://scriptureearth.org/data/cwa/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "cya": {
+   "u": "https://scriptureearth.org/data/cya/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "dad": {
+   "u": "https://scriptureearth.org/data/dad/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dah": {
+   "u": "https://scriptureearth.org/data/dah/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dbj": {
+   "u": "https://scriptureearth.org/data/dbj/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "dbq": {
+   "u": "https://scriptureearth.org/data/dbq/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ded": {
+   "u": "https://scriptureearth.org/data/ded/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "dgc": {
+   "u": "https://scriptureearth.org/data/dgc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dgr": {
+   "u": "https://scriptureearth.org/data/dgr/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "dgz": {
+   "u": "https://scriptureearth.org/data/dgz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "des": {
+   "u": "https://scriptureearth.org/data/des/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dik": {
+   "u": "https://scriptureearth.org/data/dik/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "djk": {
+   "u": "https://scriptureearth.org/data/djk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dka": {
+   "u": "https://scriptureearth.org/data/dka/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "dnj": {
+   "u": "https://scriptureearth.org/data/dnj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dob": {
+   "u": "https://scriptureearth.org/data/dob/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dop": {
+   "u": "https://scriptureearth.org/data/dop/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "due": {
+   "u": "https://scriptureearth.org/data/due/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "duo": {
+   "u": "https://scriptureearth.org/data/duo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dww": {
+   "u": "https://scriptureearth.org/data/dww/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dyi": {
+   "u": "https://scriptureearth.org/data/dyi/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "dzo": {
+   "u": "https://scriptureearth.org/data/dzo/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ebk": {
+   "u": "https://scriptureearth.org/data/ebk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "eip": {
+   "u": "https://scriptureearth.org/data/eip/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "eja": {
+   "u": "https://scriptureearth.org/data/eja/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "eka": {
+   "u": "https://scriptureearth.org/data/eka/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "eko": {
+   "u": "https://scriptureearth.org/data/eko/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "eky": {
+   "u": "https://scriptureearth.org/data/eky/",
+   "k": [
+    "sab"
+   ]
+  },
+  "ell": {
+   "u": "https://scriptureearth.org/data/ell/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "emi": {
+   "u": "https://scriptureearth.org/data/emi/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "emp": {
+   "u": "https://scriptureearth.org/data/emp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "enb": {
+   "u": "https://scriptureearth.org/data/enb/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "enq": {
+   "u": "https://scriptureearth.org/data/enq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "eng": {
+   "u": "https://scriptureearth.org/data/eng/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "eri": {
+   "u": "https://scriptureearth.org/data/eri/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ese": {
+   "u": "https://scriptureearth.org/data/ese/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "esi": {
+   "u": "https://scriptureearth.org/data/esi/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "esk": {
+   "u": "https://scriptureearth.org/data/esk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ess": {
+   "u": "https://scriptureearth.org/data/ess/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "etr": {
+   "u": "https://scriptureearth.org/data/etr/",
+   "k": [
+    "study"
+   ]
+  },
+  "ewe": {
+   "u": "https://scriptureearth.org/data/ewe/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "eza": {
+   "u": "https://scriptureearth.org/data/eza/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "faa": {
+   "u": "https://scriptureearth.org/data/faa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "fab": {
+   "u": "https://scriptureearth.org/data/fab/",
+   "k": [
+    "sab"
+   ]
+  },
+  "fai": {
+   "u": "https://scriptureearth.org/data/fai/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "fan": {
+   "u": "https://scriptureearth.org/data/fan/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ffm": {
+   "u": "https://scriptureearth.org/data/ffm/",
+   "k": [
+    "study"
+   ]
+  },
+  "fin": {
+   "u": "https://scriptureearth.org/data/fin/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "fod": {
+   "u": "https://scriptureearth.org/data/fod/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "fon": {
+   "u": "https://scriptureearth.org/data/fon/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "for": {
+   "u": "https://scriptureearth.org/data/for/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "fra": {
+   "u": "https://scriptureearth.org/data/fra/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "fue": {
+   "u": "https://scriptureearth.org/data/fue/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "fuv": {
+   "u": "https://scriptureearth.org/data/fuv/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "gah": {
+   "u": "https://scriptureearth.org/data/gah/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gam": {
+   "u": "https://scriptureearth.org/data/gam/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gaw": {
+   "u": "https://scriptureearth.org/data/gaw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gdg": {
+   "u": "https://scriptureearth.org/data/gdg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gdn": {
+   "u": "https://scriptureearth.org/data/gdn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gdr": {
+   "u": "https://scriptureearth.org/data/gdr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "geh": {
+   "u": "https://scriptureearth.org/data/geh/",
+   "k": [
+    "audio"
+   ]
+  },
+  "gfk": {
+   "u": "https://scriptureearth.org/data/gfk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ghs": {
+   "u": "https://scriptureearth.org/data/ghs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gng": {
+   "u": "https://scriptureearth.org/data/gng/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "gnw": {
+   "u": "https://scriptureearth.org/data/gnw/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "grg": {
+   "u": "https://scriptureearth.org/data/grg/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "gub": {
+   "u": "https://scriptureearth.org/data/gub/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "guc": {
+   "u": "https://scriptureearth.org/data/guc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "guh": {
+   "u": "https://scriptureearth.org/data/guh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gui": {
+   "u": "https://scriptureearth.org/data/gui/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gul": {
+   "u": "https://scriptureearth.org/data/gul/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "gun": {
+   "u": "https://scriptureearth.org/data/gun/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gum": {
+   "u": "https://scriptureearth.org/data/gum/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "guo": {
+   "u": "https://scriptureearth.org/data/guo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "guw": {
+   "u": "https://scriptureearth.org/data/guw/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "gvc": {
+   "u": "https://scriptureearth.org/data/gvc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gvf": {
+   "u": "https://scriptureearth.org/data/gvf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gvr": {
+   "u": "https://scriptureearth.org/data/gvr/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "gvo": {
+   "u": "https://scriptureearth.org/data/gvo/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "gvs": {
+   "u": "https://scriptureearth.org/data/gvs/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "gwi": {
+   "u": "https://scriptureearth.org/data/gwi/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "gym": {
+   "u": "https://scriptureearth.org/data/gym/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "gyr": {
+   "u": "https://scriptureearth.org/data/gyr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "hae": {
+   "u": "https://scriptureearth.org/data/hae/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "hbb": {
+   "u": "https://scriptureearth.org/data/hbb/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "hch": {
+   "u": "https://scriptureearth.org/data/hch/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "heb": {
+   "u": "https://scriptureearth.org/data/heb/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "heg": {
+   "u": "https://scriptureearth.org/data/heg/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "hin": {
+   "u": "https://scriptureearth.org/data/hin/",
+   "k": [
+    "sab"
+   ]
+  },
+  "hix": {
+   "u": "https://scriptureearth.org/data/hix/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "hla": {
+   "u": "https://scriptureearth.org/data/hla/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "hns": {
+   "u": "https://scriptureearth.org/data/hns/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "hop": {
+   "u": "https://scriptureearth.org/data/hop/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "hot": {
+   "u": "https://scriptureearth.org/data/hot/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "hre": {
+   "u": "https://scriptureearth.org/data/hre/",
+   "k": [
+    "study"
+   ]
+  },
+  "hro": {
+   "u": "https://scriptureearth.org/data/hro/",
+   "k": [
+    "sab"
+   ]
+  },
+  "hto": {
+   "u": "https://scriptureearth.org/data/hto/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "hub": {
+   "u": "https://scriptureearth.org/data/hub/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "hui": {
+   "u": "https://scriptureearth.org/data/hui/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "hun": {
+   "u": "https://scriptureearth.org/data/hun/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "hus": {
+   "u": "https://scriptureearth.org/data/hus/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "huu": {
+   "u": "https://scriptureearth.org/data/huu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "huv": {
+   "u": "https://scriptureearth.org/data/huv/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "hwc": {
+   "u": "https://scriptureearth.org/data/hwc/",
+   "k": [
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ian": {
+   "u": "https://scriptureearth.org/data/ian/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "icr": {
+   "u": "https://scriptureearth.org/data/icr/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "idd": {
+   "u": "https://scriptureearth.org/data/idd/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ifa": {
+   "u": "https://scriptureearth.org/data/ifa/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ifu": {
+   "u": "https://scriptureearth.org/data/ifu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ify": {
+   "u": "https://scriptureearth.org/data/ify/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ign": {
+   "u": "https://scriptureearth.org/data/ign/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ikk": {
+   "u": "https://scriptureearth.org/data/ikk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ikw": {
+   "u": "https://scriptureearth.org/data/ikw/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ilo": {
+   "u": "https://scriptureearth.org/data/ilo/",
+   "k": [
+    "sab"
+   ]
+  },
+  "imo": {
+   "u": "https://scriptureearth.org/data/imo/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "inb": {
+   "u": "https://scriptureearth.org/data/inb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ind": {
+   "u": "https://scriptureearth.org/data/ind/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "ino": {
+   "u": "https://scriptureearth.org/data/ino/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "iou": {
+   "u": "https://scriptureearth.org/data/iou/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ipi": {
+   "u": "https://scriptureearth.org/data/ipi/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "iqw": {
+   "u": "https://scriptureearth.org/data/iqw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "iri": {
+   "u": "https://scriptureearth.org/data/iri/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "isd": {
+   "u": "https://scriptureearth.org/data/isd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ita": {
+   "u": "https://scriptureearth.org/data/ita/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ivb": {
+   "u": "https://scriptureearth.org/data/ivb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "iws": {
+   "u": "https://scriptureearth.org/data/iws/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ixl": {
+   "u": "https://scriptureearth.org/data/ixl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "izz": {
+   "u": "https://scriptureearth.org/data/izz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "jab": {
+   "u": "https://scriptureearth.org/data/jab/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "jaa": {
+   "u": "https://scriptureearth.org/data/jaa/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "jac": {
+   "u": "https://scriptureearth.org/data/jac/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ivv": {
+   "u": "https://scriptureearth.org/data/ivv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "jae": {
+   "u": "https://scriptureearth.org/data/jae/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "jam": {
+   "u": "https://scriptureearth.org/data/jam/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "jic": {
+   "u": "https://scriptureearth.org/data/jic/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "jit": {
+   "u": "https://scriptureearth.org/data/jit/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "jiv": {
+   "u": "https://scriptureearth.org/data/jiv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "jkm": {
+   "u": "https://scriptureearth.org/data/jkm/",
+   "k": [
+    "audio"
+   ]
+  },
+  "jmx": {
+   "u": "https://scriptureearth.org/data/jmx/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "jra": {
+   "u": "https://scriptureearth.org/data/jra/",
+   "k": [
+    "audio"
+   ]
+  },
+  "jvn": {
+   "u": "https://scriptureearth.org/data/jvn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kaq": {
+   "u": "https://scriptureearth.org/data/kaq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kat": {
+   "u": "https://scriptureearth.org/data/kat/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kbc": {
+   "u": "https://scriptureearth.org/data/kbc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "kbh": {
+   "u": "https://scriptureearth.org/data/kbh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kbm": {
+   "u": "https://scriptureearth.org/data/kbm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kbp": {
+   "u": "https://scriptureearth.org/data/kbp/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kbq": {
+   "u": "https://scriptureearth.org/data/kbq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kby": {
+   "u": "https://scriptureearth.org/data/kby/",
+   "k": [
+    "sab"
+   ]
+  },
+  "kcg": {
+   "u": "https://scriptureearth.org/data/kcg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kcl": {
+   "u": "https://scriptureearth.org/data/kcl/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "kde": {
+   "u": "https://scriptureearth.org/data/kde/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "kdh": {
+   "u": "https://scriptureearth.org/data/kdh/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kdl": {
+   "u": "https://scriptureearth.org/data/kdl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kek": {
+   "u": "https://scriptureearth.org/data/kek/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kew": {
+   "u": "https://scriptureearth.org/data/kew/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "kgf": {
+   "u": "https://scriptureearth.org/data/kgf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kgk": {
+   "u": "https://scriptureearth.org/data/kgk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kgp": {
+   "u": "https://scriptureearth.org/data/kgp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "khk": {
+   "u": "https://scriptureearth.org/data/khk/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "khz": {
+   "u": "https://scriptureearth.org/data/khz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kin": {
+   "u": "https://scriptureearth.org/data/kin/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kiw": {
+   "u": "https://scriptureearth.org/data/kiw/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "kjb": {
+   "u": "https://scriptureearth.org/data/kjb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kjs": {
+   "u": "https://scriptureearth.org/data/kjs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "klv": {
+   "u": "https://scriptureearth.org/data/klv/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "kmg": {
+   "u": "https://scriptureearth.org/data/kmg/",
+   "k": [
+    "sab"
+   ]
+  },
+  "kmh": {
+   "u": "https://scriptureearth.org/data/kmh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kmk": {
+   "u": "https://scriptureearth.org/data/kmk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kmm": {
+   "u": "https://scriptureearth.org/data/kmm/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kmo": {
+   "u": "https://scriptureearth.org/data/kmo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "kmr": {
+   "u": "https://scriptureearth.org/data/kmr/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kms": {
+   "u": "https://scriptureearth.org/data/kms/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "kmu": {
+   "u": "https://scriptureearth.org/data/kmu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "kmw": {
+   "u": "https://scriptureearth.org/data/kmw/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "knc": {
+   "u": "https://scriptureearth.org/data/knc/",
+   "k": [
+    "audio"
+   ]
+  },
+  "kne": {
+   "u": "https://scriptureearth.org/data/kne/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "knf": {
+   "u": "https://scriptureearth.org/data/knf/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "knj": {
+   "u": "https://scriptureearth.org/data/knj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "knt": {
+   "u": "https://scriptureearth.org/data/knt/",
+   "k": [
+    "sab"
+   ]
+  },
+  "knv": {
+   "u": "https://scriptureearth.org/data/knv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kog": {
+   "u": "https://scriptureearth.org/data/kog/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kpc": {
+   "u": "https://scriptureearth.org/data/kpc/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "kpf": {
+   "u": "https://scriptureearth.org/data/kpf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kpg": {
+   "u": "https://scriptureearth.org/data/kpg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kpj": {
+   "u": "https://scriptureearth.org/data/kpj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kpr": {
+   "u": "https://scriptureearth.org/data/kpr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kpw": {
+   "u": "https://scriptureearth.org/data/kpw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kpx": {
+   "u": "https://scriptureearth.org/data/kpx/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kqc": {
+   "u": "https://scriptureearth.org/data/kqc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kqe": {
+   "u": "https://scriptureearth.org/data/kqe/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kqw": {
+   "u": "https://scriptureearth.org/data/kqw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ksc": {
+   "u": "https://scriptureearth.org/data/ksc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ksd": {
+   "u": "https://scriptureearth.org/data/ksd/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "ksr": {
+   "u": "https://scriptureearth.org/data/ksr/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ktj": {
+   "u": "https://scriptureearth.org/data/ktj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kto": {
+   "u": "https://scriptureearth.org/data/kto/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kud": {
+   "u": "https://scriptureearth.org/data/kud/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kub": {
+   "u": "https://scriptureearth.org/data/kub/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "kue": {
+   "u": "https://scriptureearth.org/data/kue/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kup": {
+   "u": "https://scriptureearth.org/data/kup/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kus": {
+   "u": "https://scriptureearth.org/data/kus/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "kvn": {
+   "u": "https://scriptureearth.org/data/kvn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kvy": {
+   "u": "https://scriptureearth.org/data/kvy/",
+   "k": [
+    "sab"
+   ]
+  },
+  "kwi": {
+   "u": "https://scriptureearth.org/data/kwi/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kwj": {
+   "u": "https://scriptureearth.org/data/kwj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kxf": {
+   "u": "https://scriptureearth.org/data/kxf/",
+   "k": [
+    "sab"
+   ]
+  },
+  "kyc": {
+   "u": "https://scriptureearth.org/data/kyc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kyg": {
+   "u": "https://scriptureearth.org/data/kyg/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "kyf": {
+   "u": "https://scriptureearth.org/data/kyf/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "kyj": {
+   "u": "https://scriptureearth.org/data/kyj/",
+   "k": [
+    "sab"
+   ]
+  },
+  "kyu": {
+   "u": "https://scriptureearth.org/data/kyu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "kyz": {
+   "u": "https://scriptureearth.org/data/kyz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "kze": {
+   "u": "https://scriptureearth.org/data/kze/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "lac": {
+   "u": "https://scriptureearth.org/data/lac/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "las": {
+   "u": "https://scriptureearth.org/data/las/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "lbk": {
+   "u": "https://scriptureearth.org/data/lbk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "lcm": {
+   "u": "https://scriptureearth.org/data/lcm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "lep": {
+   "u": "https://scriptureearth.org/data/lep/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "leu": {
+   "u": "https://scriptureearth.org/data/leu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "lid": {
+   "u": "https://scriptureearth.org/data/lid/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "lif": {
+   "u": "https://scriptureearth.org/data/lif/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "lik": {
+   "u": "https://scriptureearth.org/data/lik/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "lkt": {
+   "u": "https://scriptureearth.org/data/lkt/",
+   "k": [
+    "audio"
+   ]
+  },
+  "lts": {
+   "u": "https://scriptureearth.org/data/lts/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "lww": {
+   "u": "https://scriptureearth.org/data/lww/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "maa": {
+   "u": "https://scriptureearth.org/data/maa/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mai": {
+   "u": "https://scriptureearth.org/data/mai/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "maj": {
+   "u": "https://scriptureearth.org/data/maj/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mam": {
+   "u": "https://scriptureearth.org/data/mam/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "maq": {
+   "u": "https://scriptureearth.org/data/maq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mau": {
+   "u": "https://scriptureearth.org/data/mau/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mav": {
+   "u": "https://scriptureearth.org/data/mav/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "maz": {
+   "u": "https://scriptureearth.org/data/maz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbb": {
+   "u": "https://scriptureearth.org/data/mbb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbc": {
+   "u": "https://scriptureearth.org/data/mbc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbd": {
+   "u": "https://scriptureearth.org/data/mbd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbh": {
+   "u": "https://scriptureearth.org/data/mbh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbi": {
+   "u": "https://scriptureearth.org/data/mbi/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbj": {
+   "u": "https://scriptureearth.org/data/mbj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbk": {
+   "u": "https://scriptureearth.org/data/mbk/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mbl": {
+   "u": "https://scriptureearth.org/data/mbl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mbs": {
+   "u": "https://scriptureearth.org/data/mbs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbt": {
+   "u": "https://scriptureearth.org/data/mbt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mbu": {
+   "u": "https://scriptureearth.org/data/mbu/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "mbz": {
+   "u": "https://scriptureearth.org/data/mbz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mca": {
+   "u": "https://scriptureearth.org/data/mca/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mcb": {
+   "u": "https://scriptureearth.org/data/mcb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mcd": {
+   "u": "https://scriptureearth.org/data/mcd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mcf": {
+   "u": "https://scriptureearth.org/data/mcf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mco": {
+   "u": "https://scriptureearth.org/data/mco/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mcq": {
+   "u": "https://scriptureearth.org/data/mcq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mda": {
+   "u": "https://scriptureearth.org/data/mda/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "mdj": {
+   "u": "https://scriptureearth.org/data/mdj/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mdv": {
+   "u": "https://scriptureearth.org/data/mdv/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "med": {
+   "u": "https://scriptureearth.org/data/med/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mee": {
+   "u": "https://scriptureearth.org/data/mee/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "meh": {
+   "u": "https://scriptureearth.org/data/meh/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mek": {
+   "u": "https://scriptureearth.org/data/mek/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "meu": {
+   "u": "https://scriptureearth.org/data/meu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mfq": {
+   "u": "https://scriptureearth.org/data/mfq/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mfy": {
+   "u": "https://scriptureearth.org/data/mfy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mgj": {
+   "u": "https://scriptureearth.org/data/mgj/",
+   "k": [
+    "sab"
+   ]
+  },
+  "mgq": {
+   "u": "https://scriptureearth.org/data/mgq/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "mgw": {
+   "u": "https://scriptureearth.org/data/mgw/",
+   "k": [
+    "sab"
+   ]
+  },
+  "mhl": {
+   "u": "https://scriptureearth.org/data/mhl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mib": {
+   "u": "https://scriptureearth.org/data/mib/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mic": {
+   "u": "https://scriptureearth.org/data/mic/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mie": {
+   "u": "https://scriptureearth.org/data/mie/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mig": {
+   "u": "https://scriptureearth.org/data/mig/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mih": {
+   "u": "https://scriptureearth.org/data/mih/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mil": {
+   "u": "https://scriptureearth.org/data/mil/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mim": {
+   "u": "https://scriptureearth.org/data/mim/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "miq": {
+   "u": "https://scriptureearth.org/data/miq/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mir": {
+   "u": "https://scriptureearth.org/data/mir/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mit": {
+   "u": "https://scriptureearth.org/data/mit/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mio": {
+   "u": "https://scriptureearth.org/data/mio/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mix": {
+   "u": "https://scriptureearth.org/data/mix/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "miy": {
+   "u": "https://scriptureearth.org/data/miy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "miz": {
+   "u": "https://scriptureearth.org/data/miz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mjc": {
+   "u": "https://scriptureearth.org/data/mjc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mkl": {
+   "u": "https://scriptureearth.org/data/mkl/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mkn": {
+   "u": "https://scriptureearth.org/data/mkn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mks": {
+   "u": "https://scriptureearth.org/data/mks/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mlh": {
+   "u": "https://scriptureearth.org/data/mlh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mlp": {
+   "u": "https://scriptureearth.org/data/mlp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mmn": {
+   "u": "https://scriptureearth.org/data/mmn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mmo": {
+   "u": "https://scriptureearth.org/data/mmo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mmx": {
+   "u": "https://scriptureearth.org/data/mmx/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mna": {
+   "u": "https://scriptureearth.org/data/mna/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "moa": {
+   "u": "https://scriptureearth.org/data/moa/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mop": {
+   "u": "https://scriptureearth.org/data/mop/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mox": {
+   "u": "https://scriptureearth.org/data/mox/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mpd": {
+   "u": "https://scriptureearth.org/data/mpd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mpm": {
+   "u": "https://scriptureearth.org/data/mpm/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mpp": {
+   "u": "https://scriptureearth.org/data/mpp/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mps": {
+   "u": "https://scriptureearth.org/data/mps/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mpt": {
+   "u": "https://scriptureearth.org/data/mpt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mpx": {
+   "u": "https://scriptureearth.org/data/mpx/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "msb": {
+   "u": "https://scriptureearth.org/data/msb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "msk": {
+   "u": "https://scriptureearth.org/data/msk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "msm": {
+   "u": "https://scriptureearth.org/data/msm/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "msw": {
+   "u": "https://scriptureearth.org/data/msw/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "msy": {
+   "u": "https://scriptureearth.org/data/msy/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mta": {
+   "u": "https://scriptureearth.org/data/mta/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mti": {
+   "u": "https://scriptureearth.org/data/mti/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mto": {
+   "u": "https://scriptureearth.org/data/mto/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "muh": {
+   "u": "https://scriptureearth.org/data/muh/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mux": {
+   "u": "https://scriptureearth.org/data/mux/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mva": {
+   "u": "https://scriptureearth.org/data/mva/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mve": {
+   "u": "https://scriptureearth.org/data/mve/",
+   "k": [
+    "audio"
+   ]
+  },
+  "mvn": {
+   "u": "https://scriptureearth.org/data/mvn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "mwc": {
+   "u": "https://scriptureearth.org/data/mwc/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "mxb": {
+   "u": "https://scriptureearth.org/data/mxb/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mxp": {
+   "u": "https://scriptureearth.org/data/mxp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mxq": {
+   "u": "https://scriptureearth.org/data/mxq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mxt": {
+   "u": "https://scriptureearth.org/data/mxt/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mya": {
+   "u": "https://scriptureearth.org/data/mya/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "myu": {
+   "u": "https://scriptureearth.org/data/myu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mxv": {
+   "u": "https://scriptureearth.org/data/mxv/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "myw": {
+   "u": "https://scriptureearth.org/data/myw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "myy": {
+   "u": "https://scriptureearth.org/data/myy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "mza": {
+   "u": "https://scriptureearth.org/data/mza/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mzi": {
+   "u": "https://scriptureearth.org/data/mzi/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "mzp": {
+   "u": "https://scriptureearth.org/data/mzp/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "mzr": {
+   "u": "https://scriptureearth.org/data/mzr/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "mzz": {
+   "u": "https://scriptureearth.org/data/mzz/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nab": {
+   "u": "https://scriptureearth.org/data/nab/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "naf": {
+   "u": "https://scriptureearth.org/data/naf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nak": {
+   "u": "https://scriptureearth.org/data/nak/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nas": {
+   "u": "https://scriptureearth.org/data/nas/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nca": {
+   "u": "https://scriptureearth.org/data/nca/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nch": {
+   "u": "https://scriptureearth.org/data/nch/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ncj": {
+   "u": "https://scriptureearth.org/data/ncj/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ncl": {
+   "u": "https://scriptureearth.org/data/ncl/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ndh": {
+   "u": "https://scriptureearth.org/data/ndh/",
+   "k": [
+    "audio"
+   ]
+  },
+  "neb": {
+   "u": "https://scriptureearth.org/data/neb/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "nep": {
+   "u": "https://scriptureearth.org/data/nep/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "neq": {
+   "u": "https://scriptureearth.org/data/neq/",
+   "k": [
+    "audio"
+   ]
+  },
+  "new": {
+   "u": "https://scriptureearth.org/data/new/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "nfa": {
+   "u": "https://scriptureearth.org/data/nfa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nfr": {
+   "u": "https://scriptureearth.org/data/nfr/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ngu": {
+   "u": "https://scriptureearth.org/data/ngu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nhe": {
+   "u": "https://scriptureearth.org/data/nhe/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nhi": {
+   "u": "https://scriptureearth.org/data/nhi/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nhg": {
+   "u": "https://scriptureearth.org/data/nhg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nhm": {
+   "u": "https://scriptureearth.org/data/nhm/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "nhr": {
+   "u": "https://scriptureearth.org/data/nhr/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "nhp": {
+   "u": "https://scriptureearth.org/data/nhp/",
+   "k": [
+    "audio"
+   ]
+  },
+  "nhu": {
+   "u": "https://scriptureearth.org/data/nhu/",
+   "k": [
+    "study"
+   ]
+  },
+  "nhx": {
+   "u": "https://scriptureearth.org/data/nhx/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nhw": {
+   "u": "https://scriptureearth.org/data/nhw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nhy": {
+   "u": "https://scriptureearth.org/data/nhy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nif": {
+   "u": "https://scriptureearth.org/data/nif/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "nii": {
+   "u": "https://scriptureearth.org/data/nii/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nin": {
+   "u": "https://scriptureearth.org/data/nin/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "niy": {
+   "u": "https://scriptureearth.org/data/niy/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nko": {
+   "u": "https://scriptureearth.org/data/nko/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nld": {
+   "u": "https://scriptureearth.org/data/nld/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "nlv": {
+   "u": "https://scriptureearth.org/data/nlv/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "nmz": {
+   "u": "https://scriptureearth.org/data/nmz/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "noa": {
+   "u": "https://scriptureearth.org/data/noa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nod": {
+   "u": "https://scriptureearth.org/data/nod/",
+   "k": [
+    "study"
+   ]
+  },
+  "nop": {
+   "u": "https://scriptureearth.org/data/nop/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "not": {
+   "u": "https://scriptureearth.org/data/not/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nou": {
+   "u": "https://scriptureearth.org/data/nou/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "npi": {
+   "u": "https://scriptureearth.org/data/npi/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "npl": {
+   "u": "https://scriptureearth.org/data/npl/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nsk": {
+   "u": "https://scriptureearth.org/data/nsk/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "nsn": {
+   "u": "https://scriptureearth.org/data/nsn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nss": {
+   "u": "https://scriptureearth.org/data/nss/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ntm": {
+   "u": "https://scriptureearth.org/data/ntm/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ntp": {
+   "u": "https://scriptureearth.org/data/ntp/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nsu": {
+   "u": "https://scriptureearth.org/data/nsu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "nuz": {
+   "u": "https://scriptureearth.org/data/nuz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "viewer"
+   ]
+  },
+  "nvm": {
+   "u": "https://scriptureearth.org/data/nvm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "nwi": {
+   "u": "https://scriptureearth.org/data/nwi/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "nyy": {
+   "u": "https://scriptureearth.org/data/nyy/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "obo": {
+   "u": "https://scriptureearth.org/data/obo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "okv": {
+   "u": "https://scriptureearth.org/data/okv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "omw": {
+   "u": "https://scriptureearth.org/data/omw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ong": {
+   "u": "https://scriptureearth.org/data/ong/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "onr": {
+   "u": "https://scriptureearth.org/data/onr/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ood": {
+   "u": "https://scriptureearth.org/data/ood/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "opm": {
+   "u": "https://scriptureearth.org/data/opm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ore": {
+   "u": "https://scriptureearth.org/data/ore/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ory": {
+   "u": "https://scriptureearth.org/data/ory/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "otm": {
+   "u": "https://scriptureearth.org/data/otm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ote": {
+   "u": "https://scriptureearth.org/data/ote/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "otn": {
+   "u": "https://scriptureearth.org/data/otn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "otq": {
+   "u": "https://scriptureearth.org/data/otq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ots": {
+   "u": "https://scriptureearth.org/data/ots/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "pab": {
+   "u": "https://scriptureearth.org/data/pab/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pad": {
+   "u": "https://scriptureearth.org/data/pad/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "oym": {
+   "u": "https://scriptureearth.org/data/oym/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pah": {
+   "u": "https://scriptureearth.org/data/pah/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pao": {
+   "u": "https://scriptureearth.org/data/pao/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pap": {
+   "u": "https://scriptureearth.org/data/pap/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "pav": {
+   "u": "https://scriptureearth.org/data/pav/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "pbb": {
+   "u": "https://scriptureearth.org/data/pbb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pbc": {
+   "u": "https://scriptureearth.org/data/pbc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pbs": {
+   "u": "https://scriptureearth.org/data/pbs/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "pbv": {
+   "u": "https://scriptureearth.org/data/pbv/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "pce": {
+   "u": "https://scriptureearth.org/data/pce/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "pcl": {
+   "u": "https://scriptureearth.org/data/pcl/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "pcm": {
+   "u": "https://scriptureearth.org/data/pcm/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "pdc": {
+   "u": "https://scriptureearth.org/data/pdc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "pdt": {
+   "u": "https://scriptureearth.org/data/pdt/",
+   "k": [
+    "sab"
+   ]
+  },
+  "pes": {
+   "u": "https://scriptureearth.org/data/pes/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "pib": {
+   "u": "https://scriptureearth.org/data/pib/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "pil": {
+   "u": "https://scriptureearth.org/data/pil/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "pio": {
+   "u": "https://scriptureearth.org/data/pio/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "pir": {
+   "u": "https://scriptureearth.org/data/pir/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pko": {
+   "u": "https://scriptureearth.org/data/pko/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "pls": {
+   "u": "https://scriptureearth.org/data/pls/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "plu": {
+   "u": "https://scriptureearth.org/data/plu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "plw": {
+   "u": "https://scriptureearth.org/data/plw/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pma": {
+   "u": "https://scriptureearth.org/data/pma/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "poe": {
+   "u": "https://scriptureearth.org/data/poe/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "poh": {
+   "u": "https://scriptureearth.org/data/poh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "poi": {
+   "u": "https://scriptureearth.org/data/poi/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "pol": {
+   "u": "https://scriptureearth.org/data/pol/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "por": {
+   "u": "https://scriptureearth.org/data/por/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "pow": {
+   "u": "https://scriptureearth.org/data/pow/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "ppo": {
+   "u": "https://scriptureearth.org/data/ppo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "pps": {
+   "u": "https://scriptureearth.org/data/pps/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "prf": {
+   "u": "https://scriptureearth.org/data/prf/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "prq": {
+   "u": "https://scriptureearth.org/data/prq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ptp": {
+   "u": "https://scriptureearth.org/data/ptp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "puu": {
+   "u": "https://scriptureearth.org/data/puu/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "pwg": {
+   "u": "https://scriptureearth.org/data/pwg/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "pxm": {
+   "u": "https://scriptureearth.org/data/pxm/",
+   "k": [
+    "audio"
+   ]
+  },
+  "qub": {
+   "u": "https://scriptureearth.org/data/qub/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "quc": {
+   "u": "https://scriptureearth.org/data/quc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "quf": {
+   "u": "https://scriptureearth.org/data/quf/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "quh": {
+   "u": "https://scriptureearth.org/data/quh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qul": {
+   "u": "https://scriptureearth.org/data/qul/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qup": {
+   "u": "https://scriptureearth.org/data/qup/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "quw": {
+   "u": "https://scriptureearth.org/data/quw/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "pye": {
+   "u": "https://scriptureearth.org/data/pye/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "quy": {
+   "u": "https://scriptureearth.org/data/quy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "qva": {
+   "u": "https://scriptureearth.org/data/qva/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qvc": {
+   "u": "https://scriptureearth.org/data/qvc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "qve": {
+   "u": "https://scriptureearth.org/data/qve/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qvh": {
+   "u": "https://scriptureearth.org/data/qvh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qvm": {
+   "u": "https://scriptureearth.org/data/qvm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qvn": {
+   "u": "https://scriptureearth.org/data/qvn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qvo": {
+   "u": "https://scriptureearth.org/data/qvo/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "qvs": {
+   "u": "https://scriptureearth.org/data/qvs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qvw": {
+   "u": "https://scriptureearth.org/data/qvw/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "qvz": {
+   "u": "https://scriptureearth.org/data/qvz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qwa": {
+   "u": "https://scriptureearth.org/data/qwa/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "qws": {
+   "u": "https://scriptureearth.org/data/qws/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "qxh": {
+   "u": "https://scriptureearth.org/data/qxh/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qxl": {
+   "u": "https://scriptureearth.org/data/qxl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qxn": {
+   "u": "https://scriptureearth.org/data/qxn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qxo": {
+   "u": "https://scriptureearth.org/data/qxo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qwh": {
+   "u": "https://scriptureearth.org/data/qwh/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "rai": {
+   "u": "https://scriptureearth.org/data/rai/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "qxu": {
+   "u": "https://scriptureearth.org/data/qxu/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ram": {
+   "u": "https://scriptureearth.org/data/ram/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "rap": {
+   "u": "https://scriptureearth.org/data/rap/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "rbb": {
+   "u": "https://scriptureearth.org/data/rbb/",
+   "k": [
+    "study"
+   ]
+  },
+  "rhg": {
+   "u": "https://scriptureearth.org/data/rhg/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "rkb": {
+   "u": "https://scriptureearth.org/data/rkb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "rkt": {
+   "u": "https://scriptureearth.org/data/rkt/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "rmy": {
+   "u": "https://scriptureearth.org/data/rmy/",
+   "k": [
+    "study"
+   ]
+  },
+  "roh": {
+   "u": "https://scriptureearth.org/data/roh/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "ron": {
+   "u": "https://scriptureearth.org/data/ron/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "roo": {
+   "u": "https://scriptureearth.org/data/roo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "rro": {
+   "u": "https://scriptureearth.org/data/rro/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "rug": {
+   "u": "https://scriptureearth.org/data/rug/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "rus": {
+   "u": "https://scriptureearth.org/data/rus/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "rwo": {
+   "u": "https://scriptureearth.org/data/rwo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sac": {
+   "u": "https://scriptureearth.org/data/sac/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "sad": {
+   "u": "https://scriptureearth.org/data/sad/",
+   "k": [
+    "audio"
+   ]
+  },
+  "sas": {
+   "u": "https://scriptureearth.org/data/sas/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "sbe": {
+   "u": "https://scriptureearth.org/data/sbe/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "sbl": {
+   "u": "https://scriptureearth.org/data/sbl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sbp": {
+   "u": "https://scriptureearth.org/data/sbp/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "sab": {
+   "u": "https://scriptureearth.org/data/sab/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sei": {
+   "u": "https://scriptureearth.org/data/sei/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "set": {
+   "u": "https://scriptureearth.org/data/set/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "sey": {
+   "u": "https://scriptureearth.org/data/sey/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sgb": {
+   "u": "https://scriptureearth.org/data/sgb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sgz": {
+   "u": "https://scriptureearth.org/data/sgz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "shp": {
+   "u": "https://scriptureearth.org/data/shp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "shu": {
+   "u": "https://scriptureearth.org/data/shu/",
+   "k": [
+    "study"
+   ]
+  },
+  "sim": {
+   "u": "https://scriptureearth.org/data/sim/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sja": {
+   "u": "https://scriptureearth.org/data/sja/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "slk": {
+   "u": "https://scriptureearth.org/data/slk/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "sll": {
+   "u": "https://scriptureearth.org/data/sll/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "smk": {
+   "u": "https://scriptureearth.org/data/smk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "snc": {
+   "u": "https://scriptureearth.org/data/snc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "snn": {
+   "u": "https://scriptureearth.org/data/snn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "snp": {
+   "u": "https://scriptureearth.org/data/snp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "snq": {
+   "u": "https://scriptureearth.org/data/snq/",
+   "k": [
+    "audio"
+   ]
+  },
+  "snx": {
+   "u": "https://scriptureearth.org/data/snx/",
+   "k": [
+    "sab"
+   ]
+  },
+  "sny": {
+   "u": "https://scriptureearth.org/data/sny/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "soq": {
+   "u": "https://scriptureearth.org/data/soq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sou": {
+   "u": "https://scriptureearth.org/data/sou/",
+   "k": [
+    "audio"
+   ]
+  },
+  "soy": {
+   "u": "https://scriptureearth.org/data/soy/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "spa": {
+   "u": "https://scriptureearth.org/data/spa/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "spl": {
+   "u": "https://scriptureearth.org/data/spl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sps": {
+   "u": "https://scriptureearth.org/data/sps/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sri": {
+   "u": "https://scriptureearth.org/data/sri/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "srm": {
+   "u": "https://scriptureearth.org/data/srm/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "srn": {
+   "u": "https://scriptureearth.org/data/srn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "srp": {
+   "u": "https://scriptureearth.org/data/srp/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "srq": {
+   "u": "https://scriptureearth.org/data/srq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ssc": {
+   "u": "https://scriptureearth.org/data/ssc/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ssd": {
+   "u": "https://scriptureearth.org/data/ssd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ssg": {
+   "u": "https://scriptureearth.org/data/ssg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sso": {
+   "u": "https://scriptureearth.org/data/sso/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ssw": {
+   "u": "https://scriptureearth.org/data/ssw/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ssx": {
+   "u": "https://scriptureearth.org/data/ssx/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ssy": {
+   "u": "https://scriptureearth.org/data/ssy/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "sti": {
+   "u": "https://scriptureearth.org/data/sti/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "stp": {
+   "u": "https://scriptureearth.org/data/stp/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "sua": {
+   "u": "https://scriptureearth.org/data/sua/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "suc": {
+   "u": "https://scriptureearth.org/data/suc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "sue": {
+   "u": "https://scriptureearth.org/data/sue/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "suk": {
+   "u": "https://scriptureearth.org/data/suk/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "suz": {
+   "u": "https://scriptureearth.org/data/suz/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "swe": {
+   "u": "https://scriptureearth.org/data/swe/",
+   "k": [
+    "study"
+   ]
+  },
+  "swh": {
+   "u": "https://scriptureearth.org/data/swh/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "swp": {
+   "u": "https://scriptureearth.org/data/swp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "syb": {
+   "u": "https://scriptureearth.org/data/syb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "syl": {
+   "u": "https://scriptureearth.org/data/syl/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tac": {
+   "u": "https://scriptureearth.org/data/tac/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "taj": {
+   "u": "https://scriptureearth.org/data/taj/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "taq": {
+   "u": "https://scriptureearth.org/data/taq/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tar": {
+   "u": "https://scriptureearth.org/data/tar/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "tav": {
+   "u": "https://scriptureearth.org/data/tav/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tbc": {
+   "u": "https://scriptureearth.org/data/tbc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tbg": {
+   "u": "https://scriptureearth.org/data/tbg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tbk": {
+   "u": "https://scriptureearth.org/data/tbk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tbl": {
+   "u": "https://scriptureearth.org/data/tbl/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tbo": {
+   "u": "https://scriptureearth.org/data/tbo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tca": {
+   "u": "https://scriptureearth.org/data/tca/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tcf": {
+   "u": "https://scriptureearth.org/data/tcf/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tdc": {
+   "u": "https://scriptureearth.org/data/tdc/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ted": {
+   "u": "https://scriptureearth.org/data/ted/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tee": {
+   "u": "https://scriptureearth.org/data/tee/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ter": {
+   "u": "https://scriptureearth.org/data/ter/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tet": {
+   "u": "https://scriptureearth.org/data/tet/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tew": {
+   "u": "https://scriptureearth.org/data/tew/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tfr": {
+   "u": "https://scriptureearth.org/data/tfr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tgk": {
+   "u": "https://scriptureearth.org/data/tgk/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tgp": {
+   "u": "https://scriptureearth.org/data/tgp/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "tif": {
+   "u": "https://scriptureearth.org/data/tif/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "tik": {
+   "u": "https://scriptureearth.org/data/tik/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tio": {
+   "u": "https://scriptureearth.org/data/tio/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "tim": {
+   "u": "https://scriptureearth.org/data/tim/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tir": {
+   "u": "https://scriptureearth.org/data/tir/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tiy": {
+   "u": "https://scriptureearth.org/data/tiy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tke": {
+   "u": "https://scriptureearth.org/data/tke/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tku": {
+   "u": "https://scriptureearth.org/data/tku/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "tlf": {
+   "u": "https://scriptureearth.org/data/tlf/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "tna": {
+   "u": "https://scriptureearth.org/data/tna/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tnc": {
+   "u": "https://scriptureearth.org/data/tnc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tnk": {
+   "u": "https://scriptureearth.org/data/tnk/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "tnn": {
+   "u": "https://scriptureearth.org/data/tnn/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "toc": {
+   "u": "https://scriptureearth.org/data/toc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "toj": {
+   "u": "https://scriptureearth.org/data/toj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "too": {
+   "u": "https://scriptureearth.org/data/too/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "top": {
+   "u": "https://scriptureearth.org/data/top/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "tos": {
+   "u": "https://scriptureearth.org/data/tos/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tpa": {
+   "u": "https://scriptureearth.org/data/tpa/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "tpi": {
+   "u": "https://scriptureearth.org/data/tpi/",
+   "k": [
+    "study"
+   ]
+  },
+  "tpl": {
+   "u": "https://scriptureearth.org/data/tpl/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "tpp": {
+   "u": "https://scriptureearth.org/data/tpp/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tpt": {
+   "u": "https://scriptureearth.org/data/tpt/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "tpx": {
+   "u": "https://scriptureearth.org/data/tpx/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "tpz": {
+   "u": "https://scriptureearth.org/data/tpz/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tqt": {
+   "u": "https://scriptureearth.org/data/tqt/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "trc": {
+   "u": "https://scriptureearth.org/data/trc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "trq": {
+   "u": "https://scriptureearth.org/data/trq/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "trs": {
+   "u": "https://scriptureearth.org/data/trs/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tru": {
+   "u": "https://scriptureearth.org/data/tru/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tsj": {
+   "u": "https://scriptureearth.org/data/tsj/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tsw": {
+   "u": "https://scriptureearth.org/data/tsw/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ttc": {
+   "u": "https://scriptureearth.org/data/ttc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tte": {
+   "u": "https://scriptureearth.org/data/tte/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ttr": {
+   "u": "https://scriptureearth.org/data/ttr/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ttt": {
+   "u": "https://scriptureearth.org/data/ttt/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tuc": {
+   "u": "https://scriptureearth.org/data/tuc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tue": {
+   "u": "https://scriptureearth.org/data/tue/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tuf": {
+   "u": "https://scriptureearth.org/data/tuf/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tuk": {
+   "u": "https://scriptureearth.org/data/tuk/",
+   "k": [
+    "study"
+   ]
+  },
+  "tul": {
+   "u": "https://scriptureearth.org/data/tul/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "tuo": {
+   "u": "https://scriptureearth.org/data/tuo/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "tur": {
+   "u": "https://scriptureearth.org/data/tur/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "tvk": {
+   "u": "https://scriptureearth.org/data/tvk/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "txu": {
+   "u": "https://scriptureearth.org/data/txu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tzh": {
+   "u": "https://scriptureearth.org/data/tzh/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "tzj": {
+   "u": "https://scriptureearth.org/data/tzj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "tzo": {
+   "u": "https://scriptureearth.org/data/tzo/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ubr": {
+   "u": "https://scriptureearth.org/data/ubr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ubu": {
+   "u": "https://scriptureearth.org/data/ubu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "udu": {
+   "u": "https://scriptureearth.org/data/udu/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "uki": {
+   "u": "https://scriptureearth.org/data/uki/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "ura": {
+   "u": "https://scriptureearth.org/data/ura/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "urb": {
+   "u": "https://scriptureearth.org/data/urb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "urt": {
+   "u": "https://scriptureearth.org/data/urt/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "ury": {
+   "u": "https://scriptureearth.org/data/ury/",
+   "k": [
+    "PDF",
+    "study"
+   ]
+  },
+  "usa": {
+   "u": "https://scriptureearth.org/data/usa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "usp": {
+   "u": "https://scriptureearth.org/data/usp/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "uro": {
+   "u": "https://scriptureearth.org/data/uro/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "uth": {
+   "u": "https://scriptureearth.org/data/uth/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "uzn": {
+   "u": "https://scriptureearth.org/data/uzn/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "uvl": {
+   "u": "https://scriptureearth.org/data/uvl/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "var": {
+   "u": "https://scriptureearth.org/data/var/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "vas": {
+   "u": "https://scriptureearth.org/data/vas/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "viv": {
+   "u": "https://scriptureearth.org/data/viv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "vmj": {
+   "u": "https://scriptureearth.org/data/vmj/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "vmy": {
+   "u": "https://scriptureearth.org/data/vmy/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "vmz": {
+   "u": "https://scriptureearth.org/data/vmz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "waj": {
+   "u": "https://scriptureearth.org/data/waj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wap": {
+   "u": "https://scriptureearth.org/data/wap/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wau": {
+   "u": "https://scriptureearth.org/data/wau/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "waw": {
+   "u": "https://scriptureearth.org/data/waw/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "wbi": {
+   "u": "https://scriptureearth.org/data/wbi/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "wer": {
+   "u": "https://scriptureearth.org/data/wer/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wiu": {
+   "u": "https://scriptureearth.org/data/wiu/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wmd": {
+   "u": "https://scriptureearth.org/data/wmd/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "wnc": {
+   "u": "https://scriptureearth.org/data/wnc/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wnu": {
+   "u": "https://scriptureearth.org/data/wnu/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "wos": {
+   "u": "https://scriptureearth.org/data/wos/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wpc": {
+   "u": "https://scriptureearth.org/data/wpc/",
+   "k": [
+    "sab"
+   ]
+  },
+  "wrs": {
+   "u": "https://scriptureearth.org/data/wrs/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "wuv": {
+   "u": "https://scriptureearth.org/data/wuv/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xav": {
+   "u": "https://scriptureearth.org/data/xav/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xbi": {
+   "u": "https://scriptureearth.org/data/xbi/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "xer": {
+   "u": "https://scriptureearth.org/data/xer/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xla": {
+   "u": "https://scriptureearth.org/data/xla/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xmw": {
+   "u": "https://scriptureearth.org/data/xmw/",
+   "k": [
+    "sab"
+   ]
+  },
+  "xnn": {
+   "u": "https://scriptureearth.org/data/xnn/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xon": {
+   "u": "https://scriptureearth.org/data/xon/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "xri": {
+   "u": "https://scriptureearth.org/data/xri/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "xsb": {
+   "u": "https://scriptureearth.org/data/xsb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xsi": {
+   "u": "https://scriptureearth.org/data/xsi/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xsr": {
+   "u": "https://scriptureearth.org/data/xsr/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "xsu": {
+   "u": "https://scriptureearth.org/data/xsu/",
+   "k": [
+    "PDF",
+    "sab"
+   ]
+  },
+  "xta": {
+   "u": "https://scriptureearth.org/data/xta/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "xtd": {
+   "u": "https://scriptureearth.org/data/xtd/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "xte": {
+   "u": "https://scriptureearth.org/data/xte/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "xtm": {
+   "u": "https://scriptureearth.org/data/xtm/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "xtn": {
+   "u": "https://scriptureearth.org/data/xtn/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "yaa": {
+   "u": "https://scriptureearth.org/data/yaa/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "yad": {
+   "u": "https://scriptureearth.org/data/yad/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yaq": {
+   "u": "https://scriptureearth.org/data/yaq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "yby": {
+   "u": "https://scriptureearth.org/data/yby/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "ycn": {
+   "u": "https://scriptureearth.org/data/ycn/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "yka": {
+   "u": "https://scriptureearth.org/data/yka/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yle": {
+   "u": "https://scriptureearth.org/data/yle/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yml": {
+   "u": "https://scriptureearth.org/data/yml/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yon": {
+   "u": "https://scriptureearth.org/data/yon/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yor": {
+   "u": "https://scriptureearth.org/data/yor/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "yrb": {
+   "u": "https://scriptureearth.org/data/yrb/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yre": {
+   "u": "https://scriptureearth.org/data/yre/",
+   "k": [
+    "PDF",
+    "study",
+    "viewer"
+   ]
+  },
+  "yrl": {
+   "u": "https://scriptureearth.org/data/yrl/",
+   "k": [
+    "sab"
+   ]
+  },
+  "yss": {
+   "u": "https://scriptureearth.org/data/yss/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yuj": {
+   "u": "https://scriptureearth.org/data/yuj/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "yut": {
+   "u": "https://scriptureearth.org/data/yut/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "yuw": {
+   "u": "https://scriptureearth.org/data/yuw/",
+   "k": [
+    "sab",
+    "study"
+   ]
+  },
+  "zaa": {
+   "u": "https://scriptureearth.org/data/zaa/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zab": {
+   "u": "https://scriptureearth.org/data/zab/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zac": {
+   "u": "https://scriptureearth.org/data/zac/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zad": {
+   "u": "https://scriptureearth.org/data/zad/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zae": {
+   "u": "https://scriptureearth.org/data/zae/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zai": {
+   "u": "https://scriptureearth.org/data/zai/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zaj": {
+   "u": "https://scriptureearth.org/data/zaj/",
+   "k": [
+    "sab"
+   ]
+  },
+  "zam": {
+   "u": "https://scriptureearth.org/data/zam/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zao": {
+   "u": "https://scriptureearth.org/data/zao/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zar": {
+   "u": "https://scriptureearth.org/data/zar/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zaq": {
+   "u": "https://scriptureearth.org/data/zaq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "zas": {
+   "u": "https://scriptureearth.org/data/zas/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zat": {
+   "u": "https://scriptureearth.org/data/zat/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zav": {
+   "u": "https://scriptureearth.org/data/zav/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zaw": {
+   "u": "https://scriptureearth.org/data/zaw/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zca": {
+   "u": "https://scriptureearth.org/data/zca/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zia": {
+   "u": "https://scriptureearth.org/data/zia/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "zne": {
+   "u": "https://scriptureearth.org/data/zne/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "zos": {
+   "u": "https://scriptureearth.org/data/zos/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpc": {
+   "u": "https://scriptureearth.org/data/zpc/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpf": {
+   "u": "https://scriptureearth.org/data/zpf/",
+   "k": [
+    "PDF",
+    "audio",
+    "viewer"
+   ]
+  },
+  "zpg": {
+   "u": "https://scriptureearth.org/data/zpg/",
+   "k": [
+    "PDF",
+    "sab",
+    "study"
+   ]
+  },
+  "zpm": {
+   "u": "https://scriptureearth.org/data/zpm/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "zpi": {
+   "u": "https://scriptureearth.org/data/zpi/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "zpl": {
+   "u": "https://scriptureearth.org/data/zpl/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpo": {
+   "u": "https://scriptureearth.org/data/zpo/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpq": {
+   "u": "https://scriptureearth.org/data/zpq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpt": {
+   "u": "https://scriptureearth.org/data/zpt/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpu": {
+   "u": "https://scriptureearth.org/data/zpu/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpv": {
+   "u": "https://scriptureearth.org/data/zpv/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zpz": {
+   "u": "https://scriptureearth.org/data/zpz/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zsr": {
+   "u": "https://scriptureearth.org/data/zsr/",
+   "k": [
+    "PDF",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "ztl": {
+   "u": "https://scriptureearth.org/data/ztl/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab"
+   ]
+  },
+  "ztg": {
+   "u": "https://scriptureearth.org/data/ztg/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ztn": {
+   "u": "https://scriptureearth.org/data/ztn/",
+   "k": [
+    "PDF",
+    "audio"
+   ]
+  },
+  "ztp": {
+   "u": "https://scriptureearth.org/data/ztp/",
+   "k": [
+    "audio",
+    "sab",
+    "study"
+   ]
+  },
+  "ztq": {
+   "u": "https://scriptureearth.org/data/ztq/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zts": {
+   "u": "https://scriptureearth.org/data/zts/",
+   "k": [
+    "audio",
+    "sab"
+   ]
+  },
+  "zty": {
+   "u": "https://scriptureearth.org/data/zty/",
+   "k": [
+    "PDF",
+    "audio",
+    "sab",
+    "study",
+    "viewer"
+   ]
+  },
+  "zul": {
+   "u": "https://scriptureearth.org/data/zul/",
+   "k": [
+    "PDF"
+   ]
+  },
+  "zun": {
+   "u": "https://scriptureearth.org/data/zun/",
+   "k": [
+    "PDF"
+   ]
+  }
+ }
+}

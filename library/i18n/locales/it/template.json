@@ -1,0 +1,11 @@
+{
+  "title": "La mia prima mappa",
+  "engineMissing": "Il motore della mappa non si è caricato.",
+  "mapFailed": "Non è stato possibile avviare la mappa: {detail}",
+  "profileB": {
+    "title": "Profilo B",
+    "servedFrom": "Servito da {file} nel bundle {bundle}.",
+    "note": "Nota: {note}",
+    "noNote": "(nessuna nota passata in profile-config)"
+  }
+}

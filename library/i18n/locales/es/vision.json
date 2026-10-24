@@ -1,0 +1,22 @@
+{
+  "kicker": "DOXA · Visión",
+  "title": "Cada pueblo. Cada lugar.",
+  "tagline": "De todos los grupos étnicos del mundo a aquellos por los que DOXA ora, contados a partir de los datos.",
+  "funnelLabel": "De todos los grupos étnicos a los grupos étnicos de DOXA",
+  "allLabel": "Grupos étnicos",
+  "allNote": "cada grupo étnico, en cada país donde vive",
+  "unreachedLabel": "No alcanzados",
+  "unreachedNote": "menos del 2 % evangélicos",
+  "frontierLabel": "Frontera",
+  "frontierNote": "menos del 0,1 % evangélicos",
+  "doxaLabel": "Grupos étnicos de DOXA",
+  "doxaNote": "{frontier} de ellos son de frontera",
+  "people": "{n} personas",
+  "sources": "Grupos étnicos: {imb}, datos de {date}. Lista de DOXA: pray.doxa.life, {date2}.",
+  "howCounted": "Cómo se cuentan",
+  "ruleAll": "Cada fila de los datos de grupos étnicos del IMB: un grupo étnico en un país.",
+  "ruleUnreached": "Prioridad de perdición del IMB de 0 a 2: menos del 2 % evangélicos.",
+  "ruleFrontier": "Prioridad de perdición del IMB 0: menos del 0,1 % evangélicos. Un subconjunto de los no alcanzados.",
+  "ruleDoxa": "Cada grupo de la lista de oración de DOXA, vinculado a los datos del IMB por pueblo y país. No todos son de frontera.",
+  "about": "Acerca de este mapa"
+}

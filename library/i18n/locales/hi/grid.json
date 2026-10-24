@@ -1,0 +1,22 @@
+{
+  "search": "जनसमूह खोजें…",
+  "hide_filters": "फ़िल्टर छिपाएँ",
+  "show_filters": "फ़िल्टर दिखाएँ",
+  "total": "कुल",
+  "showing": "दिखा रहे हैं",
+  "load_more": "और देखें",
+  "full_profile": "पूरी प्रोफ़ाइल",
+  "wagf_region": "क्षेत्र",
+  "wagf_block": "समानता समूह",
+  "rop1": "जनसमूह",
+  "religion": "धर्म",
+  "exact_filter": "सटीक",
+  "clear_all": "सब हटाएँ",
+  "loading": "लोड हो रहा है…",
+  "no_results": "इस फ़िल्टर से कोई जनसमूह मेल नहीं खाता।",
+  "type_to_search": "खोजने के लिए लिखें...",
+  "load_failed": "जनसमूह डेटा लोड नहीं हो सका। यह कनेक्शन की समस्या है, आपके फ़िल्टर की नहीं।",
+  "search_people_or_countries": "जनसमूह या देश खोजें…",
+  "cards_per_row": "प्रति पंक्ति कार्ड",
+  "cards_per_row_auto": "स्वचालित"
+}

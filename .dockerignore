@@ -1,0 +1,4 @@
+# The root Dockerfile copies nothing from the build context: at start the container clones the repo and
+# runs deployment/cloud/entry.sh from it. Excluding everything keeps a platform from sending the whole
+# repository to the builder. A Dockerfile that ever COPYs from the repo must re-include those paths here.
+*

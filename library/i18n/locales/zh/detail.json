@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "country": "国家：",
+    "population": "人口：",
+    "language": "语言：",
+    "religion": "宗教：",
+    "languageFamily": "语系：",
+    "peopleCommitted": "承诺祷告人数："
+  },
+  "messages": {
+    "noDescription": "暂无描述。"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "open": "Che cosa può fare questa mappa per te?",
+  "title": "Che cosa può fare questa mappa per te?",
+  "shortDescription": "Breve descrizione",
+  "pointer": "Che cosa fa questa mappa?",
+  "close": "Chiudi",
+  "takeaway": "Che cosa ottieni:",
+  "poster": "Poster",
+  "packet": "Libretto di preghiera",
+  "cards": "Carte di preghiera",
+  "spreadsheet": "Foglio di calcolo",
+  "example": "Esempio",
+  "expandPages": "Mostra tutte le pagine ({n})",
+  "collapsePages": "Mostra solo la prima pagina",
+  "expandDeck": "Mostra tutte le carte ({n})",
+  "collapseDeck": "Impila le carte",
+  "moreRows": "Altre righe nel foglio di calcolo completo: {n}",
+  "openFull": "Apri a grandezza intera",
+  "pointerOff": "Non indicare più questo pulsante",
+  "tab": {
+    "upg-100": {
+      "lead": "Tutti i popoli non raggiunti di questa lista, circa 2.100, raccolti in 27 liste da cinquanta a cento. Ogni lista si stampa come poster, pacchetto di preghiera e mazzo di schede, perché un discepolo, una chiesa o un leader possa portare in preghiera un'intera lista, nome per nome.",
+      "takeaway": "per ogni zona, un poster da parete, un libretto di preghiera da distribuire e un mazzo di carte di preghiera. L'esempio qui sotto è la zona con più persone in popoli dove nessuno sta ancora fondando chiese."
+    },
+    "cities-internet": {
+      "lead": "Guarda fin dove arriva internet in ogni paese in cui vivono popoli non raggiunti. Tocca un paese per vedere quante persone vi sono online e le piattaforme che usano, oppure tocca un punto per un popolo.",
+      "takeaway": "Ogni paese in cui vive un popolo non raggiunto, suddiviso per la quota di persone che usano internet — per distinguere il terreno digitale dai luoghi in cui pochi sono online. Le cifre sono nazionali (l'India anche per stato, da un'indagine del 2019–21) e riportano l'anno di rilevazione; sconosciuto significa non misurato, mai presunto."
+    },
+    "gospel-resources": {
+      "lead": "Guarda che cosa ogni popolo non raggiunto ha già nella propria lingua: la Scrittura, l'audio, il film JESUS, i video biblici e la formazione al discepolato, ciascuno con il suo link. Tocca un paese per elencarne i gruppi, oppure tocca un punto per aprire le risorse di un gruppo.",
+      "takeaway": "Scrittura, audio, film, video biblico, formazione — e che cosa manca ancora. Clicca su un paese per elencarne i popoli, o su un popolo per la sua scheda con collegamenti attivi a ogni risorsa trovata. «Nessuna risorsa trovata» significa non presente negli archivi controllati da questa build, mai una prova che non esista nulla."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Tutti i popoli non raggiunti in un'unica vista: filtra per popolo, luogo, lingua, religione o preghiera, e la mappa, la tabella e i totali si restringono insieme. È qui che fissi la tua prospettiva sul lavoro: chi raggiungere ora e chi preparare dopo.",
+      "takeaway": "Le righe filtrate, come foglio di calcolo."
+    },
+    "research-map-plus-grid": {
+      "lead": "Una mappa semplice ed educativa dei popoli non raggiunti: cerca per popolo, luogo, lingua o religione, e la mappa e l'elenco si restringono insieme. I livelli di preghiera e di impegno mostrano a colpo d'occhio fin dove sono arrivati la preghiera e il lavoro."
+    },
+    "prayer-map": {
+      "lead": "Una mappa di preghiera per i popoli della lista di preghiera di DOXA, che mostra a colpo d'occhio per chi si prega e chi sta ancora aspettando. Mettila su ogni sito della tua rete, perché ogni visitatore veda la stessa immagine e si unisca allo stesso movimento.",
+      "takeaway": "Un popolo per cui nessuno prega ancora, e un link alla sua pagina di preghiera."
+    },
+    "regions-dashboard": {
+      "lead": "Trova i popoli non raggiunti di ogni regione e di ogni paese. Sotto ogni regione, «Vedi i poster del paese» stampa il poster, il pacchetto di preghiera o il mazzo di schede di qualsiasi paese.",
+      "takeaway": "Apri un Paese per vederne i gruppi. Sotto ogni regione, «Vedi i poster del paese» stampa il poster, il pacchetto di preghiera o il mazzo di schede di un Paese.",
+      "note": "Poster, pacchetti e schede vengono generati nel tuo browser per ogni Paese tranne l'India."
+    }
+  },
+  "col": {
+    "peopleGroup": "Popolo",
+    "country": "Paese",
+    "region": "Regione",
+    "population": "Popolazione"
+  },
+  "tabExamples": "Esempi",
+  "tabStrategy": "Strategia"
+}

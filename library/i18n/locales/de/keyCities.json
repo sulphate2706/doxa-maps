@@ -1,0 +1,64 @@
+{
+  "map": {
+    "title": "Cluster von Volksgruppen-Punkten",
+    "bands": {
+      "named": "benanntes Zentrum",
+      "multi": "mehrere Gruppen",
+      "single": "eine Gruppe"
+    },
+    "note": "Ein Punkt ist ein Cluster von Volksgruppen-Punkten im Umkreis von ~25 km, keine Gemeindegrenze. Benannte Punkte stammen aus einem belegten Ortsverzeichnis.",
+    "unnamed": "unbenannter Ort — {lat}, {lng}",
+    "close": "Schließen",
+    "country": "Land",
+    "admin": "Verwaltungsgebiet",
+    "peopleGroups": "Volksgruppen",
+    "upgPopulation": "UPG-Bevölkerung",
+    "internet": "Internet im Land",
+    "unknown": "unbekannt",
+    "pgHere": "Volksgruppen hier",
+    "languages": "Sprachen",
+    "sheetNote": "Ein Cluster von Volksgruppen-Punkten im Umkreis von ~25 km, keine Gemeindegrenze. Benannte Punkte stammen aus einem belegten Ortsverzeichnis (Nominatim/OSM); unbenannte zeigen Koordinaten statt eines erfundenen Ortsnamens.",
+    "national": "Internetzahlen sind NATIONAL.",
+    "engineMissing": "Die Karten-Engine konnte nicht geladen werden."
+  },
+  "list": {
+    "title": "Schlüsselstädte",
+    "intro": "Cluster von Volksgruppen-Punkten: benannte Cluster (Namen aus einem belegten Ortsverzeichnis): {named}, in lokalisierten Clustern: {clusters}.",
+    "filters": {
+      "named": "Benannte Bevölkerungszentren",
+      "multi": "Cluster mit mehreren Gruppen",
+      "all": "Alle Orte"
+    },
+    "locations": "Orte: {n}",
+    "peopleGroups": "Volksgruppen: {n}",
+    "caveat": {
+      "rowLead": "Was eine Zeile ist.",
+      "row": "Ein Cluster von Volksgruppen-Punkten im Umkreis von ~25 km, keine Gemeindegrenze. Jeder Punkt steht für eine Volksgruppe, nicht für einen Ort, daher werden Cluster nie durch Schlussfolgerung benannt: Die {n} Zentren mit mehreren Volksgruppen wurden über {source} bestimmt (ODbL, pro Zeile zitiert), der Rest bleibt unbenannt, statt geraten zu werden.",
+      "internet": "Sie dienen als Kontext: Konnektivität pro Stadt ist in diesem Maßstab nicht öffentlich verfügbar, und eine nationale Zahl darf nicht als Messung für eine Stadt gelesen werden.",
+      "scope": "Diese Seite enthält nur Standorte von Volksgruppen und Konnektivität — bewusst keine Daten zu Gemeinden, Gläubigen oder Treffpunkten."
+    },
+    "moreLanguages": "{n} weitere"
+  },
+  "tables": {
+    "title": "Daten der Schlüsselstädte",
+    "intro": "Jedes lokalisierte Zentrum, die dort gesprochenen Sprachen und die Kanäle, die es erreichen. Jede Tabelle lässt sich sortieren, filtern und exportieren; jede führt ihre eigenen Quellen und Grenzen.",
+    "tabs": {
+      "cities": "Schlüsselstädte",
+      "langcity": "Sprachen hier",
+      "languages": "Nach Land",
+      "operators": "Internetanbieter & Netzbetreiber",
+      "messaging": "Messenger"
+    },
+    "loading": "{name} wird geladen…"
+  },
+  "posters": {
+    "heading": "Poster der Schlüsselstädte",
+    "tag": "Gebetsmobilisierung",
+    "itemNoun": "Stadt",
+    "itemNounPlural": "Städte",
+    "soon": "Demnächst: eine Gebetsliste für jede Stadt, die jede unerreichte Volksgruppe darin nennt.",
+    "intro": "Ein druckbares Blatt für jedes Bevölkerungszentrum, in dem unerreichte Volksgruppen leben, benannt nach einem zitierten Ortsverzeichnis, nie erschlossen.",
+    "otherRegion": "Sonstige"
+  },
+  "loadFailed": "Die Daten konnten nicht geladen werden: {detail}"
+}

@@ -1,0 +1,418 @@
+{
+  "noKey": {
+    "plugin-designs/country-posters/countries-map.vue": [
+      "Research map loading…"
+    ],
+    "plugin-designs/doxa-simple-map/doxa-simple-map.vue": [
+      "pray.doxa.life"
+    ],
+    "plugin-designs/golden-path-check/golden-path-check.vue": [
+      "Could not read",
+      "Golden path — live self-test",
+      "Reading the catalog manifest…",
+      "This element was authored in",
+      "beside this page.",
+      "bun run build",
+      "manifest.json",
+      "plugin-designs/"
+    ],
+    "plugin-designs/gospel-resources/charts.vue": [
+      "Counted BY LANGUAGE, so",
+      "Scripture found:",
+      "languages have",
+      "languages present here have nothing found in the pools checked.",
+      "no scripture and no film found in the pools checked",
+      "people groups collapse to",
+      "people in",
+      "people — cannot appear here. The \"Where Nothing Was Found\" table is keyed per people group and does include them.",
+      "people.",
+      "with no ISO 639-3 code in the source —"
+    ],
+    "plugin-designs/gospel-resources/data-tables.vue": [
+      "Loading",
+      "deaths per day.",
+      "people groups are",
+      "people, an estimated",
+      "with no scripture and no film found in the pools checked —"
+    ],
+    "plugin-designs/gospel-resources/resources-list.vue": [
+      "The largest are",
+      "This page lists",
+      "What “no text” means.",
+      "Which unengaged people groups have scripture",
+      "eBible.org",
+      "in their own language",
+      "languages — no text Scripture found in the pools checked",
+      "people groups across",
+      "published resource availability only",
+      "translations across"
+    ],
+    "plugin-designs/gospel-resources/resources-map.vue": [
+      "A bridge, not a translation",
+      "A second language is a way in, not a translation — the gap in their own language is unchanged.",
+      "A “found” colour is equally bounded: it counts what these pools list, not everything that exists.",
+      "About SUN ↗",
+      "Bible video ·",
+      "Bridge strength:",
+      "DOOR International",
+      "Deaf Bible Society",
+      "Deaths/day applies a national crude death rate to a sub-population — order of magnitude, not a count.",
+      "Every one of those",
+      "Every resource used in",
+      "Gospel presentation ·",
+      "Gospel resources found (",
+      "How these numbers are made",
+      "It sits on the same point as",
+      "Largest with nothing:",
+      "Link states:",
+      "Matched on ISO 639-3",
+      "No resource found (",
+      "Not ranked and not recommended",
+      "Not their language — but spoken around them.",
+      "Nothing found for any group here in the pools checked.",
+      "Nothing in",
+      "Nothing was found in",
+      "Possibly a way in — worth checking locally.",
+      "SUN",
+      "SUN is already being taught in",
+      "Scripture and the JESUS Film",
+      "Scripture was translated by",
+      "Scripture,",
+      "See the 40 largest →",
+      "Show all",
+      "Showing 12 of",
+      "Showing 8 of",
+      "Showing only",
+      "So is",
+      "That is a statement about how the standard groups these codes,",
+      "That is a statement about the pools searched,",
+      "The",
+      "The groups with nothing found in any pool checked AND nobody praying —",
+      "The largest language among the people groups mapped here that does have Scripture and the JESUS Film is",
+      "The open catalogues are",
+      "There is one signed language with Scripture in it.",
+      "This is a sign language.",
+      "Training",
+      "Translated by",
+      "Way in:",
+      "What that number is made of.",
+      "Zume Training publishes its discipleship course in this language — free, no account needed to read it.",
+      "Zume Training publishes its discipleship course in this language.",
+      "a different set of groups",
+      "already praying",
+      "and is an official language",
+      "and official",
+      "both a film and a text Scripture.",
+      "different situations share it, and only the first is a translation problem:",
+      "filmed in this sign language",
+      "finished for every group in the gap",
+      "from the curated country analysis, over",
+      "groups (",
+      "groups doxa.life publishes a page for can appear here at all.",
+      "groups have nothing ·",
+      "groups sharing this language.",
+      "groups with nothing ·",
+      "groups ·",
+      "has a possible way in",
+      "has resources",
+      "have a possible way in",
+      "is never evidence that a link works or fails.",
+      "is spoken by",
+      "matches — keep typing to narrow.",
+      "no text Scripture found in the pools checked",
+      "nothing found, and nobody praying — open their prayer page ↗",
+      "of its",
+      "of them also carry a code no pool can index, so they are doubly stuck.",
+      "of them. That is a count of THIS MAP's groups, not of the country — no published figure for the country was available.",
+      "of these",
+      "of those",
+      "people groups and does have",
+      "people groups can already hear the gospel — a recording, the JESUS Film, a Bible video or Words of Life — but have",
+      "people groups have no Scripture, audio, film, Bible video or Door43 resource in the pools checked —",
+      "people ·",
+      "people) — every pool this build can reach was checked and found nothing. This is the real gap.",
+      "people,",
+      "people.",
+      "related:",
+      "shown, largest first. Tapping one opens their prayer page on doxa.life.",
+      "sign languages on this map, covering",
+      "the JESUS Film",
+      "together with",
+      "way in:"
+    ],
+    "plugin-designs/key-cities/cities-list.vue": [
+      "Internet figures are NATIONAL",
+      "Nominatim/OpenStreetMap",
+      "This page carries people-group locations and connectivity only — no church, believer or meeting-point data, by design.",
+      "What a row is.",
+      "multi-group centres were resolved by"
+    ],
+    "plugin-designs/my-upg-100-list/upg-100-list.vue": [
+      "Batch Select",
+      "Map unavailable",
+      "Tap territories on the map or legend rows to add · tap again to remove",
+      "UUPG"
+    ],
+    "plugin-designs/plugin-studio/plugin-studio.vue": [
+      "https://doxa.life/api/maps/token",
+      "MAPBOX_PUBLIC_TOKEN…"
+    ],
+    "plugin-designs/plugin-studio/src/StudioTree.vue": [
+      "CAP"
+    ],
+    "plugin-designs/pplr-data-maps/pplr-data-maps.vue": [
+      "PPLR data maps"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/DataSourcesDropdown.vue": [
+      "Data sources"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/FlatLegend.vue": [
+      "Clear selection (Esc)",
+      "Open legend"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/LoadingGlobe.vue": [
+      "Retry"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/PinDetailCard.vue": [
+      "Close (Esc)",
+      "Fly to pin",
+      "Name in 17 locales"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/SemanticTreeLegend.vue": [
+      "Loading",
+      "Pop",
+      "Showing top",
+      "Sort by UPGs",
+      "UPGs"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-coverage.vue": [
+      "Avg locales / 17",
+      "Translation coverage · choropleth = avg locales filled per country · click PG pin or country"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-d3-tree.vue": [
+      "Data sources",
+      "Loading ROP hierarchy",
+      "ROP Hierarchy · Affinity Bloc → People Cluster · scroll to zoom"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-index.vue": [
+      "Click a tile, or use the topbar tabs above to switch displays. Click",
+      "Many small displays — each answers one validation question about the PPLR people-group data. Source:",
+      "PPLR ArcGIS FeatureServer",
+      "PPLR data validation",
+      "top-right to see every slot at once."
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-language-families.vue": [
+      "Base map",
+      "Data sources",
+      "Ethnolinguistic families (PPLR) · click pin for detail",
+      "Search by people, place, language, religion…"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-pins.vue": [
+      "All PG-in-country pins · click for cross-system IDs",
+      "Data sources"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-religion.vue": [
+      "Base map",
+      "Data sources",
+      "Primary Religion",
+      "Religion distribution · click pin for detail",
+      "Search by people, place, language, religion…"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-rop-tree.vue": [
+      "Base map",
+      "Data sources",
+      "ROP Hierarchy",
+      "ROP Hierarchy · Affinity Bloc → Cluster → People Group → PGIC",
+      "Search by people, place, language, religion…"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-rosetta-cards.vue": [
+      "Cross-system ID Rosetta · color = which IDs exist · ★ = sample row",
+      "ID coverage"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-semantic-trees.vue": [
+      "API field names per external system",
+      "Engagement status tiers?",
+      "Migration corridors?",
+      "Religious sub-streams?",
+      "Semantic tree reference",
+      "Translation lineage?",
+      "What other semantic trees",
+      "are hiding in the data?",
+      "denomination → tradition → school",
+      "origin → diaspora pathways",
+      "source language → script → orthography",
+      "unreached → unengaged → unevangelized"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-translations.vue": [
+      "Data sources",
+      "PG name · 17 locales · click any pin"
+    ],
+    "plugin-designs/stack-demo/stack-demo.vue": [
+      "Stacked view",
+      "scroll ↓"
+    ],
+    "plugin-designs/template-bundle/template-map-b.vue": [
+      "Profile B",
+      "Served from",
+      "bundle.",
+      "in the",
+      "note:",
+      "template-map-b.vue"
+    ],
+    "plugin-designs/upg-neighbor/src/bloom-cockpit.vue": [
+      "FLOWER",
+      "LIVE",
+      "Loading the harvest field…",
+      "MAP",
+      "Map or flower view",
+      "SEND (solid=same-lang · dashed=cluster · dotted=in-country)",
+      "clusters ·",
+      "senders →",
+      "unreached target",
+      "unreached · baked senders"
+    ],
+    "plugin-designs/upg-neighbor/src/cockpit/FlowerCell.vue": [
+      "Pick a red target on the map —",
+      "its reached neighbors bloom here as a flower.",
+      "navy = SEND ·",
+      "same-country ·",
+      "unreached ·"
+    ],
+    "plugin-designs/upg-neighbor/src/cockpit/FlowerClusters.vue": [
+      "Flower-clusters",
+      "reached petals · by",
+      "red cores (clustered) → granular green reached petals (same language)",
+      "taxonomy = research-map semantic tree (family→language→dialect)",
+      "unreached = LIVE pray.doxa.life · reached = baked PPLR"
+    ],
+    "plugin-designs/upg-neighbor/src/cockpit/ListCell.vue": [
+      "Adjacency",
+      "Bridge",
+      "Build send list",
+      "Code",
+      "Details",
+      "No senders match the current filters",
+      "Pick a red target",
+      "Tap a red bubble on the map to build its send list.",
+      "This target has no reached neighbors in the baked set yet",
+      "reached senders nearby",
+      "senders available",
+      "senders hidden — clear a facet to see them",
+      "unreached clusters ·"
+    ],
+    "plugin-designs/upg-neighbor/src/flower-mesh.vue": [
+      "Flower-Mesh",
+      "center = doxa-2000 (pray.doxa.life)",
+      "km)",
+      "neighbors = baked",
+      "province N/A in source — finest grain = country (see RE)",
+      "reached neighbor → unreached center"
+    ],
+    "plugin-designs/upg-neighbor/src/lang-cluster.vue": [
+      "Bounded sets",
+      "IN/CN province = real ADM1 (my-upg-100-list point-in-polygon)",
+      "Language clusters",
+      "reached = baked reached-neighbors",
+      "red unreached · green reached-by-language",
+      "unreached = LIVE pray.doxa.life ("
+    ],
+    "plugin-designs/upg-neighbor/src/send-map.vue": [
+      "Adjacency",
+      "Language pair",
+      "Lower persecution",
+      "No qualifying reached senders with a known country centroid for this target.",
+      "SEND",
+      "UPGs ·",
+      "chain: UPG-100 → FPG base → My UPG Neighbor",
+      "km)",
+      "reached neighbor → unreached target",
+      "reached senders",
+      "senders = baked",
+      "target = LIVE (JP UnreachedPeoplesByCountry)"
+    ],
+    "plugin-designs/wall-of-people-groups/src/components/PeopleGroupCard.vue": [
+      "View prayers and comments",
+      "prayed that they would receive God's love and the love of a missionary"
+    ],
+    "plugin-designs/wall-of-people-groups/src/components/SourceSelector.vue": [
+      "CSV includes ~1,439 groups with images from Joshua Project",
+      "Current:",
+      "Live prayer data — people praying, committed workers, adoption, images",
+      "Source URL:",
+      "WordPress API — descriptions & photos, no prayer data"
+    ],
+    "plugin-designs/wall-of-people-groups/wall-of-people-groups.vue": [
+      "The wall could not load its drawing library:"
+    ],
+    "library/ProfileLoader.vue": [
+      "Example:",
+      "not found.",
+      "prop."
+    ],
+    "library/components/legends/LegendRows.vue": [
+      "Toggle children"
+    ]
+  },
+  "hasKey": {
+    "plugin-designs/country-posters/countries-map.vue": [
+      "The map could not be loaded."
+    ],
+    "plugin-designs/country-posters/country-posters-mfe.vue": [
+      "Views"
+    ],
+    "plugin-designs/demo-map/demo-map.vue": [
+      "Loading map…",
+      "The map could not be loaded."
+    ],
+    "plugin-designs/doxa-maps-spa/doxa-maps-spa.vue": [
+      "Change language"
+    ],
+    "plugin-designs/gospel-resources/charts.vue": [
+      "people group"
+    ],
+    "plugin-designs/gospel-resources/resources-map.vue": [
+      "Audio",
+      "Bible video",
+      "Find a people group, language or ISO code",
+      "Loading resources…",
+      "Scripture",
+      "Show all groups",
+      "Showing",
+      "The dot marks a people group, not a town or a boundary.",
+      "link checked"
+    ],
+    "plugin-designs/pplr-data-maps/pplr-data-maps.vue": [
+      "Choose a view"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/FlatLegend.vue": [
+      "Legend"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/PinDetailCard.vue": [
+      "Close",
+      "People Group"
+    ],
+    "plugin-designs/pplr-data-maps/src/components/SemanticTreeLegend.vue": [
+      "Loading data…",
+      "No data at this level",
+      "Sort by Population",
+      "use the geocoder above to find the rest"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-index.vue": [
+      "Overview"
+    ],
+    "plugin-designs/pplr-data-maps/src/views/pplr-language-families.vue": [
+      "Language Families"
+    ],
+    "plugin-designs/upg-neighbor/src/cockpit/ListCell.vue": [
+      "Country",
+      "Export",
+      "Language",
+      "People group",
+      "Population",
+      "Religion"
+    ],
+    "library/components/poster/PosterWall.vue": [
+      "people groups"
+    ]
+  }
+}

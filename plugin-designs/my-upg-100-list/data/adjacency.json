@@ -1,0 +1,263 @@
+{
+  "Andaman and Nicobar Islands": [],
+  "Andhra Pradesh": [
+    "Chhattīsgarh",
+    "Karnātaka",
+    "Odisha",
+    "Puducherry",
+    "Tamil Nādu",
+    "Telangāna"
+  ],
+  "Arunāchal Pradesh": [
+    "Assam",
+    "Tibet Autonomous Region"
+  ],
+  "Assam": [
+    "Arunāchal Pradesh",
+    "Manipur",
+    "Meghālaya",
+    "Tibet Autonomous Region",
+    "Tripura",
+    "West Bengal"
+  ],
+  "Bihār": [
+    "Jhārkhand",
+    "Uttar Pradesh",
+    "West Bengal"
+  ],
+  "Chandīgarh": [
+    "Haryāna",
+    "Punjab"
+  ],
+  "Chhattīsgarh": [
+    "Andhra Pradesh",
+    "Jhārkhand",
+    "Madhya Pradesh",
+    "Mahārāshtra",
+    "Odisha",
+    "Telangāna",
+    "Uttar Pradesh"
+  ],
+  "Delhi": [
+    "Haryāna",
+    "Uttar Pradesh"
+  ],
+  "Dādra and Nagar Haveli and Damān and Diu": [
+    "Gujarāt",
+    "Mahārāshtra"
+  ],
+  "Gansu Province": [
+    "Inner Mongolia Autonomous Region",
+    "Qinghai Province",
+    "Sichuan Province",
+    "Xinjiang Uyghur Autonomous Region"
+  ],
+  "Goa": [
+    "Karnātaka",
+    "Mahārāshtra"
+  ],
+  "Guangxi Zhuang Autonomous Region": [
+    "Guizhou Province",
+    "Hunan Province",
+    "Yunnan Province"
+  ],
+  "Guizhou Province": [
+    "Guangxi Zhuang Autonomous Region",
+    "Hunan Province",
+    "Sichuan Province",
+    "Yunnan Province"
+  ],
+  "Gujarāt": [
+    "Dādra and Nagar Haveli and Damān and Diu",
+    "Madhya Pradesh",
+    "Mahārāshtra",
+    "Rājasthān"
+  ],
+  "Hainan Province": [],
+  "Haryāna": [
+    "Chandīgarh",
+    "Delhi",
+    "Himāchal Pradesh",
+    "Punjab",
+    "Rājasthān",
+    "Uttar Pradesh"
+  ],
+  "Heilongjiang Province": [
+    "Inner Mongolia Autonomous Region"
+  ],
+  "Himāchal Pradesh": [
+    "Haryāna",
+    "Jammu and Kashmīr",
+    "Ladākh",
+    "Punjab",
+    "Tibet Autonomous Region",
+    "Uttar Pradesh",
+    "Uttarākhand"
+  ],
+  "Hunan Province": [
+    "Guangxi Zhuang Autonomous Region",
+    "Guizhou Province"
+  ],
+  "Inner Mongolia Autonomous Region": [
+    "Gansu Province",
+    "Heilongjiang Province"
+  ],
+  "Jammu and Kashmīr": [
+    "Himāchal Pradesh",
+    "Ladākh",
+    "Punjab"
+  ],
+  "Jhārkhand": [
+    "Bihār",
+    "Chhattīsgarh",
+    "Odisha",
+    "Uttar Pradesh",
+    "West Bengal"
+  ],
+  "Karnātaka": [
+    "Andhra Pradesh",
+    "Goa",
+    "Kerala",
+    "Mahārāshtra",
+    "Tamil Nādu",
+    "Telangāna"
+  ],
+  "Kerala": [
+    "Karnātaka",
+    "Puducherry",
+    "Tamil Nādu"
+  ],
+  "Ladākh": [
+    "Himāchal Pradesh",
+    "Jammu and Kashmīr",
+    "Tibet Autonomous Region",
+    "Xinjiang Uyghur Autonomous Region"
+  ],
+  "Lakshadweep": [],
+  "Madhya Pradesh": [
+    "Chhattīsgarh",
+    "Gujarāt",
+    "Mahārāshtra",
+    "Rājasthān",
+    "Uttar Pradesh"
+  ],
+  "Mahārāshtra": [
+    "Chhattīsgarh",
+    "Dādra and Nagar Haveli and Damān and Diu",
+    "Goa",
+    "Gujarāt",
+    "Karnātaka",
+    "Madhya Pradesh",
+    "Telangāna"
+  ],
+  "Manipur": [
+    "Assam"
+  ],
+  "Meghālaya": [
+    "Assam"
+  ],
+  "Odisha": [
+    "Andhra Pradesh",
+    "Chhattīsgarh",
+    "Jhārkhand",
+    "West Bengal"
+  ],
+  "Puducherry": [
+    "Andhra Pradesh",
+    "Kerala",
+    "Tamil Nādu"
+  ],
+  "Punjab": [
+    "Chandīgarh",
+    "Haryāna",
+    "Himāchal Pradesh",
+    "Jammu and Kashmīr",
+    "Rājasthān"
+  ],
+  "Qinghai Province": [
+    "Gansu Province",
+    "Sichuan Province",
+    "Tibet Autonomous Region",
+    "Xinjiang Uyghur Autonomous Region"
+  ],
+  "Rājasthān": [
+    "Gujarāt",
+    "Haryāna",
+    "Madhya Pradesh",
+    "Punjab",
+    "Uttar Pradesh"
+  ],
+  "Sichuan Province": [
+    "Gansu Province",
+    "Guizhou Province",
+    "Qinghai Province",
+    "Tibet Autonomous Region",
+    "Yunnan Province"
+  ],
+  "Sikkim": [
+    "Tibet Autonomous Region",
+    "West Bengal"
+  ],
+  "Tamil Nādu": [
+    "Andhra Pradesh",
+    "Karnātaka",
+    "Kerala",
+    "Puducherry"
+  ],
+  "Telangāna": [
+    "Andhra Pradesh",
+    "Chhattīsgarh",
+    "Karnātaka",
+    "Mahārāshtra"
+  ],
+  "Tibet Autonomous Region": [
+    "Arunāchal Pradesh",
+    "Assam",
+    "Himāchal Pradesh",
+    "Ladākh",
+    "Qinghai Province",
+    "Sichuan Province",
+    "Sikkim",
+    "Uttarākhand",
+    "Xinjiang Uyghur Autonomous Region",
+    "Yunnan Province"
+  ],
+  "Tripura": [
+    "Assam"
+  ],
+  "Uttar Pradesh": [
+    "Bihār",
+    "Chhattīsgarh",
+    "Delhi",
+    "Haryāna",
+    "Himāchal Pradesh",
+    "Jhārkhand",
+    "Madhya Pradesh",
+    "Rājasthān",
+    "Uttarākhand"
+  ],
+  "Uttarākhand": [
+    "Himāchal Pradesh",
+    "Tibet Autonomous Region",
+    "Uttar Pradesh"
+  ],
+  "West Bengal": [
+    "Assam",
+    "Bihār",
+    "Jhārkhand",
+    "Odisha",
+    "Sikkim"
+  ],
+  "Xinjiang Uyghur Autonomous Region": [
+    "Gansu Province",
+    "Ladākh",
+    "Qinghai Province",
+    "Tibet Autonomous Region"
+  ],
+  "Yunnan Province": [
+    "Guangxi Zhuang Autonomous Region",
+    "Guizhou Province",
+    "Sichuan Province",
+    "Tibet Autonomous Region"
+  ]
+}

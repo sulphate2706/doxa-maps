@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "显示完整详情",
+  "showFullDetailsAria": "显示{label}的完整详情",
+  "tab": {
+    "styles": "样式",
+    "sizes": "尺寸"
+  },
+  "styles": {
+    "heading": "海报样式",
+    "intro": "所有海报模板集中在一处，均由组件库用示例数据绘制。每张卡片都以其配置命名，方便你请代理准确使用那一种。"
+  },
+  "sizes": {
+    "heading": "海报尺寸",
+    "intro": "海报可打印的所有尺寸，按比例绘制。大尺寸海报分多张纸打印，贴在墙上时彼此重叠；红色条带标出下一张纸的粘贴位置。",
+    "lineup": "所有尺寸并排，按比例",
+    "paper": "标准打印纸",
+    "paperLetter": "美国信纸，8.5 × 11 英寸",
+    "paperA4": "A4，210 × 297 毫米",
+    "dimsFt": "{w} × {h} 英尺",
+    "dimsIn": "{w} × {h} 英寸",
+    "dimsInOne": "{v} 英寸",
+    "rowSheets": "纸张数",
+    "rowSheet": "每张纸",
+    "rowOverlap": "粘贴重叠",
+    "rowPhotos": "名称旁配照片",
+    "rowPrint": "打印方式",
+    "yes": "是",
+    "no": "否",
+    "printHome": "任何家用打印机",
+    "printShop": "印刷店（PDF，每张纸一页）",
+    "layoutNote": "纸张显示的是 3 × 3 英尺国家海报在各尺寸下的版式：标题、地图、名称、表格和经文页脚。各尺寸实际绘制的海报完成后会出现在“样式”中。",
+    "sideLanes": "{dims}，两侧名单栏",
+    "packetPage1": "{paper}（祷告资料包第 1 页）",
+    "panels": "{dims}，展板数：{n}",
+    "anySize": "共享尺寸表中的任意尺寸"
+  },
+  "family": {
+    "mapSheet": "地图页",
+    "packet": "祷告资料包",
+    "cards": "祷告卡",
+    "wall": "墙面展板",
+    "mapPrint": "地图打印",
+    "plugins": "来自其他插件",
+    "experimental": "实验性（进行中）",
+    "upgZone": "UPG100 区域海报"
+  },
+  "tpl": {
+    "mapSheetCountry": "国家地图页",
+    "mapSheetPacketPage": "资料包地图页",
+    "packetFull": "祷告资料包（完整版）",
+    "packetLightweight": "祷告资料包（精简版）",
+    "cards": "祷告卡",
+    "blessPanels": "祝福墙展板",
+    "mapPrint": "地图打印",
+    "upgZonePoster": "UPG100 区域海报（单张）",
+    "upgZonePacket": "UPG100 祷告资料包，第 1 页"
+  },
+  "missing": {
+    "bless": "纸张、粘贴条以及卡片行的位置都来自共享的拼板几何；卡片以版式示意，因为祝福墙在其自己的插件中绘制卡片。",
+    "mapPrint": "此模板打印读者正在查看的实时地图，因此没有示例图片。",
+    "noCountryAtSize": "如今没有国家以此尺寸印刷：唯一曾以此尺寸印刷的印度，现在只以 5 × 8 英尺印刷。这里用一个示例国家绘制，以展示该模板。"
+  },
+  "details": {
+    "configName": "配置名称",
+    "copyName": "复制",
+    "size": "尺寸",
+    "fileSize": "文件大小",
+    "fileSizeUnknown": "海报绘制后测量",
+    "settings": "设置",
+    "sample": "示例数据",
+    "renderer": "生成器",
+    "legacy": "旧尺寸：仍可打印，但打印选择器已不再提供。",
+    "forAgents": "要使用此模板，请告诉代理：使用配置 {name}。",
+    "openPage": "打开其页面"
+  },
+  "templateCount": "{n} 个模板",
+  "fromPlugin": "由其自身插件生成。点击“显示全部详情”可实时查看。"
+}

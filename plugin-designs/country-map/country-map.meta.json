@@ -1,0 +1,5 @@
+{
+  "label": "Country Map",
+  "stage": "production",
+  "_comment": "Production: DX-life's country pages are the consumer this bundle was cut for, and they are live pages."
+}

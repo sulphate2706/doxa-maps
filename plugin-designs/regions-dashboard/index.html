@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · regions-dashboard staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #9ca3af; font-size: 13px; margin: 6px 0 24px; }
+    .slot { border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; }
+    .slot .label { font: 12px/1 ui-monospace, monospace; color: #9ca3af; padding: 8px 12px;
+      background: #111827; border-bottom: 1px solid #1f2937; }
+    .frame { height: 640px; }
+    regions-dashboard { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>regions-dashboard · staging</h1>
+    <p class="sub">The 2-tab Regions element: a SELECT VIEW switcher over "Regions List" and
+      "Region Dashboards". Clicking a region or country on tab 1 swaps to tab 2 with that
+      selection applied. Each tab is also mountable on its own, below.</p>
+
+    <div class="slot">
+      <div class="label">profile-config.profile = "regions-mfe" &nbsp;— the composite (both tabs)</div>
+      <div class="frame">
+        <regions-dashboard profile-config='{"profile":"regions-mfe"}'></regions-dashboard>
+      </div>
+    </div>
+
+    <div class="slot" style="margin-top:24px">
+      <div class="label">profile-config.profile = "regions-list" &nbsp;— tab 1 alone</div>
+      <div class="frame">
+        <regions-dashboard profile-config='{"profile":"regions-list"}'></regions-dashboard>
+      </div>
+    </div>
+
+    <div class="slot" style="margin-top:24px">
+      <div class="label">profile-config.profile = "region-dashboards" &nbsp;— tab 2 alone</div>
+      <div class="frame">
+        <regions-dashboard profile-config='{"profile":"region-dashboards"}'></regions-dashboard>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('region-selected', (e) => console.log('region-selected', e.detail))
+    window.addEventListener('country-selected', (e) => console.log('country-selected', e.detail))
+  </script>
+
+  <!-- Vite multi-page entry. In dev, served transformed; in build, Vite emits
+       ../../../public/doxa-maps/regions-dashboard/regions-dashboard.js and rewrites this tag. -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

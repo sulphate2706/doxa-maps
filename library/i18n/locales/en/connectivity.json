@@ -1,0 +1,73 @@
+{
+  "title": "Internet access where unengaged people groups live",
+  "bands": {
+    "yes": "connected 60%+",
+    "partial": "partial 25–59%",
+    "no": "low, under 25%",
+    "unknown": "not measured"
+  },
+  "peopleGroup": "people group",
+  "caveat": "NATIONAL figures (World Bank). Per-city connectivity is not publicly available — do not read a city off a country.",
+  "sheet": {
+    "close": "Close",
+    "ai": "Data was found by AI deep research — it is subject to false information.",
+    "dismiss": "Dismiss",
+    "internetUsers": "Internet users",
+    "measured": "Measured",
+    "mobilePer100": "Mobile per 100",
+    "peopleGroups": "People groups",
+    "topPlatform": "Top platform",
+    "unknown": "unknown",
+    "carriers": "Carriers & ISPs ({n})",
+    "socialPlatforms": "Social platforms",
+    "note": "National figures, not city measurements. Carrier names are ASN registry holders — that set includes banks and universities as well as ISPs, so the carrier flag is a name heuristic, not a verified classification."
+  },
+  "list": {
+    "title": "Cities with Internet",
+    "intro": "Connectivity where the unengaged people groups live. Every figure is a measured national statistic with its observation year —",
+    "introStrong": "unknown means unmeasured, never assumed.",
+    "countries": "{n} countries",
+    "measured": "{n} measured",
+    "unknown": "{n} unknown",
+    "low": "{n} low-connectivity",
+    "sectionMeta": "{countries} countries · {groups} people groups",
+    "unmeasured": "{n} unmeasured",
+    "rowMeta": "{groups} people groups · {locations} locations",
+    "centres": "{n} population centres",
+    "mobPer100": "mob/100",
+    "band": {
+      "yes": "connected",
+      "partial": "partial",
+      "no": "low",
+      "unknown": "unknown"
+    },
+    "source": "Internet and mobile figures: World Bank Open Data (CC BY 4.0), most recent observation 2018–2024. Banding: connected ≥60% · partial 25–59% · low <25% of population using the internet. Country-resolution: per-city measurements are not publicly available at this scale. ISP names, carrier names and censorship history require per-country cited reporting and are not shown."
+  },
+  "tables": {
+    "title": "Cities Data",
+    "intro": "Where the unengaged people groups live, and what reaches them. Sort, filter and export any table; each carries its own sources and limits.",
+    "tabs": {
+      "cities": "Key Cities",
+      "internet": "Connectivity",
+      "operators": "ISPs & Carriers",
+      "social": "Social Platforms",
+      "messaging": "Messaging Apps"
+    },
+    "loading": "Loading {name}…"
+  },
+  "adm1": {
+    "title": "India by state: ever used the internet",
+    "women": "Women",
+    "men": "Men",
+    "total": "Total",
+    "urban": "Urban",
+    "rural": "Rural",
+    "source": "NFHS-5 (2019–21), people aged 15–49: the share who have ever used the internet. A survey of people, not a count of subscriptions.",
+    "missing": "No state boundary yet for {names}: their figures are in the data, not on the map."
+  },
+  "loading": "Drawing the map…",
+  "ui": {
+    "showKey": "Expand legend",
+    "hideKey": "Collapse legend"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>legacy map host</title>
+  <style>html,body{margin:0;height:100%;background:#f3f3f1}.host{position:fixed;inset:0}</style>
+</head>
+<body>
+<div class="host" id="host"></div>
+<script>
+  // Sandboxed host for the LEGACY upg-neighbor IIFE (pre-bundler architecture). This page runs
+  // inside an IFRAME so the old engine and its dependencies cannot collide with the modern
+  // bundles -- the isolation pattern the roundup mandates ("add without breaking doxa-maps").
+  var q = new URLSearchParams(location.search);
+  var el = (q.get('el') || 'send-map').replace(/[^a-z0-9-]/g, '');
+  var tk = q.get('tk') || '';
+  // Token globals the legacy build may read.
+  window.MAPBOX_TOKEN = tk; window.MAP_TOKEN = tk; window.UPG_TOKEN = tk;
+  // The legacy code fetches relative "/api/people-groups/..." which only resolved on its old
+  // origin. Shim fetch so those calls reach the live API from ANY host (static tree, iframe).
+  var API = 'https://pray.doxa.life';
+  // The cockpit profile fails closed without a configured API base and names this global in
+  // its own error banner (measured: "No API base configured (apiBase / window.MAP_APP_API_URL
+  // / VITE_API_BASE_URL) -- failing closed").
+  window.MAP_APP_API_URL = API;
+  var origFetch = window.fetch.bind(window);
+  window.fetch = function (input, init) {
+    try {
+      var url = typeof input === 'string' ? input : (input && input.url) || '';
+      if (url.indexOf('/api/') === 0) return origFetch(API + url, init);
+    } catch (e) { /* fall through */ }
+    return origFetch(input, init);
+  };
+  // ── KEYLESS SHIM ──────────────────────────────────────────────────────────
+  // The legacy bundle expects a mapboxgl GLOBAL and requests mapbox://styles/mapbox/light-v11.
+  // MapLibre is API-compatible with the mapbox-gl v1 surface the bundle uses, and OpenFreeMap
+  // Positron is the keyless twin of light-v11 -- so the shim below makes every legacy map run
+  // WITHOUT a Mapbox token: load our self-hosted MapLibre, alias it as mapboxgl, and rewrite
+  // any mapbox:// style to the keyless URL inside a patched Map constructor.
+  var KEYLESS_STYLE = 'https://tiles.openfreemap.org/styles/positron';
+  var lib = document.createElement('link'); lib.rel='stylesheet'; lib.href='./maplibre-gl.css';
+  document.head.appendChild(lib);
+  var ml = document.createElement('script');
+  ml.src = './maplibre-gl.js';
+  ml.onload = function () {
+    var Real = window.maplibregl.Map;
+    function PatchedMap (opts) {
+      if (opts && typeof opts.style === 'string' && opts.style.indexOf('mapbox://') === 0) opts.style = KEYLESS_STYLE;
+      return new Real(opts);
+    }
+    PatchedMap.prototype = Real.prototype;
+    window.mapboxgl = Object.assign({}, window.maplibregl, { Map: PatchedMap, accessToken: '' });
+    loadLegacy();
+  };
+  ml.onerror = function () { loadLegacy(); };
+  document.head.appendChild(ml);
+
+  function loadLegacy () {
+  var s = document.createElement('script');
+  s.src = './upg-neighbor.iife.js';
+  s.onload = function () {
+    var node = document.createElement(el);
+    node.style.cssText = 'display:block;width:100%;height:100%';
+    // The legacy elements use the SAME profile-config attribute contract as the modern
+    // bundles (measured: without it the element renders its own usage banner).
+    node.setAttribute('profile-config', JSON.stringify({ profile: el, tk: tk }));
+    document.getElementById('host').appendChild(node);
+  };
+  s.onerror = function () { document.body.innerHTML = '<p style="font:14px system-ui;padding:20px">legacy bundle failed to load</p>'; };
+  document.head.appendChild(s);
+  }
+</script>
+</body>
+</html>

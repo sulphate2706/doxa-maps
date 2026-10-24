@@ -1,0 +1,11 @@
+{
+  "title": "My first map",
+  "engineMissing": "The map engine did not load.",
+  "mapFailed": "The map could not start: {detail}",
+  "profileB": {
+    "title": "Profile B",
+    "servedFrom": "Served from {file} in the {bundle} bundle.",
+    "note": "Note: {note}",
+    "noNote": "(no note passed in profile-config)"
+  }
+}

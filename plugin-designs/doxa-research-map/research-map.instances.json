@@ -1,0 +1,7 @@
+{
+  "_comment": "Preconfigured instances of the research map. The ENGINE IS ONE PROP: provider:'maplibre' swaps Mapbox for the token-free engine, so a partner running thousands of embeds changes a single value instead of maintaining a second map. Mapbox stays the default because it carries the richer feature set; maplibre is the keyless option for volume. Under maplibre the search bar is deliberately ABSENT — GeocoderComponent's maplibre path still geocodes through Mapbox, so shipping it would bill the very key this instance exists to avoid — and the legend rises into the vacated space (--stl-top) rather than leaving a dead band.",
+  "instances": [
+    { "id": "maplibre", "title": "Research map — MapLibre (token-free, no search bar)",
+      "props": { "profile": "research-map", "provider": "maplibre", "instanceId": "research-map-maplibre" } }
+  ]
+}

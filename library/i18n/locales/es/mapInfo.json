@@ -1,0 +1,58 @@
+{
+  "open": "¿Qué puede hacer este mapa por usted?",
+  "title": "¿Qué puede hacer este mapa por usted?",
+  "shortDescription": "Descripción breve",
+  "pointer": "¿Qué hace este mapa?",
+  "close": "Cerrar",
+  "takeaway": "Lo que se lleva:",
+  "poster": "Póster",
+  "packet": "Paquete de oración",
+  "cards": "Tarjetas de oración",
+  "spreadsheet": "Hoja de cálculo",
+  "example": "Ejemplo",
+  "expandPages": "Ver todas las páginas ({n})",
+  "collapsePages": "Ver solo la primera página",
+  "expandDeck": "Ver todas las tarjetas ({n})",
+  "collapseDeck": "Apilar las tarjetas",
+  "moreRows": "Más filas en la hoja de cálculo completa: {n}",
+  "openFull": "Abrir a tamaño completo",
+  "pointerOff": "No volver a señalar este botón",
+  "tab": {
+    "upg-100": {
+      "lead": "Todos los grupos étnicos no alcanzados de esta lista, unos 2.100, reunidos en 27 listas de cincuenta a cien. Cada lista se imprime como póster, paquete de oración y baraja de tarjetas, para que un discípulo, una iglesia o un líder pueda llevar toda una lista en oración, por nombre.",
+      "takeaway": "para cada zona, un póster para la pared, un paquete de oración para repartir y un mazo de tarjetas de oración. El ejemplo de abajo es la zona con más personas en pueblos donde todavía nadie está plantando iglesias."
+    },
+    "cities-internet": {
+      "lead": "Vea hasta dónde llega internet en cada país donde viven grupos étnicos no alcanzados. Toque un país para ver cuántas personas están conectadas allí y qué plataformas usan, o toque un punto para ver un grupo étnico.",
+      "takeaway": "Cada país donde vive un pueblo no alcanzado, agrupado por el porcentaje de personas que usan internet, para distinguir el terreno digital de los lugares donde pocos están en línea. Las cifras son nacionales (India también por estado, de una encuesta de 2019–21) y llevan su año de observación; desconocido significa no medido, nunca supuesto."
+    },
+    "gospel-resources": {
+      "lead": "Vea lo que cada grupo étnico no alcanzado ya tiene en su propio idioma: Escritura, audio, la película JESÚS, video bíblico y formación en discipulado, cada uno con su enlace. Toque un país para ver sus grupos, o toque un punto para abrir los recursos de un grupo.",
+      "takeaway": "Escritura, audio, película, video bíblico, formación — y qué falta todavía. Haga clic en un país para ver sus pueblos, o en un pueblo para su ficha con enlaces activos a cada recurso encontrado. «No encontrado» significa que no está en los repositorios que esta versión consultó, nunca prueba de que no exista."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Todos los grupos étnicos no alcanzados en una sola vista: filtre por pueblo, lugar, idioma, religión u oración, y el mapa, la tabla y los totales se reducen juntos. Aquí define su perspectiva del trabajo: a quién alcanzar ahora y a quién preparar después.",
+      "takeaway": "Las filas que filtró, en una hoja de cálculo."
+    },
+    "research-map-plus-grid": {
+      "lead": "Un mapa sencillo y educativo de los grupos étnicos no alcanzados: busque por grupo étnico, lugar, idioma o religión, y el mapa y la lista se reducen juntos. Las capas de oración y de compromiso muestran de un vistazo hasta dónde han llegado la oración y el trabajo."
+    },
+    "prayer-map": {
+      "lead": "Un mapa de oración para los grupos étnicos de la lista de oración de DOXA, que muestra de un vistazo por quién se ora y quién sigue esperando. Póngalo en cada sitio web de su red, para que cada visitante vea el mismo panorama y se una al mismo movimiento.",
+      "takeaway": "Un grupo étnico por el que nadie ora todavía, y un enlace a su página de oración."
+    },
+    "regions-dashboard": {
+      "lead": "Encuentre los grupos étnicos no alcanzados de cada región y país. En cada región, «Ver los carteles del país» imprime el póster, el paquete de oración o la baraja de tarjetas de cualquier país.",
+      "takeaway": "Abre un país para ver sus grupos. En cada región, «Ver los carteles del país» imprime el póster, el paquete de oración o la baraja de tarjetas de un país.",
+      "note": "Los pósteres, paquetes y tarjetas se generan en tu navegador para cada país excepto India."
+    }
+  },
+  "col": {
+    "peopleGroup": "Pueblo",
+    "country": "País",
+    "region": "Región",
+    "population": "Población"
+  },
+  "tabExamples": "Ejemplos",
+  "tabStrategy": "Estrategia"
+}

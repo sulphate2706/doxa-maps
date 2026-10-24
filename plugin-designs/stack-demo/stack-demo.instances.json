@@ -1,0 +1,4 @@
+{
+  "_comment": "One default instance of the stacked pair.",
+  "instances": [ { "id": "pair", "label": "Dashboard + Grid stacked", "profileConfig": {} } ]
+}

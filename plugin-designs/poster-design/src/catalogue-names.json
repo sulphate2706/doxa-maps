@@ -1,0 +1,31 @@
+{
+  "//": "Every poster design name ever shipped: templates.js and every plugin's posterDesign block. check:poster-design-catalogue fails when a name here no longer exists, because a name is what people hand an agent (a retired design stays as a legacy entry). Append new names; never edit or remove one.",
+  "names": [
+    "map-sheet.country.3x3",
+    "map-sheet.country.60x96",
+    "map-sheet.country.66x66",
+    "map-sheet.country.36x60",
+    "map-sheet.country.3x4",
+    "map-sheet.country.letter",
+    "map-sheet.packet-page",
+    "packet.full",
+    "packet.lightweight",
+    "cards.poker",
+    "cards.pokerLandscape",
+    "cards.postcard",
+    "cards.postcardLandscape",
+    "cards.a6",
+    "wall.bless-panels",
+    "map-print.dialog",
+    "country-poster.letter",
+    "upg100-territory-poster.letter",
+    "upg100-territory-poster.3x3",
+    "upg100-territory-poster.3x4",
+    "wall.bless-36x48",
+    "wall.bless-24x36",
+    "wall.bless-60x96",
+    "bible-poster.36x60",
+    "upg100-territory-packet.page-1",
+    "bless-india.range-badge-60x96"
+  ]
+}

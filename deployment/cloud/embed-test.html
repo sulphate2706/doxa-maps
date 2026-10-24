@@ -1,0 +1,138 @@
+<!doctype html>
+<!--
+  /embed-test on a subdomain app (for example research.<host>/embed-test): proves that EVERY dx-maps plugin built
+  for the web embeds as JavaScript (no iframe), straight from this host's published tree (/dx-maps/). admin.mjs
+  serves this file on the subdomain server. It is the same test as DX-life's /embed-test page:
+    - the list is read at runtime from /dx-maps/manifest.json, never typed here;
+    - section 1 is every profile whose stage is "production", section 2 every other one;
+    - a profile whose `targets` leaves out "web" is skipped.
+  A card mounts its element when it scrolls into view and removes it when it scrolls far away (a browser allows
+  only a handful of WebGL contexts at once).
+  ?only=<bundle>/<profile> (comma-separated, or a bundle name) shows just those cards.
+  ?lang=<locale> sets the language (Arabic, Persian, Urdu and Hebrew lay out right to left).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Embed test</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0 auto; max-width: 1200px; padding: 16px; color: #1f2620; }
+  .embed-card { border: 1px solid #d1d4cd; border-radius: 10px; overflow: hidden; margin: 16px 0; }
+  .embed-card__head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; padding: 10px 12px; background: #f3f3f1; }
+  .embed-card__state { margin-inline-start: auto; font-size: 12px; color: #6d766e; }
+  .embed-card__desc { margin: 0; padding: 6px 12px; font-size: 13px; color: #3b463d; }
+  .embed-card__error { margin: 0; padding: 6px 12px; color: #a0302a; }
+  .embed-card__host { position: relative; height: 560px; }
+  .embed-card__host > * { display: block; width: 100%; height: 100%; }
+  @media (max-width: 600px) { .embed-card__host { height: 480px; } }
+</style>
+</head>
+<body>
+<h1>Embed test</h1>
+<p data-embed-status>Reading the manifest…</p>
+<div id="cards"></div>
+<script>
+(async () => {
+  const q = new URLSearchParams(location.search)
+  const lang = (q.get('lang') || 'en').trim()
+  document.documentElement.lang = lang
+  if (/^(ar|fa|ur|he)\b/.test(lang)) document.documentElement.dir = 'rtl'
+  const base = `${location.origin}/dx-maps`
+  const status = document.querySelector('[data-embed-status]')
+  const resolveUrl = (ref) => /^(https?:)?\/\//.test(ref) ? ref : ref.startsWith('/') ? new URL(ref, base).href : `${base}/${ref.replace(/^\.\//, '')}`
+  const scripts = new Map()
+  const loadScript = (src, integrity) => {
+    if (!scripts.has(src)) scripts.set(src, new Promise((resolve, reject) => {
+      const s = document.createElement('script')
+      s.src = src
+      if (integrity) { s.integrity = integrity; s.crossOrigin = 'anonymous' }
+      s.onload = () => resolve()
+      s.onerror = () => reject(new Error(`the script did not load: ${src}`))
+      document.head.appendChild(s)
+    }))
+    return scripts.get(src)
+  }
+  let manifest
+  try {
+    const r = await fetch(`${base}/manifest.json`, { cache: 'no-cache' })
+    if (!r.ok) throw new Error(`HTTP ${r.status}`)
+    manifest = await r.json()
+    // The data API the maps read (people groups, statistics). Every generated page and copy-paste snippet sets it
+    // before its bundle loads; this page builds its cards itself, so it sets it from the manifest. Without it the
+    // bundles asked this host's own /api, which the research host doesn't serve (404s, fewer nodes drawn).
+    if (!window.MAP_APP_API_URL && manifest.runtime && manifest.runtime.apiBaseUrl) window.MAP_APP_API_URL = manifest.runtime.apiBaseUrl
+  } catch (e) {
+    status.textContent = `The manifest did not load from ${base}/manifest.json (${e.message}).`
+    return
+  }
+  const only = (q.get('only') || '').split(',').map((s) => s.trim()).filter(Boolean)
+  const out = []
+  for (const b of manifest.bundles || []) {
+    const defined = b.elements || []
+    for (const p of b.profiles || []) {
+      const targets = p.targets || b.targets
+      if (Array.isArray(targets) && !targets.includes('web')) continue
+      const key = `${b.bundle}/${p.profile}`
+      if (only.length && !only.includes(key) && !only.includes(b.bundle)) continue
+      // the tag the bundle actually defines (a profile's own element name can name one it does not)
+      const tag = p.element && (!defined.length || defined.includes(p.element)) ? p.element : defined[0] || p.element
+      out.push({ key, bundle: b.bundle, profile: p.profile, tag, script: resolveUrl(b.scriptUrl || `${b.bundle}/${b.bundle}.js`),
+        integrity: b.integrity || '', description: p.description || '', production: (p.stage || b.stage) === 'production', state: 'idle' })
+    }
+  }
+  const cards = [...out.filter((c) => c.production), ...out.filter((c) => !c.production)]
+  const prod = out.filter((c) => c.production).length
+  status.textContent = `${out.length} web plugins from ${base}/manifest.json (${prod} production, ${out.length - prod} other), each embedded as JavaScript.`
+
+  const root = document.getElementById('cards')
+  const el = (tag, attrs = {}, text) => { const n = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v); if (text) n.textContent = text; return n }
+  cards.forEach((c, i) => {
+    if (i === 0 && c.production) root.appendChild(el('h2', { 'data-embed-section': 'production' }, '1. Production'))
+    if (!c.production && (i === 0 || cards[i - 1].production)) root.appendChild(el('h2', { 'data-embed-section': 'other' }, '2. Every other web plugin'))
+    const sec = el('section', { class: 'embed-card', 'data-card': c.key, 'data-state': 'idle', 'data-production': String(c.production), 'data-locale': '' })
+    const head = el('header', { class: 'embed-card__head' })
+    head.append(el('strong', {}, `${c.bundle} / ${c.profile}`), el('code', {}, `<${c.tag}>`), el('span', { class: 'embed-card__state' }, 'idle'))
+    sec.appendChild(head)
+    if (c.description) sec.appendChild(el('p', { class: 'embed-card__desc' }, c.description))
+    c.host = el('div', { class: 'embed-card__host' })
+    sec.appendChild(c.host)
+    c.section = sec
+    root.appendChild(sec)
+  })
+  const setState = (c, s, err) => {
+    c.state = s; c.section.dataset.state = s; c.section.querySelector('.embed-card__state').textContent = s
+    if (err) { const p = el('p', { class: 'embed-card__error', role: 'alert' }, err); c.section.insertBefore(p, c.host) }
+  }
+  const mount = async (c) => {
+    if (c.state === 'mounted' || c.state === 'loading') return
+    setState(c, 'loading')
+    try {
+      await loadScript(c.script, c.integrity)
+      if (!customElements.get(c.tag)) throw new Error(`<${c.tag}> was not defined by its bundle`)
+      const node = document.createElement(c.tag)
+      // shells (the Research Gallery, Plugin Studio) find their child maps through the tree's manifest
+      node.setAttribute('tree-base', base)
+      node.setAttribute('profile-config', JSON.stringify({ profile: c.profile, assetsBase: `${base}/assets`, locale: lang, provider: 'maplibre' }))
+      node.setAttribute('language', lang)
+      c.section.dataset.locale = lang
+      c.host.replaceChildren(node)
+      setState(c, 'mounted')
+    } catch (e) {
+      setState(c, 'error', String(e && e.message || e))
+    }
+  }
+  const unmount = (c) => { if (c.state !== 'mounted') return; c.host.replaceChildren(); setState(c, 'idle') }
+  const observer = new IntersectionObserver((entries) => {
+    for (const en of entries) {
+      const c = cards.find((x) => x.key === en.target.dataset.card)
+      if (!c) continue
+      if (en.isIntersecting) mount(c); else unmount(c)
+    }
+  }, { rootMargin: '600px 0px' })
+  cards.forEach((c) => observer.observe(c.section))
+})()
+</script>
+</body>
+</html>

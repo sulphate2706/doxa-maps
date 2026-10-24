@@ -1,0 +1,22 @@
+{
+  "doxa": {
+    "label": "2000 计划：DOXA 服侍的族群",
+    "definition": "DOXA 服侍的族群，以其实时名单为准"
+  },
+  "unreached": {
+    "label": "7000 计划：未得之民族群",
+    "definition": "IMB 失丧优先级 0–2（前沿、先锋或扩展中的未得之民：福音派少于 2%）"
+  },
+  "frontier": {
+    "label": "4700 计划：前沿族群",
+    "definition": "IMB 失丧优先级 0（前沿未得之民：福音派 0.1% 或更少）"
+  },
+  "frontier-500k": {
+    "label": "700 计划：人口 50 万或以上的前沿族群",
+    "definition": "IMB 失丧优先级 0，且人口至少 50 万"
+  },
+  "unengaged": {
+    "label": "尚无人参与的未得之民族群",
+    "definition": "IMB 失丧优先级 0–2，且参与状态为：无人参与"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "search": "Buscar pueblos…",
+  "hide_filters": "Ocultar filtros",
+  "show_filters": "Mostrar filtros",
+  "total": "Total",
+  "showing": "Mostrando",
+  "load_more": "Cargar más",
+  "full_profile": "Perfil completo",
+  "wagf_region": "Región",
+  "wagf_block": "Bloque de afinidad",
+  "rop1": "Pueblo",
+  "religion": "Religión",
+  "exact_filter": "Exacto",
+  "clear_all": "Borrar todo",
+  "loading": "Cargando…",
+  "no_results": "Ningún pueblo coincide con este filtro.",
+  "type_to_search": "Escribe para buscar...",
+  "load_failed": "No se pudieron cargar los datos de pueblos. Es un problema de conexión, no de tu filtro.",
+  "search_people_or_countries": "Buscar pueblos o países…",
+  "cards_per_row": "Tarjetas por fila",
+  "cards_per_row_auto": "Automático"
+}

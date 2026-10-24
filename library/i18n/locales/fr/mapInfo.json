@@ -1,0 +1,58 @@
+{
+  "open": "Que peut faire cette carte pour vous ?",
+  "title": "Que peut faire cette carte pour vous ?",
+  "shortDescription": "Description courte",
+  "pointer": "Que fait cette carte ?",
+  "close": "Fermer",
+  "takeaway": "Ce que vous emportez :",
+  "poster": "Affiche",
+  "packet": "Livret de prière",
+  "cards": "Cartes de prière",
+  "spreadsheet": "Tableur",
+  "example": "Exemple",
+  "expandPages": "Afficher toutes les pages ({n})",
+  "collapsePages": "N'afficher que la première page",
+  "expandDeck": "Afficher toutes les cartes ({n})",
+  "collapseDeck": "Empiler les cartes",
+  "moreRows": "Lignes supplémentaires dans le tableur complet : {n}",
+  "openFull": "Ouvrir en taille réelle",
+  "pointerOff": "Ne plus signaler ce bouton",
+  "tab": {
+    "upg-100": {
+      "lead": "Tous les peuples non atteints de cette liste, environ 2 100, regroupés en 27 listes de cinquante à cent. Chaque liste s'imprime en affiche, en dossier de prière et en jeu de cartes, pour qu'un disciple, une Église ou un responsable porte toute une liste dans la prière, nom par nom.",
+      "takeaway": "pour chaque zone, une affiche murale, un livret de prière à distribuer et un jeu de cartes de prière. L'exemple ci-dessous est la zone qui compte le plus de personnes dans des peuples où personne n'implante encore d'Églises."
+    },
+    "cities-internet": {
+      "lead": "Voyez jusqu'où internet atteint chaque pays où vivent des peuples non engagés. Touchez un pays pour voir combien de personnes y sont en ligne et les plateformes qu'elles utilisent, ou touchez un point pour un peuple.",
+      "takeaway": "Chaque pays où vit un peuple non atteint, classé selon la part de la population qui utilise internet — pour distinguer le terrain numérique des lieux où peu de gens sont en ligne. Les chiffres sont nationaux (l'Inde aussi par État, d'après une enquête de 2019–21) et portent leur année d'observation ; inconnu signifie non mesuré, jamais supposé."
+    },
+    "gospel-resources": {
+      "lead": "Voyez ce que chaque peuple non atteint a déjà dans sa propre langue : l'Écriture, l'audio, le film JÉSUS, la vidéo biblique et la formation de disciples, chacun avec son lien. Touchez un pays pour lister ses groupes, ou touchez un point pour ouvrir les ressources d'un groupe.",
+      "takeaway": "Écriture, audio, film, vidéo biblique, formation — et ce qui manque encore. Cliquez sur un pays pour lister ses peuples, ou sur un peuple pour sa fiche avec des liens actifs vers chaque ressource trouvée. « Rien trouvé » signifie absent des fonds vérifiés par cette version, jamais une preuve que rien n'existe."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Tous les peuples non atteints en une seule vue : filtrez par peuple, lieu, langue, religion ou prière, et la carte, le tableau et les totaux se resserrent ensemble. C'est ici que vous fixez votre regard sur le travail : qui atteindre maintenant, et qui préparer ensuite.",
+      "takeaway": "Les lignes filtrées, sous forme de tableur."
+    },
+    "research-map-plus-grid": {
+      "lead": "Une carte simple et pédagogique des peuples non atteints : cherchez par peuple, lieu, langue ou religion, et la carte et la liste se resserrent ensemble. Les couches de prière et d'engagement montrent d'un coup d'œil jusqu'où la prière et le travail sont arrivés."
+    },
+    "prayer-map": {
+      "lead": "Une carte de prière pour les peuples de la liste de prière de DOXA, qui montre d'un coup d'œil pour qui l'on prie et qui attend encore. Placez-la sur chaque site de votre réseau, pour que chaque visiteur voie la même image et rejoigne le même mouvement.",
+      "takeaway": "Un peuple pour lequel personne ne prie encore, et un lien vers sa page de prière."
+    },
+    "regions-dashboard": {
+      "lead": "Trouvez les peuples non atteints de chaque région et de chaque pays. Sous chaque région, « Voir les affiches du pays » imprime l'affiche, le dossier de prière ou le jeu de cartes de n'importe quel pays.",
+      "takeaway": "Ouvrez un pays pour voir ses groupes. Sous chaque région, « Voir les affiches du pays » imprime l'affiche, le dossier de prière ou le jeu de cartes d'un pays.",
+      "note": "Affiches, dossiers et cartes sont générés dans votre navigateur pour chaque pays sauf l'Inde."
+    }
+  },
+  "col": {
+    "peopleGroup": "Peuple",
+    "country": "Pays",
+    "region": "Région",
+    "population": "Population"
+  },
+  "tabExamples": "Exemples",
+  "tabStrategy": "Stratégie"
+}

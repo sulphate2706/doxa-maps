@@ -1,0 +1,22 @@
+{
+  "search": "Volksgruppen suchen…",
+  "hide_filters": "Filter ausblenden",
+  "show_filters": "Filter anzeigen",
+  "total": "Gesamt",
+  "showing": "Angezeigt",
+  "load_more": "Mehr laden",
+  "full_profile": "Vollständiges Profil",
+  "wagf_region": "Region",
+  "wagf_block": "Affinitätsblock",
+  "rop1": "Volk",
+  "religion": "Religion",
+  "exact_filter": "Exakt",
+  "clear_all": "Alle löschen",
+  "loading": "Wird geladen…",
+  "no_results": "Keine Volksgruppen entsprechen diesem Filter.",
+  "type_to_search": "Zum Suchen tippen...",
+  "load_failed": "Die Daten konnten nicht geladen werden. Das ist ein Verbindungsproblem, nicht Ihr Filter.",
+  "search_people_or_countries": "Volksgruppen oder Länder suchen…",
+  "cards_per_row": "Karten pro Zeile",
+  "cards_per_row_auto": "Automatisch"
+}

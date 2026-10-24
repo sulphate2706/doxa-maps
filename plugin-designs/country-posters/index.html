@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doxa — Country Posters (dev)</title>
+  <link rel="icon" href="data:,">
+
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .stage-head { padding: 18px 16px 8px; text-align: center; }
+    .stage-head h1 {
+      font: 700 16px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .06em; color: #e5e7eb;
+    }
+    .stage-head .sub {
+      margin-top: 6px; font: 11px/1 ui-monospace, monospace; color: #94a3b8;
+      letter-spacing: .12em; text-transform: uppercase;
+    }
+    /* Two tabs — Map | Poster — the same switcher pattern the 100-list uses. */
+    .tabs { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
+    .tab {
+      font: 600 12px/1 ui-monospace, monospace; letter-spacing: .06em;
+      padding: 7px 16px; border-radius: 999px; cursor: pointer;
+      border: 1px solid #1f2937; background: #111a22; color: #94a3b8;
+    }
+    .tab.active { background: #10b981; border-color: #10b981; color: #04241a; }
+    #stage { position: relative; width: 100%; max-width: 1100px; margin: 16px auto; padding: 0 16px; }
+    .slot { position: relative; width: 100%; aspect-ratio: 16 / 9; border: 2px solid #1f2937; background: #142118; }
+    /* The poster wall scrolls, so it gets height rather than a 16:9 box. */
+    .slot.is-wall { aspect-ratio: auto; height: 78vh; }
+    country-posters-map { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+    country-posters-map:fullscreen, country-posters-map:-webkit-full-screen { position: fixed; inset: 0; width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+
+<script>
+  window.UPG_TOKEN = (new URLSearchParams(location.search).get('tk')||(typeof window!=='undefined'&&window.MAPBOX_TOKEN)||'');
+  // Inherited language: the SPA/studio nests this leaf as an iframe and passes the chosen language
+  // as ?locale=. ProfileLoader reads profile-config.locale and drives the bundle's i18n. Empty →
+  // the leaf keeps its own document.documentElement.lang detection.
+  window.DOXA_LOCALE = (new URLSearchParams(location.search).get('locale') || '');
+</script>
+
+<div class="stage-head">
+  <h1>country-posters</h1>
+  <div class="sub">one poster per country</div>
+  <div class="tabs">
+    <button class="tab active" data-profile="countries-map">Map</button>
+    <button class="tab" data-profile="country-poster-wall">Poster</button>
+  </div>
+</div>
+
+<div id="stage">
+  <div class="slot" id="slot"></div>
+</div>
+
+<script>
+  // Mount one profile at a time and swap on tab click — the dev-harness stand-in
+  // for the shell's Map | Poster switcher.
+  var slot = document.getElementById('slot');
+  function mount(profile) {
+    slot.innerHTML = '';
+    slot.classList.toggle('is-wall', profile === 'country-poster-wall');
+    var el = document.createElement('country-posters-map');
+    el.setAttribute('profile-config', JSON.stringify(Object.assign({
+      profile: profile,
+      tk: window.UPG_TOKEN || '',
+      assetsBase: '/assets',
+    }, window.DOXA_LOCALE ? { locale: window.DOXA_LOCALE } : {})));
+    slot.appendChild(el);
+  }
+  document.querySelectorAll('.tab').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('active'); });
+      b.classList.add('active');
+      mount(b.getAttribute('data-profile'));
+    });
+  });
+  mount('countries-map');
+</script>
+
+<script>window.MAP_APP_BASE_URL = '/';</script>
+
+<script type="module" src="./index.js"></script>
+
+</body>
+</html>

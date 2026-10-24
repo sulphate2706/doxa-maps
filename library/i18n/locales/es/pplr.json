@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "Religión",
+    "ropTree": "Árbol ROP",
+    "languageFamilies": "Familias lingüísticas",
+    "semanticTrees": "Árboles semánticos",
+    "nameLocales": "Nombres por idioma",
+    "ropSunburst": "Sunburst ROP",
+    "allPins": "Todos los pines",
+    "rosetta": "Rosetta de identificadores",
+    "coverage": "Cobertura de traducción",
+    "index": "Índice"
+  },
+  "status": {
+    "loading": "Cargando…",
+    "loadingPgData": "Cargando datos de pueblos…",
+    "loadingPins": "Cargando pines…",
+    "loadingPolygons": "Cargando límites de países…",
+    "addingPolygons": "Añadiendo límites de países…",
+    "addingPins": "Añadiendo pines…",
+    "loadingCoverage": "Cargando cobertura por país…",
+    "addingPinsOnTop": "Añadiendo pines encima…",
+    "loadingRop": "Cargando jerarquía ROP…",
+    "loadingLanguage": "Cargando datos lingüísticos…",
+    "loadingPinsRosetta": "Cargando pines y muestra Rosetta…",
+    "error": "Error: {message}",
+    "readyTranslations": "Pines: {pins} · haz clic en un pin para ver sus 17 nombres",
+    "readyCoverage": "Listo · países: {countries}, coloreados por idiomas de traducción promedio / 17 (todas las filas: {rows})",
+    "readyD3": "Entradas: {entries} · desplaza para acercar · arrastra para mover",
+    "readyRop": "Listo · pines: {pins} · con PEID: {peid}",
+    "readyRosetta": "Listo · pines: {pins} · muestras Rosetta: {samples} (★ dorada)",
+    "readyPins": "Listo · pines: {pins} · haz clic en un pin",
+    "readyLanguage": "Listo · pines: {pins} · cobertura de familias {coverage} % · top 25 = {top} %",
+    "readyReligion": "Pines: {pins} · más común: {religion} ({count})",
+    "d3Failed": "No se pudo cargar la biblioteca de gráficos."
+  },
+  "ui": {
+    "chooseView": "Elige una vista",
+    "search": "Buscar por pueblo, lugar, idioma, religión…",
+    "baseMap": "Mapa base",
+    "dataSources": "Fuentes de datos",
+    "legend": "Leyenda",
+    "openLegend": "Abrir la leyenda",
+    "clearSelectionEsc": "Borrar la selección (Esc)",
+    "closeEsc": "Cerrar (Esc)",
+    "close": "Cerrar",
+    "retry": "Reintentar",
+    "loadingMap": "Cargando el mapa",
+    "flyToPin": "Ir al pin",
+    "primaryReligion": "Religión principal",
+    "ropHierarchy": "Jerarquía ROP"
+  },
+  "pill": {
+    "religion": "Distribución de religiones · haz clic en un pin para ver detalles",
+    "ropTree": "Jerarquía ROP · bloque de afinidad → clúster → pueblo → PGIC",
+    "languageFamilies": "Familias etnolingüísticas (PPLR) · haz clic en un pin para ver detalles",
+    "sunburst": "Jerarquía ROP · bloque de afinidad → clúster de pueblos · desplázate para ampliar",
+    "pins": "Todos los pines de pueblos por país · haz clic para ver los identificadores de cada sistema",
+    "coverage": "Cobertura de traducción · sombreado = promedio de idiomas completados por país · haz clic en un pin o un país",
+    "rosetta": "Rosetta de identificadores · color = identificadores existentes · ★ = fila de ejemplo",
+    "translations": "Nombre del pueblo · {n} idiomas · haz clic en un punto"
+  },
+  "legendTitle": {
+    "avgLocales": "Promedio de idiomas / {n}",
+    "idCoverage": "Cobertura de identificadores"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, los tres",
+      "imbOnly": "Solo IMB",
+      "jpOnly": "Solo JP",
+      "neither": "ninguno"
+    },
+    "samplePg": "★ pueblo de ejemplo",
+    "missingIds": "Aún sin vincular en PPLR: {ids}. Una fila vacía es un hueco en los datos, no un error."
+  },
+  "popup": {
+    "noName": "(sin nombre)",
+    "country": "País",
+    "religion": "Religión",
+    "language": "Idioma",
+    "family": "Familia",
+    "affinityBloc": "Bloque de afinidad",
+    "cluster": "Clúster",
+    "peopleCluster": "Clúster de pueblos",
+    "peopleGroup": "Pueblo",
+    "pgCount": "Pueblos",
+    "avgLocalesFilled": "Promedio de idiomas completados",
+    "iso3Country": "País ISO-3"
+  },
+  "card": {
+    "nameInLocales": "Nombre en {n} idiomas"
+  },
+  "title": "Mapas de datos de PPLR",
+  "index": {
+    "title": "Validación de datos de PPLR",
+    "help": "Haz clic en una tarjeta o elige una vista arriba."
+  }
+}

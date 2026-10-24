@@ -1,0 +1,11 @@
+{
+  "title": "Моя первая карта",
+  "engineMissing": "Движок карты не загрузился.",
+  "mapFailed": "Не удалось запустить карту: {detail}",
+  "profileB": {
+    "title": "Профиль B",
+    "servedFrom": "Загружено из {file} в сборке {bundle}.",
+    "note": "Примечание: {note}",
+    "noNote": "(в profile-config не передано примечание)"
+  }
+}

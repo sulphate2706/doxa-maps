@@ -1,0 +1,13 @@
+{
+  "title": "All People Groups",
+  "locations": "{n} group–country locations",
+  "doxa": "DOXA people groups",
+  "frontier": "Frontier — nothing started",
+  "unreached": "Unreached — work beginning",
+  "reached": "Reached — church is there",
+  "hint": "Click a row to see all of them · click again for everything",
+  "loading": "Loading every people group…",
+  "loadError": "The map could not be loaded.",
+  "pray": "Pray for them →",
+  "population": "pop {n}"
+}

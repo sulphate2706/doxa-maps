@@ -1,0 +1,58 @@
+{
+  "open": "Was kann diese Karte für Sie tun?",
+  "title": "Was kann diese Karte für Sie tun?",
+  "shortDescription": "Kurzbeschreibung",
+  "pointer": "Was kann diese Karte?",
+  "close": "Schließen",
+  "takeaway": "Was Sie mitnehmen:",
+  "poster": "Poster",
+  "packet": "Gebetsheft",
+  "cards": "Gebetskarten",
+  "spreadsheet": "Tabelle",
+  "example": "Beispiel",
+  "expandPages": "Alle Seiten anzeigen ({n})",
+  "collapsePages": "Nur die erste Seite anzeigen",
+  "expandDeck": "Alle Karten anzeigen ({n})",
+  "collapseDeck": "Karten stapeln",
+  "moreRows": "Weitere Zeilen in der vollständigen Tabelle: {n}",
+  "openFull": "In voller Größe öffnen",
+  "pointerOff": "Nicht mehr auf diese Schaltfläche hinweisen",
+  "tab": {
+    "upg-100": {
+      "lead": "Alle unerreichten Volksgruppen dieser Liste, rund 2.100, zusammengefasst in 27 Listen von fünfzig bis hundert. Jede Liste lässt sich als Poster, Gebetspaket und Kartenset drucken, sodass ein Jünger, eine Gemeinde oder ein Leiter eine ganze Liste im Gebet tragen kann, mit Namen.",
+      "takeaway": "für jede Zone ein Wandposter, ein Gebetsheft zum Weitergeben und ein Satz Gebetskarten. Das Beispiel unten ist die Zone mit den meisten Menschen in Volksgruppen, unter denen noch niemand Gemeinden gründet."
+    },
+    "cities-internet": {
+      "lead": "Sehen Sie, wie weit das Internet in jedem Land reicht, in dem unerreichte Volksgruppen leben. Tippen Sie auf ein Land für die Zahl der Menschen, die dort online sind, und die Plattformen, die sie nutzen, oder auf einen Punkt für eine Volksgruppe.",
+      "takeaway": "Jedes Land, in dem eine unerreichte Volksgruppe lebt, gestaffelt nach dem Anteil der Menschen, die das Internet nutzen — damit Sie digital erreichbares Gebiet von Orten unterscheiden können, an denen nur wenige online sind. Die Zahlen sind national (Indien zusätzlich nach Bundesstaat, aus einer Erhebung von 2019–21) und tragen ihr Erhebungsjahr; unbekannt heißt ungemessen, nie angenommen."
+    },
+    "gospel-resources": {
+      "lead": "Sehen Sie, was jede unerreichte Volksgruppe schon in ihrer eigenen Sprache hat: Bibel, Audio, den JESUS-Film, Bibelvideos und Jüngerschaftstraining, jeweils mit Link. Tippen Sie auf ein Land, um seine Gruppen aufzulisten, oder auf einen Punkt, um die Ressourcen einer Gruppe zu öffnen.",
+      "takeaway": "Bibeltext, Audio, Film, Bibelvideo, Schulung — und was noch fehlt. Klicken Sie auf ein Land, um seine Gruppen zu sehen, oder auf eine Gruppe für ihr eigenes Blatt mit funktionierenden Links zu jeder gefundenen Ressource. „Nichts gefunden“ heißt: nicht in den von diesem Build geprüften Quellen enthalten — nie ein Beweis, dass nichts existiert."
+    },
+    "dashboard-plus-grid": {
+      "lead": "Alle unerreichten Volksgruppen in einer Ansicht: Filtern Sie nach Volk, Ort, Sprache, Religion oder Gebet, und Karte, Tabelle und Summen grenzen sich gemeinsam ein. Hier legen Sie Ihren Blick auf die Arbeit fest: wen Sie jetzt erreichen und wen Sie als Nächstes vorbereiten.",
+      "takeaway": "Die gefilterten Zeilen als Tabelle."
+    },
+    "research-map-plus-grid": {
+      "lead": "Eine einfache, lehrreiche Karte der unerreichten Volksgruppen: Suchen Sie nach Volksgruppe, Ort, Sprache oder Religion, und Karte und Liste grenzen sich gemeinsam ein. Die Gebets- und Engagement-Ebenen zeigen auf einen Blick, wie weit Gebet und Arbeit schon reichen."
+    },
+    "prayer-map": {
+      "lead": "Eine Gebetskarte für die Volksgruppen auf der Gebetsliste von DOXA, die auf einen Blick zeigt, für wen gebetet wird und wer noch wartet. Stellen Sie sie auf jede Website in Ihrem Netzwerk, damit jeder Besucher dasselbe Bild sieht und sich derselben Bewegung anschließt.",
+      "takeaway": "Eine Volksgruppe, für die noch niemand betet, und ein Link zu ihrer Gebetsseite."
+    },
+    "regions-dashboard": {
+      "lead": "Finden Sie die unerreichten Volksgruppen jeder Region und jedes Landes. Unter jeder Region druckt „Länderposter ansehen“ das Poster, das Gebetspaket oder das Kartenset eines beliebigen Landes.",
+      "takeaway": "Öffnen Sie ein Land, um seine Volksgruppen zu sehen. Unter jeder Region druckt „Länderposter ansehen“ das Poster, das Gebetspaket oder das Kartenset eines Landes.",
+      "note": "Poster, Pakete und Karten entstehen in Ihrem Browser für jedes Land außer Indien."
+    }
+  },
+  "col": {
+    "peopleGroup": "Volk",
+    "country": "Land",
+    "region": "Region",
+    "population": "Bevölkerung"
+  },
+  "tabExamples": "Beispiele",
+  "tabStrategy": "Strategie"
+}

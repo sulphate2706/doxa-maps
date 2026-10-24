@@ -1,0 +1,16 @@
+{
+  "_comment": "One preset of the capability-5 shell. provider:'maplibre' marks the generated standalone page TOKEN-FREE (generate-tree TOKEN_FREE), so the shell mounts at once: the shell paints no map itself, its tabs do, each with its own token ladder. The meta.json type still wins over the preset signal, so this stays capability 5.",
+  "profile": "posterverse",
+  "instances": [
+    {
+      "id": "app",
+      "title": "Posterverse — every poster plugin (app shell)",
+      "props": {
+        "profile": "posterverse",
+        "provider": "maplibre",
+        "instanceId": "posterverse-app",
+        "heading": "Posterverse"
+      }
+    }
+  ]
+}

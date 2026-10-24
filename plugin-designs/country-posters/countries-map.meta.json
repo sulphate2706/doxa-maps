@@ -1,0 +1,5 @@
+{
+  "type": "single",
+  "label": "Country Posters — countries map",
+  "note": "The map pane of the Country Posters element (country-posters-mfe composes it); also embeddable alone."
+}

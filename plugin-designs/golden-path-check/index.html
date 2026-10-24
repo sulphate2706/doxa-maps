@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · golden-path-check staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- NO map peer script here, on purpose. This is a capability-1 element that draws no tiles,
+       so it must mount with no Mapbox engine and no token — which is the point of a self-test:
+       it has to work when everything else is broken. -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Material LIGHT only (standing palette rule): #f3f3f1 surface, #fff, #3b463d text,
+       #92b195 accent, #d1d4cd border, #6d766e muted. No dark mode. */
+    html, body { background: #f3f3f1; color: #3b463d; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #6d766e; font-size: 13px; margin: 6px 0 24px; }
+    .slot { background: #fff; border: 1px solid #d1d4cd; border-radius: 12px; overflow: hidden; }
+    .slot .label { font: 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: #6d766e;
+      padding: 8px 12px; background: #f3f3f1; border-bottom: 1px solid #d1d4cd; }
+    .frame { padding: 16px; }
+    golden-path-check { display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>golden-path-check · staging</h1>
+    <p class="sub">
+      The capability-1 self-test of the develop-a-plugin-and-see-it-live path. It reads the
+      <code>manifest.json</code> it was published beside and reports what the catalog contains.
+    </p>
+
+    <div class="slot">
+      <div class="label">&lt;golden-path-check&gt;</div>
+      <div class="frame">
+        <golden-path-check></golden-path-check>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

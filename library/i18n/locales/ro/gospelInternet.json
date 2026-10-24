@@ -1,0 +1,311 @@
+{
+  "band": {
+    "no": "Sub 25 % online",
+    "nodata": "Fără date",
+    "partial": "25–59 % online",
+    "yes": "60 % sau mai mult online"
+  },
+  "bounded": {
+    "aria": "Mulțime delimitată: crucea în centru, popoarele atinse în interiorul cercului, cele neatinse în exterior",
+    "caption": "În interiorul cercului: atinse. În exterior: neatinse.",
+    "failed": "Tabelul atinse/neatinse nu a putut fi încărcat, așa că acest grafic nu este desenat.",
+    "unknown": "Nedesenate, deoarece statutul lor de atingere nu a corespuns acestui tabel:"
+  },
+  "centered": {
+    "aria": "Mulțime centrată: popoare neatinse așezate după apropierea de un vecin atins, cu săgeți spre centru",
+    "caption": "Fiecare popor stă la distanța sa față de un vecin atins; săgețile arată spre cel care îl așază.",
+    "failed": "Tabelul vecinilor nu a putut fi încărcat, așa că acest grafic nu este desenat.",
+    "reached": "Deja atinse, așadar în centru:",
+    "unmatched": "Nu se află deloc în tabelul vecinilor, așadar nu sunt desenate:",
+    "unplaced": "Nicio relație găsită, așadar neașezate:",
+    "shown": "Grupuri etnice pe inele:"
+  },
+  "centre": {
+    "aria": "Afișează",
+    "bounded": "Mulțime delimitată",
+    "centered": "Mulțime centrată",
+    "map": "Hartă",
+    "tree": "Arborele limbilor"
+  },
+  "charts": {
+    "accessByBand": "Acces în propria limbă, după folosirea internetului în țară",
+    "aria": "Grafice",
+    "bandCaveat": "Folosirea internetului este cifra țării (Banca Mondială), niciodată a grupului.",
+    "gapSub": "Cele mai mari 8 dintre cele afișate, după populație. Faceți clic pentru a deschide unul.",
+    "gapTake": "Doar aceste {k} înseamnă {people} oameni.",
+    "gapTitle": "Cele mai mari grupuri etnice fără nimic în propria limbă",
+    "groups": "Grupuri",
+    "groupsN": "{n} grupuri",
+    "measure": "Numără",
+    "messagingTop": "Aplicația de mesagerie principală, pe țări selectate",
+    "notMeasured": "Nemăsurat",
+    "ntSub": "Limbile grupurilor afișate fără Noul Testament găsit, după numărul vorbitorilor. Roșu: nimic; galben: ceva, dar fără Noul Testament.",
+    "ntTake": "{n} limbi de aici nu au Noul Testament găsit, vorbite de {people} oameni.",
+    "ntTitle": "Ce limbi au cea mai mare nevoie de Noul Testament?",
+    "people": "Oameni",
+    "peopleN": "{n} oameni",
+    "q1sub": "O bară pentru fiecare nivel de acces, pentru grupurile etnice afișate.",
+    "q1take": "{n} din {total} grupuri etnice afișate nu au nimic în propria limbă.",
+    "q1title": "Ce au în propria lor limbă?",
+    "q2sub": "Grupuri etnice fără nimic în limba lor, după cât din țara lor este online.",
+    "q2take": "{online} din cele {n} fără nimic trăiesc în țări unde 60 % sau mai mult folosesc internetul.",
+    "q2title": "Ar putea internetul să-l ducă celor care nu au nimic?",
+    "socialTop": "Platforma socială principală, pe țări selectate",
+    "unitCountries": "țări",
+    "unitGroups": "grupuri etnice",
+    "unitPeople": "oameni",
+    "zeroByBand": "Nimic în propria limbă, după folosirea internetului în țară",
+    "zeroCaveat": "Fiecare are o cale de acces: o limbă punte, o limbă candidată sau o punte în limbajul semnelor."
+  },
+  "col": {
+    "access": "În propria limbă",
+    "band": "Nivel internet",
+    "bridgeTraining": "Instruire (punte)",
+    "country": "Țară",
+    "deafPublisher": "Editură în limbajul semnelor",
+    "internet": "Țara online",
+    "internetYear": "An",
+    "language": "Limbă",
+    "messaging": "Aplicația de mesagerie principală (țară, iOS)",
+    "mobile": "Mobile la 100",
+    "openBench": "Reper TA (FLORES+)",
+    "openBooks": "Cărți biblice (eBible)",
+    "openData": "Date deschise (din 5)",
+    "openGrammar": "Gramatică (Glottolog)",
+    "openSpeech": "Ore de vorbire (Common Voice)",
+    "openWiki": "Wikipedia",
+    "platform": "Platforma principală (țară)",
+    "praying": "Oameni care se roagă",
+    "province": "Stat / provincie (aprox.)",
+    "resources": "Resurse găsite",
+    "stateMen": "Stat online: bărbați",
+    "stateWomen": "Stat online: femei",
+    "training": "Instruire (propria limbă)",
+    "translatedBy": "Tradus de",
+    "wayIn": "Cale de acces"
+  },
+  "combos": {
+    "audioOnline": "Aud, dar nu citesc, țară online",
+    "deaf": "Există o punte în limbajul semnelor",
+    "digitalNow": "Nimic în limba lor, țară online 60 %+",
+    "indiaChinaGap": "India și China: nimic în limba lor",
+    "none": "Totul — alegeți un filtru sau o combinație",
+    "offlineGap": "Nimic în limba lor, țară mai mult offline",
+    "selection": "Selecția dvs.",
+    "telegram": "Nimic în limba lor, țară Telegram",
+    "try": "Încercați o combinație",
+    "whatsapp": "Nimic în limba lor, țară WhatsApp"
+  },
+  "detail": {
+    "hear": "Văd sau aud, nu citesc",
+    "none": "Nimic găsit",
+    "read": "Citesc",
+    "read_watch": "Citesc și văd",
+    "stories": "Doar povestiri"
+  },
+  "drawer": {
+    "approx": "aproximativ",
+    "bridgeHas": "În limba punte",
+    "conn": "Conectivitate",
+    "copied": "Link copiat",
+    "copyLink": "Copiază linkul către acest grup",
+    "deafLink": "Scriptura în limbajul semnelor",
+    "foundNote": "Găsit în sursele verificate.",
+    "messaging": "Aplicații de mesagerie (descărcări iOS)",
+    "mobileNote": "Abonamente la 100 de persoane ({year}); o persoană poate avea mai multe.",
+    "nfhsNote": "NFHS-5, 2019–21, 15–49 ani: cifra statului, nu a grupului.",
+    "noFeed": "Această țară nu este în fluxul Apple: aplicațiile sale de mesagerie sunt necunoscute aici, nu absente.",
+    "noneNote": "Nu s-a găsit nimic în propria lor limbă în sursele verificate. Asta nu înseamnă că nu există nimic.",
+    "notInSource": "nu apare în această sursă",
+    "openCheck": "Date deschise solide, dar niciun Nou Testament găsit: verificați întâi, poate există unul pe care sursele l-au ratat.",
+    "openCount": "Date deschise",
+    "openNote": "Surse: Glottolog (CC BY 4.0), eBible, Wikipedia (CC BY-SA 4.0), Common Voice (CC0), FLORES+ (CC BY-SA 4.0). O numărătoare de fapte numite, nu un scor.",
+    "openOf": "{n} din 5 semnale",
+    "openTitle": "Date deschise pentru a începe o traducere",
+    "own": "În propria lor limbă",
+    "people": "{n} oameni",
+    "platformNote": "Ponderea vizitelor web venite de la platformele sociale urmărite în țară (StatCounter). Aplicațiile de mesagerie precum WhatsApp nu sunt măsurate.",
+    "platforms": "Platforme în țară",
+    "praying": "{n} oameni se roagă pe DOXA",
+    "social": "Platforme sociale (vizite web)",
+    "stateOnline": "{state}: a folosit vreodată internetul",
+    "way": "Cale de acces",
+    "wayIn": "Cale de acces",
+    "wayNote": "O limbă vecină, nu o recomandare: dacă un grup o vorbește este o întrebare pentru cineva de pe teren.",
+    "wbSource": "Banca Mondială, {year}: cifra țării",
+    "womenMen": "femei {w} · bărbați {m}",
+    "gospelAudio": "Înregistrări ale Evangheliei",
+    "training": "Instruire pentru ucenicizare"
+  },
+  "facet": {
+    "access": "Acces în propria lor limbă",
+    "all": "Arată toate ({n})",
+    "aria": "Filtre",
+    "band": "Folosirea internetului în țară",
+    "bandNote": "Cifra țării (Banca Mondială), niciodată a grupului.",
+    "country": "Țară",
+    "fewer": "Arată mai puține",
+    "find": "Caută…",
+    "findIn": "Caută în {what}",
+    "language": "Limbă",
+    "messaging": "Aplicația de mesagerie principală (țară)",
+    "messagingNote": "Cea mai descărcată în App Store-ul Apple al țării: doar iOS, un clasament de descărcări, nu de utilizare.",
+    "province": "India și China: stat sau provincie",
+    "provinceNote": "Aproximativ: dedus din punctul grupului pe hartă, nu dintr-un oraș.",
+    "region": "Regiune",
+    "religion": "Religie",
+    "wayIn": "Cale de acces când nu există nimic în limba lor"
+  },
+  "grid": {
+    "aria": "Grupuri etnice selectate",
+    "columns": "Coloane",
+    "count": "{n} din {total} grupuri etnice",
+    "empty": "Niciun grup etnic nu corespunde acestor filtre.",
+    "exported": "{n} rânduri exportate (copiate și descărcate).",
+    "openCapped": "Deschide primele {n} selectate.",
+    "openInGospel": "Deschide în Resurse ale Evangheliei",
+    "selectRow": "Selectează {name}"
+  },
+  "headline": {
+    "a": "{zero} din {total} grupuri etnice nu au nimic în propria lor limbă;",
+    "b": "{online} dintre ele trăiesc în țări unde 60 % sau mai mult folosesc internetul."
+  },
+  "kind": {
+    "audio": "Audio",
+    "film": "Film",
+    "scripture": "Scriptura",
+    "stories": "Povestiri",
+    "video": "Video"
+  },
+  "legend": {
+    "band": "Folosirea internetului în țară (Banca Mondială)",
+    "hide": "Ascunde legenda",
+    "modeMen": "Internet: bărbați",
+    "modeWomen": "Internet: femei",
+    "modeZero": "Nimic în propria limbă",
+    "nfhs": "Doar India: ponderea femeilor sau a bărbaților de 15–49 ani care au folosit vreodată internetul, pe state. NFHS-5, 2019–21. China nu are o sursă provincială verificată.",
+    "pins": "În propria lor limbă",
+    "provinces": "India și China pe provincii",
+    "show": "Legendă"
+  },
+  "level": {
+    "bridge": "Nimic în propria limbă · doar punte",
+    "own": "Ceva în propria limbă",
+    "zero": "Nimic în propria limbă · încă nicio cale de acces"
+  },
+  "listChip": "Listă de grupuri etnice aleasă de această pagină",
+  "loadError": "Datele panoului nu s-au încărcat.",
+  "loadingTable": "Se încarcă tabelul…",
+  "map": {
+    "aria": "Harta grupurilor etnice, colorată după cât folosește internetul fiecare țară"
+  },
+  "notice": {
+    "pin": "Punctul reprezintă acest popor, nu un oraș.",
+    "pins": "Un punct reprezintă un popor, nu un oraș. {n} grupuri împart un punct cu alt grup.",
+    "shares": "Își împarte punctul cu alte {n} grup(uri).",
+    "sources": "Surse:",
+    "standing": "Punctele sunt aproximative: un punct reprezintă un popor, nu un oraș. Cifrele de internet sunt ale țării sau ale statului indian, niciodată ale grupului. „Găsit” înseamnă găsit în sursele verificate."
+  },
+  "panel": {
+    "charts": "Grafice",
+    "filters": "Filtre",
+    "grid": "Grupuri",
+    "map": "Hartă"
+  },
+  "res": {
+    "aria": "Resurse ale Evangheliei pentru limbile selectate",
+    "count": "{n} resurse în {langs} din {all} limbi selectate",
+    "empty": "Nu s-a găsit nimic pentru limbile selectate.",
+    "groups": "Grupuri aici",
+    "note": "O limbă fără rând aici nu are nimic în sursele verificate.",
+    "resource": "Resursă",
+    "scope": "Domeniu",
+    "source": "Sursă",
+    "type": "Tip"
+  },
+  "rings": {
+    "band": {
+      "dialect": "Același dialect",
+      "language": "Aceeași limbă",
+      "family": "Aceeași familie de limbi",
+      "geography": "Doar apropiere"
+    },
+    "centre": "Crucea: un popor atins (2 % sau mai mulți evanghelici).",
+    "closest": "Cel mai apropiat popor atins:",
+    "culture": {
+      "same": "Același popor",
+      "near": "Cultură apropiată",
+      "different": "Cultură diferită"
+    },
+    "example": "Exemplu:",
+    "explain": {
+      "dialect": "Un popor atins vorbește exact aceeași variantă de limbă (același cod ISO 639-3).",
+      "language": "Un popor atins vorbește altă variantă a aceleiași limbi, de exemplu araba egipteană și cea najdi.",
+      "family": "Cea mai apropiată limbă comună este doar una înrudită, din aceeași familie de limbi.",
+      "geography": "Nicio limbă comună: un popor atins trăiește în aceeași țară sau la mai puțin de 600 km.",
+      "same": "Este același popor, trăind în altă parte.",
+      "near": "Este un alt popor din același grup de popoare IMB.",
+      "different": "Este un popor dintr-un alt grup."
+    },
+    "footCentre": "Atinse, în centru",
+    "footUnmatched": "Nu se află în tabelul vecinilor, nedesenate",
+    "footUnplaced": "Niciun popor atins înrudit găsit, neașezate",
+    "fullscreen": "Ecran complet",
+    "intro": "Fiecare popor neatins se află pe un inel, după cât de aproape este de cel mai apropiat popor atins. Cu cât inelul e mai aproape, cu atât mai firesc poate călători evanghelia.",
+    "none": "Niciun popor din această vedere nu se află pe acest inel.",
+    "ring": "Inel",
+    "showAll": "Arată toate inelele",
+    "source": "Atins = 2 % sau mai mulți evanghelici, definiția IMB folosită de peoplegroups.org. Apropierea de limbă și cultură sunt aproximări din codurile sale de limbă și grupurile de popoare.",
+    "title": "Ce înseamnă inelele"
+  },
+  "strength": {
+    "moderate": "moderată",
+    "strong": "puternică"
+  },
+  "table": {
+    "aria": "Tabel",
+    "groups": "Grupuri etnice",
+    "resources": "Resurse ale Evangheliei"
+  },
+  "title": "Accesul la Evanghelie prin internet",
+  "tree": {
+    "aria": "Arborele limbilor: fiecare familie de limbi a acestor grupuri etnice, colorată după ce există în fiecare limbă",
+    "branch": "Ramură",
+    "dialect": "Dialect",
+    "family": "Familie",
+    "groupsN": "{n} grupuri etnice",
+    "inherited": "Culoarea limbii sale: nicio sursă nu catalogează resursele pe dialecte.",
+    "language": "Limbă",
+    "languagesHere": "limbi aici",
+    "legendTitle": "În propria lor limbă",
+    "levels": "Familie › ramură › limbă › dialect. O familie sau o ramură arată cea mai rea culoare din interior. Un dialect arată culoarea limbii sale, mai deschisă: resursele sunt catalogate pe limbă, nu pe dialect. Faceți clic pe un cerc pentru a restrânge panoul la el.",
+    "poster": "Poster",
+    "poster3ft": "3 × 3 ft",
+    "poster4ft": "4 × 4 ft",
+    "posterOmitted": "{n} nume omise acolo unde s-ar suprapune peste altul; fiecare cerc este desenat.",
+    "posterPrint": "Tipărește",
+    "posterSizeAria": "Dimensiunea posterului",
+    "posterTitle": "Accesul la Evanghelie, familie de limbi cu familie de limbi",
+    "sources": "Arbore: Glottolog (CC BY 4.0). Resurse: eBible, Faith Comes By Hearing, Scripture Earth, PNG.Bible, filmul JESUS, Global Recordings și altele, după ISO 639-3.",
+    "st": {
+      "g": "Noul Testament sau Biblia întreagă găsite",
+      "r": "Nimic găsit",
+      "y": "Ceva găsit, dar fără Noul Testament"
+    },
+    "via": "Tot pe această cale:"
+  },
+  "view": {
+    "aria": "Vedere",
+    "board": "Panou",
+    "platforms": "Platforme",
+    "province": "India și China pe provincii",
+    "zero": "Nimic în propria limbă"
+  },
+  "wayIn": {
+    "bridge": "Limbă punte",
+    "candidate": "Limbă candidată",
+    "candidateText": "{lang} (candidată, {pct} % din țară)",
+    "deaf": "Punte în limbajul semnelor",
+    "deafText": "{lang} (limbajul semnelor)"
+  }
+}

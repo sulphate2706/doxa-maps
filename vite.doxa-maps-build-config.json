@@ -1,0 +1,47 @@
+{
+  "//": "THE single build-config for this STANDALONE doxa-maps bundler. Edit this ONE file, then run `bun run build`. FIELDS: 'name' = the output folder name the tree is written as. 'paths' = EXTRA folders to copy the whole tree into. EMPTY and normally stays empty: the build writes into public/<name>/ directly, because public/ is the committed served web-root rather than something assembled at build time. STANDALONE NOTE (2026-07-30): the old value ['../../../public/js'] pointed into the dx-life Nuxt app's public dir \u2014 meaningless in this repo, and the whole point of standing this bundler up on its own is that dx-life consumes maps from the CDN instead of hosting a copy. So 'paths' is now EMPTY: the tree is written to ./app/<name>/ only, and that ONE tree is what all three targets consume (Railway/CDN static host, Capacitor webDir, local staging). If you ever want to ALSO publish into a local dx-life checkout, add its path back here. 'embedBaseUrl' = public URL where the <name>/ tree is served, used to build ABSOLUTE paste-anywhere embed snippets for partner sites ('' = RELATIVE ./bundle/profile/... URLs so the dropped folder is position-independent \u2014 keeps the drop-portability gate green and is what Capacitor needs, since the app loads from https://localhost). 'tokenUrl' = the endpoint every generated map page fetches its Mapbox token from \u2014 a URL, NOT a secret. Set it ABSOLUTE (https://doxa.life/api/maps/token) so both a CDN-hosted folder and the mobile app work; the token stays remote and only the URL ships. window.MAP_TOKEN_URL overrides at runtime. Your endpoint must send CORS headers permitting https://localhost (the Capacitor origin) and any partner domain. 'token' = OPT-IN literal token baked into every page \u2014 LEAVE EMPTY; prefer tokenUrl. 'assetsBaseUrl' = where the SHARED asset tree (previews, posters, boundaries) is served from. Vite no longer copies public/ into each bundle (publicDir:false in vite.config.js), so pages are TOLD where the one shared copy lives. EMPTY = a relative path derived per page depth, which keeps a dropped folder self-contained under one web-root. Set it ABSOLUTE (https://maps.doxa.life/assets) for partner embeds and the mobile app, where there is no shared web-root to climb to. Same modular pattern as tokenUrl and window.MAP_APP_API_URL. 'dropin.include' = THE drop-in contract, declared here and nowhere else: the only root entries of public/ that `sync-dropin --from-config` copies into a host \u2014 index.html (the generated root page \u2014 THE PLUGIN STUDIO host, written by internal/generate-tree.mjs; as of 2026-09-22 it mounts <plugin-studio>, it is no longer the staging gallery), __gallery/ (the ARCHIVED bundle-index gallery, internal/generate-gallery.mjs, kept reachable at /__gallery in BOTH the dev and built trees), assets/ (data) and <name>/ (the bundle folders + manifest.json); with --prune everything else in the host's drop-in folder is removed, and `public-hygiene-check --strict` fails on any other root entry. 'dropin.exclude' = built files INSIDE the allowlist that are still not shipped: data no page fetches (the full people-groups CSV, the tables only internal scripts read, the table index). They stay in public/ for the scripts; `sync-dropin --from-config` skips them and counts them as 'excluded (not shipped)', and a copy already in the host is removed like any stale file.",
+  "name": "dx-maps",
+  "paths": [],
+  "embedBaseUrl": "",
+  "//shareBaseUrl": "The PUBLIC address of this tree (https, no trailing slash) for the Share menu's Embed tab only: its URL, Iframe and JavaScript codes point there. Empty (the default, committed): the codes point at the tree the bundle is served from, so the stable site gives its own public URLs by construction. Set it at deploy time (or per page: window.MAP_SHARE_BASE_URL, or per embed: profile-config.shareBaseUrl) to send every code to one address. It does NOT touch the manifest's snippets (embedBaseUrl).",
+  "shareBaseUrl": "",
+  "assetsBaseUrl": "",
+  "tokenUrl": "",
+  "token": "",
+  "dropin": {
+    "dest": "../doxa-life/public",
+    "include": [
+      "README.md"
+    ],
+    "exclude": [
+      "{tree}/assets/people-groups/people_groups.csv",
+      "{tree}/assets/tables/open-doors.json",
+      "{tree}/assets/tables/platform-reachability.json",
+      "{tree}/assets/tables/index.json"
+    ]
+  },
+  "apiBaseUrl": "https://pray.doxa.life",
+  "gatedProfiles": [
+    "key-cities"
+  ],
+  "qaWidget": false,
+  "posterSources": true,
+  "//posterSources": [
+    "Ship posters/<id>.html (the 28 poster SOURCES, 27 MB raw, 7 MB gzipped) in <tree>/assets/posters/, without",
+    "the 41 MB of .webp rasters. The prayer packet's first page (the zone map) and the wall's print fallback",
+    "fetch these; without them the map page printed blank and the fetch failure was swallowed. The copies",
+    "are byte-identical to data/posters/, so git stores each file once. check:poster-print-fallback asserts it."
+  ],
+  "//token": [
+    "THE PUBLIC MAPBOX KEY, BAKED ON PURPOSE (ruled 2026-09-21): every map may use the pk from the",
+    "API, and a host that wants to set a Mapbox sk can. This is token-ladder",
+    "RUNG 3 (see internal/generate-tree.mjs:595): rungs 1-3 are used DIRECTLY with no network call,",
+    "so baking it makes every map work out of the box on ANY host \u2014 including one with no",
+    "/api/maps/token endpoint and no CORS on the fallback, which is exactly why maps on the live test host",
+    "were blank. SOURCE OF TRUTH: https://doxa.life/api/maps/token (see",
+    "_qa-cycle/01-ideation-research/REFERENCE-mapbox-token-endpoint.md). Re-fetch from there rather",
+    "than copying this literal around. A pk. is a PUBLIC key protected by URL restrictions, not by",
+    "secrecy \u2014 never put an sk. here; check:public-hygiene still fails the build on sk./tk."
+  ],
+  "//tokenUrl-2026-09-22": "EMPTIED 2026-09-22. It pointed at https://doxa.life/api/maps/token, which serves a URL-RESTRICTED token \u2014 tiles 403 from every origin except doxa.life, so the basemap rendered as an empty void while pins drew fine (reported exactly so: the pins load, but not the underlying map). That endpoint sits ABOVE the baked token in the ladder, so leaving it set would fetch the broken token and overwrite the good one. Measured: the baked token = 200 from no-Referer, the live test host AND localhost; the domain-restricted token = 403 from all three."
+}

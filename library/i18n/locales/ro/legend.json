@@ -1,0 +1,97 @@
+{
+  "title": {
+    "adoption": "Progresul adopției",
+    "affinityBlocs": "Blocuri de afinitate",
+    "doxaRegions": "Regiuni Doxa",
+    "engagement": "Progresul implicării",
+    "gospelResources": "Resurse ale Evangheliei",
+    "languageFamilies": "Familii de limbi",
+    "prayer": "Progresul rugăciunii",
+    "upg100List": "Lista mea UPG100",
+    "batchSelect": "Selecție multiplă"
+  },
+  "header": {
+    "collapsed": "Legendă",
+    "peopleGroupFallback": "Grup de popoare",
+    "default": "Legendă"
+  },
+  "prayer": {
+    "needsPrayer": "Necesită rugăciune",
+    "hasPrayer": "Are rugăciune",
+    "fullPrayerCoverage": "Acoperire completă de rugăciune"
+  },
+  "progress": {
+    "title": "Progres",
+    "covered": "{covered} din {total} grupuri de popoare acoperite în rugăciune · {pct}%",
+    "short": "{covered} din {total} · {pct}%",
+    "segment": "{label} · {count} · {pct}%"
+  },
+  "engagement": {
+    "needsEngagement": "Necesită implicare",
+    "hasEngagement": "Are implicare"
+  },
+  "adoption": {
+    "needsAdoption": "Necesită adopție",
+    "hasAdoption": "Are adopție"
+  },
+  "columns": {
+    "upgs": "UUPGs",
+    "population": "Populație",
+    "name": "Nume"
+  },
+  "footer": {
+    "total": "Total"
+  },
+  "sortByUpgs": "Sortează după UUPG",
+  "sortByPop": "Sortează după populație",
+  "colLabel": {
+    "religion": "Religii UUPG",
+    "prayer": "Starea rugăciunii",
+    "engagement": "Starea implicării",
+    "adoption": "Starea adopției",
+    "status": "Stare"
+  },
+  "titleBar": {
+    "legend": "Legendă",
+    "peopleGroups": "Popoare",
+    "wagfRegions": "Regiuni WAGF",
+    "languages": "Limbi"
+  },
+  "tabInfo": {
+    "upg100Region": "Regiune — sortează listele UPG100 după zona lumii (Africa, India, Orientul Mijlociu, Surzi, …). Totalurile sunt UUPG-urile și populația însumate din fiecare listă de dedesubt.",
+    "upg100Zone": "Liste UPG100 — fiecare este o listă de rugăciune a grupurilor etnice neatinse dintr-o zonă și este ceea ce harta desenează și colorează. Fiecare listă se tipărește ca propriul pachet.",
+    "upg100Group": "Grup etnic — grupurile neatinse dintr-o listă, mai întâi cele cu cea mai mare nevoie de rugăciune. Fiecare punct de pe hartă este unul dintre ele.",
+    "family": "Familie de limbi — un grup de limbi provenite dintr-un strămoș comun (de ex. indo-europeană, afro-asiatică).",
+    "language": "Limbă — un sistem de comunicare folosit de un popor (de ex. arabă, bengaleză, hindi).",
+    "dialect": "Dialect/Variantă — o formă regională sau socială a unei limbi (de ex. araba sudaneză; limbajul semnelor pakistanez).",
+    "bloc": "Bloc de afinitate — cea mai largă grupare, după înrudirea culturală, lingvistică și geografică (de ex. popoarele malaieze, popoarele din Asia de Sud, surzii, lumea arabă).",
+    "cluster": "Grup — o grupare mai fină în interiorul unui bloc (de ex. Borneo-Kalimantan între popoarele malaieze). Rândurile poartă „(grup)”, spre a le deosebi de popoare.",
+    "group": "Popor — o identitate etnolingvistică în sine, independentă de țară. Rândurile poartă „(popor)”. Același popor poate trăi în multe țări (surzii, de pildă, în peste o sută).",
+    "pgic": "Popor în țară — câte un rând pentru fiecare popor din fiecare țară în care trăiește (de ex. „Abai Sungai, Malaysia”). Rândurile poartă „(popor în țară)”.",
+    "region": "Regiune WAGF — macroregiunea de care ține o țară (de ex. Asia, Africa). Fiecare are culoarea ei pe hartă.",
+    "block": "Bloc WAGF — subdiviziunea din interiorul unei regiuni (de ex. Asia de Sud-Est, Africa de Vest).",
+    "country": "Țară — țările una câte una, ordonate după populația neatinsă din blocul lor."
+  },
+  "a11y": {
+    "expandRow": "Extinde {label}",
+    "collapseRow": "Restrânge {label}",
+    "clearSelection": "Șterge selecția",
+    "goUp": "Urcă la {label}"
+  },
+  "export": {
+    "poster": "Afiș",
+    "packet": "UPG100",
+    "packetExplain": "O listă de rugăciune de aproximativ 50-100 de popoare neatinse — o persoană poate purta una.",
+    "packetAria": "Nivelul de detaliu al pachetului de rugăciune",
+    "packetFull": "Detaliu complet",
+    "packetLightweight": "Redus"
+  },
+  "noDataAtThisLevel": "Nu există date la acest nivel",
+  "exportButton": "Exportă",
+  "exportSelection": "Exportă selecția",
+  "loadingRows": "Se încarcă {label}…",
+  "loadingData": "Se încarcă datele…",
+  "showingTop": "Se afișează primele {n} din {m}",
+  "useGeocoderHint": "folosește căutarea de mai sus pentru a le găsi pe celelalte",
+  "noList": "Nicio listă încărcată."
+}

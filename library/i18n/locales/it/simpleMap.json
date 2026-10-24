@@ -1,0 +1,9 @@
+{
+  "loading": "Caricamento della mappa…",
+  "initFailed": "La mappa non è partita. È un problema della chiave della mappa o della connessione.",
+  "help": {
+    "what": "Questa mappa mostra i popoli non raggiunti del mondo: comunità senza un vero accesso al Vangelo.",
+    "how": "Usa le schede (se presenti) per cambiare vista. Clicca su un punto per saperne di più su un popolo.",
+    "source": "Dati da"
+  }
+}

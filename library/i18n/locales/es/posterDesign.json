@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "Ver todos los detalles",
+  "showFullDetailsAria": "Ver todos los detalles de {label}",
+  "tab": {
+    "styles": "Estilos",
+    "sizes": "Tamaños"
+  },
+  "styles": {
+    "heading": "Estilos de póster",
+    "intro": "Todas las plantillas de póster en un solo lugar, dibujadas desde la biblioteca con datos de ejemplo. Cada tarjeta lleva el nombre de su configuración, para que puedas pedirle a un agente exactamente esa."
+  },
+  "sizes": {
+    "heading": "Tamaños de póster",
+    "intro": "Todos los tamaños en que se puede imprimir un póster, dibujados a escala. Los tamaños grandes se imprimen en varias hojas que se superponen en la pared; la franja roja es donde se pega la hoja siguiente.",
+    "lineup": "Todos los tamaños lado a lado, a escala",
+    "paper": "Papel de impresora estándar",
+    "paperLetter": "Carta (EE. UU.), 8,5 × 11 in",
+    "paperA4": "A4, 210 × 297 mm",
+    "dimsFt": "{w} × {h} ft",
+    "dimsIn": "{w} × {h} in",
+    "dimsInOne": "{v} in",
+    "rowSheets": "Hojas",
+    "rowSheet": "Cada hoja",
+    "rowOverlap": "Superposición pegada",
+    "rowPhotos": "Fotos junto a los nombres",
+    "rowPrint": "Cómo se imprime",
+    "yes": "Sí",
+    "no": "No",
+    "printHome": "Cualquier impresora doméstica",
+    "printShop": "Una imprenta (un PDF, una página por hoja)",
+    "layoutNote": "Las hojas muestran el diseño del póster de país de 3 × 3 ft en cada tamaño: el encabezado, el mapa, los nombres, la tabla y el pie con la Escritura. El póster dibujado en cada tamaño aparecerá en Estilos a medida que esté disponible.",
+    "sideLanes": "{dims}, columnas laterales",
+    "packetPage1": "{paper} (página 1 del paquete de oración)",
+    "panels": "{dims}, paneles: {n}",
+    "anySize": "Cualquier tamaño de la tabla de tamaños compartida"
+  },
+  "family": {
+    "mapSheet": "Hojas de mapa",
+    "packet": "Paquete de oración",
+    "cards": "Tarjetas de oración",
+    "wall": "Paneles de pared",
+    "mapPrint": "Impresión del mapa",
+    "plugins": "De otros complementos",
+    "experimental": "Experimentales (en desarrollo)",
+    "upgZone": "Carteles de zonas UPG100"
+  },
+  "tpl": {
+    "mapSheetCountry": "Hoja de mapa del país",
+    "mapSheetPacketPage": "Página de mapa del paquete",
+    "packetFull": "Paquete de oración, completo",
+    "packetLightweight": "Paquete de oración, ligero",
+    "cards": "Tarjetas de oración",
+    "blessPanels": "Paneles del muro Bendecir",
+    "mapPrint": "Impresión del mapa",
+    "upgZonePoster": "Cartel de zona UPG100",
+    "upgZonePacket": "Paquete de oración UPG100, página 1"
+  },
+  "missing": {
+    "bless": "Las hojas, las franjas de pegado y el lugar de las filas de tarjetas vienen de la geometría de paneles compartida; las tarjetas se muestran como un diseño, porque el muro Bendecir dibuja sus tarjetas en su propio complemento.",
+    "mapPrint": "Esta plantilla imprime el mapa en vivo que está mirando el lector, así que no tiene imagen de ejemplo.",
+    "noCountryAtSize": "Hoy ningún país se imprime en este tamaño: la India, el único que lo hacía, ahora se imprime solo a 5 × 8 ft. Aquí se dibuja con un país de muestra para mostrar la plantilla."
+  },
+  "details": {
+    "configName": "Nombre de la configuración",
+    "copyName": "Copiar",
+    "size": "Tamaño",
+    "fileSize": "Tamaño del archivo",
+    "fileSizeUnknown": "Se mide al dibujar el póster",
+    "settings": "Ajustes",
+    "sample": "Datos de ejemplo",
+    "renderer": "Generador",
+    "legacy": "Tamaño heredado: todavía se imprime, pero el selector de impresión ya no lo ofrece.",
+    "forAgents": "Para usar esta plantilla, dile a un agente: usa la configuración {name}.",
+    "openPage": "Abrir su página"
+  },
+  "templateCount": "{n} plantilla | {n} de plantillas | {n} plantillas",
+  "fromPlugin": "Lo crea su propio complemento. Mostrar todos los detalles lo muestra en vivo."
+}

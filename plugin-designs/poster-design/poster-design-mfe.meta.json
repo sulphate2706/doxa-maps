@@ -1,0 +1,9 @@
+{
+  "type": "nested-elements-mfe",
+  "label": "Poster Design — Styles + Sizes",
+  "composes": [
+    "poster-design/poster-styles",
+    "poster-design/poster-sizes"
+  ],
+  "note": "The two-tab Poster Design element, the same shape as country-posters-mfe: the shared ViewSelect over Styles at [0,0] and Sizes at [1,0], each pane its own element. Styles renders the library's PosterWall with two host seams (headerAction for Show full details, previewSrc for thumbnails drawn from the library). Sizes reads the one shared size table."
+}

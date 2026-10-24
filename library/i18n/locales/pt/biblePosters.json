@@ -1,0 +1,30 @@
+{
+  "title": "Cartazes bíblicos",
+  "book": "Livro",
+  "language": "Idioma",
+  "size": "Tamanho",
+  "print": "Imprimir",
+  "close": "Fechar",
+  "loading": "Carregando o livro…",
+  "fetchFailed": "Não foi possível carregar este texto. Tente novamente.",
+  "fitsAt": "Cabe a {pt} pt em {cols} colunas.",
+  "tooSmall": "Pequeno demais para ler neste tamanho.",
+  "trySize": "tente {size}",
+  "books": {
+    "ACT": "Atos",
+    "MAT": "Mateus",
+    "JHN": "João",
+    "MRK": "Marcos",
+    "LUK": "Lucas",
+    "HEB": "Hebreus",
+    "GEN": "Gênesis",
+    "1JN": "1 João",
+    "COL": "Colossenses",
+    "1CO": "1 Coríntios",
+    "1PE": "1 Pedro",
+    "JOS": "Josué"
+  },
+  "posterDesign": {
+    "label": "Cartaz de um livro da Bíblia"
+  }
+}

@@ -1,0 +1,118 @@
+{
+ "_about": "NFHS-5 state name -> gb-IND-ADM1-full.geojson shapeName. null = no geometry to draw it on, with the reason. Checked by build-adm1-internet.mjs.",
+ "map": {
+  "Andaman & Nicobar Islands": {
+   "adm1": "Andaman and Nicobar Islands"
+  },
+  "Andhra Pradesh": {
+   "adm1": "Andhra Pradesh"
+  },
+  "Arunachal Pradesh": {
+   "adm1": "Arunāchal Pradesh"
+  },
+  "Assam": {
+   "adm1": "Assam"
+  },
+  "Bihar": {
+   "adm1": "Bihār"
+  },
+  "Chandigarh": {
+   "adm1": "Chandīgarh"
+  },
+  "Chhattisgarh": {
+   "adm1": "Chhattīsgarh"
+  },
+  "Dadra & Nagar Haveli and Daman & Diu": {
+   "adm1": "Dādra and Nagar Haveli and Damān and Diu"
+  },
+  "Goa": {
+   "adm1": "Goa"
+  },
+  "Gujarat": {
+   "adm1": "Gujarāt"
+  },
+  "Haryana": {
+   "adm1": "Haryāna"
+  },
+  "Himachal Pradesh": {
+   "adm1": "Himāchal Pradesh"
+  },
+  "India": {
+   "adm1": null,
+   "national": true,
+   "reason": "the national row, kept as the national reference"
+  },
+  "Jammu & Kashmir": {
+   "adm1": "Jammu and Kashmīr"
+  },
+  "Jharkhand": {
+   "adm1": "Jhārkhand"
+  },
+  "Karnataka": {
+   "adm1": "Karnātaka"
+  },
+  "Kerala": {
+   "adm1": "Kerala"
+  },
+  "Ladakh": {
+   "adm1": "Ladākh"
+  },
+  "Lakshadweep": {
+   "adm1": "Lakshadweep"
+  },
+  "Madhya Pradesh": {
+   "adm1": "Madhya Pradesh"
+  },
+  "Maharashtra": {
+   "adm1": "Mahārāshtra"
+  },
+  "Manipur": {
+   "adm1": "Manipur"
+  },
+  "Meghalaya": {
+   "adm1": "Meghālaya"
+  },
+  "Mizoram": {
+   "adm1": "Mizoram"
+  },
+  "NCT Delhi": {
+   "adm1": "Delhi"
+  },
+  "Nagaland": {
+   "adm1": "Nāgāland"
+  },
+  "Odisha": {
+   "adm1": "Odisha"
+  },
+  "Puducherry": {
+   "adm1": "Puducherry"
+  },
+  "Punjab": {
+   "adm1": "Punjab"
+  },
+  "Rajasthan": {
+   "adm1": "Rājasthān"
+  },
+  "Sikkim": {
+   "adm1": "Sikkim"
+  },
+  "Tamil Nadu": {
+   "adm1": "Tamil Nādu"
+  },
+  "Telangana": {
+   "adm1": "Telangāna"
+  },
+  "Tripura": {
+   "adm1": "Tripura"
+  },
+  "Uttar Pradesh": {
+   "adm1": "Uttar Pradesh"
+  },
+  "Uttarakhand": {
+   "adm1": "Uttarākhand"
+  },
+  "West Bengal": {
+   "adm1": "West Bengal"
+  }
+ }
+}

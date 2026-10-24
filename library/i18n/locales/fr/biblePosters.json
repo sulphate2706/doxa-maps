@@ -1,0 +1,30 @@
+{
+  "title": "Affiches bibliques",
+  "book": "Livre",
+  "language": "Langue",
+  "size": "Taille",
+  "print": "Imprimer",
+  "close": "Fermer",
+  "loading": "Chargement du livre…",
+  "fetchFailed": "Impossible de charger ce texte. Veuillez réessayer.",
+  "fitsAt": "Tient à {pt} pt sur {cols} colonnes.",
+  "tooSmall": "Trop petit pour être lu à cette taille.",
+  "trySize": "essayez {size}",
+  "books": {
+    "ACT": "Actes",
+    "MAT": "Matthieu",
+    "JHN": "Jean",
+    "MRK": "Marc",
+    "LUK": "Luc",
+    "HEB": "Hébreux",
+    "GEN": "Genèse",
+    "1JN": "1 Jean",
+    "COL": "Colossiens",
+    "1CO": "1 Corinthiens",
+    "1PE": "1 Pierre",
+    "JOS": "Josué"
+  },
+  "posterDesign": {
+    "label": "Affiche d'un livre de la Bible"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kicker": "DOXA · Vision",
+  "title": "Jedes Volk. Jeder Ort.",
+  "tagline": "Von allen Volksgruppen der Welt bis zu denen, für die DOXA betet, aus den Daten gezählt.",
+  "funnelLabel": "Von allen Volksgruppen zu den DOXA-Volksgruppen",
+  "allLabel": "Volksgruppen",
+  "allNote": "jede Volksgruppe in jedem Land, in dem sie lebt",
+  "unreachedLabel": "Unerreicht",
+  "unreachedNote": "unter 2 % Evangelikale",
+  "frontierLabel": "Frontier",
+  "frontierNote": "unter 0,1 % Evangelikale",
+  "doxaLabel": "DOXA-Volksgruppen",
+  "doxaNote": "{frontier} davon sind Frontier",
+  "people": "{n} Menschen",
+  "sources": "Volksgruppen: {imb}, Datenstand {date}. DOXA-Liste: pray.doxa.life, {date2}.",
+  "howCounted": "So wird gezählt",
+  "ruleAll": "Jede Zeile der IMB-Volksgruppendaten: eine Volksgruppe in einem Land.",
+  "ruleUnreached": "IMB-Lostness-Priorität 0 bis 2: weniger als 2 % Evangelikale.",
+  "ruleFrontier": "IMB-Lostness-Priorität 0: weniger als 0,1 % Evangelikale. Eine Teilmenge der Unerreichten.",
+  "ruleDoxa": "Jede Gruppe auf der DOXA-Gebetsliste, den IMB-Daten nach Volk und Land zugeordnet. Nicht alle sind Frontier.",
+  "about": "Über diese Karte"
+}

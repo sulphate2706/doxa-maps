@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · prayer-walk-planner staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ★ FULL-VIEWPORT MOUNT (BUG-PRAYER-WALK-PLANNER-MAP-DOES-NOT-FILL-THE-PAGE). This page used
+       to stage the element inside a centred 1100px card with a fixed 640px .frame — measured on
+       the dev server, the map painted a 781x584 window at y=206 in a 1440x900 viewport, which is
+       exactly the reported defect: the map showed, but did not fill the page.
+       The BUILT leaf already mounts full-viewport; the dev harness now matches it (two-host rule:
+       what a tester sees on the dev server must be what the leaf ships). The client-side API
+       note lives in the component header now — a planner is a full-page tool, not a demo card:
+       document.querySelector('prayer-walk-planner').addPolygon(coords, title) /
+       window.PrayerWalkPlanner.first(). */
+    html, body { height: 100%; background: #f3f3f1; }
+    prayer-walk-planner { position: fixed; inset: 0; display: block; }
+  </style>
+</head>
+<body>
+  <prayer-walk-planner instance-id="staging"></prayer-walk-planner>
+
+  <!-- Vite multi-page entry. In dev, served transformed; in build, Vite emits
+       ../../../public/<tree>/prayer-walk-planner/prayer-walk-planner.js (the tree is named in the build config) and rewrites this script tag. -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

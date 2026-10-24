@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- THIS PAGE IS OURS. The only thing that knows a document belongs to the plugin is the page
+       the generator writes, so it says so here. library/i18n reads it before reflecting an RTL
+       locale on <html dir>; nothing else sets it, so a PARTNER page defaults to "not ours" and
+       is never touched. Absence must mean restraint — an embedded plugin flipping a partner's
+       whole <html> because a reader followed a ?lang=ar link is the bug this prevents. -->
+  <script>window.MAP_OWNS_PAGE = true;</script>
+  <title>dx-maps plugin studio</title>
+  <link rel="icon" href="data:,">
+  <script>window.MAP_APP_API_URL = "https://pray.doxa.life";</script>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #f3f3f1; }
+    /* 100svh, not 100vh: on a phone 100vh is the LARGE viewport, taller than what shows while the address bar is
+       up, so the page scrolls by the bar's height and the app seems to resize as the bar hides and shows. svh is
+       the viewport with the bar shown and never changes; 100% first is the fallback where svh is unknown. The
+       --profile-min-h:0 opts out of ProfileLoader's 100dvh floor, which would otherwise grow the element when
+       the bar hides. */
+    plugin-studio { display: block; width: 100%; height: 100%; height: 100svh; --profile-min-h: 0; }
+  </style>
+</head>
+<body>
+  <plugin-studio tree-base="."></plugin-studio>
+  <script src="./plugin-studio/plugin-studio.js" integrity="sha384-KH5r1cFKUtfzOiE5iRdTbaoHYP27HquWyUNX0gjnVai5MfNzwUiJI2kBaStmGuIY" crossorigin="anonymous"></script>
+</body>
+</html>

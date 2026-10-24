@@ -1,0 +1,5 @@
+{
+  "stage": "experimental",
+  "label": "Cities with Internet — data tables",
+  "note": "Label read by internal/plugin-gallery/discover.mjs (`meta.label || profile`); without a meta file this profile showed as the humanised id 'data tables'. The pane's own heading is t('connectivity.tables.title') = \"Cities Data\"; the label leads with the bundle's product name so the picker groups it with connectivity-map and connectivity-list rather than sorting it away under a different first word. stage declared explicitly for the reason given in connectivity-list.meta.json."
+}

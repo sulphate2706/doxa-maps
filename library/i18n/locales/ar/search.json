@@ -1,0 +1,34 @@
+{
+  "placeholder": "شعب، مكان، لغة، ديانة",
+  "placeholderNoPlaces": "شعب، لغة، ديانة (البحث عن الأماكن يتطلب رمز Mapbox)",
+  "labels": {
+    "people": "الشعب:",
+    "place": "المكان:",
+    "language": "اللغة:",
+    "religion": "الديانة:"
+  },
+  "kinds": {
+    "people": "الشعب + الدولة",
+    "peopleGroup": "الشعب",
+    "bloc": "كتلة التقارب",
+    "cluster": "مجموعة شعوب",
+    "country": "الدولة",
+    "region": "المنطقة",
+    "family": "عائلة اللغة",
+    "languageKind": "اللغة",
+    "dialect": "اللهجة",
+    "religionKind": "الدين"
+  },
+  "sections": {
+    "within": "ضمن {selection}",
+    "allData": "كل بيانات DOXA"
+  },
+  "upg100Placeholder": "ابحث عن شعب أو قائمة UPG100 أو منطقة…",
+  "tabPlaceholder": {
+    "languageFamilies": "ابحث في عائلة اللغة أو اللغة أو اللهجة/التنوع",
+    "affinityBlocks": "ابحث في كتلة التقارب أو المجموعة أو الشعب",
+    "regions": "ابحث في المنطقة أو الدولة أو الشعب",
+    "religion": "ابحث في الديانة أو الشعب"
+  },
+  "placeholderRegions": "ابحث عن منطقة أو دولة أو شعب"
+}

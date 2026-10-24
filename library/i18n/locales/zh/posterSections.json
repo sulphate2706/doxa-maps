@@ -1,0 +1,14 @@
+{
+  "heading": "海报分区",
+  "intro": "选择海报，在下方查看，然后复制标签，放到任何网站上。",
+  "type": "海报类型",
+  "typeCountry": "国家",
+  "region": "地区",
+  "allRegions": "所有地区",
+  "language": "语言",
+  "startCollapsed": "默认折叠",
+  "embed": "复制嵌入代码",
+  "embedNote": "将其粘贴到任何网页中。",
+  "copy": "复制",
+  "copied": "已复制"
+}

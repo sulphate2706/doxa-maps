@@ -1,0 +1,5 @@
+{
+  "type": "monolithic",
+  "label": "Research Map",
+  "note": "Monolithic composite: one .vue nests multiple map views + tabs + layout internally (not separate elements). Tier table: documentation/reference.md 'Profile types — the composability ladder'. See eco-dx (internal): PS001-composition-model."
+}

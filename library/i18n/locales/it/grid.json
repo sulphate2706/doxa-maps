@@ -1,0 +1,22 @@
+{
+  "search": "Cerca popoli…",
+  "hide_filters": "Nascondi filtri",
+  "show_filters": "Mostra filtri",
+  "total": "Totale",
+  "showing": "Mostrati",
+  "load_more": "Carica altro",
+  "full_profile": "Profilo completo",
+  "wagf_region": "Regione",
+  "wagf_block": "Blocco di affinità",
+  "rop1": "Popolo",
+  "religion": "Religione",
+  "exact_filter": "Esatto",
+  "clear_all": "Cancella tutto",
+  "loading": "Caricamento…",
+  "no_results": "Nessun popolo corrisponde a questo filtro.",
+  "type_to_search": "Digita per cercare...",
+  "load_failed": "Impossibile caricare i dati dei popoli. È un problema di connessione, non del filtro.",
+  "search_people_or_countries": "Cerca popoli o paesi…",
+  "cards_per_row": "Schede per riga",
+  "cards_per_row_auto": "Automatico"
+}

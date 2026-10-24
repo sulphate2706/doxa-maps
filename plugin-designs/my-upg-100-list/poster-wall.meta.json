@@ -1,0 +1,27 @@
+{
+  "_comment": "The printable half of UPG-100: a wall of prayer-card posters, one per 100-list entry, with the three print paths. Declared so the Studio rail names it rather than falling back to a humanized id (check:studio-rail).",
+  "label": "UPG100 Posters — Poster Wall",
+  "posterDesign": [
+    {
+      "family": "upgList",
+      "name": "upg100-territory-poster.letter",
+      "size": "letter",
+      "mobileFriendly": true,
+      "labelKey": "upgMap.posterDesignTerritory"
+    },
+    {
+      "family": "upgList",
+      "name": "upg100-territory-poster.3x3",
+      "size": "3x3",
+      "mobileFriendly": false,
+      "labelKey": "upgMap.posterDesignTerritory"
+    },
+    {
+      "family": "upgList",
+      "name": "upg100-territory-poster.3x4",
+      "size": "3x4",
+      "mobileFriendly": false,
+      "labelKey": "upgMap.posterDesignTerritory"
+    }
+  ]
+}

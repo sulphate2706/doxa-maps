@@ -1,0 +1,25 @@
+# Cargo.toml — the desktop shell for the cap-5 doxa-maps SPA (deploy method 5).
+#
+# THIS CRATE INTENTIONALLY CONTAINS NO APPLICATION LOGIC. The product is the web tree in
+# public/; this is a window around it, the desktop counterpart of capacitor/android.
+# Anything that belongs to the maps belongs in plugin-designs/, never here.
+#
+# Versions are left to the lockfile on first `cargo build` rather than pinned by hand —
+# pinning a version this file has never resolved would be a guess presented as a fact.
+
+[package]
+name = "doxa-maps-desktop"
+version = "0.1.0"
+description = "Doxa Maps — desktop shell for the capability-5 maps SPA"
+edition = "2021"
+rust-version = "1.77"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[features]
+# Tauri's standard custom-protocol feature: used for production bundles.
+custom-protocol = ["tauri/custom-protocol"]

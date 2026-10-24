@@ -1,0 +1,16 @@
+{
+  "_comment": "Preconfigured instances of the Cat-5 app-shell <doxa-maps-spa>. provider:'maplibre' flags each generated standalone page as TOKEN-FREE (see internal/generate-tree.mjs mapPageHtml → TOKEN_FREE) so the app-shell element mounts INSTANTLY — correct because the SHELL ITSELF paints no map (its TABS do, each in its own document/iframe with its own peer + token ladder). Without this flag the generic leaf-page harness gates on a Mapbox token the shell never uses and the element never mounts. The meta.json's type:'nested-mfe-spa' (Cat-5) still wins over the instances' parameterized signal (discover.detectProfileType: explicit meta type takes precedence), so this stays a Cat-5 app-shell, not a Cat-2 preset. tree-base is left to the runtime derivation (the leaf page's own URL → tree root), so no absolute host is baked in — the shell self-locates wherever the tree is served.",
+  "profile": "doxa-maps-spa",
+  "instances": [
+    {
+      "id": "app",
+      "title": "Deep Research — Big Picture + every research map (app-shell)",
+      "props": {
+        "profile": "doxa-maps-spa",
+        "provider": "maplibre",
+        "instanceId": "doxa-maps-spa-app",
+        "title": "Deep Research"
+      }
+    }
+  ]
+}

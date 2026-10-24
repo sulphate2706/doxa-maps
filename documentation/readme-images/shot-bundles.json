@@ -1,0 +1,102 @@
+{
+ "cap1-single-element": {
+  "bundle": "all-people-groups",
+  "sha256": "2dd0dfab07a2e18905e09b49aec73cb690d900e7f9fd3b3e08da57e39c10e835"
+ },
+ "cap2-adoption": {
+  "bundle": "doxa-simple-map",
+  "sha256": "7a7545494b7962ab81def419b560845747f54145ceadd0c97e73ea2b175c63f3"
+ },
+ "cap2-engagement": {
+  "bundle": "doxa-simple-map",
+  "sha256": "7a7545494b7962ab81def419b560845747f54145ceadd0c97e73ea2b175c63f3"
+ },
+ "cap2-prayer": {
+  "bundle": "doxa-simple-map",
+  "sha256": "7a7545494b7962ab81def419b560845747f54145ceadd0c97e73ea2b175c63f3"
+ },
+ "cap3-monolithic-research": {
+  "bundle": "doxa-research-map",
+  "sha256": "81b249a1af111f2e5f080d3440b486e3977db8b9cf4105d6e9d2c72c4af72f30"
+ },
+ "cap4-upg100-list": {
+  "bundle": "my-upg-100-list",
+  "sha256": "7fc9958df0297a74efe63c9e8c6ce58a7de65eb2f2a1a66e05f408a79c1304e7"
+ },
+ "cap4-upg100-mfe": {
+  "bundle": "my-upg-100-list",
+  "sha256": "7fc9958df0297a74efe63c9e8c6ce58a7de65eb2f2a1a66e05f408a79c1304e7"
+ },
+ "cap4-upg100-poster-wall": {
+  "bundle": "my-upg-100-list",
+  "sha256": "7fc9958df0297a74efe63c9e8c6ce58a7de65eb2f2a1a66e05f408a79c1304e7"
+ },
+ "cap5-doxa-maps-spa": {
+  "bundle": "doxa-maps-spa",
+  "sha256": "b4b441c0248dfcd53316dc27c6bf386695919d3f32f9ead1c57522cc58782950"
+ },
+ "cap5-plugin-studio": {
+  "bundle": "plugin-studio",
+  "sha256": "0d6f85bf2417b01c6c12f52bd3d6e78cf0655667c15da87ed41a73c32a910154"
+ },
+ "deploy2-mobile-upg100": {
+  "bundle": "my-upg-100-list",
+  "sha256": "7fc9958df0297a74efe63c9e8c6ce58a7de65eb2f2a1a66e05f408a79c1304e7"
+ },
+ "exp-prayer-walk-planner": {
+  "bundle": "prayer-walk-planner",
+  "sha256": "ec74ce978e7a3d41c5e0e57276bb1d26939abaf4f371a3f02eac8a6753794b64"
+ },
+ "exp-wall-of-people-groups": {
+  "bundle": "wall-of-people-groups",
+  "sha256": "cdeb3b69796c8fddd44e8605069fc9726b30f234ccc26aa7fcb7daa9b369f823"
+ },
+ "lang-arabic-upg100": {
+  "bundle": "my-upg-100-list",
+  "sha256": "7fc9958df0297a74efe63c9e8c6ce58a7de65eb2f2a1a66e05f408a79c1304e7"
+ },
+ "prod-big-picture": {
+  "bundle": "dashboard-plus-grid",
+  "sha256": "43ec41ba9261de4690c131104bdd518cf33cc21fe2d490d59cb478abe8ae71b1"
+ },
+ "prod-cities-internet": {
+  "bundle": "cities-internet",
+  "sha256": "a9ee6299bbbd28e49aba61bac1968e78ccc63bf1f06a7247dde23fd48eab63ab"
+ },
+ "prod-cities-internet-phone": {
+  "bundle": "cities-internet",
+  "sha256": "a9ee6299bbbd28e49aba61bac1968e78ccc63bf1f06a7247dde23fd48eab63ab"
+ },
+ "prod-gospel-resources": {
+  "bundle": "gospel-resources",
+  "sha256": "04fb9e72b99f09e3ab91f743208721df8a84f33adddc50e060c8edc37c46039b"
+ },
+ "prod-gospel-resources-phone": {
+  "bundle": "gospel-resources",
+  "sha256": "04fb9e72b99f09e3ab91f743208721df8a84f33adddc50e060c8edc37c46039b"
+ },
+ "prod-prayer-phone": {
+  "bundle": "doxa-simple-map",
+  "sha256": "7a7545494b7962ab81def419b560845747f54145ceadd0c97e73ea2b175c63f3"
+ },
+ "prod-regions": {
+  "bundle": "regions-dashboard",
+  "sha256": "377d5a2bba03f50465a0a3d7af49d954a6fcfe4895e03d92907faec7be507257"
+ },
+ "prod-regions-phone": {
+  "bundle": "regions-dashboard",
+  "sha256": "377d5a2bba03f50465a0a3d7af49d954a6fcfe4895e03d92907faec7be507257"
+ },
+ "prod-research-gallery-phone": {
+  "bundle": "doxa-maps-spa",
+  "sha256": "b4b441c0248dfcd53316dc27c6bf386695919d3f32f9ead1c57522cc58782950"
+ },
+ "prod-simple-research": {
+  "bundle": "research-map-plus-grid",
+  "sha256": "67e3ff971d68c41cd42b0e3c7f78f86c65d0da422a2770d2aea060bd61a48749"
+ },
+ "prod-simple-research-phone": {
+  "bundle": "research-map-plus-grid",
+  "sha256": "67e3ff971d68c41cd42b0e3c7f78f86c65d0da422a2770d2aea060bd61a48749"
+ }
+}

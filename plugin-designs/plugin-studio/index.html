@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · plugin-studio staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Capability-5 app-shell (nested-mfe-spa): ONE element, <plugin-studio>, is the DEVELOPER
+       STUDIO — a vertical-tab layout whose sidebar is the composability ladder grouped by
+       capability (5 -> 1). Each row nests one plugin element (token-free elements mounted by their
+       real tag + built .js; map elements nested as their own SPA in a lazy iframe) with its embed
+       snippet. No Mapbox peer is loaded HERE — each nested map's leaf page loads its own. -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: #0b0f14; color: #e5e7eb;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { display: flex; flex-direction: column; height: 100vh; }
+    .intro { flex: 0 0 auto; padding: 14px 18px; border-bottom: 1px solid #1f2937; }
+    .intro h1 { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+    .intro p { color: #9ca3af; font-size: 12.5px; margin-top: 5px; max-width: 900px; }
+    .intro code { color: #c4b5fd; }
+    .frame { flex: 1 1 auto; position: relative; min-height: 0; }
+    plugin-studio { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="intro">
+      <h1>plugin-studio · staging</h1>
+      <p>Capability&nbsp;5 — the <strong>developer studio</strong>. One element,
+        <code>&lt;plugin-studio&gt;</code>, is a vertical-tab layout of EVERY plugin element grouped
+        by <strong>capability&nbsp;5&nbsp;&rarr;&nbsp;1</strong>. Click any element to see it work in
+        the stage, copy its embed snippet, and review it. Token-free elements mount directly by their
+        real tag; map elements nest as their own SPA. Switch with no page reload.</p>
+    </div>
+    <div class="frame">
+      <!-- This page is the app, so Studio owns the address: a clicked tab is written to ?tab=,
+           a reload keeps it and a sent link opens it. The built leaf page bakes the same key. -->
+      <plugin-studio id="ps" title="Plugin Studio" profile-config='{"urlOwner":"app"}'></plugin-studio>
+    </div>
+  </div>
+
+  <!-- Vite multi-page entry — emits the IIFE that registers <plugin-studio>. -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

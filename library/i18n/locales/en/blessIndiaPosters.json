@@ -1,0 +1,15 @@
+{
+  "title": "Bless India Posters",
+  "rangeBadge60x96": "Range badges · 60×96 (5×8 ft)",
+  "count": "{count} people groups",
+  "desktopOnly": "Desktop only for now — this large poster isn’t yet proven to print safely on a phone.",
+  "experimental": "experimental",
+  "intro": "Every India people group on one printable sheet, generated live and shown as its printable sheets with glue strips — the way Poster Design's Sizes view shows the big formats.",
+  "print": "Print this poster",
+  "attempt": "Range badges · 60×96 (5×8 ft) · 3 sheets",
+  "stat": "{groups} groups · {badges} range badges · 0 overlaps",
+  "generating": "Generating the poster from the live data…",
+  "error": "Couldn't generate the poster: {msg}",
+  "photos": "Only {real} of {total} India groups have a photo in the data; a printed document carries them, a flat image can't. This numbered design prints names without photos so every group is equal and legible.",
+  "posterHeader": "Bless India in Jesus' name"
+}

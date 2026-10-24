@@ -1,0 +1,9 @@
+{
+  "loading": "A carregar o mapa…",
+  "initFailed": "O mapa não pôde iniciar. É um problema da chave do mapa ou da ligação.",
+  "help": {
+    "what": "Este mapa mostra os povos não alcançados do mundo: comunidades sem acesso real ao Evangelho.",
+    "how": "Use os separadores (se visíveis) para mudar de vista. Clique em qualquer ponto para saber mais sobre um povo.",
+    "source": "Dados de"
+  }
+}

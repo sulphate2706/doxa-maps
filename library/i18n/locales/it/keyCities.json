@@ -1,0 +1,64 @@
+{
+  "map": {
+    "title": "Raggruppamenti di segnaposto di popoli",
+    "bands": {
+      "named": "centro con nome",
+      "multi": "più popoli",
+      "single": "un solo popolo"
+    },
+    "note": "Un punto è un raggruppamento di segnaposto di popoli entro ~25 km, non un confine comunale. I punti con nome provengono da un gazetteer citato.",
+    "unnamed": "luogo senza nome — {lat}, {lng}",
+    "close": "Chiudi",
+    "country": "Paese",
+    "admin": "Area amministrativa",
+    "peopleGroups": "Popoli",
+    "upgPopulation": "Popolazione UPG",
+    "internet": "Internet nel paese",
+    "unknown": "sconosciuto",
+    "pgHere": "Popoli qui",
+    "languages": "Lingue",
+    "sheetNote": "Un raggruppamento di segnaposto di popoli entro ~25 km, non un confine comunale. I punti con nome provengono da un gazetteer citato (Nominatim/OSM); quelli senza nome mostrano le coordinate invece di un nome inventato.",
+    "national": "I dati su Internet sono NAZIONALI.",
+    "engineMissing": "Impossibile caricare il motore della mappa."
+  },
+  "list": {
+    "title": "Città chiave",
+    "intro": "Raggruppamenti di segnaposto di popoli: raggruppamenti con nome (da un gazetteer citato): {named}, in raggruppamenti localizzati: {clusters}.",
+    "filters": {
+      "named": "Centri abitati con nome",
+      "multi": "Raggruppamenti di più popoli",
+      "all": "Tutti i luoghi"
+    },
+    "locations": "luoghi: {n}",
+    "peopleGroups": "popoli: {n}",
+    "caveat": {
+      "rowLead": "Che cos’è una riga.",
+      "row": "Un raggruppamento di segnaposto di popoli entro ~25 km, non un confine comunale. Ogni segnaposto rappresenta un popolo, non una città, quindi i raggruppamenti non vengono mai nominati per deduzione: i {n} centri con più popoli sono stati identificati con {source} (ODbL, citato in ogni riga) e gli altri restano senza nome invece di essere indovinati.",
+      "internet": "Sono mostrati come contesto: la connettività per città non è pubblicamente disponibile a questa scala, e un dato nazionale non va letto come una misura della città.",
+      "scope": "Questa pagina contiene solo le posizioni dei popoli e la connettività — nessun dato su chiese, credenti o luoghi di incontro, per scelta."
+    },
+    "moreLanguages": "altre {n}"
+  },
+  "tables": {
+    "title": "Dati delle città chiave",
+    "intro": "Ogni centro localizzato, le lingue parlate lì e i canali che lo raggiungono. Ordina, filtra ed esporta ogni tabella; ognuna riporta le proprie fonti e i propri limiti.",
+    "tabs": {
+      "cities": "Città chiave",
+      "langcity": "Lingue qui",
+      "languages": "Per paese",
+      "operators": "Provider e operatori",
+      "messaging": "Messaggistica"
+    },
+    "loading": "Caricamento di {name}…"
+  },
+  "posters": {
+    "heading": "Poster delle città chiave",
+    "tag": "Mobilitazione alla preghiera",
+    "itemNoun": "città",
+    "itemNounPlural": "città",
+    "soon": "Presto: un elenco di preghiera per ogni città, con ogni popolo non raggiunto che vi abita.",
+    "intro": "Un foglio stampabile per ogni centro abitato dove vivono popoli non raggiunti, con il nome preso da un gazzettiere citato, mai dedotto.",
+    "otherRegion": "Altre"
+  },
+  "loadFailed": "Impossibile caricare i dati: {detail}"
+}

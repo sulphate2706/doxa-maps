@@ -1,0 +1,14 @@
+{
+  "heading": "Sections d’affiches",
+  "intro": "Choisissez les affiches, regardez-les ci-dessous, puis copiez la balise pour les placer sur n’importe quel site.",
+  "type": "Type d’affiche",
+  "typeCountry": "Pays",
+  "region": "Région",
+  "allRegions": "Toutes les régions",
+  "language": "Langue",
+  "startCollapsed": "Commencer replié",
+  "embed": "Copier le code d’intégration",
+  "embedNote": "Collez ceci dans n’importe quelle page web.",
+  "copy": "Copier",
+  "copied": "Copié"
+}

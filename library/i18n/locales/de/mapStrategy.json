@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "Sehen Sie das ganze Feld, grenzen Sie es auf die Menschen ein, die Sie wirklich erreichen können, und nehmen Sie die Liste als Tabelle mit.",
+      "p1": "Tippen Sie auf eine Region und scrollen Sie durch das Raster, um die Fotos der Volksgruppen zu sehen: fast wie ein Besuch im Land, bei dem Sie den Gesichtern einer Kultur begegnen.",
+      "p2": "Filtern Sie nach Volk, Ort, Sprache, Religion oder Gebet; Karte, Tabelle und Summen bewegen sich gemeinsam, sodass Sie denselben Ausschnitt auf drei Arten sehen.",
+      "p3": "Exportieren Sie die gefilterten Zeilen als CSV-Tabelle: eine Arbeitsliste zum Sortieren, Teilen und Planen, auch offline.",
+      "p4": "Nutzen Sie es für kurzfristige Ziele: die Gruppen, für die Sie heute beten und die Sie heute erreichen, und die, die Sie für morgen vorbereiten.",
+      "p5": "Es ist dafür gebaut, für Initiativen „von Medien zu Bewegungen“ angepasst zu werden: Beginnen Sie bei den Daten und handeln Sie dann für die Gruppen, die sie zeigen."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Beginnen Sie dort, wo die Not am größten ist. Finden Sie mit den Gebets- und Engagement-Ebenen die vorrangigen Zonen, und mobilisieren Sie dann Gebet für die Volksgruppen darin.",
+      "p1": "Sehen Sie, wer noch wartet. Im Tab „Gebet“ zeigt jeder Punkt, ob für diese Volksgruppe jemand betet, ob sie noch Gebet braucht oder ob sie voll im Gebet abgedeckt ist.",
+      "p2": "Finden Sie die Lücken. Wechseln Sie zu „Engagement“, um zu sehen, wo die Arbeit begonnen hat und wo noch niemand tätig ist. Diese Lücken sind die vorrangigen Zonen für die Mobilisierung.",
+      "p3": "Erforschen Sie einen Teil der Welt nach dem anderen. Grenzen Sie nach Region, Sprache oder Religion ein, oder durchsuchen Sie die Liste nach Namen. Die Liste folgt der Karte, sodass Sie die Namen hinter den Punkten lesen können.",
+      "p4": "Lernen Sie eine Volksgruppe kennen. Tippen Sie auf einen Punkt, um Land, Bevölkerung, Sprache und Religion zu sehen, und beginnen Sie dann mit „Für sie beten“, für dieses Volk namentlich zu beten.",
+      "p5": "Halten Sie es einfach. Diese Karte verfolgt den Fortschritt auf einfache Weise, auf einen Blick. Für die vollständigen Daten gehen Sie zu „Gesamtbild“; für druckbare Gebetsmaterialien zu „Regionen“ oder „UPG100-Liste“."
+    },
+    "regions-dashboard": {
+      "bottom": "Rund 170 Länder haben ihr eigenes Poster, Paket und Kartenset. Mobilisieren Sie für jedes Land eine Gruppe zum Gebet, und jedes Land ist im Gebet abgedeckt.",
+      "p1": "Schreiben Sie die Jünger, Gemeinden und Leiter auf, die Sie schon kennen, und das Land, zu dem jeder berufen ist. Geben Sie jedem die Gebetsmaterialien dieses Landes.",
+      "p2": "Beginnen Sie in Ihrer Nähe, mit Jüngern und Gemeinden vor Ort. Gehen Sie dann zu den einheimischen Leitern und Mitarbeitern vor Ort in diesen Ländern, und schicken Sie ihnen Poster, Paket und Karten des Landes, damit sie dort gedruckt werden.",
+      "p3": "Das Gebetspaket ist das strategischste der drei: alles, was man braucht, um für ein Land zu beten, in einem druckbaren Paket.",
+      "p4": "Die Karten helfen am meisten, wenn Sie eine Gruppe haben, an die Sie sie verteilen: eine Volksgruppe pro Karte.",
+      "p5": "Länderpakete passen zu einer größeren Mobilisierungsbasis oder zu einem Land, das Sie erreicht sehen wollen. Wenn die Mobilisierung schwer anläuft, sind die UPG100-Listen der einfachere Anfang."
+    },
+    "prayer-map": {
+      "bottom": "Eine Gebetsbewegung wächst, wenn jeder Partner dieselbe Karte zeigt. Stellen Sie diese Karte deshalb auf jede Website in Ihrem Netzwerk.",
+      "p1": "Listen Sie die Websites Ihres Netzwerks auf: Gemeinden, Werke, Gebetsnetzwerke, Missionspartner, jede Seite, die Ihre Leute schon besuchen.",
+      "p2": "Teilen oder einbinden mit wenigen Klicks. Die Teilen-Schaltfläche gibt Ihnen einen Link zum Versenden, oder „Zu Ihrer Website hinzufügen“: Größe wählen, Code kopieren und in WordPress, Squarespace, Wix oder jede Website einfügen, die HTML akzeptiert.",
+      "p3": "Wählen Sie die passende Ansicht. „Gebet“, „Engagement“ und „Adoption“ teilen jeweils ihre eigene Seite, sodass ein Gebetsnetzwerk die Gebetsabdeckung zeigen kann und eine sendende Gemeinde das Engagement.",
+      "p4": "Sie bleibt von selbst aktuell. Jede Kopie der Karte liest beim Öffnen dieselben Daten von pray.doxa.life, sodass der Fortschritt auf jeder Partnerseite erscheint, ohne dass jemand sie aktualisiert.",
+      "p5": "Führen Sie Menschen zu einem Namen. Ein Tipp auf einen Punkt öffnet diese Volksgruppe und einen Link zu ihrer Gebetsseite, sodass ein Besucher sofort für ein bestimmtes Volk beten kann."
+    },
+    "upg-100": {
+      "bottom": "Jesus ließ die Fünftausend sich in Gruppen zu fünfzig und hundert setzen, bevor er sie speiste (Lukas 9,14). Diese Listen tun dasselbe für rund 2.100 unerreichte Volksgruppen: in Listen dieser Größe geteilt, wird die ganze Aufgabe zu einer Last, die ein Mensch tragen kann.",
+      "p1": "27 Listen bedeuten 27 Poster, 27 Gebetspakete und 27 Kartensets. Geben Sie je eines 27 Jüngern, Gemeinden oder einheimischen Leitern, und für jede der Gruppen wird namentlich gebetet.",
+      "p2": "Geben Sie jede Liste jemandem, der dranbleibt und für sie betet. Einheimische Leiter können in den Sprachen der Völker selbst beten.",
+      "p3": "Das folgt einer in Bewegungen bewährten Praxis: Jünger beten regelmäßig für fünfzig bis hundert Menschen, die sie kennen (Familie, Freunde, Nachbarn, Kollegen, Mitschüler). Eine UPG100-Liste ist dieselbe Last, für Menschen, denen sie nie begegnet sind.",
+      "p4": "Beginnen Sie mit einer Liste und einem Menschen. Das Paket enthält alles für diese Liste in einem Ausdruck, und die Karten helfen, wenn eine Gruppe sich die Liste teilt."
+    },
+    "cities-internet": {
+      "bottom": "Wo Menschen schon online sind, kann das Evangelium sie auf den Bildschirmen und Plattformen erreichen, die sie jeden Tag nutzen. Finden Sie diese Orte, und nutzen Sie Medien als Tür zu echten Jüngern und Gemeinden (von Medien zu Bewegungen).",
+      "p1": "Beginnen Sie mit den Ländern, in denen die meisten Menschen online sind (60 % oder mehr). Dort können Online-Medien Menschen erreichen, die keine Gemeinde und keinen Gläubigen in der Nähe haben.",
+      "p2": "Tippen Sie auf ein Land und lesen Sie seine Karte: wie viele Menschen das Internet nutzen, wie viele Mobilfunkverträge es gibt und welche Plattformen die Menschen dort nutzen. Gehen Sie auf ihre Plattformen, nicht auf Ihre, und prüfen Sie die Liste zuerst mit jemandem im Land.",
+      "p3": "Kombinieren Sie diese Karte mit „Evangeliumsressourcen“. Finden Sie eine Volksgruppe, die schon Bibel, Film oder Audio in ihrer Sprache hat, und teilen Sie diese Links online in einem Land, in dem die Menschen verbunden sind.",
+      "p4": "Wo wenige Menschen online sind oder die Zahl nicht gemessen ist, beginnen Sie nicht mit einem Bildschirm: Senden Sie Menschen und bringen Sie Audio- und Druckmaterial. Die Zahlen sind national (Indien auch nach Bundesstaat), eine Stadt kann also ganz anders sein als ihr Land.",
+      "p5": "Medien sind die Tür, nicht das Ziel. Planen Sie vor dem Posten, wie jemand, der online antwortet, einen echten Menschen trifft und sich einer Gruppe anschließt, die gemeinsam die Bibel liest."
+    },
+    "gospel-resources": {
+      "bottom": "Viele unerreichte Gruppen haben schon Bibel, Film oder Audio in ihrer Sprache, die sie nie erreicht haben. Die Ressourcen gibt es; die Lücke ist, sie Menschen in die Hand zu geben, persönlich oder online.",
+      "p1": "Wechseln Sie zu „Gefundene Ressourcen“ und suchen Sie die Gruppen, die Bibel und Film haben. Für sie sind die Werkzeuge bereit, es fehlt die Zustellung.",
+      "p2": "Senden Sie Mitarbeiter mit den Ressourcen. Öffnen Sie das Blatt einer Gruppe und geben Sie ihre Links (und die der anderen Sprachen, die sie spricht) an die Mitarbeiter, Gemeinden und Leiter weiter, die diese Gruppe erreichen können.",
+      "p3": "Kombinieren Sie diese Karte mit „Städte mit Internet“. Wo das Land einer Gruppe gut verbunden ist, können dieselben Links Menschen online auf den dort genutzten Plattformen erreichen (von Medien zu Bewegungen).",
+      "p4": "Wo es Zume-Training in der Sprache der Gruppe gibt, stellen Sie es neben Bibel und Film, damit die, die glauben, zu Jüngermachern ausgebildet werden.",
+      "p5": "Nutzen Sie „Lücke“, um für die Gruppen zu beten und zu planen, bei denen noch nichts gefunden wurde. Viele haben einen Zugang über eine Brückensprache, und „nichts gefunden“ ist ein Grund, weiterzusuchen, keine endgültige Antwort."
+    }
+  }
+}

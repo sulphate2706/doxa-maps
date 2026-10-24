@@ -1,0 +1,16 @@
+{
+  "_comment": "Preconfigured instance of the Cat-5 element <plugin-studio>. provider:'maplibre' flags the generated standalone leaf page as TOKEN-FREE so the element mounts INSTANTLY — correct because the studio SHELL paints no map (its nested tabs do, each in its own document/iframe with its own peer + token ladder). The meta.json type 'nested-mfe-spa' (Cat-5) still wins over the parameterized signal (explicit meta type takes precedence in discover.detectProfileType), so this stays a Cat-5 app-shell. tree-base is left to runtime derivation (the leaf page's own URL -> tree root), so no absolute host is baked in.",
+  "profile": "plugin-studio",
+  "instances": [
+    {
+      "id": "studio",
+      "title": "Plugin Studio — every element by capability 5 -> 1 (developer studio)",
+      "props": {
+        "profile": "plugin-studio",
+        "provider": "maplibre",
+        "instanceId": "plugin-studio",
+        "title": "Plugin Studio"
+      }
+    }
+  ]
+}

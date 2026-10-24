@@ -1,0 +1,5445 @@
+{
+ "source": "https://fivefish.org/<iso639-3> (5fish, Global Recordings Network)",
+ "fetched": "2026-09-25",
+ "_note": "GRN gospel AUDIO, typed as Gospel audio and never as Scripture — \"Words of Life\" is gospel messages and Bible stories, not a translation of the canon. The host never 404s: a nonsense path returns a geo-located page with HTTP 200, so existence is read from the page title, with a negative and a positive control run in band every time. Their robots.txt asks for Crawl-delay: 10 and this fetcher obeys it, sequentially.",
+ "codes": 1030,
+ "decidedNone": 1314,
+ "byIso": {
+  "mnp": {
+   "u": "https://fivefish.org/mnp",
+   "n": "Hockchia"
+  },
+  "pks": {
+   "u": "https://fivefish.org/pks",
+   "n": "Pakistan Sign Language"
+  },
+  "gsw": {
+   "u": "https://fivefish.org/gsw",
+   "n": "German, Swiss: Basel"
+  },
+  "czh": {
+   "u": "https://fivefish.org/czh",
+   "n": "Chinese, Huizhou"
+  },
+  "cpx": {
+   "u": "https://fivefish.org/cpx",
+   "n": "Chinese, Puxian"
+  },
+  "abr": {
+   "u": "https://fivefish.org/abr",
+   "n": "Abron"
+  },
+  "koo": {
+   "u": "https://fivefish.org/koo",
+   "n": "Konzo"
+  },
+  "ttj": {
+   "u": "https://fivefish.org/ttj",
+   "n": "Tooro"
+  },
+  "zeh": {
+   "u": "https://fivefish.org/zeh",
+   "n": "Zhuang: Guigang Guiping"
+  },
+  "sgd": {
+   "u": "https://fivefish.org/sgd",
+   "n": "Cantilangnon"
+  },
+  "fsl": {
+   "u": "https://fivefish.org/fsl",
+   "n": "French Sign Language"
+  },
+  "vmk": {
+   "u": "https://fivefish.org/vmk",
+   "n": "Exirima"
+  },
+  "kel": {
+   "u": "https://fivefish.org/kel",
+   "n": "Ikela"
+  },
+  "ndo": {
+   "u": "https://fivefish.org/ndo",
+   "n": "Ndonga"
+  },
+  "pht": {
+   "u": "https://fivefish.org/pht",
+   "n": "Phu Thai"
+  },
+  "xmc": {
+   "u": "https://fivefish.org/xmc",
+   "n": "eMarrevoni"
+  },
+  "mne": {
+   "u": "https://fivefish.org/mne",
+   "n": "Naba: Kouka"
+  },
+  "ish": {
+   "u": "https://fivefish.org/ish",
+   "n": "Ishan"
+  },
+  "msi": {
+   "u": "https://fivefish.org/msi",
+   "n": "Malay, Sabah"
+  },
+  "mde": {
+   "u": "https://fivefish.org/mde",
+   "n": "Maba"
+  },
+  "rui": {
+   "u": "https://fivefish.org/rui",
+   "n": "Rufiji"
+  },
+  "rkm": {
+   "u": "https://fivefish.org/rkm",
+   "n": "Maraka"
+  },
+  "zag": {
+   "u": "https://fivefish.org/zag",
+   "n": "Zaghawa"
+  },
+  "qxp": {
+   "u": "https://fivefish.org/qxp",
+   "n": "Quechua, Puno"
+  },
+  "gew": {
+   "u": "https://fivefish.org/gew",
+   "n": "Gyere"
+  },
+  "suj": {
+   "u": "https://fivefish.org/suj",
+   "n": "Kisubi"
+  },
+  "eto": {
+   "u": "https://fivefish.org/eto",
+   "n": "Eton"
+  },
+  "tek": {
+   "u": "https://fivefish.org/tek",
+   "n": "Kiteke"
+  },
+  "nto": {
+   "u": "https://fivefish.org/nto",
+   "n": "Ntomba"
+  },
+  "wni": {
+   "u": "https://fivefish.org/wni",
+   "n": "Shindzwani"
+  },
+  "nbm": {
+   "u": "https://fivefish.org/nbm",
+   "n": "Ngbaka Mabo"
+  },
+  "hmg": {
+   "u": "https://fivefish.org/hmg",
+   "n": "Miao, Shai Lou Zhenningxian"
+  },
+  "wof": {
+   "u": "https://fivefish.org/wof",
+   "n": "Wolof, Gambian"
+  },
+  "bnx": {
+   "u": "https://fivefish.org/bnx",
+   "n": "Kibangubangu"
+  },
+  "bpj": {
+   "u": "https://fivefish.org/bpj",
+   "n": "Bindji"
+  },
+  "bbp": {
+   "u": "https://fivefish.org/bbp",
+   "n": "Banda"
+  },
+  "bta": {
+   "u": "https://fivefish.org/bta",
+   "n": "Bata"
+  },
+  "aba": {
+   "u": "https://fivefish.org/aba",
+   "n": "Abbey"
+  },
+  "buf": {
+   "u": "https://fivefish.org/buf",
+   "n": "Bushongo"
+  },
+  "jya": {
+   "u": "https://fivefish.org/jya",
+   "n": "Jiarong"
+  },
+  "rue": {
+   "u": "https://fivefish.org/rue",
+   "n": "Ruthenian"
+  },
+  "brf": {
+   "u": "https://fivefish.org/brf",
+   "n": "Kibira"
+  },
+  "bgx": {
+   "u": "https://fivefish.org/bgx",
+   "n": "Balkan Gagauz Turkish: Yuruk"
+  },
+  "tma": {
+   "u": "https://fivefish.org/tma",
+   "n": "Tama"
+  },
+  "bar": {
+   "u": "https://fivefish.org/bar",
+   "n": "Austrian: Tyrolean"
+  },
+  "sip": {
+   "u": "https://fivefish.org/sip",
+   "n": "Sikkimese"
+  },
+  "rwk": {
+   "u": "https://fivefish.org/rwk",
+   "n": "Rwa"
+  },
+  "slx": {
+   "u": "https://fivefish.org/slx",
+   "n": "Salampasu"
+  },
+  "hmb": {
+   "u": "https://fivefish.org/hmb",
+   "n": "Songhay, Humburi Senni: Maranse"
+  },
+  "dio": {
+   "u": "https://fivefish.org/dio",
+   "n": "Dibo"
+  },
+  "mgm": {
+   "u": "https://fivefish.org/mgm",
+   "n": "Mambae"
+  },
+  "lej": {
+   "u": "https://fivefish.org/lej",
+   "n": "Kilengola"
+  },
+  "bli": {
+   "u": "https://fivefish.org/bli",
+   "n": "Lolia"
+  },
+  "ckl": {
+   "u": "https://fivefish.org/ckl",
+   "n": "Chibuku"
+  },
+  "nkw": {
+   "u": "https://fivefish.org/nkw",
+   "n": "Lonkutu"
+  },
+  "tyr": {
+   "u": "https://fivefish.org/tyr",
+   "n": "Tai Daeng"
+  },
+  "smm": {
+   "u": "https://fivefish.org/smm",
+   "n": "Musasa"
+  },
+  "kqk": {
+   "u": "https://fivefish.org/kqk",
+   "n": "Kotafon"
+  },
+  "trf": {
+   "u": "https://fivefish.org/trf",
+   "n": "Trinidadian English Creole"
+  },
+  "shc": {
+   "u": "https://fivefish.org/shc",
+   "n": "Kilua-Kisonde"
+  },
+  "xac": {
+   "u": "https://fivefish.org/xac",
+   "n": "Bodo: Kachari"
+  },
+  "kfa": {
+   "u": "https://fivefish.org/kfa",
+   "n": "Coorgi"
+  },
+  "twm": {
+   "u": "https://fivefish.org/twm",
+   "n": "Monpa, Tawang"
+  },
+  "bjo": {
+   "u": "https://fivefish.org/bjo",
+   "n": "Banda, Mid-Southern: Yakpa"
+  },
+  "bdm": {
+   "u": "https://fivefish.org/bdm",
+   "n": "Buduma"
+  },
+  "daw": {
+   "u": "https://fivefish.org/daw",
+   "n": "Davawenyo"
+  },
+  "sjo": {
+   "u": "https://fivefish.org/sjo",
+   "n": "Xibe"
+  },
+  "gow": {
+   "u": "https://fivefish.org/gow",
+   "n": "Fiome"
+  },
+  "avd": {
+   "u": "https://fivefish.org/avd",
+   "n": "Alviri"
+  },
+  "dse": {
+   "u": "https://fivefish.org/dse",
+   "n": "Sign Language of the Netherlands"
+  },
+  "yix": {
+   "u": "https://fivefish.org/yix",
+   "n": "Axi"
+  },
+  "bqv": {
+   "u": "https://fivefish.org/bqv",
+   "n": "Koro Wachi"
+  },
+  "njx": {
+   "u": "https://fivefish.org/njx",
+   "n": "Kikouni"
+  },
+  "khc": {
+   "u": "https://fivefish.org/khc",
+   "n": "Tukangbesi North: Wanci"
+  },
+  "orx": {
+   "u": "https://fivefish.org/orx",
+   "n": "Oron"
+  },
+  "luj": {
+   "u": "https://fivefish.org/luj",
+   "n": "Luna Inkongo"
+  },
+  "dsq": {
+   "u": "https://fivefish.org/dsq",
+   "n": "Dausahaq"
+  },
+  "bsh": {
+   "u": "https://fivefish.org/bsh",
+   "n": "Kate"
+  },
+  "dai": {
+   "u": "https://fivefish.org/dai",
+   "n": "Day"
+  },
+  "mkz": {
+   "u": "https://fivefish.org/mkz",
+   "n": "Makasae Uatolari Kilikai"
+  },
+  "kep": {
+   "u": "https://fivefish.org/kep",
+   "n": "Kaikadi"
+  },
+  "ymk": {
+   "u": "https://fivefish.org/ymk",
+   "n": "Makwe"
+  },
+  "tyi": {
+   "u": "https://fivefish.org/tyi",
+   "n": "Kiteke: Zanaga"
+  },
+  "sed": {
+   "u": "https://fivefish.org/sed",
+   "n": "Sedang"
+  },
+  "sen": {
+   "u": "https://fivefish.org/sen",
+   "n": "Senoufo, Nanerige"
+  },
+  "int": {
+   "u": "https://fivefish.org/int",
+   "n": "Intha"
+  },
+  "bji": {
+   "u": "https://fivefish.org/bji",
+   "n": "Burji"
+  },
+  "les": {
+   "u": "https://fivefish.org/les",
+   "n": "Walese"
+  },
+  "bmi": {
+   "u": "https://fivefish.org/bmi",
+   "n": "Baguirmi"
+  },
+  "yhd": {
+   "u": "https://fivefish.org/yhd",
+   "n": "Arabic, Judeo-Iraqi"
+  },
+  "ged": {
+   "u": "https://fivefish.org/ged",
+   "n": "Gade"
+  },
+  "gec": {
+   "u": "https://fivefish.org/gec",
+   "n": "Grebo, Gboloo"
+  },
+  "lel": {
+   "u": "https://fivefish.org/lel",
+   "n": "Bushilele"
+  },
+  "hml": {
+   "u": "https://fivefish.org/hml",
+   "n": "Miao: Laohu"
+  },
+  "cov": {
+   "u": "https://fivefish.org/cov",
+   "n": "Cao Miao, Sanjiang"
+  },
+  "lrl": {
+   "u": "https://fivefish.org/lrl",
+   "n": "Lari"
+  },
+  "kra": {
+   "u": "https://fivefish.org/kra",
+   "n": "Kumhali"
+  },
+  "jad": {
+   "u": "https://fivefish.org/jad",
+   "n": "Jahanka"
+  },
+  "ala": {
+   "u": "https://fivefish.org/ala",
+   "n": "Alago"
+  },
+  "lar": {
+   "u": "https://fivefish.org/lar",
+   "n": "Larteh"
+  },
+  "knu": {
+   "u": "https://fivefish.org/knu",
+   "n": "Kono"
+  },
+  "gcr": {
+   "u": "https://fivefish.org/gcr",
+   "n": "Guianese French Creole"
+  },
+  "blo": {
+   "u": "https://fivefish.org/blo",
+   "n": "Anii"
+  },
+  "laa": {
+   "u": "https://fivefish.org/laa",
+   "n": "Subanen, Southern"
+  },
+  "sct": {
+   "u": "https://fivefish.org/sct",
+   "n": "Katang, Southern"
+  },
+  "pwn": {
+   "u": "https://fivefish.org/pwn",
+   "n": "Paiwan"
+  },
+  "fay": {
+   "u": "https://fivefish.org/fay",
+   "n": "Fars, Southwestern"
+  },
+  "hia": {
+   "u": "https://fivefish.org/hia",
+   "n": "Lamang"
+  },
+  "zmq": {
+   "u": "https://fivefish.org/zmq",
+   "n": "Kiwenye Mituku"
+  },
+  "xnz": {
+   "u": "https://fivefish.org/xnz",
+   "n": "Kena"
+  },
+  "nlj": {
+   "u": "https://fivefish.org/nlj",
+   "n": "Kinyali"
+  },
+  "erh": {
+   "u": "https://fivefish.org/erh",
+   "n": "Erohwa"
+  },
+  "tii": {
+   "u": "https://fivefish.org/tii",
+   "n": "Kitiene"
+  },
+  "aoe": {
+   "u": "https://fivefish.org/aoe",
+   "n": "Anen Anga"
+  },
+  "rin": {
+   "u": "https://fivefish.org/rin",
+   "n": "Nungu"
+  },
+  "ekp": {
+   "u": "https://fivefish.org/ekp",
+   "n": "Ekpeye"
+  },
+  "kie": {
+   "u": "https://fivefish.org/kie",
+   "n": "Kibet: Mouro"
+  },
+  "wgi": {
+   "u": "https://fivefish.org/wgi",
+   "n": "Wahgi Group"
+  },
+  "jjr": {
+   "u": "https://fivefish.org/jjr",
+   "n": "Bankal"
+  },
+  "tuq": {
+   "u": "https://fivefish.org/tuq",
+   "n": "Toubbou"
+  },
+  "kkh": {
+   "u": "https://fivefish.org/kkh",
+   "n": "Khun"
+  },
+  "hca": {
+   "u": "https://fivefish.org/hca",
+   "n": "Andaman Hindi Creole"
+  },
+  "hed": {
+   "u": "https://fivefish.org/hed",
+   "n": "Kado"
+  },
+  "dau": {
+   "u": "https://fivefish.org/dau",
+   "n": "Dadjo"
+  },
+  "lum": {
+   "u": "https://fivefish.org/lum",
+   "n": "Luimbi"
+  },
+  "ngn": {
+   "u": "https://fivefish.org/ngn",
+   "n": "Ngwaw"
+  },
+  "bip": {
+   "u": "https://fivefish.org/bip",
+   "n": "Kibila"
+  },
+  "nyw": {
+   "u": "https://fivefish.org/nyw",
+   "n": "Nyaw"
+  },
+  "bsy": {
+   "u": "https://fivefish.org/bsy",
+   "n": "Bisaya, Sabah"
+  },
+  "lla": {
+   "u": "https://fivefish.org/lla",
+   "n": "Lalla"
+  },
+  "ngq": {
+   "u": "https://fivefish.org/ngq",
+   "n": "Ngurime"
+  },
+  "yiz": {
+   "u": "https://fivefish.org/yiz",
+   "n": "Azhe"
+  },
+  "bid": {
+   "u": "https://fivefish.org/bid",
+   "n": "Bidio"
+  },
+  "psh": {
+   "u": "https://fivefish.org/psh",
+   "n": "Pashai: Kohistani & Shahi"
+  },
+  "mgb": {
+   "u": "https://fivefish.org/mgb",
+   "n": "Mararit: Abou Charib"
+  },
+  "lse": {
+   "u": "https://fivefish.org/lse",
+   "n": "Lolenge"
+  },
+  "kwc": {
+   "u": "https://fivefish.org/kwc",
+   "n": "Likwala"
+  },
+  "lgm": {
+   "u": "https://fivefish.org/lgm",
+   "n": "Lega-Mwenga"
+  },
+  "jaf": {
+   "u": "https://fivefish.org/jaf",
+   "n": "Jarra"
+  },
+  "tay": {
+   "u": "https://fivefish.org/tay",
+   "n": "Tayal"
+  },
+  "djc": {
+   "u": "https://fivefish.org/djc",
+   "n": "Daju, Dar Daju"
+  },
+  "pmm": {
+   "u": "https://fivefish.org/pmm",
+   "n": "Pomo"
+  },
+  "wyy": {
+   "u": "https://fivefish.org/wyy",
+   "n": "Fijian, Western"
+  },
+  "muo": {
+   "u": "https://fivefish.org/muo",
+   "n": "Nyongnepa"
+  },
+  "bag": {
+   "u": "https://fivefish.org/bag",
+   "n": "Tuki"
+  },
+  "vaj": {
+   "u": "https://fivefish.org/vaj",
+   "n": "!Kung"
+  },
+  "atu": {
+   "u": "https://fivefish.org/atu",
+   "n": "Reel"
+  },
+  "bws": {
+   "u": "https://fivefish.org/bws",
+   "n": "Bomboma"
+  },
+  "dgh": {
+   "u": "https://fivefish.org/dgh",
+   "n": "Dghwede"
+  },
+  "rir": {
+   "u": "https://fivefish.org/rir",
+   "n": "Ribun"
+  },
+  "aks": {
+   "u": "https://fivefish.org/aks",
+   "n": "Akaselem"
+  },
+  "kem": {
+   "u": "https://fivefish.org/kem",
+   "n": "Kemak"
+  },
+  "raa": {
+   "u": "https://fivefish.org/raa",
+   "n": "Dungmali"
+  },
+  "kfo": {
+   "u": "https://fivefish.org/kfo",
+   "n": "Koro"
+  },
+  "lna": {
+   "u": "https://fivefish.org/lna",
+   "n": "Langbasi"
+  },
+  "xub": {
+   "u": "https://fivefish.org/xub",
+   "n": "Kurumba, Vatta"
+  },
+  "hol": {
+   "u": "https://fivefish.org/hol",
+   "n": "Kiholo"
+  },
+  "gim": {
+   "u": "https://fivefish.org/gim",
+   "n": "Gimi Group"
+  },
+  "nre": {
+   "u": "https://fivefish.org/nre",
+   "n": "Naga, Southern Rengma"
+  },
+  "nfu": {
+   "u": "https://fivefish.org/nfu",
+   "n": "Mfumte"
+  },
+  "mrh": {
+   "u": "https://fivefish.org/mrh",
+   "n": "Chin, Mara: Myanmar"
+  },
+  "wom": {
+   "u": "https://fivefish.org/wom",
+   "n": "Wom [Nigeria]"
+  },
+  "grd": {
+   "u": "https://fivefish.org/grd",
+   "n": "Guruntum-Mbaaru"
+  },
+  "tou": {
+   "u": "https://fivefish.org/tou",
+   "n": "Tho"
+  },
+  "byc": {
+   "u": "https://fivefish.org/byc",
+   "n": "Ubaghara"
+  },
+  "brt": {
+   "u": "https://fivefish.org/brt",
+   "n": "Njwande"
+  },
+  "cde": {
+   "u": "https://fivefish.org/cde",
+   "n": "Chenchu"
+  },
+  "ngj": {
+   "u": "https://fivefish.org/ngj",
+   "n": "Ngie"
+  },
+  "mct": {
+   "u": "https://fivefish.org/mct",
+   "n": "Mengisa"
+  },
+  "mma": {
+   "u": "https://fivefish.org/mma",
+   "n": "Mama"
+  },
+  "xkb": {
+   "u": "https://fivefish.org/xkb",
+   "n": "Kambole"
+  },
+  "nnp": {
+   "u": "https://fivefish.org/nnp",
+   "n": "Naga, Wancho"
+  },
+  "dhw": {
+   "u": "https://fivefish.org/dhw",
+   "n": "Danuwar"
+  },
+  "diw": {
+   "u": "https://fivefish.org/diw",
+   "n": "Dinka: Pan Aru"
+  },
+  "diu": {
+   "u": "https://fivefish.org/diu",
+   "n": "Gciriku"
+  },
+  "tth": {
+   "u": "https://fivefish.org/tth",
+   "n": "Tahoi"
+  },
+  "ags": {
+   "u": "https://fivefish.org/ags",
+   "n": "Esimbi"
+  },
+  "bcs": {
+   "u": "https://fivefish.org/bcs",
+   "n": "Hohumono"
+  },
+  "glh": {
+   "u": "https://fivefish.org/glh",
+   "n": "Pashayi, Northwest: Wadahu"
+  },
+  "jge": {
+   "u": "https://fivefish.org/jge",
+   "n": "Judeo-Georgian"
+  },
+  "xkf": {
+   "u": "https://fivefish.org/xkf",
+   "n": "Khengkha"
+  },
+  "xmg": {
+   "u": "https://fivefish.org/xmg",
+   "n": "Mengaka: Bagam"
+  },
+  "kcr": {
+   "u": "https://fivefish.org/kcr",
+   "n": "Katla"
+  },
+  "doz": {
+   "u": "https://fivefish.org/doz",
+   "n": "Dorze"
+  },
+  "kot": {
+   "u": "https://fivefish.org/kot",
+   "n": "Lagwan"
+  },
+  "bnn": {
+   "u": "https://fivefish.org/bnn",
+   "n": "Bunun"
+  },
+  "lky": {
+   "u": "https://fivefish.org/lky",
+   "n": "Lokoya"
+  },
+  "tny": {
+   "u": "https://fivefish.org/tny",
+   "n": "Tongwe"
+  },
+  "kxx": {
+   "u": "https://fivefish.org/kxx",
+   "n": "Likuba"
+  },
+  "mbo": {
+   "u": "https://fivefish.org/mbo",
+   "n": "Mbo"
+  },
+  "aal": {
+   "u": "https://fivefish.org/aal",
+   "n": "Afade"
+  },
+  "wbl": {
+   "u": "https://fivefish.org/wbl",
+   "n": "Wakhi"
+  },
+  "qus": {
+   "u": "https://fivefish.org/qus",
+   "n": "Quechua, Santiago Del Estero"
+  },
+  "lkr": {
+   "u": "https://fivefish.org/lkr",
+   "n": "Pari"
+  },
+  "enn": {
+   "u": "https://fivefish.org/enn",
+   "n": "Engenni"
+  },
+  "shq": {
+   "u": "https://fivefish.org/shq",
+   "n": "Sala"
+  },
+  "bpn": {
+   "u": "https://fivefish.org/bpn",
+   "n": "Dzao Min"
+  },
+  "kvf": {
+   "u": "https://fivefish.org/kvf",
+   "n": "Kabalai"
+  },
+  "efe": {
+   "u": "https://fivefish.org/efe",
+   "n": "Efe"
+  },
+  "plc": {
+   "u": "https://fivefish.org/plc",
+   "n": "Palawano, Central"
+  },
+  "mxu": {
+   "u": "https://fivefish.org/mxu",
+   "n": "Mada, Mora"
+  },
+  "nbr": {
+   "u": "https://fivefish.org/nbr",
+   "n": "Numana"
+  },
+  "png": {
+   "u": "https://fivefish.org/png",
+   "n": "Pangu"
+  },
+  "mdu": {
+   "u": "https://fivefish.org/mdu",
+   "n": "Mboko"
+  },
+  "mus": {
+   "u": "https://fivefish.org/mus",
+   "n": "Seminole"
+  },
+  "akf": {
+   "u": "https://fivefish.org/akf",
+   "n": "Idoma: Akpa"
+  },
+  "kvi": {
+   "u": "https://fivefish.org/kvi",
+   "n": "Kwong"
+  },
+  "gry": {
+   "u": "https://fivefish.org/gry",
+   "n": "Grebo, Webbo"
+  },
+  "fll": {
+   "u": "https://fivefish.org/fll",
+   "n": "Fali, Mayo Oulo"
+  },
+  "ygr": {
+   "u": "https://fivefish.org/ygr",
+   "n": "Yagaria"
+  },
+  "gwn": {
+   "u": "https://fivefish.org/gwn",
+   "n": "Gwandara"
+  },
+  "tkd": {
+   "u": "https://fivefish.org/tkd",
+   "n": "Tukudede"
+  },
+  "bzx": {
+   "u": "https://fivefish.org/bzx",
+   "n": "Bozo, Hainyaxo"
+  },
+  "pmi": {
+   "u": "https://fivefish.org/pmi",
+   "n": "Pumi"
+  },
+  "qud": {
+   "u": "https://fivefish.org/qud",
+   "n": "Quichua, Calderon"
+  },
+  "fie": {
+   "u": "https://fivefish.org/fie",
+   "n": "Fer"
+  },
+  "sme": {
+   "u": "https://fivefish.org/sme",
+   "n": "Saami, North"
+  },
+  "aee": {
+   "u": "https://fivefish.org/aee",
+   "n": "Pashayi, Northeast: Kordari"
+  },
+  "gwa": {
+   "u": "https://fivefish.org/gwa",
+   "n": "Mbato"
+  },
+  "kdm": {
+   "u": "https://fivefish.org/kdm",
+   "n": "Gyong"
+  },
+  "kks": {
+   "u": "https://fivefish.org/kks",
+   "n": "Kirifi"
+  },
+  "oro": {
+   "u": "https://fivefish.org/oro",
+   "n": "Orokolo"
+  },
+  "cch": {
+   "u": "https://fivefish.org/cch",
+   "n": "Atsam"
+  },
+  "ngs": {
+   "u": "https://fivefish.org/ngs",
+   "n": "Guvoko"
+  },
+  "akw": {
+   "u": "https://fivefish.org/akw",
+   "n": "Akwa"
+  },
+  "puo": {
+   "u": "https://fivefish.org/puo",
+   "n": "Puoc"
+  },
+  "ddg": {
+   "u": "https://fivefish.org/ddg",
+   "n": "Fataloku"
+  },
+  "ifm": {
+   "u": "https://fivefish.org/ifm",
+   "n": "Kiteke: Komono"
+  },
+  "bvm": {
+   "u": "https://fivefish.org/bvm",
+   "n": "Bamunka"
+  },
+  "mbm": {
+   "u": "https://fivefish.org/mbm",
+   "n": "Bambamba"
+  },
+  "ask": {
+   "u": "https://fivefish.org/ask",
+   "n": "Ashkuni"
+  },
+  "tdf": {
+   "u": "https://fivefish.org/tdf",
+   "n": "Talieng"
+  },
+  "llc": {
+   "u": "https://fivefish.org/llc",
+   "n": "Lele"
+  },
+  "bnm": {
+   "u": "https://fivefish.org/bnm",
+   "n": "Batanga"
+  },
+  "afo": {
+   "u": "https://fivefish.org/afo",
+   "n": "Eloyi"
+  },
+  "rgs": {
+   "u": "https://fivefish.org/rgs",
+   "n": "Roglai, Southern"
+  },
+  "gox": {
+   "u": "https://fivefish.org/gox",
+   "n": "Gobu"
+  },
+  "gbg": {
+   "u": "https://fivefish.org/gbg",
+   "n": "Banziri"
+  },
+  "kdu": {
+   "u": "https://fivefish.org/kdu",
+   "n": "Kortala"
+  },
+  "ghl": {
+   "u": "https://fivefish.org/ghl",
+   "n": "Gulfan"
+  },
+  "djo": {
+   "u": "https://fivefish.org/djo",
+   "n": "Jangkang"
+  },
+  "mfd": {
+   "u": "https://fivefish.org/mfd",
+   "n": "Nkwen"
+  },
+  "szb": {
+   "u": "https://fivefish.org/szb",
+   "n": "Ngalum"
+  },
+  "bsf": {
+   "u": "https://fivefish.org/bsf",
+   "n": "Bauchi: Madaka"
+  },
+  "qvj": {
+   "u": "https://fivefish.org/qvj",
+   "n": "Quichua, Saraguro"
+  },
+  "prx": {
+   "u": "https://fivefish.org/prx",
+   "n": "Purig"
+  },
+  "age": {
+   "u": "https://fivefish.org/age",
+   "n": "Mendi Group"
+  },
+  "bcz": {
+   "u": "https://fivefish.org/bcz",
+   "n": "Banhum"
+  },
+  "mdk": {
+   "u": "https://fivefish.org/mdk",
+   "n": "Mangbutu"
+  },
+  "smh": {
+   "u": "https://fivefish.org/smh",
+   "n": "Samei"
+  },
+  "sys": {
+   "u": "https://fivefish.org/sys",
+   "n": "Sinyar"
+  },
+  "bof": {
+   "u": "https://fivefish.org/bof",
+   "n": "Bolon"
+  },
+  "iyo": {
+   "u": "https://fivefish.org/iyo",
+   "n": "Mesaka"
+  },
+  "caq": {
+   "u": "https://fivefish.org/caq",
+   "n": "Nicobarese, Car"
+  },
+  "umm": {
+   "u": "https://fivefish.org/umm",
+   "n": "Umon"
+  },
+  "bbw": {
+   "u": "https://fivefish.org/bbw",
+   "n": "Baba"
+  },
+  "biz": {
+   "u": "https://fivefish.org/biz",
+   "n": "Baloi"
+  },
+  "sok": {
+   "u": "https://fivefish.org/sok",
+   "n": "Sokoro"
+  },
+  "cma": {
+   "u": "https://fivefish.org/cma",
+   "n": "Maa"
+  },
+  "tsp": {
+   "u": "https://fivefish.org/tsp",
+   "n": "Toussian, Northern"
+  },
+  "yiu": {
+   "u": "https://fivefish.org/yiu",
+   "n": "Awu"
+  },
+  "shm": {
+   "u": "https://fivefish.org/shm",
+   "n": "Shahrudi"
+  },
+  "wlc": {
+   "u": "https://fivefish.org/wlc",
+   "n": "Shimwali"
+  },
+  "glo": {
+   "u": "https://fivefish.org/glo",
+   "n": "Galambi"
+  },
+  "apt": {
+   "u": "https://fivefish.org/apt",
+   "n": "Apatani"
+  },
+  "loy": {
+   "u": "https://fivefish.org/loy",
+   "n": "Lhowa"
+  },
+  "odu": {
+   "u": "https://fivefish.org/odu",
+   "n": "Odual"
+  },
+  "knl": {
+   "u": "https://fivefish.org/knl",
+   "n": "Keninjal"
+  },
+  "bse": {
+   "u": "https://fivefish.org/bse",
+   "n": "Wushi"
+  },
+  "ldp": {
+   "u": "https://fivefish.org/ldp",
+   "n": "Tsobo"
+  },
+  "ndb": {
+   "u": "https://fivefish.org/ndb",
+   "n": "Bamessing"
+  },
+  "nat": {
+   "u": "https://fivefish.org/nat",
+   "n": "Ca̱hungwa̱rya̱"
+  },
+  "wow": {
+   "u": "https://fivefish.org/wow",
+   "n": "Wawonii"
+  },
+  "gwt": {
+   "u": "https://fivefish.org/gwt",
+   "n": "Naroji"
+  },
+  "xom": {
+   "u": "https://fivefish.org/xom",
+   "n": "Komo"
+  },
+  "brl": {
+   "u": "https://fivefish.org/brl",
+   "n": "Birwa"
+  },
+  "bcv": {
+   "u": "https://fivefish.org/bcv",
+   "n": "Shoo-Minda-Nye: Shoo"
+  },
+  "tmn": {
+   "u": "https://fivefish.org/tmn",
+   "n": "Taman [Indonesia]"
+  },
+  "vem": {
+   "u": "https://fivefish.org/vem",
+   "n": "Vengo-Mabas"
+  },
+  "seg": {
+   "u": "https://fivefish.org/seg",
+   "n": "Segeju"
+  },
+  "dhm": {
+   "u": "https://fivefish.org/dhm",
+   "n": "Oludhimba"
+  },
+  "pze": {
+   "u": "https://fivefish.org/pze",
+   "n": "Pesse"
+  },
+  "kci": {
+   "u": "https://fivefish.org/kci",
+   "n": "Ngyian"
+  },
+  "ldm": {
+   "u": "https://fivefish.org/ldm",
+   "n": "Landouma"
+  },
+  "nge": {
+   "u": "https://fivefish.org/nge",
+   "n": "Ngemba: Mankon"
+  },
+  "bzf": {
+   "u": "https://fivefish.org/bzf",
+   "n": "Boikin"
+  },
+  "tdh": {
+   "u": "https://fivefish.org/tdh",
+   "n": "Rai, Thulung"
+  },
+  "moj": {
+   "u": "https://fivefish.org/moj",
+   "n": "Monjombo"
+  },
+  "dnn": {
+   "u": "https://fivefish.org/dnn",
+   "n": "Dzùùngoo"
+  },
+  "kev": {
+   "u": "https://fivefish.org/kev",
+   "n": "Kanikkaran"
+  },
+  "ybl": {
+   "u": "https://fivefish.org/ybl",
+   "n": "Yukuben"
+  },
+  "hoo": {
+   "u": "https://fivefish.org/hoo",
+   "n": "Kikalanga"
+  },
+  "nhb": {
+   "u": "https://fivefish.org/nhb",
+   "n": "Beng"
+  },
+  "lan": {
+   "u": "https://fivefish.org/lan",
+   "n": "Laru"
+  },
+  "jrt": {
+   "u": "https://fivefish.org/jrt",
+   "n": "Jakattoe"
+  },
+  "pbn": {
+   "u": "https://fivefish.org/pbn",
+   "n": "Kpasham"
+  },
+  "pcw": {
+   "u": "https://fivefish.org/pcw",
+   "n": "Piapung"
+  },
+  "nng": {
+   "u": "https://fivefish.org/nng",
+   "n": "Naga, Maring"
+  },
+  "knz": {
+   "u": "https://fivefish.org/knz",
+   "n": "Kalamse: Loroni"
+  },
+  "cua": {
+   "u": "https://fivefish.org/cua",
+   "n": "Cua"
+  },
+  "tnv": {
+   "u": "https://fivefish.org/tnv",
+   "n": "Tangchangya"
+  },
+  "lmi": {
+   "u": "https://fivefish.org/lmi",
+   "n": "Kilumbi"
+  },
+  "sez": {
+   "u": "https://fivefish.org/sez",
+   "n": "Chin, Senthang"
+  },
+  "lig": {
+   "u": "https://fivefish.org/lig",
+   "n": "Ligbi"
+  },
+  "wlv": {
+   "u": "https://fivefish.org/wlv",
+   "n": "Bermejo Wichi"
+  },
+  "soc": {
+   "u": "https://fivefish.org/soc",
+   "n": "Heso"
+  },
+  "cgk": {
+   "u": "https://fivefish.org/cgk",
+   "n": "Chocangacakha"
+  },
+  "mfg": {
+   "u": "https://fivefish.org/mfg",
+   "n": "Mogofin"
+  },
+  "krp": {
+   "u": "https://fivefish.org/krp",
+   "n": "Durop"
+  },
+  "vkl": {
+   "u": "https://fivefish.org/vkl",
+   "n": "Kulisusu"
+  },
+  "niu": {
+   "u": "https://fivefish.org/niu",
+   "n": "Niue"
+  },
+  "skn": {
+   "u": "https://fivefish.org/skn",
+   "n": "Subanon, Kolibugan"
+  },
+  "sgi": {
+   "u": "https://fivefish.org/sgi",
+   "n": "Nizm"
+  },
+  "bqx": {
+   "u": "https://fivefish.org/bqx",
+   "n": "Baganci"
+  },
+  "mkg": {
+   "u": "https://fivefish.org/mkg",
+   "n": "Mak (China)"
+  },
+  "yog": {
+   "u": "https://fivefish.org/yog",
+   "n": "Yogad"
+  },
+  "cnb": {
+   "u": "https://fivefish.org/cnb",
+   "n": "Zinbon Chin"
+  },
+  "bdc": {
+   "u": "https://fivefish.org/bdc",
+   "n": "Embera-Baudo"
+  },
+  "clk": {
+   "u": "https://fivefish.org/clk",
+   "n": "Idu-Mishmi"
+  },
+  "zkd": {
+   "u": "https://fivefish.org/zkd",
+   "n": "Kadu"
+  },
+  "ukp": {
+   "u": "https://fivefish.org/ukp",
+   "n": "Ukpe-Bayogin: Ukpe"
+  },
+  "buh": {
+   "u": "https://fivefish.org/buh",
+   "n": "Miao, Lonsheng Mati"
+  },
+  "sos": {
+   "u": "https://fivefish.org/sos",
+   "n": "Sembla"
+  },
+  "bwt": {
+   "u": "https://fivefish.org/bwt",
+   "n": "Bafaw-Balong"
+  },
+  "fuy": {
+   "u": "https://fivefish.org/fuy",
+   "n": "Fuyuge"
+  },
+  "dmg": {
+   "u": "https://fivefish.org/dmg",
+   "n": "Kinabatangan, Upper"
+  },
+  "dzl": {
+   "u": "https://fivefish.org/dzl",
+   "n": "Dzalakha"
+  },
+  "bgj": {
+   "u": "https://fivefish.org/bgj",
+   "n": "Bangolan"
+  },
+  "ggw": {
+   "u": "https://fivefish.org/ggw",
+   "n": "Gogodala"
+  },
+  "mxd": {
+   "u": "https://fivefish.org/mxd",
+   "n": "Modang"
+  },
+  "xvi": {
+   "u": "https://fivefish.org/xvi",
+   "n": "Komviri"
+  },
+  "ndu": {
+   "u": "https://fivefish.org/ndu",
+   "n": "Sarrih"
+  },
+  "bac": {
+   "u": "https://fivefish.org/bac",
+   "n": "Badui"
+  },
+  "bfj": {
+   "u": "https://fivefish.org/bfj",
+   "n": "Bafanji"
+  },
+  "soo": {
+   "u": "https://fivefish.org/soo",
+   "n": "Kisongo"
+  },
+  "lul": {
+   "u": "https://fivefish.org/lul",
+   "n": "Olu'bo"
+  },
+  "kjd": {
+   "u": "https://fivefish.org/kjd",
+   "n": "Kiwai, Southern"
+  },
+  "naj": {
+   "u": "https://fivefish.org/naj",
+   "n": "Nalu"
+  },
+  "dak": {
+   "u": "https://fivefish.org/dak",
+   "n": "Dakota"
+  },
+  "tiq": {
+   "u": "https://fivefish.org/tiq",
+   "n": "Tiefo"
+  },
+  "thu": {
+   "u": "https://fivefish.org/thu",
+   "n": "Thuri"
+  },
+  "ayg": {
+   "u": "https://fivefish.org/ayg",
+   "n": "Anyanga"
+  },
+  "mkk": {
+   "u": "https://fivefish.org/mkk",
+   "n": "Byep"
+  },
+  "nnz": {
+   "u": "https://fivefish.org/nnz",
+   "n": "Ndanda: Batoufam"
+  },
+  "lgr": {
+   "u": "https://fivefish.org/lgr",
+   "n": "Lengo"
+  },
+  "ibm": {
+   "u": "https://fivefish.org/ibm",
+   "n": "Robambami"
+  },
+  "sts": {
+   "u": "https://fivefish.org/sts",
+   "n": "Shamushti"
+  },
+  "sbz": {
+   "u": "https://fivefish.org/sbz",
+   "n": "Sara Kaba"
+  },
+  "kvl": {
+   "u": "https://fivefish.org/kvl",
+   "n": "Kayaw"
+  },
+  "kip": {
+   "u": "https://fivefish.org/kip",
+   "n": "Kham, Sheshi"
+  },
+  "nnm": {
+   "u": "https://fivefish.org/nnm",
+   "n": "Namia"
+  },
+  "doa": {
+   "u": "https://fivefish.org/doa",
+   "n": "Dom"
+  },
+  "kfd": {
+   "u": "https://fivefish.org/kfd",
+   "n": "Koraru, Koroga"
+  },
+  "bbt": {
+   "u": "https://fivefish.org/bbt",
+   "n": "Burka"
+  },
+  "bub": {
+   "u": "https://fivefish.org/bub",
+   "n": "Boua"
+  },
+  "isu": {
+   "u": "https://fivefish.org/isu",
+   "n": "Esu"
+  },
+  "uta": {
+   "u": "https://fivefish.org/uta",
+   "n": "Utange"
+  },
+  "lss": {
+   "u": "https://fivefish.org/lss",
+   "n": "Lasi"
+  },
+  "awi": {
+   "u": "https://fivefish.org/awi",
+   "n": "Aekyom"
+  },
+  "npo": {
+   "u": "https://fivefish.org/npo",
+   "n": "Pochury Naga"
+  },
+  "gaf": {
+   "u": "https://fivefish.org/gaf",
+   "n": "Bundi"
+  },
+  "wlw": {
+   "u": "https://fivefish.org/wlw",
+   "n": "Walak"
+  },
+  "nhd": {
+   "u": "https://fivefish.org/nhd",
+   "n": "Chiripa"
+  },
+  "tja": {
+   "u": "https://fivefish.org/tja",
+   "n": "Tajuasohn"
+  },
+  "kfm": {
+   "u": "https://fivefish.org/kfm",
+   "n": "Khunsari"
+  },
+  "deg": {
+   "u": "https://fivefish.org/deg",
+   "n": "Degama"
+  },
+  "jiu": {
+   "u": "https://fivefish.org/jiu",
+   "n": "Jino"
+  },
+  "mcs": {
+   "u": "https://fivefish.org/mcs",
+   "n": "Mambay"
+  },
+  "pbp": {
+   "u": "https://fivefish.org/pbp",
+   "n": "Pajadinca"
+  },
+  "kpk": {
+   "u": "https://fivefish.org/kpk",
+   "n": "Kpan"
+  },
+  "bwe": {
+   "u": "https://fivefish.org/bwe",
+   "n": "Karen, Bwe"
+  },
+  "taz": {
+   "u": "https://fivefish.org/taz",
+   "n": "Toicha"
+  },
+  "bqh": {
+   "u": "https://fivefish.org/bqh",
+   "n": "Baima"
+  },
+  "ndm": {
+   "u": "https://fivefish.org/ndm",
+   "n": "Ndam"
+  },
+  "itt": {
+   "u": "https://fivefish.org/itt",
+   "n": "Maeng Itneg"
+  },
+  "ayi": {
+   "u": "https://fivefish.org/ayi",
+   "n": "Assiga"
+  },
+  "xtl": {
+   "u": "https://fivefish.org/xtl",
+   "n": "Mixtec, Tijaltepec"
+  },
+  "kxb": {
+   "u": "https://fivefish.org/kxb",
+   "n": "Krobu"
+  },
+  "nnu": {
+   "u": "https://fivefish.org/nnu",
+   "n": "Dwang"
+  },
+  "msj": {
+   "u": "https://fivefish.org/msj",
+   "n": "Amadi"
+  },
+  "ngw": {
+   "u": "https://fivefish.org/ngw",
+   "n": "Ngwaba"
+  },
+  "byp": {
+   "u": "https://fivefish.org/byp",
+   "n": "Bumaji"
+  },
+  "ldj": {
+   "u": "https://fivefish.org/ldj",
+   "n": "Lemoro"
+  },
+  "mlw": {
+   "u": "https://fivefish.org/mlw",
+   "n": "Melokwo"
+  },
+  "wdd": {
+   "u": "https://fivefish.org/wdd",
+   "n": "Bawandji"
+  },
+  "dir": {
+   "u": "https://fivefish.org/dir",
+   "n": "Jirim"
+  },
+  "kni": {
+   "u": "https://fivefish.org/kni",
+   "n": "Kanufi"
+  },
+  "oml": {
+   "u": "https://fivefish.org/oml",
+   "n": "Ombo: Mbuli"
+  },
+  "tnl": {
+   "u": "https://fivefish.org/tnl",
+   "n": "Lenakel"
+  },
+  "kcc": {
+   "u": "https://fivefish.org/kcc",
+   "n": "Lubila"
+  },
+  "mfj": {
+   "u": "https://fivefish.org/mfj",
+   "n": "Mefele"
+  },
+  "dbp": {
+   "u": "https://fivefish.org/dbp",
+   "n": "Duwai"
+  },
+  "deh": {
+   "u": "https://fivefish.org/deh",
+   "n": "Dehwari"
+  },
+  "akd": {
+   "u": "https://fivefish.org/akd",
+   "n": "Ukpet-Ehom"
+  },
+  "byi": {
+   "u": "https://fivefish.org/byi",
+   "n": "Kibuyu"
+  },
+  "ren": {
+   "u": "https://fivefish.org/ren",
+   "n": "Rongao"
+  },
+  "iar": {
+   "u": "https://fivefish.org/iar",
+   "n": "Koriki"
+  },
+  "ogg": {
+   "u": "https://fivefish.org/ogg",
+   "n": "Ogbogolo"
+  },
+  "wca": {
+   "u": "https://fivefish.org/wca",
+   "n": "Yanomami: Yanamam"
+  },
+  "ney": {
+   "u": "https://fivefish.org/ney",
+   "n": "Neyo"
+  },
+  "pnq": {
+   "u": "https://fivefish.org/pnq",
+   "n": "Pana [Burkina Faso]"
+  },
+  "kwu": {
+   "u": "https://fivefish.org/kwu",
+   "n": "Kwakum"
+  },
+  "mbp": {
+   "u": "https://fivefish.org/mbp",
+   "n": "Dumuna"
+  },
+  "soi": {
+   "u": "https://fivefish.org/soi",
+   "n": "Sonaaha"
+  },
+  "dez": {
+   "u": "https://fivefish.org/dez",
+   "n": "Dengese"
+  },
+  "dry": {
+   "u": "https://fivefish.org/dry",
+   "n": "Darai"
+  },
+  "aog": {
+   "u": "https://fivefish.org/aog",
+   "n": "Angoram"
+  },
+  "bqt": {
+   "u": "https://fivefish.org/bqt",
+   "n": "Bamukumbit"
+  },
+  "kzs": {
+   "u": "https://fivefish.org/kzs",
+   "n": "Kadazan, Tangaa"
+  },
+  "qum": {
+   "u": "https://fivefish.org/qum",
+   "n": "Sipakapense"
+  },
+  "bxb": {
+   "u": "https://fivefish.org/bxb",
+   "n": "Belanda Bor"
+  },
+  "bdb": {
+   "u": "https://fivefish.org/bdb",
+   "n": "Basap"
+  },
+  "xkz": {
+   "u": "https://fivefish.org/xkz",
+   "n": "Kurtokha"
+  },
+  "tvl": {
+   "u": "https://fivefish.org/tvl",
+   "n": "Tuvalu"
+  },
+  "lor": {
+   "u": "https://fivefish.org/lor",
+   "n": "Touni"
+  },
+  "ygw": {
+   "u": "https://fivefish.org/ygw",
+   "n": "Yagwoia"
+  },
+  "lie": {
+   "u": "https://fivefish.org/lie",
+   "n": "Likile"
+  },
+  "pqa": {
+   "u": "https://fivefish.org/pqa",
+   "n": "Pa'awa"
+  },
+  "duu": {
+   "u": "https://fivefish.org/duu",
+   "n": "Drung"
+  },
+  "kqm": {
+   "u": "https://fivefish.org/kqm",
+   "n": "Khisa"
+  },
+  "ldo": {
+   "u": "https://fivefish.org/ldo",
+   "n": "Lo"
+  },
+  "idt": {
+   "u": "https://fivefish.org/idt",
+   "n": "Idate"
+  },
+  "gea": {
+   "u": "https://fivefish.org/gea",
+   "n": "Gerumawa"
+  },
+  "eze": {
+   "u": "https://fivefish.org/eze",
+   "n": "Ezekwe"
+  },
+  "weo": {
+   "u": "https://fivefish.org/weo",
+   "n": "Wemale"
+  },
+  "akg": {
+   "u": "https://fivefish.org/akg",
+   "n": "Anakalang"
+  },
+  "nux": {
+   "u": "https://fivefish.org/nux",
+   "n": "Nuku"
+  },
+  "teq": {
+   "u": "https://fivefish.org/teq",
+   "n": "Temein"
+  },
+  "zms": {
+   "u": "https://fivefish.org/zms",
+   "n": "Mombesa"
+  },
+  "bbq": {
+   "u": "https://fivefish.org/bbq",
+   "n": "Bamali"
+  },
+  "ghk": {
+   "u": "https://fivefish.org/ghk",
+   "n": "Karen, Geko"
+  },
+  "kbx": {
+   "u": "https://fivefish.org/kbx",
+   "n": "Botin"
+  },
+  "liz": {
+   "u": "https://fivefish.org/liz",
+   "n": "Libinza"
+  },
+  "kxj": {
+   "u": "https://fivefish.org/kxj",
+   "n": "Kulfa"
+  },
+  "lev": {
+   "u": "https://fivefish.org/lev",
+   "n": "Mauta"
+  },
+  "sha": {
+   "u": "https://fivefish.org/sha",
+   "n": "Shall-Zwall: Shall"
+  },
+  "weh": {
+   "u": "https://fivefish.org/weh",
+   "n": "Weh"
+  },
+  "ruz": {
+   "u": "https://fivefish.org/ruz",
+   "n": "Ruruma"
+  },
+  "jaq": {
+   "u": "https://fivefish.org/jaq",
+   "n": "Yaqai"
+  },
+  "plr": {
+   "u": "https://fivefish.org/plr",
+   "n": "Senoufo Pallaka"
+  },
+  "tdk": {
+   "u": "https://fivefish.org/tdk",
+   "n": "Tembis"
+  },
+  "glr": {
+   "u": "https://fivefish.org/glr",
+   "n": "Glaro-Twabo: Twabo"
+  },
+  "ckx": {
+   "u": "https://fivefish.org/ckx",
+   "n": "Caka: Asaka"
+  },
+  "nfl": {
+   "u": "https://fivefish.org/nfl",
+   "n": "Nieuwa"
+  },
+  "gnb": {
+   "u": "https://fivefish.org/gnb",
+   "n": "Gangte"
+  },
+  "mcw": {
+   "u": "https://fivefish.org/mcw",
+   "n": "Mawa (Chad)"
+  },
+  "noz": {
+   "u": "https://fivefish.org/noz",
+   "n": "Nao"
+  },
+  "nyg": {
+   "u": "https://fivefish.org/nyg",
+   "n": "Nyindu"
+  },
+  "ncg": {
+   "u": "https://fivefish.org/ncg",
+   "n": "Nishka"
+  },
+  "mvo": {
+   "u": "https://fivefish.org/mvo",
+   "n": "Marovo"
+  },
+  "dhv": {
+   "u": "https://fivefish.org/dhv",
+   "n": "Drehu"
+  },
+  "koe": {
+   "u": "https://fivefish.org/koe",
+   "n": "Kacipo-Balesi"
+  },
+  "pta": {
+   "u": "https://fivefish.org/pta",
+   "n": "Pai Tavytera"
+  },
+  "bhs": {
+   "u": "https://fivefish.org/bhs",
+   "n": "Buwal Gavar"
+  },
+  "ksn": {
+   "u": "https://fivefish.org/ksn",
+   "n": "Kasiguranin"
+  },
+  "sgp": {
+   "u": "https://fivefish.org/sgp",
+   "n": "Singpho"
+  },
+  "pnc": {
+   "u": "https://fivefish.org/pnc",
+   "n": "Pannei"
+  },
+  "dwa": {
+   "u": "https://fivefish.org/dwa",
+   "n": "Diriyawa"
+  },
+  "kwb": {
+   "u": "https://fivefish.org/kwb",
+   "n": "Kwa"
+  },
+  "uba": {
+   "u": "https://fivefish.org/uba",
+   "n": "Ubang"
+  },
+  "baa": {
+   "u": "https://fivefish.org/baa",
+   "n": "Bambatana"
+  },
+  "phl": {
+   "u": "https://fivefish.org/phl",
+   "n": "Palula: Northern"
+  },
+  "spt": {
+   "u": "https://fivefish.org/spt",
+   "n": "Spiti Bhoti"
+  },
+  "mgl": {
+   "u": "https://fivefish.org/mgl",
+   "n": "Maleu-Kilenge: Maleu"
+  },
+  "dbb": {
+   "u": "https://fivefish.org/dbb",
+   "n": "Deno"
+  },
+  "nda": {
+   "u": "https://fivefish.org/nda",
+   "n": "Bandassa"
+  },
+  "dms": {
+   "u": "https://fivefish.org/dms",
+   "n": "Dampelas"
+  },
+  "quv": {
+   "u": "https://fivefish.org/quv",
+   "n": "Sakapulteko"
+  },
+  "byj": {
+   "u": "https://fivefish.org/byj",
+   "n": "Binawa"
+  },
+  "yno": {
+   "u": "https://fivefish.org/yno",
+   "n": "Yong"
+  },
+  "gou": {
+   "u": "https://fivefish.org/gou",
+   "n": "Gavar"
+  },
+  "oub": {
+   "u": "https://fivefish.org/oub",
+   "n": "Glio: Krahn"
+  },
+  "lmg": {
+   "u": "https://fivefish.org/lmg",
+   "n": "Akeuru"
+  },
+  "txt": {
+   "u": "https://fivefish.org/txt",
+   "n": "Citak"
+  },
+  "bva": {
+   "u": "https://fivefish.org/bva",
+   "n": "Baraine"
+  },
+  "iki": {
+   "u": "https://fivefish.org/iki",
+   "n": "Iko"
+  },
+  "yin": {
+   "u": "https://fivefish.org/yin",
+   "n": "Yinnet"
+  },
+  "nac": {
+   "u": "https://fivefish.org/nac",
+   "n": "Narak"
+  },
+  "bui": {
+   "u": "https://fivefish.org/bui",
+   "n": "Bonguili"
+  },
+  "ruy": {
+   "u": "https://fivefish.org/ruy",
+   "n": "Rumaya"
+  },
+  "nxr": {
+   "u": "https://fivefish.org/nxr",
+   "n": "Tidi"
+  },
+  "kvb": {
+   "u": "https://fivefish.org/kvb",
+   "n": "Kubu: Anak Dalam"
+  },
+  "chx": {
+   "u": "https://fivefish.org/chx",
+   "n": "Chantyal"
+  },
+  "kgq": {
+   "u": "https://fivefish.org/kgq",
+   "n": "Kamoro"
+  },
+  "inj": {
+   "u": "https://fivefish.org/inj",
+   "n": "Inga, Jungle: Yunguillo-Condagua"
+  },
+  "bab": {
+   "u": "https://fivefish.org/bab",
+   "n": "Bainouk-Gunyono"
+  },
+  "ikx": {
+   "u": "https://fivefish.org/ikx",
+   "n": "Ik"
+  },
+  "nkx": {
+   "u": "https://fivefish.org/nkx",
+   "n": "Nkoroo"
+  },
+  "gip": {
+   "u": "https://fivefish.org/gip",
+   "n": "Gimi"
+  },
+  "rtm": {
+   "u": "https://fivefish.org/rtm",
+   "n": "Rotuman"
+  },
+  "skq": {
+   "u": "https://fivefish.org/skq",
+   "n": "Sininkere"
+  },
+  "szw": {
+   "u": "https://fivefish.org/szw",
+   "n": "Sawai"
+  },
+  "ptn": {
+   "u": "https://fivefish.org/ptn",
+   "n": "Patani"
+  },
+  "lkh": {
+   "u": "https://fivefish.org/lkh",
+   "n": "Lakha"
+  },
+  "kdz": {
+   "u": "https://fivefish.org/kdz",
+   "n": "Kwaja"
+  },
+  "prn": {
+   "u": "https://fivefish.org/prn",
+   "n": "Paruni"
+  },
+  "prc": {
+   "u": "https://fivefish.org/prc",
+   "n": "Parachi"
+  },
+  "lmx": {
+   "u": "https://fivefish.org/lmx",
+   "n": "Laimbue"
+  },
+  "jbm": {
+   "u": "https://fivefish.org/jbm",
+   "n": "Bijim"
+  },
+  "bmj": {
+   "u": "https://fivefish.org/bmj",
+   "n": "Bote-Majhi"
+  },
+  "bhj": {
+   "u": "https://fivefish.org/bhj",
+   "n": "Bahing: Rumdali"
+  },
+  "nli": {
+   "u": "https://fivefish.org/nli",
+   "n": "Grangali"
+  },
+  "muz": {
+   "u": "https://fivefish.org/muz",
+   "n": "Mursi"
+  },
+  "klr": {
+   "u": "https://fivefish.org/klr",
+   "n": "Khaling"
+  },
+  "kvu": {
+   "u": "https://fivefish.org/kvu",
+   "n": "Karen, Yinbaw"
+  },
+  "bka": {
+   "u": "https://fivefish.org/bka",
+   "n": "Kyak"
+  },
+  "kph": {
+   "u": "https://fivefish.org/kph",
+   "n": "Prang"
+  },
+  "uar": {
+   "u": "https://fivefish.org/uar",
+   "n": "Tairuma"
+  },
+  "pbl": {
+   "u": "https://fivefish.org/pbl",
+   "n": "Mak: Zoh"
+  },
+  "tis": {
+   "u": "https://fivefish.org/tis",
+   "n": "Itneg, Masadiit"
+  },
+  "cfg": {
+   "u": "https://fivefish.org/cfg",
+   "n": "Karimjo"
+  },
+  "mrz": {
+   "u": "https://fivefish.org/mrz",
+   "n": "Marind Group"
+  },
+  "ldk": {
+   "u": "https://fivefish.org/ldk",
+   "n": "Leelau"
+  },
+  "glj": {
+   "u": "https://fivefish.org/glj",
+   "n": "Goula Iro: Pongaal"
+  },
+  "lbq": {
+   "u": "https://fivefish.org/lbq",
+   "n": "Wampar"
+  },
+  "moc": {
+   "u": "https://fivefish.org/moc",
+   "n": "Mocovie"
+  },
+  "brr": {
+   "u": "https://fivefish.org/brr",
+   "n": "Birao"
+  },
+  "lop": {
+   "u": "https://fivefish.org/lop",
+   "n": "Lopawa"
+  },
+  "kvt": {
+   "u": "https://fivefish.org/kvt",
+   "n": "Lahta"
+  },
+  "bgf": {
+   "u": "https://fivefish.org/bgf",
+   "n": "Bangandu"
+  },
+  "kkn": {
+   "u": "https://fivefish.org/kkn",
+   "n": "KongGe"
+  },
+  "sjb": {
+   "u": "https://fivefish.org/sjb",
+   "n": "Sajau Basap: Punan"
+  },
+  "gdu": {
+   "u": "https://fivefish.org/gdu",
+   "n": "Gudu"
+  },
+  "erk": {
+   "u": "https://fivefish.org/erk",
+   "n": "Erakor"
+  },
+  "ttv": {
+   "u": "https://fivefish.org/ttv",
+   "n": "Titan"
+  },
+  "bob": {
+   "u": "https://fivefish.org/bob",
+   "n": "Aweer"
+  },
+  "kdx": {
+   "u": "https://fivefish.org/kdx",
+   "n": "Kam"
+  },
+  "kol": {
+   "u": "https://fivefish.org/kol",
+   "n": "Kol [Papua New Guinea]"
+  },
+  "wbf": {
+   "u": "https://fivefish.org/wbf",
+   "n": "Wara"
+  },
+  "aab": {
+   "u": "https://fivefish.org/aab",
+   "n": "Alumu-Tesu"
+  },
+  "pcn": {
+   "u": "https://fivefish.org/pcn",
+   "n": "Piti"
+  },
+  "add": {
+   "u": "https://fivefish.org/add",
+   "n": "Dzodinka"
+  },
+  "mxh": {
+   "u": "https://fivefish.org/mxh",
+   "n": "Kimbuba"
+  },
+  "shh": {
+   "u": "https://fivefish.org/shh",
+   "n": "Shoshone"
+  },
+  "kpl": {
+   "u": "https://fivefish.org/kpl",
+   "n": "Lokwala"
+  },
+  "lti": {
+   "u": "https://fivefish.org/lti",
+   "n": "Leti"
+  },
+  "tdl": {
+   "u": "https://fivefish.org/tdl",
+   "n": "Kusur-Myet"
+  },
+  "akc": {
+   "u": "https://fivefish.org/akc",
+   "n": "Mpur"
+  },
+  "nen": {
+   "u": "https://fivefish.org/nen",
+   "n": "Mare"
+  },
+  "mwg": {
+   "u": "https://fivefish.org/mwg",
+   "n": "Geglep"
+  },
+  "fqs": {
+   "u": "https://fivefish.org/fqs",
+   "n": "Fas"
+  },
+  "tkl": {
+   "u": "https://fivefish.org/tkl",
+   "n": "Tokelauan"
+  },
+  "foi": {
+   "u": "https://fivefish.org/foi",
+   "n": "Foe"
+  },
+  "kqb": {
+   "u": "https://fivefish.org/kqb",
+   "n": "Kovai"
+  },
+  "mea": {
+   "u": "https://fivefish.org/mea",
+   "n": "Wando"
+  },
+  "cli": {
+   "u": "https://fivefish.org/cli",
+   "n": "Chakali"
+  },
+  "kmp": {
+   "u": "https://fivefish.org/kmp",
+   "n": "Gimme"
+  },
+  "vrs": {
+   "u": "https://fivefish.org/vrs",
+   "n": "Varisi"
+  },
+  "zau": {
+   "u": "https://fivefish.org/zau",
+   "n": "Zangskari"
+  },
+  "mbv": {
+   "u": "https://fivefish.org/mbv",
+   "n": "Mbulungish"
+  },
+  "ydg": {
+   "u": "https://fivefish.org/ydg",
+   "n": "Yidgha"
+  },
+  "bsi": {
+   "u": "https://fivefish.org/bsi",
+   "n": "Bassossi"
+  },
+  "kif": {
+   "u": "https://fivefish.org/kif",
+   "n": "Kham, Eastern Parbate"
+  },
+  "ayu": {
+   "u": "https://fivefish.org/ayu",
+   "n": "Ayu"
+  },
+  "txn": {
+   "u": "https://fivefish.org/txn",
+   "n": "Tarangan, West: North Central"
+  },
+  "kxz": {
+   "u": "https://fivefish.org/kxz",
+   "n": "Kerewo: Gibario"
+  },
+  "sdg": {
+   "u": "https://fivefish.org/sdg",
+   "n": "Sauji"
+  },
+  "ado": {
+   "u": "https://fivefish.org/ado",
+   "n": "Abu"
+  },
+  "ihp": {
+   "u": "https://fivefish.org/ihp",
+   "n": "Iha"
+  },
+  "yiq": {
+   "u": "https://fivefish.org/yiq",
+   "n": "Miqie"
+  },
+  "shw": {
+   "u": "https://fivefish.org/shw",
+   "n": "Shwaia"
+  },
+  "mef": {
+   "u": "https://fivefish.org/mef",
+   "n": "Megam"
+  },
+  "mnj": {
+   "u": "https://fivefish.org/mnj",
+   "n": "Munji"
+  },
+  "wmo": {
+   "u": "https://fivefish.org/wmo",
+   "n": "Wom [Papua New Guinea]"
+  },
+  "bey": {
+   "u": "https://fivefish.org/bey",
+   "n": "Yemeraba"
+  },
+  "ato": {
+   "u": "https://fivefish.org/ato",
+   "n": "Atong [Cameroon]"
+  },
+  "ckh": {
+   "u": "https://fivefish.org/ckh",
+   "n": "Chak"
+  },
+  "kgw": {
+   "u": "https://fivefish.org/kgw",
+   "n": "Karon Dori"
+  },
+  "liu": {
+   "u": "https://fivefish.org/liu",
+   "n": "Logorik: Tallau"
+  },
+  "yoy": {
+   "u": "https://fivefish.org/yoy",
+   "n": "Yoy"
+  },
+  "nbp": {
+   "u": "https://fivefish.org/nbp",
+   "n": "Nnam"
+  },
+  "yae": {
+   "u": "https://fivefish.org/yae",
+   "n": "Yaruro"
+  },
+  "siy": {
+   "u": "https://fivefish.org/siy",
+   "n": "Sivandi"
+  },
+  "tdv": {
+   "u": "https://fivefish.org/tdv",
+   "n": "Atoro"
+  },
+  "ont": {
+   "u": "https://fivefish.org/ont",
+   "n": "Ontenu"
+  },
+  "nyb": {
+   "u": "https://fivefish.org/nyb",
+   "n": "Nyangbo"
+  },
+  "scn": {
+   "u": "https://fivefish.org/scn",
+   "n": "Sicilian"
+  },
+  "ola": {
+   "u": "https://fivefish.org/ola",
+   "n": "Walungge"
+  },
+  "aaw": {
+   "u": "https://fivefish.org/aaw",
+   "n": "Solong"
+  },
+  "muk": {
+   "u": "https://fivefish.org/muk",
+   "n": "Mugali: Karmarong"
+  },
+  "kls": {
+   "u": "https://fivefish.org/kls",
+   "n": "Kalasha"
+  },
+  "ute": {
+   "u": "https://fivefish.org/ute",
+   "n": "Ute-Southern Paiute"
+  },
+  "iwm": {
+   "u": "https://fivefish.org/iwm",
+   "n": "Iwam"
+  },
+  "geg": {
+   "u": "https://fivefish.org/geg",
+   "n": "Gengle"
+  },
+  "sau": {
+   "u": "https://fivefish.org/sau",
+   "n": "Manusella"
+  },
+  "dza": {
+   "u": "https://fivefish.org/dza",
+   "n": "Duguza"
+  },
+  "wod": {
+   "u": "https://fivefish.org/wod",
+   "n": "Wolani"
+  },
+  "psa": {
+   "u": "https://fivefish.org/psa",
+   "n": "Auyu, Miaro"
+  },
+  "irr": {
+   "u": "https://fivefish.org/irr",
+   "n": "In"
+  },
+  "sui": {
+   "u": "https://fivefish.org/sui",
+   "n": "Suki"
+  },
+  "mla": {
+   "u": "https://fivefish.org/mla",
+   "n": "Malo"
+  },
+  "sku": {
+   "u": "https://fivefish.org/sku",
+   "n": "Sakao"
+  },
+  "byz": {
+   "u": "https://fivefish.org/byz",
+   "n": "Banaro"
+  },
+  "bkg": {
+   "u": "https://fivefish.org/bkg",
+   "n": "Bulaka"
+  },
+  "lwl": {
+   "u": "https://fivefish.org/lwl",
+   "n": "Lawa, Northern"
+  },
+  "ktc": {
+   "u": "https://fivefish.org/ktc",
+   "n": "Kodei"
+  },
+  "aji": {
+   "u": "https://fivefish.org/aji",
+   "n": "Ajie"
+  },
+  "sjl": {
+   "u": "https://fivefish.org/sjl",
+   "n": "Sajalong"
+  },
+  "nmm": {
+   "u": "https://fivefish.org/nmm",
+   "n": "Nyeshangte"
+  },
+  "ksm": {
+   "u": "https://fivefish.org/ksm",
+   "n": "Isaro-Sate"
+  },
+  "xhe": {
+   "u": "https://fivefish.org/xhe",
+   "n": "Khetrani"
+  },
+  "nmk": {
+   "u": "https://fivefish.org/nmk",
+   "n": "Namakura"
+  },
+  "pai": {
+   "u": "https://fivefish.org/pai",
+   "n": "Pai"
+  },
+  "sew": {
+   "u": "https://fivefish.org/sew",
+   "n": "Koluwea & Sewa"
+  },
+  "bxa": {
+   "u": "https://fivefish.org/bxa",
+   "n": "Tairaha"
+  },
+  "saf": {
+   "u": "https://fivefish.org/saf",
+   "n": "Safaliba"
+  },
+  "bei": {
+   "u": "https://fivefish.org/bei",
+   "n": "Bakati'"
+  },
+  "cfd": {
+   "u": "https://fivefish.org/cfd",
+   "n": "Fachara"
+  },
+  "kgy": {
+   "u": "https://fivefish.org/kgy",
+   "n": "Kyerung"
+  },
+  "mrq": {
+   "u": "https://fivefish.org/mrq",
+   "n": "Marquesan, North"
+  },
+  "ass": {
+   "u": "https://fivefish.org/ass",
+   "n": "Ipulo"
+  },
+  "duw": {
+   "u": "https://fivefish.org/duw",
+   "n": "Dusun Witu"
+  },
+  "jul": {
+   "u": "https://fivefish.org/jul",
+   "n": "Jirel"
+  },
+  "mte": {
+   "u": "https://fivefish.org/mte",
+   "n": "Mono"
+  },
+  "tkp": {
+   "u": "https://fivefish.org/tkp",
+   "n": "Tikopia"
+  },
+  "kpa": {
+   "u": "https://fivefish.org/kpa",
+   "n": "Kupto"
+  },
+  "aqt": {
+   "u": "https://fivefish.org/aqt",
+   "n": "Angaite"
+  },
+  "mko": {
+   "u": "https://fivefish.org/mko",
+   "n": "Mingang Doso"
+  },
+  "bwm": {
+   "u": "https://fivefish.org/bwm",
+   "n": "Biwat"
+  },
+  "pay": {
+   "u": "https://fivefish.org/pay",
+   "n": "Paya"
+  },
+  "mot": {
+   "u": "https://fivefish.org/mot",
+   "n": "Motilon"
+  },
+  "bby": {
+   "u": "https://fivefish.org/bby",
+   "n": "Befang"
+  },
+  "ppt": {
+   "u": "https://fivefish.org/ppt",
+   "n": "Pa"
+  },
+  "phq": {
+   "u": "https://fivefish.org/phq",
+   "n": "Bana'"
+  },
+  "bbi": {
+   "u": "https://fivefish.org/bbi",
+   "n": "Barombi"
+  },
+  "ncm": {
+   "u": "https://fivefish.org/ncm",
+   "n": "Nambo"
+  },
+  "mrl": {
+   "u": "https://fivefish.org/mrl",
+   "n": "Mortlockese"
+  },
+  "spu": {
+   "u": "https://fivefish.org/spu",
+   "n": "Sapuan"
+  },
+  "vam": {
+   "u": "https://fivefish.org/vam",
+   "n": "Dumo Group"
+  },
+  "auk": {
+   "u": "https://fivefish.org/auk",
+   "n": "Heiyoho"
+  },
+  "wme": {
+   "u": "https://fivefish.org/wme",
+   "n": "Wambule"
+  },
+  "ldq": {
+   "u": "https://fivefish.org/ldq",
+   "n": "Lufu"
+  },
+  "tcd": {
+   "u": "https://fivefish.org/tcd",
+   "n": "Tafi"
+  },
+  "raf": {
+   "u": "https://fivefish.org/raf",
+   "n": "Mewahang, Western"
+  },
+  "agw": {
+   "u": "https://fivefish.org/agw",
+   "n": "Hega"
+  },
+  "zng": {
+   "u": "https://fivefish.org/zng",
+   "n": "Chaman"
+  },
+  "svb": {
+   "u": "https://fivefish.org/svb",
+   "n": "Ulau-Suain"
+  },
+  "kvd": {
+   "u": "https://fivefish.org/kvd",
+   "n": "Kiraman"
+  },
+  "tlq": {
+   "u": "https://fivefish.org/tlq",
+   "n": "Tai Loi"
+  },
+  "aez": {
+   "u": "https://fivefish.org/aez",
+   "n": "Aeka"
+  },
+  "bzv": {
+   "u": "https://fivefish.org/bzv",
+   "n": "Naami"
+  },
+  "pum": {
+   "u": "https://fivefish.org/pum",
+   "n": "Puma"
+  },
+  "yah": {
+   "u": "https://fivefish.org/yah",
+   "n": "Yazgulyam"
+  },
+  "khl": {
+   "u": "https://fivefish.org/khl",
+   "n": "Kaliai-Kove"
+  },
+  "bfg": {
+   "u": "https://fivefish.org/bfg",
+   "n": "Kayan, Busang"
+  },
+  "ple": {
+   "u": "https://fivefish.org/ple",
+   "n": "Palue"
+  },
+  "xod": {
+   "u": "https://fivefish.org/xod",
+   "n": "Jamweti Group"
+  },
+  "slz": {
+   "u": "https://fivefish.org/slz",
+   "n": "Maja Group"
+  },
+  "yll": {
+   "u": "https://fivefish.org/yll",
+   "n": "Yil"
+  },
+  "kit": {
+   "u": "https://fivefish.org/kit",
+   "n": "Agob"
+  },
+  "jkp": {
+   "u": "https://fivefish.org/jkp",
+   "n": "Karen, Paku"
+  },
+  "hut": {
+   "u": "https://fivefish.org/hut",
+   "n": "Humla"
+  },
+  "ael": {
+   "u": "https://fivefish.org/ael",
+   "n": "Ambele"
+  },
+  "sbb": {
+   "u": "https://fivefish.org/sbb",
+   "n": "Simbo"
+  },
+  "fun": {
+   "u": "https://fivefish.org/fun",
+   "n": "Fulnio"
+  },
+  "sre": {
+   "u": "https://fivefish.org/sre",
+   "n": "Bakati', Sara"
+  },
+  "plg": {
+   "u": "https://fivefish.org/plg",
+   "n": "Pilaga: Toba"
+  },
+  "jei": {
+   "u": "https://fivefish.org/jei",
+   "n": "Je Group"
+  },
+  "cll": {
+   "u": "https://fivefish.org/cll",
+   "n": "Chala"
+  },
+  "kfg": {
+   "u": "https://fivefish.org/kfg",
+   "n": "Kudiya"
+  },
+  "wli": {
+   "u": "https://fivefish.org/wli",
+   "n": "Waioli"
+  },
+  "iai": {
+   "u": "https://fivefish.org/iai",
+   "n": "Iai"
+  },
+  "bcg": {
+   "u": "https://fivefish.org/bcg",
+   "n": "Baga"
+  },
+  "bmd": {
+   "u": "https://fivefish.org/bmd",
+   "n": "Baga Manduri"
+  },
+  "isk": {
+   "u": "https://fivefish.org/isk",
+   "n": "Ishkashimi"
+  },
+  "kil": {
+   "u": "https://fivefish.org/kil",
+   "n": "Kariya"
+  },
+  "vkn": {
+   "u": "https://fivefish.org/vkn",
+   "n": "Koro: Adunu"
+  },
+  "lbu": {
+   "u": "https://fivefish.org/lbu",
+   "n": "Labo"
+  },
+  "svs": {
+   "u": "https://fivefish.org/svs",
+   "n": "Savosavo"
+  },
+  "jmb": {
+   "u": "https://fivefish.org/jmb",
+   "n": "Jimbin"
+  },
+  "can": {
+   "u": "https://fivefish.org/can",
+   "n": "Chambri"
+  },
+  "pwa": {
+   "u": "https://fivefish.org/pwa",
+   "n": "Pauaia"
+  },
+  "dor": {
+   "u": "https://fivefish.org/dor",
+   "n": "Dori'o"
+  },
+  "bqo": {
+   "u": "https://fivefish.org/bqo",
+   "n": "Balo"
+  },
+  "ksg": {
+   "u": "https://fivefish.org/ksg",
+   "n": "Kusaghe"
+  },
+  "bkk": {
+   "u": "https://fivefish.org/bkk",
+   "n": "Brokskat"
+  },
+  "tlx": {
+   "u": "https://fivefish.org/tlx",
+   "n": "Khehek"
+  },
+  "kku": {
+   "u": "https://fivefish.org/kku",
+   "n": "Kitimi"
+  },
+  "giw": {
+   "u": "https://fivefish.org/giw",
+   "n": "Galao, White"
+  },
+  "lle": {
+   "u": "https://fivefish.org/lle",
+   "n": "Lele"
+  },
+  "nke": {
+   "u": "https://fivefish.org/nke",
+   "n": "Duke"
+  },
+  "sax": {
+   "u": "https://fivefish.org/sax",
+   "n": "Sa"
+  },
+  "fir": {
+   "u": "https://fivefish.org/fir",
+   "n": "Kwakwi"
+  },
+  "zik": {
+   "u": "https://fivefish.org/zik",
+   "n": "Zimakani"
+  },
+  "aik": {
+   "u": "https://fivefish.org/aik",
+   "n": "Akye"
+  },
+  "kce": {
+   "u": "https://fivefish.org/kce",
+   "n": "Kaivi"
+  },
+  "kzz": {
+   "u": "https://fivefish.org/kzz",
+   "n": "Kalabara Group"
+  },
+  "dmr": {
+   "u": "https://fivefish.org/dmr",
+   "n": "Damar"
+  },
+  "kcx": {
+   "u": "https://fivefish.org/kcx",
+   "n": "Kachama-Ganjule: Ganta"
+  },
+  "dby": {
+   "u": "https://fivefish.org/dby",
+   "n": "Bainapi"
+  },
+  "knm": {
+   "u": "https://fivefish.org/knm",
+   "n": "Kanamarí"
+  },
+  "aio": {
+   "u": "https://fivefish.org/aio",
+   "n": "Aiton"
+  },
+  "ega": {
+   "u": "https://fivefish.org/ega",
+   "n": "Ega"
+  },
+  "mij": {
+   "u": "https://fivefish.org/mij",
+   "n": "Missong: Bejune"
+  },
+  "bya": {
+   "u": "https://fivefish.org/bya",
+   "n": "Batak"
+  },
+  "sdp": {
+   "u": "https://fivefish.org/sdp",
+   "n": "Sherdukpen"
+  },
+  "mqm": {
+   "u": "https://fivefish.org/mqm",
+   "n": "Marquesan, South"
+  },
+  "leq": {
+   "u": "https://fivefish.org/leq",
+   "n": "Lembena"
+  },
+  "kwe": {
+   "u": "https://fivefish.org/kwe",
+   "n": "Kwerba"
+  },
+  "xkk": {
+   "u": "https://fivefish.org/xkk",
+   "n": "Kachok"
+  },
+  "twp": {
+   "u": "https://fivefish.org/twp",
+   "n": "Londru"
+  },
+  "sde": {
+   "u": "https://fivefish.org/sde",
+   "n": "Surubu"
+  },
+  "apm": {
+   "u": "https://fivefish.org/apm",
+   "n": "Apache, Mescalero"
+  },
+  "tva": {
+   "u": "https://fivefish.org/tva",
+   "n": "Vaghua"
+  },
+  "kcs": {
+   "u": "https://fivefish.org/kcs",
+   "n": "Koenoem"
+  },
+  "kih": {
+   "u": "https://fivefish.org/kih",
+   "n": "Kilmeri"
+  },
+  "pkg": {
+   "u": "https://fivefish.org/pkg",
+   "n": "Pak"
+  },
+  "tsx": {
+   "u": "https://fivefish.org/tsx",
+   "n": "Mubami: Dausuami"
+  },
+  "aim": {
+   "u": "https://fivefish.org/aim",
+   "n": "Aimol"
+  },
+  "dia": {
+   "u": "https://fivefish.org/dia",
+   "n": "Alu"
+  },
+  "gar": {
+   "u": "https://fivefish.org/gar",
+   "n": "Garea & Gameta"
+  },
+  "sge": {
+   "u": "https://fivefish.org/sge",
+   "n": "Ga'ai"
+  },
+  "nps": {
+   "u": "https://fivefish.org/nps",
+   "n": "Nipsan"
+  },
+  "brp": {
+   "u": "https://fivefish.org/brp",
+   "n": "Barapasi"
+  },
+  "lgu": {
+   "u": "https://fivefish.org/lgu",
+   "n": "Longgu"
+  },
+  "bek": {
+   "u": "https://fivefish.org/bek",
+   "n": "Bebeli"
+  },
+  "elk": {
+   "u": "https://fivefish.org/elk",
+   "n": "Olko"
+  },
+  "sqq": {
+   "u": "https://fivefish.org/sqq",
+   "n": "Sou"
+  },
+  "nmo": {
+   "u": "https://fivefish.org/nmo",
+   "n": "Naga, Moyon"
+  },
+  "idi": {
+   "u": "https://fivefish.org/idi",
+   "n": "Idi"
+  },
+  "xkt": {
+   "u": "https://fivefish.org/xkt",
+   "n": "Kantosi"
+  },
+  "tqu": {
+   "u": "https://fivefish.org/tqu",
+   "n": "Baniata"
+  },
+  "ywa": {
+   "u": "https://fivefish.org/ywa",
+   "n": "Kalou"
+  },
+  "tbj": {
+   "u": "https://fivefish.org/tbj",
+   "n": "Dyaul"
+  },
+  "lvk": {
+   "u": "https://fivefish.org/lvk",
+   "n": "Lavukaleve"
+  },
+  "tmy": {
+   "u": "https://fivefish.org/tmy",
+   "n": "Tami"
+  },
+  "mbq": {
+   "u": "https://fivefish.org/mbq",
+   "n": "Maisin"
+  },
+  "bfh": {
+   "u": "https://fivefish.org/bfh",
+   "n": "West Morehead Group"
+  },
+  "erg": {
+   "u": "https://fivefish.org/erg",
+   "n": "Sie"
+  },
+  "brq": {
+   "u": "https://fivefish.org/brq",
+   "n": "Breri Group"
+  },
+  "bzq": {
+   "u": "https://fivefish.org/bzq",
+   "n": "Buli"
+  },
+  "gcn": {
+   "u": "https://fivefish.org/gcn",
+   "n": "Gaina"
+  },
+  "bye": {
+   "u": "https://fivefish.org/bye",
+   "n": "Bo'yei"
+  },
+  "amb": {
+   "u": "https://fivefish.org/amb",
+   "n": "Ambo"
+  },
+  "blq": {
+   "u": "https://fivefish.org/blq",
+   "n": "Paluai"
+  },
+  "bpv": {
+   "u": "https://fivefish.org/bpv",
+   "n": "Bian Group (2)"
+  },
+  "hoe": {
+   "u": "https://fivefish.org/hoe",
+   "n": "Horom"
+  },
+  "saa": {
+   "u": "https://fivefish.org/saa",
+   "n": "Saba"
+  },
+  "kwt": {
+   "u": "https://fivefish.org/kwt",
+   "n": "Aujefor & Mafena Mur"
+  },
+  "kjr": {
+   "u": "https://fivefish.org/kjr",
+   "n": "Famaij Group"
+  },
+  "mds": {
+   "u": "https://fivefish.org/mds",
+   "n": "Manubara"
+  },
+  "akt": {
+   "u": "https://fivefish.org/akt",
+   "n": "Akolet"
+  },
+  "gmb": {
+   "u": "https://fivefish.org/gmb",
+   "n": "Gula'alaa"
+  },
+  "byo": {
+   "u": "https://fivefish.org/byo",
+   "n": "Bio"
+  },
+  "npb": {
+   "u": "https://fivefish.org/npb",
+   "n": "Nupbikha"
+  },
+  "mtk": {
+   "u": "https://fivefish.org/mtk",
+   "n": "Banbalang"
+  },
+  "gnm": {
+   "u": "https://fivefish.org/gnm",
+   "n": "Ginuman"
+  },
+  "kkd": {
+   "u": "https://fivefish.org/kkd",
+   "n": "Kinugu"
+  },
+  "kbv": {
+   "u": "https://fivefish.org/kbv",
+   "n": "Dla"
+  },
+  "bxs": {
+   "u": "https://fivefish.org/bxs",
+   "n": "Busam"
+  },
+  "asy": {
+   "u": "https://fivefish.org/asy",
+   "n": "Asmat, Yaosakor"
+  },
+  "xky": {
+   "u": "https://fivefish.org/xky",
+   "n": "Uma' Lasan"
+  },
+  "nlu": {
+   "u": "https://fivefish.org/nlu",
+   "n": "Nchumbulu"
+  },
+  "gnu": {
+   "u": "https://fivefish.org/gnu",
+   "n": "Gnau"
+  },
+  "rhp": {
+   "u": "https://fivefish.org/rhp",
+   "n": "Yahang"
+  },
+  "kvm": {
+   "u": "https://fivefish.org/kvm",
+   "n": "Kendem"
+  },
+  "vls": {
+   "u": "https://fivefish.org/vls",
+   "n": "Flemish"
+  },
+  "anx": {
+   "u": "https://fivefish.org/anx",
+   "n": "Andra-Hus"
+  },
+  "bnw": {
+   "u": "https://fivefish.org/bnw",
+   "n": "Bisis"
+  },
+  "mdb": {
+   "u": "https://fivefish.org/mdb",
+   "n": "Morigi"
+  },
+  "pnu": {
+   "u": "https://fivefish.org/pnu",
+   "n": "Yao: Sanzi Jinxiuluoxiang"
+  },
+  "ayt": {
+   "u": "https://fivefish.org/ayt",
+   "n": "Ayta: Kadmang"
+  },
+  "fut": {
+   "u": "https://fivefish.org/fut",
+   "n": "Futuna-Aniwa"
+  },
+  "szv": {
+   "u": "https://fivefish.org/szv",
+   "n": "Bimbia"
+  },
+  "thm": {
+   "u": "https://fivefish.org/thm",
+   "n": "So Thavung"
+  },
+  "phk": {
+   "u": "https://fivefish.org/phk",
+   "n": "Phake"
+  },
+  "gbf": {
+   "u": "https://fivefish.org/gbf",
+   "n": "Gaikundi"
+  },
+  "bqs": {
+   "u": "https://fivefish.org/bqs",
+   "n": "Bosman"
+  },
+  "nmh": {
+   "u": "https://fivefish.org/nmh",
+   "n": "Monsang"
+  },
+  "sug": {
+   "u": "https://fivefish.org/sug",
+   "n": "Blimo"
+  },
+  "lek": {
+   "u": "https://fivefish.org/lek",
+   "n": "Leipon"
+  },
+  "bfu": {
+   "u": "https://fivefish.org/bfu",
+   "n": "Gahri"
+  },
+  "wbb": {
+   "u": "https://fivefish.org/wbb",
+   "n": "Wabo"
+  },
+  "cbg": {
+   "u": "https://fivefish.org/cbg",
+   "n": "Chimila"
+  },
+  "xra": {
+   "u": "https://fivefish.org/xra",
+   "n": "Kraho"
+  },
+  "lhp": {
+   "u": "https://fivefish.org/lhp",
+   "n": "Lhokpu"
+  },
+  "srl": {
+   "u": "https://fivefish.org/srl",
+   "n": "Isirawa"
+  },
+  "tow": {
+   "u": "https://fivefish.org/tow",
+   "n": "Towa"
+  },
+  "tcx": {
+   "u": "https://fivefish.org/tcx",
+   "n": "Toda"
+  },
+  "itr": {
+   "u": "https://fivefish.org/itr",
+   "n": "Agrame"
+  },
+  "kzq": {
+   "u": "https://fivefish.org/kzq",
+   "n": "Kaike"
+  },
+  "nuo": {
+   "u": "https://fivefish.org/nuo",
+   "n": "Nguon"
+  },
+  "jee": {
+   "u": "https://fivefish.org/jee",
+   "n": "Jerung"
+  },
+  "gak": {
+   "u": "https://fivefish.org/gak",
+   "n": "Gamkonora"
+  },
+  "yet": {
+   "u": "https://fivefish.org/yet",
+   "n": "Yetfa"
+  },
+  "aof": {
+   "u": "https://fivefish.org/aof",
+   "n": "Bragat"
+  },
+  "abo": {
+   "u": "https://fivefish.org/abo",
+   "n": "Abong"
+  },
+  "kic": {
+   "u": "https://fivefish.org/kic",
+   "n": "Kickapoo"
+  },
+  "wbk": {
+   "u": "https://fivefish.org/wbk",
+   "n": "Waygali"
+  },
+  "piv": {
+   "u": "https://fivefish.org/piv",
+   "n": "Pileni"
+  },
+  "bpa": {
+   "u": "https://fivefish.org/bpa",
+   "n": "Daakaka"
+  },
+  "gua": {
+   "u": "https://fivefish.org/gua",
+   "n": "Shiki: Gubi"
+  },
+  "moh": {
+   "u": "https://fivefish.org/moh",
+   "n": "Mohawk"
+  },
+  "sgy": {
+   "u": "https://fivefish.org/sgy",
+   "n": "Sanglechi"
+  },
+  "ilu": {
+   "u": "https://fivefish.org/ilu",
+   "n": "Wetar"
+  },
+  "ymb": {
+   "u": "https://fivefish.org/ymb",
+   "n": "Yambes"
+  },
+  "sbh": {
+   "u": "https://fivefish.org/sbh",
+   "n": "Sori"
+  },
+  "klx": {
+   "u": "https://fivefish.org/klx",
+   "n": "Ibawana/Kao Kao"
+  },
+  "mrm": {
+   "u": "https://fivefish.org/mrm",
+   "n": "Merlava"
+  },
+  "lsr": {
+   "u": "https://fivefish.org/lsr",
+   "n": "Lau Seranga"
+  },
+  "bxl": {
+   "u": "https://fivefish.org/bxl",
+   "n": "Ble"
+  },
+  "wnp": {
+   "u": "https://fivefish.org/wnp",
+   "n": "Kayik"
+  },
+  "niz": {
+   "u": "https://fivefish.org/niz",
+   "n": "Ningil"
+  },
+  "mtf": {
+   "u": "https://fivefish.org/mtf",
+   "n": "Murik"
+  },
+  "dof": {
+   "u": "https://fivefish.org/dof",
+   "n": "Domu"
+  },
+  "jup": {
+   "u": "https://fivefish.org/jup",
+   "n": "Hup"
+  },
+  "xns": {
+   "u": "https://fivefish.org/xns",
+   "n": "Kanashi"
+  },
+  "mkm": {
+   "u": "https://fivefish.org/mkm",
+   "n": "Moklen"
+  },
+  "mwi": {
+   "u": "https://fivefish.org/mwi",
+   "n": "Meaun"
+  },
+  "oia": {
+   "u": "https://fivefish.org/oia",
+   "n": "Oirata"
+  },
+  "bbv": {
+   "u": "https://fivefish.org/bbv",
+   "n": "Karnai"
+  },
+  "jqr": {
+   "u": "https://fivefish.org/jqr",
+   "n": "Jaqaru: Kawki"
+  },
+  "cnc": {
+   "u": "https://fivefish.org/cnc",
+   "n": "Coong"
+  },
+  "ula": {
+   "u": "https://fivefish.org/ula",
+   "n": "Fungwa"
+  },
+  "smq": {
+   "u": "https://fivefish.org/smq",
+   "n": "Samo"
+  },
+  "ght": {
+   "u": "https://fivefish.org/ght",
+   "n": "Kuke"
+  },
+  "huf": {
+   "u": "https://fivefish.org/huf",
+   "n": "Kware: Lagume"
+  },
+  "prm": {
+   "u": "https://fivefish.org/prm",
+   "n": "Kibiri: Porome"
+  },
+  "mqz": {
+   "u": "https://fivefish.org/mqz",
+   "n": "Pano"
+  },
+  "sbc": {
+   "u": "https://fivefish.org/sbc",
+   "n": "Tingau I"
+  },
+  "mcc": {
+   "u": "https://fivefish.org/mcc",
+   "n": "Masam"
+  },
+  "cog": {
+   "u": "https://fivefish.org/cog",
+   "n": "Chong"
+  },
+  "sbg": {
+   "u": "https://fivefish.org/sbg",
+   "n": "Lame Lamas & Lame Lamas: Malabam"
+  },
+  "wut": {
+   "u": "https://fivefish.org/wut",
+   "n": "Wutung"
+  },
+  "aki": {
+   "u": "https://fivefish.org/aki",
+   "n": "Aren"
+  },
+  "tsr": {
+   "u": "https://fivefish.org/tsr",
+   "n": "Akei"
+  },
+  "bpu": {
+   "u": "https://fivefish.org/bpu",
+   "n": "Bongu"
+  },
+  "msn": {
+   "u": "https://fivefish.org/msn",
+   "n": "Vureas"
+  },
+  "cin": {
+   "u": "https://fivefish.org/cin",
+   "n": "Cinta Larga"
+  },
+  "koh": {
+   "u": "https://fivefish.org/koh",
+   "n": "Koyo"
+  },
+  "gbe": {
+   "u": "https://fivefish.org/gbe",
+   "n": "Niksek"
+  },
+  "slc": {
+   "u": "https://fivefish.org/slc",
+   "n": "Saliba"
+  },
+  "pek": {
+   "u": "https://fivefish.org/pek",
+   "n": "Penchal"
+  },
+  "nwm": {
+   "u": "https://fivefish.org/nwm",
+   "n": "Nyamusa-Molo"
+  },
+  "aad": {
+   "u": "https://fivefish.org/aad",
+   "n": "Magleri"
+  },
+  "cry": {
+   "u": "https://fivefish.org/cry",
+   "n": "Kyoli"
+  },
+  "lgt": {
+   "u": "https://fivefish.org/lgt",
+   "n": "Pahi"
+  },
+  "kfe": {
+   "u": "https://fivefish.org/kfe",
+   "n": "Kota"
+  },
+  "yis": {
+   "u": "https://fivefish.org/yis",
+   "n": "Yis"
+  },
+  "mpr": {
+   "u": "https://fivefish.org/mpr",
+   "n": "Vangunu"
+  },
+  "jms": {
+   "u": "https://fivefish.org/jms",
+   "n": "Mashi"
+  },
+  "aif": {
+   "u": "https://fivefish.org/aif",
+   "n": "Agi"
+  },
+  "tnb": {
+   "u": "https://fivefish.org/tnb",
+   "n": "Tunebo, Western"
+  },
+  "bqw": {
+   "u": "https://fivefish.org/bqw",
+   "n": "Meyambre"
+  },
+  "mme": {
+   "u": "https://fivefish.org/mme",
+   "n": "Tirak"
+  },
+  "bdw": {
+   "u": "https://fivefish.org/bdw",
+   "n": "Baham"
+  },
+  "los": {
+   "u": "https://fivefish.org/los",
+   "n": "Loniu"
+  },
+  "wog": {
+   "u": "https://fivefish.org/wog",
+   "n": "Wogamusin"
+  },
+  "abh": {
+   "u": "https://fivefish.org/abh",
+   "n": "Arabic, Tajiki ( Afghanistan)"
+  },
+  "xmt": {
+   "u": "https://fivefish.org/xmt",
+   "n": "Mat Bat Group"
+  },
+  "mml": {
+   "u": "https://fivefish.org/mml",
+   "n": "Manmit"
+  },
+  "gbn": {
+   "u": "https://fivefish.org/gbn",
+   "n": "Mo'da"
+  },
+  "jma": {
+   "u": "https://fivefish.org/jma",
+   "n": "Kanasi Group (Lang. 1)"
+  },
+  "mlx": {
+   "u": "https://fivefish.org/mlx",
+   "n": "Na'ahai"
+  },
+  "jbj": {
+   "u": "https://fivefish.org/jbj",
+   "n": "Sumuri"
+  },
+  "seu": {
+   "u": "https://fivefish.org/seu",
+   "n": "Amane Kabo Arui"
+  },
+  "msg": {
+   "u": "https://fivefish.org/msg",
+   "n": "Morraid Group"
+  },
+  "luu": {
+   "u": "https://fivefish.org/luu",
+   "n": "Yakkha, Chhathare"
+  },
+  "dem": {
+   "u": "https://fivefish.org/dem",
+   "n": "Dem"
+  },
+  "aty": {
+   "u": "https://fivefish.org/aty",
+   "n": "Aneityum"
+  },
+  "tmq": {
+   "u": "https://fivefish.org/tmq",
+   "n": "Tumleo"
+  },
+  "tgs": {
+   "u": "https://fivefish.org/tgs",
+   "n": "Nume"
+  },
+  "azn": {
+   "u": "https://fivefish.org/azn",
+   "n": "Nahuatl, Durango Western"
+  },
+  "vra": {
+   "u": "https://fivefish.org/vra",
+   "n": "Vanua Lava"
+  },
+  "dge": {
+   "u": "https://fivefish.org/dge",
+   "n": "Dingana"
+  },
+  "xes": {
+   "u": "https://fivefish.org/xes",
+   "n": "Koromu"
+  },
+  "mtt": {
+   "u": "https://fivefish.org/mtt",
+   "n": "Mota"
+  },
+  "lmu": {
+   "u": "https://fivefish.org/lmu",
+   "n": "Lamenu"
+  },
+  "mpz": {
+   "u": "https://fivefish.org/mpz",
+   "n": "Mpi"
+  },
+  "cbn": {
+   "u": "https://fivefish.org/cbn",
+   "n": "Nyah Kur"
+  },
+  "dny": {
+   "u": "https://fivefish.org/dny",
+   "n": "Deni"
+  },
+  "sry": {
+   "u": "https://fivefish.org/sry",
+   "n": "Sera"
+  },
+  "ttw": {
+   "u": "https://fivefish.org/ttw",
+   "n": "Long Wat"
+  },
+  "bjh": {
+   "u": "https://fivefish.org/bjh",
+   "n": "Bahinemo"
+  },
+  "yra": {
+   "u": "https://fivefish.org/yra",
+   "n": "Yerakai"
+  },
+  "aul": {
+   "u": "https://fivefish.org/aul",
+   "n": "Aulua"
+  },
+  "psn": {
+   "u": "https://fivefish.org/psn",
+   "n": "Panasuan"
+  },
+  "ahb": {
+   "u": "https://fivefish.org/ahb",
+   "n": "Axamb"
+  },
+  "jiy": {
+   "u": "https://fivefish.org/jiy",
+   "n": "Jinuo, Buyuan"
+  },
+  "rwa": {
+   "u": "https://fivefish.org/rwa",
+   "n": "Rawo"
+  },
+  "bwf": {
+   "u": "https://fivefish.org/bwf",
+   "n": "Bosalewa"
+  },
+  "kcd": {
+   "u": "https://fivefish.org/kcd",
+   "n": "Kanum Group"
+  },
+  "ttm": {
+   "u": "https://fivefish.org/ttm",
+   "n": "Tutchone, Northern"
+  },
+  "buz": {
+   "u": "https://fivefish.org/buz",
+   "n": "Koshin"
+  },
+  "bio": {
+   "u": "https://fivefish.org/bio",
+   "n": "Nai"
+  },
+  "yui": {
+   "u": "https://fivefish.org/yui",
+   "n": "Yuruti"
+  },
+  "bvn": {
+   "u": "https://fivefish.org/bvn",
+   "n": "Buna"
+  },
+  "wgb": {
+   "u": "https://fivefish.org/wgb",
+   "n": "Wagawaga"
+  },
+  "lkn": {
+   "u": "https://fivefish.org/lkn",
+   "n": "Lakona"
+  },
+  "duv": {
+   "u": "https://fivefish.org/duv",
+   "n": "Duvle"
+  },
+  "asi": {
+   "u": "https://fivefish.org/asi",
+   "n": "Sebakoor"
+  },
+  "oni": {
+   "u": "https://fivefish.org/oni",
+   "n": "Onin"
+  },
+  "mhz": {
+   "u": "https://fivefish.org/mhz",
+   "n": "Mor Group"
+  },
+  "mnm": {
+   "u": "https://fivefish.org/mnm",
+   "n": "Bululaha & Malapaina"
+  },
+  "gvp": {
+   "u": "https://fivefish.org/gvp",
+   "n": "Gaviao, Para"
+  },
+  "sns": {
+   "u": "https://fivefish.org/sns",
+   "n": "Naanghatien"
+  },
+  "ppm": {
+   "u": "https://fivefish.org/ppm",
+   "n": "Papuma"
+  },
+  "kcj": {
+   "u": "https://fivefish.org/kcj",
+   "n": "Cobiana"
+  },
+  "aun": {
+   "u": "https://fivefish.org/aun",
+   "n": "Molmo, One"
+  },
+  "mkc": {
+   "u": "https://fivefish.org/mkc",
+   "n": "Seleput"
+  },
+  "pkt": {
+   "u": "https://fivefish.org/pkt",
+   "n": "Maleng: Kha Pakatan"
+  },
+  "wno": {
+   "u": "https://fivefish.org/wno",
+   "n": "Wano"
+  },
+  "agl": {
+   "u": "https://fivefish.org/agl",
+   "n": "Tsinali"
+  },
+  "tei": {
+   "u": "https://fivefish.org/tei",
+   "n": "Aro"
+  },
+  "atp": {
+   "u": "https://fivefish.org/atp",
+   "n": "Atta, Pudtol"
+  },
+  "boq": {
+   "u": "https://fivefish.org/boq",
+   "n": "Bogaya"
+  },
+  "tcp": {
+   "u": "https://fivefish.org/tcp",
+   "n": "Chin, Thor"
+  },
+  "pcb": {
+   "u": "https://fivefish.org/pcb",
+   "n": "Por"
+  },
+  "eit": {
+   "u": "https://fivefish.org/eit",
+   "n": "Eitiep"
+  },
+  "nao": {
+   "u": "https://fivefish.org/nao",
+   "n": "Naapa"
+  },
+  "kzm": {
+   "u": "https://fivefish.org/kzm",
+   "n": "Kaiso"
+  },
+  "kkk": {
+   "u": "https://fivefish.org/kkk",
+   "n": "Cheke Holo & Kokota"
+  },
+  "bjc": {
+   "u": "https://fivefish.org/bjc",
+   "n": "Akabara"
+  },
+  "dil": {
+   "u": "https://fivefish.org/dil",
+   "n": "Dilling"
+  },
+  "dij": {
+   "u": "https://fivefish.org/dij",
+   "n": "Daima"
+  },
+  "pru": {
+   "u": "https://fivefish.org/pru",
+   "n": "Iwaro Group"
+  },
+  "arw": {
+   "u": "https://fivefish.org/arw",
+   "n": "Arawak"
+  },
+  "lht": {
+   "u": "https://fivefish.org/lht",
+   "n": "Vavatema"
+  },
+  "hoa": {
+   "u": "https://fivefish.org/hoa",
+   "n": "Hoava"
+  },
+  "ktf": {
+   "u": "https://fivefish.org/ktf",
+   "n": "Kikwami"
+  },
+  "orz": {
+   "u": "https://fivefish.org/orz",
+   "n": "Ormu"
+  },
+  "ler": {
+   "u": "https://fivefish.org/ler",
+   "n": "Lenkau"
+  },
+  "azt": {
+   "u": "https://fivefish.org/azt",
+   "n": "Atta, Faire"
+  },
+  "niw": {
+   "u": "https://fivefish.org/niw",
+   "n": "Nimo"
+  },
+  "rau": {
+   "u": "https://fivefish.org/rau",
+   "n": "Raute"
+  },
+  "ywn": {
+   "u": "https://fivefish.org/ywn",
+   "n": "Yawanawa"
+  },
+  "owi": {
+   "u": "https://fivefish.org/owi",
+   "n": "Owiniga"
+  },
+  "aww": {
+   "u": "https://fivefish.org/aww",
+   "n": "Awun"
+  },
+  "coc": {
+   "u": "https://fivefish.org/coc",
+   "n": "Cocopa"
+  },
+  "knd": {
+   "u": "https://fivefish.org/knd",
+   "n": "Konda"
+  },
+  "smf": {
+   "u": "https://fivefish.org/smf",
+   "n": "Simog"
+  },
+  "wsa": {
+   "u": "https://fivefish.org/wsa",
+   "n": "Warombori"
+  },
+  "njs": {
+   "u": "https://fivefish.org/njs",
+   "n": "Nisa"
+  },
+  "xwg": {
+   "u": "https://fivefish.org/xwg",
+   "n": "Kuyigu"
+  },
+  "dei": {
+   "u": "https://fivefish.org/dei",
+   "n": "Desawa"
+  },
+  "eme": {
+   "u": "https://fivefish.org/eme",
+   "n": "Emerillon"
+  },
+  "ner": {
+   "u": "https://fivefish.org/ner",
+   "n": "Jaban: Nerigo"
+  },
+  "ost": {
+   "u": "https://fivefish.org/ost",
+   "n": "Ossato"
+  },
+  "wrm": {
+   "u": "https://fivefish.org/wrm",
+   "n": "Warumungu"
+  },
+  "ppq": {
+   "u": "https://fivefish.org/ppq",
+   "n": "Pefiyahe"
+  },
+  "bbf": {
+   "u": "https://fivefish.org/bbf",
+   "n": "Baibai"
+  },
+  "nni": {
+   "u": "https://fivefish.org/nni",
+   "n": "Naulu North"
+  },
+  "bit": {
+   "u": "https://fivefish.org/bit",
+   "n": "Bitara"
+  },
+  "siu": {
+   "u": "https://fivefish.org/siu",
+   "n": "Galu"
+  },
+  "kgb": {
+   "u": "https://fivefish.org/kgb",
+   "n": "Kawe Group"
+  },
+  "ipo": {
+   "u": "https://fivefish.org/ipo",
+   "n": "Paibuna"
+  },
+  "skv": {
+   "u": "https://fivefish.org/skv",
+   "n": "Skou"
+  },
+  "bfe": {
+   "u": "https://fivefish.org/bfe",
+   "n": "Tena Ortefan"
+  },
+  "kxn": {
+   "u": "https://fivefish.org/kxn",
+   "n": "Melanau, Tanjong-Kanowit: Rajang"
+  },
+  "pih": {
+   "u": "https://fivefish.org/pih",
+   "n": "Pitcairn-Norfolk"
+  },
+  "wkd": {
+   "u": "https://fivefish.org/wkd",
+   "n": "Ma Wihi & Arti"
+  },
+  "ert": {
+   "u": "https://fivefish.org/ert",
+   "n": "Eritai"
+  },
+  "dgx": {
+   "u": "https://fivefish.org/dgx",
+   "n": "Dogoro"
+  },
+  "zkr": {
+   "u": "https://fivefish.org/zkr",
+   "n": "Zakhring"
+  },
+  "wsi": {
+   "u": "https://fivefish.org/wsi",
+   "n": "Wusi"
+  },
+  "stf": {
+   "u": "https://fivefish.org/stf",
+   "n": "Sita"
+  },
+  "tro": {
+   "u": "https://fivefish.org/tro",
+   "n": "Tarao"
+  },
+  "sbt": {
+   "u": "https://fivefish.org/sbt",
+   "n": "Kimki"
+  },
+  "afi": {
+   "u": "https://fivefish.org/afi",
+   "n": "Chini"
+  },
+  "bhf": {
+   "u": "https://fivefish.org/bhf",
+   "n": "Busan"
+  },
+  "dnd": {
+   "u": "https://fivefish.org/dnd",
+   "n": "Daonda"
+  },
+  "suy": {
+   "u": "https://fivefish.org/suy",
+   "n": "Suya"
+  },
+  "amt": {
+   "u": "https://fivefish.org/amt",
+   "n": "Amto"
+  },
+  "kis": {
+   "u": "https://fivefish.org/kis",
+   "n": "Kis"
+  },
+  "yyu": {
+   "u": "https://fivefish.org/yyu",
+   "n": "Yauo"
+  },
+  "ddj": {
+   "u": "https://fivefish.org/ddj",
+   "n": "Jaru"
+  },
+  "nmn": {
+   "u": "https://fivefish.org/nmn",
+   "n": "!Xoon"
+  },
+  "uya": {
+   "u": "https://fivefish.org/uya",
+   "n": "Doko-Uyanga"
+  },
+  "aap": {
+   "u": "https://fivefish.org/aap",
+   "n": "Arara, Pará"
+  },
+  "tds": {
+   "u": "https://fivefish.org/tds",
+   "n": "Doutai"
+  },
+  "arr": {
+   "u": "https://fivefish.org/arr",
+   "n": "Arara of Rondônia"
+  },
+  "nrg": {
+   "u": "https://fivefish.org/nrg",
+   "n": "Narango"
+  },
+  "tww": {
+   "u": "https://fivefish.org/tww",
+   "n": "Tuwari"
+  },
+  "alx": {
+   "u": "https://fivefish.org/alx",
+   "n": "Amol: Arang Mol"
+  },
+  "swr": {
+   "u": "https://fivefish.org/swr",
+   "n": "Saweru"
+  },
+  "dgg": {
+   "u": "https://fivefish.org/dgg",
+   "n": "Doga"
+  },
+  "mpq": {
+   "u": "https://fivefish.org/mpq",
+   "n": "Matis"
+  },
+  "nkk": {
+   "u": "https://fivefish.org/nkk",
+   "n": "Nokuku"
+  },
+  "sao": {
+   "u": "https://fivefish.org/sao",
+   "n": "Seuse"
+  },
+  "bgv": {
+   "u": "https://fivefish.org/bgv",
+   "n": "Bipim"
+  },
+  "myp": {
+   "u": "https://fivefish.org/myp",
+   "n": "Mura-Piraha"
+  },
+  "tml": {
+   "u": "https://fivefish.org/tml",
+   "n": "Citak, Tamnim"
+  },
+  "gop": {
+   "u": "https://fivefish.org/gop",
+   "n": "Umar"
+  },
+  "agf": {
+   "u": "https://fivefish.org/agf",
+   "n": "Iroroutu Group"
+  },
+  "kwk": {
+   "u": "https://fivefish.org/kwk",
+   "n": "Kwak'wala"
+  },
+  "ktn": {
+   "u": "https://fivefish.org/ktn",
+   "n": "Karitiana"
+  },
+  "mmp": {
+   "u": "https://fivefish.org/mmp",
+   "n": "Musian"
+  },
+  "mrp": {
+   "u": "https://fivefish.org/mrp",
+   "n": "Moresi"
+  },
+  "nud": {
+   "u": "https://fivefish.org/nud",
+   "n": "Ngala"
+  },
+  "asu": {
+   "u": "https://fivefish.org/asu",
+   "n": "Asurini Do Tocantins"
+  },
+  "auq": {
+   "u": "https://fivefish.org/auq",
+   "n": "Koroernoes"
+  },
+  "mpn": {
+   "u": "https://fivefish.org/mpn",
+   "n": "Mindri"
+  },
+  "tbp": {
+   "u": "https://fivefish.org/tbp",
+   "n": "Taworta"
+  },
+  "wwo": {
+   "u": "https://fivefish.org/wwo",
+   "n": "Wetamut"
+  },
+  "klo": {
+   "u": "https://fivefish.org/klo",
+   "n": "Kapya"
+  },
+  "onj": {
+   "u": "https://fivefish.org/onj",
+   "n": "Onjob"
+  },
+  "lcc": {
+   "u": "https://fivefish.org/lcc",
+   "n": "Lagenyan"
+  },
+  "bzu": {
+   "u": "https://fivefish.org/bzu",
+   "n": "Burmeso"
+  },
+  "mmm": {
+   "u": "https://fivefish.org/mmm",
+   "n": "Maii"
+  },
+  "mrf": {
+   "u": "https://fivefish.org/mrf",
+   "n": "Alsengg"
+  },
+  "mnu": {
+   "u": "https://fivefish.org/mnu",
+   "n": "Miere"
+  },
+  "krf": {
+   "u": "https://fivefish.org/krf",
+   "n": "Koro"
+  },
+  "mwa": {
+   "u": "https://fivefish.org/mwa",
+   "n": "Mwatebu & Dalubia-Sawetaetae"
+  },
+  "msl": {
+   "u": "https://fivefish.org/msl",
+   "n": "Powla"
+  },
+  "yuq": {
+   "u": "https://fivefish.org/yuq",
+   "n": "Yuqui"
+  },
+  "mmh": {
+   "u": "https://fivefish.org/mmh",
+   "n": "Mehinaku"
+  },
+  "aac": {
+   "u": "https://fivefish.org/aac",
+   "n": "Mogiala"
+  },
+  "awe": {
+   "u": "https://fivefish.org/awe",
+   "n": "Aweti"
+  },
+  "gvj": {
+   "u": "https://fivefish.org/gvj",
+   "n": "Awá Guajá"
+  },
+  "bpw": {
+   "u": "https://fivefish.org/bpw",
+   "n": "Bo"
+  },
+  "mgf": {
+   "u": "https://fivefish.org/mgf",
+   "n": "Makaleo"
+  },
+  "jru": {
+   "u": "https://fivefish.org/jru",
+   "n": "Japreria"
+  },
+  "dax": {
+   "u": "https://fivefish.org/dax",
+   "n": "Dayi: Dhalwangu"
+  },
+  "yki": {
+   "u": "https://fivefish.org/yki",
+   "n": "Bitovondo"
+  },
+  "nmi": {
+   "u": "https://fivefish.org/nmi",
+   "n": "Nyam"
+  },
+  "afz": {
+   "u": "https://fivefish.org/afz",
+   "n": "Obokuitai"
+  },
+  "tls": {
+   "u": "https://fivefish.org/tls",
+   "n": "Tambotalo"
+  },
+  "hux": {
+   "u": "https://fivefish.org/hux",
+   "n": "Huitoto, Muinane"
+  },
+  "kwa": {
+   "u": "https://fivefish.org/kwa",
+   "n": "Daw"
+  },
+  "oca": {
+   "u": "https://fivefish.org/oca",
+   "n": "Ocaina"
+  },
+  "ung": {
+   "u": "https://fivefish.org/ung",
+   "n": "Ngarinyin"
+  },
+  "ora": {
+   "u": "https://fivefish.org/ora",
+   "n": "Oroha"
+  },
+  "nos": {
+   "u": "https://fivefish.org/nos",
+   "n": "Nisu, Eastern"
+  },
+  "jle": {
+   "u": "https://fivefish.org/jle",
+   "n": "Ngile"
+  },
+  "alk": {
+   "u": "https://fivefish.org/alk",
+   "n": "Alak"
+  },
+  "lma": {
+   "u": "https://fivefish.org/lma",
+   "n": "Limba, East"
+  },
+  "psi": {
+   "u": "https://fivefish.org/psi",
+   "n": "Pashai, Southeast"
+  },
+  "lbo": {
+   "u": "https://fivefish.org/lbo",
+   "n": "Laven"
+  },
+  "ngt": {
+   "u": "https://fivefish.org/ngt",
+   "n": "Kriang"
+  },
+  "nev": {
+   "u": "https://fivefish.org/nev",
+   "n": "Nyaheun"
+  }
+ },
+ "none": [
+  "cjy",
+  "gan",
+  "csl",
+  "inl",
+  "ayh",
+  "mmr",
+  "nsi",
+  "zlj",
+  "acx",
+  "qcd",
+  "zgb",
+  "eth",
+  "esl",
+  "psp",
+  "cps",
+  "czo",
+  "tsm",
+  "hab",
+  "abv",
+  "gsg",
+  "bfi",
+  "now",
+  "zmi",
+  "thz",
+  "auh",
+  "tsq",
+  "mfu",
+  "fia",
+  "ise",
+  "sfs",
+  "aju",
+  "ssp",
+  "mhm",
+  "suw",
+  "ysm",
+  "bww",
+  "asp",
+  "vic",
+  "aed",
+  "han",
+  "qiq",
+  "mry",
+  "kxd",
+  "afg",
+  "fmp",
+  "bah",
+  "ugn",
+  "wxa",
+  "phu",
+  "pso",
+  "xms",
+  "mlm",
+  "hmh",
+  "zlq",
+  "kdg",
+  "sdl",
+  "nsp",
+  "shz",
+  "diz",
+  "sjg",
+  "tza",
+  "zhk",
+  "prl",
+  "gex",
+  "xml",
+  "noq",
+  "ypg",
+  "jbn",
+  "mzc",
+  "vsl",
+  "qry",
+  "gse",
+  "ras",
+  "mny",
+  "soe",
+  "hnm",
+  "qkp",
+  "amj",
+  "btw",
+  "ayc",
+  "qbf",
+  "bog",
+  "xki",
+  "cri",
+  "sbm",
+  "kiv",
+  "tiz",
+  "kwl",
+  "grj",
+  "gdq",
+  "qsg",
+  "qso",
+  "lws",
+  "bpd",
+  "dec",
+  "lap",
+  "gsm",
+  "cds",
+  "tor",
+  "csg",
+  "dux",
+  "ajz",
+  "mdi",
+  "bxu",
+  "nrb",
+  "cda",
+  "sqs",
+  "daj",
+  "csx",
+  "zhd",
+  "gcl",
+  "ecs",
+  "qcm",
+  "lgz",
+  "mzy",
+  "yel",
+  "nwe",
+  "cng",
+  "gbs",
+  "aig",
+  "adf",
+  "nzu",
+  "dpp",
+  "muq",
+  "tbi",
+  "buc",
+  "qfa",
+  "tse",
+  "thi",
+  "bvl",
+  "sfb",
+  "okb",
+  "ysl",
+  "lwa",
+  "doq",
+  "rou",
+  "mub",
+  "cnu",
+  "mxf",
+  "csf",
+  "beb",
+  "mmz",
+  "cse",
+  "psr",
+  "qht",
+  "asf",
+  "tco",
+  "pnt",
+  "hsh",
+  "qae",
+  "shv",
+  "sqm",
+  "bdr",
+  "bct",
+  "mei",
+  "bfl",
+  "sgg",
+  "mhd",
+  "ero",
+  "sgx",
+  "asq",
+  "gwx",
+  "mgy",
+  "mes",
+  "kyp",
+  "bqk",
+  "kkw",
+  "tct",
+  "sqt",
+  "pmb",
+  "brm",
+  "nru",
+  "bmg",
+  "esn",
+  "nzy",
+  "ryn",
+  "cml",
+  "tda",
+  "sci",
+  "kke",
+  "ncs",
+  "rsn",
+  "hoz",
+  "lbs",
+  "ttl",
+  "bmw",
+  "cuu",
+  "cdm",
+  "doe",
+  "pys",
+  "seq",
+  "lso",
+  "ndq",
+  "grv",
+  "kcn",
+  "snj",
+  "pho",
+  "tag",
+  "bqn",
+  "lbc",
+  "qss",
+  "qao",
+  "gbq",
+  "ndk",
+  "btu",
+  "dsl",
+  "yso",
+  "nuu",
+  "bxm",
+  "nmg",
+  "ges",
+  "xxk",
+  "tqq",
+  "ngg",
+  "gss",
+  "fse",
+  "rnw",
+  "svk",
+  "loo",
+  "asv",
+  "bsb",
+  "jii",
+  "klj",
+  "isg",
+  "kyw",
+  "lkc",
+  "qur",
+  "yaj",
+  "grh",
+  "poc",
+  "yhl",
+  "njb",
+  "ers",
+  "ulm",
+  "zsl",
+  "pgz",
+  "hnu",
+  "btv",
+  "tch",
+  "tvo",
+  "keq",
+  "prh",
+  "dbr",
+  "keg",
+  "tbr",
+  "qom",
+  "lgo",
+  "ssl",
+  "rys",
+  "kgn",
+  "isr",
+  "idb",
+  "csq",
+  "nte",
+  "bkp",
+  "gix",
+  "tbm",
+  "nyr",
+  "bmt",
+  "lsp",
+  "ssh",
+  "pel",
+  "bnu",
+  "xma",
+  "ckq",
+  "blj",
+  "mkx",
+  "qer",
+  "swl",
+  "ani",
+  "evh",
+  "zil",
+  "nne",
+  "lsb",
+  "sqk",
+  "ymh",
+  "bkz",
+  "eee",
+  "unz",
+  "wmg",
+  "kcp",
+  "tkn",
+  "qge",
+  "etb",
+  "mpi",
+  "rut",
+  "mky",
+  "ahi",
+  "wls",
+  "tgh",
+  "zhb",
+  "srg",
+  "ugy",
+  "ojg",
+  "qbj",
+  "mnn",
+  "txe",
+  "giq",
+  "nnn",
+  "kzp",
+  "skh",
+  "tey",
+  "kcu",
+  "biw",
+  "ymc",
+  "baw",
+  "tlu",
+  "gey",
+  "ttd",
+  "kko",
+  "xdq",
+  "gdi",
+  "kth",
+  "uha",
+  "kkq",
+  "bbe",
+  "qbw",
+  "nye",
+  "fom",
+  "kcm",
+  "nfd",
+  "mbw",
+  "lbg",
+  "aen",
+  "jls",
+  "zmw",
+  "sls",
+  "psl",
+  "crw",
+  "ilm",
+  "gus",
+  "cks",
+  "htu",
+  "qgm",
+  "tlt",
+  "ksq",
+  "siz",
+  "tss",
+  "sxs",
+  "uda",
+  "ymg",
+  "nra",
+  "bbn",
+  "riu",
+  "bzk",
+  "jye",
+  "kjz",
+  "btf",
+  "nui",
+  "ogu",
+  "mlz",
+  "mcj",
+  "ntd",
+  "ikv",
+  "bwp",
+  "wmh",
+  "kah",
+  "bld",
+  "oua",
+  "mqs",
+  "tlr",
+  "abb",
+  "qqa",
+  "tbw",
+  "peh",
+  "llx",
+  "ndw",
+  "bzz",
+  "nsl",
+  "ibn",
+  "tmw",
+  "dzn",
+  "kjy",
+  "sox",
+  "mew",
+  "und",
+  "mvu",
+  "bme",
+  "bhv",
+  "ekm",
+  "trj",
+  "avb",
+  "yul",
+  "hao",
+  "srh",
+  "alo",
+  "zuh",
+  "svc",
+  "zmx",
+  "qmk",
+  "krd",
+  "ddo",
+  "hji",
+  "fer",
+  "sbj",
+  "bzo",
+  "jod",
+  "stg",
+  "lsl",
+  "nmj",
+  "nlo",
+  "hle",
+  "kvc",
+  "dro",
+  "lcl",
+  "gal",
+  "xao",
+  "nsh",
+  "zmf",
+  "bwl",
+  "kcv",
+  "khf",
+  "kgj",
+  "msr",
+  "ppp",
+  "dup",
+  "ttg",
+  "dok",
+  "oog",
+  "ymx",
+  "okn",
+  "sze",
+  "kuw",
+  "mmu",
+  "goc",
+  "hik",
+  "laf",
+  "gqi",
+  "nie",
+  "yec",
+  "ams",
+  "xeu",
+  "myf",
+  "pmt",
+  "lbt",
+  "smj",
+  "tsl",
+  "kec",
+  "bna",
+  "swy",
+  "kyt",
+  "loi",
+  "nbb",
+  "usk",
+  "bxp",
+  "hka",
+  "stu",
+  "tsk",
+  "kxk",
+  "asl",
+  "ssq",
+  "qbh",
+  "lls",
+  "mou",
+  "bkj",
+  "kuk",
+  "neh",
+  "qvy",
+  "tiu",
+  "kll",
+  "bve",
+  "bwn",
+  "asc",
+  "aut",
+  "yta",
+  "kqh",
+  "itw",
+  "tyj",
+  "itm",
+  "ibr",
+  "eso",
+  "ebg",
+  "txx",
+  "xmb",
+  "ojs",
+  "efa",
+  "lsd",
+  "vkz",
+  "kzo",
+  "sth",
+  "hks",
+  "ide",
+  "nml",
+  "mvd",
+  "kzg",
+  "gza",
+  "kxa",
+  "jim",
+  "dae",
+  "xmd",
+  "kse",
+  "lcq",
+  "qkw",
+  "dkr",
+  "hrc",
+  "acp",
+  "bvx",
+  "ngx",
+  "nmy",
+  "kxi",
+  "spq",
+  "awc",
+  "piy",
+  "zna",
+  "tgr",
+  "okd",
+  "tgb",
+  "bzm",
+  "ncd",
+  "qls",
+  "ids",
+  "ndt",
+  "mqk",
+  "dtr",
+  "aws",
+  "aib",
+  "bne",
+  "put",
+  "wha",
+  "ije",
+  "acy",
+  "jpr",
+  "phh",
+  "gwg",
+  "kry",
+  "ilv",
+  "lgs",
+  "orr",
+  "myg",
+  "yng",
+  "mci",
+  "nue",
+  "dva",
+  "pnx",
+  "woo",
+  "itb",
+  "gmn",
+  "ksl",
+  "bny",
+  "gha",
+  "dme",
+  "ddd",
+  "mqc",
+  "bce",
+  "cji",
+  "mwz",
+  "sks",
+  "qga",
+  "dml",
+  "kti",
+  "smb",
+  "baf",
+  "fud",
+  "xka",
+  "buy",
+  "gvm",
+  "whk",
+  "amv",
+  "smx",
+  "quk",
+  "kaf",
+  "mff",
+  "jas",
+  "bkt",
+  "bwz",
+  "plz",
+  "mjp",
+  "huq",
+  "mcm",
+  "bml",
+  "aoa",
+  "ykn",
+  "tgu",
+  "qgy",
+  "gyi",
+  "scb",
+  "lha",
+  "wtw",
+  "bty",
+  "fuj",
+  "wok",
+  "www",
+  "tbv",
+  "rak",
+  "bqm",
+  "szs",
+  "soj",
+  "yac",
+  "cns",
+  "bsg",
+  "dmc",
+  "blv",
+  "mvh",
+  "gyg",
+  "qbt",
+  "gnz",
+  "zeg",
+  "jal",
+  "lsy",
+  "iwo",
+  "cal",
+  "kzy",
+  "ree",
+  "kes",
+  "yox",
+  "vum",
+  "slt",
+  "wng",
+  "ldh",
+  "bph",
+  "kym",
+  "jyy",
+  "tre",
+  "ykm",
+  "tdq",
+  "tpg",
+  "ugh",
+  "nnk",
+  "sgt",
+  "ane",
+  "lgn",
+  "gdk",
+  "pnp",
+  "yne",
+  "xsy",
+  "bxf",
+  "dev",
+  "bbd",
+  "gqu",
+  "adb",
+  "obu",
+  "tin",
+  "gao",
+  "gcc",
+  "kkr",
+  "ham",
+  "ttz",
+  "sir",
+  "akv",
+  "kva",
+  "bls",
+  "lhh",
+  "kpt",
+  "nti",
+  "yko",
+  "ndn",
+  "bok",
+  "mow",
+  "wrn",
+  "tnh",
+  "sod",
+  "qsr",
+  "pgi",
+  "sdu",
+  "dek",
+  "qsz",
+  "wah",
+  "ruu",
+  "keh",
+  "tlv",
+  "kuf",
+  "gyo",
+  "gyb",
+  "bvo",
+  "hwa",
+  "crm",
+  "bzn",
+  "tcg",
+  "aft",
+  "klc",
+  "kkg",
+  "dnu",
+  "kmx",
+  "xmj",
+  "bvt",
+  "yav",
+  "ziz",
+  "lkj",
+  "reb",
+  "bbs",
+  "qvl",
+  "yuf",
+  "szc",
+  "ghh",
+  "kte",
+  "nrm",
+  "mhe",
+  "baj",
+  "gzn",
+  "bdo",
+  "lgh",
+  "vbb",
+  "zum",
+  "urg",
+  "opo",
+  "weu",
+  "bnb",
+  "kqx",
+  "ahh",
+  "bnd",
+  "jeu",
+  "bgl",
+  "kig",
+  "rkh",
+  "bdj",
+  "bxd",
+  "pni",
+  "ste",
+  "ojv",
+  "kts",
+  "pla",
+  "xhv",
+  "awy",
+  "nnf",
+  "aew",
+  "adu",
+  "kbt",
+  "bbh",
+  "uan",
+  "aih",
+  "mpk",
+  "urx",
+  "mgn",
+  "lka",
+  "mzd",
+  "rka",
+  "ush",
+  "kuv",
+  "let",
+  "sib",
+  "kqg",
+  "bay",
+  "tzx",
+  "kee",
+  "klf",
+  "sxg",
+  "spb",
+  "mpl",
+  "kyi",
+  "nct",
+  "goq",
+  "khv",
+  "kqv",
+  "low",
+  "aup",
+  "bes",
+  "igm",
+  "gwe",
+  "blp",
+  "glc",
+  "ltu",
+  "aod",
+  "gwb",
+  "imi",
+  "bjs",
+  "ssz",
+  "qcy",
+  "roc",
+  "wuh",
+  "zal",
+  "kcy",
+  "qfj",
+  "xkn",
+  "bzl",
+  "kbk",
+  "nbo",
+  "sow",
+  "hbu",
+  "mvk",
+  "sko",
+  "dju",
+  "nis",
+  "fni",
+  "biq",
+  "qkm",
+  "vkj",
+  "van",
+  "gei",
+  "nib",
+  "ngy",
+  "zem",
+  "kxr",
+  "csw",
+  "kkt",
+  "ubi",
+  "net",
+  "vao",
+  "zib",
+  "woc",
+  "kve",
+  "pmo",
+  "lcs",
+  "mzu",
+  "btc",
+  "tuh",
+  "don",
+  "ttf",
+  "hih",
+  "mze",
+  "rmp",
+  "ali",
+  "ybo",
+  "igo",
+  "pkp",
+  "goi",
+  "mwb",
+  "bgu",
+  "noh",
+  "paq",
+  "qcv",
+  "ssj",
+  "jia",
+  "hkn",
+  "lau",
+  "nua",
+  "gdo",
+  "sob",
+  "fam",
+  "pnn",
+  "zsu",
+  "ago",
+  "ped",
+  "bpo",
+  "bxz",
+  "ley",
+  "bgk",
+  "mcy",
+  "goe",
+  "mdl",
+  "mvr",
+  "wll",
+  "mxr",
+  "skm",
+  "kop",
+  "awv",
+  "loj",
+  "mqp",
+  "xkd",
+  "ylu",
+  "aku",
+  "bup",
+  "uve",
+  "kjj",
+  "brz",
+  "mrv",
+  "meb",
+  "szp",
+  "rmm",
+  "aie",
+  "mtv",
+  "apo",
+  "dba",
+  "kmv",
+  "njl",
+  "zka",
+  "bkf",
+  "ymo",
+  "dkk",
+  "bzp",
+  "buq",
+  "koa",
+  "skc",
+  "ybm",
+  "kqt",
+  "nlz",
+  "mwo",
+  "mrb",
+  "abw",
+  "uge",
+  "omo",
+  "ukh",
+  "pda",
+  "mmi",
+  "tqp",
+  "anj",
+  "afd",
+  "btr",
+  "qtp",
+  "snz",
+  "enr",
+  "yir",
+  "fwa",
+  "bbx",
+  "irx",
+  "qmv",
+  "hld",
+  "ptv",
+  "vko",
+  "lgk",
+  "jet",
+  "ran",
+  "aya",
+  "boe",
+  "kuo",
+  "ykr",
+  "xay",
+  "asx",
+  "emn",
+  "gsp",
+  "wbw",
+  "ufi",
+  "qbn",
+  "hug",
+  "mwh",
+  "mss",
+  "bwb",
+  "crg",
+  "aqc",
+  "mdc",
+  "utu",
+  "huz",
+  "bko",
+  "woe",
+  "qnh",
+  "wdg",
+  "bjl",
+  "miw",
+  "mkp",
+  "shl",
+  "juu",
+  "tgf",
+  "gdm",
+  "huo",
+  "kwp",
+  "msv",
+  "bmz",
+  "kou",
+  "hya",
+  "lmv",
+  "mik",
+  "mtc",
+  "skp",
+  "kvh",
+  "hob",
+  "tzn",
+  "gsn",
+  "tev",
+  "kpu",
+  "rmf",
+  "pif",
+  "lji",
+  "mqq",
+  "ytl",
+  "nkd",
+  "dmv",
+  "faf",
+  "tmu",
+  "jhi",
+  "cur",
+  "bnf",
+  "utp",
+  "prw",
+  "noc",
+  "duk",
+  "ddw",
+  "icl",
+  "ggt",
+  "lya",
+  "xse",
+  "kfj",
+  "lll",
+  "rnn",
+  "tlm",
+  "ydk",
+  "ncc",
+  "ttp",
+  "wrv",
+  "dbf",
+  "nqm",
+  "vrt",
+  "puw",
+  "tqb",
+  "phj",
+  "zsa",
+  "kgu",
+  "bwk",
+  "yoi",
+  "mmt",
+  "dac",
+  "ues",
+  "fau",
+  "vmg",
+  "hov",
+  "tci",
+  "lkl",
+  "etz",
+  "nks",
+  "nkg",
+  "kdk",
+  "ckr",
+  "urm",
+  "aur",
+  "una",
+  "spe",
+  "kxt",
+  "tbs",
+  "slg",
+  "nms",
+  "bmx",
+  "nsw",
+  "zbw",
+  "cga",
+  "msq",
+  "sma",
+  "mth",
+  "jil",
+  "anz",
+  "duf",
+  "air",
+  "bnr",
+  "onu",
+  "bnk",
+  "bpm",
+  "nej",
+  "kmf",
+  "mkr",
+  "yau",
+  "gve",
+  "gmu",
+  "rea",
+  "nee",
+  "wnb",
+  "bcd",
+  "yee",
+  "rmk",
+  "tln",
+  "tya",
+  "drn",
+  "mmq",
+  "mty",
+  "tmb",
+  "wsr",
+  "sbf",
+  "snr",
+  "udj",
+  "aos",
+  "abg",
+  "lrv",
+  "rpt",
+  "kwr",
+  "mjn",
+  "abf",
+  "vnm",
+  "beg",
+  "tvm",
+  "kag",
+  "jaz",
+  "xmx",
+  "mbn",
+  "pna",
+  "mcv",
+  "tbd",
+  "kkm",
+  "npn",
+  "wtf",
+  "nby",
+  "wei",
+  "wgo",
+  "xkx",
+  "fiw",
+  "mjm",
+  "koz",
+  "spd",
+  "nmt",
+  "ske",
+  "spk",
+  "atr",
+  "yab",
+  "mqw",
+  "lsw",
+  "nem",
+  "kct",
+  "tcm",
+  "sdx",
+  "kpd",
+  "hij",
+  "bsm",
+  "vnp",
+  "klm",
+  "lcd",
+  "buv",
+  "isa",
+  "uka",
+  "unk",
+  "kwh",
+  "nht",
+  "pgk",
+  "mgk",
+  "sbq",
+  "ggl",
+  "bnz",
+  "roe",
+  "axx",
+  "bir",
+  "tmi",
+  "whu",
+  "nbn",
+  "tgq",
+  "lhn",
+  "mlj",
+  "skz",
+  "mll",
+  "qsm",
+  "kbw",
+  "mjk",
+  "geq",
+  "slw",
+  "goo",
+  "mpo",
+  "ynl",
+  "wax",
+  "luk",
+  "zgr",
+  "npa",
+  "tkw",
+  "lmb",
+  "ray",
+  "vlp",
+  "frt",
+  "mbr",
+  "coa",
+  "ylg",
+  "psq",
+  "tbn",
+  "ssv",
+  "mxw",
+  "tyh",
+  "bvk",
+  "smg",
+  "yrn",
+  "mvt",
+  "elu",
+  "cwg",
+  "kvz",
+  "trt",
+  "imn",
+  "xoi",
+  "btp",
+  "kzd",
+  "rmx",
+  "pas",
+  "kco",
+  "ole",
+  "imr",
+  "laq",
+  "msx",
+  "jau",
+  "gnt",
+  "mft",
+  "cjn",
+  "mmw",
+  "tmj",
+  "knr",
+  "gap",
+  "stm",
+  "cir",
+  "ele",
+  "nbk",
+  "lnz",
+  "xke",
+  "taf",
+  "xau",
+  "kyd",
+  "smc",
+  "bpk",
+  "kns",
+  "upi",
+  "kdw",
+  "bdx",
+  "pep",
+  "plb",
+  "hss",
+  "bwa",
+  "sii",
+  "srf",
+  "wmc",
+  "mqi",
+  "opk",
+  "lei",
+  "tql",
+  "nwr",
+  "mqe",
+  "bry",
+  "hoh",
+  "nbs",
+  "bop",
+  "frq",
+  "wab",
+  "trb",
+  "jur",
+  "dbe",
+  "tad",
+  "lce",
+  "awh",
+  "kbg",
+  "urn",
+  "klh",
+  "hud",
+  "wla",
+  "brj",
+  "kre",
+  "gka",
+  "bro",
+  "awt",
+  "bqb",
+  "bvf",
+  "msu",
+  "mkv",
+  "kiy",
+  "txi",
+  "kvp",
+  "sra",
+  "igg",
+  "lrn",
+  "pto",
+  "aqn",
+  "tcq",
+  "ptr",
+  "wet",
+  "xwr",
+  "alm",
+  "ngr",
+  "tij",
+  "pby",
+  "ybx",
+  "tmt",
+  "pup",
+  "urr",
+  "kiq",
+  "daz",
+  "anq",
+  "mvx",
+  "sij",
+  "lnb",
+  "xsp",
+  "gwf",
+  "mnq",
+  "val",
+  "wfg",
+  "ukg",
+  "ail",
+  "hvk",
+  "bsa",
+  "pnh",
+  "sbi",
+  "knq",
+  "lnh",
+  "rac",
+  "dnr",
+  "lio",
+  "cbb",
+  "pin",
+  "pme",
+  "mdz",
+  "ktx",
+  "seo",
+  "umi",
+  "tlg",
+  "gbb",
+  "erw",
+  "wlr",
+  "wai",
+  "cuj",
+  "rpn",
+  "bed",
+  "puf",
+  "mrk",
+  "urz",
+  "ncn",
+  "khp",
+  "kww",
+  "bpi",
+  "itx",
+  "gin",
+  "cby",
+  "hiw",
+  "zah",
+  "pix",
+  "bdk",
+  "asn",
+  "wbe",
+  "tnz",
+  "lnn",
+  "urp",
+  "swm",
+  "lib",
+  "srt",
+  "spg",
+  "bie",
+  "bmp",
+  "mlb",
+  "tfo",
+  "ppe",
+  "swx",
+  "gob",
+  "oon",
+  "dix",
+  "kpi",
+  "rga",
+  "mkt",
+  "adw",
+  "bti",
+  "pnm",
+  "awm",
+  "xmo",
+  "nbt",
+  "mqv",
+  "mvq",
+  "dui",
+  "ire",
+  "avv",
+  "nam",
+  "std",
+  "mra"
+ ]
+}

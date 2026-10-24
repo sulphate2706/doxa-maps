@@ -1,0 +1,30 @@
+{
+  "title": "Carteles bíblicos",
+  "book": "Libro",
+  "language": "Idioma",
+  "size": "Tamaño",
+  "print": "Imprimir",
+  "close": "Cerrar",
+  "loading": "Cargando el libro…",
+  "fetchFailed": "No se pudo cargar este texto. Inténtalo de nuevo.",
+  "fitsAt": "Cabe a {pt} pt en {cols} columnas.",
+  "tooSmall": "Demasiado pequeño para leerse en este tamaño.",
+  "trySize": "prueba {size}",
+  "books": {
+    "ACT": "Hechos",
+    "MAT": "Mateo",
+    "JHN": "Juan",
+    "MRK": "Marcos",
+    "LUK": "Lucas",
+    "HEB": "Hebreos",
+    "GEN": "Génesis",
+    "1JN": "1 Juan",
+    "COL": "Colosenses",
+    "1CO": "1 Corintios",
+    "1PE": "1 Pedro",
+    "JOS": "Josué"
+  },
+  "posterDesign": {
+    "label": "Cartel de un libro de la Biblia"
+  }
+}

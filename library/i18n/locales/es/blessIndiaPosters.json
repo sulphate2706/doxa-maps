@@ -1,0 +1,15 @@
+{
+  "title": "Pósteres «Bendice a la India»",
+  "rangeBadge60x96": "Insignias numeradas · 60×96 (5×8 pies)",
+  "count": "{count} grupos de población",
+  "desktopOnly": "Solo escritorio por ahora: aún no se ha comprobado que este póster grande se imprima de forma segura en un teléfono.",
+  "experimental": "experimental",
+  "intro": "Cada grupo de población de la India en una sola hoja imprimible, generada en vivo y mostrada como sus hojas imprimibles con las tiras de pegado, igual que la vista Tamaños de Poster Design muestra los formatos grandes.",
+  "print": "Imprimir este póster",
+  "attempt": "Insignias numeradas · 60×96 (5×8 pies) · 3 hojas",
+  "stat": "{groups} grupos · {badges} insignias numeradas · 0 solapamientos",
+  "generating": "Generando el póster a partir de los datos en vivo…",
+  "error": "No se pudo generar el póster: {msg}",
+  "photos": "Solo {real} de {total} grupos de la India tienen foto en los datos; un documento impreso las lleva, una imagen plana no. Este diseño numerado imprime los nombres sin fotos para que cada grupo sea igual y legible.",
+  "posterHeader": "Bendice a la India en el nombre de Jesús"
+}

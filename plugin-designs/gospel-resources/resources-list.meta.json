@@ -1,0 +1,5 @@
+{
+  "stage": "experimental",
+  "label": "Gospel Resources — what each people group has",
+  "note": "Label + an EXPLICIT stage; type stays inferred (`single`). The per-group view: who has Scripture in their own language and who has none, zero-resource languages first. Stage is declared rather than inherited: profile-meta.mjs defaults a meta-less profile to experimental, so writing this file without a stage key would leave the value resting on that default — and a later change to it would silently promote a production bundle profile."
+}

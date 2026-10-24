@@ -1,0 +1,311 @@
+{
+  "band": {
+    "no": "Unter 25 % online",
+    "nodata": "Keine Daten",
+    "partial": "25–59 % online",
+    "yes": "60 % oder mehr online"
+  },
+  "bounded": {
+    "aria": "Abgegrenzte Menge: das Kreuz in der Mitte, erreichte Volksgruppen innerhalb des Kreises, unerreichte außerhalb",
+    "caption": "Innerhalb des Kreises: erreicht. Außerhalb: unerreicht.",
+    "failed": "Die Tabelle zu erreicht/unerreicht konnte nicht geladen werden, daher wird dieses Diagramm nicht gezeichnet.",
+    "unknown": "Nicht gezeichnet, weil ihr Erreicht-Status nicht zu dieser Tabelle passte:"
+  },
+  "centered": {
+    "aria": "Zentrierte Menge: unerreichte Volksgruppen nach ihrer Nähe zu einem erreichten Nachbarn angeordnet, Pfeile zeigen nach innen",
+    "caption": "Jede Volksgruppe steht in ihrem Abstand zu einem erreichten Nachbarn; die Pfeile zeigen auf den, der sie einordnet.",
+    "failed": "Die Nachbartabelle konnte nicht geladen werden, daher wird dieses Diagramm nicht gezeichnet.",
+    "reached": "Bereits erreicht, daher in der Mitte:",
+    "unmatched": "Gar nicht in der Nachbartabelle, daher nicht gezeichnet:",
+    "unplaced": "Keine Beziehung gefunden, daher nicht eingeordnet:",
+    "shown": "Volksgruppen auf den Ringen:"
+  },
+  "centre": {
+    "aria": "Anzeigen",
+    "bounded": "Abgegrenzte Menge",
+    "centered": "Zentrierte Menge",
+    "map": "Karte",
+    "tree": "Sprachbaum"
+  },
+  "charts": {
+    "accessByBand": "Zugang in eigener Sprache, nach Internetnutzung im Land",
+    "aria": "Diagramme",
+    "bandCaveat": "Die Internetnutzung ist die Zahl des Landes (Weltbank), nie die der Gruppe.",
+    "gapSub": "Die 8 größten der angezeigten, nach Bevölkerung. Klicken Sie eine an, um sie zu öffnen.",
+    "gapTake": "Allein diese {k} sind {people} Menschen.",
+    "gapTitle": "Die größten Volksgruppen ohne etwas in ihrer eigenen Sprache",
+    "groups": "Gruppen",
+    "groupsN": "{n} Gruppen",
+    "measure": "Zählen",
+    "messagingTop": "Top-Messenger nach Land im Auswahlbereich",
+    "notMeasured": "Nicht gemessen",
+    "ntSub": "Sprachen der angezeigten Gruppen ohne gefundenes Neues Testament, nach Zahl der Sprecher. Rot: gar nichts; Gelb: etwas, aber kein Neues Testament.",
+    "ntTake": "{n} Sprachen hier haben kein gefundenes Neues Testament, gesprochen von {people} Menschen.",
+    "ntTitle": "Welche Sprachen brauchen das Neue Testament am meisten?",
+    "people": "Menschen",
+    "peopleN": "{n} Menschen",
+    "q1sub": "Ein Balken je Zugangsstufe, für die angezeigten Volksgruppen.",
+    "q1take": "{n} von {total} angezeigten Volksgruppen haben nichts in ihrer eigenen Sprache.",
+    "q1title": "Was haben sie in ihrer eigenen Sprache?",
+    "q2sub": "Volksgruppen ohne etwas in ihrer Sprache, danach, wie viel ihres Landes online ist.",
+    "q2take": "{online} der {n} ohne etwas leben in Ländern, in denen 60 % oder mehr das Internet nutzen.",
+    "q2title": "Könnte das Internet es zu denen ohne etwas bringen?",
+    "socialTop": "Top-Social-Plattform nach Land im Auswahlbereich",
+    "unitCountries": "Länder",
+    "unitGroups": "Volksgruppen",
+    "unitPeople": "Menschen",
+    "zeroByBand": "Nichts in ihrer eigenen Sprache, nach Internetnutzung im Land",
+    "zeroCaveat": "Jede dieser Gruppen hat einen Zugang: eine Brückensprache, eine Kandidatensprache oder eine Gebärdensprach-Brücke."
+  },
+  "col": {
+    "access": "In eigener Sprache",
+    "band": "Internet-Stufe",
+    "bridgeTraining": "Schulung (Brücke)",
+    "country": "Land",
+    "deafPublisher": "Gebärdensprach-Verlag",
+    "internet": "Land online",
+    "internetYear": "Jahr",
+    "language": "Sprache",
+    "messaging": "Top-Messenger (Land, iOS)",
+    "mobile": "Mobilfunk pro 100",
+    "openBench": "MÜ-Benchmark (FLORES+)",
+    "openBooks": "Bibelbücher (eBible)",
+    "openData": "Offene Daten (von 5)",
+    "openGrammar": "Grammatik (Glottolog)",
+    "openSpeech": "Sprachstunden (Common Voice)",
+    "openWiki": "Wikipedia",
+    "platform": "Top-Plattform (Land)",
+    "praying": "Betende Menschen",
+    "province": "Bundesstaat / Provinz (ungefähr)",
+    "resources": "Gefundene Ressourcen",
+    "stateMen": "Bundesstaat online: Männer",
+    "stateWomen": "Bundesstaat online: Frauen",
+    "training": "Schulung (eigene Sprache)",
+    "translatedBy": "Übersetzt von",
+    "wayIn": "Zugang"
+  },
+  "combos": {
+    "audioOnline": "Hören, aber nicht lesen, Land online",
+    "deaf": "Es gibt eine Gebärdensprach-Brücke",
+    "digitalNow": "Nichts in ihrer Sprache, Land zu 60 %+ online",
+    "indiaChinaGap": "Indien und China: nichts in ihrer Sprache",
+    "none": "Alles – wählen Sie einen Filter oder eine Kombination",
+    "offlineGap": "Nichts in ihrer Sprache, Land überwiegend offline",
+    "selection": "Ihre Auswahl",
+    "telegram": "Nichts in ihrer Sprache, Telegram-Land",
+    "try": "Kombination ausprobieren",
+    "whatsapp": "Nichts in ihrer Sprache, WhatsApp-Land"
+  },
+  "detail": {
+    "hear": "Sehen oder hören, nicht lesen",
+    "none": "Nichts gefunden",
+    "read": "Lesen",
+    "read_watch": "Lesen und sehen",
+    "stories": "Nur Geschichten"
+  },
+  "drawer": {
+    "approx": "ungefähr",
+    "bridgeHas": "In der Brückensprache",
+    "conn": "Konnektivität",
+    "copied": "Link kopiert",
+    "copyLink": "Link zu dieser Gruppe kopieren",
+    "deafLink": "Bibel in Gebärdensprache",
+    "foundNote": "In den geprüften Quellen gefunden.",
+    "messaging": "Messenger (iOS-Downloads)",
+    "mobileNote": "Verträge pro 100 Menschen ({year}); eine Person kann mehrere haben.",
+    "nfhsNote": "NFHS-5, 2019–21, 15–49 Jahre: die Zahl des Bundesstaats, nicht der Gruppe.",
+    "noFeed": "Dieses Land ist nicht in Apples Feed: Seine Messenger sind hier unbekannt, nicht abwesend.",
+    "noneNote": "In den geprüften Quellen wurde nichts in ihrer eigenen Sprache gefunden. Das ist keine Behauptung, dass nichts existiert.",
+    "notInSource": "nicht in dieser Quelle",
+    "openCheck": "Starke offene Daten, aber kein Neues Testament gefunden: erst prüfen, vielleicht gibt es eines, das die geprüften Quellen übersehen haben.",
+    "openCount": "Offene Daten",
+    "openNote": "Quellen: Glottolog (CC BY 4.0), eBible, Wikipedia (CC BY-SA 4.0), Common Voice (CC0), FLORES+ (CC BY-SA 4.0). Eine Zählung benannter Fakten, keine Bewertung.",
+    "openOf": "{n} von 5 Signalen",
+    "openTitle": "Offene Daten als Ausgangspunkt einer Übersetzung",
+    "own": "In ihrer eigenen Sprache",
+    "people": "{n} Menschen",
+    "platformNote": "Anteil der Web-Verweise unter den erfassten sozialen Plattformen im Land (StatCounter). Messenger wie WhatsApp werden nicht gemessen.",
+    "platforms": "Plattformen im Land",
+    "praying": "{n} Menschen beten auf DOXA",
+    "social": "Soziale Plattformen (Web-Verweise)",
+    "stateOnline": "{state}: jemals das Internet genutzt",
+    "way": "Zugang",
+    "wayIn": "Zugang",
+    "wayNote": "Eine benachbarte Sprache, keine Empfehlung: Ob eine Gruppe sie spricht, kann nur jemand vor Ort beantworten.",
+    "wbSource": "Weltbank, {year}: die Zahl des Landes",
+    "womenMen": "Frauen {w} · Männer {m}",
+    "gospelAudio": "Evangeliums-Tonaufnahmen",
+    "training": "Jüngerschafts-Schulung"
+  },
+  "facet": {
+    "access": "Zugang in ihrer eigenen Sprache",
+    "all": "Alle {n} anzeigen",
+    "aria": "Filter",
+    "band": "Internetnutzung im Land",
+    "bandNote": "Die Zahl des Landes (Weltbank), nie die der Gruppe.",
+    "country": "Land",
+    "fewer": "Weniger anzeigen",
+    "find": "Suchen…",
+    "findIn": "In {what} suchen",
+    "language": "Sprache",
+    "messaging": "Top-Messenger (Land)",
+    "messagingNote": "Am meisten heruntergeladen im Apple App Store des Landes: nur iOS, ein Download-Rang, keine Nutzung.",
+    "province": "Indien und China: Bundesstaat oder Provinz",
+    "provinceNote": "Ungefähr: aus dem Punkt der Gruppe auf der Karte abgeleitet, nicht aus einem Ort.",
+    "region": "Region",
+    "religion": "Religion",
+    "wayIn": "Zugang, wenn nichts in ihrer Sprache vorliegt"
+  },
+  "grid": {
+    "aria": "Volksgruppen im Auswahlbereich",
+    "columns": "Spalten",
+    "count": "{n} von {total} Volksgruppen",
+    "empty": "Keine Volksgruppe entspricht diesen Filtern.",
+    "exported": "{n} Zeilen exportiert (kopiert und heruntergeladen).",
+    "openCapped": "Öffnet die ersten {n} ausgewählten.",
+    "openInGospel": "In Evangeliumsressourcen öffnen",
+    "selectRow": "{name} auswählen"
+  },
+  "headline": {
+    "a": "{zero} von {total} Volksgruppen haben nichts in ihrer eigenen Sprache;",
+    "b": "{online} davon leben in Ländern, in denen 60 % oder mehr das Internet nutzen."
+  },
+  "kind": {
+    "audio": "Audio",
+    "film": "Film",
+    "scripture": "Bibel",
+    "stories": "Geschichten",
+    "video": "Video"
+  },
+  "legend": {
+    "band": "Internetnutzung im Land (Weltbank)",
+    "hide": "Legende ausblenden",
+    "modeMen": "Internet: Männer",
+    "modeWomen": "Internet: Frauen",
+    "modeZero": "Nichts in eigener Sprache",
+    "nfhs": "Nur Indien: Anteil der Frauen bzw. Männer von 15–49 Jahren, die jemals das Internet genutzt haben, nach Bundesstaat. NFHS-5, 2019–21. Für China gibt es keine geprüfte Quelle auf Provinzebene.",
+    "pins": "In ihrer eigenen Sprache",
+    "provinces": "Indien und China nach Provinz",
+    "show": "Legende"
+  },
+  "level": {
+    "bridge": "Nichts in eigener Sprache · nur Brücke",
+    "own": "Etwas in eigener Sprache",
+    "zero": "Nichts in eigener Sprache · noch kein Zugang"
+  },
+  "listChip": "Volksgruppenliste, von dieser Seite gewählt",
+  "loadError": "Die Daten der Übersicht wurden nicht geladen.",
+  "loadingTable": "Die Tabelle wird geladen …",
+  "map": {
+    "aria": "Karte der Volksgruppen, schattiert danach, wie viele Menschen im Land das Internet nutzen"
+  },
+  "notice": {
+    "pin": "Der Punkt steht für dieses Volk, nicht für einen Ort.",
+    "pins": "Ein Punkt steht für ein Volk, nicht für einen Ort. {n} Gruppen teilen sich einen Punkt mit einer anderen Gruppe.",
+    "shares": "Er teilt seinen Punkt mit {n} anderen Gruppe(n).",
+    "sources": "Quellen:",
+    "standing": "Punkte sind ungefähr: Ein Punkt steht für ein Volk, nicht für einen Ort. Internetzahlen gelten für das Land oder den indischen Bundesstaat, nie für die Gruppe. „Gefunden“ heißt: in den geprüften Quellen gefunden."
+  },
+  "panel": {
+    "charts": "Diagramme",
+    "filters": "Filter",
+    "grid": "Gruppen",
+    "map": "Karte"
+  },
+  "res": {
+    "aria": "Evangeliums-Ressourcen für die Sprachen im Auswahlbereich",
+    "count": "{n} Ressourcen in {langs} von {all} Sprachen im Auswahlbereich",
+    "empty": "Für die Sprachen im Auswahlbereich wurde nichts gefunden.",
+    "groups": "Gruppen hier",
+    "note": "Eine Sprache ohne Zeile hier hat in den geprüften Quellen nichts.",
+    "resource": "Ressource",
+    "scope": "Umfang",
+    "source": "Quelle",
+    "type": "Art"
+  },
+  "rings": {
+    "band": {
+      "dialect": "Gleicher Dialekt",
+      "language": "Gleiche Sprache",
+      "family": "Gleiche Sprachfamilie",
+      "geography": "Nur benachbart"
+    },
+    "centre": "Das Kreuz: eine erreichte Volksgruppe (2 % oder mehr evangelikal).",
+    "closest": "Nächste erreichte Gruppe:",
+    "culture": {
+      "same": "Gleiches Volk",
+      "near": "Nahe Kultur",
+      "different": "Andere Kultur"
+    },
+    "example": "Beispiel:",
+    "explain": {
+      "dialect": "Eine erreichte Gruppe spricht genau dieselbe Sprachvariante (denselben ISO-639-3-Code).",
+      "language": "Eine erreichte Gruppe spricht eine andere Variante derselben Sprache, z. B. ägyptisches und nadschdisches Arabisch.",
+      "family": "Die nächste gemeinsame Sprache ist nur eine verwandte, aus derselben Sprachfamilie.",
+      "geography": "Überhaupt keine gemeinsame Sprache: eine erreichte Gruppe lebt im selben Land oder innerhalb von 600 km.",
+      "same": "Es ist dasselbe Volk, das anderswo lebt.",
+      "near": "Es ist ein anderes Volk im selben IMB-Volkscluster.",
+      "different": "Es ist ein Volk aus einem anderen Cluster."
+    },
+    "footCentre": "Erreicht, in der Mitte",
+    "footUnmatched": "Nicht in der Nachbartabelle, nicht gezeichnet",
+    "footUnplaced": "Keine verwandte erreichte Gruppe gefunden, nicht eingeordnet",
+    "fullscreen": "Vollbild",
+    "intro": "Jede unerreichte Volksgruppe liegt auf einem Ring, je nachdem, wie nah sie der nächsten erreichten Gruppe ist. Je näher der Ring, desto natürlicher kann das Evangelium weitergehen.",
+    "none": "Keine Gruppe in dieser Ansicht liegt auf diesem Ring.",
+    "ring": "Ring",
+    "showAll": "Alle Ringe zeigen",
+    "source": "Erreicht = 2 % oder mehr evangelikal, die von peoplegroups.org verwendete IMB-Definition. Sprach- und Kulturnähe sind Näherungen aus deren Sprachcodes und Volksclustern.",
+    "title": "Was die Ringe bedeuten"
+  },
+  "strength": {
+    "moderate": "mittel",
+    "strong": "stark"
+  },
+  "table": {
+    "aria": "Tabelle",
+    "groups": "Volksgruppen",
+    "resources": "Evangeliums-Ressourcen"
+  },
+  "title": "Zugang zum Evangelium über das Internet",
+  "tree": {
+    "aria": "Sprachbaum: jede Sprachfamilie dieser Volksgruppen, gefärbt danach, was in jeder Sprache gefunden wurde",
+    "branch": "Zweig",
+    "dialect": "Dialekt",
+    "family": "Familie",
+    "groupsN": "{n} Volksgruppen",
+    "inherited": "Farbe ihrer Sprache: Keine Quelle erfasst Ressourcen nach Dialekt.",
+    "language": "Sprache",
+    "languagesHere": "Sprachen hier",
+    "legendTitle": "In ihrer eigenen Sprache",
+    "levels": "Familie › Zweig › Sprache › Dialekt. Eine Familie oder ein Zweig zeigt die schlechteste Farbe darin. Ein Dialekt zeigt die Farbe seiner Sprache, heller: Ressourcen werden pro Sprache erfasst, nicht pro Dialekt. Klicken Sie auf einen Kreis, um die Übersicht darauf einzugrenzen.",
+    "poster": "Poster",
+    "poster3ft": "3 × 3 ft",
+    "poster4ft": "4 × 4 ft",
+    "posterOmitted": "{n} Namen weggelassen, wo sie einen anderen überdecken würden; jeder Kreis ist gezeichnet.",
+    "posterPrint": "Drucken",
+    "posterSizeAria": "Postergröße",
+    "posterTitle": "Zugang zum Evangelium, Sprachfamilie für Sprachfamilie",
+    "sources": "Baum: Glottolog (CC BY 4.0). Ressourcen: eBible, Faith Comes By Hearing, Scripture Earth, PNG.Bible, JESUS-Film, Global Recordings und weitere, nach ISO 639-3.",
+    "st": {
+      "g": "Neues Testament oder ganze Bibel gefunden",
+      "r": "Nichts gefunden",
+      "y": "Etwas gefunden, aber kein Neues Testament"
+    },
+    "via": "Auch auf diesem Pfad:"
+  },
+  "view": {
+    "aria": "Ansicht",
+    "board": "Übersicht",
+    "platforms": "Plattformen",
+    "province": "Indien & China nach Provinz",
+    "zero": "Nichts in eigener Sprache"
+  },
+  "wayIn": {
+    "bridge": "Brückensprache",
+    "candidate": "Kandidatensprache",
+    "candidateText": "{lang} (Kandidat, {pct} % des Landes)",
+    "deaf": "Gebärdensprach-Brücke",
+    "deafText": "{lang} (Gebärdensprache)"
+  }
+}

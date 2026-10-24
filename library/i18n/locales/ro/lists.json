@@ -1,0 +1,22 @@
+{
+  "doxa": {
+    "label": "Proiectul 2000: popoarele DOXA",
+    "definition": "Popoarele pe care DOXA le slujește, așa cum le dă lista sa live"
+  },
+  "unreached": {
+    "label": "Proiectul 7000: popoare neatinse",
+    "definition": "Prioritatea de pierzare IMB 0–2 (neatinse de frontieră, pionier sau în expansiune: sub 2% evanghelici)"
+  },
+  "frontier": {
+    "label": "Proiectul 4700: popoare de frontieră",
+    "definition": "Prioritatea de pierzare IMB 0 (neatinse de frontieră: 0,1% evanghelici sau mai puțin)"
+  },
+  "frontier-500k": {
+    "label": "Proiectul 700: popoare de frontieră de 500.000 sau mai mult",
+    "definition": "Prioritatea de pierzare IMB 0 și o populație de cel puțin 500.000"
+  },
+  "unengaged": {
+    "label": "Popoare neatinse și neangajate",
+    "definition": "Prioritatea de pierzare IMB 0–2 și starea de angajare: neangajat"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "doxa": {
+    "label": "Project 2000: DOXA's people groups",
+    "definition": "The people groups DOXA serves, as its live list gives them"
+  },
+  "unreached": {
+    "label": "Project 7000: unreached people groups",
+    "definition": "IMB Lostness Priority 0-2 (Frontier, Pioneer or Expanding Unreached: under 2% evangelical)"
+  },
+  "frontier": {
+    "label": "Project 4700: frontier people groups",
+    "definition": "IMB Lostness Priority 0 (Frontier Unreached: 0.1% evangelical or less)"
+  },
+  "frontier-500k": {
+    "label": "Project 700: frontier people groups of 500,000 or more",
+    "definition": "IMB Lostness Priority 0 and Population of at least 500,000"
+  },
+  "unengaged": {
+    "label": "Unengaged unreached people groups",
+    "definition": "IMB Lostness Priority 0-2 and Engagement Status Unengaged"
+  }
+}

@@ -1,0 +1,7830 @@
+{
+ "stats": {
+  "countries": 175,
+  "generated": "2026-08-01",
+  "band_rule": "yes >=60% \u00b7 partial 25-59% \u00b7 no <25% of population using the internet (World Bank)",
+  "caveat": "NATIONAL figures. Per-city connectivity is not publicly available at this scale. Carrier names come from ASN registry holders \u2014 a name heuristic, not a verified classification.",
+  "carrier_display_note": "carriers are CLEANED ASN holder strings for reading; carriers_raw keeps the exact registry value, which is the citable fact. Cleaning strips duplicated halves and registry handles (e.g. \"TELECOM-LA-AS-AP - Lao Telecom Communication, LTC\" -> \"Lao Telecom Communication, LTC\")."
+ },
+ "countries": [
+  {
+   "iso3": "IND",
+   "country": "India",
+   "region": "Asia",
+   "internet_pct": 64.9,
+   "internet_year": "2024",
+   "mobile_per_100": 79.4,
+   "people_groups": 856,
+   "band": "yes",
+   "carriers": [
+    "BHARTI Airtel Ltd.",
+    "Flytxt Mobile Solutions Pvt Ltd",
+    "Bharti Airtel Limited",
+    "Karuturi Telecom Pvt Ltd"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Instagram",
+   "top_platform_pct": 45.37,
+   "platforms": [
+    {
+     "name": "Instagram",
+     "pct": 45.37
+    },
+    {
+     "name": "Facebook",
+     "pct": 25.14
+    },
+    {
+     "name": "YouTube",
+     "pct": 19.66
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.62
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 1.85
+    }
+   ],
+   "carriers_raw": [
+    "BBIL-AP - BHARTI Airtel Ltd.",
+    "FLYTXT-AS-AP - Flytxt Mobile Solutions Pvt Ltd",
+    "CMAX-AS - Bharti Airtel Limited",
+    "KARUTURI-IN - Karuturi Telecom Pvt Ltd"
+   ]
+  },
+  {
+   "iso3": "CHN",
+   "country": "People's Republic of China",
+   "region": "Asia",
+   "internet_pct": 92,
+   "internet_year": "2024",
+   "mobile_per_100": 131.8,
+   "people_groups": 154,
+   "band": "yes",
+   "carriers": [
+    "China Telecom Next Generation Carrier Network",
+    "China Telecom (Group)",
+    "China Telecom(Group)",
+    "Apsatcom"
+   ],
+   "carrier_count": 9,
+   "operator_count": 60,
+   "top_platform": "Twitter",
+   "top_platform_pct": 48.03,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 48.03
+    },
+    {
+     "name": "Pinterest",
+     "pct": 14.56
+    },
+    {
+     "name": "Facebook",
+     "pct": 13.85
+    },
+    {
+     "name": "YouTube",
+     "pct": 10.39
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.1
+    }
+   ],
+   "carriers_raw": [
+    "CHINATELECOM-CORE-WAN-CN2 - China Telecom Next Generation Carrier Network",
+    "CHINANET-SHANGHAI-MAN - China Telecom (Group)",
+    "CHINANET-SH-AP - China Telecom (Group)",
+    "BACKBONE-GUANGDONG-AP - China Telecom(Group)",
+    "CHINANET-IDC-SH - China Telecom (Group)",
+    "CHINANET-IDC-GD - China Telecom (Group)",
+    "CHINANET-IDC-SN - China Telecom (Group)",
+    "Apsatcom - APT MOBILE SATCOM LIMITED"
+   ]
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "region": "Middle East",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 70.2,
+   "people_groups": 105,
+   "band": "unknown",
+   "carriers": [
+    "Sudatel (Sudan Telecom Co. Ltd)",
+    "Kanar Telecommunication (Canar Telecom Co.Ltd)",
+    "MTN SUDAN",
+    "Sudanese Mobile Telephone (ZAIN) Co Ltd"
+   ],
+   "carrier_count": 4,
+   "operator_count": 13,
+   "top_platform": "Twitter",
+   "top_platform_pct": 50.59,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 50.59
+    },
+    {
+     "name": "Facebook",
+     "pct": 39.27
+    },
+    {
+     "name": "YouTube",
+     "pct": 8.18
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.84
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.06
+    }
+   ],
+   "carriers_raw": [
+    "Sudatel (Sudan Telecom Co. Ltd) - Sudatel (Sudan Telecom Co. Ltd)",
+    "Kanar Telecommunication (Canar Telecom Co.Ltd) - Kanar Telecommunication (Canar Telecom Co.Ltd)",
+    "MTN SUDAN - MTN SUDAN",
+    "Sudanese Mobile Telephone (ZAIN) Co Ltd - Sudanese Mobile Telephone (ZAIN) Co Ltd"
+   ]
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 84.5,
+   "internet_year": "2024",
+   "mobile_per_100": 101.9,
+   "people_groups": 104,
+   "band": "yes",
+   "carriers": [
+    "MHNET TELECOM",
+    "LESTE FLU SERVICOS DE TELECOM LTDA",
+    "ML Telecom",
+    "Empresa Catarinense de Tecnologia em Telecom. Ltda"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 45.04,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 45.04
+    },
+    {
+     "name": "Instagram",
+     "pct": 28.31
+    },
+    {
+     "name": "YouTube",
+     "pct": 14.27
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.16
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.56
+    }
+   ],
+   "carriers_raw": [
+    "AS7048 - MHNET TELECOM",
+    "AS7063 - LESTE FLU SERVICOS DE TELECOM LTDA",
+    "AS10704 - ML Telecom",
+    "AS11844 - Empresa Catarinense de Tecnologia em Telecom. Ltda"
+   ]
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao People's Democratic Republic",
+   "region": "Asia",
+   "internet_pct": 65.6,
+   "internet_year": "2024",
+   "mobile_per_100": 64.8,
+   "people_groups": 95,
+   "band": "yes",
+   "carriers": [
+    "Lao Telecom Communication, LTC",
+    "Laos Mobile Communications Sole Co., Ltd",
+    "Star Telecom",
+    "Sky Telecom State Company",
+    "Lao telecom construction Co.,Ltd"
+   ],
+   "carrier_count": 6,
+   "operator_count": 42,
+   "top_platform": "YouTube",
+   "top_platform_pct": 77.33,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 77.33
+    },
+    {
+     "name": "Facebook",
+     "pct": 17.47
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.9
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.99
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.91
+    }
+   ],
+   "carriers_raw": [
+    "TELECOM-LA-AS-AP - Lao Telecom Communication, LTC",
+    "LMCSCL-AS-AP - Laos Mobile Communications Sole Co., Ltd",
+    "UNITEL-LA - Star Telecom",
+    "SKYTELLAO-AS-AP - Sky Telecom State Company",
+    "LTCC-AS-AP - Lao telecom construction Co.,Ltd",
+    "LMCSCL-AS-AP - Laos Mobile Communications Sole Co., Ltd"
+   ]
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "region": "Africa",
+   "internet_pct": 12.6,
+   "internet_year": "2024",
+   "mobile_per_100": 72.9,
+   "people_groups": 54,
+   "band": "no",
+   "carriers": [
+    "AIRTEL TCHAD",
+    "ILNET TELECOM GROUP SARL"
+   ],
+   "carrier_count": 2,
+   "operator_count": 18,
+   "top_platform": "Facebook",
+   "top_platform_pct": 47.94,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 47.94
+    },
+    {
+     "name": "Twitter",
+     "pct": 37.39
+    },
+    {
+     "name": "YouTube",
+     "pct": 11.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.27
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 0.28
+    }
+   ],
+   "carriers_raw": [
+    "AIRTEL TCHAD - AIRTEL TCHAD",
+    "ILNET TELECOM GROUP SARL - ILNET TELECOM GROUP SARL"
+   ]
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "region": "Africa",
+   "internet_pct": 41.2,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 38,
+   "band": "partial",
+   "carriers": [
+    "VCG-AS MTN NIGERIA Communication limited",
+    "Airtel Networks Limited",
+    "MTN Nigeria",
+    "Phase3 Telecom Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 86.09,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 86.09
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.52
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.78
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.12
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.04
+    }
+   ],
+   "carriers_raw": [
+    "VCG-AS MTN NIGERIA Communication limited",
+    "Airtel Networks Limited - Airtel Networks Limited",
+    "MTN Nigeria - MTN Nigeria",
+    "Phase3 Telecom Limited - Phase3 Telecom Limited"
+   ]
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "region": "Asia",
+   "internet_pct": 72.8,
+   "internet_year": "2024",
+   "mobile_per_100": 122.5,
+   "people_groups": 36,
+   "band": "yes",
+   "carriers": [
+    "PT Telkom Satelit Indonesia"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 59.81,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 59.81
+    },
+    {
+     "name": "Facebook",
+     "pct": 27.82
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.31
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.17
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.13
+    }
+   ],
+   "carriers_raw": [
+    "TELKOMSAT-AP - PT Telkom Satelit Indonesia"
+   ]
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "region": "Asia",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 99.8,
+   "people_groups": 33,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 92.57,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 92.57
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.07
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.23
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.5
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 0.32
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "region": "Africa",
+   "internet_pct": 21.9,
+   "internet_year": "2024",
+   "mobile_per_100": 65.1,
+   "people_groups": 29,
+   "band": "no",
+   "carriers": [
+    "Ethio Telecom",
+    "SAFARICOM TELECOMMUNICATIONS ETHIOPIA PLC"
+   ],
+   "carrier_count": 2,
+   "operator_count": 10,
+   "top_platform": "Facebook",
+   "top_platform_pct": 54.75,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 54.75
+    },
+    {
+     "name": "YouTube",
+     "pct": 20.94
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.45
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.15
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.97
+    }
+   ],
+   "carriers_raw": [
+    "Ethio Telecom - Ethio Telecom",
+    "SAFARICOM TELECOMMUNICATIONS ETHIOPIA PLC - SAFARICOM TELECOMMUNICATIONS ETHIOPIA PLC"
+   ]
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 79.3,
+   "internet_year": "2024",
+   "mobile_per_100": 174.1,
+   "people_groups": 26,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 43.97,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 43.97
+    },
+    {
+     "name": "YouTube",
+     "pct": 25.56
+    },
+    {
+     "name": "Instagram",
+     "pct": 20.36
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.78
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.08
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "region": "Asia",
+   "internet_pct": 57.3,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 24,
+   "band": "partial",
+   "carriers": [
+    "SHARP TELECOM (PRIVATE) LIMITED",
+    "LINKdotNET Telecom Limited",
+    "Worldcall Telecom Limited",
+    "Pakistan Telecom Company Limited",
+    "Wateen Telecom (Pvt.) Ltd.",
+    "Worldcall Telecom Ltd."
+   ],
+   "carrier_count": 7,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 91.71,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 91.71
+    },
+    {
+     "name": "YouTube",
+     "pct": 4.46
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.72
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.47
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.27
+    }
+   ],
+   "carriers_raw": [
+    "SHARPTEL-AS-AP - SHARP TELECOM (PRIVATE) LIMITED",
+    "LDN-AS-AP - LINKdotNET Telecom Limited",
+    "LDN-AS-PK - LINKdotNET Telecom Limited",
+    "WORLDCALL-AS-KHI - Worldcall Telecom Limited",
+    "PKTELECOM-AS-PK - Pakistan Telecom Company Limited",
+    "WATEENTEL-AS-AP - Wateen Telecom (Pvt.) Ltd.",
+    "WORLDCALL-AS-AP - Worldcall Telecom Ltd."
+   ]
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "region": "Africa",
+   "internet_pct": 6.7,
+   "internet_year": "2019",
+   "mobile_per_100": 46.6,
+   "people_groups": 22,
+   "band": "no",
+   "carriers": [
+    "Zain South Sudan",
+    "MTN South Sudan",
+    "4G Telecom",
+    "Smart Network Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 23,
+   "top_platform": "Facebook",
+   "top_platform_pct": 48.63,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 48.63
+    },
+    {
+     "name": "Twitter",
+     "pct": 33.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 12.16
+    },
+    {
+     "name": "reddit",
+     "pct": 2.23
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.2
+    }
+   ],
+   "carriers_raw": [
+    "Zain South Sudan - Zain South Sudan",
+    "MTN South Sudan - MTN South Sudan",
+    "4G Telecom - 4G Telecom",
+    "Smart Network Limited - Smart Network Limited"
+   ]
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "region": "Asia",
+   "internet_pct": 16.1,
+   "internet_year": "2024",
+   "mobile_per_100": 60.1,
+   "people_groups": 21,
+   "band": "no",
+   "carriers": [
+    "Etisalat Afghan",
+    "Cyber Telecom ISP",
+    "Asia Bridge Telecom",
+    "Fast Net Telecom",
+    "Stark Telecom",
+    "SADAT Telecom",
+    "Fushanj Telecom ISP",
+    "Fibernet Telecom"
+   ],
+   "carrier_count": 8,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.44,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.44
+    },
+    {
+     "name": "Twitter",
+     "pct": 13.88
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.63
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.72
+    }
+   ],
+   "carriers_raw": [
+    "ETISALATAFG-AS-AP - Etisalat Afghan",
+    "CYBERTELECOMISP-AS-AP - Cyber Telecom ISP",
+    "ASIABRIDGETELECOM-AS-AP - Asia Bridge Telecom",
+    "FAST-AS-AP - Fast Net Telecom",
+    "STARKTELECOM-AS-AP - Stark Telecom",
+    "SADATTELECOM-AS-AP - SADAT Telecom",
+    "FUSHANJ-TELECOM-AS-AP - Fushanj Telecom ISP",
+    "FIBERNETTELECOM-AS-AP - Fibernet Telecom"
+   ]
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "region": "Europe",
+   "internet_pct": 94.4,
+   "internet_year": "2024",
+   "mobile_per_100": 186.1,
+   "people_groups": 21,
+   "band": "yes",
+   "carriers": [
+    "OpticTelecom-AS Optic Telecom LLC",
+    "ROSPRINT-AS LLC Orange Business Services",
+    "ASN-MATRIXMOBILE MATRIX TELECOM LLC",
+    "CREDO-TELECOM JSC \"CREDO-TELECOM\"",
+    "ORTEL-AS JSC Orient-Telecom"
+   ],
+   "carrier_count": 5,
+   "operator_count": 60,
+   "top_platform": "Pinterest",
+   "top_platform_pct": 25.51,
+   "platforms": [
+    {
+     "name": "Pinterest",
+     "pct": 25.51
+    },
+    {
+     "name": "reddit",
+     "pct": 25.29
+    },
+    {
+     "name": "VKontakte",
+     "pct": 18.21
+    },
+    {
+     "name": "YouTube",
+     "pct": 17.22
+    },
+    {
+     "name": "Facebook",
+     "pct": 4.77
+    }
+   ],
+   "carriers_raw": [
+    "OpticTelecom-AS Optic Telecom LLC",
+    "ROSPRINT-AS LLC Orange Business Services",
+    "ASN-MATRIXMOBILE MATRIX TELECOM LLC",
+    "CREDO-TELECOM JSC \"CREDO-TELECOM\"",
+    "ORTEL-AS JSC Orient-Telecom"
+   ]
+  },
+  {
+   "iso3": "IRN",
+   "country": "Islamic Republic of Iran",
+   "region": "Middle East",
+   "internet_pct": 85.3,
+   "internet_year": "2024",
+   "mobile_per_100": 174.1,
+   "people_groups": 20,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Instagram",
+   "top_platform_pct": 28.45,
+   "platforms": [
+    {
+     "name": "Instagram",
+     "pct": 28.45
+    },
+    {
+     "name": "Pinterest",
+     "pct": 23.85
+    },
+    {
+     "name": "YouTube",
+     "pct": 15.84
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 13.29
+    },
+    {
+     "name": "Twitter",
+     "pct": 7.67
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "region": "Middle East",
+   "internet_pct": 77.4,
+   "internet_year": "2024",
+   "mobile_per_100": 115.5,
+   "people_groups": 17,
+   "band": "yes",
+   "carriers": [
+    "Telecom Algeria",
+    "Wataniya Telecom Algerie",
+    "Optimum Telecom Algeria",
+    "Algerie Telecom Satellite JSC",
+    "JSC HASNAOUI TELECOM ALGERIE"
+   ],
+   "carrier_count": 7,
+   "operator_count": 14,
+   "top_platform": "Facebook",
+   "top_platform_pct": 71.28,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 71.28
+    },
+    {
+     "name": "YouTube",
+     "pct": 15.03
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.21
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.93
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.27
+    }
+   ],
+   "carriers_raw": [
+    "Telecom Algeria - Telecom Algeria",
+    "Wataniya Telecom Algerie - Wataniya Telecom Algerie",
+    "Telecom Algeria - Telecom Algeria",
+    "Telecom Algeria - Telecom Algeria",
+    "Optimum Telecom Algeria - Optimum Telecom Algeria",
+    "Algerie Telecom Satellite JSC - Algerie Telecom Satellite JSC",
+    "JSC HASNAOUI TELECOM ALGERIE - JSC HASNAOUI TELECOM ALGERIE"
+   ]
+  },
+  {
+   "iso3": "TZA",
+   "country": "United Republic of Tanzania",
+   "region": "Africa",
+   "internet_pct": 31.2,
+   "internet_year": "2024",
+   "mobile_per_100": 126.6,
+   "people_groups": 16,
+   "band": "partial",
+   "carriers": [
+    "Vodacom Tanzania Ltd",
+    "Airtel Tanzania",
+    "Viettel Tanzania PLC"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 48.51,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 48.51
+    },
+    {
+     "name": "Facebook",
+     "pct": 28.45
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.32
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.1
+    },
+    {
+     "name": "reddit",
+     "pct": 2.48
+    }
+   ],
+   "carriers_raw": [
+    "Vodacom Tanzania Ltd - Vodacom Tanzania Ltd",
+    "Airtel Tanzania - Airtel Tanzania",
+    "Viettel Tanzania PLC - Viettel Tanzania PLC"
+   ]
+  },
+  {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "region": "Asia",
+   "internet_pct": 84.2,
+   "internet_year": "2024",
+   "mobile_per_100": 127.6,
+   "people_groups": 16,
+   "band": "yes",
+   "carriers": [
+    "Viettel Group",
+    "FPT Telecom Company",
+    "Viettel Corporation",
+    "Hanoi Telecom Joint Stock Company - HCMC Branch",
+    "CDMA Mobile Phone Center S-Telecom",
+    "Hanoi Telecom JSC",
+    "CMC Telecom Infrastructure Company"
+   ],
+   "carrier_count": 9,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 47.24,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 47.24
+    },
+    {
+     "name": "YouTube",
+     "pct": 38.19
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.26
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.95
+    },
+    {
+     "name": "reddit",
+     "pct": 2.88
+    }
+   ],
+   "carriers_raw": [
+    "VIETEL-AS-AP - Viettel Group",
+    "FPT-VN - FPT Telecom Company",
+    "VIETTEL-AS-VN - Viettel Corporation",
+    "HTCHCMC-AS-VN - Hanoi Telecom Joint Stock Company - HCMC Branch",
+    "SFONE-AS-VN - CDMA Mobile Phone Center S-Telecom",
+    "HANOITELECOM-AS-VN - Hanoi Telecom JSC",
+    "CMCTELECOM-VN - CMC Telecom Infrastructure Company",
+    "CMCTELECOM-VN - CMC Telecom Infrastructure Company"
+   ]
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "region": "Middle East",
+   "internet_pct": 82,
+   "internet_year": "2024",
+   "mobile_per_100": 193,
+   "people_groups": 15,
+   "band": "yes",
+   "carriers": [
+    "ICONA for IT and Telecom. LTD Co",
+    "Ion Telecom and Technology",
+    "Libyana Mobile Phone Company JSC",
+    "AWAL TELECOM & TECHNOLOGY",
+    "Ozone aljadid for telecom and technology  LLC",
+    "Sharart Altaqanaya Co, for Telecom & Technology"
+   ],
+   "carrier_count": 6,
+   "operator_count": 33,
+   "top_platform": "YouTube",
+   "top_platform_pct": 62.25,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 62.25
+    },
+    {
+     "name": "Facebook",
+     "pct": 28.48
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.17
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.59
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.28
+    }
+   ],
+   "carriers_raw": [
+    "ICONA for IT and Telecom. LTD Co - ICONA for IT and Telecom. LTD Co",
+    "Ion Telecom and Technology - Ion Telecom and Technology",
+    "Libyana Mobile Phone Company JSC - Libyana Mobile Phone Company JSC",
+    "AWAL TELECOM & TECHNOLOGY - AWAL TELECOM & TECHNOLOGY",
+    "Ozone aljadid for telecom and technology  LLC - Ozone aljadid for telecom and technology  LLC",
+    "Sharart Altaqanaya Co, for Telecom & Technology - Sharart Altaqanaya Co, for Telecom & Technology"
+   ]
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "region": "Asia",
+   "internet_pct": 91.3,
+   "internet_year": "2024",
+   "mobile_per_100": 99.8,
+   "people_groups": 13,
+   "band": "yes",
+   "carriers": [
+    "Bhutan Telecom Ltd",
+    "Tashicell Domestic AS Thimphu Bhutan"
+   ],
+   "carrier_count": 4,
+   "operator_count": 41,
+   "top_platform": "Facebook",
+   "top_platform_pct": 55.97,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 55.97
+    },
+    {
+     "name": "YouTube",
+     "pct": 18.28
+    },
+    {
+     "name": "Pinterest",
+     "pct": 11.19
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.72
+    },
+    {
+     "name": "reddit",
+     "pct": 4.1
+    }
+   ],
+   "carriers_raw": [
+    "BTTELECOM-AS-AP - Bhutan Telecom Ltd",
+    "BTTELECOM-AS-AP - Bhutan Telecom Ltd",
+    "BTTELECOM-AS-AP - Bhutan Telecom Ltd",
+    "TASHICELL-MOBILE-AS - Tashicell Domestic AS Thimphu Bhutan"
+   ]
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "region": "Africa",
+   "internet_pct": 33.3,
+   "internet_year": "2024",
+   "mobile_per_100": 97.9,
+   "people_groups": 13,
+   "band": "partial",
+   "carriers": [
+    "VDC Telecom",
+    "ORANGE GUINEE"
+   ],
+   "carrier_count": 2,
+   "operator_count": 19,
+   "top_platform": "Facebook",
+   "top_platform_pct": 61.67,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 61.67
+    },
+    {
+     "name": "Twitter",
+     "pct": 35.81
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.14
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.53
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.42
+    }
+   ],
+   "carriers_raw": [
+    "VDC Telecom - VDC Telecom",
+    "ORANGE GUINEE - ORANGE GUINEE"
+   ]
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "region": "Africa",
+   "internet_pct": 36.8,
+   "internet_year": "2024",
+   "mobile_per_100": 112.1,
+   "people_groups": 13,
+   "band": "partial",
+   "carriers": [
+    "Orange Mali SA"
+   ],
+   "carrier_count": 1,
+   "operator_count": 11,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.44,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.44
+    },
+    {
+     "name": "Twitter",
+     "pct": 19.87
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.49
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.52
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.4
+    }
+   ],
+   "carriers_raw": [
+    "Orange Mali SA - Orange Mali SA"
+   ]
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "region": "Asia",
+   "internet_pct": 98,
+   "internet_year": "2024",
+   "mobile_per_100": 139.7,
+   "people_groups": 12,
+   "band": "yes",
+   "carriers": [
+    "OBS-OCB_HONEY_ASN",
+    "U Mobile Sdn Bhd"
+   ],
+   "carrier_count": 2,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 76.61,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 76.61
+    },
+    {
+     "name": "YouTube",
+     "pct": 12.99
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.99
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.89
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.33
+    }
+   ],
+   "carriers_raw": [
+    "OBS-OCB_HONEY_ASN - Orange Business Services - OCB Public Cloud Network (HONEY)",
+    "UMOBILE-AS-AP - U Mobile Sdn Bhd"
+   ]
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "region": "Africa",
+   "internet_pct": 40.7,
+   "internet_year": "2024",
+   "mobile_per_100": 69.7,
+   "people_groups": 10,
+   "band": "partial",
+   "carriers": [
+    "Angola Telecom",
+    "UNITEL SA",
+    "Africell Angola S.A"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 78.22,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 78.22
+    },
+    {
+     "name": "YouTube",
+     "pct": 8.58
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.03
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.17
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.07
+    }
+   ],
+   "carriers_raw": [
+    "Angola Telecom - Angola Telecom",
+    "Angola Telecom - Angola Telecom",
+    "UNITEL SA - UNITEL SA",
+    "Africell Angola S.A - Africell Angola S.A"
+   ]
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "region": "Latin America & Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 124.6,
+   "people_groups": 10,
+   "band": "unknown",
+   "carriers": [
+    "VIETTEL PERU S.A.C.",
+    "WI-NET TELECOM S.A.C.",
+    "ARTIC TELECOM E.I.R.L"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 62.76,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 62.76
+    },
+    {
+     "name": "YouTube",
+     "pct": 12.32
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.35
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.86
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.08
+    }
+   ],
+   "carriers_raw": [
+    "AS262210 - VIETTEL PERU S.A.C.",
+    "AS265691 - WI-NET TELECOM S.A.C.",
+    "AS265794 - ARTIC TELECOM E.I.R.L"
+   ]
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "region": "Africa",
+   "internet_pct": 34,
+   "internet_year": "2024",
+   "mobile_per_100": 125.9,
+   "people_groups": 9,
+   "band": "partial",
+   "carriers": [
+    "ETISALAT BENIN",
+    "Omnium des Telecom et de l'Internet (OTI Telecom)",
+    "SUD TELECOM SOLUTIONS"
+   ],
+   "carrier_count": 3,
+   "operator_count": 20,
+   "top_platform": "Facebook",
+   "top_platform_pct": 48.07,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 48.07
+    },
+    {
+     "name": "Twitter",
+     "pct": 45.04
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.99
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.94
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.14
+    }
+   ],
+   "carriers_raw": [
+    "ETISALAT BENIN - ETISALAT BENIN",
+    "Omnium des Telecom et de l'Internet (OTI Telecom) - Omnium des Telecom et de l'Internet (OTI Telecom)",
+    "SUD TELECOM SOLUTIONS - SUD TELECOM SOLUTIONS"
+   ]
+  },
+  {
+   "iso3": "COD",
+   "country": "Democratic Republic of the Congo",
+   "region": "Africa",
+   "internet_pct": 19.7,
+   "internet_year": "2024",
+   "mobile_per_100": 58.5,
+   "people_groups": 9,
+   "band": "no",
+   "carriers": [
+    "CELTEL DRC",
+    "CIELUX TELECOM RDC",
+    "ORANGE RDC",
+    "Vodacom Congo",
+    "STE AFRICELL RDC SPRL",
+    "AJYWA TELECOM",
+    "STANDARD TELECOM CONGO SARL- STC SA"
+   ],
+   "carrier_count": 8,
+   "operator_count": 57,
+   "top_platform": "Twitter",
+   "top_platform_pct": 48.79,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 48.79
+    },
+    {
+     "name": "Facebook",
+     "pct": 45.29
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.96
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.27
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.17
+    }
+   ],
+   "carriers_raw": [
+    "CELTEL DRC - CELTEL DRC",
+    "CIELUX TELECOM RDC - CIELUX TELECOM RDC",
+    "ORANGE RDC - ORANGE RDC",
+    "Vodacom Congo - Vodacom Congo",
+    "ORANGE RDC - ORANGE RDC",
+    "STE AFRICELL RDC SPRL - STE AFRICELL RDC SPRL",
+    "AJYWA TELECOM - AJYWA TELECOM",
+    "STANDARD TELECOM CONGO SARL- STC SA - STANDARD TELECOM CONGO SARL- STC SA"
+   ]
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia",
+   "region": "Africa",
+   "internet_pct": 27.9,
+   "internet_year": "2024",
+   "mobile_per_100": 54,
+   "people_groups": 9,
+   "band": "partial",
+   "carriers": [
+    "Hormuud Telecom Somalia INC",
+    "Sahal Telecom Somalia",
+    "Golis Telecom Somalia"
+   ],
+   "carrier_count": 3,
+   "operator_count": 24,
+   "top_platform": "Facebook",
+   "top_platform_pct": 42.79,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 42.79
+    },
+    {
+     "name": "YouTube",
+     "pct": 36.77
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.49
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.97
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.64
+    }
+   ],
+   "carriers_raw": [
+    "Hormuud Telecom Somalia INC - Hormuud Telecom Somalia INC",
+    "Sahal Telecom Somalia - Sahal Telecom Somalia",
+    "Golis Telecom Somalia - Golis Telecom Somalia"
+   ]
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen",
+   "region": "Middle East",
+   "internet_pct": 17.5,
+   "internet_year": "2019",
+   "mobile_per_100": 50.9,
+   "people_groups": 9,
+   "band": "no",
+   "carriers": [
+    "MTN-YEMEN Yemen Oman United Telecom CJSC",
+    "YM Yemen Mobile Company, Public Yemeni Joint-Stock Company",
+    "sabaon-as Yemen Co. for Mobile Telephony (Sabafon) CJSC"
+   ],
+   "carrier_count": 3,
+   "operator_count": 6,
+   "top_platform": "YouTube",
+   "top_platform_pct": 47.1,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 47.1
+    },
+    {
+     "name": "Facebook",
+     "pct": 31.57
+    },
+    {
+     "name": "Instagram",
+     "pct": 11.25
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.62
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.21
+    }
+   ],
+   "carriers_raw": [
+    "MTN-YEMEN Yemen Oman United Telecom CJSC",
+    "YM Yemen Mobile Company, Public Yemeni Joint-Stock Company",
+    "sabaon-as Yemen Co. for Mobile Telephony (Sabafon) CJSC"
+   ]
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "region": "Africa",
+   "internet_pct": 28.3,
+   "internet_year": "2024",
+   "mobile_per_100": 116.6,
+   "people_groups": 8,
+   "band": "partial",
+   "carriers": [
+    "TELECEL FASO",
+    "Orange Burkina Faso"
+   ],
+   "carrier_count": 2,
+   "operator_count": 33,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.12,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.12
+    },
+    {
+     "name": "Twitter",
+     "pct": 21.49
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.74
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.64
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.51
+    }
+   ],
+   "carriers_raw": [
+    "TELECEL FASO - TELECEL FASO",
+    "Orange Burkina Faso - Orange Burkina Faso"
+   ]
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "region": "Africa",
+   "internet_pct": 14.3,
+   "internet_year": "2020",
+   "mobile_per_100": 59.1,
+   "people_groups": 8,
+   "band": "no",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 1,
+   "top_platform": "Facebook",
+   "top_platform_pct": 100,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 100
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "region": "Middle East",
+   "internet_pct": 81.5,
+   "internet_year": "2024",
+   "mobile_per_100": 100.1,
+   "people_groups": 8,
+   "band": "yes",
+   "carriers": [
+    "Newroz-Telecom-ASN Allay Nawroz Telecom Company for Communication/Ltd.",
+    "KorekTel Korek Telecom Company for Communications LLC",
+    "Datanet-Telecom Data Net Telecom Co. Ltd",
+    "RT-AS Regional Telecom Company for Communications Ltd.",
+    "IQSTC-IQ Smart Technology for Communications Services LLC"
+   ],
+   "carrier_count": 5,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 54.54,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 54.54
+    },
+    {
+     "name": "Facebook",
+     "pct": 33.05
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.43
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.29
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.4
+    }
+   ],
+   "carriers_raw": [
+    "Newroz-Telecom-ASN Allay Nawroz Telecom Company for Communication/Ltd.",
+    "KorekTel Korek Telecom Company for Communications LLC",
+    "Datanet-Telecom Data Net Telecom Co. Ltd",
+    "RT-AS Regional Telecom Company for Communications Ltd.",
+    "IQSTC-IQ Smart Technology for Communications Services LLC"
+   ]
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "region": "Asia",
+   "internet_pct": 90.9,
+   "internet_year": "2024",
+   "mobile_per_100": 160.6,
+   "people_groups": 8,
+   "band": "yes",
+   "carriers": [
+    "National Telecom Public Company Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.99,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.99
+    },
+    {
+     "name": "YouTube",
+     "pct": 9.75
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.38
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.74
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.55
+    }
+   ],
+   "carriers_raw": [
+    "NTPCL-AS-AP - National Telecom Public Company Limited",
+    "NTPCL-AS-AP - National Telecom Public Company Limited",
+    "NTPCL-AS-AP - National Telecom Public Company Limited",
+    "NTPCL-AS-AP - National Telecom Public Company Limited"
+   ]
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "region": "Africa",
+   "internet_pct": 46.3,
+   "internet_year": "2024",
+   "mobile_per_100": 108.2,
+   "people_groups": 7,
+   "band": "partial",
+   "carriers": [
+    "MTN Network Solutions (Cameroon)",
+    "Orange Cameroun SA",
+    "AVS TELECOM SARL",
+    "HTT Telecom"
+   ],
+   "carrier_count": 5,
+   "operator_count": 33,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.05,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.05
+    },
+    {
+     "name": "Twitter",
+     "pct": 20.65
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.01
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.27
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.04
+    }
+   ],
+   "carriers_raw": [
+    "MTN Network Solutions (Cameroon) - MTN Network Solutions (Cameroon)",
+    "Orange Cameroun SA - Orange Cameroun SA",
+    "AVS TELECOM SARL - AVS TELECOM SARL",
+    "AVS TELECOM SARL - AVS TELECOM SARL",
+    "HTT Telecom - HTT Telecom"
+   ]
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "region": "Asia",
+   "internet_pct": 45.4,
+   "internet_year": "2020",
+   "mobile_per_100": 114.3,
+   "people_groups": 7,
+   "band": "partial",
+   "carriers": [
+    "HORIZON TELECOM INTERNATIONAL COMPANY LIMITED",
+    "Elite Telecom Public Company Limited",
+    "Myanmar Broadband Telecom Co., Ltd",
+    "Golden TMH Telecom Co. Ltd",
+    "Telecom International Myanmar Co., Ltd",
+    "Marga Global Telecom Limited",
+    "Prime Parami Technology and Telecom Co.,Ltd.",
+    "Fortune Telecom Company Limited"
+   ],
+   "carrier_count": 9,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 86.93,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 86.93
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.44
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.63
+    },
+    {
+     "name": "VKontakte",
+     "pct": 2.33
+    },
+    {
+     "name": "reddit",
+     "pct": 1.17
+    }
+   ],
+   "carriers_raw": [
+    "HTI-AS-AP - HORIZON TELECOM INTERNATIONAL COMPANY LIMITED",
+    "ETPCL-AS-AP - Elite Telecom Public Company Limited",
+    "MBTCL-AS-AP - Myanmar Broadband Telecom Co., Ltd",
+    "GTMH-AS-AP - Golden TMH Telecom Co. Ltd",
+    "TIMCL-AS-AP - Telecom International Myanmar Co., Ltd",
+    "MGTL-AS-AP - Marga Global Telecom Limited",
+    "PPTATC-AS-AP - Prime Parami Technology and Telecom Co.,Ltd.",
+    "FTCL-AS-AP - Fortune Telecom Company Limited"
+   ]
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "region": "Middle East",
+   "internet_pct": 95.3,
+   "internet_year": "2024",
+   "mobile_per_100": 120.6,
+   "people_groups": 7,
+   "band": "yes",
+   "carriers": [
+    "Vodafone-Oman Oman Future Telecommunications Company SAOC"
+   ],
+   "carrier_count": 1,
+   "operator_count": 25,
+   "top_platform": "Facebook",
+   "top_platform_pct": 49.3,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 49.3
+    },
+    {
+     "name": "YouTube",
+     "pct": 27.49
+    },
+    {
+     "name": "Instagram",
+     "pct": 14.86
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.65
+    }
+   ],
+   "carriers_raw": [
+    "Vodafone-Oman Oman Future Telecommunications Company SAOC"
+   ]
+  },
+  {
+   "iso3": "PSE",
+   "country": "State of Palestine",
+   "region": "Middle East",
+   "internet_pct": 86.6,
+   "internet_year": "2023",
+   "mobile_per_100": 76.7,
+   "people_groups": 7,
+   "band": "yes",
+   "carriers": [
+    "GILAT-TELECOM-LTD Gilat Telecom Ltd.",
+    "IPTelecom IP Telecom ltd.",
+    "MIRS-AS HOT Mobile Ltd."
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 77.73,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 77.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 7.68
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.29
+    },
+    {
+     "name": "Twitter",
+     "pct": 5
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.58
+    }
+   ],
+   "carriers_raw": [
+    "GILAT-TELECOM-LTD Gilat Telecom Ltd.",
+    "IPTelecom IP Telecom ltd.",
+    "MIRS-AS HOT Mobile Ltd."
+   ]
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "region": "Asia",
+   "internet_pct": 85.5,
+   "internet_year": "2024",
+   "mobile_per_100": 178.4,
+   "people_groups": 6,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Twitter",
+   "top_platform_pct": 55.02,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 55.02
+    },
+    {
+     "name": "Instagram",
+     "pct": 18.35
+    },
+    {
+     "name": "Facebook",
+     "pct": 11.24
+    },
+    {
+     "name": "YouTube",
+     "pct": 6.02
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.22
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "region": "Africa",
+   "internet_pct": 64.9,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 6,
+   "band": "yes",
+   "carriers": [
+    "Telecom Namibia",
+    "Mobile Telecommunications, Ltd. - MTC - Mobile Telecommunications, Ltd.",
+    "Mobile Telephone Networks Business Solutions (Namibia) (Proprietary) Limited",
+    "Loc Eight Mobile (Pty) Ltd"
+   ],
+   "carrier_count": 6,
+   "operator_count": 21,
+   "top_platform": "Facebook",
+   "top_platform_pct": 79.96,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 79.96
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.7
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.32
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.49
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.39
+    }
+   ],
+   "carriers_raw": [
+    "Telecom Namibia - Telecom Namibia",
+    "Telecom Namibia - Telecom Namibia",
+    "Telecom Namibia - Telecom Namibia",
+    "MTC - Mobile Telecommunications, Ltd. - MTC - Mobile Telecommunications, Ltd.",
+    "Mobile Telephone Networks Business Solutions (Namibia) (Proprietary) Limited - Mobile Telephone Networks Business Solutions (Namibia) (Proprietary) Limited",
+    "Loc Eight Mobile (Pty) Ltd - Loc Eight Mobile (Pty) Ltd"
+   ]
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "region": "Africa",
+   "internet_pct": 39.5,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 6,
+   "band": "partial",
+   "carriers": [
+    "ATLANTIQUE TELECOM TOGO"
+   ],
+   "carrier_count": 1,
+   "operator_count": 11,
+   "top_platform": "Facebook",
+   "top_platform_pct": 62.3,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 62.3
+    },
+    {
+     "name": "Twitter",
+     "pct": 20.66
+    },
+    {
+     "name": "YouTube",
+     "pct": 8.65
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.68
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.64
+    }
+   ],
+   "carriers_raw": [
+    "ATLANTIQUE TELECOM TOGO - ATLANTIQUE TELECOM TOGO"
+   ]
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 76.7,
+   "internet_year": "2024",
+   "mobile_per_100": 71,
+   "people_groups": 6,
+   "band": "yes",
+   "carriers": [
+    "Dayco Telecom, C.A."
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 43.74,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 43.74
+    },
+    {
+     "name": "YouTube",
+     "pct": 33.12
+    },
+    {
+     "name": "Instagram",
+     "pct": 12.23
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.05
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.17
+    }
+   ],
+   "carriers_raw": [
+    "AS21980 - Dayco Telecom, C.A."
+   ]
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "region": "Africa",
+   "internet_pct": 8.9,
+   "internet_year": "2024",
+   "mobile_per_100": 83.2,
+   "people_groups": 6,
+   "band": "no",
+   "carriers": [
+    "MTN Uganda",
+    "Uganda-Telecom",
+    "Uganda Telecom Ltd",
+    "Airtel Uganda Limited",
+    "HAMILTON TELECOM LIMITED",
+    "TALKIO MOBILE LTD",
+    "KILIMANJARO TELECOM COMPANY LIMITED"
+   ],
+   "carrier_count": 8,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 32.88,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 32.88
+    },
+    {
+     "name": "Twitter",
+     "pct": 23.19
+    },
+    {
+     "name": "Instagram",
+     "pct": 14.13
+    },
+    {
+     "name": "Pinterest",
+     "pct": 11.7
+    },
+    {
+     "name": "Facebook",
+     "pct": 11.22
+    }
+   ],
+   "carriers_raw": [
+    "MTN Uganda - MTN Uganda",
+    "Uganda-Telecom - IDDQD-AS",
+    "Uganda Telecom Ltd - Uganda Telecom Ltd",
+    "Airtel Uganda Limited - Airtel Uganda Limited",
+    "Airtel Uganda Limited - Airtel Uganda Limited",
+    "HAMILTON TELECOM LIMITED - HAMILTON TELECOM LIMITED",
+    "TALKIO MOBILE LTD - TALKIO MOBILE LTD",
+    "KILIMANJARO TELECOM COMPANY LIMITED - KILIMANJARO TELECOM COMPANY LIMITED"
+   ]
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "region": "Africa",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 108.7,
+   "people_groups": 6,
+   "band": "unknown",
+   "carriers": [
+    "MTN Zambia",
+    "Zambia Telecommunications Company Ltd aka ZAMTEL",
+    "Zain Zambia PLC",
+    "CEC LIQUID TELECOM",
+    "Roke Telkom Zambia"
+   ],
+   "carrier_count": 5,
+   "operator_count": 24,
+   "top_platform": "Facebook",
+   "top_platform_pct": 53.35,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 53.35
+    },
+    {
+     "name": "Pinterest",
+     "pct": 12.63
+    },
+    {
+     "name": "Instagram",
+     "pct": 12.25
+    },
+    {
+     "name": "YouTube",
+     "pct": 11.3
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.9
+    }
+   ],
+   "carriers_raw": [
+    "MTN Zambia - MTN Zambia",
+    "Zambia Telecommunications Company Ltd aka ZAMTEL - Zambia Telecommunications Company Ltd aka ZAMTEL",
+    "Zain Zambia PLC - Zain Zambia PLC",
+    "CEC LIQUID TELECOM - CEC LIQUID TELECOM",
+    "Roke Telkom Zambia - Roke Telkom Zambia"
+   ]
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "region": "Asia",
+   "internet_pct": 96.3,
+   "internet_year": "2024",
+   "mobile_per_100": 118.1,
+   "people_groups": 5,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 10,
+   "top_platform": "Instagram",
+   "top_platform_pct": 38.04,
+   "platforms": [
+    {
+     "name": "Instagram",
+     "pct": 38.04
+    },
+    {
+     "name": "Facebook",
+     "pct": 22.02
+    },
+    {
+     "name": "Pinterest",
+     "pct": 17.7
+    },
+    {
+     "name": "reddit",
+     "pct": 9.51
+    },
+    {
+     "name": "YouTube",
+     "pct": 7.68
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "region": "Africa",
+   "internet_pct": 35,
+   "internet_year": "2024",
+   "mobile_per_100": 126.5,
+   "people_groups": 5,
+   "band": "partial",
+   "carriers": [
+    "Kenyan Post & Telecommunications Company / Telkom Kenya Ltd",
+    "Safaricom Limited",
+    "Airtel Networks Kenya Limited"
+   ],
+   "carrier_count": 5,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 33.17,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 33.17
+    },
+    {
+     "name": "Instagram",
+     "pct": 24.2
+    },
+    {
+     "name": "YouTube",
+     "pct": 19.34
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.35
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.17
+    }
+   ],
+   "carriers_raw": [
+    "Kenyan Post & Telecommunications Company / Telkom Kenya Ltd - Kenyan Post & Telecommunications Company / Telkom Kenya Ltd",
+    "Kenyan Post & Telecommunications Company / Telkom Kenya Ltd - Kenyan Post & Telecommunications Company / Telkom Kenya Ltd",
+    "Safaricom Limited - Safaricom Limited",
+    "Airtel Networks Kenya Limited - Airtel Networks Kenya Limited",
+    "Safaricom Limited - Safaricom Limited"
+   ]
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "region": "Middle East",
+   "internet_pct": 33.8,
+   "internet_year": "2018",
+   "mobile_per_100": 71.2,
+   "people_groups": 5,
+   "band": "partial",
+   "carriers": [
+    "Syriatel-AS Syriatel Mobile Telecom"
+   ],
+   "carrier_count": 1,
+   "operator_count": 12,
+   "top_platform": "Facebook",
+   "top_platform_pct": 88.44,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 88.44
+    },
+    {
+     "name": "YouTube",
+     "pct": 7.8
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.22
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.49
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.03
+    }
+   ],
+   "carriers_raw": [
+    "Syriatel-AS Syriatel Mobile Telecom"
+   ]
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "region": "Middle East",
+   "internet_pct": 80.6,
+   "internet_year": "2024",
+   "mobile_per_100": 74,
+   "people_groups": 4,
+   "band": "yes",
+   "carriers": [
+    "SMARTNETSLB Smart Networks S.a.r.l",
+    "MTCTOUCH Mobile Interim Company no.2 sal",
+    "SS-SOLUTIONS Smart Secure Solutions S.A.R.L."
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 50.46,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 50.46
+    },
+    {
+     "name": "YouTube",
+     "pct": 27.76
+    },
+    {
+     "name": "Instagram",
+     "pct": 12.34
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.76
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.61
+    }
+   ],
+   "carriers_raw": [
+    "SMARTNETSLB Smart Networks S.a.r.l",
+    "MTCTOUCH Mobile Interim Company no.2 sal",
+    "SS-SOLUTIONS Smart Secure Solutions S.A.R.L."
+   ]
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "region": "Middle East",
+   "internet_pct": 91.2,
+   "internet_year": "2024",
+   "mobile_per_100": 153.1,
+   "people_groups": 4,
+   "band": "yes",
+   "carriers": [
+    "Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM"
+   ],
+   "carrier_count": 3,
+   "operator_count": 37,
+   "top_platform": "YouTube",
+   "top_platform_pct": 44.9,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 44.9
+    },
+    {
+     "name": "Facebook",
+     "pct": 34.32
+    },
+    {
+     "name": "Instagram",
+     "pct": 17.7
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.49
+    }
+   ],
+   "carriers_raw": [
+    "Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM",
+    "Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM",
+    "Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM"
+   ]
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "region": "Africa",
+   "internet_pct": 20.5,
+   "internet_year": "2024",
+   "mobile_per_100": 49.5,
+   "people_groups": 4,
+   "band": "no",
+   "carriers": [
+    "Mo\u00e7ambique Telecom, SA - TMCEL - Mo\u00e7ambique Telecom, SA",
+    "Vodacom Mocambique S.A",
+    "Movitel, SA",
+    "Iz Telecom Su Lda"
+   ],
+   "carrier_count": 4,
+   "operator_count": 34,
+   "top_platform": "Facebook",
+   "top_platform_pct": 93.99,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 93.99
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.21
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.71
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.99
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.53
+    }
+   ],
+   "carriers_raw": [
+    "TMCEL - Mo\u00e7ambique Telecom, SA - TMCEL - Mo\u00e7ambique Telecom, SA",
+    "Vodacom Mocambique S.A - Vodacom Mocambique S.A",
+    "Movitel, SA - Movitel, SA",
+    "Iz Telecom Su Lda - Iz Telecom Su Lda"
+   ]
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "region": "Asia",
+   "internet_pct": 90.4,
+   "internet_year": "2024",
+   "mobile_per_100": 109.5,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "Delta-Telecom-AS Delta Telecom Ltd",
+    "AZERCELL-AS Azercell Telecom Ltd",
+    "smart-systems \"SMART SISTEMZ TECHNOLOJI\" MMM",
+    "StartTelecom START TELECOM Mahdud Masuliyyatli Camiyyati",
+    "ag-telecom-katv1 AG Telekom MMC.",
+    "SHAKH_TV SHAKH Telecom LLC",
+    "castel-as Caspian Telecom LLC"
+   ],
+   "carrier_count": 7,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 36.97,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 36.97
+    },
+    {
+     "name": "Facebook",
+     "pct": 28.05
+    },
+    {
+     "name": "Instagram",
+     "pct": 12.41
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 6.85
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.91
+    }
+   ],
+   "carriers_raw": [
+    "Delta-Telecom-AS Delta Telecom Ltd",
+    "AZERCELL-AS Azercell Telecom Ltd",
+    "smart-systems \"SMART SISTEMZ TECHNOLOJI\" MMM",
+    "StartTelecom START TELECOM Mahdud Masuliyyatli Camiyyati",
+    "ag-telecom-katv1 AG Telekom MMC.",
+    "SHAKH_TV SHAKH Telecom LLC",
+    "castel-as Caspian Telecom LLC"
+   ]
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "region": "Asia",
+   "internet_pct": 53.4,
+   "internet_year": "2024",
+   "mobile_per_100": 108.1,
+   "people_groups": 3,
+   "band": "partial",
+   "carriers": [
+    "Access Telecom (BD) Ltd.",
+    "Telecom Operator & Internet Service Provider as well",
+    "Ali Sumon t/a SMART NET",
+    "ADN Telecom Ltd.",
+    "Ranks Telecom Limited"
+   ],
+   "carrier_count": 7,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 71.98,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 71.98
+    },
+    {
+     "name": "YouTube",
+     "pct": 20.74
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.94
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.97
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.92
+    }
+   ],
+   "carriers_raw": [
+    "ACCESSTEL-AS-AP - Access Telecom (BD) Ltd.",
+    "BTTB-AS-AP - Telecom Operator & Internet Service Provider as well",
+    "ACCESSTEL-AS-AP - Access Telecom (BD) Ltd.",
+    "SMART-AS-AP - Ali Sumon t/a SMART NET",
+    "ACCESSTEL-AS-AP - Access Telecom (BD) Ltd.",
+    "ADNTELECOMLTD-BD - ADN Telecom Ltd.",
+    "RANKSTEL-AS-BD - Ranks Telecom Limited"
+   ]
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "region": "Africa",
+   "internet_pct": 32.5,
+   "internet_year": "2024",
+   "mobile_per_100": 109.9,
+   "people_groups": 3,
+   "band": "partial",
+   "carriers": [
+    "Comores Telecom",
+    "TELECOM COMORES S.A (TELCO S.A)"
+   ],
+   "carrier_count": 2,
+   "operator_count": 3,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75
+    },
+    {
+     "name": "Twitter",
+     "pct": 19.03
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.88
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.77
+    },
+    {
+     "name": "Tumblr",
+     "pct": 0.66
+    }
+   ],
+   "carriers_raw": [
+    "Comores Telecom - Comores Telecom",
+    "TELECOM COMORES S.A (TELCO S.A) - TELECOM COMORES S.A (TELCO S.A)"
+   ]
+  },
+  {
+   "iso3": "ESH",
+   "country": "Western Sahara",
+   "region": "Middle East",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 3,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 0,
+   "top_platform": "YouTube",
+   "top_platform_pct": 100,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 100
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "region": "Middle East",
+   "internet_pct": 74.6,
+   "internet_year": "2024",
+   "mobile_per_100": 97.1,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "Vodafone Data",
+    "City Net Telecom",
+    "ALKAN Telecom",
+    "ETISALAT MISR",
+    "The Egyptian Company for Mobile Services (Mobinil)"
+   ],
+   "carrier_count": 7,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 88.57,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 88.57
+    },
+    {
+     "name": "YouTube",
+     "pct": 8.76
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.26
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.15
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.11
+    }
+   ],
+   "carriers_raw": [
+    "Vodafone Data - Vodafone Data",
+    "Vodafone Data - Vodafone Data",
+    "City Net Telecom - City Net Telecom",
+    "Vodafone Data - Vodafone Data",
+    "ALKAN Telecom - ALKAN Telecom",
+    "ETISALAT MISR - ETISALAT MISR",
+    "The Egyptian Company for Mobile Services (Mobinil) - The Egyptian Company for Mobile Services (Mobinil)"
+   ]
+  },
+  {
+   "iso3": "GMB",
+   "country": "Republic of The Gambia",
+   "region": "Africa",
+   "internet_pct": 49.5,
+   "internet_year": "2024",
+   "mobile_per_100": 126.2,
+   "people_groups": 3,
+   "band": "partial",
+   "carriers": [
+    "Africell Gambia",
+    "DK Telecom Ltd",
+    "Sky Telecom Company Limited",
+    "Giraffe Telecom Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 12,
+   "top_platform": "Facebook",
+   "top_platform_pct": 57.67,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 57.67
+    },
+    {
+     "name": "YouTube",
+     "pct": 15.77
+    },
+    {
+     "name": "Instagram",
+     "pct": 11.66
+    },
+    {
+     "name": "Twitter",
+     "pct": 8.86
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.59
+    }
+   ],
+   "carriers_raw": [
+    "Africell Gambia - Africell Gambia",
+    "DK Telecom Ltd - DK Telecom Ltd",
+    "Sky Telecom Company Limited - Sky Telecom Company Limited",
+    "Giraffe Telecom Limited - Giraffe Telecom Limited"
+   ]
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "region": "Africa",
+   "internet_pct": 29.8,
+   "internet_year": "2024",
+   "mobile_per_100": 147.2,
+   "people_groups": 3,
+   "band": "partial",
+   "carriers": [
+    "Orange Bissau"
+   ],
+   "carrier_count": 1,
+   "operator_count": 2,
+   "top_platform": "Facebook",
+   "top_platform_pct": 64.62,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 64.62
+    },
+    {
+     "name": "YouTube",
+     "pct": 13.85
+    },
+    {
+     "name": "Twitter",
+     "pct": 8.46
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.15
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 3.08
+    }
+   ],
+   "carriers_raw": [
+    "Orange Bissau - Orange Bissau"
+   ]
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "region": "Middle East",
+   "internet_pct": 95.6,
+   "internet_year": "2024",
+   "mobile_per_100": 69.6,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "Umniah-JO-AS Umniah Mobile Company PLC",
+    "Zain-Jo Jordanian mobile phone services Ltd",
+    "Virtual-Data-IT Smart Platform for Programming and Education LLC trading as 'Virtual Data IT'"
+   ],
+   "carrier_count": 3,
+   "operator_count": 56,
+   "top_platform": "Facebook",
+   "top_platform_pct": 98.59,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 98.59
+    },
+    {
+     "name": "YouTube",
+     "pct": 0.87
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.26
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.25
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.02
+    }
+   ],
+   "carriers_raw": [
+    "Umniah-JO-AS Umniah Mobile Company PLC",
+    "Zain-Jo Jordanian mobile phone services Ltd",
+    "Virtual-Data-IT Smart Platform for Programming and Education LLC trading as 'Virtual Data IT'"
+   ]
+  },
+  {
+   "iso3": "KOS",
+   "country": "KOS",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 3,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 0,
+   "top_platform": "Facebook",
+   "top_platform_pct": 99.52,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 99.52
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.17
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.09
+    },
+    {
+     "name": "reddit",
+     "pct": 0.08
+    },
+    {
+     "name": "YouTube",
+     "pct": 0.07
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "region": "Asia",
+   "internet_pct": 85.1,
+   "internet_year": "2024",
+   "mobile_per_100": 140.7,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "Mongolia Telecom",
+    "G-Mobile Corporation"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 50.81,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 50.81
+    },
+    {
+     "name": "Twitter",
+     "pct": 13.2
+    },
+    {
+     "name": "YouTube",
+     "pct": 11.53
+    },
+    {
+     "name": "Pinterest",
+     "pct": 10.06
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.31
+    }
+   ],
+   "carriers_raw": [
+    "MICOM-MN-AS - Mongolia Telecom",
+    "GMOBILE-MN - G-Mobile Corporation",
+    "GMOBILE-MN-AS-AP - G-Mobile Corporation"
+   ]
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "region": "Middle East",
+   "internet_pct": 45.8,
+   "internet_year": "2024",
+   "mobile_per_100": 92.1,
+   "people_groups": 3,
+   "band": "partial",
+   "carriers": [
+    "SAHEL TELECOM S.A"
+   ],
+   "carrier_count": 1,
+   "operator_count": 9,
+   "top_platform": "Facebook",
+   "top_platform_pct": 44.16,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 44.16
+    },
+    {
+     "name": "YouTube",
+     "pct": 38.52
+    },
+    {
+     "name": "Twitter",
+     "pct": 12.14
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.15
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.58
+    }
+   ],
+   "carriers_raw": [
+    "SAHEL TELECOM S.A - SAHEL TELECOM S.A"
+   ]
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "region": "Middle East",
+   "internet_pct": 100,
+   "internet_year": "2024",
+   "mobile_per_100": 159.5,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "Channels-STC Channels By Saudi Telecom Company (STC) LLC",
+    "SAUDINETSTC-AS Saudi Telecom Company JSC",
+    "ZAJIL-AS Etihad Etisalat, a joint stock company",
+    "JED-IX Saudi Telecom Company JSC",
+    "ASN-ETTIHADETISALAT Etihad Etisalat, a joint stock company",
+    "ITC Etihad Salam Telecom CJSC",
+    "STC-IGW-AS Saudi Telecom Company JSC",
+    "ALJAWWALSTC-AS Saudi Telecom Company JSC"
+   ],
+   "carrier_count": 9,
+   "operator_count": 59,
+   "top_platform": "Facebook",
+   "top_platform_pct": 59.06,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 59.06
+    },
+    {
+     "name": "YouTube",
+     "pct": 18.06
+    },
+    {
+     "name": "Twitter",
+     "pct": 14.51
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.63
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.68
+    }
+   ],
+   "carriers_raw": [
+    "Channels-STC Channels By Saudi Telecom Company (STC) LLC",
+    "SAUDINETSTC-AS Saudi Telecom Company JSC",
+    "ZAJIL-AS Etihad Etisalat, a joint stock company",
+    "JED-IX Saudi Telecom Company JSC",
+    "ASN-ETTIHADETISALAT Etihad Etisalat, a joint stock company",
+    "ITC Etihad Salam Telecom CJSC",
+    "STC-IGW-AS Saudi Telecom Company JSC",
+    "ALJAWWALSTC-AS Saudi Telecom Company JSC"
+   ]
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "region": "Middle East",
+   "internet_pct": 98.1,
+   "internet_year": "2024",
+   "mobile_per_100": 153.6,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "QA-ISP Ooredoo Q.S.C.",
+    "Qtel-IXP-AS1 Ooredoo Q.S.C.",
+    "GCC-MPLS-peering Ooredoo Q.S.C.",
+    "vodafoneqatar Vodafone Qatar P.Q.S.C",
+    "ASLTroamingIPX Ooredoo Q.S.C.",
+    "vodafoneqa-ISP Vodafone Qatar P.Q.S.C",
+    "DOHA-IX Ooredoo Q.S.C.",
+    "DOHA-IX-MAPS Ooredoo Q.S.C."
+   ],
+   "carrier_count": 8,
+   "operator_count": 28,
+   "top_platform": "Facebook",
+   "top_platform_pct": 80.88,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 80.88
+    },
+    {
+     "name": "YouTube",
+     "pct": 6.87
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.98
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.52
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.49
+    }
+   ],
+   "carriers_raw": [
+    "QA-ISP Ooredoo Q.S.C.",
+    "Qtel-IXP-AS1 Ooredoo Q.S.C.",
+    "GCC-MPLS-peering Ooredoo Q.S.C.",
+    "vodafoneqatar Vodafone Qatar P.Q.S.C",
+    "ASLTroamingIPX Ooredoo Q.S.C.",
+    "vodafoneqa-ISP Vodafone Qatar P.Q.S.C",
+    "DOHA-IX Ooredoo Q.S.C.",
+    "DOHA-IX-MAPS Ooredoo Q.S.C."
+   ]
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "region": "Asia",
+   "internet_pct": 55.8,
+   "internet_year": "2024",
+   "mobile_per_100": 76.2,
+   "people_groups": 3,
+   "band": "partial",
+   "carriers": [
+    "TT-Mobile-AS Closed Joint Stock Company TT mobile",
+    "Babilon-Mobile CJSC Babilon-Mobile",
+    "ASSMART Smart Grupp Ltd.",
+    "Sharqtelecom-AS \"Shark telecom\" LLC"
+   ],
+   "carrier_count": 4,
+   "operator_count": 39,
+   "top_platform": "Instagram",
+   "top_platform_pct": 43.08,
+   "platforms": [
+    {
+     "name": "Instagram",
+     "pct": 43.08
+    },
+    {
+     "name": "Facebook",
+     "pct": 21.35
+    },
+    {
+     "name": "YouTube",
+     "pct": 13.85
+    },
+    {
+     "name": "Twitter",
+     "pct": 11.35
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.54
+    }
+   ],
+   "carriers_raw": [
+    "TT-Mobile-AS Closed Joint Stock Company TT mobile",
+    "Babilon-Mobile CJSC Babilon-Mobile",
+    "ASSMART Smart Grupp Ltd.",
+    "Sharqtelecom-AS \"Shark telecom\" LLC"
+   ]
+  },
+  {
+   "iso3": "TUR",
+   "country": "T\u00fcrkiye",
+   "region": "Europe",
+   "internet_pct": 87.3,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [
+    "KOCNET Vodafone Net Iletisim Hizmetler AS",
+    "VodafoneTurkey Vodafone Telekomunikasyon A.S.",
+    "BORUSANTELEKOM-AS Vodafone Net Iletisim Hizmetler AS"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.19,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.19
+    },
+    {
+     "name": "Instagram",
+     "pct": 15.9
+    },
+    {
+     "name": "YouTube",
+     "pct": 8.1
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.12
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.7
+    }
+   ],
+   "carriers_raw": [
+    "KOCNET Vodafone Net Iletisim Hizmetler AS",
+    "VodafoneTurkey Vodafone Telekomunikasyon A.S.",
+    "BORUSANTELEKOM-AS Vodafone Net Iletisim Hizmetler AS"
+   ]
+  },
+  {
+   "iso3": "USA",
+   "country": "United States of America",
+   "region": "Other",
+   "internet_pct": 94.7,
+   "internet_year": "2024",
+   "mobile_per_100": 113.2,
+   "people_groups": 3,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.72,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.72
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.55
+    },
+    {
+     "name": "reddit",
+     "pct": 2.91
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "region": "Africa",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 94.2,
+   "people_groups": 3,
+   "band": "unknown",
+   "carriers": [
+    "Telecel Zimbabwe",
+    "NetOne Cellular (Private) Limited"
+   ],
+   "carrier_count": 2,
+   "operator_count": 33,
+   "top_platform": "Facebook",
+   "top_platform_pct": 56.52,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 56.52
+    },
+    {
+     "name": "YouTube",
+     "pct": 15.63
+    },
+    {
+     "name": "Pinterest",
+     "pct": 10.55
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.8
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.45
+    }
+   ],
+   "carriers_raw": [
+    "Telecel Zimbabwe - Telecel Zimbabwe",
+    "NetOne Cellular (Private) Limited - NetOne Cellular (Private) Limited"
+   ]
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "region": "Middle East",
+   "internet_pct": 100,
+   "internet_year": "2024",
+   "mobile_per_100": 203.2,
+   "people_groups": 2,
+   "band": "yes",
+   "carriers": [
+    "EMIRATES-INTERNET EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "OMANTEL-AS Zain Omantel International FZ-LLC",
+    "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "SHIX-Dubai EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "Etisalat-AS EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "nourglobal NG for Telecom and managed IT services DMCC",
+    "ZAINOMANTEL Zain Omantel International FZ-LLC"
+   ],
+   "carrier_count": 13,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 73.17,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 73.17
+    },
+    {
+     "name": "YouTube",
+     "pct": 10.82
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.69
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.45
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.35
+    }
+   ],
+   "carriers_raw": [
+    "EMIRATES-INTERNET EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "OMANTEL-AS Zain Omantel International FZ-LLC",
+    "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "SHIX-Dubai EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "Etisalat-AS EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC",
+    "nourglobal NG for Telecom and managed IT services DMCC",
+    "ZAINOMANTEL Zain Omantel International FZ-LLC"
+   ]
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "region": "Middle East",
+   "internet_pct": 100,
+   "internet_year": "2024",
+   "mobile_per_100": 159.5,
+   "people_groups": 2,
+   "band": "yes",
+   "carriers": [
+    "ZAIN-BH-AS ZAIN BAHRAIN B.S.C.",
+    "Kalaam-Telecom Kalaam Telecom Bahrain B.S.C.",
+    "Zain-BH-PRNG ZAIN BAHRAIN B.S.C."
+   ],
+   "carrier_count": 3,
+   "operator_count": 24,
+   "top_platform": "Facebook",
+   "top_platform_pct": 60.97,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 60.97
+    },
+    {
+     "name": "YouTube",
+     "pct": 14.24
+    },
+    {
+     "name": "Instagram",
+     "pct": 14.22
+    },
+    {
+     "name": "Twitter",
+     "pct": 6
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.99
+    }
+   ],
+   "carriers_raw": [
+    "ZAIN-BH-AS ZAIN BAHRAIN B.S.C.",
+    "Kalaam-Telecom Kalaam Telecom Bahrain B.S.C.",
+    "Zain-BH-PRNG ZAIN BAHRAIN B.S.C."
+   ]
+  },
+  {
+   "iso3": "CCK",
+   "country": "Cocos (Keeling) Islands",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 2,
+   "band": "unknown",
+   "carriers": [
+    "Orange Business AS for Oceania"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.5,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.5
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.12
+    },
+    {
+     "name": "Twitter",
+     "pct": 6
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.49
+    },
+    {
+     "name": "reddit",
+     "pct": 3.52
+    }
+   ],
+   "carriers_raw": [
+    "EQUANT-OCEANIA - Orange Business AS for Oceania"
+   ]
+  },
+  {
+   "iso3": "COG",
+   "country": "Republic of the Congo",
+   "region": "Africa",
+   "internet_pct": 47.3,
+   "internet_year": "2024",
+   "mobile_per_100": 95.5,
+   "people_groups": 2,
+   "band": "partial",
+   "carriers": [
+    "CONGO TELECOM",
+    "MTN CONGO",
+    "Airtel Congo S.A",
+    "SKYTIC TELECOM",
+    "A.M.C Telecom"
+   ],
+   "carrier_count": 5,
+   "operator_count": 15,
+   "top_platform": "Facebook",
+   "top_platform_pct": 55.59,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 55.59
+    },
+    {
+     "name": "Twitter",
+     "pct": 36.49
+    },
+    {
+     "name": "YouTube",
+     "pct": 4.43
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.23
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.23
+    }
+   ],
+   "carriers_raw": [
+    "CONGO TELECOM - CONGO TELECOM",
+    "MTN CONGO - MTN CONGO",
+    "Airtel Congo S.A - Airtel Congo S.A",
+    "SKYTIC TELECOM - SKYTIC TELECOM",
+    "A.M.C Telecom - A.M.C Telecom"
+   ]
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "region": "Africa",
+   "internet_pct": 41.4,
+   "internet_year": "2024",
+   "mobile_per_100": 183.9,
+   "people_groups": 2,
+   "band": "partial",
+   "carriers": [
+    "Orange C\u00f4te d'Ivoire",
+    "MTN COTE D'IVOIRE S.A",
+    "Atlantique Telecom (Cote d'Ivoire)"
+   ],
+   "carrier_count": 6,
+   "operator_count": 29,
+   "top_platform": "Facebook",
+   "top_platform_pct": 68.38,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 68.38
+    },
+    {
+     "name": "Twitter",
+     "pct": 24.86
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.59
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.11
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.09
+    }
+   ],
+   "carriers_raw": [
+    "Orange C\u00f4te d'Ivoire - Orange C\u00f4te d'Ivoire",
+    "MTN COTE D'IVOIRE S.A - MTN COTE D'IVOIRE S.A",
+    "MTN COTE D'IVOIRE S.A - MTN COTE D'IVOIRE S.A",
+    "Atlantique Telecom (Cote d'Ivoire) - Atlantique Telecom (Cote d'Ivoire)",
+    "Orange C\u00f4te d'Ivoire - Orange C\u00f4te d'Ivoire",
+    "Orange C\u00f4te d'Ivoire - Orange C\u00f4te d'Ivoire"
+   ]
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "region": "Africa",
+   "internet_pct": 68.7,
+   "internet_year": "2024",
+   "mobile_per_100": 125.3,
+   "people_groups": 2,
+   "band": "yes",
+   "carriers": [
+    "Gabon Telecom / Office of Posts and Telecommunications of Gabon",
+    "Airtel Gabon S.A"
+   ],
+   "carrier_count": 2,
+   "operator_count": 12,
+   "top_platform": "Twitter",
+   "top_platform_pct": 31.45,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 31.45
+    },
+    {
+     "name": "YouTube",
+     "pct": 30.82
+    },
+    {
+     "name": "Facebook",
+     "pct": 18.87
+    },
+    {
+     "name": "reddit",
+     "pct": 10.69
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.03
+    }
+   ],
+   "carriers_raw": [
+    "Gabon Telecom / Office of Posts and Telecommunications of Gabon - Gabon Telecom / Office of Posts and Telecommunications of Gabon",
+    "Airtel Gabon S.A - Airtel Gabon S.A"
+   ]
+  },
+  {
+   "iso3": "GUF",
+   "country": "French Guiana",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 2,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyzstan",
+   "region": "Asia",
+   "internet_pct": 92,
+   "internet_year": "2024",
+   "mobile_per_100": 107.5,
+   "people_groups": 2,
+   "band": "yes",
+   "carriers": [
+    "SAIMANET-AS CJSC SAIMA TELECOM",
+    "PROHOSTKG Optima Telecom Ltd.",
+    "BITEL-AS-RIPE \"Sky Mobile\" LLC",
+    "NURTELECOM-AS-RIPE NUR Telecom LLC",
+    "CITY-TELECOM-AS CJSC \"TELECOMMUNICATIONS COMPANY \"DUN\"",
+    "Alfa Alfa Telecom CJSC",
+    "NURTELECOM-AS2 NUR Telecom LLC",
+    "ALIMBEK-GSM ALIMBEK GSM LLC"
+   ],
+   "carrier_count": 9,
+   "operator_count": 60,
+   "top_platform": "Instagram",
+   "top_platform_pct": 42.69,
+   "platforms": [
+    {
+     "name": "Instagram",
+     "pct": 42.69
+    },
+    {
+     "name": "Facebook",
+     "pct": 25.96
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.18
+    },
+    {
+     "name": "YouTube",
+     "pct": 7.72
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.85
+    }
+   ],
+   "carriers_raw": [
+    "SAIMANET-AS CJSC SAIMA TELECOM",
+    "PROHOSTKG Optima Telecom Ltd.",
+    "BITEL-AS-RIPE \"Sky Mobile\" LLC",
+    "NURTELECOM-AS-RIPE NUR Telecom LLC",
+    "CITY-TELECOM-AS CJSC \"TELECOMMUNICATIONS COMPANY \"DUN\"",
+    "Alfa Alfa Telecom CJSC",
+    "NURTELECOM-AS2 NUR Telecom LLC",
+    "ALIMBEK-GSM ALIMBEK GSM LLC"
+   ]
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "region": "Africa",
+   "internet_pct": 32.2,
+   "internet_year": "2024",
+   "mobile_per_100": 32.1,
+   "people_groups": 2,
+   "band": "partial",
+   "carriers": [
+    "Orange Liberia, INC",
+    "Telecel Liberia Limited",
+    "SAHEL TELECOM LIBERIA"
+   ],
+   "carrier_count": 3,
+   "operator_count": 18,
+   "top_platform": "Facebook",
+   "top_platform_pct": 67.98,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 67.98
+    },
+    {
+     "name": "YouTube",
+     "pct": 12.4
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.3
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.96
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.93
+    }
+   ],
+   "carriers_raw": [
+    "Orange Liberia, INC - Orange Liberia, INC",
+    "Telecel Liberia Limited - Telecel Liberia Limited",
+    "SAHEL TELECOM LIBERIA - SAHEL TELECOM LIBERIA"
+   ]
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "region": "Africa",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 60.6,
+   "people_groups": 2,
+   "band": "unknown",
+   "carriers": [
+    "VCG-AS MTN NIGERIA Communication limited",
+    "Airtel Networks Limited",
+    "MTN Nigeria",
+    "Phase3 Telecom Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 86.09,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 86.09
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.52
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.78
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.12
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.04
+    }
+   ],
+   "carriers_raw": [
+    "VCG-AS MTN NIGERIA Communication limited",
+    "Airtel Networks Limited - Airtel Networks Limited",
+    "MTN Nigeria - MTN Nigeria",
+    "Phase3 Telecom Limited - Phase3 Telecom Limited"
+   ]
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "region": "Africa",
+   "internet_pct": 25.1,
+   "internet_year": "2024",
+   "mobile_per_100": 107.9,
+   "people_groups": 2,
+   "band": "partial",
+   "carriers": [
+    "Africell Sierra Leone Limited",
+    "Orange (SL) Limited",
+    "SMART TELCOM LIMITED"
+   ],
+   "carrier_count": 3,
+   "operator_count": 22,
+   "top_platform": "Facebook",
+   "top_platform_pct": 53.83,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 53.83
+    },
+    {
+     "name": "YouTube",
+     "pct": 16.03
+    },
+    {
+     "name": "Pinterest",
+     "pct": 11.96
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.29
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.07
+    }
+   ],
+   "carriers_raw": [
+    "Africell Sierra Leone Limited - Africell Sierra Leone Limited",
+    "Orange (SL) Limited - Orange (SL) Limited",
+    "SMART TELCOM LIMITED - SMART TELCOM LIMITED"
+   ]
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 140.7,
+   "people_groups": 2,
+   "band": "unknown",
+   "carriers": [
+    "BASEFARM-SE-ASN Orange Business Digital Sweden AB"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 73.5,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 73.5
+    },
+    {
+     "name": "Instagram",
+     "pct": 17.77
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.05
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.05
+    },
+    {
+     "name": "reddit",
+     "pct": 1.55
+    }
+   ],
+   "carriers_raw": [
+    "BASEFARM-SE-ASN Orange Business Digital Sweden AB"
+   ]
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 142.1,
+   "people_groups": 2,
+   "band": "unknown",
+   "carriers": [
+    "Digicel Suriname NV"
+   ],
+   "carrier_count": 1,
+   "operator_count": 7,
+   "top_platform": "Facebook",
+   "top_platform_pct": 83.33,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 83.33
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.53
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.6
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.6
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.27
+    }
+   ],
+   "carriers_raw": [
+    "AS52398 - Digicel Suriname NV"
+   ]
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "region": "Middle East",
+   "internet_pct": 76.5,
+   "internet_year": "2024",
+   "mobile_per_100": 117.6,
+   "people_groups": 2,
+   "band": "yes",
+   "carriers": [
+    "Orange Tunisie",
+    "OOREDOO TUNISIE SA",
+    "SOCIETE NATIONALE DES TELECOMMUNICATIONS (Tunisie Telecom)",
+    "STE INTERNET SMART SOLUTIONS",
+    "Majda Smart Solutions"
+   ],
+   "carrier_count": 6,
+   "operator_count": 29,
+   "top_platform": "Facebook",
+   "top_platform_pct": 86.98,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 86.98
+    },
+    {
+     "name": "YouTube",
+     "pct": 6.1
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.13
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.8
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 0.52
+    }
+   ],
+   "carriers_raw": [
+    "Orange Tunisie - Orange Tunisie",
+    "OOREDOO TUNISIE SA - OOREDOO TUNISIE SA",
+    "SOCIETE NATIONALE DES TELECOMMUNICATIONS (Tunisie Telecom) - SOCIETE NATIONALE DES TELECOMMUNICATIONS (Tunisie Telecom)",
+    "Orange Tunisie - Orange Tunisie",
+    "STE INTERNET SMART SOLUTIONS - STE INTERNET SMART SOLUTIONS",
+    "Majda Smart Solutions - Majda Smart Solutions"
+   ]
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "region": "Africa",
+   "internet_pct": 78.4,
+   "internet_year": "2024",
+   "mobile_per_100": 179.3,
+   "people_groups": 2,
+   "band": "yes",
+   "carriers": [
+    "MTN SA",
+    "Telkom SA Ltd.",
+    "Vox Telecom Ltd"
+   ],
+   "carrier_count": 10,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 77.41,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 77.41
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.39
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.37
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.8
+    }
+   ],
+   "carriers_raw": [
+    "MTN SA - MTN SA",
+    "MTN SA - MTN SA",
+    "MTN SA - MTN SA",
+    "Telkom SA Ltd. - Telkom SA Ltd.",
+    "Telkom SA Ltd. - Telkom SA Ltd.",
+    "MTN SA - MTN SA",
+    "MTN SA - MTN SA",
+    "Vox Telecom Ltd - Vox Telecom Ltd"
+   ]
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "region": "Europe",
+   "internet_pct": 85.9,
+   "internet_year": "2024",
+   "mobile_per_100": 89.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "VODAFONE-FIX-AS Vodafone Albania Sh.A.",
+    "VODAFONE-AL-ASN Vodafone Albania Sh.A.",
+    "IBC-AS I.B.C"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 94.84,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 94.84
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.33
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.05
+    },
+    {
+     "name": "reddit",
+     "pct": 0.72
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.43
+    }
+   ],
+   "carriers_raw": [
+    "VODAFONE-FIX-AS Vodafone Albania Sh.A.",
+    "VODAFONE-AL-ASN Vodafone Albania Sh.A.",
+    "IBC-AS I.B.C - Telecom Sh.p.k."
+   ]
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "region": "N/A",
+   "internet_pct": 94.4,
+   "internet_year": "2024",
+   "mobile_per_100": 155.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "ANDORRA ANDORRA TELECOM, S.A.U."
+   ],
+   "carrier_count": 1,
+   "operator_count": 4,
+   "top_platform": "Facebook",
+   "top_platform_pct": 81.55,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 81.55
+    },
+    {
+     "name": "Twitter",
+     "pct": 7.16
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.48
+    },
+    {
+     "name": "reddit",
+     "pct": 2.57
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.07
+    }
+   ],
+   "carriers_raw": [
+    "ANDORRA ANDORRA TELECOM, S.A.U."
+   ]
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 130.6,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.29,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.29
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.21
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.17
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.83
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.76
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "region": "Europe",
+   "internet_pct": 81.3,
+   "internet_year": "2024",
+   "mobile_per_100": 134.9,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "TELECOM-ARMENIA Telecom Armenia OJSC",
+    "ARMENTEL Telecom Armenia OJSC",
+    "Harhimtel \"Arm Telecom\" LLC",
+    "Orange-Armenia Ucom CJSC",
+    "TelecomArmeniaASN Telecom Armenia OJSC",
+    "SkynetTelecomLLC Skynet Telecom LLC"
+   ],
+   "carrier_count": 6,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 58.11,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 58.11
+    },
+    {
+     "name": "Facebook",
+     "pct": 29.47
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.95
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.93
+    }
+   ],
+   "carriers_raw": [
+    "TELECOM-ARMENIA Telecom Armenia OJSC",
+    "ARMENTEL Telecom Armenia OJSC",
+    "Harhimtel \"Arm Telecom\" LLC",
+    "Orange-Armenia Ucom CJSC",
+    "TelecomArmeniaASN Telecom Armenia OJSC",
+    "SkynetTelecomLLC Skynet Telecom LLC"
+   ]
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.72,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.72
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.55
+    },
+    {
+     "name": "reddit",
+     "pct": 2.91
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 72.7,
+   "internet_year": "2024",
+   "mobile_per_100": 200.5,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 18,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.14,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.14
+    },
+    {
+     "name": "Instagram",
+     "pct": 23.31
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.27
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.73
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 0.25
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 92.5,
+   "internet_year": "2024",
+   "mobile_per_100": 96.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 13,
+   "top_platform": "Facebook",
+   "top_platform_pct": 89.02,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 89.02
+    },
+    {
+     "name": "Twitter",
+     "pct": 7.38
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.46
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.17
+    },
+    {
+     "name": "reddit",
+     "pct": 0.45
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "region": "Europe",
+   "internet_pct": 82.4,
+   "internet_year": "2024",
+   "mobile_per_100": 118.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "NEWGEN Internet & Telecom Solutions Ltd."
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 97.25,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 97.25
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.25
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.11
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.17
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.09
+    }
+   ],
+   "carriers_raw": [
+    "NEWGEN Internet & Telecom Solutions Ltd."
+   ]
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "region": "Europe",
+   "internet_pct": 86.1,
+   "internet_year": "2024",
+   "mobile_per_100": 121.2,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "BIHNET BH Telecom d.d. Sarajevo"
+   ],
+   "carrier_count": 1,
+   "operator_count": 59,
+   "top_platform": "Facebook",
+   "top_platform_pct": 88.43,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 88.43
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.18
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.72
+    },
+    {
+     "name": "reddit",
+     "pct": 1.21
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.2
+    }
+   ],
+   "carriers_raw": [
+    "BIHNET BH Telecom d.d. Sarajevo"
+   ]
+  },
+  {
+   "iso3": "BLM",
+   "country": "Saint Barth\u00e9lemy",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 96.7,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Paradise Mobile Ltd."
+   ],
+   "carrier_count": 1,
+   "operator_count": 22,
+   "top_platform": "Facebook",
+   "top_platform_pct": 50.8,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 50.8
+    },
+    {
+     "name": "Twitter",
+     "pct": 42.03
+    },
+    {
+     "name": "reddit",
+     "pct": 2.9
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.68
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.7
+    }
+   ],
+   "carriers_raw": [
+    "PARADISE-MOBILE-ASN-01 - Paradise Mobile Ltd."
+   ]
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 79.7,
+   "internet_year": "2024",
+   "mobile_per_100": 98,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 62.57,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 62.57
+    },
+    {
+     "name": "YouTube",
+     "pct": 25.52
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.74
+    },
+    {
+     "name": "reddit",
+     "pct": 1.63
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "region": "Europe",
+   "internet_pct": 94.3,
+   "internet_year": "2024",
+   "mobile_per_100": 131.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "MTSBY-AS Mobile TeleSystems JLLC",
+    "AS34421 Telecom Media Systems LLC",
+    "ASTELGAROR Telecom-garant Limited"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "reddit",
+   "top_platform_pct": 19.26,
+   "platforms": [
+    {
+     "name": "reddit",
+     "pct": 19.26
+    },
+    {
+     "name": "Twitter",
+     "pct": 16.08
+    },
+    {
+     "name": "Pinterest",
+     "pct": 15.19
+    },
+    {
+     "name": "Facebook",
+     "pct": 13.97
+    },
+    {
+     "name": "YouTube",
+     "pct": 12.4
+    }
+   ],
+   "carriers_raw": [
+    "MTSBY-AS Mobile TeleSystems JLLC",
+    "AS34421 Telecom Media Systems LLC",
+    "ASTELGAROR Telecom-garant Limited"
+   ]
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 70.4,
+   "internet_year": "2024",
+   "mobile_per_100": 114.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Digicel Barbados Ltd"
+   ],
+   "carrier_count": 1,
+   "operator_count": 10,
+   "top_platform": "Facebook",
+   "top_platform_pct": 83.89,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 83.89
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.47
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.7
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.95
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.67
+    }
+   ],
+   "carriers_raw": [
+    "DIGI-BDS-ASN - Digicel Barbados Ltd"
+   ]
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "region": "Africa",
+   "internet_pct": 13.8,
+   "internet_year": "2024",
+   "mobile_per_100": 38.8,
+   "people_groups": 1,
+   "band": "no",
+   "carriers": [
+    "Orange Centreafrique",
+    "TELECEL CENTRAFRIQUE",
+    "Atlantique TELECOM CAR"
+   ],
+   "carrier_count": 3,
+   "operator_count": 4,
+   "top_platform": "Facebook",
+   "top_platform_pct": 95.57,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 95.57
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.92
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 0.19
+    },
+    {
+     "name": "YouTube",
+     "pct": 0.12
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.1
+    }
+   ],
+   "carriers_raw": [
+    "Orange Centreafrique - Orange Centreafrique",
+    "TELECEL CENTRAFRIQUE - TELECEL CENTRAFRIQUE",
+    "Atlantique TELECOM CAR - Atlantique TELECOM CAR"
+   ]
+  },
+  {
+   "iso3": "COK",
+   "country": "Cook Islands",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Telecom Cook Islands"
+   ],
+   "carrier_count": 1,
+   "operator_count": 2,
+   "top_platform": "Facebook",
+   "top_platform_pct": 89.39,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 89.39
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.31
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.08
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.82
+    },
+    {
+     "name": "YouTube",
+     "pct": 0.41
+    }
+   ],
+   "carriers_raw": [
+    "CKTELECOM-CK-AP - Telecom Cook Islands"
+   ]
+  },
+  {
+   "iso3": "CXR",
+   "country": "Christmas Island",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Orange Business AS for Oceania"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.5,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.5
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.12
+    },
+    {
+     "name": "Twitter",
+     "pct": 6
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.49
+    },
+    {
+     "name": "reddit",
+     "pct": 3.52
+    }
+   ],
+   "carriers_raw": [
+    "EQUANT-OCEANIA - Orange Business AS for Oceania"
+   ]
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 70.5,
+   "internet_year": "2024",
+   "mobile_per_100": 72.9,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 7,
+   "top_platform": "Facebook",
+   "top_platform_pct": 90.04,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 90.04
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.49
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.36
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.73
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.46
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "CUW",
+   "country": "Cura\u00e7ao",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 93.8,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.29,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.29
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.21
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.17
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.83
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.76
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "region": "Europe",
+   "internet_pct": 89.6,
+   "internet_year": "2024",
+   "mobile_per_100": 156.2,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.89,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.89
+    },
+    {
+     "name": "YouTube",
+     "pct": 16.7
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.69
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.07
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.03
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 139.3,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Digicel Cayman Limited"
+   ],
+   "carrier_count": 1,
+   "operator_count": 18,
+   "top_platform": "Facebook",
+   "top_platform_pct": 49.97,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 49.97
+    },
+    {
+     "name": "Twitter",
+     "pct": 28.79
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.34
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.3
+    },
+    {
+     "name": "reddit",
+     "pct": 3.6
+    }
+   ],
+   "carriers_raw": [
+    "DIGICEL-CAYMAN - Digicel Cayman Limited"
+   ]
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czech Republic",
+   "region": "Europe",
+   "internet_pct": 87.7,
+   "internet_year": "2024",
+   "mobile_per_100": 126.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "GTSCZ T-Mobile Czech Republic a.s.",
+    "GTSCE T-Mobile Czech Republic a.s.",
+    "PRAGONET-AS T-Mobile Czech Republic a.s.",
+    "TMOBILE-CZ T-Mobile Czech Republic a.s.",
+    "GTSNOVERA T-Mobile Czech Republic a.s.",
+    "VODAFONE-CZ-AS-3 Vodafone Czech Republic a.s.",
+    "VODAFONE-CZ-AS Vodafone Czech Republic a.s.",
+    "PRAGONET-TRANSIT-AS T-Mobile Czech Republic a.s."
+   ],
+   "carrier_count": 8,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 73.69,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 73.69
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.26
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.59
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.09
+    },
+    {
+     "name": "reddit",
+     "pct": 4.13
+    }
+   ],
+   "carriers_raw": [
+    "GTSCZ T-Mobile Czech Republic a.s.",
+    "GTSCE T-Mobile Czech Republic a.s.",
+    "PRAGONET-AS T-Mobile Czech Republic a.s.",
+    "TMOBILE-CZ T-Mobile Czech Republic a.s.",
+    "GTSNOVERA T-Mobile Czech Republic a.s.",
+    "VODAFONE-CZ-AS-3 Vodafone Czech Republic a.s.",
+    "VODAFONE-CZ-AS Vodafone Czech Republic a.s.",
+    "PRAGONET-TRANSIT-AS T-Mobile Czech Republic a.s."
+   ]
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "region": "N/A",
+   "internet_pct": 82,
+   "internet_year": "2024",
+   "mobile_per_100": 85.2,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 8,
+   "top_platform": "Facebook",
+   "top_platform_pct": 92.09,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 92.09
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.7
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.56
+    },
+    {
+     "name": "YouTube",
+     "pct": 0.9
+    },
+    {
+     "name": "reddit",
+     "pct": 0.9
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 77.2,
+   "internet_year": "2024",
+   "mobile_per_100": 101.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Stealth Telecom del Ecuador"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 58.45,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 58.45
+    },
+    {
+     "name": "YouTube",
+     "pct": 23.13
+    },
+    {
+     "name": "Instagram",
+     "pct": 12.24
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.24
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.33
+    }
+   ],
+   "carriers_raw": [
+    "AS28058 - Stealth Telecom del Ecuador"
+   ]
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "region": "Africa",
+   "internet_pct": 65.3,
+   "internet_year": "2024",
+   "mobile_per_100": 48.5,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "DJIBOUTI TELECOM S.A."
+   ],
+   "carrier_count": 1,
+   "operator_count": 4,
+   "top_platform": "Facebook",
+   "top_platform_pct": 41.58,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 41.58
+    },
+    {
+     "name": "YouTube",
+     "pct": 38.35
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.75
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.02
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.15
+    }
+   ],
+   "carriers_raw": [
+    "DJIBOUTI TELECOM S.A. - DJIBOUTI TELECOM S.A."
+   ]
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "region": "Europe",
+   "internet_pct": 95.8,
+   "internet_year": "2024",
+   "mobile_per_100": 130.3,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "ONO-AS VODAFONE ONO, S.A.",
+    "FIBRAWORLD-AS FIBRAWORLD TELECOM S.A.U.",
+    "AS-AVATEL AVATEL TELECOM, SA",
+    "ES-IBERCOMTELECOM-BACKBONE XTRA TELECOM S.A.",
+    "COMUNITEL VODAFONE ESPANA S.A.U.",
+    "ASALPI Orange Espagne SA",
+    "VODAFONE_ES VODAFONE ESPANA S.A.U."
+   ],
+   "carrier_count": 12,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 88.42,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 88.42
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.44
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.94
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.57
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.59
+    }
+   ],
+   "carriers_raw": [
+    "ONO-AS VODAFONE ONO, S.A.",
+    "FIBRAWORLD-AS FIBRAWORLD TELECOM S.A.U.",
+    "AS-AVATEL AVATEL TELECOM, SA",
+    "ONO-AS VODAFONE ONO, S.A.",
+    "ES-IBERCOMTELECOM-BACKBONE XTRA TELECOM S.A.",
+    "COMUNITEL VODAFONE ESPANA S.A.U.",
+    "ASALPI Orange Espagne SA",
+    "VODAFONE_ES VODAFONE ESPANA S.A.U."
+   ]
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "region": "Oceania",
+   "internet_pct": 74.7,
+   "internet_year": "2024",
+   "mobile_per_100": 574.2,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Telecom Fiji Limited",
+    "Vodafone Fiji Limited",
+    "Telecom Fiji Ltd",
+    "Digicel Fiji Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 21,
+   "top_platform": "Facebook",
+   "top_platform_pct": 73.46,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 73.46
+    },
+    {
+     "name": "Instagram",
+     "pct": 11.67
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.91
+    },
+    {
+     "name": "reddit",
+     "pct": 3.99
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.94
+    }
+   ],
+   "carriers_raw": [
+    "IS-FJ-AS - Telecom Fiji Limited",
+    "VODAFONEFIJI-AS-FJ - Vodafone Fiji Limited",
+    "TFL-AS-AP - Telecom Fiji Ltd",
+    "DIGICELPACIFIC-1-AP - Digicel Fiji Limited"
+   ]
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "region": "Europe",
+   "internet_pct": 83.8,
+   "internet_year": "2024",
+   "mobile_per_100": 161.2,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "MOBITEL-GE Cellfie Mobile LLC",
+    "GRT-AS Railway Telecom, Ltd"
+   ],
+   "carrier_count": 2,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 81.48,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 81.48
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.54
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.41
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.4
+    },
+    {
+     "name": "reddit",
+     "pct": 2.06
+    }
+   ],
+   "carriers_raw": [
+    "MOBITEL-GE Cellfie Mobile LLC",
+    "GRT-AS Railway Telecom, Ltd"
+   ]
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 105.8,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Faroese-Telecom-AS P/F Telefonverkid"
+   ],
+   "carrier_count": 1,
+   "operator_count": 6,
+   "top_platform": "Facebook",
+   "top_platform_pct": 84.82,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 84.82
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.9
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.51
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.76
+    },
+    {
+     "name": "reddit",
+     "pct": 0.5
+    }
+   ],
+   "carriers_raw": [
+    "Faroese-Telecom-AS P/F Telefonverkid"
+   ]
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "region": "Europe",
+   "internet_pct": 93.7,
+   "internet_year": "2024",
+   "mobile_per_100": 125.9,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "MPYNET-AS MPY Telecom Oy"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 59.3,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 59.3
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.46
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.83
+    },
+    {
+     "name": "reddit",
+     "pct": 7.64
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.88
+    }
+   ],
+   "carriers_raw": [
+    "MPYNET-AS MPY Telecom Oy"
+   ]
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Federated States of",
+   "region": "Oceania",
+   "internet_pct": 39.5,
+   "internet_year": "2024",
+   "mobile_per_100": 20,
+   "people_groups": 1,
+   "band": "partial",
+   "carriers": [
+    "FSM Telecom"
+   ],
+   "carrier_count": 1,
+   "operator_count": 6,
+   "top_platform": "Facebook",
+   "top_platform_pct": 71.19,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 71.19
+    },
+    {
+     "name": "Pinterest",
+     "pct": 11.86
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.63
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.78
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.69
+    }
+   ],
+   "carriers_raw": [
+    "AS58524 - FSM Telecom"
+   ]
+  },
+  {
+   "iso3": "GGY",
+   "country": "Guernsey",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "GUERNSEY-AIRTEL Guernsey Airtel Limited"
+   ],
+   "carrier_count": 1,
+   "operator_count": 12,
+   "top_platform": "Facebook",
+   "top_platform_pct": 73.77,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 73.77
+    },
+    {
+     "name": "Twitter",
+     "pct": 15
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.18
+    },
+    {
+     "name": "reddit",
+     "pct": 1.99
+    },
+    {
+     "name": "Instagram",
+     "pct": 1.63
+    }
+   ],
+   "carriers_raw": [
+    "GUERNSEY-AIRTEL Guernsey Airtel Limited"
+   ]
+  },
+  {
+   "iso3": "GLP",
+   "country": "Guadeloupe",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "region": "Africa",
+   "internet_pct": 63.3,
+   "internet_year": "2024",
+   "mobile_per_100": 49.5,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 7,
+   "top_platform": "Facebook",
+   "top_platform_pct": 78.34,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 78.34
+    },
+    {
+     "name": "YouTube",
+     "pct": 12.1
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.82
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.18
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 1.27
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "region": "Africa",
+   "internet_pct": 72.2,
+   "internet_year": "2024",
+   "mobile_per_100": 113.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Vodacom Business (Ghana) Limited",
+    "Airtel Ghana Limited",
+    "Alink Telecom Ghana"
+   ],
+   "carrier_count": 4,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 41.23,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 41.23
+    },
+    {
+     "name": "YouTube",
+     "pct": 23.39
+    },
+    {
+     "name": "Instagram",
+     "pct": 16.21
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.37
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.48
+    }
+   ],
+   "carriers_raw": [
+    "Vodacom Business (Ghana) Limited - Vodacom Business (Ghana) Limited",
+    "Airtel Ghana Limited - Airtel Ghana Limited",
+    "Alink Telecom Ghana - Alink Telecom Ghana",
+    "Airtel Ghana Limited - Airtel Ghana Limited"
+   ]
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 97.6,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 25,
+   "top_platform": "Facebook",
+   "top_platform_pct": 82.57,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 82.57
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.01
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.18
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.77
+    },
+    {
+     "name": "reddit",
+     "pct": 1.41
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "region": "Europe",
+   "internet_pct": 86.3,
+   "internet_year": "2024",
+   "mobile_per_100": 113.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "INTRACOM Intracom Single Member S.A. Telecom Solutions",
+    "HOL-GR Vodafone-panafon Hellenic Telecommunications Company SA",
+    "Panafonet-AS Vodafone-panafon Hellenic Telecommunications Company SA"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 92.75,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 92.75
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.17
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.55
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.53
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.15
+    }
+   ],
+   "carriers_raw": [
+    "INTRACOM Intracom Single Member S.A. Telecom Solutions",
+    "HOL-GR Vodafone-panafon Hellenic Telecommunications Company SA",
+    "Panafonet-AS Vodafone-panafon Hellenic Telecommunications Company SA"
+   ]
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 70.2,
+   "internet_year": "2024",
+   "mobile_per_100": 95.8,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 11,
+   "top_platform": "Facebook",
+   "top_platform_pct": 81.87,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 81.87
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.12
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.26
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.68
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.31
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.72,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.72
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.55
+    },
+    {
+     "name": "reddit",
+     "pct": 2.91
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 83,
+   "internet_year": "2024",
+   "mobile_per_100": 112.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "U Mobile (Cellular) Inc."
+   ],
+   "carrier_count": 1,
+   "operator_count": 8,
+   "top_platform": "Facebook",
+   "top_platform_pct": 88.94,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 88.94
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.78
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.99
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.58
+    },
+    {
+     "name": "reddit",
+     "pct": 1.05
+    }
+   ],
+   "carriers_raw": [
+    "AS52433 - U Mobile (Cellular) Inc."
+   ]
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong",
+   "region": "Asia",
+   "internet_pct": 95.8,
+   "internet_year": "2024",
+   "mobile_per_100": 364.8,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "China Telecom Next Generation Carrier Network",
+    "China Telecom (Group)",
+    "China Telecom(Group)",
+    "Apsatcom"
+   ],
+   "carrier_count": 9,
+   "operator_count": 60,
+   "top_platform": "Twitter",
+   "top_platform_pct": 48.03,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 48.03
+    },
+    {
+     "name": "Pinterest",
+     "pct": 14.56
+    },
+    {
+     "name": "Facebook",
+     "pct": 13.85
+    },
+    {
+     "name": "YouTube",
+     "pct": 10.39
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.1
+    }
+   ],
+   "carriers_raw": [
+    "CHINATELECOM-CORE-WAN-CN2 - China Telecom Next Generation Carrier Network",
+    "CHINANET-SHANGHAI-MAN - China Telecom (Group)",
+    "CHINANET-SH-AP - China Telecom (Group)",
+    "BACKBONE-GUANGDONG-AP - China Telecom(Group)",
+    "CHINANET-IDC-SH - China Telecom (Group)",
+    "CHINANET-IDC-GD - China Telecom (Group)",
+    "CHINANET-IDC-SN - China Telecom (Group)",
+    "Apsatcom - APT MOBILE SATCOM LIMITED"
+   ]
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "region": "Europe",
+   "internet_pct": 88.2,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "GILAT-TELECOM-LTD Gilat Telecom Ltd.",
+    "IPTelecom IP Telecom ltd.",
+    "MIRS-AS HOT Mobile Ltd."
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 77.73,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 77.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 7.68
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.29
+    },
+    {
+     "name": "Twitter",
+     "pct": 5
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.58
+    }
+   ],
+   "carriers_raw": [
+    "GILAT-TELECOM-LTD Gilat Telecom Ltd.",
+    "IPTelecom IP Telecom ltd.",
+    "MIRS-AS HOT Mobile Ltd."
+   ]
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "region": "Europe",
+   "internet_pct": 98.2,
+   "internet_year": "2024",
+   "mobile_per_100": 120.9,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.49,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.49
+    },
+    {
+     "name": "Twitter",
+     "pct": 8.43
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.63
+    },
+    {
+     "name": "reddit",
+     "pct": 4.44
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.71
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "JEY",
+   "country": "Jersey",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "JERSEY-AIRTEL Jersey Airtel Limited"
+   ],
+   "carrier_count": 1,
+   "operator_count": 13,
+   "top_platform": "Facebook",
+   "top_platform_pct": 70.57,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 70.57
+    },
+    {
+     "name": "Pinterest",
+     "pct": 11.84
+    },
+    {
+     "name": "Twitter",
+     "pct": 7.55
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.95
+    },
+    {
+     "name": "reddit",
+     "pct": 2.42
+    }
+   ],
+   "carriers_raw": [
+    "JERSEY-AIRTEL Jersey Airtel Limited"
+   ]
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 90.1,
+   "internet_year": "2024",
+   "mobile_per_100": 117.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Digicel Jamaica"
+   ],
+   "carrier_count": 2,
+   "operator_count": 15,
+   "top_platform": "Facebook",
+   "top_platform_pct": 79.07,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 79.07
+    },
+    {
+     "name": "Instagram",
+     "pct": 15.57
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.42
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.97
+    }
+   ],
+   "carriers_raw": [
+    "DIG001 - Digicel Jamaica",
+    "DIGI-GRP-JAM - Digicel Jamaica"
+   ]
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "region": "Asia",
+   "internet_pct": 93.4,
+   "internet_year": "2024",
+   "mobile_per_100": 127.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "ASPAN-AS Aspan telecom",
+    "MBS-AS \"Mobile Business Solutions\" MBS LLP",
+    "SCS-TELECOM-AS SCS",
+    "ALTEL-AS Mobile Telecom-Service LLP",
+    "SATTI-ZHULDYZ-AS Satti Telecom LLC",
+    "KTC-AS Jusan Mobile JSC"
+   ],
+   "carrier_count": 6,
+   "operator_count": 60,
+   "top_platform": "YouTube",
+   "top_platform_pct": 31.61,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 31.61
+    },
+    {
+     "name": "Facebook",
+     "pct": 18.75
+    },
+    {
+     "name": "Instagram",
+     "pct": 17
+    },
+    {
+     "name": "Twitter",
+     "pct": 12.75
+    },
+    {
+     "name": "reddit",
+     "pct": 9.37
+    }
+   ],
+   "carriers_raw": [
+    "ASPAN-AS Aspan telecom",
+    "MBS-AS \"Mobile Business Solutions\" MBS LLP",
+    "SCS-TELECOM-AS SCS - Telecom LLP",
+    "ALTEL-AS Mobile Telecom-Service LLP",
+    "SATTI-ZHULDYZ-AS Satti Telecom LLC",
+    "KTC-AS Jusan Mobile JSC"
+   ]
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "region": "Asia",
+   "internet_pct": 68.5,
+   "internet_year": "2024",
+   "mobile_per_100": 116.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Telecom Cambodia",
+    "SMART AXIATA Co., Ltd.",
+    "SOUTH EAST ASIA TELECOM (Cambodia) Co., LTD",
+    "Xinwei (Cambodia) Telecom Co. Ltd",
+    "SINET, Cambodia's specialist Internet and Telecom Service Provider.",
+    "Telecom Cambodia (T.C.)"
+   ],
+   "carrier_count": 7,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 51.44,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 51.44
+    },
+    {
+     "name": "YouTube",
+     "pct": 34.59
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.55
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.7
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.56
+    }
+   ],
+   "carriers_raw": [
+    "CAMNET-AS - Telecom Cambodia",
+    "SMART-AXIATA-KH - SMART AXIATA Co., Ltd.",
+    "SMART-AXIATA-KH - SMART AXIATA Co., Ltd.",
+    "SEATELECOM-KH - SOUTH EAST ASIA TELECOM (Cambodia) Co., LTD",
+    "XINWEITELECOM-KH - Xinwei (Cambodia) Telecom Co. Ltd",
+    "SINET-KH - SINET, Cambodia's specialist Internet and Telecom Service Provider.",
+    "CAMNET-AS-AP - Telecom Cambodia (T.C.)"
+   ]
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "region": "Middle East",
+   "internet_pct": 99.7,
+   "internet_year": "2024",
+   "mobile_per_100": 167.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "BOUBYAN-AS Zajil International Telecom Company KSCC",
+    "WATANIYATELECOM-AS NATIONAL MOBILE TELECOMMUNICATIONS COMPANY K.S.C.P.",
+    "WARBA-BANK-AS Zajil International Telecom Company KSCC",
+    "Tawasul Kalaam Telecom Kuwait Closed Joint Stock Company",
+    "ZNETAS-KW Zajil International Telecom Company KSCC",
+    "GPRS-AS Mobile Telecommunications Company K.S.C.P.",
+    "KNET-AS Zajil International Telecom Company KSCC",
+    "AS47316 Zajil International Telecom Company KSCC"
+   ],
+   "carrier_count": 10,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 60.96,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 60.96
+    },
+    {
+     "name": "Instagram",
+     "pct": 15.9
+    },
+    {
+     "name": "YouTube",
+     "pct": 10.64
+    },
+    {
+     "name": "Twitter",
+     "pct": 6.98
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 3.55
+    }
+   ],
+   "carriers_raw": [
+    "BOUBYAN-AS Zajil International Telecom Company KSCC",
+    "WATANIYATELECOM-AS NATIONAL MOBILE TELECOMMUNICATIONS COMPANY K.S.C.P.",
+    "WARBA-BANK-AS Zajil International Telecom Company KSCC",
+    "Tawasul Kalaam Telecom Kuwait Closed Joint Stock Company",
+    "ZNETAS-KW Zajil International Telecom Company KSCC",
+    "GPRS-AS Mobile Telecommunications Company K.S.C.P.",
+    "KNET-AS Zajil International Telecom Company KSCC",
+    "AS47316 Zajil International Telecom Company KSCC"
+   ]
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "region": "Oceania",
+   "internet_pct": 89.4,
+   "internet_year": "2024",
+   "mobile_per_100": 53.5,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Amalgamated Telecom Holdings Kiribati Ltd"
+   ],
+   "carrier_count": 2,
+   "operator_count": 5,
+   "top_platform": "Facebook",
+   "top_platform_pct": 84.67,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 84.67
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.3
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.92
+    },
+    {
+     "name": "reddit",
+     "pct": 2.92
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.19
+    }
+   ],
+   "carriers_raw": [
+    "ATHKL-AS-AP - Amalgamated Telecom Holdings Kiribati Ltd",
+    "ATHKL-AS-AP - Amalgamated Telecom Holdings Kiribati Ltd"
+   ]
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao",
+   "region": "Asia",
+   "internet_pct": 89.8,
+   "internet_year": "2024",
+   "mobile_per_100": 201.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "China Telecom Next Generation Carrier Network",
+    "China Telecom (Group)",
+    "China Telecom(Group)",
+    "Apsatcom"
+   ],
+   "carrier_count": 9,
+   "operator_count": 60,
+   "top_platform": "Twitter",
+   "top_platform_pct": 48.03,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 48.03
+    },
+    {
+     "name": "Pinterest",
+     "pct": 14.56
+    },
+    {
+     "name": "Facebook",
+     "pct": 13.85
+    },
+    {
+     "name": "YouTube",
+     "pct": 10.39
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.1
+    }
+   ],
+   "carriers_raw": [
+    "CHINATELECOM-CORE-WAN-CN2 - China Telecom Next Generation Carrier Network",
+    "CHINANET-SHANGHAI-MAN - China Telecom (Group)",
+    "CHINANET-SH-AP - China Telecom (Group)",
+    "BACKBONE-GUANGDONG-AP - China Telecom(Group)",
+    "CHINANET-IDC-SH - China Telecom (Group)",
+    "CHINANET-IDC-GD - China Telecom (Group)",
+    "CHINANET-IDC-SN - China Telecom (Group)",
+    "Apsatcom - APT MOBILE SATCOM LIMITED"
+   ]
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "region": "Asia",
+   "internet_pct": 54.6,
+   "internet_year": "2024",
+   "mobile_per_100": 132.5,
+   "people_groups": 1,
+   "band": "partial",
+   "carriers": [
+    "Sri Lanka Telecom Internet",
+    "Sri Lanka Telecom PLC, GLobal Peering",
+    "Sri Lanka Telecom Ltd"
+   ],
+   "carrier_count": 3,
+   "operator_count": 32,
+   "top_platform": "Facebook",
+   "top_platform_pct": 76.04,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 76.04
+    },
+    {
+     "name": "YouTube",
+     "pct": 19.87
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.41
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.92
+    },
+    {
+     "name": "reddit",
+     "pct": 0.7
+    }
+   ],
+   "carriers_raw": [
+    "SLTINT-AS-AP - Sri Lanka Telecom Internet",
+    "SLT-GLOBAL - Sri Lanka Telecom PLC, GLobal Peering",
+    "SLT-NW2 - Sri Lanka Telecom Ltd"
+   ]
+  },
+  {
+   "iso3": "LCA",
+   "country": "Saint Lucia",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 68.2,
+   "internet_year": "2024",
+   "mobile_per_100": 98.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Digicel St.Lucia Ltd",
+    "Digicel Caribbean Limited"
+   ],
+   "carrier_count": 4,
+   "operator_count": 7,
+   "top_platform": "Facebook",
+   "top_platform_pct": 86.68,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 86.68
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.27
+    },
+    {
+     "name": "Pinterest",
+     "pct": 2.59
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.71
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.44
+    }
+   ],
+   "carriers_raw": [
+    "DIGICEL-OECS - Digicel St.Lucia Ltd",
+    "DIGICEL-GROUP-BUSINESS - Digicel Caribbean Limited",
+    "DIGICEL-GRENADA - Digicel St.Lucia Ltd",
+    "DIGICEL-STVINCENT - Digicel St.Lucia Ltd"
+   ]
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "region": "Europe",
+   "internet_pct": 98.8,
+   "internet_year": "2024",
+   "mobile_per_100": 144.5,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "AS-TELKEATELECOM TELKEA TELECOM SA",
+    "ORANGE Orange Communications Luxembourg S.A"
+   ],
+   "carrier_count": 2,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 67.51,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 67.51
+    },
+    {
+     "name": "Twitter",
+     "pct": 13.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.44
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.52
+    },
+    {
+     "name": "reddit",
+     "pct": 4.31
+    }
+   ],
+   "carriers_raw": [
+    "AS-TELKEATELECOM TELKEA TELECOM SA",
+    "ORANGE Orange Communications Luxembourg S.A"
+   ]
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "region": "Europe",
+   "internet_pct": 98.3,
+   "internet_year": "2024",
+   "mobile_per_100": 128.9,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "TELECOM-LI Telecom Liechtenstein AG"
+   ],
+   "carrier_count": 1,
+   "operator_count": 29,
+   "top_platform": "Facebook",
+   "top_platform_pct": 43.54,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 43.54
+    },
+    {
+     "name": "Pinterest",
+     "pct": 22.45
+    },
+    {
+     "name": "Twitter",
+     "pct": 14.29
+    },
+    {
+     "name": "Instagram",
+     "pct": 13.61
+    },
+    {
+     "name": "reddit",
+     "pct": 4.08
+    }
+   ],
+   "carriers_raw": [
+    "TELECOM-LI Telecom Liechtenstein AG"
+   ]
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "region": "Europe",
+   "internet_pct": 88.9,
+   "internet_year": "2024",
+   "mobile_per_100": 221.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 30,
+   "top_platform": "Facebook",
+   "top_platform_pct": 76.03,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 76.03
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.39
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.33
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.02
+    },
+    {
+     "name": "reddit",
+     "pct": 2.47
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "region": "Asia",
+   "internet_pct": 85.2,
+   "internet_year": "2024",
+   "mobile_per_100": 148.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Ooredoo Maldives Plc"
+   ],
+   "carrier_count": 1,
+   "operator_count": 18,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.01,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.01
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.39
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.15
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.45
+    }
+   ],
+   "carriers_raw": [
+    "OOREDOO-MV - Ooredoo Maldives Plc"
+   ]
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "region": "Europe",
+   "internet_pct": 93.9,
+   "internet_year": "2024",
+   "mobile_per_100": 142.1,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "SIP Smart IP (SIP) Limited"
+   ],
+   "carrier_count": 1,
+   "operator_count": 51,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.06,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.06
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.07
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.87
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.14
+    },
+    {
+     "name": "LinkedIn",
+     "pct": 4.09
+    }
+   ],
+   "carriers_raw": [
+    "SIP Smart IP (SIP) Limited"
+   ]
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "region": "N/A",
+   "internet_pct": 99,
+   "internet_year": "2024",
+   "mobile_per_100": 107.4,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "AS6758 Monaco Telecom S.A."
+   ],
+   "carrier_count": 1,
+   "operator_count": 4,
+   "top_platform": "Twitter",
+   "top_platform_pct": 53.1,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 53.1
+    },
+    {
+     "name": "Facebook",
+     "pct": 27.5
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.7
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.52
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.27
+    }
+   ],
+   "carriers_raw": [
+    "AS6758 Monaco Telecom S.A."
+   ]
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "region": "Oceania",
+   "internet_pct": 65.9,
+   "internet_year": "2024",
+   "mobile_per_100": 39.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Marshall Telecom Ltd"
+   ],
+   "carrier_count": 1,
+   "operator_count": 10,
+   "top_platform": "Facebook",
+   "top_platform_pct": 66.67,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 66.67
+    },
+    {
+     "name": "YouTube",
+     "pct": 14.04
+    },
+    {
+     "name": "Pinterest",
+     "pct": 10.53
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.51
+    },
+    {
+     "name": "reddit",
+     "pct": 3.51
+    }
+   ],
+   "carriers_raw": [
+    "MTL-AS-AP - Marshall Telecom Ltd"
+   ]
+  },
+  {
+   "iso3": "MSR",
+   "country": "Montserrat",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 1,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.59,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.59
+    },
+    {
+     "name": "Instagram",
+     "pct": 20.49
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.64
+    },
+    {
+     "name": "reddit",
+     "pct": 1.64
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.82
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "region": "Africa",
+   "internet_pct": 73.3,
+   "internet_year": "2024",
+   "mobile_per_100": 172.7,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Telecom Plus",
+    "Mauritius Telecom Ltd",
+    "Bharat Telecom Ltd",
+    "Outremer Telecom Digital Solutions Ltd"
+   ],
+   "carrier_count": 5,
+   "operator_count": 49,
+   "top_platform": "Facebook",
+   "top_platform_pct": 82.92,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 82.92
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.06
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.06
+    },
+    {
+     "name": "reddit",
+     "pct": 2.84
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.79
+    }
+   ],
+   "carriers_raw": [
+    "ERX-TELECOMPLUS - Telecom Plus",
+    "Mauritius Telecom Ltd - Mauritius Telecom Ltd",
+    "Mauritius Telecom Ltd - Mauritius Telecom Ltd",
+    "Bharat Telecom Ltd - Bharat Telecom Ltd",
+    "Outremer Telecom Digital Solutions Ltd - Outremer Telecom Digital Solutions Ltd"
+   ]
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.72,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.72
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.55
+    },
+    {
+     "name": "reddit",
+     "pct": 2.91
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "region": "Africa",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 69.3,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Airtel Malawi Ltd"
+   ],
+   "carrier_count": 1,
+   "operator_count": 36,
+   "top_platform": "Facebook",
+   "top_platform_pct": 68.24,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 68.24
+    },
+    {
+     "name": "YouTube",
+     "pct": 8.35
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.62
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.99
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.36
+    }
+   ],
+   "carriers_raw": [
+    "Airtel Malawi Ltd - Airtel Malawi Ltd"
+   ]
+  },
+  {
+   "iso3": "NIU",
+   "country": "Niue",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 1,
+   "top_platform": "Facebook",
+   "top_platform_pct": 100,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 100
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "NFK",
+   "country": "Norfolk Island",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Orange Business AS for Oceania"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.5,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.5
+    },
+    {
+     "name": "Pinterest",
+     "pct": 6.12
+    },
+    {
+     "name": "Twitter",
+     "pct": 6
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.49
+    },
+    {
+     "name": "reddit",
+     "pct": 3.52
+    }
+   ],
+   "carriers_raw": [
+    "EQUANT-OCEANIA - Orange Business AS for Oceania"
+   ]
+  },
+  {
+   "iso3": "MYT",
+   "country": "Mayotte",
+   "region": "Africa",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 91.7,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 72.8,
+   "internet_year": "2024",
+   "mobile_per_100": 156.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 39.75,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 39.75
+    },
+    {
+     "name": "Instagram",
+     "pct": 30.7
+    },
+    {
+     "name": "Pinterest",
+     "pct": 9.44
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.31
+    },
+    {
+     "name": "YouTube",
+     "pct": 4.88
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "region": "Asia",
+   "internet_pct": 67.3,
+   "internet_year": "2024",
+   "mobile_per_100": 115.3,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Globe Telecoms",
+    "Smart Broadband, Inc.",
+    "PLDT Subic Telecom, Inc.",
+    "Globe Telecom Internet Data Center",
+    "Globe Telecom IX Network"
+   ],
+   "carrier_count": 6,
+   "operator_count": 59,
+   "top_platform": "YouTube",
+   "top_platform_pct": 50.26,
+   "platforms": [
+    {
+     "name": "YouTube",
+     "pct": 50.26
+    },
+    {
+     "name": "Facebook",
+     "pct": 46.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.17
+    },
+    {
+     "name": "Instagram",
+     "pct": 0.86
+    },
+    {
+     "name": "reddit",
+     "pct": 0.79
+    }
+   ],
+   "carriers_raw": [
+    "GLOBE-TELECOM-AS - Globe Telecoms",
+    "SMARTBRO-PH-AP - Smart Broadband, Inc.",
+    "SUBICTEL-AS-AP - PLDT Subic Telecom, Inc.",
+    "SMARTBRO-VIS-AP - Smart Broadband, Inc.",
+    "GLOBEIDC-AS-AP - Globe Telecom Internet Data Center",
+    "GLOBE-TELECOM-IX - Globe Telecom IX Network"
+   ]
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 130.1,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Telecom Mobile Communications Ltd.",
+    "Two Degrees Mobile Limited"
+   ],
+   "carrier_count": 3,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.2,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.2
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.02
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.45
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.08
+    },
+    {
+     "name": "reddit",
+     "pct": 3.68
+    }
+   ],
+   "carriers_raw": [
+    "ERX-MOBILE-1 - Telecom Mobile Communications Ltd.",
+    "TWO-DEGREES-AS-AP - Two Degrees Mobile Limited",
+    "TWO-DEGREES-AS-AP - Two Degrees Mobile Limited"
+   ]
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "region": "Oceania",
+   "internet_pct": 83.9,
+   "internet_year": "2024",
+   "mobile_per_100": 135.4,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Palau Mobile Communications Inc."
+   ],
+   "carrier_count": 1,
+   "operator_count": 4,
+   "top_platform": "Facebook",
+   "top_platform_pct": 65.26,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 65.26
+    },
+    {
+     "name": "Pinterest",
+     "pct": 10.53
+    },
+    {
+     "name": "YouTube",
+     "pct": 10.53
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.47
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.11
+    }
+   ],
+   "carriers_raw": [
+    "PMCI-AS-AP - Palau Mobile Communications Inc."
+   ]
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "region": "Oceania",
+   "internet_pct": 18.8,
+   "internet_year": "2024",
+   "mobile_per_100": 38.8,
+   "people_groups": 1,
+   "band": "no",
+   "carriers": [
+    "Digicel (PNG) Ltd"
+   ],
+   "carrier_count": 2,
+   "operator_count": 38,
+   "top_platform": "Facebook",
+   "top_platform_pct": 60.47,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 60.47
+    },
+    {
+     "name": "YouTube",
+     "pct": 26.3
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.47
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.11
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.54
+    }
+   ],
+   "carriers_raw": [
+    "DIGICELPNG-AS-AP - Digicel (PNG) Ltd",
+    "DIGICELPNG-AS-AP - Digicel (PNG) Ltd"
+   ]
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 118.8,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "region": "Latin America & Caribbean",
+   "internet_pct": 81.6,
+   "internet_year": "2024",
+   "mobile_per_100": 126.6,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Telecel S.A.",
+    "VIVE TELECOM S.A.",
+    "LINK Telecom S.A.",
+    "FLYTEC TELECOM SOCIEDAD ANONIMA",
+    "PRIETO TELLES ALEXANDRE(F1NET TELECOM PY)"
+   ],
+   "carrier_count": 7,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 90.91,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 90.91
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.42
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.41
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.24
+    },
+    {
+     "name": "Pinterest",
+     "pct": 0.96
+    }
+   ],
+   "carriers_raw": [
+    "AS23201 - Telecel S.A.",
+    "AS28008 - Telecel S.A.",
+    "AS52229 - Telecel S.A.",
+    "AS265759 - VIVE TELECOM S.A.",
+    "AS265864 - LINK Telecom S.A.",
+    "AS266673 - FLYTEC TELECOM SOCIEDAD ANONIMA",
+    "AS267795 - PRIETO TELLES ALEXANDRE(F1NET TELECOM PY)"
+   ]
+  },
+  {
+   "iso3": "PRK",
+   "country": "North Korea",
+   "region": "Asia",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 24.1,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 1,
+   "top_platform": "Twitter",
+   "top_platform_pct": 100,
+   "platforms": [
+    {
+     "name": "Twitter",
+     "pct": 100
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "SHN",
+   "country": "Saint Helena",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 0,
+   "top_platform": "Facebook",
+   "top_platform_pct": 100,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 100
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "SJM",
+   "country": "Svalbard and Jan Mayen",
+   "region": "Europe",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "BASEFARM-ASN Orange Business Digital Norway AS"
+   ],
+   "carrier_count": 1,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.49,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.49
+    },
+    {
+     "name": "Pinterest",
+     "pct": 12.9
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.75
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.46
+    },
+    {
+     "name": "reddit",
+     "pct": 2.34
+    }
+   ],
+   "carriers_raw": [
+    "BASEFARM-ASN Orange Business Digital Norway AS"
+   ]
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "region": "N/A",
+   "internet_pct": 97.4,
+   "internet_year": "2024",
+   "mobile_per_100": 120.3,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Tism Telecom Italia San Marino S.p.A",
+    "VPWR Telecom Italia San Marino S.p.A"
+   ],
+   "carrier_count": 2,
+   "operator_count": 13,
+   "top_platform": "Facebook",
+   "top_platform_pct": 62.89,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 62.89
+    },
+    {
+     "name": "Instagram",
+     "pct": 17.61
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.03
+    },
+    {
+     "name": "YouTube",
+     "pct": 1.89
+    }
+   ],
+   "carriers_raw": [
+    "Tism Telecom Italia San Marino S.p.A",
+    "VPWR Telecom Italia San Marino S.p.A"
+   ]
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "region": "Oceania",
+   "internet_pct": 29,
+   "internet_year": "2024",
+   "mobile_per_100": 62.1,
+   "people_groups": 1,
+   "band": "partial",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 11,
+   "top_platform": "Facebook",
+   "top_platform_pct": 83.89,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 83.89
+    },
+    {
+     "name": "Pinterest",
+     "pct": 7.78
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.89
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.22
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.11
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "region": "Africa",
+   "internet_pct": 60.1,
+   "internet_year": "2024",
+   "mobile_per_100": 123.9,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Sudatel Senegal"
+   ],
+   "carrier_count": 1,
+   "operator_count": 23,
+   "top_platform": "Facebook",
+   "top_platform_pct": 52.41,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 52.41
+    },
+    {
+     "name": "YouTube",
+     "pct": 36.52
+    },
+    {
+     "name": "Twitter",
+     "pct": 7
+    },
+    {
+     "name": "Instagram",
+     "pct": 2.33
+    },
+    {
+     "name": "Pinterest",
+     "pct": 1.13
+    }
+   ],
+   "carriers_raw": [
+    "Sudatel Senegal - Sudatel Senegal"
+   ]
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "region": "Africa",
+   "internet_pct": 63.4,
+   "internet_year": "2024",
+   "mobile_per_100": 139.8,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Swazi MTN Ltd",
+    "Swazi Mobile Limited"
+   ],
+   "carrier_count": 2,
+   "operator_count": 13,
+   "top_platform": "Facebook",
+   "top_platform_pct": 69.33,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 69.33
+    },
+    {
+     "name": "Pinterest",
+     "pct": 12.89
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.78
+    },
+    {
+     "name": "Twitter",
+     "pct": 4.89
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.67
+    }
+   ],
+   "carriers_raw": [
+    "Swazi MTN Ltd - Swazi MTN Ltd",
+    "Swazi Mobile Limited - Swazi Mobile Limited"
+   ]
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 205.4,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75.29,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75.29
+    },
+    {
+     "name": "Instagram",
+     "pct": 9.21
+    },
+    {
+     "name": "Twitter",
+     "pct": 5.17
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.83
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.76
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "region": "Africa",
+   "internet_pct": 59.1,
+   "internet_year": "2024",
+   "mobile_per_100": 62.4,
+   "people_groups": 1,
+   "band": "partial",
+   "carriers": [
+    "UNITEL STP SARL"
+   ],
+   "carrier_count": 1,
+   "operator_count": 2,
+   "top_platform": "Facebook",
+   "top_platform_pct": 75,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 75
+    },
+    {
+     "name": "YouTube",
+     "pct": 16.07
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.57
+    },
+    {
+     "name": "Instagram",
+     "pct": 3.57
+    },
+    {
+     "name": "reddit",
+     "pct": 1.79
+    }
+   ],
+   "carriers_raw": [
+    "UNITEL STP SARL - UNITEL STP SARL"
+   ]
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Digicel Turks and Caicos Ltd"
+   ],
+   "carrier_count": 1,
+   "operator_count": 2,
+   "top_platform": "Facebook",
+   "top_platform_pct": 70.88,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 70.88
+    },
+    {
+     "name": "Twitter",
+     "pct": 13.67
+    },
+    {
+     "name": "Instagram",
+     "pct": 7.13
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.75
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.38
+    }
+   ],
+   "carriers_raw": [
+    "DIGTCI - Digicel Turks and Caicos Ltd"
+   ]
+  },
+  {
+   "iso3": "TKL",
+   "country": "Tokelau",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 3,
+   "top_platform": "Pinterest",
+   "top_platform_pct": 50,
+   "platforms": [
+    {
+     "name": "Pinterest",
+     "pct": 50
+    },
+    {
+     "name": "Facebook",
+     "pct": 25
+    },
+    {
+     "name": "Instagram",
+     "pct": 25
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "region": "Oceania",
+   "internet_pct": 67.4,
+   "internet_year": "2024",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "Digicel Tonga Ltd"
+   ],
+   "carrier_count": 1,
+   "operator_count": 5,
+   "top_platform": "Facebook",
+   "top_platform_pct": 87.5,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 87.5
+    },
+    {
+     "name": "Instagram",
+     "pct": 6.94
+    },
+    {
+     "name": "Pinterest",
+     "pct": 3.47
+    },
+    {
+     "name": "reddit",
+     "pct": 1.39
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.69
+    }
+   ],
+   "carriers_raw": [
+    "DIGICELNET-TO - Digicel Tonga Ltd"
+   ]
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands, U.S.",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 91.5,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 74.72,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 74.72
+    },
+    {
+     "name": "Twitter",
+     "pct": 9.91
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.08
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.55
+    },
+    {
+     "name": "reddit",
+     "pct": 2.91
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "VGB",
+   "country": "Virgin Islands, British",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Digicel BVI Limited"
+   ],
+   "carrier_count": 1,
+   "operator_count": 48,
+   "top_platform": "Facebook",
+   "top_platform_pct": 81.47,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 81.47
+    },
+    {
+     "name": "Instagram",
+     "pct": 5.36
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.21
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.52
+    },
+    {
+     "name": "Twitter",
+     "pct": 2.76
+    }
+   ],
+   "carriers_raw": [
+    "BVI-DIG - Digicel BVI Limited"
+   ]
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "region": "Asia",
+   "internet_pct": 89.5,
+   "internet_year": "2024",
+   "mobile_per_100": 110.5,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [
+    "SARKOR-AS JC LLC Sarkor-Telecom",
+    "Sharq-Telecom Sharq Telekom CJSC",
+    "UNITEL UNITEL LLC",
+    "ASGALSTELECOM OOO \"Gals Telecom\"",
+    "KRON-TELECOM-NETWORKS-LTD-AS Kron Telecom Network Ltd",
+    "DGT-UZ-AS DANIEL GROUP TELECOM LLC",
+    "NANOTELECOM-AS Nano Telecom LLC",
+    "UMS-AS UNIVERSAL MOBILE SYSTEMS LCC"
+   ],
+   "carrier_count": 8,
+   "operator_count": 60,
+   "top_platform": "Instagram",
+   "top_platform_pct": 37.31,
+   "platforms": [
+    {
+     "name": "Instagram",
+     "pct": 37.31
+    },
+    {
+     "name": "Facebook",
+     "pct": 20.33
+    },
+    {
+     "name": "Twitter",
+     "pct": 12.45
+    },
+    {
+     "name": "YouTube",
+     "pct": 11.45
+    },
+    {
+     "name": "Pinterest",
+     "pct": 10.09
+    }
+   ],
+   "carriers_raw": [
+    "SARKOR-AS JC LLC Sarkor-Telecom",
+    "Sharq-Telecom Sharq Telekom CJSC",
+    "UNITEL UNITEL LLC",
+    "ASGALSTELECOM OOO \"Gals Telecom\"",
+    "KRON-TELECOM-NETWORKS-LTD-AS Kron Telecom Network Ltd",
+    "DGT-UZ-AS DANIEL GROUP TELECOM LLC",
+    "NANOTELECOM-AS Nano Telecom LLC",
+    "UMS-AS UNIVERSAL MOBILE SYSTEMS LCC"
+   ]
+  },
+  {
+   "iso3": "VCT",
+   "country": "Saint Vincent and the Grenadines",
+   "region": "North America & Non-Spanish Caribbean",
+   "internet_pct": 76.2,
+   "internet_year": "2024",
+   "mobile_per_100": 108.4,
+   "people_groups": 1,
+   "band": "yes",
+   "carriers": [],
+   "carrier_count": 0,
+   "operator_count": 6,
+   "top_platform": "Facebook",
+   "top_platform_pct": 70.82,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 70.82
+    },
+    {
+     "name": "Instagram",
+     "pct": 22.06
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.84
+    },
+    {
+     "name": "Twitter",
+     "pct": 0.9
+    },
+    {
+     "name": "YouTube",
+     "pct": 0.55
+    }
+   ],
+   "carriers_raw": []
+  },
+  {
+   "iso3": "WLF",
+   "country": "Wallis and Futuna",
+   "region": "N/A",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": null,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ],
+   "carrier_count": 49,
+   "operator_count": 60,
+   "top_platform": "Facebook",
+   "top_platform_pct": 72.95,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 72.95
+    },
+    {
+     "name": "Instagram",
+     "pct": 8.73
+    },
+    {
+     "name": "YouTube",
+     "pct": 5.88
+    },
+    {
+     "name": "Pinterest",
+     "pct": 5.73
+    },
+    {
+     "name": "Twitter",
+     "pct": 3.32
+    }
+   ],
+   "carriers_raw": [
+    "OrangeLabs Orange S.A.",
+    "FRANCE-TELECOM-AS Orange S.A.",
+    "OCBHoney Orange S.A.",
+    "OCB_HONEY_AMS Orange S.A.",
+    "GILAS-DP Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCNB Orange S.A.",
+    "OCB_HONEY_CDN_ASN Orange S.A."
+   ]
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 89.3,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Telecom Vanuatu Limited",
+    "Digicel Vanuatu LTD"
+   ],
+   "carrier_count": 2,
+   "operator_count": 13,
+   "top_platform": "Facebook",
+   "top_platform_pct": 70.53,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 70.53
+    },
+    {
+     "name": "Twitter",
+     "pct": 10.53
+    },
+    {
+     "name": "reddit",
+     "pct": 8.95
+    },
+    {
+     "name": "Pinterest",
+     "pct": 4.21
+    },
+    {
+     "name": "YouTube",
+     "pct": 3.68
+    }
+   ],
+   "carriers_raw": [
+    "VUTELECOM-AS01-VU-AP - Telecom Vanuatu Limited",
+    "DIGICELVANUATU-VU - Digicel Vanuatu LTD"
+   ]
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "region": "Oceania",
+   "internet_pct": null,
+   "internet_year": "",
+   "mobile_per_100": 62.4,
+   "people_groups": 1,
+   "band": "unknown",
+   "carriers": [
+    "Vodafone Samoa Limited",
+    "Digicel Samoa Ltd"
+   ],
+   "carrier_count": 2,
+   "operator_count": 10,
+   "top_platform": "Facebook",
+   "top_platform_pct": 78.89,
+   "platforms": [
+    {
+     "name": "Facebook",
+     "pct": 78.89
+    },
+    {
+     "name": "Pinterest",
+     "pct": 12.56
+    },
+    {
+     "name": "Instagram",
+     "pct": 4.02
+    },
+    {
+     "name": "YouTube",
+     "pct": 2.51
+    },
+    {
+     "name": "Twitter",
+     "pct": 1.51
+    }
+   ],
+   "carriers_raw": [
+    "VODAFONESAMOA-AS-AP - Vodafone Samoa Limited",
+    "DIGICELSAMOA-WS-AS-AP - Digicel Samoa Ltd"
+   ]
+  }
+ ]
+}

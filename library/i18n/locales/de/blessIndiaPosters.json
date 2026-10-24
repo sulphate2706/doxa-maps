@@ -1,0 +1,15 @@
+{
+  "title": "„Segne Indien“-Poster",
+  "rangeBadge60x96": "Nummern-Marken · 60×96 (5×8 Fuß)",
+  "count": "{count} Volksgruppen",
+  "desktopOnly": "Vorerst nur am Desktop — es ist noch nicht erwiesen, dass dieses große Poster sicher auf einem Telefon druckt.",
+  "experimental": "experimentell",
+  "intro": "Jede Volksgruppe Indiens auf einem druckbaren Bogen, live erzeugt und als ihre druckbaren Bögen mit Klebestreifen gezeigt — so wie die Größen-Ansicht von Poster Design die großen Formate zeigt.",
+  "print": "Dieses Poster drucken",
+  "attempt": "Nummern-Marken · 60×96 (5×8 Fuß) · 3 Bögen",
+  "stat": "{groups} Gruppen · {badges} Nummern-Marken · 0 Überlappungen",
+  "generating": "Poster wird aus den Live-Daten erzeugt…",
+  "error": "Poster konnte nicht erzeugt werden: {msg}",
+  "photos": "Nur {real} von {total} indischen Gruppen haben ein Foto in den Daten; ein gedrucktes Dokument trägt sie, ein flaches Bild nicht. Dieses nummerierte Design druckt Namen ohne Fotos, damit jede Gruppe gleich und lesbar ist.",
+  "posterHeader": "Segne Indien im Namen Jesu"
+}

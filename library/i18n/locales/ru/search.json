@@ -1,0 +1,34 @@
+{
+  "placeholder": "Народ, место, язык, религия",
+  "placeholderNoPlaces": "Народ, язык, религия (для поиска мест нужен токен Mapbox)",
+  "labels": {
+    "people": "Народ:",
+    "place": "Место:",
+    "language": "Язык:",
+    "religion": "Религия:"
+  },
+  "kinds": {
+    "people": "Народ + страна",
+    "peopleGroup": "Народ",
+    "bloc": "Блок родства",
+    "cluster": "Кластер народов",
+    "country": "Страна",
+    "region": "Регион",
+    "family": "Языковая семья",
+    "languageKind": "Язык",
+    "dialect": "Диалект",
+    "religionKind": "Религия"
+  },
+  "sections": {
+    "within": "В пределах {selection}",
+    "allData": "Все данные DOXA"
+  },
+  "upg100Placeholder": "Поиск народа, списка UPG100 или региона…",
+  "tabPlaceholder": {
+    "languageFamilies": "Поиск по языковой семье, языку, диалекту/варианту",
+    "affinityBlocks": "Поиск по блоку родства, кластеру, народу",
+    "regions": "Поиск по региону, стране, народу",
+    "religion": "Поиск по религии, народу"
+  },
+  "placeholderRegions": "Поиск региона, страны или народа"
+}

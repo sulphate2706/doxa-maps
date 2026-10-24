@@ -1,0 +1,21 @@
+{
+  "map": "Hartă",
+  "marker": "Marcaj pe hartă",
+  "closePopup": "Închide fereastra",
+  "zoomIn": "Mărește",
+  "zoomOut": "Micșorează",
+  "resetBearing": "Trage pentru a roti harta, apasă pentru a reveni la nord",
+  "toggleAttribution": "Afișează/ascunde atribuirea",
+  "mapFeedback": "Feedback despre hartă",
+  "enterFullscreen": "Ecran complet",
+  "exitFullscreen": "Ieși din ecran complet",
+  "findMyLocation": "Găsește-mi locația",
+  "locationNotAvailable": "Locație indisponibilă",
+  "enableGlobe": "Activează globul",
+  "disableGlobe": "Dezactivează globul",
+  "ctrlScroll": "Folosește Ctrl + derulare pentru a mări harta",
+  "cmdScroll": "Folosește ⌘ + derulare pentru a mări harta",
+  "twoFingers": "Folosește două degete pentru a muta harta",
+  "mapboxHomepage": "Pagina principală Mapbox",
+  "maplibreLogo": "Sigla MapLibre"
+}

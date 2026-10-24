@@ -1,0 +1,5 @@
+{
+  "type": "single",
+  "label": "Poster Design — Styles",
+  "note": "Every poster template, one card per configuration (src/templates.js), drawn from the library with sample data; also embeddable alone."
+}

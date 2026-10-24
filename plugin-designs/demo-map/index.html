@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · demo-map staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Mapbox peer (loaded once per page, before the bundle) -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #9ca3af; font-size: 13px; margin: 6px 0 24px; }
+    .slot { border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; }
+    .slot .label { font: 12px/1 ui-monospace, monospace; color: #9ca3af; padding: 8px 12px;
+      background: #111827; border-bottom: 1px solid #1f2937; }
+    .frame { position: relative; height: 70vh; min-height: 420px; }
+    demo-map { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>demo-map · staging</h1>
+    <p class="sub">One bundle, one profile, two in-map tabs: <strong>By Religion</strong>
+      (shared <code>religion</code> strategy) and <strong>Purple Pins</strong>
+      (bundle-local <code>single-color</code> strategy — all pins <code>#8b5cf6</code>).</p>
+
+    <div class="slot">
+      <div class="label">profile-config.profile = "demo-map"</div>
+      <div class="frame">
+        <demo-map id="demo-map-slot"></demo-map>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Pulled from .env at dev-server start. Vite replaces %VITE_MAPBOX_TOKEN%
+    // with the value at request time; the .env file is gitignored.
+    window.DOXA_TOKEN = '%VITE_MAPBOX_TOKEN%';
+    document.getElementById('demo-map-slot').setAttribute('profile-config',
+      JSON.stringify({ profile: 'demo-map', tk: window.DOXA_TOKEN, instanceId: 'dev-demo-map' }));
+  </script>
+  <script>window.MAP_APP_BASE_URL = '/';</script>
+
+  <!-- Vite multi-page entry. In dev, served transformed; in build, Vite emits
+       the demo-map IIFE and rewrites this script tag. -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

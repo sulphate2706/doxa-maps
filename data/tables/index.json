@@ -1,0 +1,82 @@
+{
+ "generated": "2026-08-01",
+ "method": "Derived from the source tables in this folder.",
+ "tables": [
+  {
+   "name": "people-group-resources",
+   "rows": 2106
+  },
+  {
+   "name": "gospel-access-vs-growth",
+   "rows": 2106
+  },
+  {
+   "name": "key-cities",
+   "rows": 1646
+  },
+  {
+   "name": "network-operators",
+   "rows": 6526
+  },
+  {
+   "name": "country-connectivity",
+   "rows": 175
+  },
+  {
+   "name": "social-platforms",
+   "rows": 1306
+  },
+  {
+   "name": "messaging-channels",
+   "rows": 1157
+  },
+  {
+   "name": "languages-by-country",
+   "rows": 613
+  },
+  {
+   "name": "languages-per-city",
+   "rows": 1866
+  },
+  {
+   "name": "city-bridge-opportunities",
+   "rows": 28
+  },
+  {
+   "name": "deaf-gap",
+   "rows": 234
+  },
+  {
+   "name": "open-doors",
+   "rows": 2106
+  },
+  {
+   "name": "key-cities-admin-n",
+   "rows": 277
+  },
+  {
+   "name": "platform-reachability",
+   "rows": 2625
+  },
+  {
+   "name": "gaps-and-opportunities",
+   "rows": 2106
+  },
+  {
+   "name": "people-group-pins",
+   "rows": 12379
+  },
+  {
+   "name": "gospel-resource-links",
+   "rows": 3550
+  },
+  {
+   "name": "gospel-gaps",
+   "rows": 2901
+  },
+  {
+   "name": "country-gap",
+   "rows": 242
+  }
+ ]
+}

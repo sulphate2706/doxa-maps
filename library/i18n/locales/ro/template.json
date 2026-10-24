@@ -1,0 +1,11 @@
+{
+  "title": "Prima mea hartă",
+  "engineMissing": "Motorul hărții nu s-a încărcat.",
+  "mapFailed": "Harta nu a putut porni: {detail}",
+  "profileB": {
+    "title": "Profilul B",
+    "servedFrom": "Servit din {file} în pachetul {bundle}.",
+    "note": "Notă: {note}",
+    "noNote": "(nicio notă transmisă în profile-config)"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "appId": "life.doxa.maps",
+  "appName": "Doxa Maps",
+  "//webDir": [
+    "webDir = public/<tree> \u2014 THE OUTPUT FOLDER, written by the build (internal/sync-app-shells.mjs keeps it",
+    "in step with the tree's name in vite.doxa-maps-build-config.json; do not edit it by hand).",
+    "public/ holds ONLY the output folder + README.md (decision BUILD-OUTPUT-IS-ONE-FOLDER). The folder is",
+    "self-contained: its index.html is the front page (the Plugin Studio), <bundle>/ holds each plugin, and",
+    "assets/ carries the data, fonts and images the plugins fetch.",
+    "ONE build, THREE consumers, all reading THIS folder:",
+    "  1. Railway / CDN  \u2014 serve it statically; partner sites embed from stable URLs",
+    "  2. Capacitor      \u2014 this webDir; `cap sync` copies it into deployment/capacitor/android/app/src/main/assets/public/,",
+    "                      then `bun run app:start-page` makes the UPG-100 list the app's start page",
+    "  3. local staging  \u2014 `bun run serve` (public/ on :4173; open /<tree>/index.html)",
+    "\u26a0\ufe0f SOFT FAILURE: a wrong webDir yields an EMPTY assets/public and a BLANK WHITE SCREEN at launch, not an",
+    "error. After every sync, verify deployment/capacitor/android/app/src/main/assets/public/index.html exists (`bun run cap:verify`)."
+  ],
+  "webDir": "public/dx-maps",
+  "server": {
+    "//": [
+      "Capacitor defaults are deliberately kept: iosScheme 'capacitor', androidScheme 'https', hostname",
+      "'localhost'. Do NOT set a custom scheme \u2014 Capacitor docs warn that as of WebView 117 custom schemes",
+      "cannot change the URL path and can break routing. Do NOT set server.url either; that is documented as",
+      "live-reload/dev only, not production.",
+      "CONSEQUENCE FOR US: the app origin is https://localhost, so the doxa.life token endpoint (tokenUrl) must",
+      "send CORS headers permitting that origin. This is the single most likely runtime surprise, and the fix is",
+      "a response header on doxa.life \u2014 not a change here."
+    ],
+    "androidScheme": "https"
+  },
+  "android": {
+    "//": "Native project lives in ./capacitor/android and is COMMITTED \u2014 `cap add` scaffolds it ONCE, then it is hand-edited source (manifest, icons, versionCode). It sits under deployment/capacitor/ rather than app/ because app/ is the BUNDLE OUTPUT tree: this repo emits several kinds of product, and Capacitor is one facet of them, not the whole. Only app/src/main/assets/public/ is generated and gitignored. An iOS project would join it at deployment/capacitor/ios (ios.path), scaffolded on a Mac.",
+    "path": "deployment/capacitor/android"
+  }
+}

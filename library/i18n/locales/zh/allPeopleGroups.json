@@ -1,0 +1,13 @@
+{
+  "title": "所有族群",
+  "locations": "{n} 个族群–国家位置",
+  "doxa": "DOXA 族群",
+  "frontier": "前沿族群 — 尚未开始",
+  "unreached": "未得之民 — 事工起步",
+  "reached": "已得之民 — 教会已在",
+  "hint": "点击一行查看全部 · 再次点击显示所有",
+  "loading": "正在加载所有族群…",
+  "loadError": "无法加载地图。",
+  "pray": "为他们祷告 →",
+  "population": "人口 {n}"
+}

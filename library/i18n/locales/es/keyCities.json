@@ -1,0 +1,64 @@
+{
+  "map": {
+    "title": "Grupos de marcadores de pueblos",
+    "bands": {
+      "named": "centro con nombre",
+      "multi": "varios pueblos",
+      "single": "un pueblo"
+    },
+    "note": "Un punto es un grupo de marcadores de pueblos en ~25 km, no un límite municipal. Los puntos con nombre provienen de un nomenclátor citado.",
+    "unnamed": "lugar sin nombre — {lat}, {lng}",
+    "close": "Cerrar",
+    "country": "País",
+    "admin": "Área administrativa",
+    "peopleGroups": "Pueblos",
+    "upgPopulation": "Población UPG",
+    "internet": "Internet del país",
+    "unknown": "desconocido",
+    "pgHere": "Pueblos aquí",
+    "languages": "Idiomas",
+    "sheetNote": "Un grupo de marcadores de pueblos en ~25 km, no un límite municipal. Los puntos con nombre provienen de un nomenclátor citado (Nominatim/OSM); los sin nombre muestran coordenadas en lugar de un nombre inventado.",
+    "national": "Las cifras de internet son NACIONALES.",
+    "engineMissing": "No se pudo cargar el motor del mapa."
+  },
+  "list": {
+    "title": "Ciudades clave",
+    "intro": "Grupos de marcadores de pueblos: grupos con nombre (de un nomenclátor citado): {named}, en grupos ubicados: {clusters}.",
+    "filters": {
+      "named": "Centros de población con nombre",
+      "multi": "Grupos de varios pueblos",
+      "all": "Todos los lugares"
+    },
+    "locations": "lugares: {n}",
+    "peopleGroups": "pueblos: {n}",
+    "caveat": {
+      "rowLead": "Qué es una fila.",
+      "row": "Un grupo de marcadores de pueblos en ~25 km, no un límite municipal. Cada marcador representa un pueblo, no una ciudad, así que los grupos nunca se nombran por deducción: los {n} centros con varios pueblos se identificaron con {source} (ODbL, citado en cada fila) y el resto queda sin nombre en lugar de adivinarlo.",
+      "internet": "Se muestran como contexto: la conectividad por ciudad no está disponible públicamente a esta escala, y una cifra nacional no debe leerse como una medición de la ciudad.",
+      "scope": "Esta página contiene solo ubicaciones de pueblos y conectividad; a propósito, no hay datos de iglesias, creyentes ni lugares de reunión."
+    },
+    "moreLanguages": "{n} más"
+  },
+  "tables": {
+    "title": "Datos de ciudades clave",
+    "intro": "Cada centro ubicado, los idiomas que se hablan allí y los canales que lo alcanzan. Ordena, filtra y exporta cualquier tabla; cada una indica sus fuentes y límites.",
+    "tabs": {
+      "cities": "Ciudades clave",
+      "langcity": "Idiomas aquí",
+      "languages": "Por país",
+      "operators": "Proveedores y operadores",
+      "messaging": "Mensajería"
+    },
+    "loading": "Cargando {name}…"
+  },
+  "posters": {
+    "heading": "Carteles de ciudades clave",
+    "tag": "Movilización de oración",
+    "itemNoun": "ciudad",
+    "itemNounPlural": "ciudades",
+    "soon": "Próximamente: una lista de oración para cada ciudad, con cada pueblo no alcanzado que vive en ella.",
+    "intro": "Una hoja imprimible para cada centro de población donde viven pueblos no alcanzados, con el nombre de un nomenclátor citado, nunca deducido.",
+    "otherRegion": "Otras"
+  },
+  "loadFailed": "No se pudieron cargar los datos: {detail}"
+}

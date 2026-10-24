@@ -1,0 +1,24 @@
+# One dx-maps team container, the same image a platform builds from ./Dockerfile:
+#   docker compose up -d --build
+# Settings come from a .env file next to this one (never committed): REPO_URL is required, GIT_TOKEN
+# for a private repo, and the OIDC_* settings for the sign-in; every setting is in deployment/cloud/README.md.
+# It is the same .env that `bun run dev` reads, and all of it reaches the container: on a server, keep
+# laptop-only settings (DX_PB_URL, DX_SYNC_*) out of it.
+services:
+  dx-maps:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      REPO_URL: ${REPO_URL:?set REPO_URL to the dx-maps git URL, in .env}
+      BRANCH: ${BRANCH:-development}
+      PRODUCTION_BRANCH: ${PRODUCTION_BRANCH:-main}
+    ports:
+      - "${PORT:-5173}:${PORT:-5173}"
+    volumes:
+      - dx-data:/data
+    mem_limit: 2560m
+    restart: unless-stopped
+volumes:
+  dx-data:

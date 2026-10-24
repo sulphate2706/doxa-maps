@@ -1,0 +1,21 @@
+{
+  "map": "मानचित्र",
+  "marker": "मानचित्र चिह्न",
+  "closePopup": "पॉपअप बंद करें",
+  "zoomIn": "ज़ूम इन",
+  "zoomOut": "ज़ूम आउट",
+  "resetBearing": "मानचित्र घुमाने के लिए खींचें, उत्तर पर लौटने के लिए क्लिक करें",
+  "toggleAttribution": "श्रेय दिखाएँ/छिपाएँ",
+  "mapFeedback": "मानचित्र पर प्रतिक्रिया",
+  "enterFullscreen": "पूर्ण स्क्रीन",
+  "exitFullscreen": "पूर्ण स्क्रीन से बाहर निकलें",
+  "findMyLocation": "मेरा स्थान खोजें",
+  "locationNotAvailable": "स्थान उपलब्ध नहीं",
+  "enableGlobe": "ग्लोब चालू करें",
+  "disableGlobe": "ग्लोब बंद करें",
+  "ctrlScroll": "मानचित्र ज़ूम करने के लिए Ctrl + स्क्रॉल करें",
+  "cmdScroll": "मानचित्र ज़ूम करने के लिए ⌘ + स्क्रॉल करें",
+  "twoFingers": "मानचित्र हिलाने के लिए दो उँगलियों का उपयोग करें",
+  "mapboxHomepage": "Mapbox मुखपृष्ठ",
+  "maplibreLogo": "MapLibre लोगो"
+}

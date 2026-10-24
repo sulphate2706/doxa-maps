@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "country": "País:",
+    "population": "População:",
+    "language": "Língua:",
+    "religion": "Religião:",
+    "languageFamily": "Família linguística:",
+    "peopleCommitted": "Comprometidos a orar:"
+  },
+  "messages": {
+    "noDescription": "Sem descrição disponível."
+  }
+}

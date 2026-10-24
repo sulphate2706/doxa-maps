@@ -1,0 +1,34 @@
+{
+  "//": "Preconfigured instances of the doxa-simple-map parameterized profile. ONE profile, rendered N ways by preset props. The build step reads this and emits a standalone embeddable page per instance at doxa-simple-map/<instance>/index.html (nested under the profile). This is DISTINCT from tabs (which nest many components into one element) — this SPLITS one profile into many render targets. The base profile (doxa-simple-map/doxa-simple-map/) still accepts live props; these are just named, preset variants for direct embedding.",
+  "profile": "doxa-simple-map",
+  "apiBaseUrl": "https://pray.doxa.life",
+  "instances": [
+    {
+      "id": "prayer",
+      "title": "Prayer Map",
+      "props": {
+        "instanceId": "embed-prayer",
+        "dataSource": "pray-tools",
+        "tabs": [{ "id": "prayer", "colorStrategy": "prayer", "legend": "prayer", "popup": "prayer" }]
+      }
+    },
+    {
+      "id": "engagement",
+      "title": "Engagement Map",
+      "props": {
+        "instanceId": "embed-engagement",
+        "dataSource": "pray-tools",
+        "tabs": [{ "id": "engagement", "colorStrategy": "engagement", "legend": "engagement", "popup": "engagement" }]
+      }
+    },
+    {
+      "id": "adoption",
+      "title": "Adoption Map",
+      "props": {
+        "instanceId": "embed-adoption",
+        "dataSource": "pray-tools",
+        "tabs": [{ "id": "adoption", "colorStrategy": "adoption", "legend": "adoption", "popup": "adoption" }]
+      }
+    }
+  ]
+}

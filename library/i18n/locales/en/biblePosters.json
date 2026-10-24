@@ -1,0 +1,30 @@
+{
+  "title": "Bible Posters",
+  "book": "Book",
+  "language": "Language",
+  "size": "Size",
+  "print": "Print",
+  "close": "Close",
+  "loading": "Loading the book…",
+  "fetchFailed": "Could not load this text. Please try again.",
+  "fitsAt": "Fits at {pt} pt in {cols} columns.",
+  "tooSmall": "Too small to read at this size.",
+  "trySize": "try {size}",
+  "books": {
+    "ACT": "Acts",
+    "MAT": "Matthew",
+    "JHN": "John",
+    "MRK": "Mark",
+    "LUK": "Luke",
+    "HEB": "Hebrews",
+    "GEN": "Genesis",
+    "1JN": "1 John",
+    "COL": "Colossians",
+    "1CO": "1 Corinthians",
+    "1PE": "1 Peter",
+    "JOS": "Joshua"
+  },
+  "posterDesign": {
+    "label": "Bible book poster"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "stage": "experimental",
+  "type": "single",
+  "label": "My first map",
+  "note": "Your map's name in the Plugin Studio and the gallery: change the label when you copy this folder, and rename this file with the .vue beside it (the file name is the profile name). The template ITSELF never appears in the Studio: it is kept off by its folder NAME (internal/generate-tree.mjs SCAFFOLD_BUNDLES and internal/plugin-gallery/discover.mjs), not by a flag in this file, so a copy under a new name is listed with this meta."
+}

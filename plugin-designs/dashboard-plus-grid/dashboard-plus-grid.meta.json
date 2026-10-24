@@ -1,0 +1,8 @@
+{
+  "stage": "production",
+  "mobile": "desktop-only",
+  "_comment": "Capability-4 composite that BAKES the research-dashboard + people-groups-grid into ONE self-contained element (both components imported directly + compiled into a single bundle, NO runtime bundle injection — unlike stack-demo which composes via src). Rendered stacked via the shared StackLayout so you scroll through both. This is the 'two elements baked into one' element the was asked for.",
+  "type": "nested-elements-mfe",
+  "composes": ["research-dashboard", "people-groups-grid"],
+  "label": "Dashboard + Grid (baked into one element, stacked to scroll)"
+}

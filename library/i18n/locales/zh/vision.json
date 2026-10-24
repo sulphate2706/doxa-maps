@@ -1,0 +1,22 @@
+{
+  "kicker": "DOXA · 异象",
+  "title": "每一个民族，每一个地方。",
+  "tagline": "从世界上所有族群到 DOXA 为之祷告的族群，全部依据数据计算。",
+  "funnelLabel": "从所有族群到 DOXA 族群",
+  "allLabel": "族群",
+  "allNote": "每个族群在其居住的每个国家各计一次",
+  "unreachedLabel": "未得之民",
+  "unreachedNote": "福音派信徒少于 2%",
+  "frontierLabel": "前沿族群",
+  "frontierNote": "福音派信徒少于 0.1%",
+  "doxaLabel": "DOXA 族群",
+  "doxaNote": "其中 {frontier} 个为前沿族群",
+  "people": "{n} 人",
+  "sources": "族群：{imb}，数据日期 {date}。DOXA 名单：pray.doxa.life，{date2}。",
+  "howCounted": "这些数字如何计算",
+  "ruleAll": "IMB 族群数据的每一行：一个国家中的一个族群。",
+  "ruleUnreached": "IMB 迷失优先级 0 至 2：福音派信徒少于 2%。",
+  "ruleFrontier": "IMB 迷失优先级 0：福音派信徒少于 0.1%。属于未得之民的一部分。",
+  "ruleDoxa": "DOXA 祷告名单上的每个族群，按民族和国家与 IMB 数据匹配。并非全部都是前沿族群。",
+  "about": "关于此地图"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "monolithic",
+  "label": "Research Dashboard",
+  "note": "Monolithic composite (capability 3): ONE root .vue nests ten internal view components — DashboardMapPanel, DashboardDataTable, DashboardChartsRail, DashboardFacetRail, DashboardTopBar, DashboardSearchHeader, DashboardFilterChips, DashboardDetailDrawer, DashboardBreadcrumb, DashboardResearchFilters — plus a responsive shell that switches between map/filters/table/charts. index.js registers exactly ONE tag (research-dashboard-map); none of the inner views is independently embeddable, which is precisely what separates monolithic (cap-3) from nested-elements-mfe (cap-4). Tier table: documentation/reference.md 'Profile types — the composability ladder'.",
+  "why_this_file_exists": "WITHOUT an explicit meta.json, discover.mjs INFERS a type, and the inference rule is 'an *.instances.json makes it parameterized, else single'. This bundle had neither, so it was being declared type:single = CAPABILITY 1 — a two-tier understatement of a profile that renders ~1,100 elements with a live map, a virtualized table, a charts rail and a facet rail. Inference is a fallback for genuinely simple bundles; anything at tier 3 or above must DECLARE itself (discover.mjs never infers monolithic/nested-elements-mfe/nested-mfe-spa). Found 2026-09-20 while reconciling the Gate-1 chain against the built manifest."
+}

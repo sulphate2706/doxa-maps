@@ -1,0 +1,40 @@
+{
+ "sources": {
+  "imb": {
+   "file": "data/people-groups/people_groups.csv",
+   "publisher": "IMB / peoplegroups.org",
+   "captured": "2026-07-16"
+  },
+  "doxa": {
+   "file": "data/people-groups/doxa-groups-snapshot.json",
+   "source": "https://pray.doxa.life/api/people-groups/list",
+   "fetched": "2026-09-25"
+  }
+ },
+ "steps": [
+  {
+   "id": "all",
+   "groups": 12379,
+   "population": 8288563969
+  },
+  {
+   "id": "unreached",
+   "groups": 7341,
+   "population": 4893057899
+  },
+  {
+   "id": "frontier",
+   "groups": 4754,
+   "population": 2813855464
+  },
+  {
+   "id": "doxa",
+   "groups": 2107,
+   "population": 209079159,
+   "frontier": 1745,
+   "unreached": 2082,
+   "matched": 2091,
+   "unmatched": 16
+  }
+ ]
+}

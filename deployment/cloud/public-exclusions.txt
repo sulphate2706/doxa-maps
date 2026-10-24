@@ -1,0 +1,23 @@
+# What must NEVER reach a public copy of this repo or a public build (the giveaway export and the
+# container's /cdn/). ONE list, read by both: deployment/cloud/apply-exclusions.sh.
+#   <path>        a file or folder, relative to the repo root, removed
+#   name:<glob>   any file whose name matches (case-insensitive), anywhere, removed
+#   keep:<name>   an exception to the name: rules
+#   content:<re>  a regex that must not appear in any built file (checked, not removed)
+.claude
+.forgejo
+.main-capture
+.merge-queue
+AGENT-BRIEF.md
+_archive
+data-private
+plugin-designs/key-cities
+# The bracket forms below ([-], [ ]) match the same names and text; they keep this list from matching its own content rule.
+name:*field[-]access*
+name:*visa*.json
+name:.env
+name:.env.*
+name:*.pem
+name:*.key
+keep:.env.example
+content:field[-]access|Visa[ ]Requirements

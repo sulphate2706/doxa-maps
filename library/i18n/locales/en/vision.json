@@ -1,0 +1,22 @@
+{
+  "kicker": "DOXA · Vision",
+  "title": "Every people. Every place.",
+  "tagline": "From every people group on earth to the ones DOXA prays for, counted from the data.",
+  "funnelLabel": "From all people groups to DOXA people groups",
+  "allLabel": "People groups",
+  "allNote": "each people group, in each country it lives in",
+  "unreachedLabel": "Unreached",
+  "unreachedNote": "under 2% evangelical",
+  "frontierLabel": "Frontier",
+  "frontierNote": "under 0.1% evangelical",
+  "doxaLabel": "DOXA people groups",
+  "doxaNote": "{frontier} of them are frontier",
+  "people": "{n} people",
+  "sources": "People groups: {imb}, data of {date}. DOXA list: pray.doxa.life, {date2}.",
+  "howCounted": "How these are counted",
+  "ruleAll": "Every row of the IMB people-group data: one people group in one country.",
+  "ruleUnreached": "IMB lostness priority 0 to 2: less than 2% evangelical.",
+  "ruleFrontier": "IMB lostness priority 0: less than 0.1% evangelical. A subset of the unreached.",
+  "ruleDoxa": "Every group on the DOXA prayer list, matched to the IMB data by people and country. Not all are frontier.",
+  "about": "About this map"
+}

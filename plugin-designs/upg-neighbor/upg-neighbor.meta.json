@@ -1,0 +1,8 @@
+{
+  "type": "monolithic",
+  "label": "My UPG Neighbors",
+  "config": {
+    "pinHint": false
+  },
+  "note": "Monolithic composite: ONE root .vue with two views over one dataset (data/tables/near-neighbors.json, built by scripts/build-near-neighbors.mjs from peoplegroups.org): Mobilize (an unreached group's E-1/E-2/E-3 reached neighbors, exportable as audience segments) and Movements (bridge languages ranked by the unreached population they reach). index.js registers exactly ONE tag (upg-neighbor). The rows of upg-neighbor.instances.json are preset opening views, not separate elements. pinHint:false because the shared coach-mark says 'Tap a coloured dot — someone still needs prayer', which is the prayer map's message, not this tool's, and on a phone it covers the brief."
+}

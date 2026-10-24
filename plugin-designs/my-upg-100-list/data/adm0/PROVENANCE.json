@@ -1,0 +1,1194 @@
+{
+  "generated": "2026-08-02T10:05:15.721Z",
+  "licences_fetched": "2026-09-28",
+  "source": "geoBoundaries gbOpen",
+  "endpoint": "https://www.geoboundaries.org/api/current/gbOpen/<ISO3>/<LEVEL>/",
+  "note": "gbOpen passes through each country UPSTREAM licence — this collection is MIXED-LICENCE with per-country attribution duties.",
+  "adm0_features": 162,
+  "_duty": "130 of the 162 countries carry a duty that travels with any redistribution of boundaries/world-adm0*.geojson; only 32 are duty-free. The 130 split TWO ways and the split matters more than the total: 65 are attribution-only, and 65 are SHARE-ALIKE CLASS (58 ODbL + 7 explicit ShareAlike), which can constrain how a derivative is licensed rather than merely how it is credited. See _duty_classes. This matters because the repo is intended to be given away: these obligations are not discharged by shipping the file. See data/boundaries/ATTRIBUTION, which references this table by path.",
+  "_duty_classes": {
+    "_why": "THREE CLASSES, NOT TWO — corrected 2026-09-28 after a review challenge, which was right. The first version gave only the 7 explicitly-named ShareAlike countries their own field on the reasoning that share-alike is a stronger duty than attribution. By that same reasoning the field should hold 65: Open Data Commons ODbL 1.0 is itself a SHARE-ALIKE licence for databases — alongside attribution it requires a Derivative Database be offered under ODbL, and it has a keep-open provision. Separating 7 from 58 buried exactly the thing the field existed to surface.",
+    "_precedent": "THIS REPO ALREADY TREATS ODbL AS CONSEQUENTIAL, which is the evidence rather than a reading of the licence: library/scripts/posters/data/README.md:36-50 records that Natural Earth's 1:10m ROADS were requested and DELIBERATELY NOT SHIPPED because of an ODbL attribution obligation. Someone here dropped a dataset over this class of duty.",
+    "_open": "NOT A LEGAL CONCLUSION. Whether a redistributed boundary file is a 'Derivative Database' under ODbL is exactly the clause a giveaway needs a real answer on, and nobody on this project is qualified to give it. Recorded here, and raised with the licensing items, so the question is visible rather than settled by omission.",
+    "duty_free": {
+      "count": 32,
+      "iso3": [
+        "AFG",
+        "ALB",
+        "AND",
+        "ARE",
+        "ATG",
+        "BEN",
+        "BGD",
+        "BGR",
+        "BHS",
+        "BIH",
+        "BOL",
+        "BRN",
+        "CHN",
+        "CIV",
+        "COL",
+        "DJI",
+        "ECU",
+        "GHA",
+        "IND",
+        "IRN",
+        "IRQ",
+        "JAM",
+        "KEN",
+        "LBN",
+        "LBY",
+        "LCA",
+        "MLT",
+        "PAN",
+        "PER",
+        "SLB",
+        "USA",
+        "VEN"
+      ]
+    },
+    "attribution_only": {
+      "count": 65,
+      "iso3": [
+        "ABW",
+        "ARM",
+        "ASM",
+        "AZE",
+        "BFA",
+        "BLM",
+        "BLR",
+        "BMU",
+        "BRA",
+        "BRB",
+        "BTN",
+        "CAF",
+        "CMR",
+        "COK",
+        "CUW",
+        "CYM",
+        "CZE",
+        "DMA",
+        "ESP",
+        "FRO",
+        "FSM",
+        "GGY",
+        "GLP",
+        "GMB",
+        "GRC",
+        "GUF",
+        "GUM",
+        "GUY",
+        "ISL",
+        "JOR",
+        "JPN",
+        "LBR",
+        "MDV",
+        "MLI",
+        "MNP",
+        "MRT",
+        "MSR",
+        "MYT",
+        "NAM",
+        "NCL",
+        "NGA",
+        "NIU",
+        "NPL",
+        "NZL",
+        "PHL",
+        "PRK",
+        "PRY",
+        "PSE",
+        "PYF",
+        "SDN",
+        "SEN",
+        "SHN",
+        "SLE",
+        "SOM",
+        "SSD",
+        "SWE",
+        "TCA",
+        "TZA",
+        "VGB",
+        "VIR",
+        "VNM",
+        "WLF",
+        "ZAF",
+        "ZMB",
+        "ZWE"
+      ]
+    },
+    "share_alike_class": {
+      "count": 65,
+      "odbl_1_0": {
+        "count": 58,
+        "iso3": [
+          "BHR",
+          "COD",
+          "COG",
+          "COM",
+          "CUB",
+          "CYP",
+          "DZA",
+          "EGY",
+          "ERI",
+          "ETH",
+          "FIN",
+          "FJI",
+          "GNB",
+          "GNQ",
+          "GRD",
+          "IDN",
+          "ISR",
+          "KAZ",
+          "KGZ",
+          "KHM",
+          "KIR",
+          "KWT",
+          "LAO",
+          "LIE",
+          "LKA",
+          "LUX",
+          "MAR",
+          "MHL",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MUS",
+          "MWI",
+          "MYS",
+          "OMN",
+          "PAK",
+          "PLW",
+          "PNG",
+          "QAT",
+          "RUS",
+          "SAU",
+          "SMR",
+          "STP",
+          "SUR",
+          "SWZ",
+          "SYR",
+          "TCD",
+          "TGO",
+          "THA",
+          "TJK",
+          "TON",
+          "TUN",
+          "UGA",
+          "UZB",
+          "VCT",
+          "VUT",
+          "WSM",
+          "YEM"
+        ]
+      },
+      "explicit_sharealike": {
+        "count": 7,
+        "iso3": [
+          "AGO",
+          "GAB",
+          "GEO",
+          "GIN",
+          "MMR",
+          "NER",
+          "TUR"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "countries": 162,
+    "duty_free": 32,
+    "attribution_or_sharealike": 130,
+    "by_licence": {
+      "Open Data Commons Open Database License 1.0": 58,
+      "Creative Commons Attribution 4.0 International (CC BY 4.0)": 33,
+      "Public Domain": 28,
+      "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)": 13,
+      "Creative Commons Attribution 4.0 (CC BY 4.0)": 11,
+      "Creative Commons Attribution-ShareAlike 2.0": 6,
+      "Creative Commons Attribution 2.5 Generic": 4,
+      "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication": 4,
+      "Open Government Licence v3.0": 2,
+      "Creative Commons Attribution 3.0 License": 2,
+      "Creative Commons Attribution-ShareAlike 3.0 Unported": 1
+    }
+  },
+  "licences": {
+    "ABW": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "ABW-ADM0-13396579",
+      "source": "Sentinel-2 10m LandCover"
+    },
+    "AFG": {
+      "license": "Public Domain",
+      "licenseSource": "hub.arcgis.com/datasets/2b63527870ef416bacf83bcaf388685f_0?geometry=53.805%2C30.812%2C81.556%2C37.181",
+      "boundaryID": "AFG-ADM0-77858471",
+      "source": "geoBoundaries, ArcGIS Hub"
+    },
+    "AGO": {
+      "license": "Creative Commons Attribution-ShareAlike 2.0",
+      "licenseSource": "osm-boundaries.com/Documentation",
+      "boundaryID": "AGO-ADM0-71192764",
+      "source": "Open Street Map"
+    },
+    "ALB": {
+      "license": "Public Domain",
+      "licenseSource": "en.wikipedia.org/wiki/Outline_of_Albania#/media/File",
+      "boundaryID": "ALB-ADM0-44221866",
+      "source": "geoBoundaries, Wikipedia"
+    },
+    "AND": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "AND-ADM0-62012451",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "ARE": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "ARE-ADM0-71949806",
+      "source": "geoBoundaries, Wikipedia"
+    },
+    "ARM": {
+      "license": "Creative Commons Attribution 2.5 Generic",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "ARM-ADM0-83012948",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "ASM": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "livingatlas.arcgis.com/landcover/",
+      "boundaryID": "ASM-ADM0-72969383",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "ATG": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "ATG-ADM0-82762519",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "AZE": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "AZE-ADM0-83331535",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "BEN": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BEN-ADM0-84139743",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "BFA": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "datacatalog.worldbank.org/public-licenses#cc-by",
+      "boundaryID": "BFA-ADM0-72675738",
+      "source": "GeoBoundaries, World Bank"
+    },
+    "BGD": {
+      "license": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BGD-ADM0-71232402",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "BGR": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BGR-ADM0-55223397",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "BHR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "BHR-ADM0-88433195",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "BHS": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "BHS-ADM0-55510642",
+      "source": "Natural Earth"
+    },
+    "BIH": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BIH-ADM0-45210373",
+      "source": "Wikimedia Commons"
+    },
+    "BLM": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "BLM-ADM0-10240690",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "BLR": {
+      "license": "Open Government Licence v3.0",
+      "licenseSource": "www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "boundaryID": "BLR-ADM0-10690812",
+      "source": "OpenDataSoft, WFPGeoNode"
+    },
+    "BMU": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "BMU-ADM0-94457821",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "BOL": {
+      "license": "Public Domain",
+      "licenseSource": "geo.gob.bo/geonetwork/srv/spa/catalog.search#/metadata/aeeb85a9-23df-48d4-a4e5-dd19e8b206db",
+      "boundaryID": "BOL-ADM0-4181665",
+      "source": "GeoBolivia, Derived from ADM3 layer"
+    },
+    "BRA": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/brazil-administrative-level-0-boundaries",
+      "boundaryID": "BRA-ADM0-88855331",
+      "source": "Instituto Brasileiro de Geografia e Estatística (IBGE)"
+    },
+    "BRB": {
+      "license": "Creative Commons Attribution 2.5 Generic",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BRB-ADM0-86514546",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "BRN": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BRN-ADM0-51999400",
+      "source": "Wikimedia Commons"
+    },
+    "BTN": {
+      "license": "Creative Commons Attribution 3.0 License",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "BTN-ADM0-95260433",
+      "source": "geoBoundaries, Wikimedia Commons; credit to author 'Babbage'"
+    },
+    "CAF": {
+      "license": "Creative Commons Attribution 2.5 Generic",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "CAF-ADM0-9860799",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "CHN": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "CHN-ADM0-351020",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "CIV": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "CIV-ADM0-2848817",
+      "source": "Natural Earth"
+    },
+    "CMR": {
+      "license": "Creative Commons Attribution 3.0 License",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "CMR-ADM0-59405334",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "COD": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "COD-ADM0-95928705",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "COG": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "COG-ADM0-69207274",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "COK": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "COK-ADM0-34037180",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "COL": {
+      "license": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "COL-ADM0-68469763",
+      "source": "Geoboundaries, Wikimedia"
+    },
+    "COM": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "COM-ADM0-59328049",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "CUB": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "CUB-ADM0-1007861",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "CUW": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "CUW-ADM0-78966013",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "CYM": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "CYM-ADM0-85170139",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "CYP": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "CYP-ADM0-39009224",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "CZE": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "creativecommons.org/licenses/by/4.0/",
+      "boundaryID": "CZE-ADM0-82561520",
+      "source": "Czech Office for Surveying"
+    },
+    "DJI": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "DJI-ADM0-68745449",
+      "source": "Natural Earth"
+    },
+    "DMA": {
+      "license": "Creative Commons Attribution 2.5 Generic",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "DMA-ADM0-26965486",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "DZA": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "DZA-ADM0-9297773",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "ECU": {
+      "license": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "ECU-ADM0-53374128",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "EGY": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "EGY-ADM0-61154384",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "ERI": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "ERI-ADM0-35143426",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "ESP": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "centrodedescargas.cnig.es/CentroDescargas/index.jsp#",
+      "boundaryID": "ESP-ADM0-43220588",
+      "source": "Instituto de Geografico Nacional"
+    },
+    "ETH": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "africaopendata.org/dataset/ethiopia-shapefiles",
+      "boundaryID": "ETH-ADM0-96871213",
+      "source": "Open Africa, Code for Ethiopia"
+    },
+    "FIN": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "FIN-ADM0-59408979",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "FJI": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "FJI-ADM0-17002246",
+      "source": "geoBoundaries, OpenStreetMap"
+    },
+    "FRO": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "FRO-ADM0-35448735",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "FSM": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "Data https",
+      "boundaryID": "FSM-ADM0-75748993",
+      "source": "OCHA ROP, Federated States of Micronesia Division of Statistics, 2010 Census of Population and Housing and Secretariat of the Pacific Community, Statistics for Development Division"
+    },
+    "GAB": {
+      "license": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+      "licenseSource": "en.wikipedia.org/wiki/Subdivisions_of_Gabon#/media/File",
+      "boundaryID": "GAB-ADM0-25889322",
+      "source": "geoBoundaries, Wikipedia"
+    },
+    "GEO": {
+      "license": "Creative Commons Attribution-ShareAlike 2.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "GEO-ADM0-33476915",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "GGY": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "GGY-ADM0-78196341",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "GHA": {
+      "license": "Public Domain",
+      "licenseSource": "purl.stanford.edu/rh271yg5585",
+      "boundaryID": "GHA-ADM0-71095829",
+      "source": "Stanford Digital Repository"
+    },
+    "GIN": {
+      "license": "Creative Commons Attribution-ShareAlike 2.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "GIN-ADM0-15034222",
+      "source": "OSM Boundaries"
+    },
+    "GLP": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "GLP-ADM0-43335349",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "GMB": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "datacatalog.worldbank.org/search/dataset/0038034",
+      "boundaryID": "GMB-ADM0-76403400",
+      "source": "geoBoundaries, Knippenberg, Erwin, & Moritz, Meyer. “The Hidden Potential of Mobile Phone Data Insights on COVID-19 in the Gambia.” The World Bank Data Catalog"
+    },
+    "GNB": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "GNB-ADM0-84417234",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "GNQ": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "GNQ-ADM0-36962785",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "GRC": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "data.humdata.org/dataset/gree",
+      "boundaryID": "GRC-ADM0-45001669",
+      "source": "EuroGeoGraphics, Regional IM Working Group - Europe"
+    },
+    "GRD": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "GRD-ADM0-78934639",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "GUF": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "GUF-ADM0-11180146",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / erase adm0 overlap / processed by IMB"
+    },
+    "GUM": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "GUM-ADM0-54299874",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "GUY": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "GUY-ADM0-53426202",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "IDN": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "IDN-ADM0-11942859",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "IND": {
+      "license": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+      "licenseSource": "commons.wikimedia.org/wiki/Category",
+      "boundaryID": "IND-ADM0-67634026",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "IRN": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "IRN-ADM0-36920063",
+      "source": "Natural Earth"
+    },
+    "IRQ": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "IRQ-ADM0-29142881",
+      "source": "Natural Earth"
+    },
+    "ISL": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "gatt.lmi.is/geonetwork/srv/eng/catalog.search#/metadata/A1919501-BA1F-4AEE-ABB8-00A3217258AA",
+      "boundaryID": "ISL-ADM0-46540832",
+      "source": "Lýsigagnagátt"
+    },
+    "ISR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "ISR-ADM0-37499698",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "JAM": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "JAM-ADM0-78483674",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "JOR": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "en.wikipedia.org/wiki/Geography_of_Jordan#/media/File",
+      "boundaryID": "JOR-ADM0-64752131",
+      "source": "geoBoundaries, Wikipedia"
+    },
+    "JPN": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "nlftp.mlit.go.jp/ksj/other/agreement.html#agree-01",
+      "boundaryID": "JPN-ADM0-22093344",
+      "source": "Ministry of Land, Infrastructure, Transport and Tourism National Land Numerical Information Download Site"
+    },
+    "KAZ": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "KAZ-ADM0-12445969",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "KEN": {
+      "license": "Public Domain",
+      "licenseSource": "rcmrd.africageoportal.com/datasets/africageoportal",
+      "boundaryID": "KEN-ADM0-21065076",
+      "source": "RCMRD GeoPortal, geoBoundaries"
+    },
+    "KGZ": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "KGZ-ADM0-96190653",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "KHM": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "KHM-ADM0-94605694",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "KIR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "KIR-ADM0-77750713",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "KWT": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "KWT-ADM0-12940379",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "LAO": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "LAO-ADM0-69401296",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "LBN": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "LBN-ADM0-18678258",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "LBR": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/liberia-admin-level-2-boundaries",
+      "boundaryID": "LBR-ADM0-59954213",
+      "source": "UNMIL, OCHA ROWCA"
+    },
+    "LBY": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "LBY-ADM0-86523102",
+      "source": "Natural Earth"
+    },
+    "LCA": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "LCA-ADM0-98054014",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "LIE": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "LIE-ADM0-60073359",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "LKA": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "LKA-ADM0-54457186",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "LUX": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "LUX-ADM0-64508393",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MAR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MAR-ADM0-5654995",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MDV": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "MDV-ADM0-21348113",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "MHL": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MHL-ADM0-89087692",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MLI": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "data.humdata.org/dataset/mali-admin-boundaries-level-1-2-and-3-including-2017-population-desagregated-by-sexe",
+      "boundaryID": "MLI-ADM0-8439793",
+      "source": "DNCT - Direction Nationale des Colelctivités Territorielles, DNP - Direction Nationale de la Population, United Nations Office for the Coordination of Humanitarian Affairs, Mali"
+    },
+    "MLT": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "MLT-ADM0-38034468",
+      "source": "geoBoundaries, Wikimedia Commons"
+    },
+    "MMR": {
+      "license": "Creative Commons Attribution-ShareAlike 2.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MMR-ADM0-35516675",
+      "source": "OpenStreetMap"
+    },
+    "MNE": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MNE-ADM0-69169217",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MNG": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MNG-ADM0-74336971",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MNP": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "MNP-ADM0-30081990",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "MOZ": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MOZ-ADM0-74581448",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MRT": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/mauritania-administrative-boundaries",
+      "boundaryID": "MRT-ADM0-45414712",
+      "source": "World Food Programme and OCHA"
+    },
+    "MSR": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "MSR-ADM0-1980395",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "MUS": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MUS-ADM0-6221475",
+      "source": "OpenStreetMap, Wambachers"
+    },
+    "MWI": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MWI-ADM0-68747529",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MYS": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "MYS-ADM0-87038898",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "MYT": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "MYT-ADM0-23144892",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "NAM": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "NAM-ADM0-72404144",
+      "source": "geoBoundaries, Wikimedia"
+    },
+    "NCL": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "NCL-ADM0-60653274",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "NER": {
+      "license": "Creative Commons Attribution-ShareAlike 2.0",
+      "licenseSource": "mapcruzin.com/free-niger-country-city-place-gis-shapefiles.htm",
+      "boundaryID": "NER-ADM0-22259449",
+      "source": "geoBoundaries, Open Street Map, Converted Lines into Polygon Layer"
+    },
+    "NGA": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "data.grid3.org/datasets/grid3-nigeria-state-boundaries/explore?location=8.992006%2C8.685290%2C6.82",
+      "boundaryID": "NGA-ADM0-39225661",
+      "source": "GRID3"
+    },
+    "NIU": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "NIU-ADM0-98221342",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "NPL": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "opendatanepal.com/dataset/new-political-and-administrative-boundaries-shapefile-of-nepal",
+      "boundaryID": "NPL-ADM0-63295607",
+      "source": "Geoboundaries, Open Data Nepal"
+    },
+    "NZL": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "www.stats.govt.nz/about_us/about-this-site/copyright-terms-of-use.aspx",
+      "boundaryID": "NZL-ADM0-90488144",
+      "source": "NZ Stats"
+    },
+    "OMN": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "OMN-ADM0-13493377",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "PAK": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "PAK-ADM0-80972501",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "PAN": {
+      "license": "Public Domain",
+      "licenseSource": "www.cia.gov/the-world-factbook/countries/panama/map",
+      "boundaryID": "PAN-ADM0-86535646",
+      "source": "The World Factbook - CIA"
+    },
+    "PER": {
+      "license": "Public Domain",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "PER-ADM0-96739428",
+      "source": "Wikimedia Commons"
+    },
+    "PHL": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "Data https",
+      "boundaryID": "PHL-ADM0-24100683",
+      "source": "OCHA Philippines, National Mapping and Resource Information Authority"
+    },
+    "PLW": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "PLW-ADM0-91809328",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "PNG": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "PNG-ADM0-50406891",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "PRK": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/dpr-korea-administrative-boundaries",
+      "boundaryID": "PRK-ADM0-24118357",
+      "source": "World Food Programme, OCHA ROAP"
+    },
+    "PRY": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "twitter.com/WMgeoLab/status/1179001467669078017/photo/1",
+      "boundaryID": "PRY-ADM0-89047665",
+      "source": "Direcion General de Estadica, Encuestas y Censos"
+    },
+    "PSE": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "PSE-ADM0-62339095",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / erase adm0 overlap / processed by IMB"
+    },
+    "PYF": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "PYF-ADM0-99418368",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "QAT": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "wiki.openstreetmap.org/wiki/Legal_FAQ#What_is_the_license_for_OpenStreetMap.27s_geodata.3F",
+      "boundaryID": "QAT-ADM0-15585745",
+      "source": "Open Street Map, Wambacher (https//wambachers-osm.website/boundaries/)"
+    },
+    "RUS": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "RUS-ADM0-89588193",
+      "source": "geoBoundaries, OpenStreetMap"
+    },
+    "SAU": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "SAU-ADM0-44563762",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "SDN": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/sudan-administrative-boundaries-levels-0-2",
+      "boundaryID": "SDN-ADM0-86632940",
+      "source": "Information Management Working Group (IMWG), OCHA ROSEA"
+    },
+    "SEN": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/senegal-administrative-boundaries",
+      "boundaryID": "SEN-ADM0-83371676",
+      "source": "Government of Senegal, OCHA ROWCA"
+    },
+    "SHN": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "SHN-ADM0-31036641",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "SLB": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "SLB-ADM0-12472743",
+      "source": "Natural Earth"
+    },
+    "SLE": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "africaopendata.org/dataset/sierra-leone-admin-level-4-boundaries",
+      "boundaryID": "SLE-ADM0-89611731",
+      "source": "openAfrica, geoBoundaries"
+    },
+    "SMR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "SMR-ADM0-7152903",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "SOM": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/somalia-administrative-boundaries",
+      "boundaryID": "SOM-ADM0-1309446",
+      "source": "United National Development Programme (UNDP), OCHA Somalia"
+    },
+    "SSD": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/about/license",
+      "boundaryID": "SSD-ADM0-54869323",
+      "source": "South Sudan Information Management Working Group (IMWG), National Bureau of Statistics (NBS), and OCHA, OCHA South Sudan"
+    },
+    "STP": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "STP-ADM0-85558007",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "SUR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "SUR-ADM0-90644646",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "SWE": {
+      "license": "Open Government Licence v3.0",
+      "licenseSource": "www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "boundaryID": "SWE-ADM0-32631220",
+      "source": "Open Data Soft, World Food Programme"
+    },
+    "SWZ": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "SWZ-ADM0-58888499",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "SYR": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "SYR-ADM0-73488105",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "TCA": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "TCA-ADM0-98428071",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "TCD": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "TCD-ADM0-68238479",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "TGO": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "TGO-ADM0-75638443",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "THA": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "THA-ADM0-76911100",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "TJK": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "TJK-ADM0-77803701",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "TON": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "TON-ADM0-98642404",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "TUN": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "TUN-ADM0-74400859",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "TUR": {
+      "license": "Creative Commons Attribution-ShareAlike 2.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "TUR-ADM0-4540299",
+      "source": "Open Street Map"
+    },
+    "TZA": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "TZA-ADM0-36199320",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "UGA": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "UGA-ADM0-62106908",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "USA": {
+      "license": "Public Domain",
+      "licenseSource": "www.census.gov/programs-surveys/geography/technical-documentation/naming-convention/cartographic-boundary-file.html",
+      "boundaryID": "USA-ADM0-2327393",
+      "source": "United States Census Bureau, MAF/TIGER Database"
+    },
+    "UZB": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "UZB-ADM0-45261887",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "VCT": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "VCT-ADM0-27863697",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "VEN": {
+      "license": "Public Domain",
+      "licenseSource": "www.naturalearthdata.com/about/terms-of-use/",
+      "boundaryID": "VEN-ADM0-16608129",
+      "source": "Natural Earth"
+    },
+    "VGB": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "VGB-ADM0-91551643",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "VIR": {
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "VIR-ADM0-52830179",
+      "source": "Sentinel-2 10-Meter Land Use/LandCover"
+    },
+    "VNM": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "commons.wikimedia.org/wiki/File",
+      "boundaryID": "VNM-ADM0-46766057",
+      "source": "geoBoundaries, Wikipedia"
+    },
+    "VUT": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "VUT-ADM0-10589628",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "WLF": {
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseSource": "sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "boundaryID": "WLF-ADM0-48161578",
+      "source": "raster2polygon from Sentinel-2 10m Land Cover where Image Year = 2021 / exclude gridcode = 1 (water) / dissolve / processed by IMB"
+    },
+    "WSM": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "WSM-ADM0-28090321",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "YEM": {
+      "license": "Open Data Commons Open Database License 1.0",
+      "licenseSource": "www.openstreetmap.org/copyright",
+      "boundaryID": "YEM-ADM0-85191696",
+      "source": "OpenStreetMap, Wambacher"
+    },
+    "ZAF": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/south-africa-admin-level-1-boundaries",
+      "boundaryID": "ZAF-ADM0-27424455",
+      "source": "OCHA ROSEA, South African Municipal Demarcation Board"
+    },
+    "ZMB": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.grid3.org/datasets/GRID3",
+      "boundaryID": "ZMB-ADM0-29467570",
+      "source": "Disaster Management and Mitigation Unit (DMMU) Zambia, OCHA ROSEA"
+    },
+    "ZWE": {
+      "license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+      "licenseSource": "data.humdata.org/dataset/zimbabwe-administrative-levels-0-3-boundaries",
+      "boundaryID": "ZWE-ADM0-69731989",
+      "source": "Zimbabwe National Statistics Agency (ZIMSTAT www.zimstat.co.zw) Central Statistics Office, OCHA ROSEA"
+    }
+  },
+  "unverified_provenance": [],
+  "gaps": [],
+  "_gaps_note": "The previous record listed 'CCK: meta HTTP 404'. RESOLVED AS OBSOLETE, not fixed: CCK is not in world-adm0.geojson at all (0 features, absent from the ISO list), so the 404 was a fetch for a country that never shipped. All 162 countries that ARE in the file returned a licence."
+}

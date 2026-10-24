@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · big-picture staging</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Capability-4 nested-elements dashboard: NO Mapbox / MapLibre peer needed. Everything is
+       self-contained (in-memory people-groups), so it all renders instantly. -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 28px 20px 48px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #9ca3af; font-size: 13px; margin: 6px 0 24px; max-width: 780px; }
+    .sub code { color: #c4b5fd; }
+    h2 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+      color: #94a3b8; margin: 30px 0 10px; }
+    .slot { border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; }
+    .slot .label { font: 12px/1 ui-monospace, monospace; color: #9ca3af; padding: 8px 12px;
+      background: #111827; border-bottom: 1px solid #1f2937; }
+    .frame { position: relative; height: 680px; }
+    bp-big-picture { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
+    /* Direct-JS host-page wiring demo: two SEPARATE nested elements, wired by THIS page. */
+    .stack { display: flex; flex-direction: column; height: 620px; }
+    .stack .cell.head { flex: none; }
+    .stack .cell.grid { flex: 1; position: relative; border-top: 1px solid #1f2937; }
+    bp-research-header { display: block; }
+    people-groups-grid { display: block; position: absolute; inset: 0; overflow: auto; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>big-picture · staging</h1>
+    <p class="sub">Capability&nbsp;4 — one folder → one bundle → <strong>three</strong> custom
+      elements. The composite <code>&lt;bp-big-picture&gt;</code> stacks the Cat-1
+      <code>&lt;bp-research-header&gt;</code> (search + dropdowns) ON&nbsp;TOP of the Cat-2
+      <code>&lt;people-groups-grid&gt;</code> (the REAL live grid) and wires them via
+      <strong>props/events</strong>: searching / picking a dropdown in the header filters the
+      grid below it, and the header shows the live matched count. The grid's OWN search +
+      dropdowns are turned off in the composite (<code>show-search="false"</code>) so it is
+      driven purely by props. Proves deployment&nbsp;method&nbsp;3 (direct-JS + props/events + SRI).</p>
+
+    <h2>1 · The composite dashboard (nested elements wired internally)</h2>
+    <div class="slot">
+      <div class="label">&lt;bp-big-picture&gt; — header event → parent → table props</div>
+      <div class="frame">
+        <bp-big-picture id="big-picture-slot"></bp-big-picture>
+      </div>
+    </div>
+
+    <h2>2 · Direct-JS host-page wiring (each element embedded separately, wired by THIS page)</h2>
+    <div class="slot">
+      <div class="label">host page listens for the header's <code>research-filter</code> event and sets the grid's <code>query</code>/<code>wagf-region</code>/<code>wagf-block</code>/<code>rop1</code>/<code>religion</code> attributes</div>
+      <div class="frame" style="height:auto;padding:12px;">
+        <div class="stack">
+          <div class="cell head"><bp-research-header id="h"></bp-research-header></div>
+          <div class="cell grid"><people-groups-grid id="t" show-search="false" show-filters="false"></people-groups-grid></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vite multi-page entry — emits the IIFE that registers all three custom elements. -->
+  <script type="module" src="./index.js"></script>
+
+  <!-- Deploy-method-3 proof: a PLAIN host page wires the two standalone nested elements
+       together through the DOM (header event → table attributes). No bundler code touched. -->
+  <script type="module">
+    const h = document.getElementById('h')
+    const t = document.getElementById('t')
+    if (h && t) {
+      h.addEventListener('research-filter', (e) => {
+        const d = (e.detail || {})
+        d.query      ? t.setAttribute('query',       d.query)      : t.removeAttribute('query')
+        d.wagfRegion ? t.setAttribute('wagf-region', d.wagfRegion) : t.removeAttribute('wagf-region')
+        d.wagfBlock  ? t.setAttribute('wagf-block',  d.wagfBlock)  : t.removeAttribute('wagf-block')
+        d.rop1       ? t.setAttribute('rop1',        d.rop1)       : t.removeAttribute('rop1')
+        d.religion   ? t.setAttribute('religion',    d.religion)   : t.removeAttribute('religion')
+      })
+    }
+  </script>
+</body>
+</html>

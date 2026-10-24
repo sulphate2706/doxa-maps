@@ -1,0 +1,5 @@
+{
+  "type": "single",
+  "label": "Country Posters — one poster section (<dxm-poster-section>)",
+  "note": "Shows the reusable <dxm-poster-section> element: one region's posters, collapsible, with the same cards and print options as the wall. Attributes: type (country), scope (a region key, e.g. africa), collapsible, collapsed, locale."
+}

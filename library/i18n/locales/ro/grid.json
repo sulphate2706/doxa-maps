@@ -1,0 +1,22 @@
+{
+  "search": "Caută popoare…",
+  "hide_filters": "Ascunde filtrele",
+  "show_filters": "Arată filtrele",
+  "total": "Total",
+  "showing": "Se afișează",
+  "load_more": "Încarcă mai mult",
+  "full_profile": "Profil complet",
+  "wagf_region": "Regiune",
+  "wagf_block": "Bloc de afinitate",
+  "rop1": "Popor",
+  "religion": "Religie",
+  "exact_filter": "Exact",
+  "clear_all": "Șterge tot",
+  "loading": "Se încarcă…",
+  "no_results": "Niciun popor nu corespunde acestui filtru.",
+  "type_to_search": "Scrie pentru a căuta...",
+  "load_failed": "Datele despre popoare nu au putut fi încărcate. Este o problemă de conexiune, nu a filtrului.",
+  "search_people_or_countries": "Caută popoare sau țări…",
+  "cards_per_row": "Carduri pe rând",
+  "cards_per_row_auto": "Automat"
+}

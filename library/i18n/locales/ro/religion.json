@@ -1,0 +1,14 @@
+{
+  "family": {
+    "Christianity": "Creștinism",
+    "Islam": "Islam",
+    "Hinduism": "Hinduism",
+    "Buddhism": "Budism",
+    "Ethnoreligion": "Etnoreligie",
+    "Judaism": "Iudaism",
+    "Sikhism": "Sikhism",
+    "Unaffiliated": "Fără afiliere",
+    "Other": "Altele",
+    "Unknown": "Necunoscută"
+  }
+}

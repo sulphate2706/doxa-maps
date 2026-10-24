@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "Alle Details anzeigen",
+  "showFullDetailsAria": "Alle Details zu {label} anzeigen",
+  "tab": {
+    "styles": "Stile",
+    "sizes": "Größen"
+  },
+  "styles": {
+    "heading": "Posterstile",
+    "intro": "Alle Postervorlagen an einem Ort, aus der Bibliothek mit Beispieldaten gezeichnet. Jede Karte trägt den Namen ihrer Konfiguration, damit Sie einen Agenten um genau diese bitten können."
+  },
+  "sizes": {
+    "heading": "Postergrößen",
+    "intro": "Jede Größe, in der ein Poster gedruckt werden kann, maßstabsgetreu gezeichnet. Die großen Größen werden auf mehrere Bögen gedruckt, die sich an der Wand überlappen; der rote Streifen zeigt, wo der nächste Bogen angeklebt wird.",
+    "lineup": "Alle Größen nebeneinander, maßstabsgetreu",
+    "paper": "Normales Druckerpapier",
+    "paperLetter": "US-Letter, 8,5 × 11 in",
+    "paperA4": "A4, 210 × 297 mm",
+    "dimsFt": "{w} × {h} ft",
+    "dimsIn": "{w} × {h} in",
+    "dimsInOne": "{v} in",
+    "rowSheets": "Bögen",
+    "rowSheet": "Jeder Bogen",
+    "rowOverlap": "Geklebte Überlappung",
+    "rowPhotos": "Fotos neben den Namen",
+    "rowPrint": "Druck",
+    "yes": "Ja",
+    "no": "Nein",
+    "printHome": "Jeder Drucker zu Hause",
+    "printShop": "Eine Druckerei (ein PDF, eine Seite pro Bogen)",
+    "layoutNote": "Die Bögen zeigen das Layout des 3 × 3 ft Länderposters in jeder Größe: Kopfzeile, Karte, Namen, Tabelle und die Fußzeile mit dem Bibelvers. Das in jeder Größe gezeichnete Poster erscheint unter Stile, sobald es verfügbar ist.",
+    "sideLanes": "{dims}, seitliche Namensspalten",
+    "packetPage1": "{paper} (Seite 1 der Gebetsmappe)",
+    "panels": "{dims}, Tafeln: {n}",
+    "anySize": "Jede Größe aus der gemeinsamen Größentabelle"
+  },
+  "family": {
+    "mapSheet": "Kartenblätter",
+    "packet": "Gebetsmappe",
+    "cards": "Gebetskarten",
+    "wall": "Wandtafeln",
+    "mapPrint": "Kartendruck",
+    "plugins": "Aus anderen Plugins",
+    "experimental": "Experimentell (in Arbeit)",
+    "upgZone": "UPG100-Gebietsplakate"
+  },
+  "tpl": {
+    "mapSheetCountry": "Länder-Kartenblatt",
+    "mapSheetPacketPage": "Kartenseite der Mappe",
+    "packetFull": "Gebetsmappe, vollständig",
+    "packetLightweight": "Gebetsmappe, kompakt",
+    "cards": "Gebetskarten",
+    "blessPanels": "Tafeln der Segnen-Wand",
+    "mapPrint": "Kartendruck",
+    "upgZonePoster": "UPG100-Gebietsplakat",
+    "upgZonePacket": "UPG100-Gebetsmappe, Seite 1"
+  },
+  "missing": {
+    "bless": "Die Bögen, die Klebestreifen und die Lage der Kartenreihen stammen aus der gemeinsamen Tafelgeometrie; die Karten sind als Layout dargestellt, weil die Segnen-Wand ihre Karten in ihrem eigenen Plugin zeichnet.",
+    "mapPrint": "Diese Vorlage druckt die Live-Karte, die der Leser gerade ansieht, und hat deshalb kein Beispielbild.",
+    "noCountryAtSize": "Heute wird kein Land in dieser Größe gedruckt: Indien, das einzige Land, das es wurde, wird jetzt nur noch in 5 × 8 ft gedruckt. Die Vorlage wird hier mit einem Beispielland gezeigt."
+  },
+  "details": {
+    "configName": "Name der Konfiguration",
+    "copyName": "Kopieren",
+    "size": "Größe",
+    "fileSize": "Dateigröße",
+    "fileSizeUnknown": "Wird gemessen, wenn das Poster gezeichnet wird",
+    "settings": "Einstellungen",
+    "sample": "Beispieldaten",
+    "renderer": "Generator",
+    "legacy": "Alte Größe: Sie wird noch gedruckt, aber die Druckauswahl bietet sie nicht mehr an.",
+    "forAgents": "Um diese Vorlage zu verwenden, sagen Sie einem Agenten: verwende die Konfiguration {name}.",
+    "openPage": "Seite öffnen"
+  },
+  "templateCount": "{n} Vorlage | {n} Vorlagen",
+  "fromPlugin": "Wird von seinem eigenen Plugin erstellt. „Alle Details anzeigen“ zeigt es live."
+}

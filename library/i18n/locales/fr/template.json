@@ -1,0 +1,11 @@
+{
+  "title": "Ma première carte",
+  "engineMissing": "Le moteur de la carte ne s’est pas chargé.",
+  "mapFailed": "La carte n’a pas pu démarrer : {detail}",
+  "profileB": {
+    "title": "Profil B",
+    "servedFrom": "Servi depuis {file} dans le bundle {bundle}.",
+    "note": "Note : {note}",
+    "noNote": "(aucune note transmise dans profile-config)"
+  }
+}

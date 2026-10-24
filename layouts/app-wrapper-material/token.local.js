@@ -1,0 +1,1 @@
+window.DOXA_TOKEN = "MAPBOX_PUBLIC_TOKEN";

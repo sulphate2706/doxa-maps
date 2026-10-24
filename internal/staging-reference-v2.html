@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>doxa-maps · staging tree (reference v2)</title>
+<link rel="icon" href="data:,">
+<!--
+  staging-reference-v2.html — REFERENCE TEMPLATE for generate-tree.mjs's root page render.
+  Design: a semantic tree, friendly on mobile and desktop, with no header over the map and no stale
+  organisation references.
+
+  RULES THIS FILE DEMONSTRATES (lift into the generator's template function):
+  1. The page IS the tree: nested <details>/<summary>, one per node. No tabs, no
+     header bar competing with maps. One slim <header> that never overlaps content
+     (normal flow, not fixed/absolute — the "random header on top of the map" class
+     of bug comes from position:fixed/absolute headers over iframe containers).
+  2. STATIC + INLINED: the generator inlines window.MANIFEST at build time (below is
+     a live sample in the real doxa-maps-manifest@1 shape). No fetch(), file:// safe.
+  3. LAZY MAPS: iframe src is set only when its <details> opens. 20 maps = 0 loads
+     until toggled. Token rides ?tk= (never baked).
+  4. MOBILE-FIRST: single column, full-width iframes, 16:10 aspect; desktop just gets
+     max-width + breathing room. No JS layout.
+  5. KIND MARKERS: bundle/profile/instance colored via summary::before; classes
+     .tname/.thint match the tree CSS already in progress.
+-->
+<style>
+:root{
+  --bg:#0a0e15;--surf:#121a27;--line:#223047;--ink:#eef2f7;--mut:#9aa7b8;
+  --bundle:#46d4ff;--profile:#b9a6f5;--instance:#5ee0a0;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.45}
+header{padding:14px 16px;border-bottom:1px solid var(--line)}      /* normal flow — can never overlap the maps */
+header h1{margin:0;font-size:15px;font-weight:600;letter-spacing:.4px}
+header p{margin:2px 0 0;font-size:12px;color:var(--mut)}
+main{max-width:920px;margin:0 auto;padding:10px 12px 60px}
+
+/* ---- the semantic tree ---- */
+details{border:1px solid var(--line);border-radius:8px;margin:8px 0;background:var(--surf)}
+details details{margin:8px 10px}                                    /* nesting indent, no JS */
+summary{padding:10px 12px;cursor:pointer;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+summary::-webkit-details-marker{display:none}
+summary::before{font-size:11px;font-weight:700;letter-spacing:.5px;padding:1px 7px;border-radius:10px}
+details.bundle  > summary::before{content:"BUNDLE";  color:var(--bundle);  border:1px solid var(--bundle)}
+details.profile > summary::before{content:"PROFILE"; color:var(--profile); border:1px solid var(--profile)}
+details.instance> summary::before{content:"INSTANCE";color:var(--instance);border:1px solid var(--instance)}
+.tname{font-weight:600;font-size:14px}
+.thint{color:var(--mut);font-size:12px}
+summary a.deep{margin-left:auto;color:var(--mut);font-size:11px;text-decoration:none}
+summary a.deep:hover{color:var(--ink)}
+
+/* ---- map frames: full-width, aspect-locked, mobile-first ---- */
+.frame{padding:0 10px 10px}
+.frame iframe{width:100%;aspect-ratio:16/10;border:1px solid var(--line);border-radius:6px;background:#000;display:block}
+@media (min-width:720px){ .frame iframe{aspect-ratio:16/9} }
+</style>
+</head>
+<body>
+<header>
+  <h1>doxa-maps — staging tree</h1>
+  <p>bundle → profile → instance · click to expand · maps load on open</p>
+</header>
+<main id="tree"></main>
+
+<script>
+/* Build-time: generator replaces this object with the real manifest (inline, no fetch). */
+window.MANIFEST = {
+  "schema":"doxa-maps-manifest@1","embedBase":"/doxa-maps",
+  "bundles":[
+    {"bundle":"doxa-research-map","elements":["doxa-research-map"],
+     "profiles":[{"profile":"research-map","element":"doxa-research-map",
+       "iframeUrl":"/doxa-maps/doxa-research-map/research-map/index.html",
+       "description":"7-web-component research map",
+       "instances":[]}]},
+    {"bundle":"doxa-simple-map","elements":["doxa-simple-map"],
+     "profiles":[{"profile":"doxa-simple-map","element":"doxa-simple-map",
+       "iframeUrl":"/doxa-maps/doxa-simple-map/doxa-simple-map/index.html",
+       "description":"",
+       "instances":[{"id":"prayer","title":"Prayer preset","iframeUrl":""},
+                    {"id":"engagement","title":"Engagement preset","iframeUrl":""}]}]}
+  ]};
+
+const tk = new URLSearchParams(location.search).get('tk') || '';
+const withTk = u => u ? (tk ? u + (u.includes('?')?'&':'?') + 'tk=' + encodeURIComponent(tk) : u) : '';
+/* Carry ?lang= / ?locale= into the lazy leaf iframe too — leaves bake <html lang="en">. */
+const qlang = new URLSearchParams(location.search).get('lang') || new URLSearchParams(location.search).get('locale') || '';
+const withLang = u => u ? (qlang ? u + (u.includes('?')?'&':'?') + 'lang=' + encodeURIComponent(qlang) : u) : '';
+const el = (tag, cls, html) => { const n=document.createElement(tag); if(cls)n.className=cls; if(html!=null)n.innerHTML=html; return n; };
+
+/* ONE node renderer used for all three kinds — the data/presentation split. */
+function node(kind, name, hint, id, frameUrl, children){
+  const d = el('details', kind); d.id = id;
+  if(kind==='bundle') d.open = true;                       /* bundles open, rest closed */
+  const s = el('summary');
+  s.append(el('span','tname',name));
+  if(hint) s.append(el('span','thint',hint));
+  const a = el('a','deep','#'); a.href = '#'+id; s.append(a);
+  d.append(s);
+  if(frameUrl){
+    const f = el('div','frame'); const ifr = el('iframe'); ifr.loading='lazy';
+    f.append(ifr); d.append(f);
+    d.addEventListener('toggle', () => { if(d.open && !ifr.src) ifr.src = withLang(withTk(frameUrl)); });
+  }
+  (children||[]).forEach(c => d.append(c));
+  return d;
+}
+
+const root = document.getElementById('tree');
+for(const b of window.MANIFEST.bundles){
+  const profiles = (b.profiles||[]).map(p => {
+    const instances = (p.instances||[]).map(i =>
+      node('instance', i.title || i.id, `preset "${i.id}"`,
+           `${b.bundle}-${p.profile}-${i.id}`, i.iframeUrl || p.iframeUrl, []));
+    return node('profile', p.profile, p.description || `<${p.element}>`,
+                `${b.bundle}-${p.profile}`, p.iframeUrl, instances);
+  });
+  root.append(node('bundle', b.bundle, (b.elements||[]).map(e=>`<${e}>`).join(' '),
+                   b.bundle, null, profiles));
+}
+/* deep link: open ancestors of #hash target */
+if(location.hash){ let t=document.querySelector(location.hash); while(t){ if(t.tagName==='DETAILS') t.open=true; t=t.parentElement.closest('details'); } }
+</script>
+</body>
+</html>

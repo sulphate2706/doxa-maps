@@ -1,0 +1,30 @@
+{
+  "title": "Poster biblici",
+  "book": "Libro",
+  "language": "Lingua",
+  "size": "Dimensione",
+  "print": "Stampa",
+  "close": "Chiudi",
+  "loading": "Caricamento del libro…",
+  "fetchFailed": "Impossibile caricare questo testo. Riprova.",
+  "fitsAt": "Sta a {pt} pt su {cols} colonne.",
+  "tooSmall": "Troppo piccolo da leggere a questa dimensione.",
+  "trySize": "prova {size}",
+  "books": {
+    "ACT": "Atti",
+    "MAT": "Matteo",
+    "JHN": "Giovanni",
+    "MRK": "Marco",
+    "LUK": "Luca",
+    "HEB": "Ebrei",
+    "GEN": "Genesi",
+    "1JN": "1 Giovanni",
+    "COL": "Colossesi",
+    "1CO": "1 Corinzi",
+    "1PE": "1 Pietro",
+    "JOS": "Giosuè"
+  },
+  "posterDesign": {
+    "label": "Poster di un libro della Bibbia"
+  }
+}

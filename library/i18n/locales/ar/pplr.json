@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "الدين",
+    "ropTree": "شجرة ROP",
+    "languageFamilies": "عائلات اللغات",
+    "semanticTrees": "الأشجار الدلالية",
+    "nameLocales": "لغات أسماء الشعوب",
+    "ropSunburst": "شمس ROP",
+    "allPins": "كل دبابيس الشعوب في الدول",
+    "rosetta": "جدول معرّفات الأنظمة",
+    "coverage": "تغطية الترجمة",
+    "index": "الفهرس"
+  },
+  "status": {
+    "loading": "جارٍ التحميل…",
+    "loadingPgData": "جارٍ تحميل بيانات الشعوب…",
+    "loadingPins": "جارٍ تحميل دبابيس الشعوب…",
+    "loadingPolygons": "جارٍ تحميل حدود الدول…",
+    "addingPolygons": "جارٍ إضافة حدود الدول…",
+    "addingPins": "جارٍ إضافة دبابيس الشعوب…",
+    "loadingCoverage": "جارٍ تحميل التغطية لكل دولة…",
+    "addingPinsOnTop": "جارٍ إضافة دبابيس الشعوب فوقها…",
+    "loadingRop": "جارٍ تحميل تسلسل ROP…",
+    "loadingLanguage": "جارٍ تحميل بيانات اللغات…",
+    "loadingPinsRosetta": "جارٍ تحميل الدبابيس وعيّنة Rosetta…",
+    "error": "خطأ: {message}",
+    "readyTranslations": "الدبابيس: {pins} · انقر أي دبوس لرؤية الاسم بـ17 لغة",
+    "readyCoverage": "جاهز · الدول: {countries} ملوّنة بمتوسط لغات الترجمة / 17 (كل الصفوف: {rows})",
+    "readyD3": "المدخلات: {entries} · مرّر للتكبير · اسحب للتحريك",
+    "readyRop": "جاهز · الدبابيس: {pins} · بمعرّف PEID: {peid}",
+    "readyRosetta": "جاهز · الدبابيس: {pins} · عيّنات Rosetta: {samples} (★ ذهبية)",
+    "readyPins": "جاهز · دبابيس الشعوب في الدول: {pins} · انقر أي دبوس",
+    "readyLanguage": "جاهز · الدبابيس: {pins} · تغطية العائلات {coverage}% · أعلى 25 = {top}%",
+    "readyReligion": "الدبابيس: {pins} · الأكثر شيوعًا: {religion} ({count})",
+    "d3Failed": "تعذّر تحميل مكتبة الرسوم البيانية."
+  },
+  "ui": {
+    "chooseView": "اختر عرضًا",
+    "search": "ابحث بالشعب أو المكان أو اللغة أو الدين…",
+    "baseMap": "الخريطة الأساسية",
+    "dataSources": "مصادر البيانات",
+    "legend": "مفتاح الخريطة",
+    "openLegend": "افتح مفتاح الخريطة",
+    "clearSelectionEsc": "إلغاء التحديد (Esc)",
+    "closeEsc": "إغلاق (Esc)",
+    "close": "إغلاق",
+    "retry": "أعد المحاولة",
+    "loadingMap": "جارٍ تحميل الخريطة",
+    "flyToPin": "انتقل إلى الدبوس",
+    "primaryReligion": "الدين الرئيسي",
+    "ropHierarchy": "تسلسل ROP الهرمي"
+  },
+  "pill": {
+    "religion": "توزيع الأديان · انقر دبوسًا للتفاصيل",
+    "ropTree": "تسلسل ROP الهرمي · الكتلة ← المجموعة ← الشعب ← PGIC",
+    "languageFamilies": "العائلات العرقية اللغوية (PPLR) · انقر دبوسًا للتفاصيل",
+    "sunburst": "تسلسل ROP الهرمي · الكتلة ← مجموعة الشعوب · مرّر للتكبير",
+    "pins": "كل دبابيس الشعوب في الدول · انقر لمعرّفات الأنظمة",
+    "coverage": "تغطية الترجمة · التظليل = متوسط اللغات المعبّأة لكل دولة · انقر دبوسًا أو دولة",
+    "rosetta": "جدول معرّفات الأنظمة · اللون = المعرّفات الموجودة · ★ = صف نموذجي",
+    "translations": "اسم الشعب · {n} لغة · انقر أي نقطة"
+  },
+  "legendTitle": {
+    "avgLocales": "متوسط اللغات / {n}",
+    "idCoverage": "تغطية المعرّفات"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD، الثلاثة",
+      "imbOnly": "IMB فقط",
+      "jpOnly": "JP فقط",
+      "neither": "لا هذا ولا ذاك"
+    },
+    "samplePg": "★ شعب نموذجي",
+    "missingIds": "لم تُربط بعد في PPLR: {ids}. الصف الفارغ نقص في البيانات وليس خطأ."
+  },
+  "popup": {
+    "noName": "(بلا اسم)",
+    "country": "الدولة",
+    "religion": "الدين",
+    "language": "اللغة",
+    "family": "العائلة",
+    "affinityBloc": "الكتلة",
+    "cluster": "المجموعة",
+    "peopleCluster": "مجموعة الشعوب",
+    "peopleGroup": "الشعب",
+    "pgCount": "الشعوب",
+    "avgLocalesFilled": "متوسط اللغات المعبّأة",
+    "iso3Country": "رمز الدولة ISO-3"
+  },
+  "card": {
+    "nameInLocales": "الاسم في {n} لغة"
+  },
+  "title": "خرائط بيانات PPLR",
+  "index": {
+    "title": "التحقق من بيانات PPLR",
+    "help": "انقر بطاقة، أو اختر عرضًا من الأعلى."
+  }
+}

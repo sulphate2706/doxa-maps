@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · posterverse staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: #f3f3f1; color: #3b463d;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    posterverse-app { display: block; position: fixed; inset: 0; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <!-- Capability 5, the app shell: one element, <posterverse-app>, is a vertical-tab rail of every
+       poster plugin. Each tab loads its plugin's own script lazily on first open. -->
+  <!-- This page is our own (the dev server's staging page), so the shell owns the address: the open tab is
+       written to ?tab=, a reload keeps it and a copied link opens it. -->
+  <posterverse-app profile-config='{"urlOwner":"app"}'></posterverse-app>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

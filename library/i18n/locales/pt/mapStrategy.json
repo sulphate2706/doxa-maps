@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "Veja o campo todo, restrinja-o aos povos que você realmente pode alcançar e leve a lista com você como planilha.",
+      "p1": "Toque em uma região e role a grade para ver as fotos dos povos, quase como visitar o país e conhecer os rostos de uma cultura.",
+      "p2": "Filtre por povo, lugar, língua, religião ou oração; o mapa, a tabela e os totais se movem juntos, e você vê o mesmo recorte de três formas.",
+      "p3": "Exporte as linhas filtradas como planilha CSV: uma lista de trabalho para ordenar, compartilhar e planejar offline.",
+      "p4": "Use-o para definir metas de curto prazo: os grupos pelos quais orar e que alcançar hoje, e os que preparar para amanhã.",
+      "p5": "Ele foi feito para ser adaptado a iniciativas «da mídia aos movimentos»: comece pelos dados e depois aja pelos grupos que eles revelam."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Comece onde a necessidade é maior. Use as camadas de oração e de engajamento para encontrar as zonas prioritárias e depois mobilize oração pelos povos que estão nelas.",
+      "p1": "Veja quem ainda está esperando. Na aba “Oração”, cada ponto mostra se esse povo tem alguém orando por ele, se ainda precisa de oração ou se está totalmente coberto em oração.",
+      "p2": "Encontre as lacunas. Mude para “Engajamento” para ver onde o trabalho começou e onde ninguém está engajado ainda. Essas lacunas são as zonas prioritárias para mobilizar.",
+      "p3": "Pesquise uma parte do mundo de cada vez. Restrinja por região, língua ou religião, ou pesquise a lista pelo nome. A lista acompanha o mapa, e você lê os nomes por trás dos pontos.",
+      "p4": "Conheça um povo. Toque em um ponto para ver o país, a população, a língua e a religião dele, e depois use “Ore por eles” para começar a orar por esse povo pelo nome.",
+      "p5": "Mantenha simples. Este mapa acompanha o progresso num nível simples, num relance. Para os dados completos, vá para “Visão geral”; para recursos de oração para imprimir, vá para “Regiões” ou “Lista UPG100”."
+    },
+    "regions-dashboard": {
+      "bottom": "Cerca de 170 países têm o próprio cartaz, pacote e baralho de cartões. Mobilize um grupo para orar por cada país, e todos os países ficam cobertos em oração.",
+      "p1": "Faça uma lista dos discípulos, igrejas e líderes que você já conhece, e do país para o qual cada um foi chamado. Entregue a cada um os recursos de oração daquele país.",
+      "p2": "Comece perto de casa, com discípulos e igrejas locais. Depois vá aos líderes e obreiros nativos no campo naqueles países, e envie a eles o cartaz, o pacote e os cartões do país para imprimirem onde estão.",
+      "p3": "O pacote de oração é o mais estratégico dos três: tudo o que é preciso para orar por um país, em um único pacote para imprimir.",
+      "p4": "Os cartões ajudam mais quando você tem um grupo a quem distribuí-los: um povo por cartão.",
+      "p5": "Os pacotes por país servem a uma base de mobilização maior, ou a um país que você quer ver alcançado. Se mobilizar está difícil, as listas UPG100 são um começo mais simples."
+    },
+    "prayer-map": {
+      "bottom": "Um movimento de oração cresce quando cada parceiro mostra o mesmo mapa, então coloque este mapa em cada site da sua rede.",
+      "p1": "Liste os sites da sua rede: igrejas, ministérios, redes de oração, parceiros missionários, cada site que o seu pessoal já visita.",
+      "p2": "Compartilhe ou adicione em poucos toques. O botão Compartilhar dá um link para enviar, ou “Adicione ao seu site”: escolha um tamanho, copie o código e cole no WordPress, Squarespace, Wix ou qualquer site que aceite HTML.",
+      "p3": "Escolha a visão que combina com o site. “Oração”, “Engajamento” e “Adoção” compartilham cada uma a própria página, então uma rede de oração pode mostrar a cobertura de oração e uma igreja que envia pode mostrar o engajamento.",
+      "p4": "Ele se mantém atualizado sozinho. Cada cópia do mapa lê os mesmos dados de pray.doxa.life sempre que abre, então o progresso aparece no site de cada parceiro sem que ninguém o atualize.",
+      "p5": "Leve as pessoas a um nome. Tocar em um ponto abre esse povo e um link para a página de oração dele, para que um visitante comece logo a orar por um povo específico."
+    },
+    "upg-100": {
+      "bottom": "Jesus fez os cinco mil se sentarem em grupos de cinquenta e de cem antes de alimentá-los (Lucas 9:14). Estas listas fazem o mesmo com cerca de 2.100 povos não alcançados: divididos em listas desse tamanho, a tarefa inteira vira uma carga que uma pessoa consegue levar.",
+      "p1": "27 listas são 27 cartazes, 27 pacotes de oração e 27 baralhos de cartões. Coloque um nas mãos de cada um de 27 discípulos, igrejas ou líderes nativos, e cada um dos grupos recebe oração pelo nome.",
+      "p2": "Entregue cada lista a alguém que continue orando por ela. Líderes nativos podem orar nas próprias línguas dos povos.",
+      "p3": "Isso segue uma prática comprovada nos movimentos: discípulos oram regularmente por cinquenta a cem pessoas que conhecem (família, amigos, vizinhos, colegas de trabalho e de escola). Uma lista UPG100 é a mesma carga, por pessoas que nunca conheceram.",
+      "p4": "Comece com uma lista e uma pessoa. O pacote traz tudo daquela lista numa só impressão, e os cartões ajudam quando um grupo divide a lista."
+    },
+    "cities-internet": {
+      "bottom": "Onde as pessoas já estão online, o evangelho pode alcançá-las nas telas e plataformas que usam todos os dias. Encontre esses lugares e use a mídia para abrir a porta a discípulos e igrejas reais (da mídia aos movimentos).",
+      "p1": "Comece pelos países onde a maioria das pessoas está online (60% ou mais). Ali a mídia online pode alcançar pessoas que não têm igreja nem crente por perto.",
+      "p2": "Toque em um país e leia o cartão dele: quantas pessoas usam a internet, quantas assinaturas de celular existem e quais plataformas as pessoas usam ali. Chegue até elas nas plataformas delas, não nas suas, e confira a lista com alguém do país primeiro.",
+      "p3": "Combine este mapa com “Recursos do Evangelho”. Encontre um povo que já tenha Escrituras, filme ou áudio na própria língua e compartilhe esses links online num país onde as pessoas estão conectadas.",
+      "p4": "Onde poucas pessoas estão online, ou o número não foi medido, não comece por uma tela: envie pessoas e leve recursos em áudio e impressos. Os números são nacionais (a Índia também por estado), então uma cidade pode ser bem diferente do seu país.",
+      "p5": "A mídia é a porta, não o objetivo. Antes de publicar, planeje como alguém que responde online vai conhecer uma pessoa real e se juntar a um grupo que estuda a Bíblia junto."
+    },
+    "gospel-resources": {
+      "bottom": "Muitos grupos não alcançados já têm Escrituras, filme ou áudio na própria língua que nunca chegaram até eles. Os recursos existem; a lacuna é colocá-los nas mãos das pessoas, pessoalmente ou online.",
+      "p1": "Mude para “Recursos encontrados” e procure os grupos que têm Escrituras e filme. Para eles as ferramentas estão prontas; o que falta é a entrega.",
+      "p2": "Envie obreiros com os recursos. Abra a ficha de um grupo e passe os links dele (e os das outras línguas que ele fala) aos obreiros, igrejas e líderes que podem alcançar esse grupo.",
+      "p3": "Combine este mapa com “Cidades com Internet”. Onde o país de um grupo está bem conectado, os mesmos links podem alcançar as pessoas online nas plataformas usadas ali (da mídia aos movimentos).",
+      "p4": "Onde houver treinamento Zume na língua do grupo, coloque-o ao lado das Escrituras e do filme, para que quem crer seja treinado para fazer discípulos.",
+      "p5": "Use “Lacuna” para orar e planejar pelos grupos para os quais ainda não se encontrou nada. Muitos têm uma porta de entrada por uma língua-ponte, e “nada encontrado” é motivo para procurar mais, não uma resposta final."
+    }
+  }
+}

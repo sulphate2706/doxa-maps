@@ -1,0 +1,36 @@
+worldmap.svg — provenance
+=========================
+
+WHAT IT IS
+  The faint world-map watermark DX-life paints behind its people-group list. Their
+  UupgsList sets it inline on the list root (app/components/public/UupgsList.vue:451):
+  background-image: url(/assets/images/worldmap.svg), background-size 60%,
+  background-position top, min-height 400px. Measured on their live
+  /regions/cameroon: HTTP 200, 62,740 bytes over the wire, computed background-size
+  60% / position 50% 0% / repeat no-repeat.
+
+WHERE IT CAME FROM
+  Copied byte-for-byte from the DX-life repository:
+    doxa-life/public/assets/images/worldmap.svg
+  Same organisation, copied so the regions clone matches their page. 311 KB on disk;
+  small against this tree's other assets, which run 644 KB to 42 MB.
+
+WHY THERE IS NO LICENCE FILE BESIDE IT
+  Checked, rather than assumed. A full-file scan for copyright, licence, attribution,
+  author, creator, <title>, <desc>, <metadata>, rdf:/dc: nodes and the usual stock-library
+  names (Natural Earth, simplemaps, amCharts, Freepik, Shutterstock, OSM, Mapbox) returns
+  NOTHING. The file is a plain vector — 394 <path> elements, three groups, no <image> and
+  no <text> — and its ids are design-tool export names (Group_345,
+  data-name="Group 345"), i.e. authored by their designer rather than downloaded with
+  embedded credits. DX-life keeps no licence file alongside public/assets/images/ either;
+  they treat that folder as their own artwork.
+  So this is internal reuse of a first-party asset, not redistribution of a third-party
+  one. Recorded here because the alternative was leaving the judgement implicit.
+
+  Contrast with the vendored typefaces, which ARE third-party and therefore carry their
+  licence in the folder that serves them: public/assets/fonts/bebas-neue/LICENSE and
+  .../poppins/LICENSE, both the SIL Open Font License 1.1, as the OFL requires.
+
+NOTE ON THE FILENAME
+  Extensionless on purpose. check:public-hygiene refuses a *.txt in a served folder, and
+  the font LICENSE files set that precedent.

@@ -1,0 +1,8 @@
+{
+  "_comment": "Rudder — private, offline, streaming voice-to-text. DESKTOP target: the speech model runs in the local backend (backend/rudder-engine: NVIDIA NeMo-Speech.cpp + Nemotron 3.5 ASR GGUF), started by `bun run dev` and run by Tauri as a sidecar. Not for public web embeds: a website has no local engine.",
+  "type": "single",
+  "widget": { "corner": "bottom-right" },
+  "label": "Rudder — voice to text (desktop)",
+  "targets": ["desktop", "widget"],
+  "backend": "backend/rudder-engine"
+}

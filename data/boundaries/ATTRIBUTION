@@ -1,0 +1,61 @@
+BOUNDARY DATA — SOURCES AND ATTRIBUTION
+=======================================
+
+The .geojson files in this folder are third-party boundary data. Every value below is taken
+VERBATIM from the upstream metadata (the geoBoundaries API, https://www.geoboundaries.org/api/current/gbOpen/<ISO3>/<LEVEL>/).
+Nothing here is our own wording about a licence.
+
+gb-IND-ADM1-full.geojson, gb-IND-ADM1-full-web.geojson
+  source          geoBoundaries gbOpen (www.geoboundaries.org)
+  boundaryID      IND-ADM1-1811400
+  licence         Creative Commons Attribution 2.5 India (CC BY 2.5 IN)
+  licenceSource   github.com/datameet/maps
+  year            2011
+  ATTRIBUTION IS REQUIRED for this file: it is Creative Commons Attribution, so a work that
+  redistributes or displays it must credit the source above.
+
+gb-IND-ADM1.geojson, gb-IND-ADM1-web.geojson
+  The same India ADM1 boundary as above, curated to the UPG-100 list's partition.
+  Same source, same boundaryID, same licence, same attribution duty.
+
+gb-CHN-ADM1.geojson
+  source          geoBoundaries gbOpen (www.geoboundaries.org)
+  boundaryID      CHN-ADM1-43563684
+  licence         Public Domain
+  licenceSource   commons.wikimedia.org/wiki/File
+  year            2019
+  No attribution duty: upstream records this boundary as Public Domain.
+
+world-adm0.geojson, world-adm0-web.geojson
+  source          geoBoundaries gbOpen (www.geoboundaries.org), assembled per country
+  features        162 countries
+  licence         MIXED — and now ESTABLISHED per country, not merely acknowledged.
+  THE PER-COUNTRY TABLE IS THE AUTHORITY, and it lives in ONE place on purpose:
+      plugin-designs/my-upg-100-list/data/adm0/PROVENANCE.json
+  It records boundaryLicense, licenseSource and boundaryID for all 162, each value taken
+  verbatim from https://www.geoboundaries.org/api/current/gbOpen/<ISO3>/<LEVEL>/ (162 queries,
+  0 failures, one spot-check re-verified against the live API). This file deliberately does NOT
+  copy that table: one table in two places drifts.
+
+  130 OF THE 162 CARRY A DUTY. Only 32 are duty-free (28 Public Domain, 4 CC0). By class:
+
+    ATTRIBUTION-ONLY (credit the source)
+      44  CC BY 4.0        13  CC BY 3.0 IGO        4  CC BY 2.5        2  CC BY 3.0
+      2  Open Government Licence v3
+
+    SHARE-ALIKE CLASS — A STRONGER DUTY: a derivative may have to be licensed alike, which is
+    the class that actually constrains giving this repository away.
+      58  Open Data Commons ODbL 1.0
+       7  Creative Commons ShareAlike 2.0 / 3.0 — AGO GAB GEO GIN MMR NER TUR
+
+    ODbL IS LISTED IN THAT CLASS DELIBERATELY. Alongside attribution it requires a Derivative
+    Database to be offered under ODbL and carries a keep-open provision, so by volume the
+    share-alike question covers 65 of 162 countries, not 7. This repository has already acted on
+    that reading once: library/scripts/posters/data/README.md records that Natural Earth's 1:10m
+    ROADS were requested and deliberately NOT shipped because of an ODbL obligation.
+    WHETHER 'licensed alike' binds a giveaway of this repository is a legal question, not a
+    measurement, and it is open. It is recorded here so nobody has to rediscover it.
+
+    duty-free: 28 Public Domain, 4 CC0.
+
+See documentation/THIRD-PARTY.md for the whole shipped tree.

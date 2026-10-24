@@ -1,0 +1,22 @@
+{
+  "kicker": "DOXA · Viziune",
+  "title": "Fiecare popor. Fiecare loc.",
+  "tagline": "De la toate grupurile etnice ale lumii la cele pentru care se roagă DOXA, numărate din date.",
+  "funnelLabel": "De la toate grupurile etnice la grupurile etnice DOXA",
+  "allLabel": "Grupuri etnice",
+  "allNote": "fiecare grup etnic, în fiecare țară în care trăiește",
+  "unreachedLabel": "Neatinse",
+  "unreachedNote": "sub 2% evanghelici",
+  "frontierLabel": "Frontieră",
+  "frontierNote": "sub 0,1% evanghelici",
+  "doxaLabel": "Grupuri etnice DOXA",
+  "doxaNote": "{frontier} dintre ele sunt de frontieră",
+  "people": "{n} oameni",
+  "sources": "Grupuri etnice: {imb}, date din {date}. Lista DOXA: pray.doxa.life, {date2}.",
+  "howCounted": "Cum sunt numărate",
+  "ruleAll": "Fiecare rând din datele IMB despre grupuri etnice: un grup etnic într-o țară.",
+  "ruleUnreached": "Prioritatea de pierzare IMB 0–2: sub 2% evanghelici.",
+  "ruleFrontier": "Prioritatea de pierzare IMB 0: sub 0,1% evanghelici. O submulțime a celor neatinse.",
+  "ruleDoxa": "Fiecare grup de pe lista de rugăciune DOXA, potrivit cu datele IMB după popor și țară. Nu toate sunt de frontieră.",
+  "about": "Despre această hartă"
+}

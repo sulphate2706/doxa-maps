@@ -1,0 +1,5 @@
+{
+  "stage": "experimental",
+  "label": "Gospel Resources — every resource and every gap, in tables",
+  "note": "Label + an EXPLICIT stage; type stays inferred (`single`). Eleven tables: what EXISTS with its real URL, and the people groups where nothing was found with the pools searched recorded per row. Stage is declared rather than inherited: profile-meta.mjs defaults a meta-less profile to experimental, so writing this file without a stage key would leave the value resting on that default — and a later change to it would silently promote a production bundle profile."
+}

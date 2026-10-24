@@ -1,0 +1,11 @@
+{
+  "title": "मेरा पहला नक्शा",
+  "engineMissing": "मानचित्र इंजन लोड नहीं हुआ।",
+  "mapFailed": "मानचित्र शुरू नहीं हो सका: {detail}",
+  "profileB": {
+    "title": "प्रोफ़ाइल B",
+    "servedFrom": "{bundle} बंडल में {file} से परोसा गया।",
+    "note": "टिप्पणी: {note}",
+    "noNote": "(profile-config में कोई टिप्पणी नहीं दी गई)"
+  }
+}

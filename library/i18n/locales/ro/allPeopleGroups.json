@@ -1,0 +1,13 @@
+{
+  "title": "Toate grupurile etnice",
+  "locations": "{n} locații (grup × țară)",
+  "doxa": "Grupuri etnice DOXA",
+  "frontier": "Frontieră — nimic început",
+  "unreached": "Neatinse — lucrarea începe",
+  "reached": "Atinse — biserica este acolo",
+  "hint": "Faceți clic pe un rând pentru a le vedea pe toate · din nou pentru tot",
+  "loading": "Se încarcă toate grupurile etnice…",
+  "loadError": "Harta nu a putut fi încărcată.",
+  "pray": "Rugați-vă pentru ei →",
+  "population": "pop. {n}"
+}

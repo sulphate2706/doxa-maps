@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · India Posters staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #f7f4ec; min-height: 100%; font-family: system-ui, sans-serif; }
+    bless-india-posters { display: block; width: 100%; min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <!-- In dev (the pilot) the preview flag is on and the attempts render; a production build shows
+       only the withheld sentence. The element registers itself from ./index.js. -->
+  <bless-india-posters></bless-india-posters>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

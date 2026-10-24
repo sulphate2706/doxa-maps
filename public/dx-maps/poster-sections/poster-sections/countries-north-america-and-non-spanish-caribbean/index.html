@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- THIS PAGE IS OURS. The only thing that knows a document belongs to the plugin is the page
+       the generator writes, so it says so here. library/i18n reads it before reflecting an RTL
+       locale on <html dir>; nothing else sets it, so a PARTNER page defaults to "not ours" and
+       is never touched. Absence must mean restraint — an embedded plugin flipping a partner's
+       whole <html> because a reader followed a ?lang=ar link is the bug this prevents. -->
+  <script>window.MAP_OWNS_PAGE = true;</script>
+  <title>Country posters — North America &amp; Non-Spanish Caribbean · poster-sections</title>
+  <link rel="icon" href="data:,">
+  <!-- NON-MAP leaf (app-shell / composite / grid / card / chart-table): NO map peer.
+       This element draws no map tiles, so it needs no Mapbox/MapLibre engine and MUST NOT
+       gate on a token. Any nested MAP (in a composite/shell) renders in its own iframe leaf,
+       which loads its own map peer + token. A peer here would be dead weight + imply a gate. -->
+  <style>
+    /* BARE full-page map — no chrome. The custom element IS the page, so the
+       browser URL shares the map itself.
+       HEIGHT IN svh, NOT inset:0. A fixed box with inset:0 follows the phone's DYNAMIC viewport, so the map
+       (and a legend sheet sized from it) changes height every time the address bar hides or shows. 100svh is
+       the viewport WITH the bar shown and never changes; when the bar hides, the page background shows below
+       instead of the map resizing. On a desktop svh = the viewport, so nothing moves there. The 100% before it
+       is the fallback for a browser without svh, which would otherwise size the box to its content.
+       --profile-min-h:0 opts out of ProfileLoader's 100dvh floor, which would grow the element again. */
+    html, body { height: 100%; margin: 0; background: #0a0e15; }
+    #slot, poster-sections { position: fixed; inset: 0 auto auto 0; width: 100%; height: 100%; height: 100svh; --profile-min-h: 0; display: block; }
+    #status { position: fixed; inset: 0; z-index: 2; display: grid; place-items: center;
+      padding: 24px; text-align: center; color: #9aa7b8;
+      font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    #status.err { color: #f87171; }
+
+    /* ── PRINT, BOTH LEAF SHAPES ────────────────────────────────────────────────────────────
+       Two things every generated leaf got wrong on paper, because no generated page has ever
+       carried an @media print rule (measured: 0 across the tree).
+
+       The background is #0a0e15 — a dark page, printed. Browsers drop background colours by
+       default, but a reader who ticks "Background graphics" to get the MAP also gets the page
+       flooded black, and that is the reader who most wants the printout.
+
+       #status is the LOADING OVERLAY: position:fixed, inset:0, over everything. On paper it is
+       a full sheet reading "loading…" above the content that did in fact load. It is hidden
+       only while it is NOT an error — an error still prints, because a blank sheet with the
+       explanation suppressed is worse than a sheet that says what went wrong. */
+    @media print {
+      html, body { height: auto; background: #fff; }
+      #status:not(.err) { display: none; }
+      /* ★ RELEASE THE FIXED HOST, MEASURED (a print check on a035408e2). The leaf pins both the
+         slot and the element with position:fixed; inset:0. A fixed element is painted once, on the
+         first page, so the printed document was exactly ONE viewport: 900px tall, while the content
+         continued to y=1753. Every plugin whose leaf is taller than a screen has been printing its
+         top screenful and silently dropping the rest — the dashboard printed its stats and its map,
+         then blank to the bottom of the sheet.
+         min-height, not a released height alone: a full-bleed map leaf takes its SIZE from this rule,
+         so height:auto with nothing else can leave the element a zero-height box and print an empty
+         page — a worse failure than the one being fixed, and the discriminator is not isMap
+         (region-dashboards is isMap:true and is a scrolling dashboard). The floor keeps a definite
+         box for the map case while letting a taller document grow onto page two. */
+      #slot, poster-sections { position: static; inset: auto; width: 100%; height: auto; min-height: 14cm; }
+    }
+  </style>
+</head>
+<body>
+  <div id="slot"></div>
+  <div id="status">loading…</div>
+
+  <script>window.MAP_APP_API_URL = "https://pray.doxa.life";</script>
+  <!-- Bundle IIFE — registers the <poster-sections> custom element. -->
+  <script src="../../poster-sections.js" integrity="sha384-LQGVabx0PjkHXcDLJXcHezzBuP23Wdz3LZQbSUqC8Hd3S43bgXJ/vKLmAdS7QJX2" crossorigin="anonymous"></script>
+
+  <script>
+    // Mapbox token resolution — the A3 ladder, in precedence order:
+    //   1. prop            — a token hardcoded into this page's profile-config (config.tk)
+    //   2. ?tk= URL param  — token carried in the shared link
+    //   3. baked token     — opt-in literal token inlined at build time (build-config.token)
+    //   A token from rungs 1-3 is used DIRECTLY (no network). Otherwise a token
+    //   *endpoint* is resolved and fetched:
+    //   4. window.MAP_TOKEN_URL override  5. configured TOKEN_SRC URL  6. same-origin /api/maps/token
+    // TOKEN_SRC is treated as DATA, never eval'd: the literal "window.MAP_TOKEN_URL"
+    // means "read that global"; anything else is used as a URL — so both a global
+    // name and a plain URL are safe (no SyntaxError footgun).
+    (function () {
+      var slot = document.getElementById('slot');
+      var status = document.getElementById('status');
+      var BASE_CONFIG = {"assetsBase":"../../../assets","profile":"poster-sections","type":"country","scope":"north-america-and-non-spanish-caribbean","urlOwner":"app"};
+      // Framed (the iframe embed on a partner's page): READ the address, never write it. A push inside a frame adds
+      // entries to the partner page's own Back button (the joint session history).
+      try { if (window.self !== window.top) delete BASE_CONFIG.urlOwner } catch (e) { delete BASE_CONFIG.urlOwner }
+      // MapLibre map pages AND shell pages (app-shell / nested-mfe-spa) need NO token:
+      // the ladder below is skipped entirely and the element mounts immediately.
+      // (A leaf whose engine is MapLibre at RUNTIME joins them — see PROVIDER below.)
+      var TOKEN_FREE = true;
+      // A token-free COMPOSITE still nests plugins, and a nested Mapbox map reads window.MAP_TOKEN
+      // rather than this page's profile-config. With no baked token (the public copy), it must get
+      // one from ?tk= or a pasted token, or be asked for one — see the rungs below.
+      var NESTS_MAPS = false;
+      var TOKEN_SRC = "window.MAP_TOKEN_URL";
+      var BAKED_TOKEN = "";
+      // Expose the baked token as window.MAP_TOKEN so a BAKED composite (a compiled element that mounts
+      // a map component directly, with no ProfileLoader/profile-config wrapper) still finds a token —
+      // useMapInstance falls back to window.MAP_TOKEN. No effect when BAKED_TOKEN is empty.
+      // A token the HOST set before this page ran outranks the baked one (measured: it used to lose).
+      var HOST_TOKEN = (typeof window.MAP_TOKEN === 'string' && window.MAP_TOKEN) || '';
+      if (BAKED_TOKEN && typeof window !== 'undefined' && !window.MAP_TOKEN) { window.MAP_TOKEN = BAKED_TOKEN; }
+      var DEFAULT_TOKEN_URL = '/api/maps/token';
+
+      function fail(msg) { if (status) { status.className = 'err'; status.textContent = '⚠ ' + msg; } }
+      // No token anywhere on the ladder → ask ONCE, store locally, remount. No dead ends.
+      function askToken() {
+        if (!status) return;
+        status.className = 'err';
+        status.innerHTML = 'map needs a Mapbox token — ' +
+          '<input id="tkIn" type="password" placeholder="paste pk.… (stays in this browser)" ' +
+          'style="font:12px ui-monospace,monospace;padding:6px 8px;border-radius:6px;border:1px solid #223047;background:#0e1623;color:#eef2f7;width:min(320px,70vw)"> ' +
+          '<button id="tkGo" style="font:700 11px ui-monospace,monospace;padding:7px 12px;border-radius:999px;border:0;cursor:pointer;background:linear-gradient(90deg,#46d4ff,#b9a6f5);color:#0a0e15">use it</button>';
+        var go = document.getElementById('tkGo');
+        if (go) go.addEventListener('click', function () {
+          var v = (document.getElementById('tkIn').value || '').trim();
+          if (!v) return;
+          try { localStorage.setItem('MAPS_STAGING_TK', v); } catch (e) {}
+          mount(v);
+        });
+      }
+      /* ★ RELEASE THE LOAD BACKDROP WHEN THE ELEMENT MOUNTS (BUG-GOSPEL-MAP-BLACK-RECTANGLE).
+         html/body carry background:#0a0e15 so the light #status text (#9aa7b8) is readable while the
+         bundle loads. That backdrop is LOAD-STATE CHROME, but it outlived its moment: any gap the
+         mounted element does not cover shows it through, because every layer above body is
+         transparent. On gospel-resources/resources-map that produced a 352x126 DARK RECTANGLE between
+         the legend card and the detail panel — MEASURED rgb(8,12,18), i.e. the page background, NOT an
+         unpainted canvas as first supposed. Clearing it here (the one place we already know the
+         element is up) is a one-shot style write — no resize, no repaint loop. Keep it a one-shot
+         write: do NOT turn this into a per-frame or per-event handler (a resize loop strobes the screen). */
+      function done() {
+        if (status && status.parentNode) { status.parentNode.removeChild(status); }
+        document.documentElement.style.background = '#f3f3f1';
+        document.body.style.background = '#f3f3f1';
+      }
+
+      function mount(token) {
+        if (!token && !TOKEN_FREE) { return askToken(); }
+        // Nested maps (a composite's children) read window.MAP_TOKEN, not this element's config.
+        if (token && typeof window !== 'undefined' && !window.MAP_TOKEN) { window.MAP_TOKEN = token; }
+        try {
+          var cfg = token ? Object.assign({}, BASE_CONFIG, { tk: token }) : BASE_CONFIG;
+          var el = document.createElement("poster-sections");
+          el.setAttribute('profile-config', JSON.stringify(cfg));
+          slot.innerHTML = '';
+          slot.appendChild(el);
+          done();
+        } catch (e) { fail(e && e.message ? e.message : String(e)); }
+      }
+
+      function qp(name) {
+        try { return new URLSearchParams(location.search).get(name) || ''; }
+        catch (e) { return ''; }
+      }
+
+      function extractToken(data) {
+        if (typeof data === 'string') return data.trim();
+        if (data && typeof data === 'object') return data.token || data.tk || data.accessToken || '';
+        return '';
+      }
+
+      // Rungs 1-3b: an actual token → mount directly, no fetch.
+      // 2b = localStorage: the paste-once store shared with the staging pages
+      // (MAPS_STAGING_TK) — paste a token ONCE anywhere in the tree, every page uses it.
+      var stored = '';
+      try { stored = localStorage.getItem('MAPS_STAGING_TK') || ''; } catch (e) {}
+      var urlTk = qp('tk');
+      if (urlTk) { try { localStorage.setItem('MAPS_STAGING_TK', urlTk); } catch (e) {} }
+      var directToken = (BASE_CONFIG && BASE_CONFIG.tk) || urlTk || stored || HOST_TOKEN || BAKED_TOKEN;
+      // PROVIDER — the same ladder as resolveMapProvider (library/composables/useMapProvider.js):
+      // profile-config.provider → ?provider= → window.MAP_PROVIDER → 'auto'. An explicit engine wins,
+      // and 'auto' draws with MapLibre whether or not a token is available (the element decides that).
+      // This page only decides whether to FIND a token first: when one is on offer (a rung above, a
+      // host-set window.MAP_TOKEN, or a token endpoint) it resolves it, since place search uses it on
+      // either engine; with none, it mounts at once, keyless: no token prompt, no request to Mapbox.
+      var ASKED = String((BASE_CONFIG && BASE_CONFIG.provider) || qp('provider') || window.MAP_PROVIDER || '').toLowerCase().trim();
+      var EXPLICIT = (ASKED === 'mapbox' || ASKED === 'maplibre') ? ASKED : '';
+      var HAS_TOKEN = !!(directToken || (typeof window.MAP_TOKEN === 'string' && window.MAP_TOKEN));
+      var HAS_ENDPOINT = !!(window.MAP_TOKEN_URL || (TOKEN_SRC && TOKEN_SRC !== 'window.MAP_TOKEN_URL'));
+      if (EXPLICIT === 'maplibre' || (!EXPLICIT && !HAS_TOKEN && !HAS_ENDPOINT)) { TOKEN_FREE = true; }
+      if (TOKEN_FREE) {
+        if (directToken && typeof window !== 'undefined' && !window.MAP_TOKEN) { window.MAP_TOKEN = directToken; }
+        mount('');
+        // A token-free composite with no token anywhere: its content renders, but its nested maps
+        // cannot. Ask once; the token is stored for the whole tree and the page reloads with it.
+        // Only when Mapbox was ASKED for: under 'auto' the nested maps draw with MapLibre instead.
+        if (NESTS_MAPS && !directToken && EXPLICIT === 'mapbox') {
+          var bar = document.createElement('div');
+          bar.id = 'status';
+          bar.setAttribute('style', 'position:fixed;left:12px;right:12px;bottom:12px;z-index:2147483000;padding:10px 12px;border-radius:10px;background:#0e1623;color:#eef2f7;font:13px system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25)');
+          document.body.appendChild(bar);
+          status = bar;
+          askToken();
+          var goBtn = document.getElementById('tkGo');
+          if (goBtn) goBtn.addEventListener('click', function () {
+            var v = (document.getElementById('tkIn').value || '').trim();
+            if (v) { location.reload(); }
+          });
+        }
+        return;
+      }
+      if (directToken) { return mount(directToken); }
+
+      // Rungs 4-6: resolve the token ENDPOINT candidates and try them IN ORDER — the first
+      // one that answers with a token wins. Order: window.MAP_TOKEN_URL override → the
+      // configured TOKEN_SRC (an ABSOLUTE url, so a tree hosted on a CDN away from the API
+      // still finds it) → same-origin /api/maps/token (dev, or the site hosting both).
+      // A single hard-coded pick used to kill the page when its one url 404'd or was
+      // blocked by CORS; a shared link must work wherever the tree is hosted.
+      var candidates = [];
+      function addCandidate(u) { if (u && candidates.indexOf(u) === -1) candidates.push(u); }
+      addCandidate(window.MAP_TOKEN_URL);
+      addCandidate(TOKEN_SRC && TOKEN_SRC !== 'window.MAP_TOKEN_URL' ? TOKEN_SRC : '');
+      addCandidate(DEFAULT_TOKEN_URL);
+
+      function fetchToken(i, errors) {
+        if (i >= candidates.length) {
+          // Every endpoint failed. Under 'auto' that means no token: draw with MapLibre, keyless.
+          if (!EXPLICIT) { TOKEN_FREE = true; return mount(''); }
+          // Mapbox was asked for: say which endpoints failed, and still offer the paste-once box.
+          askToken();
+          if (status) {
+            var d = document.createElement('div');
+            d.textContent = '⚠ Token fetch failed from ' + candidates.join(', ') + ' — set window.MAP_TOKEN_URL or pass ?tk=. (' + errors.join(' | ') + ')';
+            status.insertBefore(d, status.firstChild);
+          }
+          return;
+        }
+        var url = candidates[i];
+        return fetch(url)
+          .then(function (r) {
+            if (!r.ok) throw new Error(url + ' → HTTP ' + r.status);
+            var ct = r.headers.get('content-type') || '';
+            return ct.indexOf('json') !== -1 ? r.json() : r.text();
+          })
+          .then(function (data) {
+            var tk = extractToken(data);
+            if (!tk) throw new Error(url + ' → no token in response');
+            mount(tk);
+          })
+          .catch(function (e) {
+            errors.push(e && e.message ? e.message : String(e));
+            return fetchToken(i + 1, errors);
+          });
+      }
+      fetchToken(0, []);
+    })();
+  </script>
+</body>
+</html>

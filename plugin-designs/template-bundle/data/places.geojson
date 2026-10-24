@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "name": "Nairobi" },   "geometry": { "type": "Point", "coordinates": [36.82, -1.29] } },
+    { "type": "Feature", "properties": { "name": "Cairo" },     "geometry": { "type": "Point", "coordinates": [31.24, 30.04] } },
+    { "type": "Feature", "properties": { "name": "Delhi" },     "geometry": { "type": "Point", "coordinates": [77.21, 28.61] } },
+    { "type": "Feature", "properties": { "name": "Jakarta" },   "geometry": { "type": "Point", "coordinates": [106.85, -6.21] } },
+    { "type": "Feature", "properties": { "name": "Lima" },      "geometry": { "type": "Point", "coordinates": [-77.04, -12.05] } },
+    { "type": "Feature", "properties": { "name": "Istanbul" },  "geometry": { "type": "Point", "coordinates": [28.98, 41.01] } }
+  ]
+}

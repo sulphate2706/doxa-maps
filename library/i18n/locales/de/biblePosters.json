@@ -1,0 +1,30 @@
+{
+  "title": "Bibel-Poster",
+  "book": "Buch",
+  "language": "Sprache",
+  "size": "Größe",
+  "print": "Drucken",
+  "close": "Schließen",
+  "loading": "Buch wird geladen…",
+  "fetchFailed": "Dieser Text konnte nicht geladen werden. Bitte erneut versuchen.",
+  "fitsAt": "Passt bei {pt} pt in {cols} Spalten.",
+  "tooSmall": "Zu klein, um in dieser Größe lesbar zu sein.",
+  "trySize": "versuchen Sie {size}",
+  "books": {
+    "ACT": "Apostelgeschichte",
+    "MAT": "Matthäus",
+    "JHN": "Johannes",
+    "MRK": "Markus",
+    "LUK": "Lukas",
+    "HEB": "Hebräer",
+    "GEN": "1. Mose",
+    "1JN": "1. Johannes",
+    "COL": "Kolosser",
+    "1CO": "1. Korinther",
+    "1PE": "1. Petrus",
+    "JOS": "Josua"
+  },
+  "posterDesign": {
+    "label": "Bibelbuch-Poster"
+  }
+}

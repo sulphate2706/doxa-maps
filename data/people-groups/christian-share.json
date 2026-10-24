@@ -1,0 +1,23 @@
+{
+  "_what": "Evangelical share of the DOXA people groups' POPULATION, for the packet's life-calendar page.",
+  "_method": "Each group's published EvangelicalLevel BAND is taken at its midpoint (0 for 'No Known Evangelicals'), weighted by the group's Population, and summed. peoplegroups.org publishes a band, never a number, so a percentage requires choosing a value inside each band; the midpoint is stated on the page itself.",
+  "_join": "IMB CSV ROP3Code + ISOAlpha3 against doxa-groups-snapshot.json rop3 + country — the same join the Vision Card uses (build-lists.mjs:13).",
+  "sources": {
+    "imb": "data/people-groups/people_groups.csv",
+    "doxa": "https://pray.doxa.life/api/people-groups/list",
+    "fetched": "2026-09-25"
+  },
+  "groupsInList": 2107,
+  "groupsMatched": 2091,
+  "population": 209079159,
+  "evangelicalPopulation": 1282178,
+  "pctEvangelical": 0.6133,
+  "bands": {
+    "No Known Evangelicals": 1444,
+    "Less than 2%": 638,
+    "2% or Greater but Less than 5%": 6,
+    "5% or Greater but Less than 10%": 1,
+    "10% or Greater but Less than 15%": 1,
+    "50% or Greater but Less than 75%": 1
+  }
+}

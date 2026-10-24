@@ -1,0 +1,22 @@
+{
+  "search": "Search people groups…",
+  "hide_filters": "Hide Filters",
+  "show_filters": "Show Filters",
+  "total": "Total",
+  "showing": "Showing",
+  "load_more": "Load More",
+  "full_profile": "Full Profile",
+  "wagf_region": "Region",
+  "wagf_block": "Affinity Block",
+  "rop1": "People Group",
+  "religion": "Religion",
+  "exact_filter": "Exact",
+  "clear_all": "Clear All",
+  "loading": "Loading…",
+  "no_results": "No people groups match this filter.",
+  "type_to_search": "Type to search...",
+  "load_failed": "People-group data could not be loaded. This is a connection problem, not your filter.",
+  "search_people_or_countries": "Search people groups or countries…",
+  "cards_per_row": "Cards per row",
+  "cards_per_row_auto": "Auto"
+}

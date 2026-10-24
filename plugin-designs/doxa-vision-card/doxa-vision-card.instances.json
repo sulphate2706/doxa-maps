@@ -1,0 +1,26 @@
+{
+  "_comment": "Preconfigured instances of the vision-card element. provider:'maplibre' flags the generated standalone page as TOKEN-FREE (see internal/generate-tree.mjs) so it mounts the element INSTANTLY with no Mapbox token ladder — correct for a self-contained single element that uses no map at all. The card's numbers are computed from data (see HOW-THE-NUMBERS-ARE-COUNTED.md); an instance may set title, tagline, accent or locale, never numbers.",
+  "instances": [
+    {
+      "id": "default",
+      "title": "Vision card — reach at a glance",
+      "props": {
+        "profile": "doxa-vision-card",
+        "provider": "maplibre",
+        "instanceId": "vision-card-default"
+      }
+    },
+    {
+      "id": "frontier",
+      "title": "Vision card — frontier accent",
+      "props": {
+        "profile": "doxa-vision-card",
+        "provider": "maplibre",
+        "instanceId": "vision-card-frontier",
+        "accent": "#22d3ee",
+        "title": "The last frontier of the gospel.",
+        "tagline": "Frontier people groups: fewer than one person in a thousand is an evangelical believer."
+      }
+    }
+  ]
+}

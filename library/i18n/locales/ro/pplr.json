@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "Religie",
+    "ropTree": "Arbore ROP",
+    "languageFamilies": "Familii de limbi",
+    "semanticTrees": "Arbori semantici",
+    "nameLocales": "Nume pe limbi",
+    "ropSunburst": "Sunburst ROP",
+    "allPins": "Toate reperele",
+    "rosetta": "Rosetta identificatorilor",
+    "coverage": "Acoperirea traducerilor",
+    "index": "Index"
+  },
+  "status": {
+    "loading": "Se încarcă…",
+    "loadingPgData": "Se încarcă datele popoarelor…",
+    "loadingPins": "Se încarcă reperele…",
+    "loadingPolygons": "Se încarcă granițele…",
+    "addingPolygons": "Se adaugă granițele…",
+    "addingPins": "Se adaugă reperele…",
+    "loadingCoverage": "Se încarcă acoperirea pe țări…",
+    "addingPinsOnTop": "Se adaugă reperele deasupra…",
+    "loadingRop": "Se încarcă ierarhia ROP…",
+    "loadingLanguage": "Se încarcă datele lingvistice…",
+    "loadingPinsRosetta": "Se încarcă reperele și eșantionul Rosetta…",
+    "error": "Eroare: {message}",
+    "readyTranslations": "Repere: {pins} · dați clic pe un reper pentru cele 17 nume",
+    "readyCoverage": "Gata · țări: {countries}, colorate după media traducerilor / 17 (toate rândurile: {rows})",
+    "readyD3": "Intrări: {entries} · derulați pentru zoom · trageți pentru deplasare",
+    "readyRop": "Gata · repere: {pins} · cu PEID: {peid}",
+    "readyRosetta": "Gata · repere: {pins} · eșantioane Rosetta: {samples} (★ aurie)",
+    "readyPins": "Gata · repere: {pins} · dați clic pe un reper",
+    "readyLanguage": "Gata · repere: {pins} · acoperirea familiilor {coverage}% · top 25 = {top}%",
+    "readyReligion": "Repere: {pins} · cea mai frecventă: {religion} ({count})",
+    "d3Failed": "Biblioteca de grafice nu a putut fi încărcată."
+  },
+  "ui": {
+    "chooseView": "Alegeți o vedere",
+    "search": "Căutați după popor, loc, limbă, religie…",
+    "baseMap": "Hartă de bază",
+    "dataSources": "Surse de date",
+    "legend": "Legendă",
+    "openLegend": "Deschide legenda",
+    "clearSelectionEsc": "Șterge selecția (Esc)",
+    "closeEsc": "Închide (Esc)",
+    "close": "Închide",
+    "retry": "Reîncercați",
+    "loadingMap": "Se încarcă harta",
+    "flyToPin": "Mergi la reper",
+    "primaryReligion": "Religia principală",
+    "ropHierarchy": "Ierarhia ROP"
+  },
+  "pill": {
+    "religion": "Distribuția religiilor · dați clic pe un reper pentru detalii",
+    "ropTree": "Ierarhia ROP · bloc de afinitate → grup → popor → PGIC",
+    "languageFamilies": "Familii etnolingvistice (PPLR) · dați clic pe un reper pentru detalii",
+    "sunburst": "Ierarhia ROP · bloc de afinitate → grup de popoare · derulați pentru zoom",
+    "pins": "Toate reperele popor-țară · dați clic pentru identificatorii sistemelor",
+    "coverage": "Acoperirea traducerilor · nuanța = media limbilor completate pe țară · dați clic pe un reper sau pe o țară",
+    "rosetta": "Rosetta identificatorilor · culoare = identificatorii existenți · ★ = rând de exemplu",
+    "translations": "Numele poporului · {n} limbi · dați clic pe un punct"
+  },
+  "legendTitle": {
+    "avgLocales": "Media limbilor / {n}",
+    "idCoverage": "Acoperirea identificatorilor"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, toate trei",
+      "imbOnly": "Doar IMB",
+      "jpOnly": "Doar JP",
+      "neither": "niciunul"
+    },
+    "samplePg": "★ popor de exemplu",
+    "missingIds": "Încă neasociate în PPLR: {ids}. Un rând gol este o lipsă de date, nu o eroare."
+  },
+  "popup": {
+    "noName": "(fără nume)",
+    "country": "Țară",
+    "religion": "Religie",
+    "language": "Limbă",
+    "family": "Familie",
+    "affinityBloc": "Bloc de afinitate",
+    "cluster": "Grup",
+    "peopleCluster": "Grup de popoare",
+    "peopleGroup": "Popor",
+    "pgCount": "Popoare",
+    "avgLocalesFilled": "Media limbilor completate",
+    "iso3Country": "Țară ISO-3"
+  },
+  "card": {
+    "nameInLocales": "Numele în {n} limbi"
+  },
+  "title": "Hărți de date PPLR",
+  "index": {
+    "title": "Validarea datelor PPLR",
+    "help": "Dați clic pe o casetă sau alegeți o vizualizare de mai sus."
+  }
+}

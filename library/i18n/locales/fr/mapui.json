@@ -1,0 +1,21 @@
+{
+  "map": "Carte",
+  "marker": "Marqueur de carte",
+  "closePopup": "Fermer la fenêtre",
+  "zoomIn": "Zoom avant",
+  "zoomOut": "Zoom arrière",
+  "resetBearing": "Faites glisser pour faire pivoter la carte, cliquez pour revenir au nord",
+  "toggleAttribution": "Afficher/masquer l'attribution",
+  "mapFeedback": "Commentaires sur la carte",
+  "enterFullscreen": "Plein écran",
+  "exitFullscreen": "Quitter le plein écran",
+  "findMyLocation": "Trouver ma position",
+  "locationNotAvailable": "Position non disponible",
+  "enableGlobe": "Activer le globe",
+  "disableGlobe": "Désactiver le globe",
+  "ctrlScroll": "Utilisez Ctrl + molette pour zoomer sur la carte",
+  "cmdScroll": "Utilisez ⌘ + molette pour zoomer sur la carte",
+  "twoFingers": "Utilisez deux doigts pour déplacer la carte",
+  "mapboxHomepage": "Page d'accueil de Mapbox",
+  "maplibreLogo": "Logo MapLibre"
+}

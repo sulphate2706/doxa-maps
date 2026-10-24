@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "country": "Țară:",
+    "population": "Populație:",
+    "language": "Limbă:",
+    "religion": "Religie:",
+    "languageFamily": "Familie de limbi:",
+    "peopleCommitted": "Angajați să se roage:"
+  },
+  "messages": {
+    "noDescription": "Nicio descriere disponibilă."
+  }
+}

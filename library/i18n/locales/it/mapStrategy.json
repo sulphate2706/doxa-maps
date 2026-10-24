@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "Guarda tutto il campo, restringilo ai popoli che puoi davvero raggiungere e porta con te l'elenco come foglio di calcolo.",
+      "p1": "Tocca una regione e scorri la griglia per vedere le foto dei popoli, quasi come visitare il paese e incontrare i volti di una cultura.",
+      "p2": "Filtra per popolo, luogo, lingua, religione o preghiera; la mappa, la tabella e i totali si muovono insieme, così vedi la stessa selezione in tre modi.",
+      "p3": "Esporta le righe filtrate come foglio di calcolo CSV: un elenco di lavoro da ordinare, condividere e pianificare offline.",
+      "p4": "Usalo per fissare obiettivi a breve termine: i gruppi per cui pregare e da raggiungere oggi, e quelli da preparare per domani.",
+      "p5": "È pensato per adattarsi a iniziative «dai media ai movimenti»: parti dai dati, poi agisci per i gruppi che fanno emergere."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Comincia dove il bisogno è più grande. Usa i livelli di preghiera e di impegno per trovare le zone prioritarie, poi mobilita la preghiera per i popoli che vi si trovano.",
+      "p1": "Guarda chi sta ancora aspettando. Nella scheda «Preghiera», ogni punto mostra se per quel popolo qualcuno prega, se ha ancora bisogno di preghiera o se è pienamente coperto dalla preghiera.",
+      "p2": "Trova le lacune. Passa a «Impegno» per vedere dove il lavoro è iniziato e dove nessuno è ancora impegnato. Quelle lacune sono le zone prioritarie da mobilitare.",
+      "p3": "Esplora una parte del mondo alla volta. Restringi per regione, lingua o religione, oppure cerca nell'elenco per nome. L'elenco segue la mappa, così leggi i nomi dietro i punti.",
+      "p4": "Incontra un popolo. Tocca un punto per vederne il paese, la popolazione, la lingua e la religione, poi usa «Prega per loro» per cominciare a pregare per quel popolo per nome.",
+      "p5": "Mantienila semplice. Questa mappa segue i progressi a un livello semplice, a colpo d'occhio. Per i dati completi vai a «Quadro d'insieme»; per risorse di preghiera da stampare vai a «Regioni» o a «Lista UPG100»."
+    },
+    "regions-dashboard": {
+      "bottom": "Circa 170 paesi hanno il proprio poster, pacchetto e mazzo di schede. Mobilita un gruppo a pregare per ogni paese, e ogni paese è coperto dalla preghiera.",
+      "p1": "Fai un elenco dei discepoli, delle chiese e dei leader che già conosci, e del paese a cui ciascuno è chiamato. Dai a ciascuno le risorse di preghiera di quel paese.",
+      "p2": "Comincia vicino a casa, con i discepoli e le chiese locali. Poi vai dai leader e dagli operai autoctoni sul campo in quei paesi, e manda loro il poster, il pacchetto e le schede del paese da stampare là dove sono.",
+      "p3": "Il pacchetto di preghiera è il più strategico dei tre: tutto il necessario per pregare per un paese, in un unico pacchetto stampabile.",
+      "p4": "Le schede servono di più quando hai un gruppo a cui distribuirle: un popolo per scheda.",
+      "p5": "I pacchetti per paese si adattano a una base di mobilitazione più ampia, o a un paese che vuoi vedere raggiunto. Se mobilitare è faticoso, le liste UPG100 sono un punto di partenza più semplice."
+    },
+    "prayer-map": {
+      "bottom": "Un movimento di preghiera cresce quando ogni partner mostra la stessa mappa: metti quindi questa mappa su ogni sito della tua rete.",
+      "p1": "Fai l'elenco dei siti della tua rete: chiese, ministeri, reti di preghiera, partner missionari, ogni sito che la tua gente già visita.",
+      "p2": "Condividila o aggiungila in pochi tocchi. Il pulsante Condividi ti dà un link da inviare, oppure «Aggiungi al tuo sito web»: scegli una dimensione, copia il codice e incollalo in WordPress, Squarespace, Wix o qualsiasi sito che accetti HTML.",
+      "p3": "Scegli la vista adatta al sito. «Preghiera», «Impegno» e «Adozione» condividono ciascuna la propria pagina, così una rete di preghiera può mostrare la copertura di preghiera e una chiesa che invia l'impegno.",
+      "p4": "Si aggiorna da sola. Ogni copia della mappa legge gli stessi dati da pray.doxa.life ogni volta che si apre, così i progressi compaiono sul sito di ogni partner senza che nessuno la aggiorni.",
+      "p5": "Porta le persone a un nome. Toccando un punto si apre quel popolo e un link alla sua pagina di preghiera, così un visitatore può iniziare subito a pregare per un popolo preciso."
+    },
+    "upg-100": {
+      "bottom": "Gesù fece sedere i cinquemila a gruppi di cinquanta e di cento prima di sfamarli (Luca 9,14). Queste liste fanno lo stesso per circa 2.100 popoli non raggiunti: divisa in liste di quella misura, l'intera opera diventa un peso che una persona può portare.",
+      "p1": "27 liste significano 27 poster, 27 pacchetti di preghiera e 27 mazzi di schede. Mettine uno nelle mani di ciascuno di 27 discepoli, chiese o leader autoctoni, e si prega per ognuno dei gruppi per nome.",
+      "p2": "Affida ogni lista a qualcuno che continui a pregare per essa. I leader autoctoni possono pregare nelle lingue stesse dei popoli.",
+      "p3": "Segue una pratica provata nei movimenti: i discepoli pregano regolarmente per cinquanta-cento persone che conoscono (famiglia, amici, vicini, colleghi, compagni di scuola). Una lista UPG100 è lo stesso peso, per persone che non hanno mai incontrato.",
+      "p4": "Comincia con una lista e una persona. Il pacchetto contiene tutto ciò che serve per quella lista in un'unica stampa, e le schede aiutano quando un gruppo si divide la lista."
+    },
+    "cities-internet": {
+      "bottom": "Dove le persone sono già online, il Vangelo può raggiungerle sugli schermi e sulle piattaforme che usano ogni giorno. Trova quei luoghi e usa i media per aprire la porta a veri discepoli e a vere chiese (dai media ai movimenti).",
+      "p1": "Comincia dai paesi in cui la maggior parte delle persone è online (60% o più). Lì i media online possono raggiungere persone che non hanno vicino né una chiesa né un credente.",
+      "p2": "Tocca un paese e leggi la sua scheda: quante persone usano internet, quanti abbonamenti mobili ci sono e quali piattaforme usa la gente lì. Raggiungili sulle loro piattaforme, non sulle tue, e verifica prima l'elenco con qualcuno del paese.",
+      "p3": "Abbina questa mappa a «Risorse del Vangelo». Trova un popolo che ha già la Scrittura, un film o un audio nella propria lingua, poi condividi quei link online in un paese in cui le persone sono connesse.",
+      "p4": "Dove poche persone sono online, o il dato non è misurato, non cominciare da uno schermo: manda persone e porta risorse audio e stampate. Le cifre sono nazionali (l'India anche per stato), quindi una città può essere molto diversa dal suo paese.",
+      "p5": "I media sono la porta, non la meta. Prima di pubblicare, pianifica come chi risponde online incontrerà una persona reale e si unirà a un gruppo che studia la Bibbia insieme."
+    },
+    "gospel-resources": {
+      "bottom": "Molti gruppi non raggiunti hanno già la Scrittura, un film o un audio nella propria lingua che non li ha mai raggiunti. Le risorse esistono; il divario è metterle nelle mani delle persone, di persona o online.",
+      "p1": "Passa a «Risorse trovate» e cerca i gruppi che hanno la Scrittura e un film. Per loro gli strumenti sono pronti; ciò che manca è la consegna.",
+      "p2": "Manda operai con le risorse. Apri la scheda di un gruppo e passa i suoi link (e quelli delle altre lingue che parla) agli operai, alle chiese e ai leader che possono raggiungere quel gruppo.",
+      "p3": "Abbina questa mappa a «Città con Internet». Dove il paese di un gruppo è ben connesso, gli stessi link possono raggiungere le persone online sulle piattaforme usate lì (dai media ai movimenti).",
+      "p4": "Dove esiste la formazione Zume nella lingua del gruppo, mettila accanto alla Scrittura e al film, perché chi crede sia formato a fare discepoli.",
+      "p5": "Usa «Divario» per pregare e pianificare per i gruppi per cui non si è ancora trovato nulla. Molti hanno una via d'accesso attraverso una lingua ponte, e «nulla trovato» è un motivo per cercare ancora, non una risposta definitiva."
+    }
+  }
+}

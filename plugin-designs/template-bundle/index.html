@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · template-bundle staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #0b0f14; color: #e5e7eb; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #9ca3af; font-size: 13px; margin: 6px 0 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .slot { border: 1px solid #1f2937; border-radius: 12px; overflow: hidden; }
+    .slot .label { font: 12px/1 ui-monospace, monospace; color: #9ca3af; padding: 8px 12px;
+      background: #111827; border-bottom: 1px solid #1f2937; }
+    .frame { height: 240px; }
+    template-bundle { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>template-bundle · staging</h1>
+    <p class="sub">One bundle, two flat profiles. The <code>profile</code> field selects which
+      <code>*.vue</code> in this folder renders. Both compile into <code>template-bundle.js</code>.</p>
+
+    <div class="grid">
+      <div class="slot">
+        <div class="label">profile-config.profile = "template-map-a"</div>
+        <div class="frame">
+          <template-bundle profile-config='{"profile":"template-map-a","note":"hello from staging"}'></template-bundle>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="label">profile-config.profile = "template-map-b"</div>
+        <div class="frame">
+          <template-bundle profile-config='{"profile":"template-map-b","note":"hello from staging"}'></template-bundle>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vite multi-page entry. In dev, served transformed; in build, Vite emits
+       ../../../public/js/template-bundle.js and rewrites this script tag. -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

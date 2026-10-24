@@ -1,0 +1,21 @@
+{
+  "map": "Mapa",
+  "marker": "Marcador do mapa",
+  "closePopup": "Fechar janela",
+  "zoomIn": "Aumentar zoom",
+  "zoomOut": "Diminuir zoom",
+  "resetBearing": "Arraste para girar o mapa, clique para voltar ao norte",
+  "toggleAttribution": "Mostrar/ocultar atribuição",
+  "mapFeedback": "Comentários sobre o mapa",
+  "enterFullscreen": "Tela cheia",
+  "exitFullscreen": "Sair da tela cheia",
+  "findMyLocation": "Encontrar minha localização",
+  "locationNotAvailable": "Localização indisponível",
+  "enableGlobe": "Ativar globo",
+  "disableGlobe": "Desativar globo",
+  "ctrlScroll": "Use Ctrl + rolagem para ampliar o mapa",
+  "cmdScroll": "Use ⌘ + rolagem para ampliar o mapa",
+  "twoFingers": "Use dois dedos para mover o mapa",
+  "mapboxHomepage": "Página inicial do Mapbox",
+  "maplibreLogo": "Logótipo do MapLibre"
+}

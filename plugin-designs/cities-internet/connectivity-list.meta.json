@@ -1,0 +1,5 @@
+{
+  "stage": "experimental",
+  "label": "Cities with Internet — connectivity list",
+  "note": "The Studio and gallery read this label from here (internal/plugin-gallery/discover.mjs: `meta.label || profile`); with no meta file at all they fell back to the humanised profile id. The wording tracks the pane's own heading, t('connectivity.list.title') = \"Cities with Internet\", plus the view name — the same shape as the sibling connectivity-map.meta.json, so the three profiles read as one family in the picker. stage is declared EXPLICITLY rather than left to the default: the default is already experimental (internal/profile-meta.mjs), so this changes nothing today, but a meta that states its stage cannot be silently promoted if that default ever moves, and bundleStage() turns the whole bundle production as soon as ONE profile claims it."
+}

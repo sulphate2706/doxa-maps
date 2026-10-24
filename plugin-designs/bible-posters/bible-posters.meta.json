@@ -1,0 +1,14 @@
+{
+  "stage": "experimental",
+  "type": "single",
+  "label": "Bible Posters",
+  "targets": ["web"],
+  "posterDesign": {
+    "family": "biblePoster",
+    "name": "bible-poster.36x60",
+    "size": "36x60",
+    "mobileFriendly": false,
+    "labelKey": "biblePosters.posterDesign.label"
+  },
+  "note": "A generator that shows an ENTIRE BOOK of the Bible on one poster, in the languages of the top unreached people groups. Text is fetched at render time from the Free Use Bible API (public-domain / openly-licensed only); no Bibles are stored in the repo. Lives in the Posterverse Experimental shelf. posterDesign: the whole-book poster is a large-format print (even standard paper is too small for a whole book), so mobileFriendly is false; the card/preview still renders on a phone."
+}

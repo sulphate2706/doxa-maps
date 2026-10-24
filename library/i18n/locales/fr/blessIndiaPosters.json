@@ -1,0 +1,15 @@
+{
+  "title": "Affiches « Bénis l’Inde »",
+  "rangeBadge60x96": "Badges de numéros · 60×96 (5×8 pi)",
+  "count": "{count} groupes de population",
+  "desktopOnly": "Ordinateur uniquement pour l’instant — il n’est pas encore prouvé que cette grande affiche s’imprime correctement sur un téléphone.",
+  "experimental": "expérimental",
+  "intro": "Chaque groupe de population de l'Inde sur une seule feuille imprimable, générée en direct et montrée comme ses feuilles imprimables avec les bandes de collage — comme la vue Tailles de Poster Design montre les grands formats.",
+  "print": "Imprimer cette affiche",
+  "attempt": "Badges de numéros · 60×96 (5×8 pi) · 3 feuilles",
+  "stat": "{groups} groupes · {badges} badges de numéros · 0 chevauchement",
+  "generating": "Génération de l'affiche à partir des données en direct…",
+  "error": "Impossible de générer l'affiche : {msg}",
+  "photos": "Seulement {real} des {total} groupes de l'Inde ont une photo dans les données ; un document imprimé les porte, une image plate non. Ce modèle numéroté imprime les noms sans photos pour que chaque groupe soit égal et lisible.",
+  "posterHeader": "Bénissez l'Inde au nom de Jésus"
+}

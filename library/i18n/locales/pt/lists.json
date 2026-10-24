@@ -1,0 +1,22 @@
+{
+  "doxa": {
+    "label": "Projeto 2000: os povos da DOXA",
+    "definition": "Os povos que a DOXA serve, como a sua lista ao vivo os apresenta"
+  },
+  "unreached": {
+    "label": "Projeto 7000: povos não alcançados",
+    "definition": "Prioridade de perdição do IMB 0–2 (não alcançados de fronteira, pioneiros ou em expansão: menos de 2% evangélicos)"
+  },
+  "frontier": {
+    "label": "Projeto 4700: povos de fronteira",
+    "definition": "Prioridade de perdição do IMB 0 (não alcançados de fronteira: 0,1% evangélicos ou menos)"
+  },
+  "frontier-500k": {
+    "label": "Projeto 700: povos de fronteira de 500.000 ou mais",
+    "definition": "Prioridade de perdição do IMB 0 e uma população de pelo menos 500.000"
+  },
+  "unengaged": {
+    "label": "Povos não alcançados e não engajados",
+    "definition": "Prioridade de perdição do IMB 0–2 e estado de engajamento: não engajado"
+  }
+}

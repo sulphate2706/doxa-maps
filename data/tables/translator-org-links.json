@@ -1,0 +1,290 @@
+{
+ "meta": {
+  "title": "Who to contact — screened, fetched homepages for the organisations named in the credits",
+  "generated": "2026-09-28",
+  "grain": "one entry per organisation, matched to a credit string by the regexes it carries",
+  "verified_orgs": 16,
+  "orgs_that_did_not_answer": 0,
+  "states": {
+   "verified": "this script fetched it on the run that wrote this file — homepage 200, or robots.txt 200 where a bot challenge answers a datacentre IP",
+   "unknown": "did not answer this run; NOT shipped, and never read as broken"
+  },
+  "not_linked": [
+   {
+    "reason": "national Bible Society — several UBS members publish editions containing the deuterocanonicals, so whether a Society contact sits inside the 66-book filter is a product ruling, not this script's"
+   },
+   {
+    "reason": "doctrine not established from published material — left out rather than guessed"
+   }
+  ],
+  "note": "Hand-screened allowlist. eBible's own homeDomain/publicationURL fields are deliberately NOT used: a refresh of someone else's catalogue must not be able to put a publisher on this map."
+ },
+ "held": [
+  {
+   "pattern": "bible society|biblical society|bibelselskab|bibelsellskap|soci(e|é)t(y|é) b[ií]blica|sociedad b[ií]blica|lembaga alkitab|united bible societies|sirk[əe]ti|bible societies",
+   "reason": "national Bible Society — several UBS members publish editions containing the deuterocanonicals, so whether a Society contact sits inside the 66-book filter is a product ruling, not this script's"
+  },
+  {
+   "pattern": "artists for israel|k[äa]rnbibeln|sanskritbible|gilakmedia|tarifit|gSungrab|audiobiblia",
+   "reason": "doctrine not established from published material — left out rather than guessed"
+  }
+ ],
+ "orgs": {
+  "wycliffe-ca": {
+   "name": "Wycliffe Bible Translators of Canada",
+   "url": "https://www.wycliffe.ca/",
+   "why": "Bible translation agency, Canadian office of the Wycliffe Global Alliance.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 2085539 bytes",
+   "match": [
+    {
+     "s": "wycliffe[^,]*\\bcanada\\b",
+     "f": "i"
+    }
+   ]
+  },
+  "wycliffe-au": {
+   "name": "Wycliffe Bible Translators Australia",
+   "url": "https://wycliffe.org.au/",
+   "why": "Bible translation agency, Australian office of the Wycliffe Global Alliance.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 87865 bytes",
+   "match": [
+    {
+     "s": "wycliffe[^,]*australian?\\b",
+     "f": "i"
+    }
+   ]
+  },
+  "wycliffe": {
+   "name": "Wycliffe Bible Translators",
+   "url": "https://www.wycliffe.org/",
+   "why": "Bible translation agency; translates the 66-book canon, no added scripture.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 367138 bytes",
+   "match": [
+    {
+     "s": "\\bwycliffe\\b",
+     "f": "i"
+    }
+   ]
+  },
+  "twftw": {
+   "name": "The Word for the World",
+   "url": "https://www.twftw.org/",
+   "why": "Bible translation agency working through national translators.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 1145398 bytes",
+   "match": [
+    {
+     "s": "word for the world",
+     "f": "i"
+    },
+    {
+     "s": "\\bTWFTW\\b",
+     "f": ""
+    }
+   ]
+  },
+  "biblica": {
+   "name": "Biblica",
+   "url": "https://www.biblica.com/",
+   "why": "Bible publisher and translator (NIV); 66-book canon.",
+   "state": "verified",
+   "method": "robots-txt",
+   "detail": "homepage HTTP 403 (bot challenge from a datacentre IP), robots.txt HTTP 200, 292 bytes",
+   "match": [
+    {
+     "s": "\\bbiblica\\b",
+     "f": "i"
+    }
+   ]
+  },
+  "pioneer": {
+   "name": "Pioneer Bible Translators",
+   "url": "https://pioneerbible.org/",
+   "why": "Bible translation agency working in languages with no Scripture.",
+   "state": "verified",
+   "method": "robots-txt",
+   "detail": "homepage HTTP 403 (bot challenge from a datacentre IP), robots.txt HTTP 200, 120 bytes",
+   "match": [
+    {
+     "s": "pioneer bible translators",
+     "f": "i"
+    },
+    {
+     "s": "traducteurs pionniers de la bible",
+     "f": "i"
+    },
+    {
+     "s": "\\bPBT\\b",
+     "f": ""
+    }
+   ]
+  },
+  "seed": {
+   "name": "The Seed Company",
+   "url": "https://seedcompany.com/",
+   "why": "Bible translation agency, affiliate of Wycliffe USA.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 371615 bytes",
+   "match": [
+    {
+     "s": "seed company",
+     "f": "i"
+    }
+   ]
+  },
+  "sim": {
+   "name": "SIM",
+   "url": "https://www.sim.org/",
+   "why": "Evangelical mission agency; translation among its field work.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 190482 bytes",
+   "match": [
+    {
+     "s": "\\bSIM\\b",
+     "f": ""
+    },
+    {
+     "s": "society for international ministries",
+     "f": "i"
+    }
+   ]
+  },
+  "bible-league": {
+   "name": "Bible League International",
+   "url": "https://www.bibleleague.org/",
+   "why": "Scripture publisher; absorbed the World Bible Translation Center, whose name the credits still carry.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 701210 bytes",
+   "match": [
+    {
+     "s": "world bible translation cent(er|re)",
+     "f": "i"
+    },
+    {
+     "s": "bible league",
+     "f": "i"
+    },
+    {
+     "s": "liga b[ií]blica",
+     "f": "i"
+    }
+   ]
+  },
+  "unfoldingword": {
+   "name": "Door43 / unfoldingWord",
+   "url": "https://door43.org/",
+   "why": "Open-licensed Bible translation resources; the Door43 community platform.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 7465 bytes",
+   "match": [
+    {
+     "s": "door\\s?43",
+     "f": "i"
+    },
+    {
+     "s": "unfoldingword",
+     "f": "i"
+    }
+   ]
+  },
+  "bridgeconn": {
+   "name": "Bridge Connectivity Solutions",
+   "url": "https://www.bridgeconn.com/",
+   "why": "Indian Bible-translation technology and translation services group.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 20334 bytes",
+   "match": [
+    {
+     "s": "bridge conn?ectivity",
+     "f": "i"
+    },
+    {
+     "s": "bridge communication systems",
+     "f": "i"
+    }
+   ]
+  },
+  "btl-kenya": {
+   "name": "Bible Translation and Literacy",
+   "url": "https://www.btlkenya.org/",
+   "why": "Kenyan Bible translation agency, Wycliffe Global Alliance member.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 76225 bytes",
+   "match": [
+    {
+     "s": "bible translation and literacy",
+     "f": "i"
+    }
+   ]
+  },
+  "kartidaya": {
+   "name": "Yayasan Kartidaya",
+   "url": "https://kartidaya.org/",
+   "why": "Indonesian Bible translation agency, Wycliffe Global Alliance member.",
+   "state": "verified",
+   "method": "robots-txt",
+   "detail": "homepage HTTP 429 (bot challenge from a datacentre IP), robots.txt HTTP 200, 319 bytes",
+   "match": [
+    {
+     "s": "kartidaya",
+     "f": "i"
+    }
+   ]
+  },
+  "liebenzell": {
+   "name": "Liebenzell Mission",
+   "url": "https://www.liebenzell.org/",
+   "why": "German evangelical mission agency (Free Church tradition).",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 1281367 bytes",
+   "match": [
+    {
+     "s": "liebenzel+l? mission",
+     "f": "i"
+    }
+   ]
+  },
+  "sil": {
+   "name": "SIL Global",
+   "url": "https://www.sil.org/",
+   "why": "Language development organisation; the linguistic partner behind much of this corpus.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 415008 bytes",
+   "match": [
+    {
+     "s": "\\bSIL\\b",
+     "f": ""
+    }
+   ]
+  },
+  "lockman": {
+   "name": "The Lockman Foundation",
+   "url": "https://www.lockman.org/",
+   "why": "Scripture publisher (NASB, LBLA); 66-book canon.",
+   "state": "verified",
+   "method": "homepage-get",
+   "detail": "HTTP 200, 163046 bytes",
+   "match": [
+    {
+     "s": "lockman foundation",
+     "f": "i"
+    }
+   ]
+  }
+ }
+}

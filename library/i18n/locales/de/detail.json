@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "country": "Land:",
+    "population": "Bevölkerung:",
+    "language": "Sprache:",
+    "religion": "Religion:",
+    "languageFamily": "Sprachfamilie:",
+    "peopleCommitted": "Zum Gebet verpflichtet:"
+  },
+  "messages": {
+    "noDescription": "Keine Beschreibung verfügbar."
+  }
+}

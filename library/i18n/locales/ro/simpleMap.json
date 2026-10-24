@@ -1,0 +1,9 @@
+{
+  "loading": "Se încarcă harta…",
+  "initFailed": "Harta nu a putut porni. Este o problemă de cheie a hărții sau de conexiune.",
+  "help": {
+    "what": "Această hartă arată popoarele neatinse ale lumii: comunități fără acces real la Evanghelie.",
+    "how": "Folosiți filele (dacă apar) pentru a schimba vederea. Dați clic pe un punct pentru a afla mai multe despre un popor.",
+    "source": "Date de la"
+  }
+}

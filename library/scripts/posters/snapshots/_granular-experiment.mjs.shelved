@@ -1,0 +1,2549 @@
+// generate.mjs — UPG100-POSTERS generator (card 7c4feeda22bd8bc2, P2/P3)
+//
+// One self-hosted, print-deterministic SVG poster per leaf zone of the
+// my-upg-100-list map. NO Mapbox, NO token, NO external fetch at render time,
+// NO npm installs — pure Node 22 + the map's OWN zone-resolution logic (reused
+// read-only) so every poster matches the live map exactly.
+//
+//   • basemap   : country (ADM0) + state-cluster (ADM1) polygons drawn as SVG
+//                 from the geojson the map already ships (scope (B), approved).
+//   • pins      : every people-group at its TRUE lat/lng (Web Mercator).
+//   • labels    : the HARD part — names de-overlapped via a two-gutter CALLOUT
+//                 layout + LEADER LINES (pins never move; labels stack in the
+//                 left/right margins, ordered by latitude, connected by lines).
+//   • aspect    : portrait 3:4 (3ft × 4ft). Rendered at CSS 1350×1800; shoot.mjs
+//                 screenshots at deviceScaleFactor 4 → 5400×7200 px (~150 DPI @ 3ft).
+//
+// Usage:  node generate.mjs            # all 28 zones
+//         ONLY=laos node generate.mjs  # one zone (smoke test)
+//
+// Output: out/posters/<zoneKey>.html  +  out/manifest.json
+
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join, resolve } from 'node:path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// The profile data lives in THIS repo — library/scripts/posters -> plugin-designs.
+// This generator used to sit outside doxa-maps entirely and reach in via
+// UPG100_DATA_PATH; forgetting that env var silently rendered a STALE COPY of the
+// data (that is how Nepal vanished from a poster). Now the default path is the
+// repo's own profile, so the generator cannot read anyone else's data by accident.
+const DATA = process.env.UPG100_DATA_PATH
+  ? resolve(process.env.UPG100_DATA_PATH)
+  : resolve(__dirname, '..', '..', 'plugin-designs', 'my-upg-100-list', 'data');
+const OUT = join(__dirname, 'out');
+const POSTERS = join(OUT, 'posters');
+mkdirSync(POSTERS, { recursive: true });
+
+// ── the map's own logic, reused read-only ────────────────────────────────────
+const { buildLegendNodes, leafZones } = await import(join(DATA, 'legend-tree.js'));
+const { resolveZoneGeometry } = await import(join(DATA, 'zone-geometry.js'));
+const { evaluate } = await import(join(DATA, 'selector-evaluator.js'));
+const { normalizeRecords, extractRecords } = await import(join(DATA, 'normalize.js'));
+// The adm0 geojson carries ONLY { iso3 } — no country names at all — so the label
+// text has to come from the map's own ISO3 dictionary rather than the geometry.
+const { ISO3_NAME } = await import(join(DATA, 'territory-counts.js'));
+
+const readJSON = (p) => JSON.parse(readFileSync(p, 'utf8'));
+const clusters = readJSON(join(DATA, 'clusters.json'));
+const adm0 = readJSON(join(DATA, 'adm0', 'world-adm0.geojson'));
+const adm1Ind = readJSON(join(DATA, 'gb-IND-ADM1.geojson'));
+const adm1Chn = readJSON(join(DATA, 'gb-CHN-ADM1.geojson'));
+
+// CONFIG-ONLY, FAIL-CLOSED — mirrors src/api-connections/apiBaseUrl.js. The data
+// host comes SOLELY from build-time config; there is deliberately NO default host
+// so an unconfigured run never silently phones home to someone else's data source.
+const API = process.env.VITE_API_BASE_URL || process.env.MAP_APP_API_URL;
+if (!API) {
+  console.error('[generate] No API base configured — set VITE_API_BASE_URL to your data source. Failing closed: no request will be made.');
+  process.exit(1);
+}
+// primary_language + religion feed the GRANULAR table (People · Place · Language
+// · Religion). Verified 2106/2106 coverage on the live API. NOTE: the field is
+// `primary_language` — plain `language` is null on every record — and `religion`
+// is an object, so use its .label.
+const FIELDS = 'slug,name,country_code,wagf_region,wagf_block,rop1,population,latitude,longitude,primary_language,religion';
+
+// ── fetch the live pins (the only network call; happens at GENERATE time only) ─
+async function loadRecords() {
+  const cache = join(__dirname, 'out', '_records.json');
+  if (process.env.OFFLINE) { try { return readJSON(cache); } catch { /* fall through */ } }
+  const url = `${API}/api/people-groups/list?fields=${FIELDS}&lang=en`;
+  const resp = await fetch(url, { headers: { accept: 'application/json' } });
+  if (!resp.ok) throw new Error(`PG API ${resp.status} ${url}`);
+  const raw = await resp.json();
+  const recs = normalizeRecords(extractRecords(raw));
+  try { writeFileSync(cache, JSON.stringify(recs)); } catch { /* best effort cache */ }
+  return recs;
+}
+
+// ── PIN BBOX: antimeridian-aware, outlier-trimmed ───────────────────────────
+// Two independent failure modes made three posters render the WHOLE GLOBE:
+//
+//  1. ANTIMERIDIAN WRAP. oceania-indonesia runs 83.9E -> -136.0 (i.e. across the
+//     date line). A plain min/max gives W=-136, E=+83.9 and calls that 220 wide,
+//     so the projection zooms out to fit a span that is really ~140 the OTHER
+//     way round. Brief: "it's a zoom issue because part of the region overlaps
+//     the edge of the globe… you can zoom in and fetch a clip of the other edge."
+//     Fix: sort the longitudes, find the LARGEST GAP between adjacent pins, and
+//     cut the circle there — the remaining arc is the true span. Longitudes east
+//     of the cut are unrolled past 180 so the box is contiguous.
+//
+//  2. FAR OUTLIERS. europe ran -42 -> 168.6E: a handful of pins in Siberia and
+//     the Americas dragged the box across Eurasia, so "Europe" rendered Brazil,
+//     Japan and Iceland. Fix: drop the extreme 4% at each end when that shrinks
+//     the span materially. Every pin still RENDERS — the leader lines reach them
+//     — but a few strays no longer set the zoom for the other 96%.
+function pinBbox(pins) {
+  const lats = pins.map((p) => p.lat).sort((a, b) => a - b);
+  const lngs = pins.map((p) => p.lng).sort((a, b) => a - b);
+  const n = lngs.length;
+  // (1) cut the circle at the largest gap
+  let gap = -1, cut = 0;
+  for (let i = 0; i < n; i++) {
+    const a = lngs[i], b = lngs[(i + 1) % n];
+    const g = i === n - 1 ? (b + 360) - a : b - a;
+    if (g > gap) { gap = g; cut = (i + 1) % n; }
+  }
+  const unrolled = lngs.map((_, k) => {
+    const v = lngs[(cut + k) % n];
+    return v < lngs[cut] ? v + 360 : v;
+  });
+  // (2) trim outliers, but only when it actually helps
+  const trim = (arr) => {
+    const k = Math.floor(arr.length * 0.04);
+    if (k < 1) return arr;
+    const inner = arr.slice(k, arr.length - k);
+    const full = arr[arr.length - 1] - arr[0];
+    const cutSpan = inner[inner.length - 1] - inner[0];
+    return cutSpan < full * 0.72 ? inner : arr;
+  };
+  const lo = trim(unrolled), la = trim(lats);
+  let W = lo[0], E = lo[lo.length - 1];
+  if (W > 180) { W -= 360; E -= 360; }
+  return [W, la[0], E, la[la.length - 1]];
+}
+
+// ── Web Mercator, fit a [W,S,E,N] bbox into a cw×ch box preserving aspect ──────
+const mercX = (lng) => (lng + 180) / 360;
+const mercY = (lat) => {
+  const r = (Math.max(-85.05, Math.min(85.05, lat)) * Math.PI) / 180;
+  return (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2;
+};
+function makeProjection(bbox, cw, ch, padFrac = 0.06) {
+  let [w, s, e, n] = bbox;
+  // pad
+  const dx = (e - w) * padFrac || 0.5, dy = (n - s) * padFrac || 0.5;
+  w -= dx; e += dx; s -= dy; n += dy;
+  const x0 = mercX(w), x1 = mercX(e), y0 = mercY(n), y1 = mercY(s); // y0<y1
+  const sx = cw / (x1 - x0), sy = ch / (y1 - y0);
+  const scale = Math.min(sx, sy);
+  const offX = (cw - (x1 - x0) * scale) / 2;
+  const offY = (ch - (y1 - y0) * scale) / 2;
+  return (lng, lat) => [offX + (mercX(lng) - x0) * scale, offY + (mercY(lat) - y0) * scale];
+}
+
+// ── geojson → SVG path d (Polygon + MultiPolygon) ─────────────────────────────
+function geoToPath(geom, project) {
+  const rings = geom.type === 'Polygon' ? geom.coordinates
+    : geom.type === 'MultiPolygon' ? geom.coordinates.flat() : [];
+  let d = '';
+  for (const ring of rings) {
+    for (let i = 0; i < ring.length; i++) {
+      const [px, py] = project(ring[i][0], ring[i][1]);
+      d += (i === 0 ? 'M' : 'L') + px.toFixed(1) + ' ' + py.toFixed(1);
+    }
+    d += 'Z';
+  }
+  return d;
+}
+function bboxOf(geom) {
+  const rings = geom.type === 'Polygon' ? geom.coordinates
+    : geom.type === 'MultiPolygon' ? geom.coordinates.flat() : [];
+  let W = 180, S = 90, E = -180, N = -90;
+  for (const ring of rings) for (const [x, y] of ring) {
+    if (x < W) W = x; if (x > E) E = x; if (y < S) S = y; if (y > N) N = y;
+  }
+  return [W, S, E, N];
+}
+const bboxIntersect = (a, b) => !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]);
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// ── OCTILINEAR leader routing (design decision: 45°/90° "techno" lane traces) ──
+// Each leader is a Manhattan/octilinear "circuit-board" trace — ONLY horizontal,
+// vertical, or exact 45° segments, sharp corners, no curves. It is channeled
+// through a per-leader vertical LANE in the side margin so parallel runs separate
+// and each stays followable; the corners are 45° chamfers (the "techno" bevel).
+//
+// Structure (left side; right mirrors) — ORTHOGONAL-DOMINANT so crossings stay
+// near the proven 0-crossing boundary-labeling baseline (a big straight 45°
+// diagonal per leader is what produced the earlier spaghetti of 500–650 crossings;
+// a horizontal feeler at the pin's own latitude + a vertical run in a dedicated
+// lane is the low-crossing shape, and the 45° chamfer gives the techno look):
+//   (1) short horizontal stub off the pin
+//   (2) horizontal feeler at the pin's TRUE latitude, stopping one chamfer short
+//       of the lane   ── the run that keeps leaders in disjoint latitude bands
+//   (3) 45° chamfer corner into the lane (sharp bevel, no curve)
+//   (4) vertical run DOWN/UP the dedicated lane to the label's row
+// The label sits at the lane, so the vertical ends exactly at the port (no jog).
+// The vertical gap pin→label is covered by a 45° diagonal for a fraction `dfrac`
+// of its length and by a straight in-lane vertical for the rest. dfrac is swept
+// per poster (pickDiagFrac) to MINIMISE crossings — every value is octilinear, so
+// the winner is the minimal-crossing octilinear layout for that poster. dfrac=0
+// is a pure horizontal-feeler + vertical-lane trace (cleanest 90° grid); dfrac=1
+// leans the leader into a 45° diagonal where the horizontal budget allows.
+function octiRoute(it, laneX, dirOut, dfrac) {
+  const STUB = 7;
+  const P = [it.px, it.py];
+  const xStub = it.px + dirOut * STUB;             // stub end (toward the margin)
+  const dy = it.labelY - it.py;
+  const vdir = dy === 0 ? 0 : Math.sign(dy);       // vertical sense toward the label
+  const gap = Math.abs(xStub - laneX);             // horizontal budget stub→lane (≥0)
+  const diag = Math.max(0, Math.min(dfrac * Math.abs(dy), gap)); // 45° leg (both axes)
+  const feeler = gap - diag;                       // remaining horizontal at pin latitude
+  const pts = [P, [xStub, it.py]];                 // (1) stub — horizontal
+  pts.push([xStub + dirOut * feeler, it.py]);      // (2) feeler — horizontal at pin latitude
+  pts.push([laneX, it.py + vdir * diag]);          // (3) 45° diagonal into the lane
+  pts.push([laneX, it.labelY]);                    // (4) vertical run in the lane to the port
+  return pts;
+}
+// every emitted segment must be horizontal (dy=0), vertical (dx=0) or 45° (|dx|=|dy|)
+function isOctilinear(pts, eps = 0.6) {
+  for (let i = 0; i < pts.length - 1; i++) {
+    const dx = Math.abs(pts[i + 1][0] - pts[i][0]), dy = Math.abs(pts[i + 1][1] - pts[i][1]);
+    if (dx < eps || dy < eps) continue;            // horizontal or vertical
+    if (Math.abs(dx - dy) < eps) continue;         // 45°
+    return false;
+  }
+  return true;
+}
+function segCross(p, q) {
+  const o = (ax, ay, bx, by, cx, cy) => Math.sign((bx - ax) * (cy - ay) - (by - ay) * (cx - ax));
+  const [a, b] = p, [c, d] = q;
+  const same = (u, v) => Math.abs(u[0] - v[0]) < 0.5 && Math.abs(u[1] - v[1]) < 0.5;
+  if (same(a, c) || same(a, d) || same(b, c) || same(b, d)) return false;
+  const o1 = o(...a, ...b, ...c), o2 = o(...a, ...b, ...d), o3 = o(...c, ...d, ...a), o4 = o(...c, ...d, ...b);
+  return o1 !== o2 && o3 !== o4 && o1 !== 0 && o2 !== 0 && o3 !== 0 && o4 !== 0;
+}
+function countPolyCrossings(polys) {
+  const segs = [];
+  polys.forEach((pts, li) => { for (let i = 0; i < pts.length - 1; i++) segs.push({ s: [pts[i], pts[i + 1]], li }); });
+  let n = 0;
+  for (let i = 0; i < segs.length; i++) for (let j = i + 1; j < segs.length; j++) {
+    if (segs[i].li === segs[j].li) continue;
+    if (segCross(segs[i].s, segs[j].s)) n++;
+  }
+  return n;
+}
+
+// ── poster geometry constants (CSS px; 3:4) ──────────────────────────────────
+// ── SHEET FORMAT ────────────────────────────────────────────────────────────
+// Parameterised rather than hardcoded, so a new aspect is one env var and not an
+// edit: FORMAT=3x4 (default, portrait) | 3x3 (square).
+// Everything downstream derives from PW/PH — the map frame fits the region inside
+// whatever is left after the header, footer and gutters, so a format change does
+// not require re-tuning the layout by hand.
+const FORMATS = {
+  '3x4': { w: 1350, h: 1800, gutter: 210, page: '3in 4in' },
+  // Square: a 3ft x 3ft sheet. The map loses height relative to 3x4, so the
+  // gutters widen slightly — with fewer label rows per column the names can take
+  // more width, and the map stays close to square rather than becoming a letterbox.
+  // GUTTER IS THE NAME COLUMN — widening it narrows the map, and that is the
+  // trade the brief asked for: "make the map slightly more narrow and that gives
+  // room for the names to get longer or larger."
+  // 240 -> 285: at 240 the name column was only ~145px after the index column, so
+  // ordinary names like "Kummara, Kummari" and "Parvatarajakulam" wrapped when
+  // they had no need to. Brief: "a lot of those don't need to be word wrapped —
+  // word wrapping is only necessary if the people groups overlap the gutter
+  // space." 285 fits every name on this sheet but the single longest.
+  // 285 -> 330. The white sheet edge took 26px off each label column and nothing
+  // gave it back, so names needed 185-215px but had only 177 and SEVEN wrapped
+  // that had no need to. Brief: "a lot of the people group lines don't need to
+  // be line wrapped — like 1 and 6 and 34, 49, 44." At 330 the name column is
+  // 222px and only "Vellaiyan Kuppam Padaiyaci" (265px) still wraps, which is a
+  // name that genuinely overruns any sane column.
+  // GRANULAR mode needs a much wider label column (measured: the 4 columns want
+  // ~543px against 266px available at gutter 330). GUTTER_OVERRIDE lets the
+  // experiment widen it without disturbing the approved single-name template.
+  '3x3': { w: 1500, h: 1500, gutter: Number(process.env.GUTTER || 330), page: '3in 3in' },
+};
+const FMT = FORMATS[process.env.FORMAT || '3x4'] || FORMATS['3x4'];
+// Stamped at generation time. Overridable so a rebuild can reproduce an existing
+// sheet byte-for-byte — print determinism matters more than always-now.
+const POSTER_DATE = process.env.POSTER_DATE
+  || new Date().toISOString().slice(0, 10);
+const PW = FMT.w, PH = FMT.h;
+// HEADER carries the title, the Countries/Provinces list, the vision block AND
+// the "Ways to use this map" examples; FOOTER carries only the scripture, so it
+// stays slim. HEADER must exceed HEAD_BOTTOM (headY 104 + 298 = 402) or the map
+// frame is drawn over the last lines of the examples list.
+// HEADER carries the title, the facts table and the vision columns.
+// FOOTER carries the BELOW-MAP sandwich (the goal question + the three networks)
+// AND the scripture, so it is now the taller of the two. Both are checked at
+// render time by fail-loud guards — see HEAD_BOTTOM and FOOT_LIMIT.
+// ── SPARSE (v3, "thumbnail-worthy") ─────────────────────────────────────────
+// design note 2026-07-31: "I think it has too much information on it… I like less
+// information with larger people-group names and a larger map… keep the how-to
+// question at the bottom and still keep the scripture at the top, and maybe keep
+// the table that explains the countries etc, and just NOT explain the Jesus
+// Strategy for 5000 and the What is a Prayer List of 100."
+//
+// The point is a poster that survives being a BLOG THUMBNAIL: at thumbnail scale
+// the only things that must still read are the region name, the map and the
+// people-group names. The two vision columns are what cost the most height, and
+// height is what was squeezing the names down to ~10.6px.
+//
+// SPARSE=1 drops those two columns and gives the reclaimed height to the map,
+// which raises the label type from ~10.6px to ~14.8px (+40%).
+const SPARSE = process.env.SPARSE === '1';
+// SERIES NAME — the operator is still settling this ("it might make more sense to
+// call it 'List of 100 UPG's'"). One constant, so the rename is a one-line change
+// and never has to be hunted across the sheet.
+const SERIES_NAME = process.env.SERIES_NAME || "List of 100 UPG's";
+// ── PIN BADGE RADIUS (template parameter) ───────────────────────────────────
+// The numbered disc on the map. It is the single knob that decides how far the
+// de-collision pass has to shove pins away from their true coordinates: MIN_SEP
+// is derived from it, so a smaller badge means truer pin placement.
+// 8.0 measured: drops mainland occupancy on Tamil Nadu from 51% -> 29%.
+// Overridable per run; `zone.pinScale` multiplies it per zone.
+// 8.0 -> 6.6. Brief: "I want them to be smaller pins with the numbers more
+// easily readable." Smaller badges ALSO shrink MIN_SEP (derived from PIN_R), so
+// the de-collision pass shoves each pin less far from its true coordinate — the
+// original reason the badge came down from 10.8.
+const PIN_R_BASE = Number(process.env.PIN_R || 6.6);
+// GRANULAR=1 renders the label columns as a 4-column table instead of one name
+// per row. Opt-in so the approved template (snapshots/v5-3x3-approved) remains
+// the default while this is evaluated.
+const GRANULAR = process.env.GRANULAR === '1';
+const GRANULAR_FS = Number(process.env.GRANULAR_FS || 0.62);   // x the row's name size
+// textW is calibrated for Lato at body sizes; these table cells mix bold and
+// regular at small sizes and MEASURED ~15% wider than predicted, which is why
+// truncated names still collided with the Place column. Measure, then correct.
+const GRAN_W_CORR = 1.15;
+const GRAN_CELL_GAP = 10;   // paper between adjacent cells
+// PER-COLUMN TYPE SCALE. Brief: "I want to see the people group names quite
+// large — the other fields don't have to be as large." The name is what a person
+// prays by name; place/language/religion are supporting detail, so they are set
+// smaller and lighter. Index order: people, place, language, religion.
+// THE THUMBNAIL TEST. Brief: "I want someone who uses this as a thumbnail to be
+// able to see the people group names quite well, and then they have to probably
+// zoom in to see the place / language / religion."
+// So the name is not merely larger — it is the ONLY column meant to survive
+// being scaled down. The other three drop to ~0.62 of it, which is legible in a
+// 3ft print and on zoom, and recedes to texture at thumbnail size. That is the
+// intended reading order, not a compromise.
+const GRAN_SCALE = [1.0, 0.62, 0.62, 0.60];
+// Set by the granular column solver once per sheet; read by layoutLabels so a
+// row's PITCH matches the height it will actually draw. Null in non-granular mode.
+let rowLinesFor = null;
+let GRAN_COLS = null;
+// Solve column widths + type size ONCE for the sheet, then expose rowLinesFor()
+// so the layout pass can pitch every row by the height it will really occupy.
+function solveGranularColumns(pins) {
+  const F = [(p) => p.name || '', (p) => p.place || '',
+             (p) => p.language || '', (p) => p.religion || ''];
+  const perGutter = Math.ceil(pins.length / 2);
+  const LABEL_RES_ = LABEL_RES_M();
+  const baseFs = 16;
+  const numW = textW(`${pins.length}.`, baseFs) * 1.06 + baseFs * 0.42;
+  const avail = LABEL_RES_ - 6 - numW;
+  const pct = (arr, q) => { const a = [...arr].sort((x, y) => x - y);
+    return a[Math.min(a.length - 1, Math.floor(a.length * q))]; };
+  const wts = F.map((f, ci) => Math.max(4, pct(pins.map((p) => String(f(p)).length), 0.75)) * GRAN_SCALE[ci]);
+  const tot = wts.reduce((a, b) => a + b, 0);
+  const w = wts.map((x) => (x / tot) * avail);
+  const bandH = (LABEL_BOT ?? PH) - (LABEL_TOP ?? 0);
+  const linesOf = (p, fs) => {
+    let n = 1;
+    for (let ci = 0; ci < F.length; ci++) {
+      const k = wrapPx(String(F[ci](p)), fs * GRAN_SCALE[ci] * GRAN_W_CORR, w[ci] - GRAN_CELL_GAP).length;
+      if (k > n) n = k;
+    }
+    return n;
+  };
+  // Largest size whose STACKED height fits the band. Must model the REAL cost:
+  //   • the gutter split is by pin longitude, not the first half of the array —
+  //     so take the worst case by sorting rows by their own line count;
+  //   • every row also pays `gap` (fs * 0.34) in the layout pass.
+  // The first version sized against pins.slice(0, half) with a flat +3, and the
+  // right gutter came out 962px against a 933px band: over before slack, so rows
+  // overlapped. Measured.
+  let fs = 20;
+  for (; fs > 5; fs -= 0.25) {
+    const linesAll = pins.map((p) => linesOf(p, fs)).sort((a, b) => b - a);
+    const worst = linesAll.slice(0, perGutter);          // fullest possible gutter
+    const total = worst.reduce((a, n) => a + n * fs * 1.16 + fs * 0.34, 0);
+    if (total <= bandH) break;
+  }
+  const maxLines = Math.max(...pins.map((p) => linesOf(p, fs)));
+  GRAN_COLS = { w, numW, avail, fs, lines: maxLines };
+  rowLinesFor = (it) => linesOf(it, fs);
+}
+// Trim a string to fit a pixel width, with an ellipsis. Truncation, not wrapping:
+// a wrapped cell would push every following row down, and a sheet carries 73-118.
+function fitToWidth(str, fs, maxW) {
+  if (textW(str, fs) <= maxW) return str;
+  let out = str;
+  while (out.length > 1 && textW(out + '\u2026', fs) > maxW) out = out.slice(0, -1);
+  return out + '\u2026';
+}
+// The province enumeration for a zone. `label` is now an authored REGION NAME, so
+// it must NOT be split for provinces — clusters.json keeps the old enumeration in
+// `provinceLabel`. Defined once because the header-MEASURING pass and the RENDER
+// pass both need it and had drifted to different rules.
+const provincesOf = (zone) =>
+  Array.isArray(zone.provinces) && zone.provinces.length ? zone.provinces
+  : zone.provinceLabel ? String(zone.provinceLabel).split(' + ').map((x) => x.trim()).filter(Boolean)
+  : String(zone.label || zone.id).split(' + ').map((x) => x.trim()).filter(Boolean);
+// Sheet margin for the FULL-WIDTH bands (scripture + facts above the map, the
+// goal question + three networks below it, and the closing verse). Deliberately
+// independent of GUTTER: the gutters exist to give the label columns room and get
+// re-tuned per format, while these bands always want the sheet's own edge.
+// Brief: "the horizontal lines should go full width all the way to the white
+// border." So the rules run to SHEET_EDGE exactly and terminate against it —
+// the white edge becomes the frame they resolve into. The TEXT inside these bands
+// still gets its own inset (BAND_TEXT_PAD) so words never touch the border.
+const BAND_MARGIN_G = 26;   // == SHEET_EDGE; rules meet the white border
+// Breathing space between the map block and the ruled bands above and below it.
+// Brief: "the map and the people groups seem to sit closer to the bottom table,
+// so that means we need better spacing." The two gaps were set by INDEPENDENT
+// constants and had drifted to 82px above / 38px below — the map block visibly
+// sank toward the footer. One constant is used on both sides, so they cannot
+// diverge again as the header grows or shrinks per zone.
+const MAP_BREATH = 58;
+const BAND_TEXT_PAD = 30;   // text inset within those rules
+// White edge framing the whole sheet — a print margin. Brief: "the border around
+// the poster itself should be a white edge." Drawn LAST, over everything, so any
+// element that runs to the sheet edge is trimmed by it rather than colliding.
+const SHEET_EDGE = 26;
+// Label-column geometry. Hoisted to module scope because the label LAYOUT pass
+// (which now solves for a uniform type size + wrapping) needs the same column
+// width the RENDER pass uses; they were duplicated locals and drifted apart.
+// Label columns must clear the white sheet edge, not sit ON it — at 26 they ran
+// exactly to the edge and every long name was trimmed by it. Derived from
+// SHEET_EDGE so the two can never drift apart again.
+const SHEET_MARGIN_L = SHEET_EDGE + 8;
+const LANE_EDGE_GAP_L = 6;
+const LABEL_RES_M = () => GUTTER - SHEET_MARGIN_L - LANE_EDGE_GAP_L - 24;
+const HEADER_BASE = SPARSE ? 355 : 460;
+const FOOTER = SPARSE ? 316 : 255;
+// GUTTER was 300px A SIDE — 600 of 1350 (44% of the sheet) given to text, leaving
+// the map only 750px wide. The names are short and do not need that; the MAP does.
+// At 210 a side the map grows 750 -> 930 (+24% width, +24% linear scale), which is
+// what gives the pins room to stop overlapping. The poster's own aspect ratio is
+// untouched — PW/PH are unchanged; only the split between map and margin moves.
+// Label column (LABEL_RES) drops to match, still comfortably wider than the
+// longest people-group name at this size.
+const GUTTER = FMT.gutter, GPAD = 16;
+const MAP_X = GUTTER;
+const MAP_W = PW - 2 * GUTTER;
+// Set per-zone by setMapBox() before each poster renders.
+let HEADER = SPARSE ? 355 : 460;
+let MAP_Y = HEADER;
+let MAP_H = PH - HEADER - FOOTER;
+const setMapBox = (headerPx) => {
+  HEADER = headerPx;
+  MAP_Y = HEADER;
+  MAP_H = PH - HEADER - FOOTER;
+};
+// HEADER IS PER-ZONE, NOT A SHARED CONSTANT. The facts table's height depends on
+// how many countries and provinces a zone has, so one fixed HEADER cannot serve
+// all 28 sheets: tuned to North India (2 countries) it overflowed on west-africa
+// (many more), and tuned to west-africa it would steal ~60px of map from every
+// other sheet. measureHeader() predicts the height from the zone's OWN content,
+// so each poster gets exactly the header it needs and the map takes the rest.
+// The fail-loud guard still runs afterwards as the backstop.
+function measureHeader(zone, pins, ctryNames, provinces) {
+  if (!SPARSE) return HEADER_BASE;
+  // PREDICT WITH THE SAME COLUMN WIDTHS THE RENDERER USES. This used to assume
+  // four EQUAL quarter-width columns, but the table now sizes columns to their
+  // content — so a zone with one long list (deaf, europe) was predicted to wrap
+  // far more than it really does. The surplus landed as dead space ABOVE the map:
+  // deaf rendered 340px above vs 74px below, a 266px drift.
+  const FT_BAND = PW - 2 * BAND_MARGIN_G;
+  const vals = [
+    [`${pins.length} UPG's`, 34],
+    [ctryNames.join(' \u00b7 ') || '\u2014', 17],
+    [provinces.join(' \u00b7 ') || '\u2014', 17],
+    ['~0.0M', 34],
+  ];
+  const wts = vals.map(([v]) => Math.sqrt(Math.max(10, String(v).length)));
+  const tot = wts.reduce((a, b) => a + b, 0);
+  const minW = FT_BAND * 0.17;
+  let ws = wts.map((w) => Math.max(minW, (w / tot) * FT_BAND));
+  const sum = ws.reduce((a, b) => a + b, 0);
+  ws = ws.map((w) => (w / sum) * FT_BAND);
+  const rows = Math.max(...vals.map(([v, fs], i) =>
+    wrapPx(v, fs, ws[i] - 24 - BAND_TEXT_PAD / 2).length));
+  // 136 title flow + series(28) + scripture block(53) + table head(22)
+  // + first value row(34) + each extra wrapped row(20) + 14 trailing.
+  // +24 measured: the guard reported 351 against a predicted 327 on the
+  // reference zone, so the fixed part of the block is 24px taller than the
+  // sum of its nominal steps (baseline offsets inside each sub-block).
+  // +52 not +38: the estimate is a PREDICTION of a block whose exact height
+  // depends on per-zone wrapping, so it carries slack rather than sitting on the
+  // boundary. 14px of slack costs 14px of map on the tightest sheets and prevents
+  // a per-zone constant hunt (sudan tripped a 38 that North India cleared).
+  // The fail-loud guard remains the real check.
+  // +66, was +52. The header now also carries the two-tone title, which sits on
+  // its own line above the series text; zones whose facts wrap to fewer rows
+  // (gujarat: one country, one province) tripped the guard at 52.
+  // The trailing term is the gap between the last header rule and the map's top
+  // edge. It uses MAP_BREATH so it MATCHES the gap below the map, plus 8px for
+  // the rule's own weight and the drop shadow that sits above the frame.
+  // -8 not +8: measured, the block lands 16px lower than the nominal sum of its
+  // steps (baseline offsets inside each sub-block), so the trailing term is
+  // corrected against the RENDER rather than trusted from arithmetic. This makes
+  // the gap above the map equal the gap below it.
+  // +6 of slack over the corrected value: the prediction is a MODEL of a block
+  // whose height depends on per-zone wrapping, and gujarat (one country, one
+  // province -> fewest wrapped rows) landed 12px past the corrected estimate.
+  // Slack here costs a few px of map; being short trips the guard and fails the
+  // build, so it errs generous. The guard remains the real check.
+  // 28 -> 12: the series block is ONE line now, not two, so the model must stop
+  // reserving the second line or the freed space just becomes a bigger top gap.
+  // +16, was +6. Predicting with the renderer's real column widths made this
+  // estimate much tighter, which is what let the map grow — but oceania-indonesia
+  // then landed 8px past it and tripped the guard. A small fixed margin covers
+  // the residual per-zone variation; the map still takes everything else.
+  return 136 + 12 + 53 + 22 + 34 + Math.max(0, rows - 1) * 20 + MAP_BREATH + 16;
+}
+
+// distribute pins into left/right gutters, balanced, return label rows w/ leader anchors
+// Label rows are confined to the MAP BAND, not the whole sheet. When the map
+// frame fits a landscape region it occupies only part of the sheet height, and
+// labels spread over the full height then sat beside blank paper with their
+// connectors pointing at nothing.
+let LABEL_TOP = null, LABEL_BOT = null;
+function layoutLabels(pins, project) {
+  // project + clamp into the map content rect for the leader-line origin
+  const items = pins.map((p) => {
+    // _fixed pins carry positions already settled by the de-overlap pass; do not
+    // re-project them or the separation work is thrown away.
+    const [lx, ly] = p._fixed ? [p._px, p._py] : project(p.lng, p.lat);
+    const x = Math.max(MAP_X + 2, Math.min(MAP_X + MAP_W - 2, lx));
+    const y = Math.max(MAP_Y + 2, Math.min(MAP_Y + MAP_H - 2, ly));
+    return { ...p, px: x, py: y };
+  });
+  // GUARANTEED NON-CROSSING side assignment (anti-overlap math).
+  // Sort pins by px and split at the median index: the left half of pins (by
+  // longitude) take the LEFT gutter, the right half the RIGHT. Because every
+  // left pin sits physically left of every right pin, the two leader fans
+  // occupy DISJOINT horizontal bands (meeting only at the median x) and cannot
+  // cross each other. Within a gutter, `place()` orders the ports by pin
+  // latitude (py), so the leaders form a monotonic fan to a common vertical
+  // port line — the classical boundary-labeling result that straight leaders
+  // are non-crossing iff the point→port assignment preserves y-order. The two
+  // properties together → no leader line crosses another. (Counts are balanced
+  // to ±1, so neither gutter is overcrowded and labels stay legible.)
+  // Y-ORDER BASELINE (median x-split, then y within each side).
+  const byX = [...items].sort((a, b) => a.px - b.px);
+  const halfB = Math.ceil(byX.length / 2);
+  byX.forEach((it, i) => { it.side = i < halfB ? 'L' : 'R'; });
+  // INTRA-COLUMN ordering by GREEDY CROSSING REPAIR.
+  // The median x-split already yields ZERO inter-column crossings (measured), so
+  // the hard rule is satisfied by construction. Everything left is within
+  // one column's fan.
+  //
+  // Sorting by y is the classic answer but is NOT optimal here, because the slots
+  // are evenly pitched while the pins are not: a pin's slot y and its own y differ,
+  // and two leaders cross exactly when that difference inverts between them.
+  // Rather than guess an ordering heuristic, repair directly: start from y-order,
+  // then repeatedly swap any ADJACENT pair whose swap reduces the crossing count.
+  // Adjacent swaps are enough because a crossing between two leaders in the same
+  // fan is precisely an inversion, and bubble-style repair removes inversions.
+  const segCross = (a, b) => {
+    const d = (p1, p2, p3) => (p3.y - p1.y) * (p2.x - p1.x) - (p2.y - p1.y) * (p3.x - p1.x);
+    const A1 = { x: a.sx, y: a.sy }, A2 = { x: a.px, y: a.py };
+    const B1 = { x: b.sx, y: b.sy }, B2 = { x: b.px, y: b.py };
+    return (d(A1, A2, B1) > 0) !== (d(A1, A2, B2) > 0)
+        && (d(B1, B2, A1) > 0) !== (d(B1, B2, A2) > 0);
+  };
+  for (const sd of ['L', 'R']) {
+    const col = items.filter((i) => i.side === sd).sort((a, b) => a.py - b.py);
+    const n2 = col.length || 1;
+    const bandTop0 = LABEL_TOP ?? MAP_Y, bandBot0 = LABEL_BOT ?? (MAP_Y + MAP_H);
+    const rowH0 = (bandBot0 - bandTop0) / n2;
+    // FRAME_W is computed per-poster in the caller and is NOT in scope here; the
+    // module-level MAP_W is the same width for the label geometry's purposes.
+    const sxCol = sd === 'L' ? MAP_X - 6 : MAP_X + MAP_W + 6;
+    const setSlots = () => col.forEach((it, i) => { it.sx = sxCol; it.sy = bandTop0 + rowH0 * (i + 0.5); });
+    setSlots();
+    // Bubble-repair: swap adjacent rows whenever it strictly reduces crossings.
+    for (let pass = 0; pass < 60; pass++) {
+      let improved = false;
+      for (let i = 0; i < col.length - 1; i++) {
+        const a = col[i], b = col[i + 1];
+        const before = segCross(a, b) ? 1 : 0;
+        const ay = a.sy, by = b.sy;
+        a.sy = by; b.sy = ay;
+        const after = segCross(a, b) ? 1 : 0;
+        if (after < before) { col[i] = b; col[i + 1] = a; improved = true; }
+        else { a.sy = ay; b.sy = by; }
+      }
+      if (!improved) break;
+    }
+    col.forEach((it, i) => { it.ringIdx = i; });
+  }
+
+  const place = (side) => {
+    // Order within a column is: the TOP-band quadrant (sorted by pin y), then the
+    // BOTTOM-band quadrant (sorted by pin y). Sorting by y INSIDE each band is the
+    // monotonicity property — within a quadrant, label order matches pin order, so
+    // leaders in the same quadrant cannot cross each other.
+    // Rows follow the RING ORDER, not y — that ordering is the whole mechanism.
+    const col = items.filter((i) => i.side === side).sort((a, b) => a.ringIdx - b.ringIdx);
+    const n = col.length || 1;
+    // Rows fill the MAP BAND, not the whole sheet. When the frame fits a landscape
+    // region it occupies only part of the sheet height; labels spread over the full
+    // height then sat beside blank paper with their connectors pointing at nothing.
+    // Rows span the PINS' OWN vertical extent, not the whole frame. The map frame
+    // is full sheet height but the pins occupy only a band within it, so labels
+    // spread over the full height put "bottom quadrant" names far below any
+    // bottom-quadrant pin — every one of those leaders then ran steeply upward,
+    // which is exactly the long diagonal the quadrant scheme exists to remove.
+    const pinYs = col.map((it) => it.py);
+    const pinTop = Math.min(...pinYs), pinBot = Math.max(...pinYs);
+    // FULL FRAME HEIGHT, evenly pitched (design, designer call). The label band
+    // used to be blended toward the pins' own extent to shorten leaders — it cut
+    // crossings 77 -> 24 but left the names bunched mid-sheet with empty margin
+    // above and below. Longer leaders are the accepted cost: a poster is looked
+    // at, not audited, and even spacing edge-to-edge reads better AND buys the
+    // type more room.
+    const bandTop = LABEL_TOP ?? MAP_Y;
+    const bandBot = LABEL_BOT ?? (MAP_Y + MAP_H);
+    const bandH = bandBot - bandTop;
+    const rowH = bandH / n;
+    // design note 2026-07-31: "when I zoom out and look at this map… I cannot see the
+    // people group names — they should be larger and bold."
+    // Two separate limits were holding them down: the 0.62 row-height ratio, and a
+    // hard 15px CAP that bit as soon as the map grew. At 46 rows in a ~1030px band
+    // the pitch is ~22px, so 0.76 gives ~17px type with ~5px of leading left — the
+    // names stay separated while getting materially bigger. The cap rises with it;
+    // rowH still governs, so a denser zone cannot collide.
+    // ── ONE SIZE FOR EVERY NAME, WITH WRAPPING ────────────────────────────
+    // Previously the size came from row pitch alone and long names were then
+    // SHRUNK to fit the column width, so no two rows matched. Now the size is
+    // uniform and a long name wraps instead — but a wrapped name occupies two
+    // line-slots, so the pitch has to account for the extra lines BEFORE the size
+    // is fixed. Solve it by trying the largest size down: for each candidate,
+    // count how many lines the column really needs; keep the largest size whose
+    // total lines still fit the band.
+    // The number column is reserved on every line, so the wrap solver needs the
+    // sheet's largest index. `pins.length` is the count for the whole sheet.
+    const MAXNUM_L = pins.length;
+    col.forEach((it) => { it.maxNum = MAXNUM_L; });
+    const MAXF = SPARSE ? 19 : 15;
+    const avail = LABEL_RES_M() - 4;
+    const BOLD_W = 1.06;
+    // Wrap `name` to `avail`, reserving room for the "12. " prefix on line 1.
+    const wrapName = (it, f) => {
+      // The name column is inset by the NUMBER column on every line (the number is
+      // its own element now), so the reserve applies to all lines, not just line 1.
+      const numW = textW(`${it.maxNum}.`, f) * BOLD_W + f * 0.42;
+      const words = String(it.name).split(/\s+/).filter(Boolean);
+      const out = []; let line = ''; let first = true;
+      const room = avail - numW;
+      for (const w of words) {
+        const cand = line ? `${line} ${w}` : w;
+        if (textW(cand, f) * BOLD_W > room && line) { out.push(line); line = w; }
+        else line = cand;
+      }
+      if (line) out.push(line);
+      return out.length ? out : [it.name];
+    };
+    let font = MAXF, wraps = null;
+    for (let f = MAXF; f >= 8; f -= 0.25) {
+      const ws = col.map((it) => wrapName(it, f));
+      const totalLines = ws.reduce((a, w) => a + w.length, 0);
+      // Each line needs f*1.06 of pitch, plus a little air between rows.
+      if (totalLines * (f * 1.06) + col.length * (f * 0.34) <= bandH) { font = f; wraps = ws; break; }
+    }
+    if (!wraps) wraps = col.map((it) => wrapName(it, font));
+    // Re-pitch rows by LINE COUNT so a two-line name gets the room it needs and
+    // single-line rows are not stretched to match it.
+    // LINE HEIGHT MUST MATCH THE TYPE THE ROW ACTUALLY DRAWS AT.
+    // `font` is the single-name size; granular rows render at GRAN_COLS.fs, which
+    // is solved separately. Pitching by `font` while drawing at GRAN_COLS.fs is
+    // what left rows overlapping even after the line-COUNT was correct.
+    const rowFs = (GRANULAR && GRAN_COLS) ? GRAN_COLS.fs : font;
+    const lineH = rowFs * 1.16;
+    const gap = rowFs * 0.34;
+    // ROW HEIGHTS MUST COME FROM WHAT THE ROW ACTUALLY DRAWS.
+    // In GRANULAR mode a row is a 4-cell table whose height is the TALLEST cell,
+    // not the single-name wrap count used here. Pitching granular rows off the
+    // name wraps left 59 (left) + 78 (right) rows overlapping their neighbours and
+    // overflowed the band by 68px — measured. rowLinesFor() is set by the granular
+    // column solver; without it we fall back to the name wraps as before.
+    const rowLines = (i) => (GRANULAR && rowLinesFor) ? rowLinesFor(col[i]) : wraps[i].length;
+    const usedH = col.reduce((a, _, i) => a + rowLines(i) * lineH, 0) + col.length * gap;
+    const slack = Math.max(0, bandH - usedH) / Math.max(1, col.length);
+    let cursor = bandTop + slack / 2;
+    col.forEach((it, i) => {
+      it.wrap = wraps[i];
+      const blockH = rowLines(i) * lineH;
+      it.labelY = cursor + lineH * 0.5 - font * 0.34;
+      cursor += blockH + gap + slack;
+      it.font = font;
+      it.rowH = rowH;
+      // gutter inner edge (where the leader meets the text block)
+      it.dotX = side === 'L' ? MAP_X - 6 : MAP_X + MAP_W + 6;
+      it.textX = side === 'L' ? MAP_X - GPAD : MAP_X + MAP_W + GPAD;
+      it.anchor = side === 'L' ? 'end' : 'start';
+    });
+    return col;
+  };
+  return [...place('L'), ...place('R')];
+}
+
+// ── footer Scripture ─────────────────────────────────────────────────────────
+// The feeding of the 5000 — Jesus had the crowd sit "in groups of hundreds and
+// of fifties" (Mark 6:40 / Luke 9:14). That 50/100 grouping is the motif behind
+// the my-upg-100-list: the harvest seated in countable companies, none forgotten.
+// Override per region via VERSE_BY_ZONE (keyed by zoneKey or zone.id).
+const DEFAULT_VERSE = {
+  text: 'And they sat down in groups, by hundreds and by fifties.',
+  ref: 'Mark 6:40',
+};
+const VERSE_BY_ZONE = {
+  // 'asia-india-andhra-pradesh': { text: '…', ref: '…' },
+};
+const verseFor = (zone) => VERSE_BY_ZONE[zone.zoneKey] || VERSE_BY_ZONE[zone.id] || DEFAULT_VERSE;
+
+// ── TEXT MEASUREMENT + COLUMN WRAPPING (for the header grid) ─────────────────
+// SVG <text> does not word-wrap, so a multi-column header has to be broken into
+// lines HERE. Widths come from the same per-character advance table the label
+// underlines use — it is approximate but consistent, and consistency is what a
+// column needs: every line in a column is measured by the same ruler.
+const CHADV = (ch) => {
+  if ('iIjl|.,:;\'! '.includes(ch)) return 0.28;
+  if ('ftr()[]-'.includes(ch)) return 0.34;
+  if ('mwMW'.includes(ch)) return 0.86;
+  if ('ABCDEFGHKLNOPQRSTUVXYZ0123456789'.includes(ch)) return 0.63;
+  return 0.53;
+};
+// Width of a plain string at a given font size, in px.
+// CALIBRATED AGAINST THE RENDERER, not guessed. The raw advance table averages
+// ~0.45/char over ordinary prose, but Lato at 12.5px measured 0.498/char across
+// 8 rendered lines (getBBox in Firefox) — an 11% under-estimate, which let every
+// column overrun its own rule. Measure, then correct; do not re-tune by eye.
+const WFUDGE = 1.11;
+const textW = (str, fs) => [...str].reduce((a, ch) => a + CHADV(ch), 0) * fs * WFUDGE;
+// Greedy word-wrap to a pixel width. Returns an array of lines.
+function wrapPx(str, fs, maxW) {
+  const words = String(str).split(/\s+/).filter(Boolean);
+  const out = [];
+  let line = '';
+  for (const w of words) {
+    const next = line ? line + ' ' + w : w;
+    if (textW(next, fs) > maxW && line) { out.push(line); line = w; }
+    else line = next;
+  }
+  if (line) out.push(line);
+  return out;
+}
+// Emit one wrapped paragraph into a column. `lead` markup (e.g. a bold run-in)
+// is applied to the opening words of the first line only.
+// Returns the y AFTER the last line.
+function paraInto(push, text, { x, y, w, fs, lh, cls, lead }) {
+  const full = lead ? `${lead} ${text}` : text;
+  const lines = wrapPx(full, fs, w);
+  let cy = y;
+  for (let i = 0; i < lines.length; i++) {
+    let body = esc(lines[i]);
+    // Re-apply the run-in emphasis to however much of it landed on line 0.
+    if (i === 0 && lead) {
+      const le = esc(lead);
+      if (body.startsWith(le)) body = `<tspan class="hsrc-em">${le}</tspan>` + body.slice(le.length);
+    }
+    push(`<text x="${x}" y="${cy}" class="${cls}">${body}</text>`);
+    cy += lh;
+  }
+  return cy;
+}
+
+function renderPoster(zone, pins, zoneFC) {
+  // Per-zone override for the badge, so a zone with unusually crowded or sparse
+  // pins can tune without a code branch. Defaults to the template value.
+  const PIN_R = PIN_R_BASE * (Number(zone.pinScale) > 0 ? Number(zone.pinScale) : 1);
+  // SIZE THE HEADER FIRST — the map box is derived from it, and every geometry
+  // consumer below reads MAP_Y/MAP_H. Both inputs are available up here: the
+  // country list comes from the pins, and the province list from the zone (the
+  // title-derived fallback only applies to zones with no `provinces` field, which
+  // are exactly the zones whose label IS the province list).
+  {
+    const ctry = [...new Set(pins.map((p) => ISO3_NAME[p.country_code] || p.country_code).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b));
+    const prov = provincesOf(zone);
+    // TWO-PASS SIZING. measureHeader() must err GENEROUS or the fail-loud guard
+    // trips mid-build — but every over-reserved pixel used to sit as dead white
+    // space above the map (deaf: 340px above vs 74px below).
+    // Brief: "increase the height of maps if they have a lot of white space, and
+    // space out the columns of people groups accordingly, so that maps can take
+    // up the white space if there is any vertical room."
+    // So: predict generously, then hand the map the FULL remaining band. MAP_H is
+    // derived from the prediction, so a smaller header automatically yields a
+    // taller map — and the label columns re-pitch to the same band, which is what
+    // spaces the names out to match.
+    setMapBox(measureHeader(zone, pins, ctry, prov));
+  }
+  // bbox: prefer resolved polygons; fallback to pins
+  let bbox;
+  if (zoneFC.features.length) {
+    let W = 180, S = 90, E = -180, N = -90;
+    for (const f of zoneFC.features) { const b = bboxOf(f.geometry); if (b[0] < W) W = b[0]; if (b[1] < S) S = b[1]; if (b[2] > E) E = b[2]; if (b[3] > N) N = b[3]; }
+    bbox = [W, S, E, N];
+    // A polygon set can span the globe for the same two reasons the pins can —
+    // an antimeridian wrap or a far outlier — so fall back to the pin-derived
+    // box when the polygon box is implausibly wide.
+    if (E - W > 170 && pins.length) bbox = pinBbox(pins);
+  } else {
+    bbox = pinBbox(pins);
+  }
+  const FRAME_X = MAP_X;
+  const proj = (lng, lat) => { const [x, y] = project(lng, lat); return [FRAME_X + x, FRAME_Y + y]; };
+  // 25% context pad on EVERY side, on top of the projection's own 6%, left the
+  // subject floating small inside a large empty frame — the poster's whole middle
+  // was neighbouring land and sea. 10% still shows the surrounding countries (the
+  // the brief calls for them named and visible) while letting the zone fill the sheet.
+  // Enough surrounding land to PLACE the region on the globe. 10% showed barely
+  // any neighbours; 22% brings in the countries that answer "where is this?"
+  const pad = [(bbox[2] - bbox[0]) * 0.22 + 1, (bbox[3] - bbox[1]) * 0.22 + 1];
+  const viewBbox = [bbox[0] - pad[0], bbox[1] - pad[1], bbox[2] + pad[0], bbox[3] + pad[1]];
+
+  // ── FIT THE MAP FRAME TO THE REGION'S SHAPE ────────────────────────────────
+  // The map frame was a fixed portrait rect (930x1580, aspect 0.59) but this
+  // region is LANDSCAPE (aspect 1.26). makeProjection fits with Math.min(sx,sy),
+  // so width bound and the region floated in a tall letterboxed void — roughly
+  // half the sheet was empty sea and sky.
+  // Now the frame takes the region's own aspect, capped so it never gets so short
+  // that the label columns have nowhere to sit. The POSTER aspect is untouched;
+  // only the map's share of it moves, and the freed height goes to the margins.
+  const SHEET_MARGIN_X = 30;
+  const mercYr = (la) => Math.log(Math.tan(Math.PI / 4 + (la * Math.PI / 180) / 2));
+  const zoneAspect = (viewBbox[2] - viewBbox[0]) / (((mercYr(viewBbox[3]) - mercYr(viewBbox[1])) * 180) / Math.PI);
+  // A landscape region should be allowed to use the FULL sheet width. Capping it
+  // at MAP_W (sheet minus two 210px gutters) meant this region could only reach
+  // 887px of the 1580px band — 693px of dead paper. The gutters do not need to be
+  // full-height: the labels now track the map band, so the map may extend past
+  // them vertically and the names simply sit alongside where it is.
+  const FRAME_W = MAP_W;
+  // The frame keeps the SHEET's height and simply shows more surrounding land
+  // above and below the region. Fitting the frame tightly to the region's own
+  // aspect looked correct in isolation but left 693px of dead paper on the sheet,
+  // and a poster cannot have a void that size. Extra context is not waste: the
+  // the brief asked for neighbouring countries to be visible and named, and a taller
+  // frame is exactly what shows them.
+  // FULL SHEET HEIGHT — the map runs from just under the header to just above the
+  // footer rule, so there is no dead band anywhere on the page.
+  const FRAME_H = MAP_H;
+  // OPTICAL CENTRING, not geometric. A block centred by arithmetic looks like it
+  // is falling off the bottom of the sheet — the optical centre sits ABOVE the
+  // geometric one, which is why framers cut a bottom mat 1.25-1.4x the top. Here
+  // the remainder is split 42/58 so the bottom margin is the larger one.
+  const FRAME_Y = MAP_Y;
+  const project = makeProjection(bbox, FRAME_W, FRAME_H, 0.08);
+  // Hand the label layout the map band so names track the map, not the sheet.
+  // IN SPARSE MODE the names get the SHEET's height instead. The names live in the
+  // side margins, not inside the frame, so nothing stops them running past the map
+  // band — and row pitch is what sets their type size. Letting them use the full
+  // column between the header rule and the footer rule buys ~2px of type at no
+  // cost to the map. Brief: "make the names larger."
+  if (SPARSE) {
+    LABEL_TOP = HEADER - 40;
+    LABEL_BOT = PH - FOOTER + 40;
+  } else {
+    LABEL_TOP = FRAME_Y; LABEL_BOT = FRAME_Y + FRAME_H;
+  }
+
+  const color = zone.color || '#2bb';
+  // context countries (faint) — any adm0 whose bbox intersects the view
+  let ctx = '';
+  // Context countries + their NAMES. Previously these drew as an almost-invisible
+  // wash with no labels at all, so a reader could not tell what land surrounded
+  // the highlighted zone. Imhof's figure-ground: the surround must be legible but
+  // clearly subordinate — separation by VALUE, with a hairline edge so
+  // near-identical fills still read (Tufte separates 3% and 7% tints this way).
+  const ctxLabels = [];
+  for (const f of adm0.features) {
+    const fb = bboxOf(f.geometry);
+    if (!bboxIntersect(fb, viewBbox)) continue;
+    ctx += `<path d="${geoToPath(f.geometry, proj)}" class="ctry"/>`;
+    // Label the LARGEST VISIBLE RING, not the feature's bbox centre.
+    // A bbox centre is wrong for two independent reasons here:
+    //   1. ANTIMERIDIAN — the USA spans Alaska (-178) to the Aleutians (+179), so
+    //      its bbox centre is 0.8E: the middle of the Sahara. It really did print
+    //      "UNITED STATES" over Algeria.
+    //   2. Multi-part countries (islands, exclaves) put the centre in open water.
+    // Taking the biggest ring that actually intersects the view fixes both, and is
+    // also what makes the label land ON the landmass a reader associates it with.
+    const rings = f.geometry.type === 'Polygon' ? [f.geometry.coordinates[0]]
+                : f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates.map((poly) => poly[0])
+                : [];
+    let best = null, bestArea = 0;
+    for (const ring of rings) {
+      let x0 = 180, y0 = 90, x1 = -180, y1 = -90;
+      for (const [x, y] of ring) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+      if (!bboxIntersect([x0, y0, x1, y1], viewBbox)) continue;
+      const vx0 = Math.max(x0, viewBbox[0]), vx1 = Math.min(x1, viewBbox[2]);
+      const vy0 = Math.max(y0, viewBbox[1]), vy1 = Math.min(y1, viewBbox[3]);
+      const area = (vx1 - vx0) * (vy1 - vy0);
+      if (area > bestArea) { bestArea = area; best = [vx0, vy0, vx1, vy1]; }
+    }
+    if (!best) continue;
+    const wFrac = (best[2] - best[0]) / (viewBbox[2] - viewBbox[0]);
+    const hFrac = (best[3] - best[1]) / (viewBbox[3] - viewBbox[1]);
+    // Area test, not an AND of both axes: requiring both rejected every country
+    // whose visible slice is wide-but-short or tall-but-narrow.
+    // Threshold lowered hard: the point of the surrounding countries is to say
+    // WHERE ON THE GLOBE this is, and that only works if enough of them are named.
+    // Previously most neighbours were rejected and the region floated unplaced.
+    if (wFrac * hFrac < 0.00025 || wFrac < 0.012 || hFrac < 0.008) continue;
+    const nm = ISO3_NAME[f.properties?.iso3] || f.properties?.iso3;
+    if (!nm) continue;
+    // proj takes (lng, lat) as TWO ARGS — passing an array yields NaN silently,
+    // which put every label at x="NaN" and rendered nothing at all.
+    // A BBOX CENTRE IS NOT A POINT INSIDE THE SHAPE. China's visible slice is a
+    // wide east-west band across the top of the crop; the centre of that box sits
+    // SOUTH of the border — inside Nepal — so the poster printed "CHINA" in Nepal.
+    // Sample candidate points inside the clipped box and keep the one that is
+    // actually inside the country's own polygon and furthest from its edges. This
+    // is a coarse pole-of-inaccessibility: it guarantees the name lands on its own
+    // land rather than on a neighbour's.
+    const ringsOf = (geom) => geom.type === 'Polygon' ? [geom.coordinates[0]]
+      : geom.type === 'MultiPolygon' ? geom.coordinates.map((poly) => poly[0]) : [];
+    const inRing = (px, py, ring) => {
+      let hit = false;
+      for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const [xi, yi] = ring[i], [xj, yj] = ring[j];
+        if ((yi > py) !== (yj > py) && px < ((xj - xi) * (py - yi)) / (yj - yi) + xi) hit = !hit;
+      }
+      return hit;
+    };
+    const cand = [];
+    const R = ringsOf(f.geometry);
+    for (let gx = 1; gx <= 7; gx++) {
+      for (let gy = 1; gy <= 7; gy++) {
+        const cxp = best[0] + ((best[2] - best[0]) * gx) / 8;
+        const cyp = best[1] + ((best[3] - best[1]) * gy) / 8;
+        if (!R.some((ring) => inRing(cxp, cyp, ring))) continue;
+        // score = distance to the nearest edge of the clipped box (keeps it central)
+        const d = Math.min(cxp - best[0], best[2] - cxp, cyp - best[1], best[3] - cyp);
+        cand.push({ cxp, cyp, d });
+      }
+    }
+    if (!cand.length) continue;                  // no interior point in view — skip it
+    cand.sort((a, b) => b.d - a.d);
+    const [lx, ly] = proj(cand[0].cxp, cand[0].cyp);
+    // IS THIS COUNTRY PART OF THE ZONE, or merely a neighbour in view?
+    // A zone whose members are mixed geometry (ADM1 provinces + a whole ADM0, as in
+    // North India + Nepal) was labelling its OWN member country in the neighbour
+    // style — so Nepal read as context, exactly like China, even though its land is
+    // filled in the zone colour and 34 of the sheet's people groups are inside it.
+    const isMember = Array.isArray(zone.adm0)
+      && zone.adm0.includes(String(f.properties?.iso3 || '').toUpperCase());
+    ctxLabels.push({ x: lx, y: ly, nm: String(nm), member: isMember, area: bestArea });
+  }
+  // ALL-CAPS country names, tracked +0.1em (Bringhurst 5-10% of type size; shipped
+  // map styles converge on exactly 0.1em). Haloed to the PAPER colour, not white.
+  let ctryNames = '';
+  // Biggest visible landmass first, so when two names compete for the same space
+  // the more prominent country keeps its label.
+  ctxLabels.sort((a, b) => (b.area || 0) - (a.area || 0));
+  const placedLabels = [];
+  for (const L of ctxLabels) {
+    // Bounds must use FRAME_X, not MAP_X — the map draws from FRAME_X, so testing
+    // against MAP_X silently rejected labels that were genuinely inside the frame.
+    // A CLAMP IS WRONG HERE AND PRINTED "CHINA" INSIDE UTTAR PRADESH.
+    // Clamping drags a name to the frame edge nearest its true centre, so a country
+    // that is mostly off-screen lands its label on whatever land happens to sit
+    // there. China's visible slice is the Tibetan plateau to the north while its
+    // ring centre is far east — the clamp parked it in the middle of India.
+    // A wrong country name on a map is worse than no name at all.
+    // Instead: keep only labels whose position is genuinely INSIDE the frame, and
+    // place them at the centroid of the CLIPPED visible ring (computed above), so
+    // the name sits on the country's own visible landmass or not at all.
+    if (L.x < FRAME_X + 26 || L.x > FRAME_X + FRAME_W - 26) continue;
+    if (L.y < FRAME_Y + 26 || L.y > FRAME_Y + FRAME_H - 26) continue;
+    // GREEDY DE-OVERLAP. The area test admits a label if the country is big
+    // enough to deserve one, but says nothing about whether there is ROOM. On a
+    // world-scale zone (uncovered-scatter) that let ~60 names pile into Eurasia
+    // as an unreadable block. Reserve each accepted label's box and drop any
+    // later one that would land on top of it — a name that cannot be read is
+    // worse than no name, and the big countries win because they are sorted
+    // by visible area first.
+    const halfW = textW(L.nm, 15) * 0.5 + 6, halfH = 9;
+    if (placedLabels.some((q) => Math.abs(q.x - L.x) < halfW + q.halfW
+                              && Math.abs(q.y - L.y) < halfH + q.halfH)) continue;
+    placedLabels.push({ x: L.x, y: L.y, halfW, halfH });
+    const t = esc(L.nm.toUpperCase());
+    // Member countries take the same ink as the zone's own province names, so a
+    // reader can tell at a glance which land the sheet is ABOUT and which is only
+    // there for orientation.
+    const cls = L.member ? 'ctry-name-own' : 'ctry-name';
+    ctryNames += `<text x="${L.x.toFixed(1)}" y="${L.y.toFixed(1)}" text-anchor="middle" class="ctry-name-halo">${t}</text>`
+              +  `<text x="${L.x.toFixed(1)}" y="${L.y.toFixed(1)}" text-anchor="middle" class="${cls}">${t}</text>`;
+  }
+  // ── NEIGHBOURING PROVINCES (context ADM1) ─────────────────────────────────
+  // Previously only the ZONE's provinces were drawn, so everything around the
+  // highlighted cluster was one undifferentiated wash — a reader could not tell
+  // which province was which, or that there were provinces at all outside the
+  // zone. Draw EVERY adm1 feature intersecting the view as faint context, and
+  // label it. Zero new data: gb-IND-ADM1 and gb-CHN-ADM1 are already local and
+  // already carry shapeName.
+  let ctxAdm1 = '';
+  const adm1Labels = [];
+  for (const pool of [adm1Ind, adm1Chn].filter(Boolean)) {
+    for (const f of pool.features || []) {
+      const fb = bboxOf(f.geometry);
+      if (!bboxIntersect(fb, viewBbox)) continue;
+      // EVERY province in view is painted as land FIRST, including the zone's own.
+      // The zone's coloured fill draws over this, so the underlay only shows where
+      // nothing else covers it. Without it, un-zoned Indian land fell through to
+      // the sea fill and read as empty white space.
+      ctxAdm1 += `<path d="${geoToPath(f.geometry, proj)}" class="prov"/>`;
+      const inZone = f.properties && f.properties.listId === zone.id;
+      if (inZone) continue;                      // its label is drawn in zone colour
+      const nm = f.properties?.shapeName;
+      if (!nm) continue;
+      const vx0 = Math.max(fb[0], viewBbox[0]), vx1 = Math.min(fb[2], viewBbox[2]);
+      const vy0 = Math.max(fb[1], viewBbox[1]), vy1 = Math.min(fb[3], viewBbox[3]);
+      const wF = (vx1 - vx0) / (viewBbox[2] - viewBbox[0]);
+      const hF = (vy1 - vy0) / (viewBbox[3] - viewBbox[1]);
+      if (wF * hF < 0.0012) continue;             // too small to carry a name
+      const [lx, ly] = proj((vx0 + vx1) / 2, (vy0 + vy1) / 2);
+      adm1Labels.push({ x: lx, y: ly, nm: String(nm) });
+    }
+  }
+  // Name the zone's OWN provinces too — the operator cannot tell Bihar from Jharkhand.
+  for (const pool of [adm1Ind, adm1Chn].filter(Boolean)) {
+    for (const f of pool.features || []) {
+      if (!f.properties || f.properties.listId !== zone.id) continue;
+      const fb = bboxOf(f.geometry);
+      if (!bboxIntersect(fb, viewBbox)) continue;
+      const nm = f.properties.shapeName;
+      if (!nm) continue;
+      const [lx, ly] = proj((fb[0] + fb[2]) / 2, (fb[1] + fb[3]) / 2);
+      adm1Labels.push({ x: lx, y: ly, nm: String(nm), own: true });
+    }
+  }
+  // ── SEA LABELS ─────────────────────────────────────────────────────────────
+  // Water rendered as an unlabelled pale field, so a reader could not tell ocean
+  // from a province that failed to draw — the operator read the Arabian Sea as a
+  // missing polygon.
+  //
+  // A fixed lng/lat gazetteer does NOT work here: the frame is full sheet height
+  // and shows only the northern fringe of each sea, so every gazetteer point
+  // (chosen at the sea's own centre) projected far below the frame. Measured:
+  // Arabian Sea at y=1829 against a frame ending at 1730.
+  // Instead, place each sea's name at the point where its water is ACTUALLY
+  // VISIBLE — clamp the gazetteer point into the frame along its own axis, and
+  // only keep it if that clamped point is genuinely on water (no land polygon
+  // covers it), tested against the same adm0/adm1 rings already loaded.
+  const SEAS = [
+    // Two anchors for the Arabian Sea: its true centre, and a NORTH-EAST point on
+    // the Indian west coast. The centre alone is west of most India crops, so
+    // coastal water on the page was attributed to a sea whose group never met the
+    // minimum-patch floor and went unlabelled.
+    { nm: 'ARABIAN SEA',   lng: 65,   lat: 15 },
+    { nm: 'ARABIAN SEA',   lng: 71,   lat: 19 },
+    { nm: 'BAY OF BENGAL', lng: 89,   lat: 15 },
+    { nm: 'INDIAN OCEAN',  lng: 78,   lat: 0 },
+    { nm: 'SOUTH CHINA SEA', lng: 114, lat: 14 },
+    { nm: 'ATLANTIC OCEAN', lng: -20, lat: 5 },
+    { nm: 'GULF OF GUINEA', lng: 2,   lat: 1 },
+    { nm: 'MEDITERRANEAN SEA', lng: 18, lat: 34 },
+    { nm: 'RED SEA',       lng: 38,   lat: 20 },
+    { nm: 'PACIFIC OCEAN', lng: 175,  lat: -10 },
+    { nm: 'CORAL SEA',     lng: 155,  lat: -17 },
+  ];
+  const landRings = [];
+  for (const f of adm0.features || []) {
+    if (!bboxIntersect(bboxOf(f.geometry), viewBbox)) continue;
+    const g = f.geometry;
+    if (g.type === 'Polygon') landRings.push(g.coordinates[0]);
+    else if (g.type === 'MultiPolygon') for (const poly of g.coordinates) landRings.push(poly[0]);
+  }
+  for (const pool of [adm1Ind, adm1Chn].filter(Boolean)) {
+    for (const f of pool.features || []) {
+      if (!bboxIntersect(bboxOf(f.geometry), viewBbox)) continue;
+      const g = f.geometry;
+      if (g.type === 'Polygon') landRings.push(g.coordinates[0]);
+      else if (g.type === 'MultiPolygon') for (const poly of g.coordinates) landRings.push(poly[0]);
+    }
+  }
+  const onLand = (lng, lat) => landRings.some((ring) => {
+    let hit = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const [xi, yi] = ring[i], [xj, yj] = ring[j];
+      if ((yi > lat) !== (yj > lat) && lng < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) hit = !hit;
+    }
+    return hit;
+  });
+  // Find where each sea's water is ACTUALLY VISIBLE by scanning the frame, rather
+  // than trusting a gazetteer point. A fixed lng/lat fails twice over here: the
+  // Arabian Sea's centre (lng 65) is WEST of this crop entirely, and every sea's
+  // centre latitude projects below the frame — so both the point and a northward
+  // walk from it miss. Scanning finds the water that is on the page.
+  let seaNames = '';
+  {
+    const stepX = (viewBbox[2] - viewBbox[0]) / 26;
+    const stepY = (viewBbox[3] - viewBbox[1]) / 26;
+    // Nearest named sea wins the patch, so a label describes the water beside it.
+    const nearest = (lng, lat) => {
+      let best = null, bd = Infinity;
+      for (const S of SEAS) {
+        const d = Math.hypot(S.lng - lng, S.lat - lat);
+        if (d < bd) { bd = d; best = S; }
+      }
+      return best;
+    };
+    const used = new Set();
+    const patches = [];
+    for (let lng = viewBbox[0]; lng <= viewBbox[2]; lng += stepX) {
+      for (let lat = viewBbox[1]; lat <= viewBbox[3]; lat += stepY) {
+        if (onLand(lng, lat)) continue;
+        const [px2, py2] = proj(lng, lat);
+        if (px2 < FRAME_X + 60 || px2 > FRAME_X + FRAME_W - 60) continue;
+        if (py2 < FRAME_Y + 40 || py2 > FRAME_Y + FRAME_H - 40) continue;
+        patches.push({ lng, lat, px: px2, py: py2 });
+      }
+    }
+    // Group patches by their nearest sea and label each group once, at the patch
+    // furthest from land (approximated by the centre of that group's extent).
+    const groups = new Map();
+    for (const pt of patches) {
+      const S = nearest(pt.lng, pt.lat);
+      if (!S) continue;
+      if (!groups.has(S.nm)) groups.set(S.nm, []);
+      groups.get(S.nm).push(pt);
+    }
+    for (const [nm, pts] of groups) {
+      if (pts.length < 4) continue;                    // too little water to name
+      if (used.has(nm)) continue;
+      used.add(nm);
+      const mx = pts.reduce((a, q) => a + q.px, 0) / pts.length;
+      const my = pts.reduce((a, q) => a + q.py, 0) / pts.length;
+      seaNames += `<text x="${mx.toFixed(1)}" y="${my.toFixed(1)}" text-anchor="middle" class="sea-name">${esc(nm)}</text>`;
+    }
+  }
+
+  let provNames = '';
+  // Provinces de-overlap against the SAME reservation list the country names
+  // used, not a fresh one — otherwise a province name lands on top of a country
+  // name that was already placed. Country names are laid out first and win, which
+  // is the right precedence: a province is the finer detail of the two.
+  for (const L of adm1Labels) {
+    if (L.x < FRAME_X + 20 || L.x > FRAME_X + FRAME_W - 20) continue;
+    if (L.y < FRAME_Y + 20 || L.y > FRAME_Y + FRAME_H - 20) continue;
+    // 1.21 is MEASURED, not assumed: "Dādra and Nagar Haveli and Damān and Diu"
+    // renders 295px where textW predicts 244 — the advance table under-reports
+    // this run by ~21%, so an uncorrected guard let the overrun through.
+    const PROV_W_CORR = 1.21;
+    const pHalfW = textW(L.nm, 11.5) * PROV_W_CORR * 0.5 + 5, pHalfH = 7;
+    // THE WHOLE LABEL MUST FIT INSIDE THE FRAME, not just its anchor point.
+    // Only the anchor was bounds-checked, so a long name on a small subdivision
+    // near the edge ran out of the map and was sliced mid-word by the frame
+    // border, its tail crossing the leader lines. Measured on Central India:
+    // "Dādra and Nagar Haveli and Damān and Diu" is far wider than the union
+    // territory it names. A half-word ending at a hard edge is worse than no
+    // label — same principle as the country-name de-overlap.
+    if (L.x - pHalfW < FRAME_X + 4 || L.x + pHalfW > FRAME_X + FRAME_W - 4) continue;
+    if (placedLabels.some((q) => Math.abs(q.x - L.x) < pHalfW + q.halfW
+                              && Math.abs(q.y - L.y) < pHalfH + q.halfH)) continue;
+    placedLabels.push({ x: L.x, y: L.y, halfW: pHalfW, halfH: pHalfH });
+    const t = esc(L.nm);
+    provNames += `<text x="${L.x.toFixed(1)}" y="${L.y.toFixed(1)}" text-anchor="middle" class="prov-name-halo">${t}</text>`
+               + `<text x="${L.x.toFixed(1)}" y="${L.y.toFixed(1)}" text-anchor="middle" class="prov-name${L.own ? ' own' : ''}">${t}</text>`;
+  }
+
+  // zone polygons (the region(s) this poster is about)
+  let zoneP = '';
+  for (const f of zoneFC.features) zoneP += `<path d="${geoToPath(f.geometry, proj)}" class="zone"/>`;
+
+  // labels (de-overlap, full-height even pitch, balanced L/R) + OCTILINEAR
+  // lane-routed leaders. Each side gets a band of vertical lanes between the map
+  // edge and the label column; each leader owns a distinct lane, so vertical
+  // runs never coincide. Geometry is symmetric and mirrored L/R.
+  // De-overlap the PINS FIRST, then lay out labels from the settled positions.
+  // Order matters and this is why: layoutLabels sorts each gutter by pin y, and
+  // that y-ordering (monotonicity) is the property that keeps leaders from
+  // crossing. Moving pins AFTER the sort silently invalidated it — measured 618
+  // crossings at f=0 where the ordering-preserving version measures 0.
+  const prePins = pins.map((p) => { const [lx, ly] = proj(p.lng, p.lat); return { ...p, _px: lx, _py: ly }; });
+  // ── PIN DE-OVERLAP (relaxation, pixel space, AFTER projection) ────────────
+  // The earlier version only caught EXACT pixel collisions, which missed the real
+  // problem: pins that land 2-3px apart still overlap visually and still read as
+  // one mark. The dense band through Chad/Cameroon piled into a solid mass.
+  //
+  // This is a repulsion relaxation instead: any two pins closer than MIN_SEP are
+  // pushed apart along the line between them, repeatedly, until the field settles.
+  // Displacement is capped so a pin never wanders far from its true location — the
+  // poster must stay honest about WHERE a people group is; it is only resolving
+  // marks that would otherwise be indistinguishable.
+  //
+  // This is what makes leaders viable again: leaders can only be routed without
+  // crossing if their endpoints are distinct, and the endpoints are these pins.
+  {
+    // MIN_SEP MUST TRACK THE BADGE SIZE. It was a hardcoded 25 tuned against the
+    // old r=10.8 disc; leaving it fixed while the badge shrinks would keep pushing
+    // pins just as far apart and defeat the whole point of the smaller badge.
+    // 1.16x the diameter keeps a hairline of paper between neighbouring discs.
+    const MIN_SEP = PIN_R * 2 * 1.16;
+    // Drift cap raised: at 34px a tight knot of ~10 pins could not physically
+    // spread far enough to separate, so the relaxation stalled with them stacked.
+    // 58px still keeps a pin near its true location at this map scale.
+    const MAX_DRIFT = 58;        // hard cap on how far a pin may move from truth
+    const ITERS = 260;
+    for (const it of prePins) { it._ox = it._px; it._oy = it._py; }
+    for (let pass = 0; pass < ITERS; pass++) {
+      let moved = false;
+      for (let i = 0; i < prePins.length; i++) {
+        for (let j = i + 1; j < prePins.length; j++) {
+          const a = prePins[i], b = prePins[j];
+          let dx = b._px - a._px, dy = b._py - a._py;
+          let dist = Math.hypot(dx, dy);
+          if (dist >= MIN_SEP) continue;
+          if (dist < 0.0001) {                    // exactly coincident — split on a
+            const ang = (i * 2.399963);           // golden-angle spread, deterministic
+            dx = Math.cos(ang); dy = Math.sin(ang); dist = 1;
+          }
+          const push = (MIN_SEP - dist) / 2 + 0.15;
+          const ux = dx / dist, uy = dy / dist;
+          a._px -= ux * push; a._py -= uy * push;
+          b._px += ux * push; b._py += uy * push;
+          moved = true;
+        }
+      }
+      // Re-anchor: pull each pin back toward its true position if it has drifted
+      // past the cap, and keep everything inside the map rect.
+      for (const it of prePins) {
+        const dx = it._px - it._ox, dy = it._py - it._oy;
+        const d = Math.hypot(dx, dy);
+        if (d > MAX_DRIFT) { it._px = it._ox + (dx / d) * MAX_DRIFT; it._py = it._oy + (dy / d) * MAX_DRIFT; }
+        it._px = Math.max(MAP_X + 4, Math.min(MAP_X + MAP_W - 4, it._px));
+        it._py = Math.max(FRAME_Y + 4, Math.min(FRAME_Y + FRAME_H - 4, it._py));
+      }
+      if (!moved) break;
+    }
+  }
+
+  // Feed the settled pixel positions back as lng/lat-free overrides.
+  const settled = prePins.map((p) => ({ ...p, _fixed: true }));
+  // ── GRANULAR GEOMETRY IS SOLVED BEFORE LAYOUT ────────────────────────────
+  // layoutLabels pitches each row by how many LINES it draws, so in granular mode
+  // it needs the column widths and type size FIRST. Solving them afterwards (the
+  // first attempt) left rows pitched by the single-name wrap count while the
+  // renderer drew 4-cell tables — 137 rows overlapped and the band overflowed 68px.
+  if (GRANULAR) solveGranularColumns(pins);
+  const laid = layoutLabels(settled, proj);
+
+  // LABEL_RES is the text column; LANE_* is the channel between text and map.
+  // Widened the text column (names were clipping: "Jarkhandi Julaha" ran off the
+  // sheet) AND tightened the lane band, so the names sit CLOSER to the map while
+  // still leaving room to route a short leader per label.
+  // LABEL_RES is the width available to the NAME. It must fit inside the gutter
+  // minus the lane band minus the sheet margin, or names run off the paper —
+  // "Jarkhandi Julaha" and "Khangar (Bundeli)" were both clipped at the edges.
+  const SHEET_MARGIN = SHEET_EDGE + 8;
+  const LANE_EDGE_GAP = 6, LABEL_GAP = 6, LANE_PITCH_MAX = 3;
+  const LABEL_RES = GUTTER - SHEET_MARGIN - LANE_EDGE_GAP - 24;
+  const sideItems = { L: laid.filter((i) => i.side === 'L'), R: laid.filter((i) => i.side === 'R') };
+  // assign each label its own vertical lane (distinct margin channel), symmetric L/R
+  for (const side of ['L', 'R']) {
+    const col = sideItems[side];                  // already sorted by py (place())
+    const m = col.length || 1;
+    const dirOut = side === 'L' ? -1 : 1;
+    const edge = side === 'L' ? MAP_X : MAP_X + MAP_W;
+    const band = MAP_X - LABEL_RES - LANE_EDGE_GAP - LABEL_GAP;   // lane band width (margins are symmetric)
+    const pitch = Math.min(LANE_PITCH_MAX, band / Math.max(1, m - 1));
+    col.forEach((it, k) => {
+      it.laneX = edge + dirOut * (LANE_EDGE_GAP + k * pitch);
+      it.dirOut = dirOut;
+      it.tanchor = side === 'L' ? 'end' : 'start';
+    });
+  }
+  // route every leader at a given diagonal-fraction (all octilinear by construction)
+  const routesFor = (d) => laid.map((it) => octiRoute(it, it.laneX, it.dirOut, d));
+  // sweep dfrac; keep the minimal-crossing octilinear layout for THIS poster.
+  // ties → prefer the smaller dfrac (cleaner 90° grid, less diagonal drift).
+  let bestD = 0, bestX = Infinity;
+  // po-LEADERS (L-shaped) ONLY. Barth/Gemsa/Niedermann/Nollenburg (GD 2015,
+  // Information Visualization 2019) ran the first controlled readability study on
+  // BOUNDARY LABELING — labels in margins joined to points by leaders, which is
+  // exactly this problem. Four leader types were tested; "po" (a segment parallel
+  // to the labeled side, then one orthogonal segment) won on BOTH performance and
+  // preference. Straight diagonals ("s") rated fast but weaker; S-shaped ("opo")
+  // was explicitly not recommended.
+  // The sweep is therefore capped at pure-orthogonal, with one small 0.15 fallback
+  // kept because planarity is a HARD constraint — a single crossing damages the
+  // layout more than a slight bend does.
+  // Sweep prefers the LOWEST d (most L-shaped) that does not cost crossings.
+  // Planarity outranks leader-shape: the study ranks po highest for readability,
+  // but a crossed layout is unreadable regardless of segment geometry, and Barth
+  // et al. treat non-crossing as a precondition, not a preference.
+  for (const d of [0]) {
+    const x = countPolyCrossings(routesFor(d));
+    if (x < bestX) { bestX = x; bestD = d; }
+  }
+  const routes = routesFor(bestD);
+  let leaders = '', dots = '', labels = '', pinDots = '';
+  let octiOK = true;
+
+  // ── NUMBERED-LEGEND MODE (dense posters) ──────────────────────────────────
+  // A previous builder PROVED the leader design is geometrically contradictory,
+  // not badly tuned: "labels evenly filling the margin" + "non-horizontal leaders"
+  // + "zero crossings" + "pins at true coords" cannot all hold at once. Measured
+  // on these exact posters, crossings rise monotonically the moment any slant is
+  // added — 0 at f=0, then 166 / 280 / 348 / 458 / 573 on west-africa. No sweet
+  // spot; Bezier curves were tried and cross harder still.
+  //
+  // So above a density threshold we stop drawing leaders entirely: pins carry a
+  // NUMBER at their true coordinate, and the margins carry "N. Name". Zero
+  // crossings by construction, no horizontal banding, and the margins still fill
+  // eloquently. This is the standard cartographic answer to dense labelling.
+  // DENSE_AT — above this pin count, drop leaders and number the pins instead.
+  // Measured on THIS code: leaders cross 334-622 times on west-africa at every
+  // slant value including f=0. The prior builder's "0 crossings at f=0" describes
+  // a code state that is NOT what is on disk — that fix was reverted or never
+  // landed here. So numbering is the only variant that is actually planar today.
+  // ONE TEMPLATE, ONE PATH. This was `laid.length >= 40`, so any zone with fewer
+  // than 40 pins fell through to a legacy branch with NO numbered badges, NO
+  // straight leaders and none of the current label treatment. Brief: "Southern
+  // Africa is not using straight lines and is not using the template properly…
+  // the Scattered/Diaspora map does not use straight lines, it breaks."
+  // Exactly three zones were affected — uncovered-scatter (6), deaf (28),
+  // southern-africa-islands (39) — and all three sat just under the threshold.
+  // A sparse zone is not a different KIND of poster; it is the same poster with
+  // fewer pins, so it takes the same path.
+  const numbered = true;
+
+  if (numbered) {
+    // Number in READING ORDER down each gutter, so a reader scanning the list
+    // moves top-to-bottom and the numbers on the map ascend with latitude.
+    laid.forEach((it, i) => { it.num = i + 1; });
+    // Every row reserves the same number-column width, sized to the largest index
+    // on the sheet, so the name columns line up and no width is wasted.
+    const MAXNUM = laid.length;
+    laid.forEach((it) => { it.maxNum = MAXNUM; });
+
+    // ── FIELD HEADERS (granular) ──────────────────────────────────────────
+    // Drawn here, after layout, because they sit above the FIRST ROW of each
+    // gutter and that y is only known once rows are pitched.
+    if (GRANULAR && GRAN_COLS) {
+      const HEADS = ['People', 'Place', 'Language', 'Religion'];
+      const { w, numW, avail, fs } = GRAN_COLS;
+      for (const side of [-1, 1]) {
+        const col = laid.filter((it) => it.dirOut === side);
+        if (!col.length) continue;
+        const top = Math.min(...col.map((it) => it.labelY));
+        const txh = side < 0 ? SHEET_MARGIN + LABEL_RES : PW - SHEET_MARGIN - LABEL_RES;
+        let hx = side < 0 ? txh - numW - avail : txh + numW;
+        const hy = top - fs * 1.35;
+        for (let i = 0; i < HEADS.length; i++) {
+          labels += `<text x="${(hx + 1).toFixed(1)}" y="${hy.toFixed(1)}" text-anchor="start" `
+                 +  `font-size="${(fs * 0.72).toFixed(1)}" class="g-head">${HEADS[i]}</text>`;
+          hx += w[i];
+        }
+        const hl = side < 0 ? txh - numW - avail : txh + numW;
+        labels += `<line x1="${hl.toFixed(1)}" y1="${(hy + fs * 0.34).toFixed(1)}" `
+               +  `x2="${(hl + avail).toFixed(1)}" y2="${(hy + fs * 0.34).toFixed(1)}" class="g-headrule"/>`;
+      }
+    }
+
+    // (The granular column model is solved by solveGranularColumns() BEFORE
+    //  layoutLabels runs — see the call site. It cannot live here: row PITCH
+    //  depends on it, and pitch is decided during layout.)
+    laid.forEach((it) => {
+      // THE BADGE MUST FIT ITS NUMBER. Radius and type were both fixed, so on a
+      // zone with 100+ groups a three-digit index overflowed its circle — the
+      // digits spilled out and read as stray marks on the map. Both now scale
+      // with the digit count: the badge grows a little, the type shrinks a little.
+      // BADGE SIZE IS A TEMPLATE PARAMETER, not a constant.
+      // design note 2026-07-31: "the pins really far deviate from their original
+      // location, appear outside the boundaries of the province, so they seem
+      // like they're in the ocean… decreasing the pin badge size will allow the
+      // pins to go closer to their true position."
+      //
+      // Measured on Tamil Nadu: 64 mainland pins in a 219x312px area need 51%
+      // occupancy at r=10.8 / MIN_SEP 25 — high enough that the de-collision pass,
+      // not geography, sets the layout. At r=8 that falls to 29%, so each pin can
+      // sit much nearer its true coordinate.
+      //
+      // The sheet is BOTH a 3ft print and a blog thumbnail, so this is the floor
+      // of what stays legible rather than the smallest that would fit.
+      // `zone.pinScale` tunes it per zone; default serves every map.
+      // SIZE THE NUMERAL FROM WHAT MUST FIT, not from a flat multiple of the
+      // radius. `rad * 1.2` produced ~9.6px digits inside a 16px disc — they
+      // overflowed and read as smudges. The digits must fit INSIDE the circle:
+      // the usable chord across a disc of radius r, allowing a little padding,
+      // is about 1.5r, so solve for the size whose measured width fits that.
+      const nd = String(it.num).length;
+      const rad = PIN_R * (nd >= 3 ? 1.17 : 1);
+      // SIZE THE NUMERAL FROM MEASURED DIGIT WIDTH, NOT THE ADVANCE TABLE.
+      // CHADV gives digits 0.63em, but Lato BOLD tabular digits actually render
+      // at ~0.98em — a 55% under-prediction, which is exactly why the numeral
+      // overflowed its circle. Measured on the render: "118" at font 9.2 came out
+      // 27.1px wide inside an 18.72px disc (8.4px of spill), and even a single
+      // digit's line box (17px) exceeded a 16px diameter.
+      //
+      // A circle's usable width at the glyphs' own height is NOT the full
+      // diameter — text is centred on its baseline, not the disc's centre line —
+      // so reserve DIGIT_PAD and size from what genuinely fits.
+      const DIGIT_EM = 0.98;                         // measured, bold tabular
+      // 3.0 -> 2.2 and the ceiling 0.62 -> 0.70. The badge is smaller now, so the
+      // numeral needs a LARGER share of it to stay readable — the brief asked for
+      // smaller pins with MORE readable numbers, which are opposing pulls; the
+      // padding is what gives.
+      const DIGIT_PAD = 2.2;
+      const dia = rad * 2;
+      const nfs = Math.min(
+        dia * 0.70,                                  // vertical ceiling: cap-height must fit
+        (dia - DIGIT_PAD) / (String(it.num).length * DIGIT_EM)
+      );
+      pinDots += `<circle cx="${it.px.toFixed(1)}" cy="${it.py.toFixed(1)}" r="${rad}" class="pin-num-bg"/>`
+              +  `<text x="${it.px.toFixed(1)}" y="${(it.py + nfs * 0.355).toFixed(1)}" text-anchor="middle" font-size="${nfs}" class="pin-num">${it.num}</text>`;
+      // SHORT CONNECTOR from the label out to its lane. The brief calls for the line
+      // back — but a full pin-to-label leader is what crossed 600+ times. A stub
+      // gives the eye the same "this name belongs to that row" cue with zero
+      // crossings, because every stub is horizontal and lives in its own lane.
+      // UNDERLINE-INTO-CURVE (design, designer call). One continuous stroke:
+      // a straight rule beneath the name — which reads as an underline — then a
+      // smooth curve peeling out of it toward the numbered pin.
+      //
+      // Why this beats a bare leader: a straight line arriving at a name has to
+      // point at some arbitrary spot on the text. An underline gives the stroke a
+      // legitimate ORIGIN — it belongs to the word — and visually binds the name
+      // and its line into one object.
+      //
+      // The curve is a cubic whose FIRST control point continues the underline's
+      // direction. That makes the tangent at the join horizontal, so the underline
+      // flows into the curve with no visible kink (C1 continuity, not just C0).
+      const textEdge = it.dirOut < 0 ? SHEET_MARGIN + LABEL_RES : PW - SHEET_MARGIN - LABEL_RES;
+      // The text is drawn at labelY + font*0.34, so the BASELINE is there and the
+      // underline must clear the descenders below it. 0.44 put the rule through the
+      // lower third of the glyphs — it read as a strikethrough, not an underline.
+      // THE UNDERLINE FOLLOWS THE WRAP. Brief: "the underline needs to go under
+      // the wrap, not cut the name in half." With a two-line name the rule has to
+      // drop by one line height or it strikes through the second line.
+      const nLines = (it.wrap || [it.name]).length;
+      const ulY = it.labelY + it.font * 0.34 + it.font * 0.30 + (nLines - 1) * (it.font * 1.06);
+      // THE UNDERLINE MUST SIT UNDER THE TEXT, and the text runs AWAY from the map:
+      // the left column is text-anchor="end" so it extends LEFT from tx, the right
+      // column is "start" so it extends RIGHT. Both therefore run in the -dirOut
+      // direction. The previous version extended the underline by +dirOut, i.e.
+      // TOWARD the map — so on both columns the rule was drawn on the empty side of
+      // the label and underlined nothing at all.
+      // The text anchor point. Declared HERE because the underline geometry below
+      // derives from it — leaving it further down put it in the temporal dead zone.
+      const tx = it.dirOut < 0 ? SHEET_MARGIN + LABEL_RES : PW - SHEET_MARGIN - LABEL_RES;
+      // MEASURED, not assumed. Text for a left-column label is anchored "end" at
+      // tx, so it occupies [tx - width, tx]; a right-column label is "start" and
+      // occupies [tx, tx + width]. The underline must span EXACTLY that, then the
+      // leader leaves from the MAP-FACING end of it.
+      // Previous attempts derived the span from dirOut and put the rule 56px clear
+      // of the text on the wrong side — measurement showed text at 110-181 while
+      // the underline ran 237->176.
+      // Width estimate covers the "12. " index prefix AND the name. Measured at
+      // 0.52em the rule fell 16px short of the text start (text 88-181, rule
+      // 104-177) — the prefix was unaccounted for. 0.56em plus a wider constant
+      // spans the whole label.
+      // PER-CHARACTER width, not a flat character count. A count-based estimate
+      // over- or under-shoots by up to 11px depending on which letters a name
+      // happens to contain — "3. Raji" (narrow i/j) got a rule 6px wider than its
+      // text while "5. Bhand" got one 7px narrower. Measured overhang ranged -2 to
+      // +11px, which is exactly the disproportionate look reported.
+      // Lato advance widths as a fraction of em, bucketed. Good to ~2% — far
+      // tighter than a flat 0.56 for every glyph.
+      const ADV = (ch) => {
+        if ('iIjl|.,:;\'!'.includes(ch)) return 0.26;
+        if ('ftr()[]-'.includes(ch)) return 0.34;
+        if ('  '.includes(ch)) return 0.26;
+        if ('mwMW'.includes(ch)) return 0.86;
+        if ('ABCDEFGHKLNOPQRSTUVXYZ0123456789'.includes(ch)) return 0.63;
+        return 0.53;                                   // ordinary lowercase
+      };
+      const labelText = `${it.num}. ${it.name}`;
+      // Bucket values measured slightly low across the board (median -12px). A
+      // uniform 1.08 correction plus a 3px pad lands the rule on the glyph edges.
+      // Span the LAST rendered line — that is the one the rule sits beneath.
+      // On a wrapped name the last line has NO "12. " prefix and is indented, so
+      // measuring the whole label would draw a rule wider than the text above it.
+      // The NAME now lives in its own element, inset by the number column, so the
+      // rule spans just the last line of the name — the number is never underlined.
+      const lastLine = (it.wrap || [it.name])[nLines - 1];
+      const measured = [...lastLine].reduce((a, ch) => a + ADV(ch), 0) * it.font * 1.08 + 3;
+      const nameW = Math.min(LABEL_RES - 18, measured);
+      // A wrapped last line starts at the HANGING INDENT, not at the number
+      // column, so the rule under it must start there too.
+      // Everything is measured from the NAME COLUMN's edge (one number-column in
+      // from the map-facing edge), not from tx, since the name starts there now.
+      const ulNumColW = textW(`${it.maxNum}.`, it.font) * 1.06 + it.font * 0.42;
+      const ulNameEdge = it.dirOut < 0 ? tx - ulNumColW : tx + ulNumColW;
+      const ulTextStart = it.dirOut < 0 ? ulNameEdge - nameW : ulNameEdge + nameW;
+      // RUN THE RULE OUT TO THE WHITE BORDER. Brief: "I want the people group
+      // lines to span the outward connected to the white border."
+      // It used to stop at the start of the name, so every rule ended at a
+      // different x (names are ragged) and the outer edge of both columns looked
+      // unresolved. Extending to SHEET_EDGE gives all 73 a shared outer terminus
+      // against the border — the same trick that fixed the number column, applied
+      // to the rules: one hard edge instead of a ragged one.
+      const ulOuter = it.dirOut < 0 ? SHEET_EDGE : PW - SHEET_EDGE;
+      const ulInner = tx + it.dirOut * 3;                 // under the map-facing end
+      // Stop short of the disc so the stroke meets the pin without crossing the numeral.
+      const dx = it.px - ulInner, dy = it.py - ulY;
+      const len = Math.hypot(dx, dy) || 1;
+      const ex = it.px - (dx / len) * 12.5, ey = it.py - (dy / len) * 12.5;
+      // UNDERLINE + STRAIGHT RUN (design call, 2026-07-31). The curve was tested
+      // and rejected: straight lines are easier to follow, and 92 curves reading
+      // against each other made the sheet busier rather than calmer. The underline
+      // stays — it gives the stroke a legitimate origin on the word — and the run
+      // to the pin is now a single straight segment out of its inner end.
+      const dpath = `M${ulOuter.toFixed(1)} ${ulY.toFixed(1)} L${ulInner.toFixed(1)} ${ulY.toFixed(1)} `
+                  + `L${ex.toFixed(1)} ${ey.toFixed(1)}`;
+      leaders += `<path d="${dpath}" class="lead-halo"/><path d="${dpath}" class="lead"/>`;
+      // tx is hoisted above the underline block — it is used there.
+      // MEASURE WHAT IS ACTUALLY DRAWN. Two independent bugs lived here:
+      //   1. the estimate used an uncalibrated 0.5em advance (real: ~0.498 for
+      //      REGULAR Lato, and BOLD is wider again), so it under-reported; and
+      //   2. it measured `it.name` while the element renders `"36. " + name`.
+      //      A flat `- 26` reserve was standing in for that prefix, but the prefix
+      //      scales with the type: at 16.8px bold it costs ~36px, not 26.
+      // Both together let "36. Khangar (Bundeli)" render 209.5px into a 184px
+      // column — off the sheet edge. Measure the WHOLE string, calibrated.
+      const anchor = it.tanchor;
+      // WRAP, DO NOT SHRINK. Long names used to be scaled down to fit the column,
+      // which made every row a different size — measured 10.6px to 19.0px on this
+      // sheet, a 79% spread, with "53. Vellaiyan Kuppam Padaiyaci" the smallest.
+      // Brief: "all of the numbers for each of the people group names are
+      // different sizes… I want to find the happy medium where all people group
+      // names and numbers are the exact same font size… that word wrapping is
+      // supported."
+      //
+      // So the type size is now UNIFORM across the whole sheet and a name that
+      // does not fit takes a second line instead. it.wrap carries the lines.
+      // HANGING INDENT (Brief: "probably does read better in terms of design
+      // beauty"): the number sits in its own column and continuation lines align
+      // under the NAME, not under the number.
+      // ── GRANULAR MODE: People · Place · Language · Religion ────────────────
+      // Brief: "the vertical people group columns have everything they need to
+      // be turned into tables — four columns: people, place, language, religion."
+      // Opt-in via GRANULAR=1 so the approved single-name template (snapshot v5)
+      // stays the default until this is judged.
+      if (GRANULAR) {
+        const cells = [
+          [it.name || '', 'g-people'],
+          [it.place || '', 'g-place'],
+          [it.language || '', 'g-lang'],
+          [it.religion || '', 'g-relig'],
+        ];
+        // COLUMN WIDTHS ARE COMPUTED ONCE FOR THE WHOLE SHEET (see GRAN_COLS),
+        // not per row. They used to be derived from THIS row's values, so every
+        // row had different column boundaries and nothing lined up vertically.
+        const cw = GRAN_COLS.w;
+        let cx = it.dirOut < 0 ? tx - GRAN_COLS.numW - GRAN_COLS.avail : tx + GRAN_COLS.numW;
+        const gfs = GRAN_COLS.fs;
+        for (let oi = 0; oi < cells.length; oi++) {
+          const [val, cls] = cells[oi];
+          const w = cw[oi];
+          // WRAP, don't truncate. Truncation turned nearly every cell into
+          // "Kummar…" / "Telu…" / "Hind…" — unreadable data is not data. Wrapped
+          // lines stack within the row, and the row PITCH already accounts for the
+          // tallest cell on the sheet (GRAN_COLS.lines).
+          const cfs = gfs * GRAN_SCALE[oi];
+          const lines = wrapPx(String(val), cfs * GRAN_W_CORR, w - GRAN_CELL_GAP);
+          lines.slice(0, GRAN_COLS.lines).forEach((ln, li) => {
+            labels += `<text x="${(cx + 1).toFixed(1)}" `
+                   +  `y="${(it.labelY + cfs * 0.34 + li * cfs * 1.16).toFixed(1)}" `
+                   +  `text-anchor="start" font-size="${cfs.toFixed(1)}" class="lbl ${cls}">${esc(ln)}</text>`;
+          });
+          cx += w;
+        }
+        // THE INDEX NUMBER. The granular branch returned before the single-name
+        // path drew it, so every row lost its number — and the number is what ties
+        // a row to its pin on the map.
+        labels += `<text x="${tx.toFixed(1)}" y="${(it.labelY + gfs * 0.34).toFixed(1)}" `
+               +  `text-anchor="${it.dirOut < 0 ? 'end' : 'start'}" `
+               +  `font-size="${gfs.toFixed(1)}" class="lnum-col">${it.num}.</text>`;
+        return;   // granular rows skip the single-name path below
+      }
+
+      const lines = it.wrap || [it.name];
+      // ── THE NUMBER IS ITS OWN ELEMENT, PINNED TO THE MAP-FACING EDGE ────────
+      // Brief: "all the numbers are not aligned… what if we put the number on
+      // the right side of the people group name, so all the numbers are lined up."
+      //
+      // Why the numbers were ragged: the label is ONE text element anchored at the
+      // column's outer edge ("end" on the left column). Its first line is
+      // "12. Name", so the number's x depends on how wide THAT LINE happens to be
+      // — every row a different width, so every number a different position. It
+      // only looked aligned before wrapping because the outer edge was the edge.
+      //
+      // Splitting the number out fixes it by construction: it is anchored at the
+      // column's MAP-FACING edge, which is the same x for every row, so the whole
+      // index column reads as a straight rule. The name is then a separate element
+      // that grows away from the map and wraps freely without ever moving a number.
+      const numGap = it.font * 0.42;
+      const numX = tx;                                   // map-facing edge, shared
+      const nameX = tx - it.dirOut * 0 + (it.dirOut < 0 ? 0 : 0);
+      // The name block starts one number-column in from the map-facing edge.
+      // Reserve for the LARGEST index actually on this sheet, not a fixed three
+      // digits. A 73-pin zone was giving up 40px to a hypothetical "000." when
+      // "73." needs 29 — 11px of name width thrown away on every row.
+      const numColW = textW(`${it.maxNum}.`, it.font) * 1.06 + numGap;
+      const nameEdge = it.dirOut < 0 ? tx - numColW : tx + numColW;
+      labels += `<text x="${numX.toFixed(1)}" y="${(it.labelY + it.font * 0.34).toFixed(1)}" `
+             +  `text-anchor="${it.dirOut < 0 ? 'end' : 'start'}" font-size="${it.font.toFixed(1)}" class="lnum-col">${it.num}.</text>`;
+      labels += `<text x="${nameEdge.toFixed(1)}" y="${(it.labelY + it.font * 0.34).toFixed(1)}" text-anchor="${anchor}" font-size="${it.font.toFixed(1)}" class="lbl">`
+             +  lines.map((ln, k) => k === 0 ? esc(ln)
+                  : `<tspan x="${nameEdge.toFixed(1)}" dy="${(it.font * 1.06).toFixed(1)}">${esc(ln)}</tspan>`).join('')
+             +  `</text>`;
+    });
+    octiOK = true;
+  } else laid.forEach((it, i) => {
+    const pts = routes[i];
+    if (!isOctilinear(pts)) octiOK = false;
+    leaders += `<path d="M${pts.map((p) => `${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' L')}" class="lead"/>`;
+    pinDots += `<circle cx="${it.px.toFixed(1)}" cy="${it.py.toFixed(1)}" r="3.6" class="pin"/>`;
+    dots += `<circle cx="${it.laneX.toFixed(1)}" cy="${it.labelY.toFixed(1)}" r="1.6" class="ldot"/>`;
+    const tx = it.laneX + it.dirOut * 5;
+    labels += `<text x="${tx.toFixed(1)}" y="${(it.labelY + it.font * 0.34).toFixed(1)}" text-anchor="${it.tanchor}" font-size="${it.font.toFixed(1)}" class="lbl">${esc(it.name)}</text>`;
+  });
+  if (!octiOK) console.warn(`  ⚠ non-octilinear segment in ${zone.zoneKey}`);
+  const crossings = countPolyCrossings(routes);
+  const diagFrac = bestD;
+
+  // ── TITLE vs SUBTITLE ──────────────────────────────────────────────────────
+  // A TITLE IS NEVER A LIST. The India/China lists carry labels like "Rajasthan +
+  // Haryana + Himachal Pradesh + Jammu and Kashmir + Punjab + Chandigarh + Ladakh"
+  // (89 chars) — as a single SVG <text> that ran off BOTH edges of the sheet,
+  // because SVG text does not wrap and the element is centre-anchored.
+  // So: a SHORT functional title, with the full enumeration moved to a wrapped
+  // subtitle beneath it where a reader can still find the specifics.
+  const fullLabel = (zone.label || zone.id).replace(/&/g, '&amp;');
+  const parts = fullLabel.split(' + ').map((x) => x.trim()).filter(Boolean);
+  const isList = parts.length > 1;
+  // Name the parent region from the zone id, so "asia-india-rajasthan" titles as
+  // "India" rather than inventing a name from the province list.
+  const parentOf = (id) =>
+    id.startsWith('asia-india-') ? 'India'
+    : id.startsWith('asia-china-') ? 'China'
+    : null;
+  const parent = parentOf(zone.zoneKey || zone.id || '');
+  // Named clusters, not "India · 6 Provinces". A poster on a wall wants a NAME a
+  // person can hold, and "6 Provinces" is a count, not a name. Keyed by zone id so
+  // each cluster gets the name its region is actually known by.
+  // Nepal is a SOVEREIGN COUNTRY, not a part of North India — naming the cluster
+  // "North India" while colouring Nepali land inside it would misrepresent a
+  // nation. The title names both.
+  // (The hand-coded CLUSTER_NAME map is gone. Region names now live in
+  //  clusters.json `label`, where they belong as data — two zones had been
+  //  special-cased in code while the other eight fell back to a generic
+  //  "India · N Provinces". See provinceLabel for the enumeration they replaced.)
+  const CLUSTER_NAME = {};
+  // THE LABEL IS THE TITLE. Once `label` became an authored REGION NAME, the
+  // "collapse a long list into 'India · N Provinces'" fallback became actively
+  // wrong: "Southeast India + Andaman Islands" contains a "+", so it was treated
+  // as an enumeration and collapsed back into the generic form the rename was
+  // meant to remove. The collapse now only applies to a label that is STILL a raw
+  // province enumeration — i.e. one with no provinceLabel recorded beside it.
+  const labelIsRegionName = Boolean(zone.provinceLabel) || parts.length <= 2;
+  const title = CLUSTER_NAME[zone.zoneKey || zone.id]
+    || (labelIsRegionName || !isList ? fullLabel
+      : parent ? `${parent} \u00b7 ${parts.length} Provinces`
+      : `${parts[0]} + ${parts.length - 1} more`);
+  // The subtitle carries the enumeration, wrapped across lines that fit the sheet.
+  // ── HEADER BLOCK (design spec) ─────────────────────────────────────────────
+  //   Countries:  India · Nepal
+  //   Provinces:  Uttarakhand · Uttar Pradesh · ...
+  //   92 people groups · pray for the harvest · Luke 10:2
+  //
+  // Left-justified as a LABELLED LIST rather than centred prose: the labels stack
+  // on a common left edge so "Countries" and "Provinces" align and the eye reads
+  // down one column. The label is bold; the values are not, so the structure is
+  // visible without the values shouting.
+  // COUNTRIES = the countries the sheet COVERS, which is not only the countries
+  // its pins happen to sit in. A zone can declare a whole country as a member
+  // (zone.adm0) whose land is drawn and highlighted even when it carries no
+  // people groups of its own — Mongolia on the Mainland-China sheet. Deriving
+  // this column from the pins alone silently dropped those, so the title said
+  // "+ Mongolia" while the Countries column said only "China".
+  const ctryNamesSet = [...new Set([
+    ...pins.map((p) => ISO3_NAME[p.country_code] || p.country_code),
+    ...(Array.isArray(zone.adm0) ? zone.adm0.map((c) => ISO3_NAME[c] || c) : []),
+  ].filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  // Provinces come from their OWN field. Deriving them by splitting `label` broke
+  // the moment the label was renamed to a cluster name — the enumeration is data,
+  // not a formatting artefact of the title, and needed somewhere to live.
+  // The label is now a REGION NAME ("Southeast India + Andaman Islands"), so it no
+  // longer enumerates provinces. clusters.json preserves the old enumeration in
+  // `provinceLabel` — use it so the facts table keeps naming the actual provinces.
+  const provinceList = provincesOf(zone);
+
+  const wrapTo = (items, maxch) => {
+    const out = [];
+    let line = '';
+    for (const it of items) {
+      const next = line ? `${line} \u00b7 ${it}` : it;
+      if (next.length > maxch) { out.push(line); line = it; } else { line = next; }
+    }
+    if (line) out.push(line);
+    return out;
+  };
+  const HEAD_MAXCH = 78;
+  const ctryLines = wrapTo(ctryNamesSet, HEAD_MAXCH);
+  const provLines = wrapTo(provinceList, HEAD_MAXCH);
+
+  // Built as absolute rows so the label column and the value column share one
+  // left edge no matter how many lines each list wraps to.
+  const HEAD_X = GUTTER;
+  // Wider label column: "Provinces:" needs the room, and a consistent gutter
+  // between key and value is what makes the two rows read as a table rather than
+  // two sentences that happen to start near each other.
+  // ── THE HEADER IS CENTRED ON THE SHEET'S AXIS ──────────────────────────────
+  // Everything above the map was flush-left while the map below it was centred —
+  // two alignments fighting on one sheet, which is why the top read as "hanging
+  // off the left". Title, table and prose now share the sheet's axis (CX).
+  const CX = PW / 2;
+  // ── THE FACTS TABLE ────────────────────────────────────────────────────────
+  // A centred table needs fixed internal geometry or the rows wander: keys are
+  // RIGHT-aligned to a seam and values LEFT-aligned to it, so the colon gutter
+  // forms one clean vertical seam. That seam — not a box or heavy borders — is
+  // what makes it read as a table while staying quiet enough to be beautiful.
+  // The h1 baseline is y=104 at 56px, so its descenders reach ~118 — starting the
+  // header flow at 118 printed the series line straight through the title. 136
+  // clears it.
+  let headY = SPARSE ? 136 : 150;
+  let headBlock = '';
+
+  // THE SERIES LINE, in the header FLOW so it can never collide with the rule
+  // below it. Brief: the site reference "is wrapped in the scripture header
+  // wrongly and does not need to be in that header."
+  if (SPARSE) {
+    // ONE LINE, not two. Brief: "this needs to be one liner, not two lines,
+    // because we need to save the space there — there is too much space used
+    // under the title." The site reference folds in after a separator rather
+    // than taking a line of its own.
+    headBlock += `<text x="${CX}" y="${headY}" text-anchor="middle" class="hseries">`
+               + `Series <tspan class="hseries-em">\u201c${esc(SERIES_NAME)}\u201d</tspan>`
+               + ` \u2014 ${SERIES.index} of ~${Math.round(SERIES.totalLists / 10) * 10} maps covering unengaged people groups in prayer`
+               + ` \u00b7 <tspan class="hseries-em">https://Doxa.Life</tspan>`
+               + `</text>`;
+    headY += 12;
+  }
+
+  // In SPARSE the facts move BELOW the scripture as a real 4-column table —
+  // see THE FACTS TABLE further down. Nothing is emitted here.
+  if (!SPARSE) {
+  // ── THE FACTS TABLE (full version) ───────────────────────────────────────
+  // A centred table needs fixed internal geometry or the rows wander: keys are
+  // RIGHT-aligned to a seam and values LEFT-aligned to it, so the colon gutter
+  // forms one clean vertical seam. That seam — not a box or heavy borders — is
+  // what makes it read as a table while staying quiet enough to be beautiful.
+  const SEAM = CX - 30;
+  const KEY_X = SEAM - 14;
+  const VAL_X = SEAM + 14;
+  const TABLE_TOP = headY - 18;
+  const headRow = (label, lines) => {
+    if (!lines.length) return;
+    headBlock += `<text x="${KEY_X}" y="${headY}" text-anchor="end" class="hkey">${label}</text>`;
+    for (const ln of lines) {
+      headBlock += `<text x="${VAL_X}" y="${headY}" text-anchor="start" class="hval">${esc(ln)}</text>`;
+      headY += 23;
+    }
+  };
+  headRow('Countries', ctryLines);
+  headRow('Administrative Areas', provLines);
+  headRow('People groups', [`${pins.length} UPG`]);
+  headRow('Series', [`${SERIES_NAME} · map ${SERIES.index} of ${SERIES.totalLists}`]);
+  // Hairline rules top and bottom close the table without boxing it in.
+  const TABLE_BOT = headY - 12;
+  const TABLE_HALF = 320;
+  headBlock += `<line x1="${SEAM - TABLE_HALF}" y1="${TABLE_TOP}" x2="${SEAM + TABLE_HALF}" y2="${TABLE_TOP}" class="hrule"/>`;
+  headBlock += `<line x1="${SEAM - TABLE_HALF}" y1="${TABLE_BOT}" x2="${SEAM + TABLE_HALF}" y2="${TABLE_BOT}" class="hrule"/>`;
+  headY = TABLE_BOT;
+  }
+  // THE COMPASSION VERSE — given the SAME treatment as the goal question below
+  // the map: one full-map-width line, ruled above and below. design note 2026-07-31:
+  // "the scripture up top should also span the full width of the map and should
+  // also have a line above it and below it." The two rules-and-a-line blocks now
+  // bracket the sheet symmetrically — scripture at the top, the question at the
+  // bottom, the map between them.
+  // THE SCRIPTURE + FACTS BAND SPANS THE FULL SHEET, not the map's width.
+  // Brief: "I want this table to span the full width of the poster."
+  // It was pinned to GUTTER (the MAP's edge), so as the gutters widened to give
+  // the names room, this band narrowed with them — it is header information about
+  // the whole sheet, not a caption belonging to the map, so it should use the
+  // sheet's own margin instead.
+  const VRULE_L = BAND_MARGIN_G, VRULE_R = PW - BAND_MARGIN_G;
+  headY += 16;
+  headBlock += `<line x1="${VRULE_L}" y1="${headY}" x2="${VRULE_R}" y2="${headY}" class="hrule"/>`;
+  headY += 25;
+  headBlock += `<text x="${CX}" y="${headY}" text-anchor="middle" class="hverse">`
+             + `\u201cBut when he saw the multitudes, he was moved with compassion for them because they were harassed and scattered, like sheep without a shepherd.\u201d`
+             + ` <tspan class="hvref">MATTHEW 9:36</tspan>`
+             + `</text>`;
+  headY += 12;
+  headBlock += `<line x1="${VRULE_L}" y1="${headY}" x2="${VRULE_R}" y2="${headY}" class="hrule"/>`;
+
+  // ── THE FACTS TABLE (SPARSE) — four columns, under the scripture ─────────
+  // Brief: "People Groups, Countries, Provinces and Population probably need to
+  // be added under the scripture in the section above the map, in a table format
+  // with four columns, four headers with information under them."
+  //
+  // A four-column table beats the single run-on line it replaces because each
+  // fact gets a HEADER naming what the number is. "92" on its own means nothing;
+  // "People Groups / 92" is self-describing — which is what a stranger reading a
+  // blog thumbnail needs. Columns are evenly pitched across the map width so the
+  // block reads as one band rather than four stranded items.
+  if (SPARSE) {
+    const totalPop = pins.reduce((a, p) => a + (Number(p.population) || 0), 0);
+    // Populations are estimates that move; print them ROUNDED and prefixed so the
+    // sheet never claims a precision the data does not have.
+    const popText = totalPop >= 1e6 ? `~${(totalPop / 1e6).toFixed(1)}M`
+                  : totalPop >= 1e3 ? `~${Math.round(totalPop / 1e3)}K`
+                  : String(totalPop || '—');
+    // THE TWO NUMERIC COLUMNS ARE THE HEADLINE STATS. Brief: the count "needs to
+    // be a lot larger — larger than the people-group text — and it needs to say
+    // {n} UPG's CALCULATED FROM THE NUMBER, because this will become the template."
+    // So the count is DERIVED from pins.length on every sheet, never written down;
+    // the apostrophe form matches the series name the operator is using.
+    // `big: true` marks the columns that get display type; the two list columns
+    // stay at reading size because a list cannot be set at display size and fit.
+    const FACTS = [
+      ['People Groups', `${pins.length} UPG's`, true],
+      ['Countries', ctryNamesSet.join(' · ') || '—', false],
+      // "PROVINCES" WAS INACCURATE. Brief: "is 'provinces' really the right term?
+      // not every country uses the term provinces — are these islands provinces,
+      // like the Andaman and the Nicobar?" They are not: Andaman and Nicobar,
+      // Puducherry, Lakshadweep and Chandīgarh are UNION TERRITORIES, and one zone
+      // carries a sovereign country (Nepal). Across the 28 sheets this column
+      // holds states, union territories, provinces, prefectures and countries.
+      // "Administrative Areas" is the widest term that is true of all of them.
+      ['Administrative Areas', provinceList.join(' · ') || '—', false],
+      ['Population', popText, true],
+    ];
+    // COLUMN WIDTHS FOLLOW CONTENT. Brief: "when a zone has too many countries
+    // or provinces, the column widths on the four-col table should be wider."
+    // Four equal columns forced west-bengal's nine administrative areas onto five
+    // lines while POPULATION sat beside it holding "~5.6M". Weight each column by
+    // the length of what it must hold, then clamp so no column starves.
+    // PAD THE OUTER COLUMNS. Brief: "the content in the first and fourth column
+    // should not sit too close to the white border — they should be grouped in
+    // alignment with the people-group columns under them."
+    // The RULES still run to the border (that is deliberate), but the table's
+    // CONTENT is inset to SHEET_MARGIN_L — the same x the label columns beneath
+    // start at — so the first value sits directly above the first name and the
+    // last above the last, instead of crowding the white edge.
+    const FT_INSET = SHEET_MARGIN_L - VRULE_L;
+    const FT_BAND = (VRULE_R - VRULE_L) - FT_INSET * 2;
+    // sqrt-damped weights: a 90-char list should get MORE room than a 5-char one,
+    // but not 18x more — raw length starved the short columns so badly that
+    // "Bangladesh · Bhutan · India" broke across two lines with "· India" orphaned.
+    const ftWeights = FACTS.map(([, val]) => Math.sqrt(Math.max(10, String(val).length)));
+    const ftTotal = ftWeights.reduce((a, b) => a + b, 0);
+    const FT_MIN = FT_BAND * 0.17;            // no column below 17% of the band
+    let ftW = ftWeights.map((w) => Math.max(FT_MIN, (w / ftTotal) * FT_BAND));
+    const ftSum = ftW.reduce((a, b) => a + b, 0);
+    ftW = ftW.map((w) => (w / ftSum) * FT_BAND);   // renormalise after clamping
+    const ftX = [];
+    ftW.reduce((acc, w) => { ftX.push(acc); return acc + w; }, VRULE_L + FT_INSET);
+    const FT_W = FT_BAND / 4;                 // kept for the header-height model
+    headY += 22;
+    let fbot = headY;
+    FACTS.forEach(([head, val, big], i) => {
+      const cx = ftX[i] + ftW[i] / 2;
+      headBlock += `<text x="${cx}" y="${headY}" text-anchor="middle" class="hfhead">${esc(head)}</text>`;
+      // Values wrap inside their own column so a long province list cannot run
+      // into its neighbour.
+      // Wrap at the size the value is ACTUALLY set at — wrapping at one size and
+      // rendering at another overruns the column by exactly the ratio between them.
+      const vfs = big ? 34 : 17;
+      const lines = wrapPx(val, vfs, ftW[i] - 24 - BAND_TEXT_PAD / 2);
+      lines.forEach((ln, k) => {
+        headBlock += `<text x="${cx}" y="${headY + (big ? 34 : 24) + k * (big ? 36 : 20)}" text-anchor="middle" class="${big ? 'hfbig' : 'hfval'}">${esc(ln)}</text>`;
+      });
+      const bot = headY + (big ? 34 : 24) + (lines.length - 1) * (big ? 36 : 20);
+      if (bot > fbot) fbot = bot;
+    });
+    // Thin dividers between the four columns.
+    for (let i = 1; i < 4; i++) {
+      const rx = ftX[i];
+      headBlock += `<line x1="${rx}" y1="${headY - 16}" x2="${rx}" y2="${fbot + 6}" class="hcolrule"/>`;
+    }
+    // CLOSE THE TABLE. The band was ruled above (under the scripture) but open at
+    // the bottom, so it bled into the map. A rule here closes it as a block.
+    headBlock += `<line x1="${VRULE_L}" y1="${fbot + 14}" x2="${VRULE_R}" y2="${fbot + 14}" class="hrule"/>`;
+    headY = fbot + 14;
+  }
+  // SOURCE + CALL TO ACTION, in the header rather than the footer. At the bottom it
+  // read as an afterthought stranded under the map; here it sits with the other
+  // metadata (Countries, Provinces, count) as one coherent block a reader takes in
+  // before looking at the map. /adopt is deliberately absent — that page is retired.
+  // (the old full-bleed rule here is gone — the table's own hairlines already
+  //  close the metadata block, and a second full-width rule below them just
+  //  re-drew the same boundary twice.)
+  // Numbers are DERIVED from the API + clusters.json at generation time, then
+  // SPOKEN rounded — a poster outlives its data, so the vision reads in
+  // approximations while the sheet's own count stays exact.
+  const approxGroups = Math.round(SERIES.totalGroups / 100) * 100;
+  const approxLists = Math.round(SERIES.totalLists / 10) * 10;
+
+  // ── THE VISION BLOCK ───────────────────────────────────────────────────────
+  // COPY IS THE OWN (05-poster-vision/source-material/01, "THE
+  // OWN COPY"). It supersedes my drafts, and it is better for reasons worth
+  // recording: it KEEPS THE MIRACLE. My versions reduced the account to a seating
+  // arrangement — a logistics lesson — when the point is that Jesus supernaturally
+  // multiplied the offering and the grouping is how it was DISTRIBUTED.
+  // "A similar challenge" is also the honest connective: it states a likeness
+  // without claiming the disciples were reading a map.
+  // ── THE HEADER GRID ────────────────────────────────────────────────────────
+  // Brief: "make use of the space and create a table to evenly distribute the
+  // data at the top — it looks quite busy, like the text does not know how to be
+  // organised beautifully."
+  //
+  // The problem was that sixteen full-width CENTRED lines stack into a ragged
+  // column: every line starts and ends somewhere different, so the eye has no
+  // edge to follow and the block reads as noise rather than as information.
+  //
+  // The fix is a GRID. Two bands, both built on a shared column measure:
+  //   BAND 1 — the vision, in TWO columns (Feed the 5000 | What is a Prayer List)
+  //   BAND 2 — the three networks, in THREE equal columns, one per network
+  // Set left-aligned inside each column, so every line shares a hard left edge.
+  // That edge is what makes a text block read as ORGANISED rather than busy.
+  // FULL-SHEET WIDTH, like the scripture/facts band above the map. Brief: "this
+  // section needs to go full width, go full width on the footer section too."
+  // These blocks are about the whole sheet (the goal question, the three
+  // networks), not captions on the map, so they use the sheet margin — not the
+  // map's gutter, which moves whenever the label columns are re-tuned.
+  const GRID_L = BAND_MARGIN_G;
+  const GRID_W = PW - 2 * BAND_MARGIN_G;
+  // Brief: "increase the font slightly because we have a lot more room to work
+  // with." 12.5 -> 13.5 with leading kept proportional (~1.30).
+  const FS = 13.5, LH = 17.5;
+  // The two vision columns sit BELOW the ruled scripture, so they read as its
+  // supporting detail, not as headline copy. Slimmer type + tighter leading than
+  // the sheet's body size: less height for the same words, and the contrast in
+  // scale is what tells the eye the scripture outranks them.
+  const B1_FS = 12, B1_LH = 15;
+  const push = (frag) => { headBlock += frag; };
+  const colRule = (x, y0, y1) =>
+    `<line x1="${x}" y1="${y0}" x2="${x}" y2="${y1}" class="hcolrule"/>`;
+
+  let py = headY + 34;
+
+  // ── BAND 1: the two vision columns — FULL VERSION ONLY ───────────────────
+  // In SPARSE mode these are dropped entirely (Brief: "just not explain the
+  // Jesus Strategy for 5000 and the What is a Prayer List of 100"), and the
+  // height they occupied goes to the map, which is what makes the people-group
+  // names bigger. The scripture above and the question below both stay.
+  if (!SPARSE) {
+    const B1_GUT = 54;
+    // TEXT_W is narrower than the column pitch so prose never touches the rule.
+    const B1_CW = (GRID_W - B1_GUT) / 2;
+    const B1_TW = B1_CW - 10;
+    const b1x = [GRID_L, GRID_L + B1_CW + B1_GUT];
+    const b1Top = py;
+    headBlock += `<text x="${b1x[0]}" y="${py}" class="hvh">Jesus’ Strategy to Feed the 5000</text>`;
+    headBlock += `<text x="${b1x[1]}" y="${py}" class="hvh">What is a Prayer List of 100 UPG?</text>`;
+    const bodyTop = py + 20;
+
+    // COPY IS THE OWN (05-poster-vision/source-material/01). It KEEPS THE
+    // MIRACLE — earlier drafts reduced the account to a seating arrangement, when
+    // the point is that Jesus supernaturally MULTIPLIED the offering and the
+    // grouping is how it was distributed.
+    let cy0 = bodyTop;
+    cy0 = paraInto(push,
+      `Jesus’ disciples faced a similar challenge: “How can we feed so many with only five loaves and two fish?” Jesus fed the 5,000 by supernaturally multiplying that small offering — and His answer holds the key to our people-groups problem.`,
+      { x: b1x[0], y: cy0, w: B1_TW, fs: B1_FS, lh: B1_LH, cls: 'hsrc2' });
+    cy0 += 5;
+    cy0 = paraInto(push,
+      `Through radical faith and miracle-expectant prayer, He focused on the few in front of Him — dividing the crowd and entrusting faithful men and women to serve the most strategic groups of fifties and hundreds (Mark 6:40).`,
+      { x: b1x[0], y: cy0, w: B1_TW, fs: B1_FS, lh: B1_LH, cls: 'hsrc2' });
+
+    let cy1 = bodyTop;
+    cy1 = paraInto(push,
+      `This map is one of a ${approxLists}-map set called the ${SERIES_NAME} — a large, overwhelming target in the thousands, organised into clear groupings and displayed on maps and prayer lists.`,
+      { x: b1x[1], y: cy1, w: B1_TW, fs: B1_FS, lh: B1_LH, cls: 'hsrc2' });
+    cy1 += 5;
+    cy1 = paraInto(push,
+      `Each map comes with a prayer list of its fifty to a hundred people groups — their names, a representative photo, and more detail — to mobilise informed intercession.`,
+      { x: b1x[1], y: cy1, w: B1_TW, fs: B1_FS, lh: B1_LH, cls: 'hsrc2' });
+
+    const b1Bot = Math.max(cy0, cy1);
+    headBlock += colRule(GRID_L + B1_CW + B1_GUT / 2, b1Top - 12, b1Bot - 12);
+    py = b1Bot + 4;
+
+  }
+
+  const HEAD_BOTTOM = py + 14;
+  // FAIL LOUDLY, don't ship a silent overlap. HEADER is a module constant (MAP_Y
+  // and MAP_H are derived from it before the header is laid out), so it cannot be
+  // computed from the content — which means the content CAN outgrow it. It already
+  // did once: the last "Ways to use this map" line landed on the map frame and the
+  // markup checks all passed, because an overlap is valid SVG. Only the render
+  // showed it. This turns that class of regression into a build error.
+  if (HEAD_BOTTOM > HEADER) {
+    throw new Error(
+      `[generate] header overflows the map frame: content ends at y=${HEAD_BOTTOM} `
+      + `but HEADER=${HEADER} (zone ${zone.zoneKey}). Raise HEADER or tighten the header copy.`
+    );
+  }
+
+  // ── BELOW THE MAP: THE GOAL + THE THREE NETWORKS ─────────────────────────
+  // design note 2026-07-31: "move this section under the map so that the question and
+  // the three answers sit under the map, and then that sandwiches the map in
+  // between them quite nicely."
+  //
+  // So the sheet now reads as a sandwich:
+  //   ABOVE  — what this is (the facts table + the vision, in columns)
+  //   MIDDLE — the map itself
+  //   BELOW  — the question, and the three answers to it
+  // The question and its three answers belong together directly under the map,
+  // because they are what a reader does AFTER looking at it.
+  let footBlock = '';
+  // FOOT_TOP is measured UP from the verse rule, so this block always sits
+  // directly beneath the map no matter how the map's height changes.
+  let fy = MAP_Y + MAP_H + (SPARSE ? MAP_BREATH : 30);
+
+  // THE GOAL — the question the three networks answer. Brief: "remember the
+  // goal, remember this question?" INDIGENOUS is load-bearing: the aim is not
+  // merely disciples among these peoples, but disciples, churches and leaders
+  // FROM them, in their own language.
+  // RULE ABOVE THE GOAL. Restored now that the band runs the FULL SHEET width —
+  // at the map's width it lined up with the map edge and read as a stray second
+  // border; spanning the sheet it clearly belongs to this block instead.
+  fy += 16;
+  footBlock += `<line x1="${GRID_L}" y1="${fy}" x2="${GRID_L + GRID_W}" y2="${fy}" class="hrule"/>`;
+  fy += 24;
+  footBlock += `<text x="${CX}" y="${fy}" text-anchor="middle" class="hgoal">`
+             + `How can we multiply indigenous disciples, churches and leaders among all these people groups — and get the gospel into their own language?`
+             + `</text>`;
+  fy += 12;
+  footBlock += `<line x1="${GRID_L}" y1="${fy}" x2="${GRID_L + GRID_W}" y2="${fy}" class="hrule"/>`;
+
+  // THE THREE NETWORKS, three equal columns — the three answers.
+  // The MAP AND THE PRAYER PACKET TRAVEL TOGETHER in all three: the packet is
+  // what makes the intercession INFORMED rather than general.
+  fy += SPARSE ? 22 : 28;
+  // Its OWN class, not the shared .hvh — this is the call to action the three
+  // networks answer, so it carries more weight than an ordinary column heading,
+  // and sizing it here does not move every other heading on the sheet.
+  footBlock += `<text x="${CX}" y="${fy}" text-anchor="middle" class="hcta">Start with Prayer!</text>`;
+  fy += SPARSE ? 25 : 22;   // clears the larger .hcta line
+
+  const B2_GUT = 40;
+  const B2_CW = (GRID_W - 2 * B2_GUT) / 3;
+  // The text measure is deliberately NARROWER than the column. At full width each
+  // block filled ~90% of its column, so there was no slack to centre INTO — what
+  // read as "not centred" was the ragged right edge of a block already spanning
+  // the column. Wrapping to 82% leaves real margin on both sides, which is what
+  // makes the block read as set INSIDE its column.
+  const B2_TW = (B2_CW - 10 - BAND_TEXT_PAD / 2) * 0.82;
+  // Brief: "the three columns under the map need to be aligned better."
+  // They ran 4 / 3 / 4 lines, so their bottoms were ragged. The copy is trimmed
+  // to run the SAME number of lines in each column — that is what makes three
+  // columns read as one band instead of three unequal blocks, and it costs a line
+  // of height, which goes back to the map.
+  const NETWORKS = [
+    ['1 · Thirty disciples.',
+     `Each follower of Jesus takes their own map and prayer list, and sets apart a place to pray — some have hung a people-group map over their bed.`],
+    ['2 · Thirty churches.',
+     `Each church dedicates a wall in one of its places of prayer, and keeps copies of the prayer list available for distribution.`],
+    ['3 · Thirty indigenous leaders.',
+     `Find leaders on the ground in these areas and give them the map and prayer list, to raise awareness of their unengaged neighbours.`],
+  ];
+  const fpush = (frag) => { footBlock += frag; };
+  let fBot = fy;
+  NETWORKS.forEach(([lead, body], i) => {
+    // CENTRE THE BLOCK, LEFT-ALIGN THE LINES. Brief: "the text still looks
+    // justified left in its block, but the block is centred in the column."
+    // Ragged-right text that starts at the column's left edge leaves all its
+    // slack on the right, so the block reads as shoved left inside its column.
+    // Measuring the widest wrapped line and offsetting by half the leftover
+    // centres the BLOCK while every line keeps a shared left edge to read down.
+    // CENTRE EACH BLOCK ON ITS COLUMN.
+    // The block's width is its widest wrapped line. Line 0 carries the BOLD
+    // run-in ("3 \u00b7 Thirty indigenous leaders.") and the rest is regular, so a
+    // flat correction mis-measures whichever block happens to be widest on its
+    // first line — that is why col3 drifted 50px while col1 sat at 3px.
+    // Measure line 0 with the bold weight and the others without.
+    const BOLD_RUN = 1.06;   // bold costs ~6% width at this size
+    const REG_FILL = 0.90;   // textW carries WFUDGE; regular runs ~10% narrower
+    const colCentre = GRID_L + i * (B2_CW + B2_GUT) + B2_CW / 2;
+    const lines = wrapPx(`${lead} ${body}`, FS, B2_TW);
+    const lineW = (ln, k) => {
+      if (k > 0) return textW(ln, FS) * REG_FILL;
+      // Line 0 = bold lead + regular remainder.
+      const rest = ln.startsWith(lead) ? ln.slice(lead.length) : ln;
+      const leadPart = ln.length - rest.length > 0 ? lead : '';
+      return (textW(leadPart, FS) * BOLD_RUN + textW(rest, FS)) * REG_FILL;
+    };
+    const blockW = Math.min(B2_TW, lines.reduce((m, ln, k) => Math.max(m, lineW(ln, k)), 0));
+    const x = colCentre - blockW / 2;
+    const end = paraInto(fpush, body, { x, y: fy, w: B2_TW, fs: FS, lh: LH, cls: 'hsrc', lead });
+    if (end > fBot) fBot = end;
+  });
+  for (let i = 1; i < 3; i++) {
+    footBlock += colRule(GRID_L + i * (B2_CW + B2_GUT) - B2_GUT / 2, fy - 14, fBot - 12);
+  }
+  // THE VERSE RULE IS MEASURED FROM THIS BLOCK, NOT FROM A FIXED OFFSET.
+  // Anchoring it at PH - FOOTER could never work: FOOTER also shrinks MAP_H, so
+  // raising it moved the block and the rule up by the SAME amount and the gap
+  // between them stayed constant (measured: stuck at 164px for every value of
+  // FOOTER). The block is INSIDE the footer band, so the verse has to follow the
+  // block's real bottom.
+  const VERSE_RULE_Y = fBot + 14;
+  // The sheet still has to physically fit: the verse and its reference sit below
+  // the rule, and the attribution line below that.
+  // The reference baseline sits at VERSE_RULE_Y + 44; the attribution line is at
+  // PH - 4. Keeping the ref's descender clear of it needs +44 <= PH - 12, so the
+  // real limit is +56, not the +46/PH-8 pair that was guarding an imagined 8px.
+  if (VERSE_RULE_Y + 56 > PH) {
+    throw new Error(
+      `[generate] below-map block runs off the sheet: verse rule would sit at `
+      + `y=${VERSE_RULE_Y.toFixed(0)} on a ${PH}px sheet (zone ${zone.zoneKey}). `
+      + `Raise FOOTER (which shrinks the map) or tighten this copy.`
+    );
+  }
+
+  // ── MAP CREDITS (inside the map, UNDER the leader lines) ─────────────────
+  // Brief: the Mapbox copyright "is z-index above the lines, that is not right",
+  // and the data tag moves to the BOTTOM LEFT. Emitted inside the clipped map
+  // group so every leader and label paints over them — they are basemap
+  // furniture, not content, and must never occlude the sheet's own data.
+  const credit = (x, y, anchor, txt) =>
+    `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anchor}" class="attrib-halo">${txt}</text>`
+    + `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anchor}" class="attrib">${txt}</text>`;
+  const mapCredits =
+      credit(FRAME_X + 8, FRAME_Y + FRAME_H - 7, 'start', `Generated ${POSTER_DATE} \u00b7 data from doxa.life`)
+    + credit(FRAME_X + FRAME_W - 8, FRAME_Y + FRAME_H - 7, 'end', '\u00a9 Mapbox \u00a9 OpenStreetMap');
+
+  // FIT THE TITLE TO THE SHEET. Region names vary a lot in length ("West India"
+  // vs "Northeast India + Bangladesh + Bhutan"), and the qualifier adds a fixed
+  // ~13 characters on top, so a single hardcoded size cannot serve all 28 sheets —
+  // at 56px this one ran off BOTH edges. Solve for the largest size that fits
+  // between the sheet margins.
+  const H1_MAX = 56, H1_MIN = 26;
+  const h1Text = `Unengaged of ${title}`;
+  const h1Room = PW - 2 * (SHEET_EDGE + 24);
+  let H1_SIZE = H1_MAX;
+  // GEORGIA BOLD MEASURES ~1.35x THE LATO-TUNED ESTIMATE. textW's advance table
+  // is calibrated for Lato at body sizes; at display size in a serif bold it
+  // under-predicts badly. Measured on the render: 54px produced 1474px of text
+  // where the estimate said ~1090 — the title ran off BOTH sheet edges twice
+  // before this factor was taken from the actual getBBox width.
+  const H1_SERIF_BOLD = 1.35;
+  while (H1_SIZE > H1_MIN && textW(h1Text, H1_SIZE) * H1_SERIF_BOLD > h1Room) H1_SIZE -= 0.5;
+
+  const verse = verseFor(zone);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${PW} ${PH}" width="${PW}" height="${PH}">
+  <rect width="${PW}" height="${PH}" fill="var(--paper)"/>
+  <defs>
+    <!-- Two-part shadow: a tight dark edge for definition, plus a wide soft one
+         for lift. One blur alone reads either muddy or hard. -->
+    <!-- THE FILTER REGION MUST CONTAIN THE WHOLE BLUR, or the blur is clipped and
+         its bounding box shows in the paper as a faint rectangle offset from the
+         map — visible above and left of the top-left corner. A Gaussian needs
+         ~3x stdDeviation to fade to nothing: the widest shadow here is
+         stdDeviation 18 with a 10px y-offset, so it needs ~64px of margin. The
+         region is set in objectBoundingBox units, so the percentage has to cover
+         that on the SHORTEST side. userSpaceOnUse with explicit padding is exact
+         and cannot drift when the frame's aspect changes between zones. -->
+    <filter id="mapfloat" filterUnits="userSpaceOnUse"
+            x="${FRAME_X - 60}" y="${FRAME_Y - 60}"
+            width="${FRAME_W + 120}" height="${FRAME_H + 120}">
+      <!-- ONE tight shadow, not a wide second pass. The wide pass (stdDeviation 18,
+           dy 10) needed ~64px+ of filter margin to fade out; anything less clipped
+           it and the clip edge showed in the paper as a faint rectangle offset up
+           and left of the map. A single tighter shadow gives the same "floating"
+           read, fades out inside 30px, and cannot produce a visible box. -->
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#2A2721" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <!-- THE MAP FLOATS. Brief: "a border around the map itself like a border line
+       and a shadow around the outside of that line that makes the map itself look
+       like it is floating."
+       A soft drop shadow under a crisp 1.5px border lifts the map off the paper,
+       so it reads as an object ON the sheet rather than a window cut INTO it —
+       which is also what makes the surrounding text feel like a mount around it. -->
+  <!-- THE MAP FLOATS. Brief: "a border around the map itself like a border line
+       and a shadow around the outside of that line that makes the map itself look
+       like it is floating." The white mat was tried and rejected — the shadow-only
+       border reads better, and the mat also cut every leader line with a band of
+       white where the lines crossed it. -->
+  <rect x="${FRAME_X}" y="${FRAME_Y}" width="${FRAME_W}" height="${FRAME_H}" fill="var(--sea)"
+        stroke="var(--frameline)" stroke-width="1.5" filter="url(#mapfloat)"/>
+  <!-- LAND UNDERLAY. The frame is filled with SEA, so any land not covered by a
+       polygon shows as water — and India is absent from world-adm0 entirely
+       (verified: 161 countries, no IND), so Indian territory outside the drawn
+       ADM1 features fell through to sea. That is the "white space" gap. Painting
+       every ADM1 feature in view as a land underlay closes it: the sea then shows
+       only where there genuinely is sea. -->
+  <g clip-path="url(#mapclip)">${ctx}${ctxAdm1}${zoneP}${seaNames}${provNames}${ctryNames}${mapCredits}</g>
+  <clipPath id="mapclip"><rect x="${FRAME_X}" y="${FRAME_Y}" width="${FRAME_W}" height="${FRAME_H}"/></clipPath>
+  <g style="--zc:${color}">${leaders}${dots}${pinDots}${labels}</g>
+  <!-- TITLE, in two parts. "Unengaged People Groups of North India + Nepal" set
+       on one line at h1 size would either overflow the sheet or force the type
+       down to where the region name stops being the loudest thing on the poster.
+       Splitting it lets the CATEGORY sit quietly above and the REGION stay big:
+       the region is what a passer-by uses to find their sheet on a wall of 30. -->
+  <!-- TITLE, two-tone. Brief: the title reads "Unengaged of <Region>", with
+       "Unengaged of" in a DIFFERENT COLOUR from the region name — so a passer-by
+       reads at a glance that it is these PEOPLE who are unengaged, while the
+       region stays the loudest thing on the sheet. The overline above it is now
+       the plain category, "Unengaged People Groups". -->
+  <!-- CENTRED between the white edge and the title, not flush against the edge.
+       At y=46 its cap-height started ~32 — only 6px clear of the 26px border, so
+       it read as pinned to the edge. The band runs 26..(title cap-top ~78), so
+       its optical middle is ~57. -->
+  <text x="${PW / 2}" y="57" text-anchor="middle" class="h1over">Unengaged People Groups</text>
+  <text x="${PW / 2}" y="104" text-anchor="middle" class="h1" font-size="${H1_SIZE}"><tspan class="h1qual">Unengaged of</tspan> ${esc(title)}</text>
+  <!-- (The series line is emitted INSIDE headBlock, not here. Absolutely placing
+       it at a fixed y while the scripture flowed from headY is what made the
+       "(see Doxa.Life…)" line collide with the scripture rule.) -->
+  <!-- (The top-left Doxa.Life lockup was removed 2026-07-31 at the the brief's
+       request: the series line under the title already carries the site
+       reference, so the lockup was saying it twice.) -->
+  ${headBlock}
+  ${footBlock}
+  <!-- (The HEAD_BOTTOM rule is gone. It marked the boundary between the header and
+       the map back when the map was a plain rect. The white mat and its drop
+       shadow now define that edge far more clearly, so the rule just floated as a
+       stray horizontal line above the map.) -->
+  <line x1="${BAND_MARGIN_G}" y1="${VERSE_RULE_Y}" x2="${PW - BAND_MARGIN_G}" y2="${VERSE_RULE_Y}" class="rule"/>
+  <!-- FOOTER SCRIPTURE — TIER 1. Brief: "should be larger text bold and not two
+       lines but one line with scripture reference on the right." It is one of the
+       three things that must read when a reader steps closer, alongside the title
+       and the people-group names, so it carries display weight. The reference is
+       right-aligned to the map's own edge, which is what keeps it on ONE line. -->
+  <!-- CENTRED on the sheet axis, with the reference set inline after it so the
+       whole thing reads as ONE centred line. It was left-aligned with the ref
+       pushed to the right margin, which split it into two objects at opposite
+       ends of the sheet rather than one closing statement. -->
+  <text x="${PW / 2}" y="${VERSE_RULE_Y + 30}" text-anchor="middle" class="verse">&#8220;${esc(verse.text)}&#8221;<tspan class="vref"> ${esc(verse.ref)}</tspan></text>
+  <!-- GENERATION DATE, bottom-left. Deliberately NO hard counts of the global
+       unengaged total on this poster: that number changes as research updates, and
+       a printed figure would silently go stale on a wall. What CAN be stated
+       honestly is WHEN this sheet was made — so a reader knows how current it is
+       and can go to the site for the live picture. -->
+  <!-- THE WHITE SHEET EDGE. Drawn last so it trims anything reaching the paper's
+       edge. A stroked rect inset by half its own width paints a band exactly
+       SHEET_EDGE wide around the whole poster. -->
+  <rect x="${SHEET_EDGE / 2}" y="${SHEET_EDGE / 2}" width="${PW - SHEET_EDGE}" height="${PH - SHEET_EDGE}"
+        fill="none" stroke="#FFFFFF" stroke-width="${SHEET_EDGE}"/>
+</svg>`;
+
+  const html = `<!doctype html><html><head><meta charset="utf-8">
+<title>${esc(title)} — UPG poster</title>
+<style>
+  :root{--paper:#f7f4ec;--sea:#eef3f4;--frame:#cdbf9e;--frameline:#B9AC8C;--ink:#1c1c17;--zc:${color};}
+  *{margin:0;box-sizing:border-box}
+  html,body{background:#777}
+  .stage{width:${PW}px;height:${PH}px;margin:0 auto;background:var(--paper)}
+  svg{display:block}
+  /* CONTEXT COUNTRIES. Imhof rule 3 — large fills sit muted and low-saturation
+     (OS ships land at 13% saturation, sea at 8%); chroma is reserved for the small
+     marks. The HAIRLINE EDGE is what lets these near-identical values read as
+     separate countries at all (Tufte separates 3% and 7% tints this way). Edge is
+     darkened from the old #cfc6ad so borders are actually visible. */
+  /* Borders must be STRONGER than the fill contrast, or a small neighbour with the
+     same tone as its surroundings simply disappears — Nepal was drawn correctly
+     the whole time and still read as part of India, because nothing delineated it.
+     Tufte: a hairline contour is what lets near-identical fills separate; here the
+     contour had to be darkened and thickened to actually do that job. */
+  .ctry{fill:#EAE5D8;stroke:#9C8F73;stroke-width:1.5;stroke-linejoin:round}
+  /* Country NAMES: all-caps tracked +0.1em, haloed to the PAPER colour rather
+     than white (Brewer — halos should be subtle and match the background), and
+     held one clear value-step lighter than the people-group labels so the surround
+     never competes with the subject. */
+  /* Size and value both raised: at 11px/#8C8370 these rendered but were
+     effectively invisible against a fill of similar value. The density budget
+     allows generosity — this poster carries ~11 names/dm2 against Imhof's 500/dm2
+     world-atlas ceiling — so 15px with a darker warm grey is still subordinate to
+     the people-group labels while actually being readable. */
+  /* CONTEXT PROVINCES — visible structure, clearly subordinate to the zone.
+     Imhof: separate by VALUE, keep the surround muted; the hairline edge is what
+     lets near-identical fills read as separate territories at all. */
+  .prov{fill:#E4DECF;stroke:#B3A488;stroke-width:1;stroke-linejoin:round}
+  /* Province names sit BELOW country names in the hierarchy: smaller, lighter,
+     and not all-caps, so the eye reads country > province > people group. */
+  /* Water names: italic, spaced, in the water's own hue — the cartographic
+     convention for hydrography, and it keeps them clearly distinct from land. */
+  .sea-name{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:12px;
+    font-style:italic;fill:#93AEBC;letter-spacing:.18em;font-weight:500}
+  .prov-name{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:11.5px;
+    fill:#7E7562;font-weight:500;letter-spacing:.02em}
+  .prov-name.own{fill:#6B4A78;font-weight:600}
+  .prov-name-halo{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:11.5px;
+    fill:none;stroke:#F2EFE6;stroke-width:3;stroke-linejoin:round;letter-spacing:.02em}
+  .ctry-name{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:15px;
+    letter-spacing:.1em;fill:#6E6553;font-weight:700}
+  .ctry-name-halo{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:15px;
+    letter-spacing:.1em;font-weight:700;fill:none;stroke:#F2EFE6;stroke-width:4;stroke-linejoin:round}
+  /* A country that is a MEMBER of this zone (mixed-geometry zones join whole
+     countries to provinces — North India + Nepal). It takes the zone's own ink,
+     matching .prov-name.own, so members and neighbours are never confusable. */
+  .ctry-name-own{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:15px;
+    letter-spacing:.1em;fill:#6B4A78;font-weight:700}
+  /* Internal province borders inside the zone, or the 5 highlighted provinces read
+     as one undifferentiated blob and the reader cannot tell Bihar from Jharkhand. */
+  .zone{fill:var(--zc);fill-opacity:.30;stroke:#7B5A88;stroke-width:1.1;stroke-opacity:.75;stroke-linejoin:round}
+  .pin{fill:var(--zc);stroke:#2b2616;stroke-width:1.1;paint-order:stroke}
+  /* SELF-HALOED LEADER (Frye/Esri): white 1.2pt under, grey 0.6pt over. At this
+     poster's CSS scale 1pt ~= 1.33px, so 1.2pt=1.6px and 0.6pt=0.8px. The grey is
+     a MID value (~45%), never black — a black leader competes with the label it
+     serves. 0.6pt is deliberately just above the 0.5pt print floor. */
+  /* Paper-coloured halo so a hairline stays readable where it crosses land. */
+  .lead-halo{fill:none;stroke:#F5F1E7;stroke-width:1.7;stroke-opacity:.7;stroke-linejoin:round;stroke-linecap:round}
+  /* Leaders must be SUBORDINATE — they are wiring, not content. At .9 opacity and
+     118 of them the bundle read as the loudest thing on the sheet, competing with
+     both the map and the names it serves. Dropped to a light warm grey at .55, one
+     clear value-step below the labels. Esri: consistent colour and weight, never
+     black, never varying per label. */
+  /* A true HAIRLINE in near-black. The warm grey at .55 opacity vanished against
+     the map fills — a leader you cannot see does not connect anything. 0.4px is
+     just above the 0.25pt offset-litho dropout floor, so it stays a hair rather
+     than a rule, and near-black (not pure #000) keeps it from competing with the
+     label text it serves. */
+  /* 0.4px rendered as a pale grey rather than a hairline — below about 0.55px a
+     stroke antialiases into a tint instead of a line, so "thin and black" needs
+     WEIGHT, not a darker hex. 0.6px at full opacity is a true hair that still sits
+     just above the 0.25pt offset-litho dropout floor. */
+  .lead{fill:none;stroke:#14110B;stroke-width:.6;stroke-opacity:1;stroke-linejoin:round;stroke-linecap:round}
+  .ldot{fill:#857A6A}
+  /* NUMBERED PINS. A filled disc in the zone colour with a knocked-out numeral —
+     the number must read at arm's length on a printed sheet, so the disc carries
+     it rather than sitting beside it. Paper-coloured ring separates touching pins
+     without adding a second hue (Imhof: separate by value, keep hues few). */
+  /* Numerals sized to be READ, not merely present. At 8.6px they were illegible
+     even magnified; on a printed sheet at arm's length they would fail outright.
+     The density budget allows this — ~11 names/dm2 against Imhof's 500/dm2
+     world-atlas ceiling — so the sheet has room the earlier size did not use. */
+  .pin-num-bg{fill:var(--zc);stroke:#F7F4EC;stroke-width:1.8;fill-opacity:.97}
+  /* NO font-size HERE. It used to declare 13px, and a CSS rule BEATS the SVG
+     font-size presentation attribute — so every per-badge size the generator
+     computed was silently discarded and every numeral rendered at 13px. That is
+     why "118" spilled 8.4px out of an 18.7px disc: the fix was being overridden
+     by the stylesheet, not miscalculated. Size is set per element, on purpose,
+     because it depends on the digit count and the disc radius. */
+  .pin-num{font-family:Lato,'Segoe UI',system-ui,sans-serif;
+    font-weight:700;fill:#FFFFFF;letter-spacing:0}
+  /* The index is subordinate to the NAME — lighter and smaller, so the margin
+     column reads as a list of peoples, not a list of numbers. */
+  .lnum{fill:#A79C86;font-weight:400}
+  /* Sans for CULTURAL features (people groups). Cartographer survey favours
+     Frutiger; Lato/Open Sans are the available substitutes. Small labels take
+     POSITIVE tracking (optical sizing). */
+  /* The people-group names ARE the payload of this sheet — at thumbnail scale they
+     are the one thing that must still read. Bold, and darker than body ink. */
+  .lbl{font-family:Lato,'Segoe UI',system-ui,-apple-system,sans-serif;fill:#2A2721;
+    font-weight:700;letter-spacing:.012em;dominant-baseline:auto}
+  /* GRANULAR table cells. The NAME keeps full weight; the three data columns are
+     lighter and smaller so the sheet still reads name-first at a glance. */
+  /* Field headers above each gutter's table. Small caps + tracking so they read
+     as LABELS, not as another row of data. */
+  .g-head{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-weight:700;fill:#A79E8A;
+    letter-spacing:.10em;text-transform:uppercase}
+  .g-headrule{stroke:#D6CCB4;stroke-width:.8}
+  .g-people{font-weight:700;fill:#2A2721}
+  .g-place {font-weight:600;fill:#6B4A78}
+  .g-lang  {font-weight:400;fill:#5f5849}
+  .g-relig {font-weight:400;fill:#8a8470}
+  /* The index column — its own element so every number shares one x. Lighter than
+     the name so the column reads as names first, indices second. */
+  .lnum-col{font-family:Lato,'Segoe UI',system-ui,-apple-system,sans-serif;fill:#8a8470;
+    font-weight:600;letter-spacing:.012em;dominant-baseline:auto}
+  /* TITLE: display type takes NEGATIVE tracking. Set at 0 it is one of the
+     loudest amateur tells. Sized up per the density budget — at ~5-11 names/dm2
+     this poster is very sparse against Imhof's 500/dm2 world-atlas ceiling, so
+     there is room to be generous. */
+  .h1{font-family:Georgia,'Times New Roman',serif;font-weight:700;fill:var(--ink);letter-spacing:-.02em}
+  /* "Unengaged of" — same size and weight as the title so it reads as one line,
+     but in a lighter tone so the REGION NAME still carries the emphasis. */
+  .h1qual{fill:#A79E8A}
+  /* The category line above the region name — smaller, tracked, quiet. */
+  .h1over{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:19px;font-weight:600;
+    fill:#8a8470;letter-spacing:.16em;text-transform:uppercase}
+  /* Doxa lockup, top-left. */
+  .brand{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:700;
+    fill:#6B4A78;letter-spacing:.01em}
+  .brandsub{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:10.5px;font-weight:600;
+    fill:#8a8470;letter-spacing:.10em;text-transform:uppercase}
+  /* SUBTITLE: the province enumeration lives here, wrapped, never in the title. */
+  .h2{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:19px;fill:#6a6450;letter-spacing:.04em}
+  .h3{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:15px;fill:#7d7663;letter-spacing:.01em}
+  /* Labelled list under the title. The KEY is bold so the structure reads at a
+     glance; the VALUE is regular so the names do not shout over the title. Both
+     sit on their own left edge, so Countries and Provinces align as a column. */
+  .hkey{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:15px;font-weight:700;
+    fill:#4a4636;letter-spacing:.02em}
+  .hval{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:15px;font-weight:400;
+    fill:#6a6450;letter-spacing:.01em}
+  .hsum{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:14px;font-weight:600;
+    fill:#8a8470;letter-spacing:.03em}
+  .rule{stroke:var(--frame);stroke-width:1.5}
+  /* CALL TO ACTION — quiet but findable. It sits BELOW the map and ABOVE the
+     scripture, so the eye lands on the map first, the invitation second, and the
+     verse last. Type is small: a poster's job is the map, and a shout here would
+     compete with it. */
+  /* Source + invitation, set as ONE running line in the header block. Quiet
+     weight so it reads as provenance rather than advertising; only the URLs and
+     the term carry emphasis. */
+  .hrule{stroke:#C9BFA4;stroke-width:1.2}
+  .hsrc{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:12px;fill:#8a8470;letter-spacing:.01em}
+  .hsrc-em{font-weight:700;fill:#5f5849}
+  /* The two vision columns under the ruled scripture — a step down in scale from
+     body prose, so the scripture above them stays the louder voice. */
+  .hsrc2{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:12px;fill:#8a8470;letter-spacing:.01em}
+  .hsrc-url{font-weight:700;fill:#6B4A78}
+  .hsrc-it{font-style:italic}
+  /* The goal question — the hinge between the vision and the three networks.
+     Slightly larger and darker than body prose because it is the one line the
+     whole header is arranged around. */
+  /* Sized to FILL its band. At 14.5px it measured ~1018px in a 1388px band and
+     read as a small line floating in a wide space; the band went full-sheet-width
+     and the type did not follow. 18px MEASURED (getBBox) at 1344px in the 1388px
+     band — the estimator said 19px would fit at 1334 but it actually rendered
+     1419 and overflowed both edges, so this size is taken from the RENDER. */
+  .hgoal{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-style:italic;
+    fill:#4a4636;letter-spacing:.01em}
+  /* Hairline between grid columns. A rule, not a box: it separates the columns
+     without drawing a container around them. */
+  .hcolrule{stroke:#D6CCB4;stroke-width:.8}
+  /* SPARSE header: the series line under the title, and the one-line facts. */
+  .hseries{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:14px;fill:#7E7562;letter-spacing:.01em}
+  .hseries-em{font-weight:700;fill:#6B4A78}
+  .hseries-dim{fill:#A79E8A}
+  /* The site reference on its OWN line — Brief: "so that it is less wide". A
+     single long line was forcing the series block wider than the map. */
+  .hseries-dim2{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:12px;
+    fill:#A79E8A;letter-spacing:.02em}
+  /* SPARSE four-column facts table under the scripture. The HEADER names what the
+     number is — "92" alone is meaningless, "People Groups / 92" is self-describing. */
+  .hfhead{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:12.5px;fill:#8a8470;
+    font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .hfval{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:17px;fill:#3A3730;
+    font-weight:700;letter-spacing:.01em}
+  /* The two HEADLINE stats — the count and the population. Display size, in the
+     zone ink, so they read before anything else in this band. */
+  .hfbig{font-family:Georgia,'Times New Roman',serif;font-size:34px;fill:#6B4A78;
+    font-weight:700;letter-spacing:-.01em}
+  /* The compassion verse under the facts table — scripture, so it takes the
+     serif italic of the footer verse rather than the sans of the metadata. */
+  /* Sized to FILL the full-sheet band on ONE line. It was 12.5px when the band was
+     the map's width (~1100px); the band is now 1388px, so the type follows.
+     15px measures ~1263px — fills the band while keeping headroom over the width
+     estimator's error rather than sitting one glyph from overflow. */
+  /* 13.5px bold. Brief: "this is too large, it should not span full width —
+     there needs to be gaps." At 15px bold it measured 1396px of the 1448px band,
+     i.e. touching both rules; 13.5 measures ~1256px and leaves ~96px of paper at
+     each end, so the line reads as SET INSIDE the band rather than filling it.
+     Bold + dark ink still carry the weight. */
+  .hverse{font-family:Georgia,'Times New Roman',serif;font-size:13.5px;font-style:italic;
+    font-weight:700;fill:#3a362c;letter-spacing:.01em}
+  /* The scripture REFERENCE — bold and in the zone ink, matching how the series
+     name and the site URL are emphasised, so the citation reads as a deliberate
+     part of the line rather than a grey afterthought. */
+  .hvref{font-family:Lato,'Segoe UI',system-ui,sans-serif;font-size:11px;
+    fill:#6B4A78;letter-spacing:.14em;font-weight:700;font-style:normal}
+  /* The hook is a QUESTION and reads one step up from the body — it is the line
+     that stops a passer-by, and everything after it is the answer. */
+  /* The vision block gets a small titled heading of its own — it tells a passer-by
+     what they are about to read before they commit to reading it. Small caps and
+     letterspacing mark it as a heading without needing size. */
+  .hvh{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:700;
+    fill:#3f3a2e;letter-spacing:.06em;font-variant:small-caps}
+  /* "Start with Prayer!" — the call to action above the three networks. */
+  .hcta{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:700;
+    fill:#3f3a2e;letter-spacing:.06em;font-variant:small-caps}
+  .verse{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:23px;font-weight:700;fill:#2A2721}
+  .vref{font-family:'Segoe UI',system-ui,sans-serif;font-size:13px;font-weight:700;fill:#6B4A78;letter-spacing:.14em;text-transform:uppercase}
+  .attrib{font-family:'Segoe UI',system-ui,sans-serif;font-size:9px;fill:#8d857a;letter-spacing:.02em}
+  /* Haloed so the credits stay legible wherever they land on the map. */
+  .attrib-halo{font-family:'Segoe UI',system-ui,sans-serif;font-size:9px;fill:none;
+    stroke:#EEF3F4;stroke-width:2.6;stroke-linejoin:round;letter-spacing:.02em}
+  @media print{@page{size:${FMT.page};margin:0}html,body{background:#fff}.stage{margin:0}}
+</style></head><body><div class="stage">${svg}</div></body></html>`;
+  return { html, title, octiOK, crossings, diagFrac };
+}
+
+// ── main ──────────────────────────────────────────────────────────────────────
+const records = await loadRecords();
+const tops = buildLegendNodes(clusters, { records });
+const zones = leafZones(tops);
+
+// ── SERIES FACTS, derived — never typed ──────────────────────────────────────
+// The the brief's requirement: numbers on the poster must come from the API and the
+// cluster data at generation time, so a sheet printed later states later figures
+// rather than carrying a stale count on a wall. `index` is filled per-poster.
+const SERIES = {
+  totalGroups: zones.reduce((a, z) => a + (z.count || 0), 0),
+  totalLists: zones.length,
+  index: 1,
+};
+
+// attach .selector by id, EXACTLY as upg-100-list.vue:1103-1110 (leaves don't carry it)
+const byId = {};
+for (const l of clusters.lists || []) byId[l.id] = l.selector;
+for (const a of clusters.asia_lists || []) byId[a.id] = a.selector;
+for (const u of clusters.uncovered_lists || []) byId[u.id] = u.selector;
+byId['deaf'] = { type: 'affinity_bloc', rop1: 'A017' };
+for (const z of zones) z.selector = byId[z.id];
+
+// slug → zoneKey, exactly as upg-100-list.vue (regional before asia; pg_slugs special-cased)
+const slugToZone = {};
+for (const z of zones) {
+  if (z.selector && z.selector.type === 'pg_slugs') {
+    for (const s of (z.selector.values || [])) if (!(s in slugToZone)) slugToZone[s] = z.zoneKey;
+  } else if (z.selector) {
+    try { for (const s of evaluate(z.selector, records)) if (!(s in slugToZone)) slugToZone[s] = z.zoneKey; }
+    catch (e) { console.warn('zone selector skipped', z.id, e && e.message); }
+  }
+}
+const pinsByZone = new Map(zones.map((z) => [z.zoneKey, []]));
+for (const r of records) {
+  const lat = Number(r.latitude), lng = Number(r.longitude);
+  if (!isFinite(lat) || !isFinite(lng)) continue;
+  const zk = slugToZone[r.slug];
+  // country_code is carried so the poster can name the COUNTRIES it covers in its
+  // subtitle; the pin record previously dropped it and the subtitle came out empty.
+  if (zk && pinsByZone.has(zk)) pinsByZone.get(zk).push({
+    // population is carried so the sheet can total it for the facts table. Like
+    // country_code before it, the pin record dropped this field and the Population
+    // column rendered "—" even though every one of the 2,106 API records has it.
+    name: r.name || r.slug || '', lat, lng, slug: r.slug, country_code: r.country_code,
+    population: r.population,
+    // GRANULAR TABLE fields. Carried explicitly because the pin record is rebuilt
+    // field-by-field — the same shape that silently dropped adm0, population and
+    // provinceLabel. Anything not named here does not reach the sheet.
+    language: r.primary_language_label || '',
+    religion: r.religion_label || '',
+    place: r.country_code_label || ISO3_NAME[r.country_code] || r.country_code || '',
+  });
+}
+
+const ONLY = process.env.ONLY;
+const manifest = [];
+let made = 0;
+for (const z of zones) {
+  // The sheet's own position in the series. design note 2026-07-31: "it should not say
+  // 23 of 30 because the ORDER OF THE LIST SHOULD CHANGE — it should say 1 of 30."
+  // The zone ordering in legend-tree is a legend ordering, not a series ordering,
+  // so deriving the number from it printed an arbitrary position. SERIES_INDEX
+  // makes it explicit and overridable until the series order is actually settled.
+  SERIES.index = process.env.SERIES_INDEX ? Number(process.env.SERIES_INDEX)
+               : (zones.indexOf(z) + 1);
+  if (ONLY && z.zoneKey !== ONLY && z.id !== ONLY) continue;
+  const pins = pinsByZone.get(z.zoneKey) || [];
+  const zoneFC = resolveZoneGeometry(z, { records, adm0, adm1Ind, adm1Chn });
+  const { html, title, octiOK, crossings, diagFrac } = renderPoster(z, pins, zoneFC);
+  const file = `${z.zoneKey}.html`;
+  writeFileSync(join(POSTERS, file), html);
+  manifest.push({ zoneKey: z.zoneKey, title, count: pins.length, octilinear: octiOK, crossings, diagFrac, html: `posters/${file}`, png: `posters/${z.zoneKey}.png` });
+  made++;
+  console.log(`  ✓ ${z.zoneKey.padEnd(34)} ${String(pins.length).padStart(3)} pins  octi=${octiOK?'Y':'N'}  d=${diagFrac}  cross=${crossings}`);
+}
+if (!ONLY) writeFileSync(join(OUT, 'manifest.json'), JSON.stringify({ generated: 'live', count: manifest.length, posters: manifest }, null, 2));
+console.log(`\n${made} poster(s) → ${POSTERS}${ONLY ? ' (ONLY=' + ONLY + ')' : ', manifest.json written'}`);

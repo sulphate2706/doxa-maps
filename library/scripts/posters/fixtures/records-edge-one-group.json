@@ -1,0 +1,36 @@
+[
+ {
+  "slug": "adi",
+  "name": "Adi",
+  "country_code": "CHN",
+  "population": "1400",
+  "religion": "E",
+  "has_photo": false,
+  "picture_credit": [
+   {
+    "link": null,
+    "text": "Photo courtesy of "
+   },
+   {
+    "link": "https://www.joshuaproject.net",
+    "text": "Joshua Project"
+   },
+   {
+    "link": null,
+    "text": ". By "
+   },
+   {
+    "link": "https://flickr.com/photos/ramesh_lalwani/8169468855/",
+    "text": "Ramesh Lalwani - Flickr"
+   }
+  ],
+  "latitude": "29.24961200",
+  "longitude": "95.17182400",
+  "country_code_label": "People's Republic of China",
+  "religion_label": "Ethnoreligion",
+  "primary_language": "adi",
+  "primary_language_label": "Adi",
+  "imb_gsec": "1",
+  "imb_gsec_label": "Less than 2% Evangelical, No Active CP Activity"
+ }
+]

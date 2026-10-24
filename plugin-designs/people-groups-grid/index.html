@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doxa-maps · people-groups-grid staging</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #f1f5f9; color: #0f172a; min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 48px; }
+    h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+    .sub { color: #475569; font-size: 13px; margin: 6px 0 24px; max-width: 820px; }
+    .sub code { color: #2563eb; }
+    h2 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+      color: #64748b; margin: 30px 0 10px; }
+    .slot { border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #fff; }
+    .slot .label { font: 12px/1 ui-monospace, monospace; color: #64748b; padding: 8px 12px;
+      background: #f8fafc; border-bottom: 1px solid #e2e8f0; }
+    .ext-bar { display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 12px; background: #eef2ff; border-bottom: 1px solid #e2e8f0; }
+    .ext-bar input { padding: 7px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; }
+    .ext-bar .count { margin-left: auto; align-self: center; font-size: 13px; color: #2563eb; font-weight: 600; }
+    people-groups-grid { display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>people-groups-grid · staging</h1>
+    <p class="sub">Capability&nbsp;2 — a COPY of the DX-life people-groups grid
+      (<code>UupgsList.vue</code>) migrated into an OWNED custom element
+      <code>&lt;people-groups-grid&gt;</code>: fuzzy search + four dropdowns (Region / Block /
+      People-Group / Religion) + faceted counts. Its own controls can be turned off
+      (<code>show-search="false"</code> / <code>show-filters="false"</code>) so a parent header
+      drives it via props; it emits <code>groups-filtered</code> both as a Vue event and a native
+      bubbling CustomEvent. Data is fetched from the injected <code>pray-base-url</code>
+      (default <code>https://pray.doxa.life</code>) — no Nuxt context required.</p>
+
+    <h2>1 · Standalone (owns its search + 4 dropdowns)</h2>
+    <div class="slot">
+      <div class="label">&lt;people-groups-grid pray-base-url="https://pray.doxa.life"&gt;</div>
+      <people-groups-grid id="standalone" pray-base-url="https://pray.doxa.life"></people-groups-grid>
+    </div>
+
+    <h2>2 · Externally driven (controls off, host page filters it via props/events)</h2>
+    <div class="slot">
+      <div class="ext-bar">
+        <input id="q" type="search" placeholder="host search → query prop">
+        <input id="rel" type="text" placeholder="religion prop (e.g. Islam)">
+        <span class="count" id="count">—</span>
+      </div>
+      <people-groups-grid id="driven" show-search="false" show-filters="false"
+        pray-base-url="https://pray.doxa.life"></people-groups-grid>
+    </div>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+
+  <!-- Deploy-method-3 proof: a PLAIN host page drives the element through props + listens to
+       its groups-filtered event. -->
+  <script type="module">
+    const grid = document.getElementById('driven')
+    const q = document.getElementById('q')
+    const rel = document.getElementById('rel')
+    const count = document.getElementById('count')
+    if (grid) {
+      grid.addEventListener('groups-filtered', (e) => {
+        const d = e.detail || {}
+        count.textContent = (typeof d.total === 'number') ? `${d.total} groups` : '—'
+      })
+      q?.addEventListener('input', () => {
+        q.value ? grid.setAttribute('query', q.value) : grid.removeAttribute('query')
+      })
+      rel?.addEventListener('input', () => {
+        rel.value ? grid.setAttribute('religion', rel.value) : grid.removeAttribute('religion')
+      })
+    }
+  </script>
+</body>
+</html>

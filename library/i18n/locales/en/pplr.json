@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "Religion",
+    "ropTree": "ROP Tree",
+    "languageFamilies": "Language Families",
+    "semanticTrees": "Semantic Trees",
+    "nameLocales": "PG Name Locales",
+    "ropSunburst": "ROP Sunburst",
+    "allPins": "All PG-in-country pins",
+    "rosetta": "Cross-system ID Rosetta",
+    "coverage": "Translation coverage",
+    "index": "Index"
+  },
+  "status": {
+    "loading": "Loading…",
+    "loadingPgData": "Loading PG data…",
+    "loadingPins": "Loading PG pins…",
+    "loadingPolygons": "Loading country polygons…",
+    "addingPolygons": "Adding country polygons…",
+    "addingPins": "Adding PG pins…",
+    "loadingCoverage": "Loading per-country coverage…",
+    "addingPinsOnTop": "Adding PG pins on top…",
+    "loadingRop": "Loading ROP hierarchy…",
+    "loadingLanguage": "Loading language data…",
+    "loadingPinsRosetta": "Loading PG pins + Rosetta sample…",
+    "error": "Error: {message}",
+    "readyTranslations": "{pins} pins · click any pin to see all 17 locale names",
+    "readyCoverage": "Ready · {countries} countries coloured by average translation locales / 17 (all {rows} PG-in-country rows)",
+    "readyD3": "{entries} entries · scroll to zoom · drag to pan",
+    "readyRop": "Ready · {pins} pins · {peid} with PEID",
+    "readyRosetta": "Ready · {pins} pins · {samples} Rosetta samples (gold ★)",
+    "readyPins": "Ready · {pins} PG-in-country pins · click any pin",
+    "readyLanguage": "Ready · {pins} pins · {coverage}% family coverage · top-25 = {top}%",
+    "readyReligion": "{pins} pins · {religion} most common ({count})",
+    "d3Failed": "The chart library could not be loaded."
+  },
+  "ui": {
+    "chooseView": "Choose a view",
+    "search": "Search by people, place, language, religion…",
+    "baseMap": "Base map",
+    "dataSources": "Data sources",
+    "legend": "Legend",
+    "openLegend": "Open legend",
+    "clearSelectionEsc": "Clear selection (Esc)",
+    "closeEsc": "Close (Esc)",
+    "close": "Close",
+    "retry": "Retry",
+    "loadingMap": "Loading map",
+    "flyToPin": "Fly to pin",
+    "primaryReligion": "Primary religion",
+    "ropHierarchy": "ROP hierarchy"
+  },
+  "pill": {
+    "religion": "Religion distribution · click a pin for detail",
+    "ropTree": "ROP hierarchy · Affinity Bloc → Cluster → People Group → PGIC",
+    "languageFamilies": "Ethnolinguistic families (PPLR) · click a pin for detail",
+    "sunburst": "ROP hierarchy · Affinity Bloc → People Cluster · scroll to zoom",
+    "pins": "All people-group-in-country pins · click for cross-system IDs",
+    "coverage": "Translation coverage · shading = average locales filled per country · click a pin or a country",
+    "rosetta": "Cross-system ID Rosetta · colour = which IDs exist · ★ = sample row",
+    "translations": "PG name · {n} locales · click any pin"
+  },
+  "legendTitle": {
+    "avgLocales": "Average locales / {n}",
+    "idCoverage": "ID coverage"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, all three",
+      "imbOnly": "IMB only",
+      "jpOnly": "JP only",
+      "neither": "neither"
+    },
+    "samplePg": "★ sample people group",
+    "missingIds": "Not yet cross-mapped in PPLR: {ids}. An empty row is a data gap, not an error."
+  },
+  "popup": {
+    "noName": "(no name)",
+    "country": "Country",
+    "religion": "Religion",
+    "language": "Language",
+    "family": "Family",
+    "affinityBloc": "Affinity Bloc",
+    "cluster": "Cluster",
+    "peopleCluster": "People cluster",
+    "peopleGroup": "People group",
+    "pgCount": "People groups",
+    "avgLocalesFilled": "Average locales filled",
+    "iso3Country": "ISO-3 country"
+  },
+  "card": {
+    "nameInLocales": "Name in {n} locales"
+  },
+  "title": "PPLR data maps",
+  "index": {
+    "title": "PPLR data validation",
+    "help": "Click a tile, or choose a view above."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "placeholder": "लोग, स्थान, भाषा, धर्म",
+  "placeholderNoPlaces": "लोग, भाषा, धर्म (स्थान खोज के लिए Mapbox टोकन चाहिए)",
+  "labels": {
+    "people": "लोग:",
+    "place": "स्थान:",
+    "language": "भाषा:",
+    "religion": "धर्म:"
+  },
+  "sections": {
+    "within": "{selection} के भीतर",
+    "allData": "सभी DOXA डेटा"
+  },
+  "kinds": {
+    "people": "जनसमूह + देश",
+    "peopleGroup": "जनसमूह",
+    "bloc": "समानता समूह",
+    "cluster": "जनसमूह क्लस्टर",
+    "country": "देश",
+    "region": "क्षेत्र",
+    "family": "भाषा परिवार",
+    "languageKind": "भाषा",
+    "dialect": "बोली",
+    "religionKind": "धर्म"
+  },
+  "upg100Placeholder": "जनसमूह, UPG100 सूची या क्षेत्र खोजें…",
+  "tabPlaceholder": {
+    "languageFamilies": "भाषा परिवार, भाषा, बोली/रूप खोजें",
+    "affinityBlocks": "समानता समूह, क्लस्टर, जनसमूह खोजें",
+    "regions": "क्षेत्र, देश, जनसमूह खोजें",
+    "religion": "धर्म, जनसमूह खोजें"
+  },
+  "placeholderRegions": "क्षेत्र, देश या जनसमूह खोजें"
+}

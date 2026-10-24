@@ -1,0 +1,59 @@
+{
+  "tab": {
+    "dashboard-plus-grid": {
+      "bottom": "Voyez tout le champ, resserrez-le sur les peuples que vous pouvez réellement atteindre, et emportez la liste sous forme de tableur.",
+      "p1": "Touchez une région et faites défiler la grille pour voir les photos des peuples, presque comme visiter le pays et rencontrer les visages d'une culture.",
+      "p2": "Filtrez par peuple, lieu, langue, religion ou prière ; la carte, le tableau et les totaux bougent ensemble, et vous voyez la même sélection de trois façons.",
+      "p3": "Exportez les lignes filtrées en tableur CSV : une liste de travail à trier, partager et planifier hors ligne.",
+      "p4": "Servez-vous-en pour fixer des objectifs à court terme : les groupes pour lesquels prier et à atteindre aujourd'hui, et ceux à préparer pour demain.",
+      "p5": "Il est conçu pour s'adapter aux initiatives « des médias aux mouvements » : partez des données, puis agissez pour les groupes qu'elles font ressortir."
+    },
+    "research-map-plus-grid": {
+      "bottom": "Commencez là où le besoin est le plus grand. Utilisez les couches de prière et d'engagement pour trouver les zones prioritaires, puis mobilisez la prière pour les peuples qui s'y trouvent.",
+      "p1": "Voyez qui attend encore. Dans l'onglet « Prière », chaque point indique si quelqu'un prie pour ce peuple, s'il a encore besoin de prière ou s'il est entièrement couvert par la prière.",
+      "p2": "Trouvez les manques. Passez à « Engagement » pour voir où le travail a commencé et où personne n'est encore engagé. Ces manques sont les zones prioritaires à mobiliser.",
+      "p3": "Étudiez une partie du monde à la fois. Resserrez par région, langue ou religion, ou cherchez dans la liste par nom. La liste suit la carte, et vous lisez les noms derrière les points.",
+      "p4": "Rencontrez un peuple. Touchez un point pour voir son pays, sa population, sa langue et sa religion, puis utilisez « Priez pour eux » pour commencer à prier pour ce peuple par son nom.",
+      "p5": "Restez simple. Cette carte suit les progrès à un niveau simple, d'un coup d'œil. Pour les données complètes, allez à « Vue d'ensemble » ; pour des ressources de prière à imprimer, allez à « Régions » ou à « Liste UPG100 »."
+    },
+    "regions-dashboard": {
+      "bottom": "Environ 170 pays ont leur propre affiche, leur dossier et leur jeu de cartes. Mobilisez un groupe pour prier pour chaque pays, et chaque pays est couvert par la prière.",
+      "p1": "Faites la liste des disciples, des Églises et des responsables que vous connaissez déjà, et du pays auquel chacun est appelé. Donnez à chacun les ressources de prière de ce pays.",
+      "p2": "Commencez près de chez vous, avec les disciples et les Églises locales. Allez ensuite vers les responsables et les ouvriers autochtones sur le terrain dans ces pays, et envoyez-leur l'affiche, le dossier et les cartes du pays à imprimer là où ils sont.",
+      "p3": "Le dossier de prière est le plus stratégique des trois : tout ce qu'il faut pour prier pour un pays, dans un seul dossier imprimable.",
+      "p4": "Les cartes servent surtout quand vous avez un groupe à qui les distribuer : un peuple par carte.",
+      "p5": "Les dossiers par pays conviennent à une base de mobilisation plus large, ou à un pays que vous voulez voir atteint. Si la mobilisation est lente, les listes UPG100 sont un point de départ plus simple."
+    },
+    "prayer-map": {
+      "bottom": "Un mouvement de prière grandit quand chaque partenaire montre la même carte : placez donc cette carte sur chaque site de votre réseau.",
+      "p1": "Faites la liste des sites de votre réseau : Églises, ministères, réseaux de prière, partenaires missionnaires, chaque site que vos gens visitent déjà.",
+      "p2": "Partagez-la ou ajoutez-la en quelques gestes. Le bouton Partager vous donne un lien à envoyer, ou « Ajouter à votre site web » : choisissez une taille, copiez le code et collez-le dans WordPress, Squarespace, Wix ou tout site qui accepte le HTML.",
+      "p3": "Choisissez la vue qui convient au site. « Prière », « Engagement » et « Adoption » partagent chacune leur propre page : un réseau de prière peut montrer la couverture de prière, et une Église d'envoi l'engagement.",
+      "p4": "Elle reste à jour d'elle-même. Chaque copie de la carte lit les mêmes données sur pray.doxa.life à chaque ouverture, et les progrès s'affichent sur le site de chaque partenaire sans que personne ne la mette à jour.",
+      "p5": "Menez les gens vers un nom. Toucher un point ouvre ce peuple et un lien vers sa page de prière, pour qu'un visiteur commence tout de suite à prier pour un peuple précis."
+    },
+    "upg-100": {
+      "bottom": "Jésus a fait asseoir les cinq mille par groupes de cinquante et de cent avant de les nourrir (Luc 9.14). Ces listes font de même pour environ 2 100 peuples non atteints : découpée en listes de cette taille, toute la tâche devient une charge qu'une seule personne peut porter.",
+      "p1": "27 listes, ce sont 27 affiches, 27 dossiers de prière et 27 jeux de cartes. Mettez-en un entre les mains de chacun de 27 disciples, Églises ou responsables autochtones, et chacun des groupes est porté dans la prière par son nom.",
+      "p2": "Confiez chaque liste à quelqu'un qui continuera de prier pour elle. Les responsables autochtones peuvent prier dans les langues mêmes des peuples.",
+      "p3": "Cela suit une pratique éprouvée dans les mouvements : les disciples prient régulièrement pour cinquante à cent personnes qu'ils connaissent (famille, amis, voisins, collègues, camarades). Une liste UPG100 est la même charge, pour des gens qu'ils n'ont jamais rencontrés.",
+      "p4": "Commencez avec une liste et une personne. Le dossier contient tout ce qu'il faut pour cette liste en une impression, et les cartes aident quand un groupe se partage la liste."
+    },
+    "cities-internet": {
+      "bottom": "Là où les gens sont déjà en ligne, l'Évangile peut les atteindre sur les écrans et les plateformes qu'ils utilisent chaque jour. Trouvez ces lieux, et servez-vous des médias pour ouvrir la porte à de vrais disciples et à de vraies Églises (des médias aux mouvements).",
+      "p1": "Commencez par les pays où la plupart des gens sont en ligne (60 % ou plus). Là, les médias en ligne peuvent atteindre des personnes qui n'ont ni Église ni croyant près d'elles.",
+      "p2": "Touchez un pays et lisez sa fiche : combien de gens utilisent internet, combien d'abonnements mobiles il y a, et quelles plateformes les gens y utilisent. Allez sur leurs plateformes, pas les vôtres, et vérifiez d'abord la liste avec quelqu'un du pays.",
+      "p3": "Associez cette carte à « Ressources de l'Évangile ». Trouvez un peuple qui a déjà l'Écriture, un film ou de l'audio dans sa langue, puis partagez ces liens en ligne dans un pays où les gens sont connectés.",
+      "p4": "Là où peu de gens sont en ligne, ou si le chiffre n'est pas mesuré, ne commencez pas par un écran : envoyez des personnes et apportez des ressources audio et imprimées. Les chiffres sont nationaux (l'Inde aussi par État), et une ville peut être très différente de son pays.",
+      "p5": "Les médias sont la porte, pas le but. Avant de publier, prévoyez comment quelqu'un qui répond en ligne rencontre une vraie personne et rejoint un groupe qui étudie la Bible ensemble."
+    },
+    "gospel-resources": {
+      "bottom": "Beaucoup de groupes non atteints ont déjà l'Écriture, un film ou de l'audio dans leur langue, sans que cela les ait jamais atteints. Les ressources existent ; le manque, c'est de les mettre entre les mains des gens, en personne ou en ligne.",
+      "p1": "Passez à « Ressources trouvées » et cherchez les groupes qui ont l'Écriture et un film. Pour eux, les outils sont prêts ; ce qui manque, c'est la transmission.",
+      "p2": "Envoyez des ouvriers avec les ressources. Ouvrez la fiche d'un groupe et transmettez ses liens (et ceux des autres langues qu'il parle) aux ouvriers, aux Églises et aux responsables qui peuvent atteindre ce groupe.",
+      "p3": "Associez cette carte à « Villes avec Internet ». Là où le pays d'un groupe est bien connecté, les mêmes liens peuvent atteindre les gens en ligne sur les plateformes utilisées là-bas (des médias aux mouvements).",
+      "p4": "Là où la formation Zume existe dans la langue du groupe, placez-la à côté de l'Écriture et du film, pour que ceux qui croient soient formés à faire des disciples.",
+      "p5": "Utilisez « Écart » pour prier et planifier pour les groupes où rien n'a encore été trouvé. Beaucoup ont une porte d'entrée par une langue passerelle, et « rien trouvé » est une raison de chercher plus loin, pas une réponse définitive."
+    }
+  }
+}

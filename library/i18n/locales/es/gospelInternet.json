@@ -1,0 +1,311 @@
+{
+  "band": {
+    "no": "Menos del 25 % en línea",
+    "nodata": "Sin datos",
+    "partial": "25–59 % en línea",
+    "yes": "60 % o más en línea"
+  },
+  "bounded": {
+    "aria": "Conjunto delimitado: la cruz en el centro, los pueblos alcanzados dentro del círculo, los no alcanzados fuera",
+    "caption": "Dentro del círculo: alcanzados. Fuera: no alcanzados.",
+    "failed": "No se pudo cargar la tabla de alcanzados/no alcanzados, así que este gráfico no se dibuja.",
+    "unknown": "No dibujados, porque su estado de alcance no coincidió con esta tabla:"
+  },
+  "centered": {
+    "aria": "Conjunto centrado: pueblos no alcanzados situados según su cercanía a un vecino alcanzado, con flechas hacia el centro",
+    "caption": "Cada pueblo se sitúa a su distancia de un vecino alcanzado; las flechas señalan al que lo sitúa.",
+    "failed": "No se pudo cargar la tabla de vecinos, así que este gráfico no se dibuja.",
+    "reached": "Ya alcanzados, por eso en el centro:",
+    "unmatched": "No están en la tabla de vecinos, así que no se dibujan:",
+    "unplaced": "No se encontró relación, así que no se sitúan:",
+    "shown": "Pueblos en los anillos:"
+  },
+  "centre": {
+    "aria": "Mostrar",
+    "bounded": "Conjunto delimitado",
+    "centered": "Conjunto centrado",
+    "map": "Mapa",
+    "tree": "Árbol de idiomas"
+  },
+  "charts": {
+    "accessByBand": "Acceso en su idioma, según el uso de internet del país",
+    "aria": "Gráficos",
+    "bandCaveat": "El uso de internet es la cifra del país (Banco Mundial), nunca la del grupo.",
+    "gapSub": "Los 8 más grandes de los mostrados, por población. Haga clic en uno para abrirlo.",
+    "gapTake": "Solo estos {k} son {people} personas.",
+    "gapTitle": "Los grupos étnicos más grandes sin nada en su propio idioma",
+    "groups": "Grupos",
+    "groupsN": "{n} grupos",
+    "measure": "Contar",
+    "messagingTop": "App de mensajería principal, por país en la selección",
+    "notMeasured": "No medido",
+    "ntSub": "Idiomas de los grupos mostrados sin Nuevo Testamento encontrado, según cuántas personas los hablan. Rojo: nada; amarillo: algo, pero sin Nuevo Testamento.",
+    "ntTake": "{n} idiomas aquí no tienen Nuevo Testamento encontrado, hablados por {people} personas.",
+    "ntTitle": "¿Qué idiomas necesitan más el Nuevo Testamento?",
+    "people": "Personas",
+    "peopleN": "{n} personas",
+    "q1sub": "Una barra por nivel de acceso, para los grupos étnicos mostrados.",
+    "q1take": "{n} de {total} grupos étnicos mostrados no tienen nada en su propio idioma.",
+    "q1title": "¿Qué tienen en su propio idioma?",
+    "q2sub": "Grupos étnicos sin nada en su idioma, según cuánto de su país está en línea.",
+    "q2take": "{online} de los {n} sin nada viven en países donde el 60 % o más usa internet.",
+    "q2title": "¿Podría internet llevarlo a quienes no tienen nada?",
+    "socialTop": "Red social principal, por país en la selección",
+    "unitCountries": "países",
+    "unitGroups": "grupos étnicos",
+    "unitPeople": "personas",
+    "zeroByBand": "Nada en su propio idioma, según el uso de internet del país",
+    "zeroCaveat": "Cada uno tiene una vía de entrada: un idioma puente, un idioma candidato o un puente en lengua de señas."
+  },
+  "col": {
+    "access": "En su idioma",
+    "band": "Nivel de internet",
+    "bridgeTraining": "Capacitación (puente)",
+    "country": "País",
+    "deafPublisher": "Editorial en lengua de señas",
+    "internet": "País en línea",
+    "internetYear": "Año",
+    "language": "Idioma",
+    "messaging": "App de mensajería principal (país, iOS)",
+    "mobile": "Móviles por 100",
+    "openBench": "Referencia de TA (FLORES+)",
+    "openBooks": "Libros bíblicos (eBible)",
+    "openData": "Datos abiertos (de 5)",
+    "openGrammar": "Gramática (Glottolog)",
+    "openSpeech": "Horas de voz (Common Voice)",
+    "openWiki": "Wikipedia",
+    "platform": "Plataforma principal (país)",
+    "praying": "Personas orando",
+    "province": "Estado / provincia (aprox.)",
+    "resources": "Recursos encontrados",
+    "stateMen": "Estado en línea: hombres",
+    "stateWomen": "Estado en línea: mujeres",
+    "training": "Capacitación (idioma propio)",
+    "translatedBy": "Traducido por",
+    "wayIn": "Vía de entrada"
+  },
+  "combos": {
+    "audioOnline": "Oyen pero no leen, país en línea",
+    "deaf": "Existe un puente en lengua de señas",
+    "digitalNow": "Nada en su idioma, país 60 %+ en línea",
+    "indiaChinaGap": "India y China: nada en su idioma",
+    "none": "Todo: elija un filtro o una combinación",
+    "offlineGap": "Nada en su idioma, país mayormente sin conexión",
+    "selection": "Su selección",
+    "telegram": "Nada en su idioma, país de Telegram",
+    "try": "Probar una combinación",
+    "whatsapp": "Nada en su idioma, país de WhatsApp"
+  },
+  "detail": {
+    "hear": "Ver u oír, no leer",
+    "none": "Nada encontrado",
+    "read": "Leer",
+    "read_watch": "Leer y ver",
+    "stories": "Solo historias"
+  },
+  "drawer": {
+    "approx": "aproximado",
+    "bridgeHas": "En el idioma puente",
+    "conn": "Conectividad",
+    "copied": "Enlace copiado",
+    "copyLink": "Copiar enlace a este grupo",
+    "deafLink": "Escrituras en lengua de señas",
+    "foundNote": "Encontrado en las fuentes consultadas.",
+    "messaging": "Apps de mensajería (descargas iOS)",
+    "mobileNote": "Suscripciones por cada 100 personas ({year}); una persona puede tener varias.",
+    "nfhsNote": "NFHS-5, 2019–21, 15–49 años: la cifra del estado, no la del grupo.",
+    "noFeed": "Este país no está en el feed de Apple: sus apps de mensajería son desconocidas aquí, no ausentes.",
+    "noneNote": "No se encontró nada en su propio idioma en las fuentes consultadas. Eso no afirma que no exista nada.",
+    "notInSource": "no está en esta fuente",
+    "openCheck": "Datos abiertos sólidos pero sin Nuevo Testamento encontrado: verifique primero, quizá exista uno que las fuentes no encontraron.",
+    "openCount": "Datos abiertos",
+    "openNote": "Fuentes: Glottolog (CC BY 4.0), eBible, Wikipedia (CC BY-SA 4.0), Common Voice (CC0), FLORES+ (CC BY-SA 4.0). Un recuento de hechos con nombre, no una puntuación.",
+    "openOf": "{n} de 5 señales",
+    "openTitle": "Datos abiertos para empezar una traducción",
+    "own": "En su propio idioma",
+    "people": "{n} personas",
+    "platformNote": "Proporción de visitas web desde las redes sociales registradas en el país (StatCounter). No se miden apps de mensajería como WhatsApp.",
+    "platforms": "Plataformas en el país",
+    "praying": "{n} personas orando en DOXA",
+    "social": "Redes sociales (visitas web)",
+    "stateOnline": "{state}: ha usado internet alguna vez",
+    "way": "Vía de entrada",
+    "wayIn": "Vía de entrada",
+    "wayNote": "Un idioma vecino, no una recomendación: si un grupo lo habla es una pregunta para alguien sobre el terreno.",
+    "wbSource": "Banco Mundial, {year}: la cifra del país",
+    "womenMen": "mujeres {w} · hombres {m}",
+    "gospelAudio": "Grabaciones del evangelio",
+    "training": "Formación para hacer discípulos"
+  },
+  "facet": {
+    "access": "Acceso en su propio idioma",
+    "all": "Mostrar los {n}",
+    "aria": "Filtros",
+    "band": "Uso de internet del país",
+    "bandNote": "La cifra del país (Banco Mundial), nunca la del grupo.",
+    "country": "País",
+    "fewer": "Mostrar menos",
+    "find": "Buscar…",
+    "findIn": "Buscar en {what}",
+    "language": "Idioma",
+    "messaging": "App de mensajería principal (país)",
+    "messagingNote": "La más descargada en la App Store de Apple del país: solo iOS, un ranking de descargas, no de uso.",
+    "province": "India y China: estado o provincia",
+    "provinceNote": "Aproximado: se toma del punto del grupo en el mapa, no de una ciudad.",
+    "region": "Región",
+    "religion": "Religión",
+    "wayIn": "Vía de entrada cuando no hay nada en su idioma"
+  },
+  "grid": {
+    "aria": "Grupos étnicos en la selección",
+    "columns": "Columnas",
+    "count": "{n} de {total} grupos étnicos",
+    "empty": "Ningún grupo étnico coincide con estos filtros.",
+    "exported": "{n} filas exportadas (copiadas y descargadas).",
+    "openCapped": "Abre los primeros {n} seleccionados.",
+    "openInGospel": "Abrir en Recursos del Evangelio",
+    "selectRow": "Seleccionar {name}"
+  },
+  "headline": {
+    "a": "{zero} de {total} grupos étnicos no tienen nada en su propio idioma;",
+    "b": "{online} de ellos viven en países donde el 60 % o más usa internet."
+  },
+  "kind": {
+    "audio": "Audio",
+    "film": "Película",
+    "scripture": "Escrituras",
+    "stories": "Historias",
+    "video": "Video"
+  },
+  "legend": {
+    "band": "Uso de internet del país (Banco Mundial)",
+    "hide": "Ocultar la leyenda",
+    "modeMen": "Internet: hombres",
+    "modeWomen": "Internet: mujeres",
+    "modeZero": "Nada en su idioma",
+    "nfhs": "Solo India: proporción de mujeres u hombres de 15 a 49 años que alguna vez usaron internet, por estado. NFHS-5, 2019–21. China no tiene una fuente provincial verificada.",
+    "pins": "En su propio idioma",
+    "provinces": "India y China por provincia",
+    "show": "Leyenda"
+  },
+  "level": {
+    "bridge": "Nada en su idioma · solo puente",
+    "own": "Algo en su idioma",
+    "zero": "Nada en su idioma · aún sin vía de entrada"
+  },
+  "listChip": "Lista de grupos étnicos elegida por esta página",
+  "loadError": "No se cargaron los datos del tablero.",
+  "loadingTable": "Cargando la tabla…",
+  "map": {
+    "aria": "Mapa de grupos étnicos, sombreado según cuánto usa internet cada país"
+  },
+  "notice": {
+    "pin": "El punto representa a este pueblo, no una ciudad.",
+    "pins": "Un punto representa un pueblo, no una ciudad. {n} grupos comparten un punto con otro grupo.",
+    "shares": "Comparte su punto con {n} grupo(s) más.",
+    "sources": "Fuentes:",
+    "standing": "Los puntos son aproximados: un punto representa un pueblo, no una ciudad. Las cifras de internet son del país o del estado indio, nunca del grupo. «Encontrado» significa encontrado en las fuentes consultadas."
+  },
+  "panel": {
+    "charts": "Gráficos",
+    "filters": "Filtros",
+    "grid": "Grupos",
+    "map": "Mapa"
+  },
+  "res": {
+    "aria": "Recursos del evangelio para los idiomas en la selección",
+    "count": "{n} recursos en {langs} de {all} idiomas en la selección",
+    "empty": "No se encontró nada para los idiomas en la selección.",
+    "groups": "Grupos aquí",
+    "note": "Un idioma sin fila aquí no tiene nada en las fuentes consultadas.",
+    "resource": "Recurso",
+    "scope": "Alcance",
+    "source": "Fuente",
+    "type": "Tipo"
+  },
+  "rings": {
+    "band": {
+      "dialect": "Mismo dialecto",
+      "language": "Misma lengua",
+      "family": "Misma familia lingüística",
+      "geography": "Solo cercanía"
+    },
+    "centre": "La cruz: un pueblo alcanzado (2 % o más de evangélicos).",
+    "closest": "Pueblo alcanzado más cercano:",
+    "culture": {
+      "same": "Mismo pueblo",
+      "near": "Cultura cercana",
+      "different": "Cultura distinta"
+    },
+    "example": "Ejemplo:",
+    "explain": {
+      "dialect": "Un pueblo alcanzado habla exactamente la misma variedad lingüística (el mismo código ISO 639-3).",
+      "language": "Un pueblo alcanzado habla otra variedad de la misma lengua, por ejemplo el árabe egipcio y el naydí.",
+      "family": "La lengua compartida más cercana es solo una emparentada, de la misma familia lingüística.",
+      "geography": "Ninguna lengua compartida: un pueblo alcanzado vive en el mismo país o a menos de 600 km.",
+      "same": "Es el mismo pueblo, viviendo en otro lugar.",
+      "near": "Es un pueblo distinto del mismo grupo de pueblos de la IMB.",
+      "different": "Es un pueblo de otro grupo."
+    },
+    "footCentre": "Alcanzados, en el centro",
+    "footUnmatched": "No están en la tabla de vecinos, no se dibujan",
+    "footUnplaced": "No se encontró un pueblo alcanzado emparentado, no se sitúan",
+    "fullscreen": "Pantalla completa",
+    "intro": "Cada pueblo no alcanzado se sitúa en un anillo según su cercanía al pueblo alcanzado más próximo. Cuanto más cerca el anillo, más naturalmente puede viajar el evangelio.",
+    "none": "Ningún pueblo de esta vista se sitúa en este anillo.",
+    "ring": "Anillo",
+    "showAll": "Mostrar todos los anillos",
+    "source": "Alcanzado = 2 % o más de evangélicos, la definición de la IMB que usa peoplegroups.org. La cercanía de lengua y cultura son aproximaciones a partir de sus códigos de lengua y grupos de pueblos.",
+    "title": "Qué significan los anillos"
+  },
+  "strength": {
+    "moderate": "moderada",
+    "strong": "fuerte"
+  },
+  "table": {
+    "aria": "Tabla",
+    "groups": "Grupos étnicos",
+    "resources": "Recursos del evangelio"
+  },
+  "title": "Acceso al evangelio a través de internet",
+  "tree": {
+    "aria": "Árbol de idiomas: cada familia lingüística de estos grupos étnicos, coloreada según lo que existe en cada idioma",
+    "branch": "Rama",
+    "dialect": "Dialecto",
+    "family": "Familia",
+    "groupsN": "{n} grupos étnicos",
+    "inherited": "Color de su idioma: ninguna fuente cataloga recursos por dialecto.",
+    "language": "Idioma",
+    "languagesHere": "idiomas aquí",
+    "legendTitle": "En su propio idioma",
+    "levels": "Familia › rama › idioma › dialecto. Una familia o rama muestra el peor color que contiene. Un dialecto muestra el color de su idioma, más claro: los recursos se catalogan por idioma, no por dialecto. Haga clic en un círculo para limitar el tablero a él.",
+    "poster": "Póster",
+    "poster3ft": "3 × 3 pies",
+    "poster4ft": "4 × 4 pies",
+    "posterOmitted": "{n} nombres omitidos donde se superpondrían a otro; cada círculo está dibujado.",
+    "posterPrint": "Imprimir",
+    "posterSizeAria": "Tamaño del póster",
+    "posterTitle": "Acceso al evangelio, familia lingüística por familia lingüística",
+    "sources": "Árbol: Glottolog (CC BY 4.0). Recursos: eBible, Faith Comes By Hearing, Scripture Earth, PNG.Bible, película JESÚS, Global Recordings y otros, por ISO 639-3.",
+    "st": {
+      "g": "Nuevo Testamento o Biblia completa encontrados",
+      "r": "Nada encontrado",
+      "y": "Algo encontrado, pero sin Nuevo Testamento"
+    },
+    "via": "También en esta ruta:"
+  },
+  "view": {
+    "aria": "Vista",
+    "board": "Tablero",
+    "platforms": "Plataformas",
+    "province": "India y China por provincia",
+    "zero": "Nada en su idioma"
+  },
+  "wayIn": {
+    "bridge": "Idioma puente",
+    "candidate": "Idioma candidato",
+    "candidateText": "{lang} (candidato, {pct} % del país)",
+    "deaf": "Puente en lengua de señas",
+    "deafText": "{lang} (lengua de señas)"
+  }
+}

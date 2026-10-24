@@ -1,0 +1,1646 @@
+{
+ "meta": {
+  "title": "Translation priority by country — can hear it, no text found",
+  "source": "data/tables/translation-priority.json, itself built from the pin index — so this table, that one and the map cannot disagree.",
+  "generated": "2026-09-27",
+  "countries": 159,
+  "groups": 3136,
+  "people": 1332911344,
+  "definition": "People groups with recorded audio, the JESUS Film, a Bible video or Words of Life in their language and NO text Scripture found in the pools checked, aggregated to the country a team would be sent to. \"Not found\" is a statement about those pools, never a claim that no text exists; the per-group table carries the checked and unchecked pools on every row.",
+  "two_columns_note": "groups and languages answer different questions from people. Nigeria and the DRC lead on languages, which is the translation workload; China and Pakistan lead on population across far fewer languages. Neither is ranked for you."
+ },
+ "columns": [
+  {
+   "title": "Country",
+   "field": "country",
+   "type": "string"
+  },
+  {
+   "title": "ISO3",
+   "field": "iso3",
+   "type": "string"
+  },
+  {
+   "title": "Groups",
+   "field": "groups",
+   "type": "number"
+  },
+  {
+   "title": "Languages",
+   "field": "languages",
+   "type": "number"
+  },
+  {
+   "title": "People",
+   "field": "people",
+   "type": "number"
+  },
+  {
+   "title": "Largest group",
+   "field": "largest_group",
+   "type": "string"
+  },
+  {
+   "title": "Its population",
+   "field": "largest_group_population",
+   "type": "number"
+  },
+  {
+   "title": "Basis",
+   "field": "basis",
+   "type": "string"
+  }
+ ],
+ "rows": [
+  {
+   "country": "People's Republic of China",
+   "iso3": "CHN",
+   "groups": 196,
+   "languages": 90,
+   "people": 219899450,
+   "largest_group": "Han Chinese, Wu",
+   "largest_group_population": 92530000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Pakistan",
+   "iso3": "PAK",
+   "groups": 56,
+   "languages": 43,
+   "people": 194754350,
+   "largest_group": "Punjabi, Western",
+   "largest_group_population": 97070000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "India",
+   "iso3": "IND",
+   "groups": 363,
+   "languages": 121,
+   "people": 165868380,
+   "largest_group": "Bhil",
+   "largest_group_population": 20480000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Egypt",
+   "iso3": "EGY",
+   "groups": 10,
+   "languages": 8,
+   "people": 108361000,
+   "largest_group": "Arab, Egyptian",
+   "largest_group_population": 68590000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Democratic Republic of the Congo",
+   "iso3": "COD",
+   "groups": 110,
+   "languages": 107,
+   "people": 70053300,
+   "largest_group": "Kongo",
+   "largest_group_population": 16990000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Nigeria",
+   "iso3": "NGA",
+   "groups": 267,
+   "languages": 262,
+   "people": 54950325,
+   "largest_group": "Tiv",
+   "largest_group_population": 5220000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Angola",
+   "iso3": "AGO",
+   "groups": 24,
+   "languages": 22,
+   "people": 35070000,
+   "largest_group": "Ovimbundu",
+   "largest_group_population": 14710000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Yemen",
+   "iso3": "YEM",
+   "groups": 6,
+   "languages": 4,
+   "people": 33440000,
+   "largest_group": "Arab, Northern Yemeni",
+   "largest_group_population": 15180000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Saudi Arabia",
+   "iso3": "SAU",
+   "groups": 8,
+   "languages": 5,
+   "people": 30973000,
+   "largest_group": "Arab, Saudi (Najdi)",
+   "largest_group_population": 12970000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "South Africa",
+   "iso3": "ZAF",
+   "groups": 18,
+   "languages": 9,
+   "people": 29975925,
+   "largest_group": "Xhosa",
+   "largest_group_population": 9950000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Afghanistan",
+   "iso3": "AFG",
+   "groups": 29,
+   "languages": 29,
+   "people": 26339200,
+   "largest_group": "Pashtun, Southern",
+   "largest_group_population": 13680000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Kenya",
+   "iso3": "KEN",
+   "groups": 13,
+   "languages": 13,
+   "people": 24530300,
+   "largest_group": "Luhya",
+   "largest_group_population": 7465000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Thailand",
+   "iso3": "THA",
+   "groups": 22,
+   "languages": 20,
+   "people": 24339150,
+   "largest_group": "Isaan",
+   "largest_group_population": 18610000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Indonesia",
+   "iso3": "IDN",
+   "groups": 217,
+   "languages": 196,
+   "people": 23231670,
+   "largest_group": "Betawi",
+   "largest_group_population": 5620000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Morocco",
+   "iso3": "MAR",
+   "groups": 3,
+   "languages": 1,
+   "people": 22988000,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 21230000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Cameroon",
+   "iso3": "CMR",
+   "groups": 126,
+   "languages": 119,
+   "people": 18465475,
+   "largest_group": "Cameroonian Creole",
+   "largest_group_population": 4365000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Madagascar",
+   "iso3": "MDG",
+   "groups": 10,
+   "languages": 9,
+   "people": 12983000,
+   "largest_group": "Betsimisaraka",
+   "largest_group_population": 4805000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "United Republic of Tanzania",
+   "iso3": "TZA",
+   "groups": 35,
+   "languages": 34,
+   "people": 10496200,
+   "largest_group": "Ha",
+   "largest_group_population": 2015000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Zambia",
+   "iso3": "ZMB",
+   "groups": 38,
+   "languages": 20,
+   "people": 10227900,
+   "largest_group": "Zambezi Tonga",
+   "largest_group_population": 2095000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Mozambique",
+   "iso3": "MOZ",
+   "groups": 12,
+   "languages": 11,
+   "people": 9399500,
+   "largest_group": "Chuabo",
+   "largest_group_population": 2290000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Islamic Republic of Iran",
+   "iso3": "IRN",
+   "groups": 12,
+   "languages": 12,
+   "people": 9295500,
+   "largest_group": "Baloch, Western",
+   "largest_group_population": 3035000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Sudan",
+   "iso3": "SDN",
+   "groups": 48,
+   "languages": 39,
+   "people": 8892975,
+   "largest_group": "Beja",
+   "largest_group_population": 3220000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Senegal",
+   "iso3": "SEN",
+   "groups": 12,
+   "languages": 11,
+   "people": 8872500,
+   "largest_group": "Sereer",
+   "largest_group_population": 2545000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Cote d'Ivoire",
+   "iso3": "CIV",
+   "groups": 31,
+   "languages": 31,
+   "people": 8412800,
+   "largest_group": "Maninka",
+   "largest_group_population": 2535000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Chad",
+   "iso3": "TCD",
+   "groups": 61,
+   "languages": 45,
+   "people": 8201150,
+   "largest_group": "Kanembu",
+   "largest_group_population": 1220000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Ethiopia",
+   "iso3": "ETH",
+   "groups": 50,
+   "languages": 40,
+   "people": 7906000,
+   "largest_group": "Gedeo",
+   "largest_group_population": 1590000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Uganda",
+   "iso3": "UGA",
+   "groups": 12,
+   "languages": 12,
+   "people": 6955200,
+   "largest_group": "Chiga",
+   "largest_group_population": 3930000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Philippines",
+   "iso3": "PHL",
+   "groups": 32,
+   "languages": 31,
+   "people": 6455650,
+   "largest_group": "Magindanao",
+   "largest_group_population": 1390000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Guinea",
+   "iso3": "GIN",
+   "groups": 19,
+   "languages": 16,
+   "people": 5955100,
+   "largest_group": "Maninka",
+   "largest_group_population": 3855000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Vietnam",
+   "iso3": "VNM",
+   "groups": 27,
+   "languages": 27,
+   "people": 5813000,
+   "largest_group": "Muong",
+   "largest_group_population": 1490000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Switzerland",
+   "iso3": "CHE",
+   "groups": 1,
+   "languages": 1,
+   "people": 5520000,
+   "largest_group": "Swiss German",
+   "largest_group_population": 5520000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Niger",
+   "iso3": "NER",
+   "groups": 4,
+   "languages": 4,
+   "people": 5293500,
+   "largest_group": "Zerma",
+   "largest_group_population": 5135000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Mali",
+   "iso3": "MLI",
+   "groups": 16,
+   "languages": 16,
+   "people": 5070700,
+   "largest_group": "Soninke",
+   "largest_group_population": 2275000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Nepal",
+   "iso3": "NPL",
+   "groups": 55,
+   "languages": 48,
+   "people": 4344225,
+   "largest_group": "Magar, Eastern",
+   "largest_group_population": 610000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "France",
+   "iso3": "FRA",
+   "groups": 13,
+   "languages": 10,
+   "people": 3922200,
+   "largest_group": "North Africans",
+   "largest_group_population": 2220000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Benin",
+   "iso3": "BEN",
+   "groups": 21,
+   "languages": 21,
+   "people": 3763400,
+   "largest_group": "Saxwe",
+   "largest_group_population": 494000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Malawi",
+   "iso3": "MWI",
+   "groups": 7,
+   "languages": 6,
+   "people": 3711000,
+   "largest_group": "Tumbuka",
+   "largest_group_population": 1705000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "United States of America",
+   "iso3": "USA",
+   "groups": 80,
+   "languages": 77,
+   "people": 3567675,
+   "largest_group": "Armenian",
+   "largest_group_population": 1180000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "United Arab Emirates",
+   "iso3": "ARE",
+   "groups": 7,
+   "languages": 6,
+   "people": 3342500,
+   "largest_group": "Arab, Emirati",
+   "largest_group_population": 1485000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Russian Federation",
+   "iso3": "RUS",
+   "groups": 9,
+   "languages": 5,
+   "people": 3120000,
+   "largest_group": "Armenian",
+   "largest_group_population": 2130000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Algeria",
+   "iso3": "DZA",
+   "groups": 6,
+   "languages": 6,
+   "people": 3073900,
+   "largest_group": "Shawiya",
+   "largest_group_population": 2515000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "South Sudan",
+   "iso3": "SSD",
+   "groups": 30,
+   "languages": 25,
+   "people": 3065300,
+   "largest_group": "Dinka, Southeastern",
+   "largest_group_population": 730000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Brazil",
+   "iso3": "BRA",
+   "groups": 35,
+   "languages": 27,
+   "people": 3057840,
+   "largest_group": "Hunsrik",
+   "largest_group_population": 2000000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Ghana",
+   "iso3": "GHA",
+   "groups": 21,
+   "languages": 21,
+   "people": 2910700,
+   "largest_group": "Brong",
+   "largest_group_population": 1765000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Bangladesh",
+   "iso3": "BGD",
+   "groups": 18,
+   "languages": 17,
+   "people": 2904300,
+   "largest_group": "Bihari Muslims",
+   "largest_group_population": 2080000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Myanmar",
+   "iso3": "MMR",
+   "groups": 37,
+   "languages": 37,
+   "people": 2828050,
+   "largest_group": "Karen, Pwo Eastern",
+   "largest_group_population": 1270000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Iraq",
+   "iso3": "IRQ",
+   "groups": 7,
+   "languages": 7,
+   "people": 2769504,
+   "largest_group": "Arab, Bedouin",
+   "largest_group_population": 1990000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Armenia",
+   "iso3": "ARM",
+   "groups": 1,
+   "languages": 1,
+   "people": 2765000,
+   "largest_group": "Armenian",
+   "largest_group_population": 2765000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Namibia",
+   "iso3": "NAM",
+   "groups": 23,
+   "languages": 16,
+   "people": 2752400,
+   "largest_group": "Ndonga",
+   "largest_group_population": 835000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Central African Republic",
+   "iso3": "CAF",
+   "groups": 28,
+   "languages": 28,
+   "people": 2659750,
+   "largest_group": "Manja",
+   "largest_group_population": 417000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Burkina Faso",
+   "iso3": "BFA",
+   "groups": 31,
+   "languages": 30,
+   "people": 2653100,
+   "largest_group": "Marka",
+   "largest_group_population": 507000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Albania",
+   "iso3": "ALB",
+   "groups": 1,
+   "languages": 1,
+   "people": 2590000,
+   "largest_group": "Albanian",
+   "largest_group_population": 2590000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Kuwait",
+   "iso3": "KWT",
+   "groups": 6,
+   "languages": 4,
+   "people": 2583400,
+   "largest_group": "Arab, Gulf",
+   "largest_group_population": 1220000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Lao People's Democratic Republic",
+   "iso3": "LAO",
+   "groups": 65,
+   "languages": 38,
+   "people": 2186025,
+   "largest_group": "White Thai",
+   "largest_group_population": 325000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "JOR",
+   "iso3": "JOR",
+   "groups": 4,
+   "languages": 4,
+   "people": 2181000,
+   "largest_group": "Arab, Bedouin",
+   "largest_group_population": 1365000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Zimbabwe",
+   "iso3": "ZWE",
+   "groups": 14,
+   "languages": 13,
+   "people": 2180100,
+   "largest_group": "Ndau",
+   "largest_group_population": 591000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Republic of the Congo",
+   "iso3": "COG",
+   "groups": 34,
+   "languages": 34,
+   "people": 2070700,
+   "largest_group": "Mbosi",
+   "largest_group_population": 225000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "KOS",
+   "iso3": "KOS",
+   "groups": 2,
+   "languages": 1,
+   "people": 1991000,
+   "largest_group": "Albanian",
+   "largest_group_population": 1965000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Lesotho",
+   "iso3": "LSO",
+   "groups": 3,
+   "languages": 3,
+   "people": 1969000,
+   "largest_group": "Southern Sotho",
+   "largest_group_population": 1940000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Slovenia",
+   "iso3": "SVN",
+   "groups": 1,
+   "languages": 1,
+   "people": 1960000,
+   "largest_group": "Slovene",
+   "largest_group_population": 1960000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Malaysia",
+   "iso3": "MYS",
+   "groups": 29,
+   "languages": 24,
+   "people": 1875525,
+   "largest_group": "Javanese",
+   "largest_group_population": 728000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "SYR",
+   "iso3": "SYR",
+   "groups": 4,
+   "languages": 4,
+   "people": 1764500,
+   "largest_group": "Arab, Bedouin",
+   "largest_group_population": 1485000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Papua New Guinea",
+   "iso3": "PNG",
+   "groups": 215,
+   "languages": 194,
+   "people": 1738250,
+   "largest_group": "Sinasina",
+   "largest_group_population": 176000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Eritrea",
+   "iso3": "ERI",
+   "groups": 7,
+   "languages": 6,
+   "people": 1533000,
+   "largest_group": "Tigre",
+   "largest_group_population": 923000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Italy",
+   "iso3": "ITA",
+   "groups": 7,
+   "languages": 7,
+   "people": 1454100,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 513000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Republic of The Gambia",
+   "iso3": "GMB",
+   "groups": 9,
+   "languages": 8,
+   "people": 1404500,
+   "largest_group": "Fulacunda",
+   "largest_group_population": 474000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Togo",
+   "iso3": "TGO",
+   "groups": 11,
+   "languages": 11,
+   "people": 1382200,
+   "largest_group": "Wachi",
+   "largest_group_population": 951000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Guinea-Bissau",
+   "iso3": "GNB",
+   "groups": 12,
+   "languages": 12,
+   "people": 1353400,
+   "largest_group": "Fulakunda",
+   "largest_group_population": 561000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Ecuador",
+   "iso3": "ECU",
+   "groups": 4,
+   "languages": 3,
+   "people": 1212000,
+   "largest_group": "Quichua, Chimborazo Highland",
+   "largest_group_population": 1005000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Argentina",
+   "iso3": "ARG",
+   "groups": 8,
+   "languages": 8,
+   "people": 1170500,
+   "largest_group": "Galician",
+   "largest_group_population": 883000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Somalia",
+   "iso3": "SOM",
+   "groups": 2,
+   "languages": 1,
+   "people": 1135000,
+   "largest_group": "Digil-Rahawiin",
+   "largest_group_population": 1065000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Oman",
+   "iso3": "OMN",
+   "groups": 4,
+   "languages": 4,
+   "people": 1021000,
+   "largest_group": "Omani Bedouin",
+   "largest_group_population": 883000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Gabon",
+   "iso3": "GAB",
+   "groups": 23,
+   "languages": 22,
+   "people": 991200,
+   "largest_group": "Nzebi",
+   "largest_group_population": 210000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Japan",
+   "iso3": "JPN",
+   "groups": 1,
+   "languages": 1,
+   "people": 951000,
+   "largest_group": "Central Okinawan",
+   "largest_group_population": 951000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Spain",
+   "iso3": "ESP",
+   "groups": 3,
+   "languages": 3,
+   "people": 881600,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 874000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Comoros",
+   "iso3": "COM",
+   "groups": 3,
+   "languages": 3,
+   "people": 866000,
+   "largest_group": "Comorian Ngazidja",
+   "largest_group_population": 425000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Reunion",
+   "iso3": "REU",
+   "groups": 2,
+   "languages": 1,
+   "people": 828000,
+   "largest_group": "Reunionese Creole",
+   "largest_group_population": 640000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Liberia",
+   "iso3": "LBR",
+   "groups": 11,
+   "languages": 11,
+   "people": 820300,
+   "largest_group": "Vai",
+   "largest_group_population": 223000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Mauritius",
+   "iso3": "MUS",
+   "groups": 1,
+   "languages": 1,
+   "people": 741000,
+   "largest_group": "Indo-Mauritian, Hindu",
+   "largest_group_population": 741000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Timor-Leste",
+   "iso3": "TLS",
+   "groups": 8,
+   "languages": 8,
+   "people": 715000,
+   "largest_group": "Mambai",
+   "largest_group_population": 256000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Guyana",
+   "iso3": "GUY",
+   "groups": 4,
+   "languages": 1,
+   "people": 701500,
+   "largest_group": "Afro-Guyanese",
+   "largest_group_population": 380000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Cabo Verde",
+   "iso3": "CPV",
+   "groups": 2,
+   "languages": 2,
+   "people": 574500,
+   "largest_group": "Caboverdian Mestico",
+   "largest_group_population": 502000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Qatar",
+   "iso3": "QAT",
+   "groups": 4,
+   "languages": 3,
+   "people": 556000,
+   "largest_group": "Arab, Qatari",
+   "largest_group_population": 394000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "North Macedonia",
+   "iso3": "MKD",
+   "groups": 1,
+   "languages": 1,
+   "people": 541000,
+   "largest_group": "Albanian",
+   "largest_group_population": 541000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "MRT",
+   "iso3": "MRT",
+   "groups": 2,
+   "languages": 2,
+   "people": 535000,
+   "largest_group": "Fulbe Futa Toro",
+   "largest_group_population": 385000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Malta",
+   "iso3": "MLT",
+   "groups": 1,
+   "languages": 1,
+   "people": 534000,
+   "largest_group": "Maltese",
+   "largest_group_population": 534000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Sierra Leone",
+   "iso3": "SLE",
+   "groups": 5,
+   "languages": 5,
+   "people": 532950,
+   "largest_group": "Sherbro",
+   "largest_group_population": 244000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Peru",
+   "iso3": "PER",
+   "groups": 4,
+   "languages": 4,
+   "people": 502225,
+   "largest_group": "Quechua, Puno",
+   "largest_group_population": 500000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "groups": 10,
+   "languages": 10,
+   "people": 499700,
+   "largest_group": "Punjabi, Western",
+   "largest_group_population": 272000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Canada",
+   "iso3": "CAN",
+   "groups": 31,
+   "languages": 29,
+   "people": 491400,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 111000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Israel",
+   "iso3": "ISR",
+   "groups": 6,
+   "languages": 6,
+   "people": 457500,
+   "largest_group": "Yahudic",
+   "largest_group_population": 137000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Botswana",
+   "iso3": "BWA",
+   "groups": 9,
+   "languages": 9,
+   "people": 455275,
+   "largest_group": "Kalanga",
+   "largest_group_population": 213000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Netherlands",
+   "iso3": "NLD",
+   "groups": 2,
+   "languages": 2,
+   "people": 424000,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 410000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Western Sahara",
+   "iso3": "ESH",
+   "groups": 1,
+   "languages": 1,
+   "people": 414000,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 414000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Türkiye",
+   "iso3": "TUR",
+   "groups": 3,
+   "languages": 3,
+   "people": 403500,
+   "largest_group": "Yoruk",
+   "largest_group_population": 320000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Guadeloupe",
+   "iso3": "GLP",
+   "groups": 1,
+   "languages": 1,
+   "people": 388000,
+   "largest_group": "French Creole",
+   "largest_group_population": 388000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Belgium",
+   "iso3": "BEL",
+   "groups": 6,
+   "languages": 6,
+   "people": 347800,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 232000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "UKR",
+   "iso3": "UKR",
+   "groups": 1,
+   "languages": 1,
+   "people": 334000,
+   "largest_group": "Hutsul",
+   "largest_group_population": 334000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Australia",
+   "iso3": "AUS",
+   "groups": 8,
+   "languages": 8,
+   "people": 304240,
+   "largest_group": "Arab, Syro-Lebanese",
+   "largest_group_population": 194000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Taiwan",
+   "iso3": "TWN",
+   "groups": 3,
+   "languages": 3,
+   "people": 273500,
+   "largest_group": "Paiwanese",
+   "largest_group_population": 117000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Solomon Islands",
+   "iso3": "SLB",
+   "groups": 32,
+   "languages": 31,
+   "people": 273470,
+   "largest_group": "Areare",
+   "largest_group_population": 34500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Germany",
+   "iso3": "DEU",
+   "groups": 5,
+   "languages": 5,
+   "people": 240500,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 136000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "LBN",
+   "iso3": "LBN",
+   "groups": 1,
+   "languages": 1,
+   "people": 218000,
+   "largest_group": "Armenian",
+   "largest_group_population": 218000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Trinidad and Tobago",
+   "iso3": "TTO",
+   "groups": 2,
+   "languages": 1,
+   "people": 212500,
+   "largest_group": "East Indian Christian",
+   "largest_group_population": 133000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Equatorial Guinea",
+   "iso3": "GNQ",
+   "groups": 4,
+   "languages": 4,
+   "people": 198800,
+   "largest_group": "Bube",
+   "largest_group_population": 115000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "French Polynesia",
+   "iso3": "PYF",
+   "groups": 5,
+   "languages": 5,
+   "people": 193475,
+   "largest_group": "Tahitian",
+   "largest_group_population": 181000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Libya",
+   "iso3": "LBY",
+   "groups": 7,
+   "languages": 7,
+   "people": 181300,
+   "largest_group": "Punjabi, Western",
+   "largest_group_population": 73500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Bhutan",
+   "iso3": "BTN",
+   "groups": 11,
+   "languages": 11,
+   "people": 180300,
+   "largest_group": "Kheng",
+   "largest_group_population": 66000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Georgia",
+   "iso3": "GEO",
+   "groups": 1,
+   "languages": 1,
+   "people": 177000,
+   "largest_group": "Armenian",
+   "largest_group_population": 177000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Djibouti",
+   "iso3": "DJI",
+   "groups": 2,
+   "languages": 2,
+   "people": 158500,
+   "largest_group": "Arab, Djiboutian",
+   "largest_group_population": 80000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Vanuatu",
+   "iso3": "VUT",
+   "groups": 42,
+   "languages": 40,
+   "people": 155685,
+   "largest_group": "Lenakel Tannese",
+   "largest_group_population": 21500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "French Guiana",
+   "iso3": "GUF",
+   "groups": 5,
+   "languages": 5,
+   "people": 150250,
+   "largest_group": "Guianese Mulatto",
+   "largest_group_population": 120000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Suriname",
+   "iso3": "SUR",
+   "groups": 1,
+   "languages": 1,
+   "people": 140000,
+   "largest_group": "Guyanese",
+   "largest_group_population": 140000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Azerbaijan",
+   "iso3": "AZE",
+   "groups": 1,
+   "languages": 1,
+   "people": 124000,
+   "largest_group": "Armenian",
+   "largest_group_population": 124000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "New Zealand",
+   "iso3": "NZL",
+   "groups": 5,
+   "languages": 5,
+   "people": 118600,
+   "largest_group": "Cook Islands Maori",
+   "largest_group_population": 75500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Fiji",
+   "iso3": "FJI",
+   "groups": 3,
+   "languages": 3,
+   "people": 104050,
+   "largest_group": "Nadroga",
+   "largest_group_population": 91000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "TKM",
+   "iso3": "TKM",
+   "groups": 3,
+   "languages": 3,
+   "people": 75000,
+   "largest_group": "Baloch, Western",
+   "largest_group_population": 52500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Colombia",
+   "iso3": "COL",
+   "groups": 9,
+   "languages": 9,
+   "people": 73800,
+   "largest_group": "Embera, Baudo",
+   "largest_group_population": 30500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Hong Kong",
+   "iso3": "HKG",
+   "groups": 2,
+   "languages": 2,
+   "people": 63700,
+   "largest_group": "Han Chinese, Wu",
+   "largest_group_population": 56500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Tunisia",
+   "iso3": "TUN",
+   "groups": 2,
+   "languages": 2,
+   "people": 56700,
+   "largest_group": "Shawiya",
+   "largest_group_population": 53000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "UZB",
+   "iso3": "UZB",
+   "groups": 3,
+   "languages": 3,
+   "people": 55300,
+   "largest_group": "Armenian",
+   "largest_group_population": 36500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Paraguay",
+   "iso3": "PRY",
+   "groups": 6,
+   "languages": 6,
+   "people": 54800,
+   "largest_group": "Pai Tavytera",
+   "largest_group_population": 15000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Tajikistan",
+   "iso3": "TJK",
+   "groups": 6,
+   "languages": 6,
+   "people": 50900,
+   "largest_group": "Yagnobi",
+   "largest_group_population": 20000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Montenegro",
+   "iso3": "MNE",
+   "groups": 1,
+   "languages": 1,
+   "people": 49500,
+   "largest_group": "Albanian",
+   "largest_group_population": 49500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Mexico",
+   "iso3": "MEX",
+   "groups": 4,
+   "languages": 4,
+   "people": 48100,
+   "largest_group": "Chatino, Zenzontepec",
+   "largest_group_population": 22000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "New Caledonia",
+   "iso3": "NCL",
+   "groups": 7,
+   "languages": 5,
+   "people": 45625,
+   "largest_group": "Lifuan",
+   "largest_group_population": 15500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Greenland",
+   "iso3": "GRL",
+   "groups": 1,
+   "languages": 1,
+   "people": 45000,
+   "largest_group": "Greenlander",
+   "largest_group_population": 45000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Norway",
+   "iso3": "NOR",
+   "groups": 1,
+   "languages": 1,
+   "people": 44500,
+   "largest_group": "Northern Saami",
+   "largest_group_population": 44500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "KAZ",
+   "iso3": "KAZ",
+   "groups": 3,
+   "languages": 3,
+   "people": 42700,
+   "largest_group": "Ingush",
+   "largest_group_population": 21000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Bulgaria",
+   "iso3": "BGR",
+   "groups": 1,
+   "languages": 1,
+   "people": 41500,
+   "largest_group": "Armenian",
+   "largest_group_population": 41500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Liechtenstein",
+   "iso3": "LIE",
+   "groups": 1,
+   "languages": 1,
+   "people": 36000,
+   "largest_group": "Liechtensteiner",
+   "largest_group_population": 36000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Guatemala",
+   "iso3": "GTM",
+   "groups": 2,
+   "languages": 2,
+   "people": 33000,
+   "largest_group": "Sipacapense",
+   "largest_group_population": 19000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Greece",
+   "iso3": "GRC",
+   "groups": 1,
+   "languages": 1,
+   "people": 30000,
+   "largest_group": "Armenian",
+   "largest_group_population": 30000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Singapore",
+   "iso3": "SGP",
+   "groups": 3,
+   "languages": 3,
+   "people": 25600,
+   "largest_group": "Han Chinese, Min Bei",
+   "largest_group_population": 19000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Austria",
+   "iso3": "AUT",
+   "groups": 1,
+   "languages": 1,
+   "people": 25500,
+   "largest_group": "Slovene",
+   "largest_group_population": 25500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Eswatini",
+   "iso3": "SWZ",
+   "groups": 3,
+   "languages": 3,
+   "people": 23900,
+   "largest_group": "Afrikaner",
+   "largest_group_population": 17000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Portugal",
+   "iso3": "PRT",
+   "groups": 1,
+   "languages": 1,
+   "people": 23500,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 23500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Venezuela",
+   "iso3": "VEN",
+   "groups": 4,
+   "languages": 4,
+   "people": 13500,
+   "largest_group": "Yaruro",
+   "largest_group_population": 8100,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Cook Islands",
+   "iso3": "COK",
+   "groups": 2,
+   "languages": 2,
+   "people": 12675,
+   "largest_group": "Cook Islands Maori",
+   "largest_group_population": 12500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Tuvalu",
+   "iso3": "TUV",
+   "groups": 1,
+   "languages": 1,
+   "people": 12000,
+   "largest_group": "Tuvaluan",
+   "largest_group_population": 12000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Poland",
+   "iso3": "POL",
+   "groups": 1,
+   "languages": 1,
+   "people": 10500,
+   "largest_group": "Lemko",
+   "largest_group_population": 10500,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Denmark",
+   "iso3": "DNK",
+   "groups": 1,
+   "languages": 1,
+   "people": 10000,
+   "largest_group": "Greenlander",
+   "largest_group_population": 10000,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Nicaragua",
+   "iso3": "NIC",
+   "groups": 1,
+   "languages": 1,
+   "people": 9700,
+   "largest_group": "Mayangna",
+   "largest_group_population": 9700,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Sweden",
+   "iso3": "SWE",
+   "groups": 2,
+   "languages": 2,
+   "people": 9100,
+   "largest_group": "Northern Saami",
+   "largest_group_population": 6100,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Honduras",
+   "iso3": "HND",
+   "groups": 2,
+   "languages": 2,
+   "people": 8700,
+   "largest_group": "Paya-Pech",
+   "largest_group_population": 6200,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "NRU",
+   "iso3": "NRU",
+   "groups": 2,
+   "languages": 2,
+   "people": 6500,
+   "largest_group": "Nauruan",
+   "largest_group_population": 5700,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Cambodia",
+   "iso3": "KHM",
+   "groups": 3,
+   "languages": 3,
+   "people": 6100,
+   "largest_group": "Kachok",
+   "largest_group_population": 3900,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Micronesia, Federated States of",
+   "iso3": "FSM",
+   "groups": 1,
+   "languages": 1,
+   "people": 5900,
+   "largest_group": "Mortlockese",
+   "largest_group_population": 5900,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "KGZ",
+   "iso3": "KGZ",
+   "groups": 2,
+   "languages": 2,
+   "people": 2950,
+   "largest_group": "Dargin",
+   "largest_group_population": 2400,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Bolivia",
+   "iso3": "BOL",
+   "groups": 2,
+   "languages": 2,
+   "people": 2850,
+   "largest_group": "Ryukyuan",
+   "largest_group_population": 2600,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "NIU",
+   "iso3": "NIU",
+   "groups": 1,
+   "languages": 1,
+   "people": 1900,
+   "largest_group": "Niuean",
+   "largest_group_population": 1900,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Finland",
+   "iso3": "FIN",
+   "groups": 1,
+   "languages": 1,
+   "people": 1800,
+   "largest_group": "Saami, North",
+   "largest_group_population": 1800,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "TKL",
+   "iso3": "TKL",
+   "groups": 1,
+   "languages": 1,
+   "people": 1800,
+   "largest_group": "Tokelauan",
+   "largest_group_population": 1800,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Gibraltar",
+   "iso3": "GIB",
+   "groups": 1,
+   "languages": 1,
+   "people": 1700,
+   "largest_group": "Arab, Moroccan",
+   "largest_group_population": 1700,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Kiribati",
+   "iso3": "KIR",
+   "groups": 1,
+   "languages": 1,
+   "people": 1100,
+   "largest_group": "Tuvaluan",
+   "largest_group_population": 1100,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Mayotte",
+   "iso3": "MYT",
+   "groups": 1,
+   "languages": 1,
+   "people": 650,
+   "largest_group": "Reunionese Creole",
+   "largest_group_population": 650,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Norfolk Island",
+   "iso3": "NFK",
+   "groups": 1,
+   "languages": 1,
+   "people": 350,
+   "largest_group": "Norfolker",
+   "largest_group_population": 350,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "PCN",
+   "iso3": "PCN",
+   "groups": 1,
+   "languages": 1,
+   "people": 45,
+   "largest_group": "Pitcairn Islander",
+   "largest_group_population": 45,
+   "basis": "no text Scripture found in the pools checked"
+  },
+  {
+   "country": "Tonga",
+   "iso3": "TON",
+   "groups": 1,
+   "languages": 1,
+   "people": 35,
+   "largest_group": "Niuean",
+   "largest_group_population": 35,
+   "basis": "no text Scripture found in the pools checked"
+  }
+ ]
+}

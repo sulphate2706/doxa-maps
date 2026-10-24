@@ -1,0 +1,99 @@
+{
+  "tabs": {
+    "religion": "धर्म",
+    "ropTree": "ROP वृक्ष",
+    "languageFamilies": "भाषा परिवार",
+    "semanticTrees": "अर्थ-वृक्ष",
+    "nameLocales": "नाम की भाषाएँ",
+    "ropSunburst": "ROP सनबर्स्ट",
+    "allPins": "सभी जनसमूह पिन",
+    "rosetta": "पहचान-संख्या रोसेटा",
+    "coverage": "अनुवाद कवरेज",
+    "index": "सूची"
+  },
+  "status": {
+    "loading": "लोड हो रहा है…",
+    "loadingPgData": "जनसमूह डेटा लोड हो रहा है…",
+    "loadingPins": "पिन लोड हो रहे हैं…",
+    "loadingPolygons": "देशों की सीमाएँ लोड हो रही हैं…",
+    "addingPolygons": "देशों की सीमाएँ जोड़ी जा रही हैं…",
+    "addingPins": "पिन जोड़े जा रहे हैं…",
+    "loadingCoverage": "देश-वार कवरेज लोड हो रहा है…",
+    "addingPinsOnTop": "ऊपर पिन जोड़े जा रहे हैं…",
+    "loadingRop": "ROP पदानुक्रम लोड हो रहा है…",
+    "loadingLanguage": "भाषा डेटा लोड हो रहा है…",
+    "loadingPinsRosetta": "पिन और रोसेटा नमूना लोड हो रहे हैं…",
+    "error": "त्रुटि: {message}",
+    "readyTranslations": "पिन: {pins} · सभी 17 भाषाओं के नाम देखने के लिए किसी पिन पर क्लिक करें",
+    "readyCoverage": "तैयार · देश: {countries}, औसत अनुवाद भाषाओं / 17 के अनुसार रंगे गए (सभी पंक्तियाँ: {rows})",
+    "readyD3": "प्रविष्टियाँ: {entries} · ज़ूम के लिए स्क्रॉल करें · खिसकाने के लिए खींचें",
+    "readyRop": "तैयार · पिन: {pins} · PEID सहित: {peid}",
+    "readyRosetta": "तैयार · पिन: {pins} · रोसेटा नमूने: {samples} (सुनहरा ★)",
+    "readyPins": "तैयार · पिन: {pins} · किसी पिन पर क्लिक करें",
+    "readyLanguage": "तैयार · पिन: {pins} · परिवार कवरेज {coverage}% · शीर्ष 25 = {top}%",
+    "readyReligion": "पिन: {pins} · सबसे आम: {religion} ({count})",
+    "d3Failed": "चार्ट लाइब्रेरी लोड नहीं हो सकी।"
+  },
+  "ui": {
+    "chooseView": "दृश्य चुनें",
+    "search": "जनसमूह, स्थान, भाषा, धर्म से खोजें…",
+    "baseMap": "आधार मानचित्र",
+    "dataSources": "डेटा स्रोत",
+    "legend": "सूचकांक",
+    "openLegend": "सूचकांक खोलें",
+    "clearSelectionEsc": "चयन हटाएँ (Esc)",
+    "closeEsc": "बंद करें (Esc)",
+    "close": "बंद करें",
+    "retry": "फिर से कोशिश करें",
+    "loadingMap": "मानचित्र लोड हो रहा है",
+    "flyToPin": "पिन पर जाएँ",
+    "primaryReligion": "प्रमुख धर्म",
+    "ropHierarchy": "ROP पदानुक्रम"
+  },
+  "pill": {
+    "religion": "धर्मों का वितरण · विवरण के लिए किसी पिन पर क्लिक करें",
+    "ropTree": "ROP पदानुक्रम · सम्बद्धता खंड → क्लस्टर → जनसमूह → PGIC",
+    "languageFamilies": "नृजातीय-भाषाई परिवार (PPLR) · विवरण के लिए किसी पिन पर क्लिक करें",
+    "sunburst": "ROP पदानुक्रम · सम्बद्धता खंड → जनसमूह क्लस्टर · ज़ूम के लिए स्क्रॉल करें",
+    "pins": "देश-वार सभी जनसमूह पिन · प्रणालियों की पहचान-संख्याओं के लिए क्लिक करें",
+    "coverage": "अनुवाद कवरेज · रंग = प्रति देश भरी गई भाषाओं का औसत · किसी पिन या देश पर क्लिक करें",
+    "rosetta": "पहचान-संख्या रोसेटा · रंग = कौन-सी पहचान-संख्याएँ हैं · ★ = नमूना पंक्ति",
+    "translations": "जनसमूह का नाम · {n} भाषाएँ · किसी बिंदु पर क्लिक करें"
+  },
+  "legendTitle": {
+    "avgLocales": "भाषाओं का औसत / {n}",
+    "idCoverage": "पहचान-संख्या कवरेज"
+  },
+  "rosetta": {
+    "legend": {
+      "all": "JP + IMB + WCD, तीनों",
+      "imbOnly": "केवल IMB",
+      "jpOnly": "केवल JP",
+      "neither": "दोनों में से कोई नहीं"
+    },
+    "samplePg": "★ नमूना जनसमूह",
+    "missingIds": "PPLR में अभी मिलान नहीं हुआ: {ids}। खाली पंक्ति डेटा की कमी है, त्रुटि नहीं।"
+  },
+  "popup": {
+    "noName": "(कोई नाम नहीं)",
+    "country": "देश",
+    "religion": "धर्म",
+    "language": "भाषा",
+    "family": "परिवार",
+    "affinityBloc": "सम्बद्धता खंड",
+    "cluster": "क्लस्टर",
+    "peopleCluster": "जनसमूह क्लस्टर",
+    "peopleGroup": "जनसमूह",
+    "pgCount": "जनसमूह",
+    "avgLocalesFilled": "भरी गई भाषाओं का औसत",
+    "iso3Country": "ISO-3 देश"
+  },
+  "card": {
+    "nameInLocales": "{n} भाषाओं में नाम"
+  },
+  "title": "PPLR डेटा मानचित्र",
+  "index": {
+    "title": "PPLR डेटा सत्यापन",
+    "help": "किसी टाइल पर क्लिक करें, या ऊपर कोई दृश्य चुनें।"
+  }
+}

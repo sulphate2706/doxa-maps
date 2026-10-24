@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- One-click check of the team PocketBase sign-in (/admin/pb-signin-check, behind the site sign-in).
+     The same flow as the PocketBase SDK's authWithOAuth2: subscribe to @oauth2 over /pb/api/realtime, open the
+     provider in a popup, exchange the code. The token is shown as a result only and never stored. -->
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team PocketBase sign-in check</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem}button{font:inherit;padding:.6rem 1.2rem;cursor:pointer}#out{margin-top:1.5rem;padding:1rem;border-radius:.5rem;background:#f3f3f3;white-space:pre-wrap}.ok{background:#e6f6ea!important}.no{background:#fdecec!important}</style>
+<h1>Team PocketBase sign-in check</h1>
+<p>Signs you in to the team PocketBase (<code>/pb</code>) through the team account, and shows who it thinks you are. Nothing is stored in this page.</p>
+<button id="go">Sign in to the team PocketBase</button>
+<div id="out">Not tried yet.</div>
+<script type="module">
+const PB = location.origin + '/pb'
+const out = document.getElementById('out')
+const show = (text, cls) => { out.textContent = text; out.className = cls || '' }
+document.getElementById('go').onclick = async () => {
+  const popup = window.open('', 'pb-oauth2', 'width=520,height=720')   // opened in the click, so it is not blocked
+  show('Connecting…')
+  try {
+    const methods = await (await fetch(PB + '/api/collections/users/auth-methods')).json()
+    const provider = (methods.oauth2?.providers || []).find((p) => p.name === 'oidc')
+    if (!provider) throw new Error('The team PocketBase has no team sign-in configured.')
+    const es = new EventSource(PB + '/api/realtime')
+    const clientId = await new Promise((ok, fail) => {
+      es.addEventListener('PB_CONNECT', (e) => ok(JSON.parse(e.data).clientId))
+      es.onerror = () => fail(new Error('Could not open the realtime connection.'))
+    })
+    const sub = await fetch(PB + '/api/realtime', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ clientId, subscriptions: ['@oauth2'] }) })
+    if (!sub.ok) throw new Error('Could not subscribe to the sign-in result (' + sub.status + ').')
+    const redirectURL = PB + '/api/oauth2-redirect'
+    const url = new URL(provider.authURL + encodeURIComponent(redirectURL))
+    url.searchParams.set('state', clientId)
+    show('Finish signing in in the popup…')
+    popup.location.href = url.toString()
+    const result = await new Promise((ok) => es.addEventListener('@oauth2', (e) => ok(JSON.parse(e.data))))
+    es.close()
+    try { popup.close() } catch {}
+    if (result.state !== clientId) throw new Error('The sign-in state did not match; try again.')
+    if (result.error || !result.code) throw new Error('The team account provider said: ' + (result.error || 'no code'))
+    const r = await fetch(PB + '/api/collections/users/auth-with-oauth2', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ provider: 'oidc', code: result.code, codeVerifier: provider.codeVerifier, redirectURL }) })
+    const j = await r.json()
+    if (!r.ok) return show('REFUSED by the team PocketBase (' + r.status + '): ' + (j.message || 'no message'), 'no')
+    const groups = j.meta?.rawUser?.groups
+    show('Signed in to the team PocketBase as ' + (j.record?.email || j.meta?.email || '(no email)') +
+      ', groups: ' + (Array.isArray(groups) ? groups.join(', ') : '(none)') + (j.meta?.isNew ? '\n(first sign-in: your team user was created)' : ''), 'ok')
+  } catch (e) {
+    try { popup.close() } catch {}
+    show('Did not complete: ' + e.message, 'no')
+  }
+}
+</script>

@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Doxa Maps</title>
+<link rel="icon" href="data:," />
+<!-- PERF: warm the connections + preload the default profile bundle so mapbox, the
+     bundle, and the API all fetch in parallel instead of serially (was ~10s cold). -->
+<link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+<link rel="preconnect" href="https://pray.doxa.life" crossorigin />
+<link rel="modulepreload" href="./doxa-maps/doxa-simple-map/doxa-simple-map.js" />
+<script>
+// DEEP-LINK PRELOAD — the static modulepreload above only warms the DEFAULT
+// landing bundle; a #/research-map deep link used to fetch its bundle strictly
+// AFTER the module ran. This tiny script reads the hash at parse time and adds a
+// modulepreload for the resolved profile's bundle so the fetch parallelizes with
+// the Mapbox peer below. KEEP THIS MAP IN SYNC with the PROFILES registry at the
+// bottom of this file (each entry's `src`) — same ids, same srcs.
+(function(){
+  var M = {
+    'prayer-progress':'./doxa-maps/doxa-simple-map/doxa-simple-map.js',
+    'upg-100-list':'./doxa-maps/my-upg-100-list/my-upg-100-list.js',
+    'countries-map':'./doxa-maps/country-posters/country-posters.js',
+    'key-city-posters':'./doxa-maps/key-cities/key-cities.js',
+    'all-people-groups':'./doxa-maps/all-people-groups/all-people-groups.js',
+    'cities-with-internet':'./doxa-maps/cities-internet/cities-internet.js',
+    'gospel-resources':'./doxa-maps/gospel-resources/gospel-resources.js',
+    'research-map':'./doxa-maps/doxa-research-map/doxa-research-map.js',
+    'research-dashboard':'./external/research-dashboard-map.js',
+    'upg-neighbor':'./external/upg-neighbor.js',
+    'upg-neighbor-lab':'./external/upg-neighbor.js'
+  }
+  try {
+    var id = decodeURIComponent((location.hash || '').replace(/^#\/?/, '')).trim()
+    var src = M[id]
+    if (src && !src.endsWith('doxa-simple-map.js')) {
+      var l = document.createElement('link')
+      l.rel = 'modulepreload'; l.href = src
+      document.head.appendChild(l)
+    }
+  } catch (e) { /* never block boot over a preload */ }
+})()
+</script>
+
+<!-- ── Mapbox GL peer: loaded ONCE by the wrapper (the shell owns the version).
+     Profile bundles never import mapbox-gl — they use the `window.mapboxgl`
+     global this shell provides, so they all share THIS single instance — one
+     download, one parse, one library.
+     TODO(prod): self-host these files same-origin so CSP can be `worker-src 'self'`
+     instead of `blob:`, and so the F-Droid/offline builds carry no CDN dep. ── -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css" rel="stylesheet" />
+<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" rel="stylesheet" />
+<script defer src="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js"></script>
+<script defer src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<!-- The people-group API the map bundles fetch from. The generated instance
+     pages set this too (simple-map.instances.json `apiBaseUrl`); the wrapper must
+     set it as well or those bundles fall back to same-origin and 404. -->
+<script>window.MAP_APP_API_URL = "https://pray.doxa.life";</script>
+<!-- No token script here. A token comes from the endpoint the build writes
+     (./api/maps/token.json, from MAPBOX_TOKEN) or from window.DOXA_TOKEN if a host
+     page sets it. A <script src> for a file that is deliberately never deployed
+     404s on every production page load, and it was the file that kept leaking into
+     the served root. One mechanism, local and deployed alike. -->
+<style>
+/* ══════════════════════════════════════════════════════════════════
+   doxa-maps · layouts/app-wrapper-material
+   Material-ish surface values drawn from Quasar's palette, structured
+   like the Quasar YouTube layout gallery. Self-hosted everything.
+   Theming via CSS custom properties (the --ui-* custom-property idiom).
+   ══════════════════════════════════════════════════════════════════ */
+:root{
+  --ui-bg:#ffffff; --ui-bg-elevated:#f9f9f9; --ui-bg-accented:#f0f0f0;
+  --ui-border:#e5e5e5; --ui-text:#0f0f0f; --ui-text-muted:#606060;
+  --ui-primary:#1a73e8;                 /* matches the research map's active-tab accent */
+  --rail:72px; --drawer:240px; --header:56px;
+
+  /* ── SAFE-AREA TOP INSET — read the research before changing this ──────────
+     Most mobile apps reserve the strip under the status bar / camera cutout, and
+     the platform way to do that is the safe-area inset. BUT: on ANDROID WEBVIEW
+     < 140 `env(safe-area-inset-top)` returns 0 — a long-standing Chromium bug
+     (ionic-team/capacitor#7648, #2840), NOT a Capacitor bug. So a CSS-only
+     env() fix SILENTLY DOES NOTHING on many real devices, which is exactly the
+     overlap being reported on a Pixel.
+     The documented 2026 approach is therefore a 3-step cascade:
+       1. var(--safe-area-inset-top)  ← injected from NATIVE by the System Bars /
+          safe-area plugin; correct even on the broken WebViews
+       2. env(safe-area-inset-top)    ← the standard, correct on iOS + WebView 140+
+       3. a hard floor                ← so the header is never flush to the very
+          top even when both report 0 (older Android, or a browser tab)
+     `viewport-fit=cover` in the <meta> is REQUIRED for env() to be non-zero at all. */
+  --sat: max(var(--safe-area-inset-top, 0px), env(safe-area-inset-top, 0px), var(--sat-floor));
+  --sat-floor: 0px;                  /* desktop/browser: no reserved strip needed */
+  --shadow-2:0 1px 5px rgba(0,0,0,.2),0 2px 2px rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ui-bg:#0f0f0f; --ui-bg-elevated:#181818; --ui-bg-accented:#272727;
+         --ui-border:#303030; --ui-text:#f1f1f1; --ui-text-muted:#aaa; --ui-primary:#64b5f6; }
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:Roboto,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--ui-bg); color:var(--ui-text); overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+.ic{width:24px;height:24px;flex:none}
+
+/* ── HEADER ─────────────────────────────────────────────── */
+/* ── HEADER — safe-area aware ──────────────────────────────────────────────
+   BUG FIX: on a Pixel (and any notch/punch-hole device) the header sat UNDER the
+   status bar, so the battery/clock/camera overlapped our controls. There was no
+   safe-area handling at all. We now PAD the header by the top inset and grow the
+   fixed elements below it by the same amount, so nothing hides under the system UI.
+   `viewport-fit=cover` is already set in the <meta>, which is what makes
+   env(safe-area-inset-*) report non-zero inside Capacitor. */
+.hdr{
+  position:fixed; inset:0 0 auto 0; z-index:30;
+  height:calc(var(--header) + var(--sat));
+  padding-top:var(--sat);
+  display:flex; align-items:center; gap:6px;
+  padding-left:max(8px, var(--safe-area-inset-left, env(safe-area-inset-left, 0px)));
+  padding-right:max(8px, var(--safe-area-inset-right, env(safe-area-inset-right, 0px)));
+  background:var(--ui-bg); border-bottom:1px solid var(--ui-border);
+}
+.iconbtn{
+  width:40px;height:40px;border:0;background:none;color:var(--ui-text);
+  border-radius:50%; display:grid;place-items:center;cursor:pointer;
+  transition:background .15s;
+}
+.iconbtn:hover{background:var(--ui-bg-accented)}
+.iconbtn:active{background:var(--ui-border)}
+/* BUG FIX (mobile): the text brand rendered oversized and OVERLAPPED the
+   hamburger, making the menu untappable — the worst bug in the set. It is now
+   the real logo image, height-capped, and `pointer-events:none` so it can never
+   intercept a tap meant for the hamburger even if it overflows. */
+.brand{display:flex;align-items:center;min-width:0;pointer-events:none}
+.brand img{height:26px;width:auto;max-width:150px;object-fit:contain;display:block}
+@media (prefers-color-scheme: dark){ .brand img{filter:invert(1) hue-rotate(180deg)} }
+.spacer{flex:1}
+
+/* ── Select View: a real PrimeVue-style FIELDSET, CENTERED in the header ──
+   Semantic <fieldset> + <legend>; the legend sits on the top border line
+   (PrimeVue Fieldset structure). Absolutely centered so it stays mid-header
+   regardless of the brand/menu widths on either side. */
+.viewsel{
+  /* BUG FIX (mobile): this was `top:50%` + translate(-50%,-50%), which centres on
+     the header's FULL height — INCLUDING the safe-area padding-top. Every other
+     control sits inside the padding box, so the fieldset floated ~half the inset
+     ABOVE them and the header looked unaligned.
+     Centring inside the PADDING BOX instead keeps it on the same optical row:
+     offset from the padded top by half the content height, and cancel only the
+     horizontal half in the transform. */
+  /* Centre it WITHOUT knowing its own height. A hardcoded --viewsel-h was wrong
+     because the fieldset is 37px on mobile (legend hidden) but 44px on desktop
+     (legend visible) — one constant cannot serve both.
+     Instead: anchor to the vertical MIDDLE of the padding box, then pull back by
+     half of the element's OWN height via translateY(-50%). Self-measuring, so it
+     stays aligned at any breakpoint and whatever the safe-area inset turns out
+     to be. `top` uses the padded content box, which is what the sibling controls
+     sit in — that was the original bug. */
+  position:absolute; left:50%;
+  top:calc(var(--sat) + var(--header) / 2);
+  transform:translate(-50%, -50%);
+  margin:0; padding:0 10px 2px; border:1px solid var(--ui-border);
+  border-radius:8px; background:var(--ui-bg);
+}
+.viewsel > legend{
+  /* CENTERED inside the fieldset (default legend alignment is inline-start) */
+  margin:0 auto; padding:0 6px;
+  font-size:10px; text-transform:uppercase; letter-spacing:.7px;
+  color:var(--ui-text-muted); font-weight:700;
+}
+/* One legend, two labels: the full wording where there is room, "View" on a phone. */
+.viewsel > legend .lg-short{display:none}
+@media (max-width:1023px){
+  .viewsel > legend .lg-full{display:none}
+  .viewsel > legend .lg-short{display:inline}
+}
+/* Slim UNDERLINE indicator (mirrors the research map's own active-tab style:
+   a 2px accent bar under the label, #1a73e8) — not a filled button. */
+.seg{display:flex;gap:2px}
+.seg button{
+  position:relative;
+  display:flex;align-items:center;gap:6px;
+  border:0;background:none;color:var(--ui-text-muted);
+  padding:6px 12px 7px;font-size:13px;font-weight:500;cursor:pointer;
+  transition:color .15s; font-family:inherit;
+}
+.seg button .ic{width:17px;height:17px}
+.seg button::after{
+  content:''; position:absolute; left:8px; right:8px; bottom:0; height:2px;
+  border-radius:2px 2px 0 0; background:transparent; transition:background .15s;
+}
+.seg button:hover{color:var(--ui-text)}
+.seg button:hover::after{background:var(--ui-border)}
+.seg button[aria-pressed="true"]{color:var(--ui-primary);font-weight:600}
+.seg button[aria-pressed="true"]::after{background:var(--ui-primary)}
+
+/* ── LOCALE SWITCHER (flag + native-name pattern) ── */
+.langsel{position:relative}
+.langtrigger{
+  display:flex;align-items:center;gap:7px;
+  border:1px solid var(--ui-border);background:var(--ui-bg);color:var(--ui-text);
+  border-radius:8px;padding:6px 10px;font-size:13px;font-weight:500;cursor:pointer;
+  font-family:inherit; transition:background .15s;
+}
+/* BUG FIX (mobile): the full native name ("Español", "Português") ate the header.
+   Below 1024px show the FLAG only; the 2-letter code is the text fallback for
+   locales whose flag may not render (and for screen-reader clarity). */
+.langtrigger .langname{display:none}
+.langtrigger .langcode{display:none;font-size:11px;font-weight:700;letter-spacing:.4px}
+@media (min-width:1024px){ .langtrigger .langname{display:inline} }
+/* MOBILE FLOOR: reserve the status-bar strip even when BOTH inset sources report
+   0 (Android WebView <140 bug, or a plain mobile browser tab). 24px is the common
+   Android status-bar height; on devices that DO report an inset the max() above
+   wins, so a taller punch-hole cutout is still respected. Desktop keeps 0. */
+@media (max-width:1023px){ :root{ --sat-floor:24px } }
+
+@media (max-width:1023px){
+  .langtrigger{padding:6px 8px;gap:5px}
+  .langtrigger .caret{display:none}
+}
+.langtrigger:hover{background:var(--ui-bg-accented)}
+.flag{font-size:15px;line-height:1}
+.caret{
+  width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;
+  border-top:5px solid var(--ui-text-muted); margin-left:1px;
+}
+.langmenu{
+  position:absolute;top:calc(100% + 6px);right:0;min-width:190px;z-index:40;
+  list-style:none;margin:0;padding:6px;
+  background:var(--ui-bg);border:1px solid var(--ui-border);border-radius:10px;
+  box-shadow:var(--shadow-2);max-height:60vh;overflow-y:auto;
+}
+.langmenu li{margin:0}
+.langmenu button{
+  display:flex;align-items:center;gap:9px;width:100%;
+  border:0;background:none;color:var(--ui-text);font-family:inherit;
+  padding:8px 10px;border-radius:7px;font-size:13px;cursor:pointer;text-align:left;
+}
+.langmenu button:hover{background:var(--ui-bg-accented)}
+.langmenu button[aria-selected="true"]{color:var(--ui-primary);font-weight:600}
+/* RTL locales flip the flag to the trailing side, as is conventional */
+[dir="rtl"] .flag{order:2}
+
+/* ── OVERFLOW ("three dots") MENU ─────────────────────────────────────────
+   On MOBILE the standalone language pill is hidden and the picker lives in here,
+   so the header only carries: hamburger · logo · view tabs · ⋮ */
+.appmenuwrap{position:relative}
+.appmenu{
+  position:absolute;top:calc(100% + 6px);right:0;min-width:210px;z-index:40;
+  background:var(--ui-bg);border:1px solid var(--ui-border);border-radius:10px;
+  box-shadow:var(--shadow-2);padding:6px;max-height:70vh;overflow-y:auto;
+}
+.appmenu[hidden]{display:none}
+.appmenu-sect{
+  font-size:10px;text-transform:uppercase;letter-spacing:.7px;font-weight:700;
+  color:var(--ui-text-muted);padding:8px 10px 4px;
+}
+.langmenu-inline{list-style:none;margin:0;padding:0}
+.langmenu-inline button{
+  display:flex;align-items:center;gap:9px;width:100%;
+  border:0;background:none;color:var(--ui-text);font-family:inherit;
+  padding:9px 10px;border-radius:7px;font-size:14px;cursor:pointer;text-align:left;
+}
+.langmenu-inline button:hover{background:var(--ui-bg-accented)}
+.langmenu-inline button[aria-selected="true"]{color:var(--ui-primary);font-weight:600}
+/* MOBILE: drop the header language pill entirely — it lives in ⋮ now. */
+@media (max-width:1023px){ .langsel{display:none} }
+/* DESKTOP: there is room, so keep the pill and hide the menu's language section. */
+@media (min-width:1024px){ .appmenu .appmenu-sect, .appmenu .langmenu-inline{display:none} }
+
+/* ── SIDEBAR ────────────────────────────────────────────── */
+.side{
+  position:fixed; top:calc(var(--header) + var(--sat)); bottom:0; left:0; width:var(--drawer);
+  background:var(--ui-bg); border-right:1px solid var(--ui-border);
+  overflow-y:auto; overflow-x:hidden; z-index:20;
+  padding:8px 0 24px;
+  scrollbar-width:thin;
+}
+.side::-webkit-scrollbar{width:8px}
+.side::-webkit-scrollbar-thumb{background:var(--ui-border);border-radius:4px}
+
+/* ── DRAWER BRAND ─────────────────────────────────────────────────────────
+   The logo does not fit a 390px header beside the hamburger, view tabs and ⋮.
+   So on MOBILE the header shows no logo and the OPEN DRAWER shows it large —
+   the drawer is full-width and has the room. Desktop keeps the header logo and
+   hides this one, so the mark never appears twice. */
+.side-brand{display:none}
+.side-brand img{height:auto;width:100%;max-width:190px;display:block;margin:6px auto 14px;
+  padding:0 12px;box-sizing:border-box}
+@media (prefers-color-scheme: dark){ .side-brand img{filter:invert(1) hue-rotate(180deg)} }
+@media (max-width:1023px){
+  .side-brand{display:block;border-bottom:1px solid var(--ui-border);margin-bottom:6px}
+  .brand{display:none}                 /* no logo in the header on mobile */
+}
+/* In the desktop RAIL the drawer is only 72px wide — never show the wordmark there. */
+body.rail .side .side-brand{display:none}
+
+/* DESKTOP collapsed  → RAIL: icons stay visible, labels hide (YouTube mini-guide) */
+body.rail .side{width:var(--rail)}
+body.rail .side .lbl,
+body.rail .side .sect-hdr,
+body.rail .side .chev{display:none}
+body.rail .side .row{flex-direction:column;gap:4px;padding:16px 0;justify-content:center}
+body.rail .side .row .mini{display:block}
+body.rail .main{left:var(--rail)}
+.mini{display:none;font-size:10px;line-height:1.1;text-align:center;max-width:64px;
+      overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ui-text-muted)}
+
+.row{
+  display:flex;align-items:center;gap:16px;
+  padding:0 24px;height:40px;margin:0 8px;border-radius:10px;
+  color:var(--ui-text);text-decoration:none;cursor:pointer;
+  font-size:14px; border:0; background:none; width:calc(100% - 16px);
+  text-align:left; font-family:inherit;
+}
+.row:hover{background:var(--ui-bg-accented)}
+.row[aria-current="true"]{background:var(--ui-bg-accented);font-weight:600}
+.row[aria-current="true"] .ic{color:var(--ui-primary)}
+.row .lbl{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chev{transition:transform .18s;width:18px;height:18px;color:var(--ui-text-muted)}
+.chev.open{transform:rotate(90deg)}
+
+.sect-hdr{
+  padding:16px 24px 6px;font-size:14px;font-weight:600;color:var(--ui-text);
+  display:flex;align-items:center;gap:8px;
+}
+/* Nested SUB-GROUP inside a section (e.g. Laborer Mobilization > Research).
+   Indented + smaller so the hierarchy is unambiguous; a left rule ties its
+   children to the subheading. */
+.subgrp-hdr{
+  padding:10px 24px 4px 40px; font-size:12px; font-weight:600;
+  color:var(--ui-text-muted); display:flex; align-items:center; gap:7px;
+}
+.subgrp-hdr .ic{width:15px;height:15px}
+.subgrp{ margin-left:32px; border-left:1px solid var(--ui-border); }
+.subgrp .row{ padding-left:14px; margin-left:4px; width:calc(100% - 24px); }
+/* In the desktop RAIL the labels/subheadings hide, so drop the indent+rule too
+   (otherwise the icon column looks broken). */
+body.rail .side .subgrp-hdr{display:none}
+body.rail .side .subgrp{margin-left:0;border-left:0}
+body.rail .side .subgrp .row{padding-left:0;margin-left:8px;width:calc(100% - 16px)}
+
+.sep{height:1px;background:var(--ui-border);margin:8px 12px}
+.badge{
+  font-size:10px;padding:2px 6px;border-radius:4px;
+  background:var(--ui-bg-accented);color:var(--ui-text-muted);font-weight:600;
+}
+.kids{overflow:hidden}
+.kids[hidden]{display:none}
+
+/* ── MAIN ───────────────────────────────────────────────── */
+.main{
+  position:fixed; top:calc(var(--header) + var(--sat)); left:var(--drawer); right:0; bottom:0;
+  background:var(--ui-bg-elevated); overflow:auto;
+}
+.stage{position:relative;height:100%;display:grid;place-items:center;padding:16px}
+/* the live app-profile slot — fills the stage; the custom element is absolutely
+   positioned inset:0 by the bundle's own CSS contract */
+.slot{position:absolute;inset:0;display:none}
+.stage.live .slot{display:block}
+.stage.live .card{display:none}
+/* corner markers are layout scaffolding — hide them once a real map is mounted */
+.stage.live .corner{display:none}
+.slot > *{display:block;position:absolute;inset:0;width:100%;height:100%}
+.loading{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-size:13px;color:var(--ui-text-muted);background:var(--ui-bg-elevated);z-index:1;
+}
+.card{
+  background:var(--ui-bg);border:1px solid var(--ui-border);border-radius:12px;
+  box-shadow:var(--shadow-2); padding:28px; max-width:560px; width:100%;
+}
+.card h1{font-size:20px;margin-bottom:6px}
+.card p{color:var(--ui-text-muted);font-size:14px;line-height:1.6}
+.card code{background:var(--ui-bg-accented);padding:1px 5px;border-radius:4px;font-size:12px}
+.corner{
+  position:absolute;font-size:10px;color:var(--ui-text-muted);
+  background:var(--ui-bg);border:1px solid var(--ui-border);
+  padding:3px 7px;border-radius:6px;pointer-events:none;
+}
+.tl{top:12px;left:12px} .tr{top:12px;right:12px}
+.bl{bottom:12px;left:12px} .br{bottom:12px;right:12px}
+
+/* ── MOBILE: collapsed = COMPLETELY GONE, hamburger reopens as overlay ── */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:19;display:none}
+@media (max-width:1023px){
+  .main{left:0 !important}
+  /* ⭐ MOBILE DRAWER OVERLAYS EVERYTHING — including the header (the reference
+     layout behaves this way; ours previously UNDER-lapped it).
+     Three changes make that true:
+       top:0            start at the very top, not below the header
+       z-index:35       above the header (30) and the scrim (19)
+       padding-top:...  keep content clear of the status-bar/cutout strip, since
+                        we no longer inherit the header's offset
+     Consequence: the drawer's own brand block now sits at the TOP of the panel
+     rather than hidden behind the header, and the hamburger is covered while the
+     drawer is open (tap the scrim or a profile to close). */
+  .side{
+    top:0; height:100%; z-index:35;
+    padding-top:calc(var(--sat) + 8px);
+    transform:translateX(-100%); transition:transform .22s cubic-bezier(.4,0,.2,1);
+    box-shadow:var(--shadow-2); width:var(--drawer) !important;
+  }
+  /* Scrim must also cover the header so the overlay reads as one layer. */
+  .scrim{z-index:34}
+  body.mopen .side{transform:none}
+  body.mopen .scrim{display:block}
+  /* on mobile the rail never applies — collapsed means GONE (saves space) */
+  body.rail .side .lbl, body.rail .side .sect-hdr, body.rail .side .chev{display:revert}
+  body.rail .side .row{flex-direction:row;gap:16px;padding:0 24px;height:40px;justify-content:flex-start}
+  body.rail .side .row .mini{display:none}
+  /* mobile drawer is always full-width, so restore the nested indent the rail dropped */
+  body.rail .side .subgrp-hdr{display:flex}
+  body.rail .side .subgrp{margin-left:32px;border-left:1px solid var(--ui-border)}
+  body.rail .side .subgrp .row{padding-left:14px;margin-left:4px;width:calc(100% - 24px)}
+  /* Mobile KEEPS the legend (the fieldset should still read as a labelled group)
+     but shortens it to "View" and scales the whole control down so it fits a
+     390px header alongside the logo and the ⋮ menu. */
+  .viewsel > legend{display:block;font-size:8px;letter-spacing:.5px;padding:0 5px}
+  .viewsel{padding:0 6px 1px}
+  /* Labels stay VISIBLE on mobile beside the icon — an icon alone does not say
+     what a pane holds, and these are per-profile names ("Posters"), not generic
+     view types you could guess from a glyph. This used to be display:none to save
+     header width; the space is bought back by shrinking the type and padding
+     instead, which costs legibility far less than losing the word entirely. */
+  .seg button span{display:inline;font-size:10.5px}
+  .seg button{padding:5px 6px;gap:4px}
+  .seg button .ic{width:15px;height:15px}
+  /* Never let a long pane name push the fieldset into the logo or the ⋮ menu. */
+  .seg button span{max-width:78px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .brand img{height:30px;max-width:150px}
+}
+@media (max-width:420px){ .brand img{height:28px;max-width:140px} }
+</style>
+</head>
+<body class="">
+  <header class="hdr">
+    <button class="iconbtn" id="burger" aria-label="Toggle menu"></button>
+    <div class="brand">
+      <img src="./assets/brand/doxa-maps-logo-dark-with-text.png" alt="Doxa Maps" />
+    </div>
+    <div class="spacer"></div>
+    <fieldset class="viewsel">
+      <legend><span class="lg-full">Select View</span><span class="lg-short">View</span></legend>
+      <div class="seg" id="seg" role="group" aria-label="Select view"></div>
+    </fieldset>
+    <!-- Locale switcher: mirrors dx-life's LanguageSwitcher (flag + nativeName,
+         current language as the trigger, others in a dropdown) but sets
+         profile-config.locale instead of routing to /es, /fr … -->
+    <div class="langsel" id="langsel">
+      <button class="langtrigger" id="langtrigger" aria-haspopup="listbox" aria-expanded="false">
+        <span class="flag" id="langflag" aria-hidden="true"></span>
+        <span class="langname" id="langname"></span><span class="langcode" id="langcode"></span>
+        <span class="caret" aria-hidden="true"></span>
+      </button>
+      <ul class="langmenu" id="langmenu" role="listbox" hidden></ul>
+    </div>
+    <div class="appmenuwrap">
+      <button class="iconbtn" id="appmenu" aria-label="More" aria-haspopup="menu" aria-expanded="false"></button>
+      <!-- Overflow menu. The three-dots button previously did NOTHING; it now hosts
+           the language picker on narrow screens so the header stays uncrowded. -->
+      <div class="appmenu" id="appmenupanel" hidden>
+        <div class="appmenu-sect">Language</div>
+        <ul class="langmenu-inline" id="langmenu-inline" role="listbox"></ul>
+      </div>
+    </div>
+  </header>
+
+  <nav class="side" id="side" aria-label="Map profiles">
+    <!-- Logo lives HERE on mobile: the header is too tight for it, but the open
+         drawer has room to show it properly. Hidden on desktop, where the header
+         carries the logo instead. -->
+    <div class="side-brand">
+      <img src="./assets/brand/doxa-maps-logo-dark-with-text.png" alt="Doxa Maps" />
+    </div>
+    <div class="side-nav" id="side-nav"></div>
+  </nav>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <div class="stage" id="stage">
+      <!-- Live app-profile mounts here. ONE at a time (WebGL budget). -->
+      <div class="slot" id="slot"></div>
+      <!-- Placeholder shown for profiles not yet wired -->
+      <div class="card" id="ph">
+        <h1 id="pt">Research Map</h1>
+        <p id="pd"></p>
+      </div>
+      <span class="corner tl">top-left</span>
+      <span class="corner tr">top-right</span>
+      <span class="corner bl">bottom-left</span>
+      <span class="corner br">bottom-right</span>
+    </div>
+  </main>
+
+<script type="module">
+  // ── MAPBOX TOKEN ────────────────────────────────────────────────────────────
+  // This shell mounts bundles directly, so it must resolve a token itself — the
+  // 6-rung ladder in the GENERATED per-profile pages does not run here. Without
+  // this the app renders on a static host and every basemap is blank, because
+  // token.local.js is a LOCAL staging file that is deliberately never deployed.
+  //
+  //   1. window.DOXA_TOKEN   — token.local.js, local staging only
+  //   2. ?tk= URL param      — shared links
+  //   3. window.MAP_TOKEN_URL — a host page overriding the endpoint
+  //   4. ./api/maps/token.json — the static endpoint the build writes
+  //
+  // Rung 4 is RELATIVE so it resolves under whatever root the folder is served
+  // from — a Pages site, a self-hosted source-control service, or file-served
+  // staging — without being rebuilt for each. A 404 is a normal outcome (no
+  // token configured); it must not stop the shell from mounting, so the fetch
+  // fails soft and the bundles fall through to their own ladder.
+  let SHELL_TOKEN = ''
+  {
+    const qp = new URLSearchParams(location.search).get('tk')
+    SHELL_TOKEN = (typeof window.DOXA_TOKEN === 'string' && window.DOXA_TOKEN) || qp || ''
+    if (!SHELL_TOKEN) {
+      const url = window.MAP_TOKEN_URL || './api/maps/token.json'
+      try {
+        const r = await fetch(url)
+        if (r.ok) {
+          const ct = r.headers.get('content-type') || ''
+          const data = ct.includes('json') ? await r.json() : await r.text()
+          SHELL_TOKEN = (typeof data === 'string' ? data.trim()
+                        : (data && (data.token || data.tk || data.accessToken)) || '')
+        }
+      } catch (e) {
+        console.warn('[shell] no Mapbox token from', url, '—', e && e.message ? e.message : e)
+      }
+    }
+  }
+// The pane-wrapper LAYOUT, nested inside this one: app-wrapper-material owns the
+// chrome (header, side menu, View fieldset); pane-wrapper owns the stage inside it.
+import { buildPaneColumn, PANE_GRID_STYLES } from '../pane-wrapper/pane-wrapper.js'
+
+import { NAV, navForTarget } from './nav.js'
+import { icon } from './icons.js'
+import { SWITCHER_LANGUAGES, getLanguage, loadLocale, saveLocale } from './languages.js'
+
+const $ = (s) => document.querySelector(s)
+const body = document.body
+
+/* ── responsive mode ─────────────────────────────────────── */
+const mq = window.matchMedia('(max-width: 1023px)')
+const isMobile = () => mq.matches
+
+/* Desktop starts EXPANDED; collapse → rail. Mobile starts CLOSED (gone). */
+let rail = false, mopen = false
+function render(){
+  body.classList.toggle('rail', rail && !isMobile())
+  body.classList.toggle('mopen', mopen && isMobile())
+}
+$('#burger').innerHTML = icon('menu')
+$('#appmenu').innerHTML = icon('dots')
+$('#burger').onclick = () => { isMobile() ? (mopen = !mopen) : (rail = !rail); render() }
+$('#scrim').onclick = () => { mopen = false; render() }
+mq.addEventListener('change', () => { mopen = false; render() })
+
+/* ══════════════════════════════════════════════════════════════════════
+   LOCALE — the ONE thing this wrapper owns and hands to every profile.
+   The bundle contract is `profile-config.locale` (ProfileLoader reads it,
+   normalises it, and drives the bundle's i18n global locale). So switching
+   language = re-mounting the active profile with a new locale in its config.
+   No router, no locale URLs, no i18n framework in the wrapper itself.
+   ══════════════════════════════════════════════════════════════════════ */
+let locale = loadLocale()
+
+function applyDir(){
+  // RTL locales flip the whole wrapper, matching dx-life's dir handling.
+  document.documentElement.dir = getLanguage(locale)?.dir === 'rtl' ? 'rtl' : 'ltr'
+}
+
+function drawLang(){
+  const cur = getLanguage(locale)
+  $('#langflag').textContent = cur?.flag || ''
+  $('#langname').textContent = cur?.nativeName || locale
+  // 2-letter code: the compact text fallback when the flag alone is ambiguous
+  $('#langcode').textContent = (cur?.code || locale).toUpperCase()
+  const opts = SWITCHER_LANGUAGES.map(l => `
+    <li role="option" aria-selected="${l.code===locale}">
+      <button data-lang="${l.code}" aria-selected="${l.code===locale}">
+        <span class="flag" aria-hidden="true">${l.flag}</span>
+        <span>${l.nativeName}</span>
+      </button>
+    </li>`).join('')
+  // SAME options in two places: the desktop header pill, and the ⋮ overflow menu
+  // used on mobile. One source, so they can never drift apart.
+  $('#langmenu').innerHTML = opts
+  const inline = $('#langmenu-inline'); if (inline) inline.innerHTML = opts
+  ;[$('#langmenu'), inline].filter(Boolean).forEach(host =>
+    host.querySelectorAll('[data-lang]').forEach(btn =>
+    btn.onclick = () => {
+      const next = btn.dataset.lang
+      closeLang(); closeAppMenu()
+      if (next === locale) return
+      locale = next
+      saveLocale(locale)
+      applyDir()
+      drawLang()
+      paint()          // re-mount so the profile picks up the new locale
+    }))
+}
+function openLang(){ $('#langmenu').hidden = false; $('#langtrigger').setAttribute('aria-expanded','true') }
+function closeLang(){ $('#langmenu').hidden = true; $('#langtrigger').setAttribute('aria-expanded','false') }
+$('#langtrigger').onclick = (e) => {
+  e.stopPropagation()
+  $('#langmenu').hidden ? openLang() : closeLang()
+}
+document.addEventListener('click', (e) => {
+  if (!$('#langsel').contains(e.target)) closeLang()
+  if (!$('.appmenuwrap').contains(e.target)) closeAppMenu()
+})
+
+/* ── The ⋮ overflow menu. It previously did NOTHING; now it is where the
+   language picker lives on mobile, freeing real header space. ── */
+function openAppMenu(){ $('#appmenupanel').hidden = false; $('#appmenu').setAttribute('aria-expanded','true') }
+function closeAppMenu(){ $('#appmenupanel').hidden = true;  $('#appmenu').setAttribute('aria-expanded','false') }
+$('#appmenu').onclick = (e) => {
+  e.stopPropagation()
+  $('#appmenupanel').hidden ? openAppMenu() : closeAppMenu()
+  closeLang()
+}
+
+/* ── the 3 view tabs (Map / Grid / Tree) ─────────────────── */
+const VIEWS = [
+  { id:'map',  label:'Map',  icon:'map'  },
+  { id:'list', label:'List', icon:'list' },   // Tabulator data view (not built yet)
+  { id:'tree', label:'Tree', icon:'tree' },
+]
+let view = 'map'
+// Which profile the tab strip was last drawn FOR, so drawSeg can tell "same profile,
+// user picked a tab" from "profile changed, reset to its first view". Declared with
+// `var`-like hoisting in mind: it is read inside drawSeg, which only ever runs after
+// this module body has executed, so a `let` here is safe (cf. DEFAULT_PROFILE below).
+let segProfile = null
+// The tabs are PER-PROFILE, not a fixed app-wide set. A profile that declares
+// `panes` shows exactly those and no others — upg-100 has a map and a poster wall,
+// so it shows two tabs, not three with a dead one. A profile with no `panes` key
+// falls back to the default VIEWS, so nothing else changes.
+// (Showing a tab for a pane that does not exist is a promise the app cannot keep —
+// the same reasoning as feature-flagging the edge strips off when there is nothing
+// below to scroll to.)
+function viewsForProfile(){
+  // Explicit per-profile view set: a profile may declare exactly which of the app-wide
+  // views (map/list/tree) it offers. One entry => no switcher (drawSeg hides the
+  // "Select View" fieldset). This is the parameterised tab control.
+  const only = PROFILES[active]?.views
+  if (Array.isArray(only) && only.length){
+    const set = VIEWS.filter(v => only.includes(v.id))
+    if (set.length) return set
+  }
+  const declared = PROFILES[active]?.panes
+  if (!Array.isArray(declared) || declared.length < 2) return VIEWS
+  return declared.map(p => ({
+    id: p.id,
+    label: p.label,
+    // Reuse the matching VIEWS icon when the pane id lines up; fall back to the
+    // generic list glyph so a new pane kind never renders icon-less.
+    icon: (VIEWS.find(v => v.id === p.id) || {}).icon || 'list',
+  }))
+}
+
+function drawSeg(){
+  const views = viewsForProfile()
+  // No switcher for a single-view profile — the "Select View" fieldset only earns its
+  // space when there is a choice to make.
+  const _sel = document.querySelector('.viewsel')
+  if (_sel) _sel.style.display = views.length <= 1 ? 'none' : ''
+  // If the active view is not one this profile has (e.g. you were on Tree, then
+  // switched to a two-pane profile), fall back to its first pane.
+  //
+  // ALSO fall back when the profile CHANGED, even if the old view id happens to exist
+  // here too. `view` is one global across profiles and 'map' is a valid id in nearly
+  // every one, so an id-existence test alone let a stale 'map' survive a switch into a
+  // profile whose FIRST pane is not the map (upg-100-list leads with Prayer Resources).
+  // The column always opens at scroll position 0, so the strip then painted a pressed
+  // tab that did not match the pane on screen. A new profile opens on its own first view.
+  if (!views.some(v => v.id === view) || segProfile !== active) view = views[0].id
+  segProfile = active
+  $('#seg').innerHTML = views.map(v =>
+    `<button data-v="${v.id}" aria-pressed="${v.id===view}">${icon(v.icon)}<span>${v.label}</span></button>`
+  ).join('')
+  $('#seg').querySelectorAll('button').forEach(b =>
+    b.onclick = () => {
+      view = b.dataset.v
+      drawSeg()
+      // PANE PROFILE: the tab is a NAVIGATION control, not a remount — the target
+      // pane is already alive in the same scrolling column, so animate to it and
+      // do NOT tear the map down. Any other profile keeps the original behaviour.
+      if (live?.column){ live.column.scrollTo(view); return }
+      paint()
+    })
+}
+
+/* ── sidebar: sections (always open) + folders (collapsible) + loose items ── */
+const target = isMobile() ? 'mobile' : 'desktop'
+const tree = navForTarget(NAV, target)
+const open = new Map(tree.filter(n=>n.kind==='folder').map(n=>[n.id, !!n.open]))
+// The profile shown on first load (the prayer map is the first map a reader sees).
+// Declared HERE, above its first use — a `const` further down the module would be in
+// the temporal dead zone at this point and throw.
+const DEFAULT_PROFILE = 'prayer-progress'
+
+// Which profile is showing is URL STATE, not just a variable — otherwise a reload
+// always snaps back to the default (a reload used to lose which map was open).
+// The hash is used rather than a path so the app stays drop-portable: it works
+// identically on file://, a CDN subpath, Railway, and inside Capacitor, none of
+// which can be relied on to rewrite server-side routes.
+function profileFromHash(){
+  const id = decodeURIComponent((location.hash || '').replace(/^#\/?/, '')).trim()
+  return PROFILES[id] ? id : DEFAULT_PROFILE
+}
+// NOTE: seeded with the default here and RESOLVED from the hash at boot (bottom of
+// this module). profileFromHash() reads PROFILES, which is declared further down —
+// calling it at this point would hit the temporal dead zone and throw, blanking the
+// sidebar. That exact bug has already been shipped once; do not "simplify" this back.
+let active = DEFAULT_PROFILE
+
+function rowHTML(n, cur){
+  return `<button class="row" data-id="${n.id}" aria-current="${n.id===cur}">
+    ${icon(n.icon)}<span class="lbl">${n.label}</span><span class="mini">${n.label.split(' ')[0]}</span>${n.badge ? `<span class="badge">${n.badge}</span>` : (n.target==='desktop' ? '<span class="badge">desktop</span>' : '')}
+  </button>`
+}
+function drawSide(){
+  let h = ''
+  // The `sep` is a divider BETWEEN groups — the first group must not carry a
+  // leading one (a rule under the header with nothing above it to divide).
+  let firstGroup = true
+  for (const n of tree){
+    if (n.kind === 'item'){ h += rowHTML(n, active); firstGroup = false; continue }
+    if (n.kind === 'section'){
+      if (!firstGroup) h += '<div class="sep"></div>'
+      h += `<div class="sect-hdr"><span>${n.label}</span></div>`
+      firstGroup = false
+      // A section's children may be plain items OR a nested 'subgroup'
+      // (e.g. Laborer Mobilization > Research > Research Map).
+      for (const c of n.children){
+        if (c.kind === 'subgroup'){
+          h += `<div class="subgrp-hdr"><span>${c.label}</span></div>
+                <div class="subgrp">${c.children.map(g => rowHTML(g, active)).join('')}</div>`
+        } else {
+          h += rowHTML(c, active)
+        }
+      }
+      continue
+    }
+    if (n.kind === 'folder'){
+      const o = open.get(n.id)
+      if (!firstGroup) h += '<div class="sep"></div>'
+      firstGroup = false
+      h += `<button class="row" data-folder="${n.id}">
+          ${icon(n.icon)}<span class="lbl">${n.label}</span>
+          ${/* desktop badge removed — the folder label already conveys it */''}
+          <span class="chev ${o?'open':''}">${icon('chevron')}</span>
+        </button>
+        <div class="kids" ${o?'':'hidden'}>${n.children.map(c=>rowHTML(c,active)).join('')}</div>`
+    }
+  }
+  $('#side-nav').innerHTML = h
+  $('#side-nav').querySelectorAll('[data-folder]').forEach(b =>
+    b.onclick = () => { open.set(b.dataset.folder, !open.get(b.dataset.folder)); drawSide() })
+  $('#side-nav').querySelectorAll('[data-id]').forEach(b =>
+    b.onclick = () => {
+      active = b.dataset.id
+      setHash(active)                             // survive reload + make the view shareable
+      if (isMobile()){ mopen = false; render() }   // mobile: pick → drawer closes
+      drawSeg()          // tab set is PER-PROFILE — redraw it for the new one
+      drawSide(); paint()
+    })
+}
+
+/* ── main pane: placeholder standing in for the mounted app-profile ── */
+function label(id){
+  for (const n of tree){
+    if (n.id === id) return n.label
+    const c = n.children?.find(x => x.id === id)
+    if (c) return c.label
+  }
+  return id
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   PROFILE REGISTRY — which plugin-designs are wired to a real bundle.
+   `tag`      the custom element the bundle registers
+   `src`      the built bundle (self-contained, relative → drop-portable)
+   `config`   the profile-config JSON the element takes
+   Anything not listed here still renders the placeholder card.
+   ══════════════════════════════════════════════════════════════════════ */
+const PROFILES = {
+  // ⭐ PRAYER PROGRESS = the doxa-simple-map bundle's PRAYER instance.
+  // CORRECTED 2026-07-30: this previously pointed at the RESEARCH-map bundle,
+  // which was architecturally wrong — the research map is a 6-tab research tool
+  // and belongs under the Research section, not Prayer Mobilization.
+  // simple-map ships three named single-tab instances (prayer / engagement /
+  // adoption) declared in plugin-designs/doxa-simple-map/simple-map.instances.json.
+  // The 'prayer' one is titled "Prayer Map" and is the right map for this slot.
+  // NOTE its element tag is <doxa-map>, NOT <doxa-simple-map> — the bundle
+  // registers both, and the generated instance pages use <doxa-map>. Config is
+  // copied from that page's BASE_CONFIG so we match the shipped contract exactly.
+  // NOTE: each entry's `src` is mirrored in the DEEP-LINK PRELOAD map at the top
+  // of this file — update both when adding/moving a bundle.
+  'prayer-progress': {
+    tag:    'doxa-map',
+    src:    './doxa-maps/doxa-simple-map/doxa-simple-map.js',
+    views:  ['map'],   // prayer map is one view — no Map/List/Tree sub-tabs
+    // ⚠️ colorStrategy MUST be 'prayerProgress', NOT 'prayer'.
+    // The strategy registry derives its keys from FILENAMES via import.meta.glob:
+    // library/colors/prayer-progress.js -> 'prayerProgress'. There is no prayer.js
+    // anywhere (nor a profile-local one in plugin-designs/doxa-simple-map/src/colors/),
+    // so 'prayer' does not resolve — and getColorStrategy() SILENTLY FALLS BACK to
+    // languageFamily. No error, just a completely different palette, which is why
+    // this map lost the white-ringed "glowing" prayer pins.
+    // simple-map.instances.json ships 'prayer' and has the same latent bug; we pass
+    // the correct key explicitly here rather than depend on that file.
+    config: { profile:'doxa-simple-map', instanceId:'embed-prayer', dataSource:'pray-tools',
+              tabs:[{ id:'prayer', colorStrategy:'prayerProgress', legend:'prayer', popup:'prayer' }] },
+  },
+  // MY UPG 100 LIST — the personal list-of-100 profile. Tag + config read off its
+  // own generated page (BASE_CONFIG), not guessed: profile 'upg-100-list' (NOT the
+  // folder name 'my-upg-100-list'), and the element tag is my-upg-100-list-map.
+  'upg-100-list': {
+    tag:    'my-upg-100-list-map',
+    src:    './doxa-maps/my-upg-100-list/my-upg-100-list.js',
+    config: { profile:'upg-100-list', dataSource:'pray-tools', instanceId:'wrapper-upg-100' },
+    // PANES — this profile is a FAMILY of views over one subject, laid out on a
+    // grid. `at` is [row, col]; the grid is a DEFAULT of 2×2 but is neither fixed
+    // nor a ceiling — a profile declares only the panes it actually has, so a
+    // map-only profile (no `panes` key at all) stays exactly as it was.
+    //
+    // MOTION CONTRACT (the core design decision):
+    //   • VERTICAL neighbours = ONE SCROLLABLE PAGE — both panes live at once.
+    //   • HORIZONTAL movement = a FLY-TO — the target column loads on arrival.
+    // At most TWO panes are ever alive, which is what preserves the WebGL budget
+    // that `teardown()` has always protected.
+    // Each pane may carry its own `config` — a SIBLING PROFILE in the same bundle
+    // (index.js does import.meta.glob('./*.vue'), so poster-wall.vue registers
+    // itself). Same tag, same src, different `profile` value: one download serves
+    // both panes and they share data/clusters.json rather than fetching twice.
+    // RESOURCES FIRST, MAP SECOND (2026-09-23). The first tab is the prayer resources,
+    // not the map: that pane already explains what a UPG-100 list IS at the top and
+    // shows the posters, so a new user needs no explanation for it; a choropleth of
+    // zones does. The general principle: maps do not have to be primary. Lists and
+    // grids can be the primary view and maps a secondary one that readers transition
+    // into. Familiarity is the on-ramp.
+    //
+    // Both panes carry an EXPLICIT `config.profile`, including the map. The mount code
+    // used to rely on "pane 0 is the map" positionally — reordering under that rule
+    // would have mounted the map element into the poster pane. Naming the profile on
+    // every pane is what makes the order data rather than convention.
+    panes: [
+      { id:'list', label:'Prayer Resources', at:[0,0],
+        config: { profile:'poster-wall', instanceId:'wrapper-upg-100' } },
+      { id:'map',  label:'Map',              at:[1,0],
+        config: { profile:'upg-100-list', instanceId:'wrapper-upg-100' } },
+    ],
+  },
+  // COUNTRY POSTERS — one poster per country, the same shape as upg-100-list:
+  // a map pane and a poster pane, two SIBLING PROFILES in one bundle.
+  // The nav has carried this id since 2026-07-29 as a placeholder card; this entry
+  // is what turns it into a real app.
+  //
+  // Tag + profile names come from the bundle itself, NOT guessed:
+  //   folder      plugin-designs/country-posters/        -> src below
+  //   element     <country-posters-map>                 (index.js customElements.define)
+  //   profiles    countries-map.vue / country-poster-wall.vue
+  // The profile value is the .vue FILENAME, which is why 'countries-map' is right
+  // here even though the folder is 'country-posters' — the same trap as
+  // upg-100-list vs my-upg-100-list above.
+  'countries-map': {
+    tag:    'country-posters-map',
+    src:    './doxa-maps/country-posters/country-posters.js',
+    config: { profile:'countries-map', dataSource:'pray-tools', instanceId:'wrapper-countries' },
+    // No "Posters below ↓" pill — the header's Map | Posters switcher already says
+    // the second pane exists, so the pill is a redundant control sitting over the map.
+    paneHint: false,
+    panes: [
+      { id:'map',    label:'Map',     at:[0,0] },
+      { id:'poster', label:'Posters', at:[1,0],
+        config: { profile:'country-poster-wall', instanceId:'wrapper-countries' } },
+    ],
+  },
+  // KEY CITIES — where the unengaged people groups live. The nav has carried
+  // 'key-city-posters' as a placeholder since 2026-07-29; this makes it real.
+  'key-city-posters': {
+    tag:    'key-cities-map',
+    src:    './doxa-maps/key-cities/key-cities.js',
+    config: { profile:'cities-map', instanceId:'wrapper-key-cities' },
+    paneHint: false,
+    panes: [
+      { id:'map',    label:'Map',     at:[0,0] },
+      { id:'list',   label:'Cities',  at:[1,0],
+        config: { profile:'cities-list', instanceId:'wrapper-key-cities' } },
+      { id:'poster', label:'Posters', at:[2,0],
+        config: { profile:'city-poster-wall', instanceId:'wrapper-key-cities' } },
+      { id:'data',   label:'Data',    at:[3,0],
+        config: { profile:'data-tables', instanceId:'wrapper-key-cities' } },
+    ],
+  },
+  // CITIES WITH INTERNET — connectivity where the unengaged people groups live.
+  // The nav has carried this id as a placeholder since 2026-07-29; this entry is
+  // what turns it into a real app. `profile` is the .vue FILENAME, not the folder.
+  // Ships WITH `panes` (map/list/operators below) — the pane grid is live.
+  // ALL PEOPLE GROUPS — every group on earth (peoplegroups.org) around the DOXA
+  // set: black doxa · red frontier · yellow unreached · green reached. Replaces
+  // the long-standing placeholder.
+  'all-people-groups': {
+    tag:    'all-people-groups',
+    src:    './doxa-maps/all-people-groups/all-people-groups.js',
+    config: { profile:'all-people-groups', instanceId:'wrapper-all-people-groups' },
+  },
+
+  'cities-with-internet': {
+    tag:    'cities-internet-map',
+    src:    './doxa-maps/cities-internet/cities-internet.js',
+    config: { profile:'connectivity-map', instanceId:'wrapper-cities-internet' },
+    paneHint: false,
+    panes: [
+      { id:'map',     label:'Map',     at:[0,0] },
+      { id:'summary', label:'Summary', at:[1,0],
+        config: { profile:'connectivity-list', instanceId:'wrapper-cities-internet' } },
+      { id:'tables',  label:'Data',    at:[2,0],
+        config: { profile:'data-tables', instanceId:'wrapper-cities-internet' } },
+    ],
+  },
+  // GOSPEL RESOURCES — which DX languages have scripture, and which have none.
+  // Data is the eBible×DX join (public, no key). GRN audio/film rows are `unknown`
+  // until the GRN key lands — see apps/gospel-resources/BLOCKER-grn-api-key.md.
+  'gospel-resources': {
+    tag:    'gospel-resources-map',
+    src:    './doxa-maps/gospel-resources/gospel-resources.js',
+    // MAP IS PANE 0. The gospel resources need a map first, ahead of the lists.
+    // The map is the app's ONE WebGL pane;
+    // the list and tables below it are DOM.
+    config: { profile:'resources-map', instanceId:'wrapper-gospel-resources' },
+    paneHint: false,
+    panes: [
+      { id:'map',     label:'Map',     at:[0,0] },
+      { id:'summary', label:'Summary', at:[1,0],
+        config: { profile:'resources-list', instanceId:'wrapper-gospel-resources' } },
+      { id:'tables',  label:'Data',    at:[2,0],
+        config: { profile:'data-tables', instanceId:'wrapper-gospel-resources' } },
+      { id:'charts',  label:'Charts',  at:[3,0],
+        config: { profile:'charts', instanceId:'wrapper-gospel-resources' } },
+    ],
+  },
+  // The RESEARCH map — the full multi-tab research tool, under Research.
+  'research-map': {
+    tag:    'doxa-research-map',
+    src:    './doxa-maps/doxa-research-map/doxa-research-map.js',
+    views:  ['map'],   // research map is one view — no Map/List/Tree sub-tabs
+    config: { profile:'research-map', dataSource:'pray-tools', instanceId:'wrapper-research' },
+  },
+  // VENDORED PRE-BUILT BUNDLES (public/external/): self-contained prebuilt IIFEs.
+  // Read token+API from the shell like native bundles; fetch /api/people-groups.
+  // Under public/external/ so `bun run build` (wipes public/doxa-maps/) skips them.
+  'research-dashboard': {
+    tag:    'research-dashboard-map',
+    src:    './external/research-dashboard-map.js',
+    views:  ['map'],   // one view — hide the Map/List/Tree switcher for the dashboard
+    config: { profile:'research-dashboard', dataSource:'pray-tools', instanceId:'wrapper-research-dashboard' },
+  },
+  // PRODUCTION UPG Neighbor = the focused lang-cluster MAP: all unreached plotted and
+  // grouped into language clusters by geography, each red cluster ringed by the GREEN
+  // reached neighbours matching its language — the send-strategy-by-language-and-geography
+  // view. Clicking a cluster drills into the flower view.
+  'upg-neighbor': {
+    tag:    'lang-cluster',
+    src:    './external/upg-neighbor.js',
+    views:  ['map'],
+    config: { profile:'lang-cluster', dataSource:'pray-tools', instanceId:'wrapper-upg-neighbor' },
+  },
+  // EXPERIMENTAL UPG Neighbor = the unified hub with ALL lenses (cockpit / flower /
+  // lang-cluster / send) and its own internal switcher. Same bundle, different element.
+  'upg-neighbor-lab': {
+    tag:    'upg-neighbors',
+    src:    './external/upg-neighbor.js',
+    views:  ['map'],
+    config: { profile:'upg-neighbors', dataSource:'pray-tools', instanceId:'wrapper-upg-neighbor-lab' },
+  },
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   MOUNT REGISTRY — enforces the teardown contract centrally (not per widget).
+   Only ONE live profile at a time, so only one WebGL context is held.
+   Research findings applied:
+     · NO KeepAlive/caching — a cached element never unmounts and leaks contexts
+     · teardown = remove the element from the DOM → its disconnectedCallback runs
+     · browsers cap WebGL at ~16 contexts (fewer on mobile); silent blanking on overflow
+   ══════════════════════════════════════════════════════════════════════ */
+const loaded = new Set()
+let live = null   // { el, id }
+
+// Pane-grid CSS ships with the nested layout, so the two layouts stay separable.
+{
+  const st = document.createElement('style')
+  st.textContent = PANE_GRID_STYLES
+  document.head.appendChild(st)
+}
+
+function teardown(){
+  if (!live) return
+  // Removing the element fires its disconnectedCallback, where the bundle
+  // disposes its own map (map.remove() releases the WebGL context in GL JS v3).
+  // Remove EVERY pane element — a pane column mounts one per pane, and each one's
+  // disconnectedCallback is what releases its resources (a map's WebGL context).
+  for (const e of (live.els || [live.el])) { try { e.remove() } catch(_){} }
+  // Tear the pane column down too — it owns DOM and a scroll listener that would
+  // otherwise leak on every profile swap.
+  if (live.column) { try { live.column.destroy() } catch(_){} }
+  live = null
+}
+
+async function mount(id){
+  const spec = PROFILES[id]
+  teardown()                                  // always release before acquiring
+  const stage = $('#stage'), slot = $('#slot')
+
+  // Only the MAP view mounts a live map bundle. Switching to List/Tree tears the
+  // map down (releasing its WebGL context) — the view tabs ARE a resource gate.
+  // RESOURCE GATE — unchanged for single-mount profiles: leaving Map tears the map
+  // down to release its WebGL context. But a PANE profile keeps its column alive:
+  // there the non-map view is a SIBLING PANE in the same scrolling page, not a
+  // replacement, and the two-pane cap already bounds the context budget.
+  const isPaneProfile = Array.isArray(spec?.panes) && spec.panes.length > 1
+  if (view !== 'map' && !isPaneProfile){ stage.classList.remove('live'); paintOtherView(); return }
+
+  if (!spec){ stage.classList.remove('live'); paintPlaceholder(); return }
+
+  stage.classList.add('live')
+  slot.innerHTML = '<div class="loading">Loading map…</div>'
+
+  try{
+    if (!loaded.has(spec.src)){
+      await import(spec.src)                  // side-effect: registers the tag
+      loaded.add(spec.src)
+    }
+    await customElements.whenDefined(spec.tag)
+
+    const el = document.createElement(spec.tag)
+    // ⚠️ THIS BUNDLE'S CONTRACT IS THE **ATTRIBUTE**: ProfileLoader JSON.parse()s
+    // the `profile-config` attribute. Do NOT also assign el.profileConfig — Vue's
+    // custom-element wrapper reflects the property back onto the attribute using
+    // String(obj), which overwrites valid JSON with an unquoted/`[object Object]`
+    // form and trips "[ProfileLoader] Invalid profile-config JSON".
+    // (The general rule from the research — pass objects as DOM *properties* —
+    //  applies to elements whose contract IS a property. Here it is the attribute.)
+    // The Mapbox token goes INSIDE the profile-config JSON as `tk` (the bundle's
+    // token ladder reads it there) — not as a separate attribute.
+    const cfg = { ...spec.config }
+    if (SHELL_TOKEN) cfg.tk = SHELL_TOKEN
+    // THE LOCALE HAND-OFF: ProfileLoader reads profile-config.locale, normalises it
+    // and drives the bundle's i18n from it. This one field is the whole contract.
+    cfg.locale = locale
+    // ASSET BASE: bundles fetch tables/vendor (Tabulator) from `${assetsBase}/...`. Served under
+    // a subpath (e.g. /plugin-assets/doxa-maps-spa/), a bare '/assets' or './assets' misresolves,
+    // so hand each bundle an ABSOLUTE base derived from THIS shell's own document — correct at any depth.
+    if (!cfg.assetsBase) cfg.assetsBase = new URL('assets', document.baseURI).href.replace(/\/+$/, '')
+    // QA corner widget ON for our own SPA surface (opt-in flag; off for partner embeds).
+    cfg.qa = (new URLSearchParams(location.search).get('qa') === '1') /* QA opt-in via ?qa=1; widget exists only in DOXA_QA=1 builds */; cfg.qaLabel = spec.label || cfg.profile
+    el.setAttribute('profile-config', JSON.stringify(cfg))
+
+    // ── PANE COLUMN vs SINGLE MOUNT ─────────────────────────────────────────
+    // If the profile declares 2+ vertical panes, build the scrollable column (the
+    // pane-wrapper layout, nested inside this one) and mount the live element into
+    // its FIRST pane. Otherwise keep the original single-mount behaviour EXACTLY —
+    // a profile with no `panes` key is untouched by any of this.
+    slot.innerHTML = ''
+    const column = buildPaneColumn(spec, { host: slot })
+    if (column){
+      // The element already built above goes to the pane that ASKED FOR ITS PROFILE;
+      // every OTHER pane that declares its own `config` gets a sibling element from
+      // the SAME bundle (same tag, same src — one download) with a different
+      // `profile`. A pane with no config keeps its placeholder, so an unbuilt view
+      // never blocks the column.
+      //
+      // WHY BY PROFILE, NOT BY INDEX. This used to be `panes[0]`, encoding "the map is
+      // pane 0" as a positional convention. That silently breaks the moment a profile
+      // wants a non-map pane first — upg-100-list now leads with its poster wall — and
+      // the failure is the worst kind: the MAP element mounts into the POSTER pane and
+      // both panes render the map. Panes that name no profile cannot match, so every
+      // other multi-pane profile still lands on pane 0 exactly as before.
+      const hostPane =
+        column.panes.find(p => p.config?.profile && p.config.profile === spec.config?.profile)
+        || column.panes[0]
+      column.mountEl(hostPane.id)?.appendChild(el)
+      const extras = [el]
+      for (const pane of column.panes){
+        if (pane.id === hostPane.id) continue
+        if (!pane.config) continue
+        const pel = document.createElement(spec.tag)
+        const pcfg = { ...spec.config, ...pane.config }
+        if (SHELL_TOKEN) pcfg.tk = SHELL_TOKEN
+        pcfg.locale = locale
+        if (!pcfg.assetsBase) pcfg.assetsBase = new URL('assets', document.baseURI).href.replace(/\/+$/, '')
+        pcfg.qa = (new URLSearchParams(location.search).get('qa') === '1') /* QA opt-in via ?qa=1; widget exists only in DOXA_QA=1 builds */; pcfg.qaLabel = spec.label || pcfg.profile
+        pel.setAttribute('profile-config', JSON.stringify(pcfg))
+        column.mountEl(pane.id)?.appendChild(pel)
+        extras.push(pel)
+      }
+      live = { el, id, column, els: extras }
+      // Keep the View fieldset in sync with where the user has scrolled to, so the
+      // tabs are a readout as well as a control.
+      column.onScroll(() => {
+        const cur = column.current()
+        if (cur && cur !== view){ view = cur; drawSeg() }
+      })
+
+      // ── CROSS-PANE ACTION: "Show on map" ────────────────────────────────────
+      // The poster wall dispatches a window CustomEvent when a card's "Show on
+      // map" is clicked, but nothing ever listened — the button fired into the
+      // void. The two profiles are separate custom elements in separate shadow
+      // roots, so a window event is the right seam; only the sending half existed.
+      //
+      // The shell owns the pane column, so it is the natural listener: scroll to
+      // the MAP pane, then hand the selection down to the map element. Scoped by
+      // instanceId so several embeds on one page never cross-talk.
+      //
+      // THE EVENT NAME IS PER-APP, not one global constant. Each poster wall
+      // dispatches its own scoped name so two walls on one page cannot drive each
+      // other's map. A profile declares it via `showOnMapEvent`; the 100-list keeps
+      // its original name so nothing about that app changes.
+      const SHOW_EVENTS = ['doxa-upg-100-list:show-on-map', 'doxa-country-posters:show-on-map']
+      if (column._showOnMap) {
+        for (const evName of SHOW_EVENTS) window.removeEventListener(evName, column._showOnMap)
+      }
+      column._showOnMap = (ev) => {
+        const d = ev?.detail || {}
+        // The map is the pane the SHELL-BUILT element mounted into — resolved by
+        // profile, not by position. "Pane 0 is the map" stopped being true when
+        // upg-100-list put its poster wall first; under the old rule "Show on map"
+        // scrolled to the poster wall you clicked FROM, which looks like a dead button.
+        const mapPaneId = hostPane?.id || column.panes[0]?.id
+        if (mapPaneId) column.scrollTo(mapPaneId)
+        // Forward to every live element in this column; the map profile picks it
+        // up and selects the zone. A DESELECT arrives as listId === null, which
+        // is what lets the wall's green highlight be toggled off.
+        for (const target of (live?.els || [el])) {
+          try {
+            target.dispatchEvent(new CustomEvent('doxa:select-zone', {
+              detail: { listId: d.listId ?? null, label: d.label ?? null },
+              bubbles: false,
+            }))
+          } catch (_) { /* an element still booting simply misses it */ }
+        }
+      }
+      for (const evName of SHOW_EVENTS) window.addEventListener(evName, column._showOnMap)
+    } else {
+      slot.appendChild(el)
+      live = { el, id }
+    }
+  }catch(err){
+    slot.innerHTML =
+      `<div class="loading">Could not load <code>${spec.tag}</code><br>
+       <small>${String(err.message || err)}</small></div>`
+    console.error('[app-wrapper] mount failed:', err)
+  }
+}
+
+function paintPlaceholder(){
+  $('#pt').textContent = label(active)
+  $('#pd').innerHTML =
+    `No bundle wired for <code>${active}</code> yet — this pane is where its
+     app-profile custom element will mount.<br><br>
+     <b>view:</b> <code>${view}</code> &nbsp;·&nbsp; <b>target:</b> <code>${target}</code>
+     &nbsp;·&nbsp; <b>sidebar:</b> <code>${isMobile() ? (mopen?'overlay':'hidden') : (rail?'rail':'expanded')}</code>`
+}
+
+/* LIST view → the Tabulator data table (not built yet).
+   TREE view → the semantic tree (not built yet). */
+function paintOtherView(){
+  const v = VIEWS.find(x => x.id === view)
+  $('#pt').textContent = `${label(active)} — ${v.label}`
+  $('#pd').innerHTML = view === 'list'
+    ? `The <b>List</b> view will render this profile's data as a
+       <b>Tabulator</b> table — sortable/filterable rows over the same dataset the
+       map plots. <i>Not built out yet.</i><br><br>
+       Note: switching off <b>Map</b> tears the map down, releasing its WebGL
+       context — the view tabs double as the resource gate.`
+    : `The <b>Tree</b> view will render this profile's data as a semantic
+       hierarchy (region → country → people group). <i>Not built out yet.</i>`
+}
+
+function paint(){ mount(active) }
+
+// Write the hash WITHOUT firing hashchange back at us (replaceState is silent),
+// so selecting a map doesn't re-enter the boot path and remount the bundle twice.
+function setHash(id){
+  const h = '#/' + id
+  if (location.hash !== h) history.replaceState(null, '', h)
+}
+
+// Resolve the deep-link BEFORE the first draw so the sidebar highlights the right
+// row and the correct bundle mounts once (PROFILES is defined by now — see the TDZ
+// note at the DEFAULT_PROFILE declaration).
+active = profileFromHash()
+setHash(active)                                  // normalise "" / a bad id → a real hash
+
+// Browser back/forward, and hand-edited URLs, should change the map.
+addEventListener('hashchange', () => {
+  const next = profileFromHash()
+  if (next === active) return                    // no-op guard: never remount for nothing
+  active = next
+  drawSeg()            // tab set is PER-PROFILE — redraw it for the new one
+  drawSide(); paint()
+})
+
+applyDir(); drawLang(); drawSeg(); drawSide(); render(); paint()
+</script>
+</body>
+</html>

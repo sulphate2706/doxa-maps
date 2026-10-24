@@ -1,0 +1,15 @@
+{
+  "title": "Pôsteres «Abençoe a Índia»",
+  "rangeBadge60x96": "Emblemas numerados · 60×96 (5×8 pés)",
+  "count": "{count} grupos populacionais",
+  "desktopOnly": "Apenas no computador por enquanto — ainda não se comprovou que este pôster grande imprime com segurança num telemóvel.",
+  "experimental": "experimental",
+  "intro": "Cada grupo populacional da Índia numa única folha imprimível, gerada ao vivo e mostrada como as suas folhas imprimíveis com as tiras de cola — como a vista Tamanhos do Poster Design mostra os formatos grandes.",
+  "print": "Imprimir este pôster",
+  "attempt": "Emblemas numerados · 60×96 (5×8 pés) · 3 folhas",
+  "stat": "{groups} grupos · {badges} emblemas numerados · 0 sobreposições",
+  "generating": "A gerar o pôster a partir dos dados ao vivo…",
+  "error": "Não foi possível gerar o pôster: {msg}",
+  "photos": "Apenas {real} de {total} grupos da Índia têm foto nos dados; um documento impresso leva-as, uma imagem plana não. Este design numerado imprime os nomes sem fotos para que cada grupo seja igual e legível.",
+  "posterHeader": "Abençoe a Índia em nome de Jesus"
+}

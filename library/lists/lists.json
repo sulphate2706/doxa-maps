@@ -1,0 +1,46 @@
+{
+  "_about": "The people-group LISTS a map can be asked to show (profile-config `list`, ?list=, window.MAP_LIST; see peopleGroupList.js). Each list is a FILTER, never a hand-kept roster: `source: doxa` is DOXA's live list as the API serves it; `source: imb` is a filter over the IMB / peoplegroups.org dataset in data/people-groups/people_groups.csv, using its own columns (LostnessPriority, Population, EngagementStatus). library/scripts/people-groups/build-lists.mjs turns each imb filter into data/people-groups/lists/<id>.json. TIER A (today): a map shows the DOXA groups that belong to the list, because the DOXA API is where every map's rows and prayer fields come from. TIER B (later, per map): the list's groups that DOXA does not carry. Definitions and counts: library/lists/README.md. LABELS HERE ARE THE ENGLISH FALLBACK ONLY: every locale's label and definition live in library/i18n/locales/<lc>/lists.json (read them with listLabel / listDefinition), and check:list-prop-unit fails if the English catalogue and this file disagree.",
+  "default": "doxa",
+  "lists": [
+    {
+      "id": "doxa",
+      "aliases": ["2000", "project-2000"],
+      "label": "Project 2000: DOXA's people groups",
+      "definition": "The people groups DOXA serves, as its live list gives them",
+      "source": "doxa",
+      "filter": null
+    },
+    {
+      "id": "unreached",
+      "aliases": ["7000", "project-7000"],
+      "label": "Project 7000: unreached people groups",
+      "definition": "IMB Lostness Priority 0-2 (Frontier, Pioneer or Expanding Unreached: under 2% evangelical)",
+      "source": "imb",
+      "filter": { "lostness": [0, 1, 2] }
+    },
+    {
+      "id": "frontier",
+      "aliases": ["4700", "project-4700"],
+      "label": "Project 4700: frontier people groups",
+      "definition": "IMB Lostness Priority 0 (Frontier Unreached: 0.1% evangelical or less)",
+      "source": "imb",
+      "filter": { "lostness": [0] }
+    },
+    {
+      "id": "frontier-500k",
+      "aliases": ["700", "project-700"],
+      "label": "Project 700: frontier people groups of 500,000 or more",
+      "definition": "IMB Lostness Priority 0 and Population of at least 500,000",
+      "source": "imb",
+      "filter": { "lostness": [0], "minPopulation": 500000 }
+    },
+    {
+      "id": "unengaged",
+      "aliases": [],
+      "label": "Unengaged unreached people groups",
+      "definition": "IMB Lostness Priority 0-2 and Engagement Status Unengaged",
+      "source": "imb",
+      "filter": { "lostness": [0, 1, 2], "engagement": ["Unengaged"] }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  { "slug": "toy-alpha",   "name": "Alpha People",   "country_code": "AAA", "country_code_label": "Toyland",  "population": 1000, "religion": "SYN", "religion_label": "Synthetic", "primary_language_label": "Toyish",  "imb_gsec": 1 },
+  { "slug": "toy-bravo",   "name": "Bravo People",   "country_code": "AAA", "country_code_label": "Toyland",  "population": 2000, "religion": "SYN", "religion_label": "Synthetic", "primary_language_label": "Toyish",  "imb_gsec": 2 },
+  { "slug": "toy-charlie", "name": "Charlie People", "country_code": "BBB", "country_code_label": "Boxland",  "population": 3000, "religion": "SYN", "religion_label": "Synthetic", "primary_language_label": "Boxish",  "imb_gsec": 0 },
+  { "slug": "toy-delta",   "name": "Delta People",   "country_code": "BBB", "country_code_label": "Boxland",  "population": 4000, "religion": "SYN", "religion_label": "Synthetic", "primary_language_label": "Boxish",  "imb_gsec": 4 },
+  { "slug": "toy-echo",    "name": "Echo People",    "country_code": "AAA", "country_code_label": "Toyland",  "population": 5000, "religion": "SYN", "religion_label": "Synthetic", "primary_language_label": "Toyish",  "imb_gsec": 6 },
+  { "slug": "toy-foxtrot", "name": "Foxtrot People", "country_code": "AAA", "country_code_label": "Toyland",  "population": 6000, "religion": "SYN", "religion_label": "Synthetic", "primary_language_label": "Toyish",  "imb_gsec": 3 }
+]

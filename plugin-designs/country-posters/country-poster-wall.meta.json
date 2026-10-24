@@ -1,0 +1,12 @@
+{
+  "type": "single",
+  "label": "Country Posters — poster wall",
+  "note": "The printable poster wall pane of the Country Posters element (country-posters-mfe composes it); also embeddable alone. profile-config `countries` (ISO-3 list or {code,name,count} records) or `region` (a WAGF region label) shows only those, flat, under a host's own region heading (DX Life's /regions, 2026-09-30); without them the wall is unchanged.",
+  "posterDesign": {
+    "family": "countryPoster",
+    "name": "country-poster.letter",
+    "size": "letter",
+    "mobileFriendly": true,
+    "labelKey": "tabs.countryPosters"
+  }
+}

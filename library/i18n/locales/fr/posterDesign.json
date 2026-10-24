@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "Afficher tous les détails",
+  "showFullDetailsAria": "Afficher tous les détails de {label}",
+  "tab": {
+    "styles": "Styles",
+    "sizes": "Formats"
+  },
+  "styles": {
+    "heading": "Styles d'affiche",
+    "intro": "Tous les modèles d'affiche au même endroit, dessinés depuis la bibliothèque avec des données d'exemple. Chaque carte porte le nom de sa configuration, pour que vous puissiez demander exactement celle-ci à un agent."
+  },
+  "sizes": {
+    "heading": "Formats d'affiche",
+    "intro": "Tous les formats d'impression d'une affiche, dessinés à l'échelle. Les grands formats s'impriment sur plusieurs feuilles qui se chevauchent au mur ; la bande rouge indique où coller la feuille suivante.",
+    "lineup": "Tous les formats côte à côte, à l'échelle",
+    "paper": "Papier d'imprimante standard",
+    "paperLetter": "Lettre US, 8,5 × 11 in",
+    "paperA4": "A4, 210 × 297 mm",
+    "dimsFt": "{w} × {h} ft",
+    "dimsIn": "{w} × {h} in",
+    "dimsInOne": "{v} in",
+    "rowSheets": "Feuilles",
+    "rowSheet": "Chaque feuille",
+    "rowOverlap": "Chevauchement collé",
+    "rowPhotos": "Photos à côté des noms",
+    "rowPrint": "Impression",
+    "yes": "Oui",
+    "no": "Non",
+    "printHome": "N'importe quelle imprimante",
+    "printShop": "Un imprimeur (un PDF, une page par feuille)",
+    "layoutNote": "Les feuilles montrent la mise en page de l'affiche pays de 3 × 3 ft à chaque format : l'en-tête, la carte, les noms, le tableau et le pied avec l'Écriture. L'affiche dessinée à chaque format apparaîtra dans Styles dès qu'elle sera disponible.",
+    "sideLanes": "{dims}, colonnes latérales",
+    "packetPage1": "{paper} (page 1 du dossier de prière)",
+    "panels": "{dims}, panneaux : {n}",
+    "anySize": "Toute taille du tableau de tailles commun"
+  },
+  "family": {
+    "mapSheet": "Feuilles de carte",
+    "packet": "Dossier de prière",
+    "cards": "Cartes de prière",
+    "wall": "Panneaux muraux",
+    "mapPrint": "Impression de la carte",
+    "plugins": "D’autres plugins",
+    "experimental": "Expérimentaux (en cours)",
+    "upgZone": "Affiches de zones UPG100"
+  },
+  "tpl": {
+    "mapSheetCountry": "Feuille de carte du pays",
+    "mapSheetPacketPage": "Page de carte du dossier",
+    "packetFull": "Dossier de prière, complet",
+    "packetLightweight": "Dossier de prière, allégé",
+    "cards": "Cartes de prière",
+    "blessPanels": "Panneaux du mur Bénir",
+    "mapPrint": "Impression de la carte",
+    "upgZonePoster": "Affiche de zone UPG100",
+    "upgZonePacket": "Dossier de prière UPG100, page 1"
+  },
+  "missing": {
+    "bless": "Les feuilles, les bandes de collage et l'emplacement des rangées de cartes viennent de la géométrie de panneaux partagée ; les cartes sont montrées comme une mise en page, car le mur Bénir dessine ses cartes dans son propre module.",
+    "mapPrint": "Ce modèle imprime la carte en direct que le lecteur regarde, il n'a donc pas d'image d'exemple.",
+    "noCountryAtSize": "Aucun pays ne s’imprime à ce format aujourd’hui : l’Inde, le seul qui le faisait, s’imprime désormais uniquement en 5 × 8 ft. Le modèle est dessiné ici avec un pays d’exemple."
+  },
+  "details": {
+    "configName": "Nom de la configuration",
+    "copyName": "Copier",
+    "size": "Format",
+    "fileSize": "Taille du fichier",
+    "fileSizeUnknown": "Mesurée quand l'affiche est dessinée",
+    "settings": "Réglages",
+    "sample": "Données d'exemple",
+    "renderer": "Générateur",
+    "legacy": "Format ancien : il s'imprime encore, mais le sélecteur d'impression ne le propose plus.",
+    "forAgents": "Pour utiliser ce modèle, dites à un agent : utilise la configuration {name}.",
+    "openPage": "Ouvrir sa page"
+  },
+  "templateCount": "{n} modèle | {n} de modèles | {n} modèles",
+  "fromPlugin": "Créé par son propre plugin. Afficher tous les détails le montre en direct."
+}

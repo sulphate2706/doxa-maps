@@ -1,0 +1,7 @@
+{
+  "stage": "production",
+  "_comment": "Capability-4 composite that BAKES this bundle's own map and tables into ONE element, stacked to scroll. Both children are imported directly and compiled into the single gospel-resources bundle — no runtime injection, no second script, and no cross-bundle version skew: the tables you scroll to are built from the same pin index the map above them draws. This is the 'gospel resources dashboard' that was asked for.",
+  "type": "nested-elements-mfe",
+  "composes": ["resources-map", "data-tables"],
+  "label": "Gospel Dashboard (map + tables baked into one element, stacked to scroll)"
+}

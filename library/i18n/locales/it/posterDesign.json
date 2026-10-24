@@ -1,0 +1,78 @@
+{
+  "showFullDetails": "Mostra tutti i dettagli",
+  "showFullDetailsAria": "Mostra tutti i dettagli di {label}",
+  "tab": {
+    "styles": "Stili",
+    "sizes": "Formati"
+  },
+  "styles": {
+    "heading": "Stili dei poster",
+    "intro": "Tutti i modelli di poster in un unico posto, disegnati dalla libreria con dati di esempio. Ogni scheda porta il nome della sua configurazione, così puoi chiedere a un agente esattamente quella."
+  },
+  "sizes": {
+    "heading": "Formati dei poster",
+    "intro": "Tutti i formati in cui si può stampare un poster, disegnati in scala. I formati grandi si stampano su più fogli che si sovrappongono sulla parete; la striscia rossa indica dove incollare il foglio successivo.",
+    "lineup": "Tutti i formati affiancati, in scala",
+    "paper": "Carta da stampante standard",
+    "paperLetter": "Letter USA, 8,5 × 11 in",
+    "paperA4": "A4, 210 × 297 mm",
+    "dimsFt": "{w} × {h} ft",
+    "dimsIn": "{w} × {h} in",
+    "dimsInOne": "{v} in",
+    "rowSheets": "Fogli",
+    "rowSheet": "Ogni foglio",
+    "rowOverlap": "Sovrapposizione incollata",
+    "rowPhotos": "Foto accanto ai nomi",
+    "rowPrint": "Come si stampa",
+    "yes": "Sì",
+    "no": "No",
+    "printHome": "Qualsiasi stampante di casa",
+    "printShop": "Una tipografia (un PDF, una pagina per foglio)",
+    "layoutNote": "I fogli mostrano l'impaginazione del poster di paese da 3 × 3 ft in ogni formato: intestazione, mappa, nomi, tabella e il piè di pagina con la Scrittura. Il poster disegnato in ogni formato comparirà in Stili appena disponibile.",
+    "sideLanes": "{dims}, colonne laterali",
+    "packetPage1": "{paper} (pagina 1 del fascicolo di preghiera)",
+    "panels": "{dims}, pannelli: {n}",
+    "anySize": "Qualsiasi formato dalla tabella dei formati comune"
+  },
+  "family": {
+    "mapSheet": "Fogli mappa",
+    "packet": "Fascicolo di preghiera",
+    "cards": "Schede di preghiera",
+    "wall": "Pannelli da parete",
+    "mapPrint": "Stampa della mappa",
+    "plugins": "Da altri plugin",
+    "experimental": "Sperimentali (in corso)",
+    "upgZone": "Poster delle zone UPG100"
+  },
+  "tpl": {
+    "mapSheetCountry": "Foglio mappa del paese",
+    "mapSheetPacketPage": "Pagina mappa del fascicolo",
+    "packetFull": "Fascicolo di preghiera, completo",
+    "packetLightweight": "Fascicolo di preghiera, leggero",
+    "cards": "Schede di preghiera",
+    "blessPanels": "Pannelli del muro Benedici",
+    "mapPrint": "Stampa della mappa",
+    "upgZonePoster": "Poster di zona UPG100",
+    "upgZonePacket": "Fascicolo di preghiera UPG100, pagina 1"
+  },
+  "missing": {
+    "bless": "I fogli, le strisce da incollare e la posizione delle file di schede vengono dalla geometria dei pannelli condivisa; le schede sono mostrate come impaginazione, perché il muro Benedici disegna le sue schede nel proprio plugin.",
+    "mapPrint": "Questo modello stampa la mappa dal vivo che il lettore sta guardando, quindi non ha un'immagine di esempio.",
+    "noCountryAtSize": "Oggi nessun paese si stampa in questo formato: l’India, l’unico che lo faceva, ora si stampa solo a 5 × 8 ft. Qui il modello è disegnato con un paese di esempio."
+  },
+  "details": {
+    "configName": "Nome della configurazione",
+    "copyName": "Copia",
+    "size": "Formato",
+    "fileSize": "Dimensione del file",
+    "fileSizeUnknown": "Misurata quando il poster viene disegnato",
+    "settings": "Impostazioni",
+    "sample": "Dati di esempio",
+    "renderer": "Generatore",
+    "legacy": "Formato precedente: si stampa ancora, ma il selettore di stampa non lo offre più.",
+    "forAgents": "Per usare questo modello, di' a un agente: usa la configurazione {name}.",
+    "openPage": "Apri la sua pagina"
+  },
+  "templateCount": "{n} modello | {n} di modelli | {n} modelli",
+  "fromPlugin": "Creato dal suo plugin. Mostra tutti i dettagli lo mostra dal vivo."
+}

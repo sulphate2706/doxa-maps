@@ -1,0 +1,73 @@
+{
+  "title": "Accès à Internet là où vivent les peuples sans engagement",
+  "bands": {
+    "yes": "connecté 60 %+",
+    "partial": "partiel 25–59 %",
+    "no": "faible, moins de 25 %",
+    "unknown": "non mesuré"
+  },
+  "peopleGroup": "peuple",
+  "caveat": "Chiffres NATIONAUX (Banque mondiale). La connectivité par ville n'est pas publique — ne déduisez pas une ville à partir de son pays.",
+  "sheet": {
+    "close": "Fermer",
+    "ai": "Ces données proviennent d'une recherche approfondie par IA — elles peuvent contenir des informations erronées.",
+    "dismiss": "Ignorer",
+    "internetUsers": "Internautes",
+    "measured": "Mesuré",
+    "mobilePer100": "Mobiles pour 100",
+    "peopleGroups": "Peuples",
+    "topPlatform": "Plateforme principale",
+    "unknown": "inconnu",
+    "carriers": "Opérateurs et FAI ({n})",
+    "socialPlatforms": "Réseaux sociaux",
+    "note": "Chiffres nationaux, pas des mesures par ville. Les noms d'opérateurs sont les titulaires de registres ASN (on y trouve aussi des banques et des universités à côté des FAI), donc l'étiquette « opérateur » est une heuristique fondée sur le nom, non une classification vérifiée."
+  },
+  "list": {
+    "title": "Villes connectées à Internet",
+    "intro": "La connectivité là où vivent les peuples non atteints. Chaque chiffre est une statistique nationale mesurée, avec son année d’observation —",
+    "introStrong": "« inconnu » signifie non mesuré, jamais supposé.",
+    "countries": "pays : {n}",
+    "measured": "mesurés : {n}",
+    "unknown": "inconnus : {n}",
+    "low": "faible connectivité : {n}",
+    "sectionMeta": "pays : {countries} · peuples : {groups}",
+    "unmeasured": "non mesurés : {n}",
+    "rowMeta": "peuples : {groups} · lieux : {locations}",
+    "centres": "centres de population : {n}",
+    "mobPer100": "mob./100",
+    "band": {
+      "yes": "connecté",
+      "partial": "partiel",
+      "no": "faible",
+      "unknown": "inconnu"
+    },
+    "source": "Chiffres Internet et mobile : Données ouvertes de la Banque mondiale (CC BY 4.0), observation la plus récente 2018–2024. Tranches : connecté ≥60 % · partiel 25–59 % · faible <25 % de la population utilise Internet. Résolution par pays : aucune mesure publique par ville à cette échelle. Les noms des fournisseurs et opérateurs et l’historique de censure exigent des sources citées par pays et ne sont pas affichés."
+  },
+  "tables": {
+    "title": "Données des villes",
+    "intro": "Où vivent les peuples non atteints, et ce qui leur parvient. Triez, filtrez et exportez chaque tableau ; chacun indique ses sources et ses limites.",
+    "tabs": {
+      "cities": "Villes clés",
+      "internet": "Connectivité",
+      "operators": "FAI et opérateurs",
+      "social": "Réseaux sociaux",
+      "messaging": "Messageries"
+    },
+    "loading": "Chargement de {name}…"
+  },
+  "adm1": {
+    "title": "Inde par État : ont déjà utilisé Internet",
+    "women": "Femmes",
+    "men": "Hommes",
+    "total": "Total",
+    "urban": "Urbain",
+    "rural": "Rural",
+    "source": "NFHS-5 (2019–21), personnes de 15 à 49 ans : part de celles qui ont déjà utilisé Internet. Une enquête auprès des personnes, pas un décompte d’abonnements.",
+    "missing": "Pas encore de limite d’État pour {names} : leurs chiffres figurent dans les données, pas sur la carte."
+  },
+  "loading": "Tracé de la carte…",
+  "ui": {
+    "showKey": "Développer la légende",
+    "hideKey": "Réduire la légende"
+  }
+}

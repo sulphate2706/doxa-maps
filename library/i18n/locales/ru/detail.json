@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "country": "Страна:",
+    "population": "Население:",
+    "language": "Язык:",
+    "religion": "Религия:",
+    "languageFamily": "Языковая семья:",
+    "peopleCommitted": "Обязались молиться:"
+  },
+  "messages": {
+    "noDescription": "Описание недоступно."
+  }
+}

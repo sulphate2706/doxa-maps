@@ -1,0 +1,851 @@
+{
+ "source": "https://zume.training/sitemap.xml + https://zume.training/articles/zume-languages",
+ "fetched": "2026-09-24",
+ "locales": 62,
+ "live": 54,
+ "codes": 52,
+ "approxCodes": 3,
+ "byIso": {
+  "amh": {
+   "locale": "am",
+   "name": "Amharic",
+   "url": "https://zume.training/am"
+  },
+  "arb": {
+   "locale": "ar",
+   "name": "Arabic",
+   "url": "https://zume.training/ar"
+  },
+  "ajp": {
+   "locale": "ar_jo",
+   "name": "Arabic (Jordanian)",
+   "url": "https://zume.training/ar_jo"
+  },
+  "aeb": {
+   "locale": "ar_tn",
+   "name": "Arabic (Tunisian)",
+   "url": "https://zume.training/ar_tn"
+  },
+  "ase": {
+   "locale": "asl",
+   "name": "American Sign Language",
+   "url": "https://zume.training/asl"
+  },
+  "bho": {
+   "locale": "bho",
+   "name": "Bhojpuri",
+   "url": "https://zume.training/bho"
+  },
+  "ben": {
+   "locale": "bn",
+   "name": "Bengali (India)",
+   "url": "https://zume.training/bn"
+  },
+  "bos": {
+   "locale": "bs",
+   "name": "Bosnian",
+   "url": "https://zume.training/bs"
+  },
+  "deu": {
+   "locale": "de",
+   "name": "German",
+   "url": "https://zume.training/de"
+  },
+  "eng": {
+   "locale": "en",
+   "name": "English",
+   "url": "https://zume.training/en"
+  },
+  "spa": {
+   "locale": "es",
+   "name": "Spanish",
+   "url": "https://zume.training/es"
+  },
+  "pes": {
+   "locale": "fa",
+   "name": "Persian/Farsi",
+   "url": "https://zume.training/fa"
+  },
+  "fra": {
+   "locale": "fr",
+   "name": "French",
+   "url": "https://zume.training/fr"
+  },
+  "guj": {
+   "locale": "gu",
+   "name": "Gujarati",
+   "url": "https://zume.training/gu"
+  },
+  "hau": {
+   "locale": "ha",
+   "name": "Hausa",
+   "url": "https://zume.training/ha"
+  },
+  "hin": {
+   "locale": "hi",
+   "name": "Hindi",
+   "url": "https://zume.training/hi"
+  },
+  "hrv": {
+   "locale": "hr",
+   "name": "Croatian",
+   "url": "https://zume.training/hr"
+  },
+  "hye": {
+   "locale": "hy",
+   "name": "Armenian",
+   "url": "https://zume.training/hy"
+  },
+  "ind": {
+   "locale": "id",
+   "name": "Indonesian",
+   "url": "https://zume.training/id"
+  },
+  "ita": {
+   "locale": "it",
+   "name": "Italian",
+   "url": "https://zume.training/it"
+  },
+  "jpn": {
+   "locale": "ja",
+   "name": "Japanese",
+   "url": "https://zume.training/ja"
+  },
+  "kan": {
+   "locale": "kn",
+   "name": "Kannada",
+   "url": "https://zume.training/kn"
+  },
+  "kor": {
+   "locale": "ko",
+   "name": "Korean",
+   "url": "https://zume.training/ko"
+  },
+  "ckb": {
+   "locale": "ku",
+   "name": "Kurdish",
+   "url": "https://zume.training/ku"
+  },
+  "kir": {
+   "locale": "ky",
+   "name": "ky",
+   "url": "https://zume.training/ky"
+  },
+  "lao": {
+   "locale": "lo",
+   "name": "Lao",
+   "url": "https://zume.training/lo"
+  },
+  "mai": {
+   "locale": "mai",
+   "name": "Maithili",
+   "url": "https://zume.training/mai"
+  },
+  "mal": {
+   "locale": "ml",
+   "name": "Malayalam",
+   "url": "https://zume.training/ml"
+  },
+  "mar": {
+   "locale": "mr",
+   "name": "Marathi",
+   "url": "https://zume.training/mr"
+  },
+  "zlm": {
+   "locale": "ms",
+   "name": "Malay",
+   "url": "https://zume.training/ms"
+  },
+  "mya": {
+   "locale": "my",
+   "name": "Burmese",
+   "url": "https://zume.training/my"
+  },
+  "npi": {
+   "locale": "ne",
+   "name": "Nepali",
+   "url": "https://zume.training/ne"
+  },
+  "ory": {
+   "locale": "or",
+   "name": "Odia",
+   "url": "https://zume.training/or"
+  },
+  "pan": {
+   "locale": "pa",
+   "name": "Punjabi",
+   "url": "https://zume.training/pa"
+  },
+  "pnb": {
+   "locale": "pa_pk",
+   "name": "Punjabi (Western)",
+   "url": "https://zume.training/pa_pk"
+  },
+  "pol": {
+   "locale": "pl",
+   "name": "Polish",
+   "url": "https://zume.training/pl"
+  },
+  "prs": {
+   "locale": "prs",
+   "name": "prs",
+   "url": "https://zume.training/prs"
+  },
+  "por": {
+   "locale": "pt",
+   "name": "Portuguese",
+   "url": "https://zume.training/pt"
+  },
+  "ron": {
+   "locale": "ro",
+   "name": "Romanian",
+   "url": "https://zume.training/ro"
+  },
+  "rus": {
+   "locale": "ru",
+   "name": "Russian",
+   "url": "https://zume.training/ru"
+  },
+  "slv": {
+   "locale": "sl",
+   "name": "Slovenian",
+   "url": "https://zume.training/sl"
+  },
+  "som": {
+   "locale": "so",
+   "name": "Somali",
+   "url": "https://zume.training/so"
+  },
+  "swh": {
+   "locale": "swa",
+   "name": "Swahili",
+   "url": "https://zume.training/swa"
+  },
+  "tam": {
+   "locale": "ta",
+   "name": "Tamil",
+   "url": "https://zume.training/ta"
+  },
+  "tel": {
+   "locale": "te",
+   "name": "Telugu",
+   "url": "https://zume.training/te"
+  },
+  "tha": {
+   "locale": "th",
+   "name": "Thai",
+   "url": "https://zume.training/th"
+  },
+  "tur": {
+   "locale": "tr",
+   "name": "Turkish",
+   "url": "https://zume.training/tr"
+  },
+  "urd": {
+   "locale": "ur",
+   "name": "Urdu",
+   "url": "https://zume.training/ur"
+  },
+  "vie": {
+   "locale": "vi",
+   "name": "Vietnamese",
+   "url": "https://zume.training/vi"
+  },
+  "yor": {
+   "locale": "yo",
+   "name": "Yoruba",
+   "url": "https://zume.training/yo"
+  },
+  "cmn": {
+   "locale": "zhcn",
+   "name": "Chinese (Simplified)",
+   "url": "https://zume.training/zhcn"
+  },
+  "yue": {
+   "locale": "zhhk",
+   "name": "Cantonese (Traditional)",
+   "url": "https://zume.training/zhhk"
+  }
+ },
+ "approx": {
+  "pbu": {
+   "locale": "pus",
+   "lang": "Pashto",
+   "note": "Published in Pashto; the publisher does not say which variety, and this group speaks one of three",
+   "url": "https://zume.training/pus"
+  },
+  "pbt": {
+   "locale": "pus",
+   "lang": "Pashto",
+   "note": "Published in Pashto; the publisher does not say which variety, and this group speaks one of three",
+   "url": "https://zume.training/pus"
+  },
+  "pst": {
+   "locale": "pus",
+   "lang": "Pashto",
+   "note": "Published in Pashto; the publisher does not say which variety, and this group speaks one of three",
+   "url": "https://zume.training/pus"
+  }
+ },
+ "entries": [
+  {
+   "locale": "am",
+   "name": "Amharic",
+   "native": "አማርኛ",
+   "iso": "amh",
+   "url": "https://zume.training/am",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ar",
+   "name": "Arabic",
+   "native": "العربية",
+   "iso": "arb",
+   "url": "https://zume.training/ar",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ar_jo",
+   "name": "Arabic (Jordanian)",
+   "native": "العربية - الأردن",
+   "iso": "ajp",
+   "url": "https://zume.training/ar_jo",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ar_ma",
+   "name": "Arabic (Moroccan)",
+   "native": "العربية - الأردن",
+   "iso": "ary",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "ar_tn",
+   "name": "Arabic (Tunisian)",
+   "native": "العربية التونسية",
+   "iso": "aeb",
+   "url": "https://zume.training/ar_tn",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "asl",
+   "name": "American Sign Language",
+   "native": "Sign Language",
+   "iso": "ase",
+   "url": "https://zume.training/asl",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "az",
+   "name": "Azerbaijani",
+   "native": null,
+   "iso": "azj",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "bg",
+   "name": "Bulgarian",
+   "native": "български език",
+   "iso": "bul",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "bho",
+   "name": "Bhojpuri",
+   "native": "भोजपुरी",
+   "iso": "bho",
+   "url": "https://zume.training/bho",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "bn",
+   "name": "Bengali (India)",
+   "native": "বাংলা",
+   "iso": "ben",
+   "url": "https://zume.training/bn",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "bs",
+   "name": "Bosnian",
+   "native": "Bosanski",
+   "iso": "bos",
+   "url": "https://zume.training/bs",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "de",
+   "name": "German",
+   "native": "Deutsch",
+   "iso": "deu",
+   "url": "https://zume.training/de",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "en",
+   "name": "English",
+   "native": null,
+   "iso": "eng",
+   "url": "https://zume.training/en",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "es",
+   "name": "Spanish",
+   "native": "Español",
+   "iso": "spa",
+   "url": "https://zume.training/es",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "fa",
+   "name": "Persian/Farsi",
+   "native": "فارسی",
+   "iso": "pes",
+   "url": "https://zume.training/fa",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "fo",
+   "name": "Faroese",
+   "native": null,
+   "iso": "fao",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "fr",
+   "name": "French",
+   "native": "Français",
+   "iso": "fra",
+   "url": "https://zume.training/fr",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "gu",
+   "name": "Gujarati",
+   "native": "ગુજરાતી",
+   "iso": "guj",
+   "url": "https://zume.training/gu",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ha",
+   "name": "Hausa",
+   "native": null,
+   "iso": "hau",
+   "url": "https://zume.training/ha",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "hi",
+   "name": "Hindi",
+   "native": "हिन्दी",
+   "iso": "hin",
+   "url": "https://zume.training/hi",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "hr",
+   "name": "Croatian",
+   "native": "Hrvatski",
+   "iso": "hrv",
+   "url": "https://zume.training/hr",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "hy",
+   "name": "Armenian",
+   "native": null,
+   "iso": "hye",
+   "url": "https://zume.training/hy",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "id",
+   "name": "Indonesian",
+   "native": "Bahasa Indonesia",
+   "iso": "ind",
+   "url": "https://zume.training/id",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "it",
+   "name": "Italian",
+   "native": "Italiano",
+   "iso": "ita",
+   "url": "https://zume.training/it",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ja",
+   "name": "Japanese",
+   "native": "日本語",
+   "iso": "jpn",
+   "url": "https://zume.training/ja",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "kn",
+   "name": "Kannada",
+   "native": "ಕನ್ನಡ",
+   "iso": "kan",
+   "url": "https://zume.training/kn",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ko",
+   "name": "Korean",
+   "native": "한국어",
+   "iso": "kor",
+   "url": "https://zume.training/ko",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ku",
+   "name": "Kurdish",
+   "native": "کوردی",
+   "iso": "ckb",
+   "url": "https://zume.training/ku",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ky",
+   "name": null,
+   "native": null,
+   "iso": "kir",
+   "url": "https://zume.training/ky",
+   "listed": false,
+   "sitemap": true
+  },
+  {
+   "locale": "lo",
+   "name": "Lao",
+   "native": "ພາສາລາວ",
+   "iso": "lao",
+   "url": "https://zume.training/lo",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "lv",
+   "name": "Latvian",
+   "native": "Latviešu",
+   "iso": "lvs",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "mai",
+   "name": "Maithili",
+   "native": "मैथिली",
+   "iso": "mai",
+   "url": "https://zume.training/mai",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ml",
+   "name": "Malayalam",
+   "native": "മലയാളം",
+   "iso": "mal",
+   "url": "https://zume.training/ml",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "mn",
+   "name": "Mongolian",
+   "native": "Монгол",
+   "iso": "khk",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "mr",
+   "name": "Marathi",
+   "native": "मराठी",
+   "iso": "mar",
+   "url": "https://zume.training/mr",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ms",
+   "name": "Malay",
+   "native": "Bahasa Malaysia",
+   "iso": "zlm",
+   "url": "https://zume.training/ms",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "my",
+   "name": "Burmese",
+   "native": "မြန်မာဘာသာ",
+   "iso": "mya",
+   "url": "https://zume.training/my",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ne",
+   "name": "Nepali",
+   "native": "नेपाली",
+   "iso": "npi",
+   "url": "https://zume.training/ne",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "or",
+   "name": "Odia",
+   "native": "ଓଡ଼ିଆ",
+   "iso": "ory",
+   "url": "https://zume.training/or",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "pa",
+   "name": "Punjabi",
+   "native": "ਪੰਜਾਬੀ",
+   "iso": "pan",
+   "url": "https://zume.training/pa",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "pa_pk",
+   "name": "Punjabi (Western)",
+   "native": "ਪੰਜਾਬੀ (ਪੱਛਮੀ)",
+   "iso": "pnb",
+   "url": "https://zume.training/pa_pk",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "pl",
+   "name": "Polish",
+   "native": "Polski",
+   "iso": "pol",
+   "url": "https://zume.training/pl",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "prs",
+   "name": null,
+   "native": null,
+   "iso": "prs",
+   "url": "https://zume.training/prs",
+   "listed": false,
+   "sitemap": true
+  },
+  {
+   "locale": "pt",
+   "name": "Portuguese",
+   "native": "Português",
+   "iso": "por",
+   "url": "https://zume.training/pt",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "pus",
+   "name": null,
+   "native": null,
+   "iso": null,
+   "url": "https://zume.training/pus",
+   "listed": false,
+   "sitemap": true,
+   "why": "Pashto has three individual codes in the people-group data (pbu, pbt, pst) and the publisher gives nothing that selects one"
+  },
+  {
+   "locale": "ro",
+   "name": "Romanian",
+   "native": "Română",
+   "iso": "ron",
+   "url": "https://zume.training/ro",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ru",
+   "name": "Russian",
+   "native": "Русский",
+   "iso": "rus",
+   "url": "https://zume.training/ru",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "sl",
+   "name": "Slovenian",
+   "native": "Slovenščina",
+   "iso": "slv",
+   "url": "https://zume.training/sl",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "so",
+   "name": "Somali",
+   "native": "Soomaali",
+   "iso": "som",
+   "url": "https://zume.training/so",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "swa",
+   "name": "Swahili",
+   "native": "Kiswahili",
+   "iso": "swh",
+   "url": "https://zume.training/swa",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "ta",
+   "name": "Tamil",
+   "native": "தமிழ்",
+   "iso": "tam",
+   "url": "https://zume.training/ta",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "te",
+   "name": "Telugu",
+   "native": "తెలుగు",
+   "iso": "tel",
+   "url": "https://zume.training/te",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "th",
+   "name": "Thai",
+   "native": "ไทย",
+   "iso": "tha",
+   "url": "https://zume.training/th",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "tl",
+   "name": "Tagalog",
+   "native": null,
+   "iso": "tgl",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "tr",
+   "name": "Turkish",
+   "native": "Türkçe",
+   "iso": "tur",
+   "url": "https://zume.training/tr",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "uk",
+   "name": "Ukrainian",
+   "native": "Україна",
+   "iso": "ukr",
+   "url": null,
+   "listed": true,
+   "sitemap": false
+  },
+  {
+   "locale": "ur",
+   "name": "Urdu",
+   "native": "اردو",
+   "iso": "urd",
+   "url": "https://zume.training/ur",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "vi",
+   "name": "Vietnamese",
+   "native": "Tiếng Việt",
+   "iso": "vie",
+   "url": "https://zume.training/vi",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "yo",
+   "name": "Yoruba",
+   "native": "Yorùbá",
+   "iso": "yor",
+   "url": "https://zume.training/yo",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "zhcn",
+   "name": "Chinese (Simplified)",
+   "native": "中文（简体）",
+   "iso": "cmn",
+   "url": "https://zume.training/zhcn",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "zhhk",
+   "name": "Cantonese (Traditional)",
+   "native": "中文（繁體,香港）",
+   "iso": "yue",
+   "url": "https://zume.training/zhhk",
+   "listed": true,
+   "sitemap": true
+  },
+  {
+   "locale": "zhtw",
+   "name": "Chinese (Traditional)",
+   "native": "中文（繁體）",
+   "iso": "cmn",
+   "url": "https://zume.training/zhtw",
+   "listed": true,
+   "sitemap": true
+  }
+ ]
+}

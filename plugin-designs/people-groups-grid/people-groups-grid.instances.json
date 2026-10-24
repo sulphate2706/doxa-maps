@@ -1,0 +1,27 @@
+{
+  "_comment": "Preconfigured instances of the Cat-2 prop-table <people-groups-grid>. provider:'maplibre' flags each generated standalone page as TOKEN-FREE (no Mapbox token ladder) since this grid is a fetch-driven list, not a map. Each instance is one preset of the element's props: 'standalone' owns its own search + 4 dropdowns; 'driven' turns its own controls off (show-search/show-filters=false) to be driven by a parent header via props/events.",
+  "instances": [
+    {
+      "id": "people-groups-grid",
+      "title": "People Groups Grid — standalone (own search + 4 dropdowns)",
+      "props": {
+        "profile": "people-groups-grid",
+        "provider": "maplibre",
+        "instanceId": "people-groups-grid",
+        "pray-base-url": "https://pray.doxa.life"
+      }
+    },
+    {
+      "id": "driven",
+      "title": "People Groups Grid — externally driven (controls off, props/events)",
+      "props": {
+        "profile": "people-groups-grid",
+        "provider": "maplibre",
+        "instanceId": "people-groups-grid-driven",
+        "pray-base-url": "https://pray.doxa.life",
+        "show-search": "false",
+        "show-filters": "false"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Meine erste Karte",
+  "engineMissing": "Die Karten-Engine wurde nicht geladen.",
+  "mapFailed": "Die Karte konnte nicht starten: {detail}",
+  "profileB": {
+    "title": "Profil B",
+    "servedFrom": "Geliefert aus {file} im Bundle {bundle}.",
+    "note": "Hinweis: {note}",
+    "noNote": "(keine Notiz in profile-config übergeben)"
+  }
+}
